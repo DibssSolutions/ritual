@@ -160,13 +160,14 @@ $(document).ready(function() {
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            dots: true,
+            dots: false,
             arrows: true,
             prevArrow: $('.prev4'),
             nextArrow: $('.next4'),
             responsive: [{
                 breakpoint:993,
                 settings: {
+                    dots:false,
                     arrows:false,
                     slidesToShow: 1,
                     slidesToScroll: 1

@@ -3712,7 +3712,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 }
 
 .home-slider .prev4:hover {
-	background-color: #65594d;
+	background-color: rgba(136,122,109,.8);
 	color: #fff;
 	-webkit-transition: 0.4s;
 	-moz-transition: 0.4s;
@@ -3726,7 +3726,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 	width: 70px;
 	height: 70px;
 	line-height: 70px;
-	background-color: rgba(101, 89, 77, 0.4);
+	background-color: rgba(101, 89, 77, 0.8);
 	color: #fff;
 	font-size: 18px;
 	text-align: center;
@@ -3742,7 +3742,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 }
 
 .home-slider .next4:hover {
-	background-color: #65594d;
+	background-color: rgba(136,122,109,.8);
 	color: #fff;
 	-webkit-transition: 0.4s;
 	-moz-transition: 0.4s;
