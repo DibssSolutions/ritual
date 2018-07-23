@@ -1,0 +1,60 @@
+//FONTS
+
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1),
+	url("../fonts/" + $file + ".woff") format("woff"),
+	url("../fonts/" + $file + ".woff2") format("woff2")
+=fontdefault($style, $weight, $name)
+	font-family: $name
+	font-style: $style
+	font-weight: $weight
+
+//START Montserrat
+
+@font-face
+	+fontdefault(normal, 400, 'Tahoma')
+	+fontpath('Tahoma', 'Tahoma', 'Tahoma')
+
+@font-face
+	+fontdefault(normal, 700, 'Tahoma')
+	+fontpath('Tahoma-Bold', 'Tahoma-Bold', 'Tahoma-Bold')
+
+@font-face
+	+fontdefault(normal, 300, 'CormorantInfant')
+	+fontpath('CormorantInfant-Light', 'CormorantInfant-Light', 'CormorantInfant-Light')
+
+@font-face
+	+fontdefault(italic, 300, 'CormorantInfant')
+	+fontpath('CormorantInfant-LightItalic', 'CormorantInfant-LightItalic', 'CormorantInfant-LightItalic')
+
+@font-face
+	+fontdefault(italic, 400, 'CormorantInfant')
+	+fontpath('CormorantInfant-Italic', 'CormorantInfant-Italic', 'CormorantInfant-Italic')
+	
+@font-face
+	+fontdefault(normal, 400, 'CormorantInfant')
+	+fontpath('CormorantInfant-Regular', 'CormorantInfant-Regular', 'CormorantInfant-Regular')
+
+@font-face
+	+fontdefault(normal, 500, 'CormorantInfant')
+	+fontpath('CormorantInfant-Medium', 'CormorantInfant-Medium', 'CormorantInfant-Medium')
+
+@font-face
+	+fontdefault(italic, 500, 'CormorantInfant')
+	+fontpath('CormorantInfant-MediumItalic', 'CormorantInfant-MediumItalic', 'CormorantInfant-MediumItalic')
+
+@font-face
+	+fontdefault(normal, 600, 'CormorantInfant')
+	+fontpath('CormorantInfant-SemiBold', 'CormorantInfant-SemiBold', 'CormorantInfant-SemiBold')
+
+@font-face
+	+fontdefault(italic, 600, 'CormorantInfant')
+	+fontpath('CormorantInfant-SemiBoldItalic', 'CormorantInfant-SemiBoldItalic', 'CormorantInfant-SemiBoldItalic')
+
+@font-face
+	+fontdefault(normal, 700, 'CormorantInfant')
+	+fontpath('CormorantInfant-Bold', 'CormorantInfant-Bold', 'CormorantInfant-Bold')
+
+@font-face
+	+fontdefault(italic, 700, 'CormorantInfant')
+	+fontpath('CormorantInfant-BoldItalic', 'CormorantInfant-BoldItalic', 'CormorantInfant-BoldItalic')
