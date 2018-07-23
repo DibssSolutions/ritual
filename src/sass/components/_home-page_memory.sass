@@ -1,8 +1,45 @@
 .home-content
+	padding: 100px 0 70px
 	color: $brown
-	article .post-meta span
+	+md
+		padding: 50px 0 35px
+	article .post-meta
 		font-family: $tahoma
 		color: $brown
+		span
+			font-size: 15px
+			color: $brown
+
+.icon-calendar
+	fill: $brown
+	font-size: 12px
+
+.blog-content article .post-meta .dis-block
+	display: block
 
 .section-head p
-	font-family: $tahoma	
+	font-family: $tahoma
+
+.post-meta .bold
+	font-weight: 700
+
+.shadow
+	transition: box-shadow .4s
+
+.shadow:hover
+	box-shadow: 0 5px 15px rgba(#625a4f,.2)
+	+md
+		box-shadow: none
+
+.card-link
+	position: relative
+	display: block
+
+.card-link .candles-image
+	position: absolute
+	bottom: -25px
+	right: -60px
+	width: 80px
+
+.card-link .candles-image img
+	max-width: 100%

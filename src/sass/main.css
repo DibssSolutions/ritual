@@ -2445,7 +2445,6 @@ footer .footer-quote .slick-dots li.slick-active button {
 
 .blog-content article .post-meta span {
 	font-size: 15px;
-	display: block;
 }
 
 .blog-content article .post-meta span i {
@@ -3257,7 +3256,8 @@ footer .footer-quote .slick-dots li.slick-active button {
 }
 
 .obituaries-content article .btn:hover {
-	background: #7c6f62;
+	background: #e3dccf;
+	color: #5d554b;
 }
 
 .side-head {
