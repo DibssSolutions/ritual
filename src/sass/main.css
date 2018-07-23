@@ -2444,7 +2444,8 @@ footer .footer-quote .slick-dots li.slick-active button {
 }
 
 .blog-content article .post-meta span {
-	margin-right: 25px;
+	font-size: 15px;
+	display: block;
 }
 
 .blog-content article .post-meta span i {
@@ -3636,6 +3637,10 @@ footer .footer-quote .slick-dots li.slick-active button {
 .table a:hover {
 	color: #65594d;
 	border-bottom: 1px solid #65594d;
+}
+
+.home-content {
+	background-color: #f1ede8;
 }
 
 .home-content h4 {
@@ -6369,6 +6374,8 @@ header .navbar-default .cart-table ul {
 	.blog-content article .post-meta {
 		font-size: 12px;
 	}
+
+
 
 	.blog-content article .post-meta span {
 		margin-right: 10px;
