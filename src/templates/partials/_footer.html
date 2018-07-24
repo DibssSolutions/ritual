@@ -1,19 +1,111 @@
 <!-- begin footer -->
 <footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3 col-sm-6">
-				
+	<div class="footer__top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<a href="#" class="footer-logo"><img src="./img/logo-sm.png" alt="logo-sm"></a>
+					<ul class="footer-list">
+						{% for text in ['О портале', 'Доска объявлений ', 'Похороны своими силами', 'Рекламодателям'
+							] %}
+							<li class="footer-list__item"><a href="#" class="footer-list__link">{{ text }}</a></li>
+							{% endfor %}
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<h4 class="title-sm">Последние некрологи</h4>
+					{% for item in [
+						{
+							img: '1.png',
+							name: 'Фамилия И. О.',
+							label: 'Дата похорон: ',
+							date: 'Вт. 03-12-2018'
+						},
+						{
+							img: '1.png',
+							name: 'Фамилия И. О.',
+							label: 'Дата похорон: ',
+							date: 'Вт. 03-12-2018'
+						},
+						{
+							img: '1.png',
+							name: 'Фамилия И. О.',
+							label: 'Дата похорон: ',
+							date: 'Вт. 03-12-2018'
+						}
+					] %}
+						<div class="item">
+							<div class="item__img" style="background-image: url(./img/{{ item.img }});"></div>
+							<div class="item__wrap">
+								<a href="#" class="item__name">{{ item.name }}</a>
+								<div class="item__label">{{ item.label }}</div>
+								<div class="item__date">{{ item.date }}</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<h4 class="title-sm">Последние статьи</h4>
+					{% for item in [
+						{
+							img: '1.png',
+							title: 'Что такое сглаз и как от него избавится?',
+							label: 'Имя Фамилия'
+						},
+						{
+							img: '1.png',
+							title: 'Что снится к любви и наслаждению, а что – к разлуке и печали',
+							label: 'Имя Фамилия'
+						},
+						{
+							img: '1.png',
+							title: 'Что такое сглаз и как от него избавится?',
+							label: 'Имя Фамилия'
+						}
+					] %}
+						<div class="item">
+							<div class="item__img" style="background-image: url(./img/{{ item.img }});"></div>
+							<div class="item__wrap">
+								<a href="#" class="item__title">{{ item.title }}</a>
+								<div class="item__label">{{ item.label }}</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<h4 class="title-sm">Доска объявлений</h4>
+					{% for item in [
+						{
+							img: '1.png',
+							title: 'Заголовок объявления',
+							label: 'Категория'
+						},
+						{
+							img: '1.png',
+							title: 'Еще один заголовок объявления',
+							label: 'Категория'
+						},
+						{
+							img: '1.png',
+							title: 'Заголовок объявления',
+							label: 'Категория'
+						}
+					] %}
+						<div class="item">
+							<div class="item__img" style="background-image: url(./img/{{ item.img }});"></div>
+							<div class="item__wrap">
+								<a href="#" class="item__title">{{ item.title }}</a>
+								<div class="item__label">{{ item.label }}</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
 			</div>
-			<div class="col-md-3 col-sm-6">
-				<h4>Последние некрологи</h4>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<h4>Последние статьи</h4>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<h4>Доска объявлений</h4>
-			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="container">
+			<span class="copy">&copty; Copyright © 2018.</span> Портал ритуальных услуг «Доверие». Хабаровск
 		</div>
 	</div>
 </footer>
