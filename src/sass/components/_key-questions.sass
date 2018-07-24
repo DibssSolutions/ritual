@@ -1,37 +1,61 @@
 .key-questions
+    padding: 39px 0 25px
+    background-color: $white_brown_bg
     &__container
     .section-head
-        margin-bottom: 35px
+        margin-bottom: 33px
         .title-l
-            margin-bottom: 7px
+            margin-bottom: 9px
     &__list
 
     .key-item
         position: relative
         min-height: 170px
-        margin-bottom: 100px
+        margin-bottom: 32px
         +clr
         &:nth-child(even)
             .key-item__body
-                padding: 0 100px 20px 20px
+                padding: 12px 90px 0 25px
                 float: right
                 text-align: left
+                +sm
+                    padding: 12px 0 0 20px
+            +sm
+                .key-item__img
+                    left: 0
         &__body
             width: 41%
-            padding: 0 20px 20px 100px
+            padding: 12px 25px 0 90px
             float: left
             text-align: right
+            +sm
+                width: 62%
+                text-align: left
+                padding: 12px 20px 0 0
         &__title
             font-size: 24px
-            margin-bottom: 25px
+            margin-bottom: 20px
+            font-family: $tahoma
+            +sm
+                font-size: 16px
         &__text
+            line-height: 1.6
+            margin-bottom: 25px
+            +sm
+                line-height: 1.2
         &__img
             position: absolute
-            top: 50%
+            top: 0
             left: 50%
             width: 170px
             height: 170px
-            transform: translate(-50%, -50%)
+            transform: translateX(-50%)
             background-size: cover
             background-position: 50% 50%
             border-radius: 50%
+            +sm
+                width: 112px
+                height: 112px
+                left: auto
+                right: 0
+                transform: none
