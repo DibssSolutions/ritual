@@ -1,6 +1,7 @@
 body
 	background: #FFF
 	line-height: 1.4
+	min-width: 320px
 
 .inner
 	+sm
@@ -22,6 +23,8 @@ body
 		color: $white
 		+sm
 			font-size: 30px
+	+sm
+		font-size: 25px
 
 .title-m
 	font-weight: 600
@@ -29,6 +32,8 @@ body
 	line-height: 1.1
 	font-family: $cormorant_infant
 	color: $brown
+	+sm
+		font-size: 20px!important
 
 .title-sm
 	font-family: $cormorant_infant
@@ -42,14 +47,22 @@ body
 	position: relative
 	padding: 11px 25px
 	background-color: $gray_brown
-    border-radius: 5px
-    font-size: 14px
-    font-weight: 400
-    font-family: $tahoma
-    color: $brown
+	border-radius: 5px
+	font-size: 14px
+	font-weight: 400
+	font-family: $tahoma
+	color: $brown
+	+sm
+		padding: 10px 20px
 
 .line
 	height: 1px
 	width: 100%
 	background-color: rgba(#ffffff,.5)
 	margin-bottom: 20px
+	+sm
+		background-color: rgba(#d9c8ab,.2)
+
+.mob-hide
+	+sm
+		display: none !important

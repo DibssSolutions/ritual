@@ -82,9 +82,11 @@ table {
 
 body {
 	background: #fff;
-	font-family: 'Oxygen', sans-serif;
 	color: #65594d;
-	font-size: 14px;
+	font-family: "Tahoma","Open Sans",sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.6;
 }
 
 a, a:hover {
@@ -123,15 +125,8 @@ ul, li, ol {
 	padding: 0;
 }
 
-p {
-	font-family: 'Oxygen', sans-serif;
-	color: #65594d;
-	font-size: 15px;
-	line-height: 24px;
-}
-
 h1 h2, h3, h4, h5, h6 {
-	font-family: 'Crimson Text', serif;
+	font-family: 'CormorantInfant', 'Open Sans', sans-serif;
 	color: #65594d;
 }
 
