@@ -3,18 +3,24 @@ body
 	+css-lock(16, 50, 600, 1000)
 	line-height: 1.4
 
+.inner
+	+sm
+		padding: 0 25px
+
 .title-l
 	font-weight: 600
 	font-size: 45px
 	line-height: 1.2
 	font-family: $cormorant_infant
-	color: $brown
+	color: $brown	
 	&_mod
 		font-weight: 600
 		font-size: 45px
 		line-height: 1.2
 		font-family: $cormorant_infant
 		color: $white
+		+sm
+			font-size: 30px
 
 .title-m
 	font-weight: 600
@@ -28,7 +34,6 @@ body
 	+f(20px, 400, 1.2)
 	text-transform: uppercase
 
-
 .btn
 	transition: color .4s, background-color .4s, border-color .4s
 
@@ -41,3 +46,9 @@ body
     font-weight: 400
     font-family: $tahoma
     color: $brown
+
+.line
+	height: 1px
+	width: 100%
+	background-color: rgba(#ffffff,.5)
+	margin-bottom: 20px

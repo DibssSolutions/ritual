@@ -2375,18 +2375,20 @@ footer .footer-quote .slick-dots li.slick-active button {
 
 .newsletter-wrap form {
 	height: 47px;
-	width: 1005;
-	border: 1px solid rgba(255, 255, 255, 0.2);
+	width: 100%;
 	position: relative;
 }
 
 .newsletter-wrap form input {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 47px;
 	border: none;
 	padding: 0 60px 0 25px;
 	font-size: 15px;
-	color: #e6ddd0;
+	color: #ffffff;
 	background: transparent;
 }
 
@@ -6377,9 +6379,9 @@ header .navbar-default .cart-table ul {
 
 
 
-	.blog-content article .post-meta span {
+	/* .blog-content article .post-meta span {
 		margin-right: 10px;
-	}
+	} */
 
 	.about-author img {
 		position: relative;

@@ -7,6 +7,23 @@
             <feComposite result="composite" operator="in" in2="SourceGraphic"/>
             <feBlend result="blend" in2="SourceGraphic"/>
         </filter>
+    
+        <style>
+            .cls-1{fill-rule:evenodd;filter:url(#filter)}
+        </style>
+        <filter id="filter" x="1298" y="3911" width="33" height="31" filterUnits="userSpaceOnUse">
+            <feGaussianBlur result="blur" stdDeviation="2.667" in="SourceAlpha"/>
+            <feComposite result="composite"/>
+            <feComposite result="composite-2"/>
+            <feComposite result="composite-3"/>
+            <feFlood result="flood" flood-color="#fff" flood-opacity=".42"/>
+            <feComposite result="composite-4" operator="in" in2="composite-3"/>
+            <feBlend result="blend" mode="screen" in2="SourceGraphic"/>
+            <feBlend result="blend-2" in="SourceGraphic"/>
+            <feFlood result="flood-2" flood-color="#fff"/>
+            <feComposite result="composite-5" operator="in" in2="SourceGraphic"/>
+            <feBlend result="blend-3" in2="blend-2"/>
+        </filter>
     </defs><symbol id="icon-calendar" viewBox="0 0 12 12">
     
     <path id="Calendar_designed_by_Freepik_from_Flaticon.com" data-name="Calendar designed by Freepik from Flaticon.com" class="cls-1" d="M538.932 4711.8h.168a.479.479 0 0 0 .472-.48v-1.83a.479.479 0 0 0-.472-.48h-.172a.479.479 0 0 0-.472.48v1.83a.479.479 0 0 0 .476.48zm6.059-.02h.172a.473.473 0 0 0 .472-.48v-1.82a.473.473 0 0 0-.472-.48h-.172a.473.473 0 0 0-.472.48v1.82a.473.473 0 0 0 .472.48zm2.24-1.79h-1.212v1.44a.768.768 0 0 1-.856.75h-.172a.873.873 0 0 1-.856-.88v-1.31h-4.175v1.33a.864.864 0 0 1-.856.87h-.172a.864.864 0 0 1-.856-.87v-1.33h-1.308a.775.775 0 0 0-.768.78v9.45a.775.775 0 0 0 .768.78h10.463a.775.775 0 0 0 .768-.78v-9.45a.775.775 0 0 0-.768-.78zm0 10.23h-10.463v-7.14h10.464v7.14zm-4.835-4.74h1.379a.105.105 0 0 0 .1-.11v-1.21a.1.1 0 0 0-.1-.1H542.4a.1.1 0 0 0-.1.1v1.21a.105.105 0 0 0 .1.11zm2.25 0h1.379a.105.105 0 0 0 .1-.11v-1.21a.1.1 0 0 0-.1-.1h-1.379a.1.1 0 0 0-.1.1v1.21a.106.106 0 0 0 .1.11zm-6.75 1.99h1.378a.1.1 0 0 0 .1-.1v-1.22a.1.1 0 0 0-.1-.1H537.9a.1.1 0 0 0-.1.1v1.22a.1.1 0 0 0 .1.1zm2.25 0h1.379a.1.1 0 0 0 .1-.1v-1.22a.1.1 0 0 0-.1-.1h-1.379a.1.1 0 0 0-.1.1v1.22a.1.1 0 0 0 .1.1zm2.25 0h1.379a.1.1 0 0 0 .1-.1v-1.22a.1.1 0 0 0-.1-.1H542.4a.1.1 0 0 0-.1.1v1.22a.1.1 0 0 0 .1.1zm2.25 0h1.379a.1.1 0 0 0 .1-.1v-1.22a.1.1 0 0 0-.1-.1h-1.379a.1.1 0 0 0-.1.1v1.22a.1.1 0 0 0 .1.1zm-5.372.57H537.9a.1.1 0 0 0-.1.1v1.21a.105.105 0 0 0 .1.11h1.378a.105.105 0 0 0 .1-.11v-1.21a.1.1 0 0 0-.104-.1zm2.251 0h-1.379a.1.1 0 0 0-.1.1v1.21a.105.105 0 0 0 .1.11h1.379a.106.106 0 0 0 .1-.11v-1.21a.1.1 0 0 0-.1-.1zm2.25 0H542.4a.1.1 0 0 0-.1.1v1.21a.105.105 0 0 0 .1.11h1.379a.105.105 0 0 0 .1-.11v-1.21a.1.1 0 0 0-.104-.1zm2.25 0h-1.379a.1.1 0 0 0-.1.1v1.21a.106.106 0 0 0 .1.11h1.379a.105.105 0 0 0 .1-.11v-1.21a.1.1 0 0 0-.1-.1z" transform="translate(-536 -4709)"/>
@@ -15,4 +32,7 @@
         facebook
     </title>
     <path d="M9.766.157v2.946H8.014c-.64 0-1.071.134-1.295.402-.223.268-.335.67-.335 1.205v2.11h3.27l-.435 3.303H6.384v8.471H2.97v-8.47H.123V6.82H2.97V4.387c0-1.384.387-2.457 1.161-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.941.045 2.544.134z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-send-button" viewBox="0 0 33 31">
+    
+    <path id="Send_button_designed_by_Google_from_Flaticon.com_&#x43A;&#x43E;&#x43F;&#x438;&#x44F;" data-name="Send button designed by Google from Flaticon.com &#x43A;&#x43E;&#x43F;&#x438;&#x44F;" class="cls-1" d="M1307 3932l14-6-14-6v4.67l10 1.33-10 1.33v4.67z" transform="translate(-1298 -3911)"/>
 </symbol></svg>
