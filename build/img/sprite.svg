@@ -9,7 +9,7 @@
         </filter>
     
         <style>
-            .cls-1{fill-rule:evenodd;filter:url(#filter)}
+            .cls-1 { fill-rule: evenodd; filter: url(#filter); }
         </style>
         <filter id="filter" x="1298" y="3911" width="33" height="31" filterUnits="userSpaceOnUse">
             <feGaussianBlur result="blur" stdDeviation="2.667" in="SourceAlpha"/>
@@ -31,12 +31,8 @@
     <title>
         facebook
     </title>
-<<<<<<< HEAD
-    <path d="M9.766.157v2.946H8.014c-.64 0-1.071.134-1.295.402-.223.268-.335.67-.335 1.205v2.11h3.27l-.435 3.303H6.384v8.471H2.97v-8.47H.123V6.82H2.97V4.387c0-1.384.387-2.457 1.161-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.941.045 2.544.134z" fill-rule="evenodd"/>
+    <path d="M9.766.157v2.946H8.014c-.64 0-1.07.134-1.295.402-.224.268-.336.67-.336 1.205v2.11h3.27l-.435 3.303H6.383v8.47H2.97v-8.47H.122V6.82H2.97V4.387c0-1.384.386-2.457 1.16-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.94.045 2.544.134z" fill-rule="evenodd"/>
 </symbol><symbol id="icon-send-button" viewBox="0 0 33 31">
     
-    <path id="Send_button_designed_by_Google_from_Flaticon.com_&#x43A;&#x43E;&#x43F;&#x438;&#x44F;" data-name="Send button designed by Google from Flaticon.com &#x43A;&#x43E;&#x43F;&#x438;&#x44F;" class="cls-1" d="M1307 3932l14-6-14-6v4.67l10 1.33-10 1.33v4.67z" transform="translate(-1298 -3911)"/>
-=======
-    <path d="M9.766.157v2.946H8.014c-.64 0-1.07.134-1.295.402-.224.268-.336.67-.336 1.205v2.11h3.27l-.435 3.303H6.383v8.47H2.97v-8.47H.122V6.82H2.97V4.387c0-1.384.386-2.457 1.16-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.94.045 2.544.134z" fill-rule="evenodd"/>
->>>>>>> 7ef97b134692116d792486b4962fb0cee0317d4b
+    <path id="Send_button_designed_by_Google_from_Flaticon.com_&#x43A;&#x43E;&#x43F;&#x438;&#x44F;" data-name="Send button designed by Google from Flaticon.com &#x43A;&#x43E;&#x43F;&#x438;&#x44F;" class="cls-1" d="M9 21l14-6L9 9v4.67L19 15 9 16.33V21z"/>
 </symbol></svg>
