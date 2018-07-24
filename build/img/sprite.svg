@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><defs>
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
         <style>
             .cls-1 { fill-rule: evenodd; filter: url(#filter); }
         </style>
@@ -32,6 +32,8 @@
         facebook
     </title>
     <path d="M9.766.157v2.946H8.014c-.64 0-1.07.134-1.295.402-.224.268-.336.67-.336 1.205v2.11h3.27l-.435 3.303H6.383v8.47H2.97v-8.47H.122V6.82H2.97V4.387c0-1.384.386-2.457 1.16-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.94.045 2.544.134z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-house" viewBox="0 0 17 17">
+    <image width="17" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAsVBMVEV0aV7///90aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV4AAABiYxTcAAAAOXRSTlMAADSfPEP9U1RwZot5p4zDDNskuvvh5t2OBAbH/kjZ6aWoodBM1rdiUr5yv3TYwXbzglptuFwwtBkwhJWLAAAAAWJLR0Q6TgnE+gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IHGBE7My5T9CAAAACNSURBVBjTVczXFoJADATQIIpYsGNFEHuva8n//5iTs64s8zKT+xAinYJb1MP5QcljLtvis6SSSZV1akbqbBJoaXCWZgvisp12h7qcT4/Cfmjd3mBIo/HEkmgqn2OsZJbOF0JLkRXGGr0R2RrZofc5OaCPfzlhnNEXEV/kihGjbyJ3kYdS6ol+vZVKP84XGN0kJ6ChOMQAAAAASUVORK5CYII="/>
 </symbol><symbol id="icon-send-button" viewBox="0 0 33 31">
     
     <path id="Send_button_designed_by_Google_from_Flaticon.com_&#x43A;&#x43E;&#x43F;&#x438;&#x44F;" data-name="Send button designed by Google from Flaticon.com &#x43A;&#x43E;&#x43F;&#x438;&#x44F;" class="cls-1" d="M9 21l14-6L9 9v4.67L19 15 9 16.33V21z"/>

@@ -3,3 +3,5 @@ ProjectTitle: ritual
 PageList:
 - file: page.html
   ready: 50
+- file: 24_blogs.html
+  ready: 50  
