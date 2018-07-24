@@ -4010,7 +4010,7 @@ aside .cbox label:before {
 }
 
 .page_head {
-	background-color: #f4f4f4;
+	/* background-color: #f4f4f4; */
 	padding: 20px 0;
 }
 
@@ -4034,7 +4034,7 @@ aside .cbox label:before {
 	position: absolute;
 	font-size: 8px;
 	top: 4px;
-	left: 46px;
+	right: -19px;
 }
 
 .page_head ul li a {

@@ -14,6 +14,7 @@ body
 	font-family: $cormorant_infant
 	color: $brown
 	+sm
+		line-height: 1
 		font-size: 25px
 	&_mod
 		font-weight: 600
@@ -55,6 +56,21 @@ body
 	+sm
 		padding: 10px 20px
 
+.btn-prymery-hover
+	position: relative
+	padding: 11px 25px
+	background-color: $gray_brown
+	border-radius: 5px
+	font-size: 14px
+	font-weight: 400
+	font-family: $tahoma
+	color: $brown
+	&:hover
+		background-color: $hover_btn
+		color: $white
+	+sm
+		padding: 10px 20px
+
 .line
 	height: 1px
 	width: 100%
@@ -66,3 +82,14 @@ body
 .mob-hide
 	+sm
 		display: none !important
+
+.page_head
+	border-bottom: 1px solid rgba(#f1ede8,.5)
+
+.hidein
+	+sm
+		display: none
+
+.show
+	+sm
+		display: block		
