@@ -3,16 +3,32 @@
     background-position: 50% 100%
     background-repeat: no-repeat
     overflow: hidden
+    +sm
+        padding: 13px 0 30%
+        background-size: contain
     .section-head
         max-width: 1050px
         margin: 0 auto
         .title-l
             margin-bottom: 23px
+            +sm
+                span
+                    display: block
         p
             margin-bottom: 9px
+            +sm
+                display: none
+
+// .step1
+//     +sm
+//         background-size: 130%
 
 .step3
     padding-bottom: 665px
+    +sm
+        // background-size: 118%
+        padding-bottom: 54%
+        // background-position-x: 93%
     .section-head
         .title-l
             margin-bottom: 37px
@@ -22,23 +38,37 @@
 .all-alone
     padding-bottom: 628px
     background-size: cover
+    +sm
+        padding-bottom: 50%
+        background-size: cover
     .section-head
         .title-l
             margin-bottom: 11px
+            +sm
+                margin-bottom: 17px
         .description
                 display: block
                 font-size: 15px
                 font-family: $tahoma
                 font-weight: normal
                 margin-bottom: 45px
+                +sm
+                    display: none
 
 .after-funeral
     background-size: contain
     padding: 111px 0 518px
+    +sm
+        padding: 19px 0 39%
+        background-size: contain
+        // background-position-x: 42%
     .section-head
         position: relative
         max-width: 570px
         z-index: 3
+        +sm
+            .title-l
+                margin-bottom: 26px
         p
             margin-bottom: 16px
     &__img
@@ -46,3 +76,5 @@
         top: -77px
         right: -388px
         z-index: -1
+        +sm
+            display: none
