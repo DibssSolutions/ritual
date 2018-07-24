@@ -1,18 +1,51 @@
 .footer
-	font-family: $tahoma
+	background-color: #e6ddd0
+	overflow: hidden
+	+sm
+		font-size: 14px
 	&__top
 		padding: 24px 0 25px
-		background-color: #e6ddd0
+		+sm
+			padding: 8px 0 10px
 	&__bottom
-		padding: 8px 0
 		text-align: center
 		font-size: 14px
 		font-weight: 400
 		color: $white 
+		font-weight: 300 
 		background-color: #65594d
+		+font-smoothing
+		+sm
+			text-align: left
+			color: #65594d 
+			background-color: transparent 
+	&__wrapper
+		padding: 8px 0
+		+sm
+			border-top: 1px solid #71655a 
+	&__container
+		position: relative
+		@media (min-width: 768px)
+			width: 100%
+	&__bg
+		position: absolute
+		bottom: -25px
+		left: 0
+		width: 223px
+		height: 249px
+		background: url("../img/footer-bg.png") 
+		background-size: contain
+		background-repeat: no-repeat
+		+md
+			top: 0
+			left: 50%
+			width: 168px
+			margin-left: -84px
 	.title-sm
 		margin: 12px 0 18px
 		color: #65594d
+		+md
+			margin-top: 30px
 
 .item
 	position: relative
@@ -53,20 +86,34 @@
 .footer-logo
 	max-width: 202px
 	display: block
+	+sm
+		margin: 0 auto
 	img
 		max-width: 100%
 		display: block
 
 .footer-list
 	margin-top: 22px
+	font-size: 0
+	+sm
+		margin-top: 15px
 	&__item
 		display: block
+		+sm
+			width: 50%
+			vertical-align: top
+			display: inline-block
 		&:not(:first-child)
 			margin-top: 8px
+			+sm
+				margin-top: 0
 	&__link
 		color: #857e76
+		font-size: 15px
 		font-weight: 400
 		transition: font-weight .3s
+		+sm
+			font-size: 14px
 		&:hover
 			font-weight: 700 
 
@@ -74,3 +121,6 @@
 	font-size: 14px
 	font-weight: 400
 	color: #c8bdad
+	+sm
+		color: #65594d 
+		display: block
