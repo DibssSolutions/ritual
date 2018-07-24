@@ -1,0 +1,77 @@
+.footer
+	font-family: $tahoma
+	&__top
+		padding: 24px 0 25px
+		background-color: #e6ddd0
+	&__bottom
+		padding: 8px 0
+		text-align: center
+		font-size: 14px
+		font-weight: 400
+		color: $white 
+		background-color: #65594d
+	.title-sm
+		margin: 12px 0 18px
+		color: #65594d
+
+.item
+	position: relative
+	+clr
+	&:not(:first-child)
+		margin-top: 10px
+	&__img
+		float: left
+		margin-right: 29px
+		width: 71px
+		height: 71px
+		border-radius: 50%
+		background-size: cover
+		background-position: 50% 50%
+	&__wrap
+		font-size: 15px
+	&__name,
+	&__title
+		color: #65594d
+		font-size: 15px
+		font-family: $tahoma
+		display: inline
+		border-bottom: 1px solid transparent 
+		&:hover
+			border-color: currentColor 
+	&__name
+		font-weight: 700
+	&__label
+		color: #a29a91
+		&:not(:first-child)
+			margin-top: 5px
+	&__date
+		color: #65594d
+	&__title
+		color: #65594d
+		font-size: 15px
+		font-weight: 400
+.footer-logo
+	max-width: 202px
+	display: block
+	img
+		max-width: 100%
+		display: block
+
+.footer-list
+	margin-top: 22px
+	&__item
+		display: block
+		&:not(:first-child)
+			margin-top: 8px
+	&__link
+		position: relative
+		color: #857e76
+		font-weight: 400
+		transition: transform .3s
+		&:hover
+			transform: scale(1.2)
+
+.copy
+	font-size: 14px
+	font-weight: 400
+	color: #c8bdad
