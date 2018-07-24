@@ -12,7 +12,9 @@ body
 	font-size: 45px
 	line-height: 1.2
 	font-family: $cormorant_infant
-	color: $brown	
+	color: $brown
+	+sm
+		font-size: 25px
 	&_mod
 		font-weight: 600
 		font-size: 45px
@@ -60,3 +62,7 @@ body
 	margin-bottom: 20px
 	+sm
 		background-color: rgba(#d9c8ab,.2)
+
+.mob-hide
+	+sm
+		display: none !important
