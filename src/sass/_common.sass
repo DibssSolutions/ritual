@@ -1,6 +1,5 @@
 body
 	background: #FFF
-	+css-lock(16, 50, 600, 1000)
 	line-height: 1.4
 
 .title-l
@@ -9,8 +8,6 @@ body
 	line-height: 1.2
 	font-family: $cormorant_infant
 	color: $brown
-	+sm
-		font-size: 25px
 	&_mod
 		font-weight: 600
 		font-size: 45px
@@ -25,6 +22,10 @@ body
 	font-family: $cormorant_infant
 	color: $brown
 
+.title-sm
+	font-family: $cormorant_infant
+	+f(20px, 700, 1.2)
+	text-transform: uppercase
 
 
 .btn
