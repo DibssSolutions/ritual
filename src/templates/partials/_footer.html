@@ -35,12 +35,12 @@
 							date: 'Вт. 03-12-2018'
 						}
 					] %}
-						<div class="item">
-							<div class="item__img" style="background-image: url(./img/{{ item.img }});"></div>
-							<div class="item__wrap">
-								<a href="#" class="item__name">{{ item.name }}</a>
-								<div class="item__label">{{ item.label }}</div>
-								<div class="item__date">{{ item.date }}</div>
+						<div class="block">
+							<div class="block__img" style="background-image: url(./img/{{ item.img }});"></div>
+							<div class="block__wrap">
+								<a href="#" class="block__name">{{ item.name }}</a>
+								<div class="block__label">{{ item.label }}</div>
+								<div class="block__date">{{ item.date }}</div>
 							</div>
 						</div>
 					{% endfor %}
@@ -64,11 +64,11 @@
 							label: 'Имя Фамилия'
 						}
 					] %}
-						<div class="item">
-							<div class="item__img" style="background-image: url(./img/{{ item.img }});"></div>
-							<div class="item__wrap">
-								<a href="#" class="item__title">{{ item.title }}</a>
-								<div class="item__label">{{ item.label }}</div>
+						<div class="block">
+							<div class="block__img" style="background-image: url(./img/{{ item.img }});"></div>
+							<div class="block__wrap">
+								<a href="#" class="block__title">{{ item.title }}</a>
+								<div class="block__label">{{ item.label }}</div>
 							</div>
 						</div>
 					{% endfor %}
@@ -92,11 +92,11 @@
 							label: 'Категория'
 						}
 					] %}
-						<div class="item">
-							<div class="item__img" style="background-image: url(./img/{{ item.img }});"></div>
-							<div class="item__wrap">
-								<a href="#" class="item__title">{{ item.title }}</a>
-								<div class="item__label">{{ item.label }}</div>
+						<div class="block">
+							<div class="block__img" style="background-image: url(./img/{{ item.img }});"></div>
+							<div class="block__wrap">
+								<a href="#" class="block__title">{{ item.title }}</a>
+								<div class="block__label">{{ item.label }}</div>
 							</div>
 						</div>
 					{% endfor %}
@@ -109,6 +109,23 @@
 			<div class="footer__wrapper">
 				<span class="copy">Copyright &copy; 2018.</span> Портал ритуальных услуг «Доверие». Хабаровск
 			</div>
+			
+		</div>
+	</div>
+	<div class="footer__up">
+		<div class="footer__container container">
+			<button class="btn-up js-btn-up" type="button">
+				<svg width="59" height="59" viewBox="0 0 59 59" xmlns="http://www.w3.org/2000/svg">
+				    <title>up</title>
+				    <g stroke="#E6DDD0" fill="none" fill-rule="evenodd">
+				        <path d="M1.5 29.13c0 15.26 12.37 27.63 27.63 27.63s27.63-12.37 27.63-27.63S44.39 1.5 29.13 1.5 1.5 13.87 1.5 29.13z" stroke-width="3" fill="#65594D" fill-rule="nonzero" opacity=".75"/>
+				        <g stroke-linecap="round" stroke-width="4">
+				            <path d="M18.5 32.5l11-10"/>
+				            <path d="M29.5 22.5l11 11"/>
+				        </g>
+				    </g>
+				</svg>
+			</button>
 		</div>
 	</div>
 </footer>
