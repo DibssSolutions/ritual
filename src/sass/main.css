@@ -126,7 +126,7 @@ ul, li, ol {
 }
 
 h1 h2, h3, h4, h5, h6 {
-	font-family: 'Crimson Text', serif;
+	font-family: 'CormorantInfant', 'Open Sans', sans-serif;
 	color: #65594d;
 }
 
@@ -4010,7 +4010,7 @@ aside .cbox label:before {
 }
 
 .page_head {
-	background-color: #f4f4f4;
+	/* background-color: #f4f4f4; */
 	padding: 20px 0;
 }
 
@@ -4034,7 +4034,7 @@ aside .cbox label:before {
 	position: absolute;
 	font-size: 8px;
 	top: 4px;
-	left: 46px;
+	right: -19px;
 }
 
 .page_head ul li a {

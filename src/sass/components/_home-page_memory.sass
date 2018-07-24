@@ -1,14 +1,22 @@
 .home-content
 	padding: 100px 0 70px
 	color: $brown
-	+md
-		padding: 50px 0 35px
+	+sm
+		padding: 15px 0 30px
+		background-color: $white
 	article .post-meta
 		font-family: $tahoma
 		color: $brown
 		span
 			font-size: 15px
 			color: $brown
+			+sm
+				font-size: 14px
+
+.article_mod
+	margin-bottom: 30px
+	+sm
+		margin-bottom: 0
 
 .icon-calendar
 	fill: $brown
@@ -17,8 +25,20 @@
 .blog-content article .post-meta .dis-block
 	display: block
 
+.home-content .section-head
+	margin-bottom: 50px
+	+sm
+		margin-bottom: 20px
+
+.home-content .section-head h3
+	margin-bottom: 30px
+	+sm
+		margin-bottom: 0
+
 .section-head p
 	font-family: $tahoma
+	+sm
+		display: none
 
 .post-meta .bold
 	font-weight: 700
