@@ -19,6 +19,7 @@
         display: flex
         justify-content: flex-end
         +sm
+            margin-bottom: 20px
             width: 100%
             
         &:nth-child(even)
@@ -36,6 +37,9 @@
                 margin-left: 0
                 margin-right: 20px
                 +sm
+        &:last-child
+            .key-item__img:before
+                display: none
         &__body
             padding-top: 12px
             // float: left
@@ -54,13 +58,18 @@
             margin-bottom: 20px
             font-family: $tahoma
             +sm
+                margin-bottom: 10px
                 font-size: 16px
         &__text
             line-height: 1.6
             margin-bottom: 25px
             +sm
+                margin-bottom: 15px
+                font-size: 14px
                 line-height: 1.2
+                letter-spacing: -0.02em 
         &__img
+            position: relative
             // position: absolute
             // top: 0
             // left: 50%
@@ -73,5 +82,17 @@
             margin-left: 20px
             flex-shrink: 0
             +sm
+                margin-left: 12px
                 width: 112px
                 height: 112px
+            &:before
+                position: absolute
+                content: ""
+                top: 100%
+                left: 50%
+                margin-left: -1px
+                width: 2px
+                height: 145px 
+                background-color: #7D7369 
+                +sm
+                    display: none
