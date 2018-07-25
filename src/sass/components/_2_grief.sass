@@ -1,0 +1,229 @@
+.page-head
+    padding: 20px 0 13px
+    border-bottom: 1px solid rgba(#f1ede8,.5)
+    a
+        color: $brown_orange
+        &:hover
+            color: #cecece
+    &__container
+        padding: 0
+        +clr
+    &__bcrumbs
+        float: left
+        li
+            position: relative
+            float: left
+            &:not(:last-child)
+                margin-right: 34px
+                &:after
+                    font-family: Flaticon
+                    content: "\f101"
+                    // color: #cecece
+                    position: absolute
+                    font-size: 8px
+                    top: 5px
+                    right: -20px
+
+.grief
+    padding-top: 25px
+    &__container
+    &__head
+    &__title
+        margin-bottom: 11px
+    &__description
+    &__body
+        display: flex
+        justify-content: space-between
+    &__text
+        padding: 24px 50px 0 0
+        width: 40%
+        line-height: 1.6
+        p
+            &:not(:last-child)
+                margin-bottom: 24px
+        &_reverse
+            padding: 24px 0 0 50px
+            p:last-child
+                margin-bottom: 50px
+    &__img
+        // width: 65%
+        align-self: flex-end
+        img
+            display: block
+            width: 100%
+    &__footer
+        margin: 50px 0
+
+
+.bg-high
+    background-size: cover
+    background-position: 50% 50%
+    background-repeat: no-repeat
+
+.cemetery-selection
+    padding: 54px 0 0 0
+    background-size: auto
+    background-position: 50% 0
+    background-color: #fff
+    background-repeat: no-repeat
+    color: $white_brown_bg
+    &__container
+    &__head
+        margin-bottom: 17px
+    &__title
+        margin: 0 auto 18px
+        max-width: 430px
+        line-height: 0.9
+        color: $white_brown_bg
+    &__description
+        line-height: 0.9
+    &__body
+        margin-bottom: 40px
+    &__text
+        max-width: 880px
+        margin: 0 auto
+        margin-bottom: 54px
+        line-height: 1.6
+    &__map
+        width: 85%
+        height: 400px
+        margin: 0 auto
+        background-color: #fff
+
+.full-services
+    padding-top: 54px
+    background-size: contain
+    background-position: 50% 0
+    background-color: #fff
+    background-repeat: no-repeat
+    &__container
+    &__head
+        margin-bottom: 17px
+    &__title
+        margin: 0 auto 18px
+        max-width: 430px
+        line-height: 0.9
+    &__description
+        line-height: 0.9
+    &__body
+        margin-bottom: -20px
+    &__text
+        margin-bottom: 54px
+    &__img
+        padding-bottom: 25px
+        background-color: $white_brown_bg
+        +sm
+            display: none
+        img
+            position: relative
+            display: block
+            width: 100%
+            z-index: 3
+
+
+.narrow-paragraph
+    max-width: 880px
+    margin: 0 auto
+    line-height: 1.6
+
+.find-church
+    padding: 73px 0 48px
+    &__container
+    &__body
+        display: flex
+        justify-content: space-between
+    &__title
+        width: 17%
+        line-height: 1.1
+    &__img
+        position: absolute
+        // top: -250px
+        bottom: -23px
+        right: 38%
+        img
+            display: block
+            width: 100%
+    &__text
+        position: relative
+        // width: 85%
+        padding: 16px 0 0 54.5%
+
+.text-plus-button
+    p
+        max-width: 370px
+        line-height: 1.6
+        margin-bottom: 64px
+
+.find-hall
+    padding: 56px 0 206px
+    background-size: cover
+    background-position: 70% 50%
+    background-repeat: no-repeat
+    &__container
+    &__body
+        // columns: 2
+        // column-gap: 30px
+        width: 67.5%
+        display: flex
+    &__title
+        max-width: 400px
+        line-height: 0.9
+        margin-bottom: 68px
+    &__text
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &:not(:last-child)
+            margin-right: 30px
+        a
+            align-self: flex-start
+
+.one-place
+    padding: 28px 0 0
+    background-color: $white_brown_bg
+    &__container
+    &__head
+        margin-bottom: 24px
+    &__body
+        margin-bottom: 55px
+    &__title
+        margin-bottom: 11px
+    &__text
+        margin-bottom: 22px
+    &__img
+        margin: 0 auto
+        width: 55%
+        box-shadow: 0 3px 7px 0 rgba(0,0,0,.35)
+        img
+            display: block
+            width: 100%
+
+.companies
+    &__container
+    &__title
+
+
+.select-primary
+    position: relative
+    display: inline-block
+    vertical-align: top
+    &:before
+        position: absolute
+        content: ''
+        top: 50%
+        right: 20px
+        transform: translateY(-50%)
+        +arr(10, 5, #000,b)
+    select
+        // background: url(../img/grief/icons8-sort-down-filled-100.png) no-repeat 95% #f5f1ec
+        background-color: #f5f1ec
+        background-size: 15px
+        border: none
+        font-size: 16px
+        padding: 10px 40px 10px 20px
+        border-radius: 5px
+        width: 357px
+        appearance: none
+        cursor: pointer
+
+
