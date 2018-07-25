@@ -1,0 +1,12 @@
+<svg width="59" height="59" viewBox="0 0 59 59" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        up
+    </title>
+    <g stroke="#E6DDD0" fill="none" fill-rule="evenodd">
+        <path d="M1.5 29.13c0 15.26 12.37 27.63 27.63 27.63s27.63-12.37 27.63-27.63S44.39 1.5 29.13 1.5 1.5 13.87 1.5 29.13z" stroke-width="3" fill="#65594D" fill-rule="nonzero" opacity=".75"/>
+        <g stroke-linecap="round" stroke-width="4">
+            <path d="M18.5 32.5l11-10"/>
+            <path d="M29.5 22.5l11 11"/>
+        </g>
+    </g>
+</svg>

@@ -2,10 +2,10 @@
 	color: $brown_orange
 
 .blog-content .container
-	padding-top: 35px
-	+sm
-		padding-top: 15px
-		padding-bottom: 15px
+	// padding-top: 35px ----------- !!!!!!!! ТАК ДЕЛАТЬ НЕЛЬЗЯ !!!!!!!!!! -------------
+	// +sm
+	// 	padding-top: 15px ----------- !!!!!!!! ТАК ДЕЛАТЬ НЕЛЬЗЯ !!!!!!!!!! -------------
+	// 	padding-bottom: 15px ----------- !!!!!!!! ТАК ДЕЛАТЬ НЕЛЬЗЯ !!!!!!!!!! -------------
 
 .bcrumbs
 	font-family: $tahoma
@@ -72,10 +72,10 @@
 		display: none	
 
 .blog-content article .post-meta span
-	margin-right: 50px
+	// margin-right: 50px -------- !!!!!!! перебиваешь стили на главной и нельзя делать такую большую вложеность ---------
 	+sm
-		font-size: 14px
-		margin-right: 24px
+		// font-size: 14px -------- !!!!!!! перебиваешь стили на главной и нельзя делать такую большую вложеность ---------
+		// margin-right: 24px -------- !!!!!!! перебиваешь стили на главной и нельзя делать такую большую вложеность ---------
 
 .position
 	position: relative
