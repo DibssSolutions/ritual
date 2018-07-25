@@ -4,4 +4,10 @@ PageList:
 - file: page.html
   ready: 50
 - file: 24_blogs.html
-  ready: 50  
+  ready: 50
+- file: 2_grief.html
+  ready: 50
+- file: 25_post.html
+  ready: 50   
+- file: 25_post.html
+  ready: 50   

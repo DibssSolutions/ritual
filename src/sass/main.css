@@ -603,11 +603,11 @@ footer .footer-bottom i {
 }
 
 .single-content .single-info .page-nav ul li a:hover {
-	border-bottom: 2px solid #e6ddd0;
+	border-bottom: 2px solid #62594f;
 }
 
 .single-content .single-info .page-nav ul li.active a {
-	border-bottom: 2px solid #e6ddd0;
+	border-bottom: 2px solid #62594f;
 }
 
 .single-content .single-info .details p {
@@ -2495,11 +2495,11 @@ footer .footer-quote .slick-dots li.slick-active button {
 }
 
 .blog-content .page-nav ul li a:hover {
-	border-bottom: 2px solid #e6ddd0;
+	border-bottom: 2px solid #62594f;
 }
 
 .blog-content .page-nav ul li.active a {
-	border-bottom: 2px solid #e6ddd0;
+	border-bottom: 2px solid #62594f;
 }
 
 .sidebar .side-widget h5 {
@@ -5428,7 +5428,7 @@ header .navbar-default .cart-table ul {
 
 .header3 .navbar-default .navbar-nav > li.active > a,
 .header3 .navbar-default .navbar-nav > li > a:hover {
-	border-bottom: 2px solid #e6ddd0;
+	border-bottom: 2px solid #62594f;
 }
 
 .header3 .navbar-default .navbar-nav > li > a::after {

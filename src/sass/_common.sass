@@ -34,7 +34,19 @@ body
 	font-family: $cormorant_infant
 	color: $brown
 	+sm
+		line-height: 1
 		font-size: 20px!important
+
+.title-s
+	font-weight: 700
+	font-size: 24px
+	line-height: 1
+	font-family: $cormorant_infant
+	color: $brown
+	+sm
+		font-family: $tahoma
+		font-size: 16px!important
+
 
 .title-sm
 	font-family: $cormorant_infant
@@ -42,32 +54,15 @@ body
 	text-transform: uppercase
 
 .btn
+	position: relative
+	padding: 11px 25px
+	background-color: $gray_brown
+	border-radius: 5px
+	font-size: 14px
+	font-weight: 400
+	font-family: $tahoma
+	color: $brown
 	transition: color .4s, background-color .4s, border-color .4s, box-shadow .4s
-
-
-.btn_wide
-
-.btn-prymery-mod
-	position: relative
-	padding: 11px 25px
-	background-color: $gray_brown
-	border-radius: 5px
-	font-size: 14px
-	font-weight: 400
-	font-family: $tahoma
-	color: $brown
-	+sm
-		padding: 8px 20px
-
-.btn-prymery-hover
-	position: relative
-	padding: 11px 25px
-	background-color: $gray_brown
-	border-radius: 5px
-	font-size: 14px
-	font-weight: 400
-	font-family: $tahoma
-	color: $brown
 	&:hover
 		background-color: $hover_btn
 		color: $white
@@ -105,3 +100,38 @@ body
 	display: none
 	+sm
 		display: block
+
+.bcrumbs
+	font-family: $tahoma
+	font-weight: 400
+	font-size: 14px
+	color: $brown
+
+.side-form .input-checkbox
+	margin-bottom: 0
+
+.side-form .cbox label:after
+	top: 3px
+	width: 14px
+	height: 14px
+	background-color: $silver
+	z-index: 1
+
+.side-form .cbox label:before
+	top: 5px
+	left: -14px
+	width: 10px
+	height: 10px
+	content: ''
+	border: 1px solid #ccc
+	z-index: 2
+	background-image: repeating-linear-gradient(to bottom right,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
+	background-image: -ms-repeating-linear-gradient(top left,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
+
+.padding-aside
+	padding-top: 22px
+
+.banner
+	width: 100%
+	img
+		max-width: 100%
