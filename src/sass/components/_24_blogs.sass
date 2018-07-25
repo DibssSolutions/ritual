@@ -1,37 +1,26 @@
-.blog-content
+.blog-content_wrap
 	color: $brown_orange
-
-.blog-content .container
-	// padding-top: 35px ----------- !!!!!!!! ТАК ДЕЛАТЬ НЕЛЬЗЯ !!!!!!!!!! -------------
-	// +sm
-	// 	padding-top: 15px ----------- !!!!!!!! ТАК ДЕЛАТЬ НЕЛЬЗЯ !!!!!!!!!! -------------
-	// 	padding-bottom: 15px ----------- !!!!!!!! ТАК ДЕЛАТЬ НЕЛЬЗЯ !!!!!!!!!! -------------
-
-.bcrumbs
-	font-family: $tahoma
-	font-weight: 400
-	font-size: 14px
-	color: $brown_orange
+	padding-top: 35px
+	+sm
+		padding-top: 15px
+		padding-bottom: 15px
 
 .icon-house
 	fill: $brown
 
-.section-head
-	margin-bottom: 35px
+.blog-content_wrap .section-head
+	margin-bottom: 55px
 	+sm
 		margin-bottom: 15px
 
-.side-widget
+.blog-content_wrap .side-widget
 	margin-bottom: 35px
 	+sm
 		margin-bottom: 0
-		padding-bottom: 15px
+		padding-bottom: 22px
 
-.btn-prymery-hover_pos
-	display: flex
-	justify-content: center
-	padding: 8px 10px !important
-	margin: 15px 0 0
+.blog-content_wrap .side-cat
+	color: $brown_orange
 
 .bg-color
 	+sm
@@ -43,10 +32,7 @@
 	+sm
 		display: none
 	img
-		max-width: 100%	
-
-.sidebar .side-widget .side-cat li
-	margin-bottom: 20px	
+		max-width: 100%
 
 .posts-image
 	position: absolute
@@ -65,52 +51,106 @@
 	font-size: 0
 	img
 		position: relative
-		margin-top: -75px
-		margin-right: 70px
+		margin-top: -45px
 		max-width: 100%
+		z-index: -1
 	+sm
 		display: none	
 
-.blog-content article .post-meta span
-	// margin-right: 50px -------- !!!!!!! перебиваешь стили на главной и нельзя делать такую большую вложеность ---------
-	+sm
-		// font-size: 14px -------- !!!!!!! перебиваешь стили на главной и нельзя делать такую большую вложеность ---------
-		// margin-right: 24px -------- !!!!!!! перебиваешь стили на главной и нельзя делать такую большую вложеность ---------
+.blog-content_wrap .post-meta span
+	color: #9e9990
+	&:not(:last-child)
+		margin-right: 50px
+		+sm
+			font-size: 13px
+			margin-right: 15px
 
-.position
+.blog-content_wrap article .post-meta span i
+	font-size: 13px
+	color: #9e9990
+	margin-right: 4px
+
+.aside-position
 	position: relative
-	margin-top: -55px
+	margin-top: -65px
+	+md
+		margin-top: -40px
 	+sm
 		margin-top: 0
 		padding-top: 10px
+		margin-bottom: 20px
 
 .post-thumb
 	margin-bottom: 14px
 
-.sidebar .side-widget .search input
+.color input
 	color: $brown
 
 .search .fa-search
 	color: $brown
 
-.sidebar .side-widget .search
+.sidebar .side-widget .color
 	background-color: $gray_brown
 	+sm
 		background-color: $white
 		border: 1px solid rgba(#cec1b2,1)
 		border-radius: 3px
 
-.sidebar .side-widget h5
-	margin-bottom: 10px		
-
-.search input::-webkit-input-placeholder
+.color input:-ms-input-placeholder 
 	color: $brown
 
-.search input:-moz-placeholder 
-	color: $brown
+.side-btn
+	.btn
+		min-width: 100px
+		margin: 0 auto
 
-.search input::-moz-placeholder 
-	color: $brown
+.blog-content_wrap .side-widget h5
+	margin-bottom: 40px
+	padding-bottom: 0
+	+sm
+		margin-bottom: 16px
 
-.search input:-ms-input-placeholder 
-	color: $brown
+.artical-btn
+	margin-bottom: 30px
+	+sm
+		margin-bottom: 15px
+
+.blog-content_wrap .row article
+	margin-bottom: 25px
+	border-bottom: 1px solid $silver
+	+sm
+		margin-bottom: 15px
+
+.blog-content_wrap .side-form .side-cat li
+	margin-bottom: 20px
+	+sm
+		padding-left: 0
+
+.side-form button
+	display: none
+	+sm
+		display: block
+
+.side-form .side-cat
+	margin-bottom: 25px	
+
+.side-form i
+	+sm
+		display: none
+
+.blog-content_wrap article h4
+	margin-top: 0
+
+.blog-content_wrap article h4 a
+	color: #61594e
+
+.blog-content_wrap article h4 a:hover
+	color: #61594e
+
+.blog-content_wrap article p
+	font-family: $tahoma
+	color: $brown_orange
+	font-size: 15px
+
+.blog-content_wrap .side-widget .search input
+	color: #62594f

@@ -130,7 +130,7 @@
 		transition: font-weight .3s
 		+sm
 			font-size: 14px
-			list-style-position: -0.05em 
+			letter-spacing: -0.05em 
 		&:hover
 			font-weight: 700 
 
@@ -146,4 +146,10 @@
 	margin-right: -30px
 	font-size: 0
 	pointer-events: initial
+	opacity: 0
+	visibility: hidden
+	transition: opacity .4s, visibility .4s
 	background-color: transparent 
+	&.is-show
+		visibility: visible
+		opacity: 1
