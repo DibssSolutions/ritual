@@ -126,7 +126,7 @@ ul, li, ol {
 }
 
 h1 h2, h3, h4, h5, h6 {
-	font-family: 'Crimson Text', serif;
+	font-family: 'CormorantInfant', 'Open Sans', sans-serif;
 	color: #65594d;
 }
 
@@ -771,7 +771,7 @@ footer .footer-bottom i {
 	width: 100%;
 	margin-bottom: 10px;
 	font-size: 18px;
-	font-family: Crimson Text, serif;
+	font-family: 'Crimson Text', serif;
 	color: #65594d;
 	position: relative;
 }
@@ -1234,7 +1234,7 @@ footer .footer-bottom i {
 	width: 100%;
 	margin-bottom: 10px;
 	font-size: 18px;
-	font-family: Crimson Text, serif;
+	font-family: 'Crimson Text', serif;
 	color: #65594d;
 	position: relative;
 }
@@ -1289,7 +1289,7 @@ footer .footer-bottom i {
 	background: #e6ddd0;
 	display: inline-block;
 	border-radius: 50%;
-	font-style: 13px;
+	font-size: 13px;
 }
 
 .facilities .team-info .social a:hover {
@@ -2153,7 +2153,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 
 .accordion.accordion2 .accordion-toggle {
 	display: table;
-	font-family: Crimson Text;
+	font-family: 'Crimson Text';
 	font-weight: 400;
 	color: #65594d;
 	border: none;
@@ -2358,7 +2358,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 }
 
 .newsletter-wrap h2 {
-	font-family: Crimson Text, sans-serif;
+	font-family: 'Crimson Text', sans-serif;
 	color: #fff;
 	font-size: 50px;
 }
@@ -2853,7 +2853,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 	border-bottom: 1px solid #e6e6e6;
 	position: relative;
 	z-index: 44;
-	font-family: Crimson Text, sans-serif;
+	font-family: 'Crimson Text', sans-serif;
 	margin-bottom: 40px;
 	padding-bottom: 15px;
 }
@@ -2884,7 +2884,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 	border-bottom: 1px solid #e6e6e6;
 	position: relative;
 	z-index: 44;
-	font-family: Crimson Text, sans-serif;
+	font-family: 'Crimson Text', sans-serif;
 	margin-bottom: 40px;
 	padding-bottom: 15px;
 }
@@ -2913,7 +2913,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 	border-bottom: 1px solid #e6e6e6;
 	position: relative;
 	z-index: 44;
-	font-family: Crimson Text, sans-serif;
+	font-family: 'Crimson Text', sans-serif;
 	margin-bottom: 40px;
 	padding-bottom: 15px;
 }
@@ -2951,7 +2951,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 	border-bottom: 1px solid #e6e6e6;
 	position: relative;
 	z-index: 44;
-	font-family: Crimson Text, sans-serif;
+	font-family: 'Crimson Text', sans-serif;
 	margin-bottom: 30px;
 	padding-bottom: 15px;
 }
@@ -3145,7 +3145,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 	height: 70px;
 	background: #fff;
 	line-height: 70px;
-	font-family: Crimson Text, sans-serif;
+	font-family: 'Crimson Text', sans-serif;
 	font-size: 24px;
 	color: #65594d;
 	margin: 47px 0 30px;
@@ -3202,7 +3202,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 .checkout-content .cart-info .cart-details .cart-title {
 	font-size: 24px;
 	color: #65594d;
-	font-family: Crimson Text, sans-serif;
+	font-family: 'Crimson Text', sans-serif;
 	margin-bottom: 25px;
 }
 
@@ -3265,7 +3265,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 	position: relative;
 	font-size: 20px;
 	color: #65594d;
-	font-family: Crimson Text, sans-serif;
+	font-family: 'Crimson Text', sans-serif;
 }
 
 .side-head i {
@@ -3285,7 +3285,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 	border-bottom: 2px solid #f0f0f0;
 	position: relative;
 	z-index: 44;
-	font-family: Crimson Text, sans-serif;
+	font-family: 'Crimson Text', sans-serif;
 	margin-bottom: 30px;
 	padding-bottom: 15px;
 }
@@ -3816,7 +3816,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 }
 
 .header2 .cart-header > span + em {
-	font-family: Crimson Text;
+	font-family: 'Crimson Text';
 	color: #65594d;
 	font-size: 30px;
 	line-height: 55px;
@@ -4261,7 +4261,7 @@ aside .cbox label:before {
 .dropdown-sp li p a {
 	color: #65594d;
 	font-size: 18px;
-	font-family: Crimson Text;
+	font-family: 'Crimson Text';
 }
 
 .dropdown-sp li p a:hover {

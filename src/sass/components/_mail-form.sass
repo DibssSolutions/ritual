@@ -3,11 +3,12 @@
 	+sm
 		padding: 15px 0 30px
 	p
-		font-family: $tahoma
-		font-weight: 400
+		font-family: $tahoma 
+		font-weight: 400 
 		+sm
-			margin: 15px 0 20px
+			margin: 15px -10px 20px
 			font-weight: 600
+			font-size: 14px
 			font-family: $cormorant_infant
 .bg-image
 	width: 100%
@@ -26,23 +27,18 @@
 	+sm
 		font-size: 14px
 	
-.newsletter-wrap .subscribe input::-webkit-input-placeholder
+.newsletter-wrap .subscribe input::placeholder
 	color: $white
-
-.newsletter-wrap .subscribe input:-moz-placeholder 
-	color: $white
-
-.newsletter-wrap .subscribe input::-moz-placeholder 
-	color: $white
-
-.newsletter-wrap .subscribe input:-ms-input-placeholder 
-	color: $white
-
+	font-family: $tahoma 
 .newsletter-wrap .subscribe input
 	border: 1px solid rgba(255, 255, 255, .2)
+	font-family: $tahoma 
+	font-weight: 400 
 	transition: border-color .4s
+	+font-smoothing
 	+sm
 		padding: 0 40px 0 15px
+		font-size: 14px
 	&:focus
 		border: 1px solid rgba(255, 255, 255, 1)
 	&:hover

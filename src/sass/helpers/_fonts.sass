@@ -1,5 +1,4 @@
 //FONTS
-
 =fontpath($name, $name1, $file)
 	src: local($name), local($name1),
 	url("../fonts/" + $file + ".woff") format("woff"),
@@ -10,15 +9,16 @@
 	font-weight: $weight
 
 
+//START Tahoma
 @font-face
 	+fontdefault(normal, 400, 'Tahoma')
 	+fontpath('Tahoma', 'Tahoma', 'Tahoma')
-
-//START CormorantInfant
+	
 @font-face
 	+fontdefault(normal, 700, 'Tahoma')
-	+fontpath('Tahoma-Bold', 'Tahoma-Bold', 'Tahoma-Bold')
-
+	+fontpath('Tahoma Bold', 'Tahoma-Bold', 'Tahoma-Bold')
+	
+//START CormorantInfant
 @font-face
 	+fontdefault(normal, 300, 'CormorantInfant')
 	+fontpath('CormorantInfant-Light', 'CormorantInfant-Light', 'CormorantInfant-Light')
