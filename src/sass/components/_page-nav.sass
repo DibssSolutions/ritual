@@ -4,29 +4,42 @@
 .navigation-page .page-nav
 	padding-top: 0
 	border-top: 0
+
+.page-nav
+	display: flex
+	align-items: center
+	justify-content: center
 	color: $brown_orange
 	font-size: 15px
 	+sm
 		font-size: 14px
-
-.page-nav .list-inline
-	display: flex
-	align-items: center
-	justify-content: center
-
-.navigation-page .page-nav ul li:first-child
-	margin-right: 44px
-	+sm
-		margin-right: 7px
-
-.navigation-page .page-nav ul li:last-child
-	margin-left: 44px
-	+sm
-		margin-left: 7px
-
-.btn-nav
-	padding: 5px 4px
-	background: none
-	+sm
-		border: 1px solid $gray_brown
-		border-radius: 5px
+	&__item
+		padding: 0 2px
+		.active
+			.page-nav__link
+				border-bottom: 2px solid $gray_brown
+	&__link
+		color: $brown_orange	
+		border-bottom: 2px solid $white
+		padding: 4px 6px
+		&:hover
+			border-bottom: 2px solid $gray_brown
+	&__btn
+		padding: 5px 4px
+		background: none
+		text-align: center
+		+sm
+			border: 1px solid $gray_brown
+			border-radius: 5px
+			font-size: 13px
+			min-width: 103px
+	.left-btn			
+		margin-right: 44px
+		+sm
+			margin-right: 7px
+	.right-btn
+		margin-left: 44px
+		+sm
+			margin-left: 7px
+	
+	
