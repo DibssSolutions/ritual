@@ -1,12 +1,16 @@
 .page-head
     padding: 20px 0 13px
     border-bottom: 1px solid rgba(#f1ede8,.5)
+    +sm
+        padding: 20px 0 7px
     a
         color: $brown_orange
         &:hover
             color: #cecece
+            .icon-house
+                font-size: 16px
+                fill: #cecece
     &__container
-        padding: 0
         +clr
     &__bcrumbs
         float: left
@@ -23,9 +27,12 @@
                     font-size: 8px
                     top: 5px
                     right: -20px
+    
 
 .grief
     padding-top: 25px
+    +sm
+        padding-top: 11px
     &__container
     &__head
     &__title
@@ -34,13 +41,22 @@
     &__body
         display: flex
         justify-content: space-between
+        +sm
+            flex-direction: column
     &__text
         padding: 24px 50px 0 0
         width: 40%
         line-height: 1.6
+        +sm
+            width: 100%
+            font-size: 14px
+            line-height: 1.4
+            padding: 11px 0 0
         p
             &:not(:last-child)
                 margin-bottom: 24px
+                +sm
+                    margin-bottom: 0
         &_reverse
             padding: 24px 0 0 50px
             p:last-child
@@ -53,12 +69,41 @@
             width: 100%
     &__footer
         margin: 50px 0
+        +sm
+            margin: 30px 0
+            +clr
+            a
+                float: right
 
+.grief-2
+    &__container
+    &__head
+    &__title
+        +sm
+            margin-bottom: 21px
+    &__body
+        +sm
+            position: relative
+            flex-direction: row
+    &__img
+        +sm
+            margin-right: 10px
+            align-self: flex-start
+    &__text
+        +sm
+            padding: 0
+
+.narrow-paragraph
+    max-width: 880px
+    margin: 0 auto
+    line-height: 1.6
 
 .bg-high
     background-size: cover
     background-position: 50% 50%
     background-repeat: no-repeat
+    +sm
+        background: none
 
 .cemetery-selection
     padding: 54px 0 0 0
@@ -67,6 +112,9 @@
     background-color: #fff
     background-repeat: no-repeat
     color: $white_brown_bg
+    +sm
+        padding-top: 21px
+        background-position: 70% 25%
     &__container
     &__head
         margin-bottom: 17px
@@ -75,15 +123,24 @@
         max-width: 430px
         line-height: 0.9
         color: $white_brown_bg
+        +sm
+            max-width: 300px
+            margin-bottom: 23px
     &__description
         line-height: 0.9
     &__body
         margin-bottom: 40px
+        +sm
+            margin-bottom: 25px
     &__text
         max-width: 880px
         margin: 0 auto
         margin-bottom: 54px
         line-height: 1.6
+        +sm
+            line-height: 1.4
+            font-size: 14px
+            margin-bottom: 22px
     &__map
         width: 85%
         height: 400px
@@ -91,14 +148,18 @@
         background-color: #fff
 
 .full-services
-    padding-top: 54px
+    padding-top: 73px
     background-size: contain
     background-position: 50% 0
     background-color: #fff
     background-repeat: no-repeat
+    +sm
+        padding-top: 15px
     &__container
     &__head
-        margin-bottom: 17px
+        margin-bottom: 38px
+        +sm
+            margin-bottom: 0
     &__title
         margin: 0 auto 18px
         max-width: 430px
@@ -110,10 +171,8 @@
     &__text
         margin-bottom: 54px
     &__img
-        padding-bottom: 25px
+        padding-bottom: 32px
         background-color: $white_brown_bg
-        +sm
-            display: none
         img
             position: relative
             display: block
@@ -121,32 +180,50 @@
             z-index: 3
 
 
-.narrow-paragraph
-    max-width: 880px
-    margin: 0 auto
-    line-height: 1.6
-
 .find-church
-    padding: 73px 0 48px
+    padding: 76px 0 48px
+    +sm
+        padding: 16px 0 31px
     &__container
     &__body
         display: flex
         justify-content: space-between
+        +sm
+            flex-direction: column
+            padding-left: 28%
     &__title
         width: 17%
         line-height: 1.1
+        +sm
+            width: 100%
+            font-size: 21px
+            margin-bottom: 17px
     &__img
         position: absolute
         // top: -250px
         bottom: -23px
         right: 38%
+        +sm
+            width: 130px
+            left: -145px
+            bottom: auto
+            top: -15px
         img
             display: block
             width: 100%
     &__text
         position: relative
         // width: 85%
-        padding: 16px 0 0 54.5%
+        padding: 14px 0 0 54.5%
+        +sm
+            padding: 0
+            font-size: 14px
+            display: flex
+            flex-direction: column
+            p
+                max-width: none
+                line-height: 1.4
+                margin-bottom: 19px
 
 .text-plus-button
     p
@@ -159,48 +236,87 @@
     background-size: cover
     background-position: 70% 50%
     background-repeat: no-repeat
+    +sm
+        padding: 23px 0 34px
     &__container
     &__body
         // columns: 2
         // column-gap: 30px
         width: 67.5%
         display: flex
+        +sm
+            flex-direction: column
     &__title
         max-width: 400px
         line-height: 0.9
         margin-bottom: 68px
+        +sm
+            font-size: 21px
+            max-width: 200px
+            line-height: 1.15
+            margin-bottom: 8px
     &__text
         display: flex
         flex-direction: column
         justify-content: space-between
+        +sm
+            p
+                line-height: 1.3
+                margin-bottom: 19px
         &:not(:last-child)
             margin-right: 30px
+            +sm
+                margin: 0 0 13px 0
         a
             align-self: flex-start
 
 .one-place
     padding: 28px 0 0
     background-color: $white_brown_bg
+    overflow: hidden
+    +sm
+        padding-top: 23px
     &__container
     &__head
         margin-bottom: 24px
+        +sm
+            margin-bottom: 13px
     &__body
-        margin-bottom: 55px
+        margin-bottom: 40px
+        +sm
+            margin-bottom: 32px
     &__title
         margin-bottom: 11px
+        +sm
+            font-size: 21px
+            margin-bottom: 0
     &__text
         margin-bottom: 22px
+        +sm
+            font-size: 14px
+            line-height: 1.4
+            margin-bottom: 18px
     &__img
         margin: 0 auto
         width: 55%
         box-shadow: 0 3px 7px 0 rgba(0,0,0,.35)
+        +sm
+            width: 83%
         img
             display: block
             width: 100%
 
 .companies
+    padding: 44px 0 0 0
+    +sm
+        padding-top: 15px
     &__container
     &__title
+        margin-bottom: 17px
+        +sm
+            font-size: 21px
+    &__cities
+        margin-bottom: 15px
 
 
 .select-primary
@@ -220,7 +336,7 @@
         background-size: 15px
         border: none
         font-size: 16px
-        padding: 10px 40px 10px 20px
+        padding: 14px 40px 12px 20px
         border-radius: 5px
         width: 357px
         appearance: none
