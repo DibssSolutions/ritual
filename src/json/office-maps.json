@@ -1,0 +1,50 @@
+[
+	{
+		"content": {
+			"title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consequatur."
+		},
+		"marker": {
+			"id": 2,
+			"position": {
+				"lat": -34.397,
+				"lng": 151.044
+			},
+			"icon": {
+				"default": "img/marker.png",
+				"active": "img/marker.png",
+				"size": {
+					"x": 41,
+					"y": 58
+				},
+				"centering": {
+					"x": 20,
+					"y": 58
+				}
+			}
+		}
+	},
+	{
+		"content": {
+			"title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consequatur."
+		},
+		"marker": {
+			"id": 3,
+			"position": {
+				"lat": -34.397,
+				"lng": 151.444
+			},
+			"icon": {
+				"default": "img/marker.png",
+				"active": "img/marker.png",
+				"size": {
+					"x": 41,
+					"y": 58
+				},
+				"centering": {
+					"x": 20,
+					"y": 58
+				}
+			}
+		}
+	}
+]

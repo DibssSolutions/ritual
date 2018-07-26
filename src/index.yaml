@@ -2,6 +2,8 @@ ProjectTitle: ritual
 
 PageList:
 - file: page.html
+  ready: 100
+- file: 3_ritual_agent.html
   ready: 50
 - file: 24_blogs.html
   ready: 50
