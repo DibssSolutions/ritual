@@ -11,3 +11,5 @@ PageList:
   ready: 50   
 - file: 25_post.html
   ready: 50   
+- file: all-companies.html
+  ready: 50   
