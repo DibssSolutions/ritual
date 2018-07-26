@@ -1,0 +1,137 @@
+.header-wrap
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 10
+	width: 100%
+	&.is-hide
+		position: fixed
+		transition: transform .3s ease-in-out
+		top: -179px
+		+sm
+			top: -83px
+		.navbar-collapse
+			+sm
+				opacity: 0
+				visibility: hidden
+	&.is-animate
+		transform: translateY(88px)
+		+sm
+			transform: translateY(83px)
+		.header-top
+			border-bottom-color: transparent 
+		.navbar
+			transform: translateY(-10px)
+			+sm
+				transform: initial
+		.navbar-brand
+			transform: translateY(30px)
+			+r(1050)
+				transform: translateY(40px)
+			+sm
+				transform: translateY(0)
+		.navbar-collapse
+			+sm
+				opacity: 1
+				visibility: visible
+				transition: opacity .3s, visibility .3s
+				transition-delay: .4s
+	.navbar-brand
+		padding-bottom: 0
+		+sm
+			padding-top: 10px
+			max-width: 137px
+	& > [class^="header"],
+	& > [class^="header"]
+		+sm
+			padding-bottom: 45px
+	.header-top
+		transition: border-color .3s ease-in-out
+		+sm
+			position: absolute
+			bottom: 0
+			left: 20px
+			padding: 10px 0
+			font-size: 13px
+			width: calc(100% - 40px)
+			min-width: 320px 
+			display: flex
+			justify-content: space-between
+			border-top: 1px solid rgba($white, 0.15) 
+			background-color: #74695E 
+		p
+			+sm
+				margin-right: 30px
+	.container>.row>.col-md-3
+		+sm
+			padding-left: 20px
+			height: auto
+	.container>.row>.col-md-9
+		+sm
+			padding: 0 20px 0 0
+	.header4.header5 
+		+sm
+			top: 0
+			height: auto
+		.navbar-default
+			+sm
+				margin-right: 0
+		.navbar-collapse
+			+sm
+				top: 43px
+				left: 0
+				width: 100%
+		.navbar 
+			li.active
+				+sm
+					background-color: #f3eee8 !important
+				a
+					+sm
+						color: #65594d !important
+			a
+				+sm
+					color: #e6ddd0 !important
+	.navbar 
+		+sm
+			padding: 15px 30px 0 0
+			min-height: auto
+		.navbar-toggle
+			+sm
+				position: relative
+				top: 0
+				right: 0
+				margin: 0
+				padding-right: 0
+				height: auto
+			span
+				+sm
+					margin-top: 0
+		.fa
+			+sm
+				display: none
+		
+	.dropdown-menu 
+		+sm
+			display: none
+.header-bg
+	background-image: url(../img/header-bg.png) 
+	background-position: 50% 50% 
+	background-size: cover
+	+sm
+		background: #74695E 
+		background-position: 50% 50% 
+		background-size: cover
+	&.header4.header5
+		background-image: url(../img/header-bg.png) 
+		+sm
+			background: #74695E 
+.navbar,
+.navbar-brand
+	transition: transform .3s ease-in-out
+.navbar-nav
+	font-family: "Tahoma","Open Sans",sans-serif 
+	+sm
+		width: 100%
+.topbar
+	+sm
+		display: none

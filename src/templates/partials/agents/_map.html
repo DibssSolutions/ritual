@@ -1,0 +1,67 @@
+<!-- begin map -->
+<div class="map-wrap">
+	<div class="js-map map" data-center-lat="-34.097" data-center-lng="150.644"></div>
+	{% set tamplate = '<div class="baloon">
+		<button class="baloon__close js-infobox-close"></button>
+		<div className="baloon__content">{{=baloon.title}}</div>
+	</div>' %}
+	{% set array = '[
+			{
+				"content": {
+					"title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consequatur."
+				},
+				"marker": {
+					"id": 2,
+					"position": {
+						"lat": -34.397,
+						"lng": 151.044
+					},
+					"icon": {
+						"default": "img/marker.png",
+						"active": "img/marker.png",
+						"size": {
+							"x": 50,
+							"y": 64
+						},
+						"centering": {
+							"x": 20,
+							"y": 58
+						}
+					}
+				}
+			},
+			{
+				"content": {
+					"title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consequatur."
+				},
+				"marker": {
+					"id": 3,
+					"position": {
+						"lat": -34.397,
+						"lng": 151.444
+					},
+					"icon": {
+						"default": "img/marker.png",
+						"active": "img/marker.png",
+						"size": {
+							"x": 50,
+							"y": 64
+						},
+						"centering": {
+							"x": 20,
+							"y": 58
+						}
+					}
+				}
+			}
+		]' %}
+	<script type="text/template" id="infobox">
+		{{ tamplate | safe }}
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+			window.map.add({{array | safe}})
+		});
+	</script>
+</div>
+<!-- end map -->

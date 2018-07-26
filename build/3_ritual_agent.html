@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>3 Ритуальный агент</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="Keywords" content="">
+    <meta name="description" content="">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image" content="">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <meta property="fb:admins" content=""> </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <div class="header-wrap js-header-wrap">
+        <div class="topbar topbar3">
+          <div class="container">
+            <div class="lang-select pull-right"> <i class="fa fa-angle-down"></i> <select>
+                    <option value="">EN</option>
+                    <option value="">PO</option>
+                    <option value="">FR</option>
+                </select> </div>
+          </div>
+        </div>
+        <header class="header4 header5 header-bg">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-3 col-xs-8"> <a href="./index.html" class="navbar-brand"><img src="img/logo.png" class="img-responsive" alt=""></a> </div>
+              <div class="col-md-9 col-sm-9 col-xs-4">
+                <div class="header-top">
+                  <div class="cart-header2 hidden-xs cart-show pull-right"> <i class="fi flaticon-web"></i> <span>My Cart (0)</span>
+                    <div class="cart-table">
+                      <h3>My Cart (3 items)</h3>
+                      <div class="margin-bottom-20"></div>
+                      <ul class="cart-products dropdown-sp">
+                        <li> <img src="img/menu/01/1.jpg" alt="img" />
+                          <p><a href="#">Enchanted Cottage</a></p>
+                          <h6>$87.00 <small>$99.00</small></h6> <em class="count">x1</em> </li>
+                        <li> <img src="img/menu/01/2.jpg" alt="img" />
+                          <p><a href="#">Nice Sympathy</a></p>
+                          <h6>$59.99</h6> <em class="count">x1</em> </li>
+                        <li> <img src="img/menu/01/3.jpg" alt="img" />
+                          <p><a href="#">Sentimental Dreams</a></p>
+                          <h6>$55.00 <small>$65.00</small></h6> <em class="count">x1</em> </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                      <div class="cart-dual-btns"> <a href="#" class="btn btn-primary btn-xs pull-left">View Cart</a> <a href="./shop-checkout.html" class="btn btn-primary btn-xs pull-right"><small class="fa fa-sign-out"></small> <cite class="hidden-xs">Proceed to</cite> Checkout</a>                        </div>
+                    </div>
+                  </div>
+                  <div class="pull-right">
+                    <p><i class="fi flaticon-nature"></i> <a href="#">Send Flowers Now</a></p>
+                  </div>
+                  <div class="pull-right">
+                    <p class="hidden-sm"><i class="fi flaticon-black"></i> info@doverie27.ru</p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <nav class="navbar navbar-default"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	                        <span>
+						        <em></em>
+						        <em></em>
+						        <em></em>
+						    </span>
+	                    </button>
+                  <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                      <li><a href="./index.html">Главная</a></li>
+                      <li class="dropdown dropdown-normal"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Если случилось горе <span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-v3">
+                          <li><a href="./blog.html">Blog</a></li>
+                          <li><a href="./blog-single.html">Blog Single</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">После похорон</a></li>
+                      <li class="dropdown dropdown-normal active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Страницы памяти<span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-v3">
+                          <li><a href="./contact-v1.html">Contact</a></li>
+                          <li><a href="./contact-v2.html">Contact V2</a></li>
+                          <li><a href="./locations.html">Locations</a></li>
+                          <li><a href="./location-single.html">Location - Single</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--/.nav-collapse -->
+                  <!--/.container-fluid -->
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="clearfix"></div>
+      <!-- begin map -->
+      <div class="map-wrap">
+        <div class="js-map map" data-center-lat="-34.097" data-center-lng="150.644"></div>
+        <script type="text/template" id="infobox">
+          <div class="baloon"> <button class="baloon__close js-infobox-close"></button>
+            <div className="baloon__content">{{=baloon.title}}</div>
+          </div>
+        </script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function()
+          {
+            window.map.add([
+            {
+              "content":
+              {
+                "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consequatur."
+              },
+              "marker":
+              {
+                "id": 2,
+                "position":
+                {
+                  "lat": -34.397,
+                  "lng": 151.044
+                },
+                "icon":
+                {
+                  "default": "img/marker.png",
+                  "active": "img/marker.png",
+                  "size":
+                  {
+                    "x": 50,
+                    "y": 64
+                  },
+                  "centering":
+                  {
+                    "x": 20,
+                    "y": 58
+                  }
+                }
+              }
+            },
+            {
+              "content":
+              {
+                "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consequatur."
+              },
+              "marker":
+              {
+                "id": 3,
+                "position":
+                {
+                  "lat": -34.397,
+                  "lng": 151.444
+                },
+                "icon":
+                {
+                  "default": "img/marker.png",
+                  "active": "img/marker.png",
+                  "size":
+                  {
+                    "x": 50,
+                    "y": 64
+                  },
+                  "centering":
+                  {
+                    "x": 20,
+                    "y": 58
+                  }
+                }
+              }
+            }])
+          });
+
+        </script>
+      </div>
+      <!-- end map -->
+      <!-- begin footer -->
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__container container">
+            <div class="footer__bg"></div>
+            <div class="row">
+              <div class="col-md-3 col-sm-6"> <a href="#" class="footer-logo"><img src="./img/logo-sm.png" alt="logo-sm"></a>
+                <ul class="footer-list">
+                  <li class="footer-list__item"><a href="#" class="footer-list__link">О портале</a></li>
+                  <li class="footer-list__item"><a href="#" class="footer-list__link">Доска объявлений </a></li>
+                  <li class="footer-list__item"><a href="#" class="footer-list__link">Похороны своими силами</a></li>
+                  <li class="footer-list__item"><a href="#" class="footer-list__link">Рекламодателям</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 mob-hide">
+                <h4 class="title-sm">Последние некрологи</h4>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
+                    <div class="block__label">Дата похорон: </div>
+                    <div class="block__date">Вт. 03-12-2018</div>
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
+                    <div class="block__label">Дата похорон: </div>
+                    <div class="block__date">Вт. 03-12-2018</div>
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
+                    <div class="block__label">Дата похорон: </div>
+                    <div class="block__date">Вт. 03-12-2018</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mob-hide">
+                <h4 class="title-sm">Последние статьи</h4>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
+                    <div class="block__label">Имя Фамилия</div>
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__title">Что снится к любви и наслаждению, а что – к разлуке и печали</a>
+                    <div class="block__label">Имя Фамилия</div>
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
+                    <div class="block__label">Имя Фамилия</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mob-hide">
+                <h4 class="title-sm">Доска объявлений</h4>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
+                    <div class="block__label">Категория</div>
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__title">Еще один заголовок объявления</a>
+                    <div class="block__label">Категория</div>
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
+                    <div class="block__label">Категория</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__container container">
+            <div class="footer__wrapper"> <span class="copy">Copyright &copy; 2018.</span> Портал ритуальных услуг «Доверие». Хабаровск </div>
+          </div>
+        </div>
+        <div class="footer__up">
+          <div class="footer__container container"> <button class="btn-up js-btn-up" type="button">
+				<svg width="59" height="59" viewBox="0 0 59 59" xmlns="http://www.w3.org/2000/svg">
+				    <title>up</title>
+				    <g stroke="#E6DDD0" fill="none" fill-rule="evenodd">
+				        <path d="M1.5 29.13c0 15.26 12.37 27.63 27.63 27.63s27.63-12.37 27.63-27.63S44.39 1.5 29.13 1.5 1.5 13.87 1.5 29.13z" stroke-width="3" fill="#65594D" fill-rule="nonzero" opacity=".75"/>
+				        <g stroke-linecap="round" stroke-width="4">
+				            <path d="M18.5 32.5l11-10"/>
+				            <path d="M29.5 22.5l11 11"/>
+				        </g>
+				    </g>
+				</svg>
+			</button> </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/lib/vendor/jquery.min.js"></script>
+    <script src="js/lib/vendor/bootstrap.min.js"></script>
+    <script src="js/lib/vendor/slick/slick.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/froogaloop.js"></script>
+    <script src="js/lib/vendor/lity/lity.min.js"></script>
+    <script src="js/lib/main.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>
