@@ -63,6 +63,7 @@
     "require-dir": "^0.3.2",
     "require-yaml": "^0.0.1",
     "run-sequence": "^1.1.5",
+    "select2": "^4.0.6-rc.1",
     "through2": "^2.0.1",
     "underscore": "^1.9.1",
     "vinyl-buffer": "^1.0.1",
