@@ -1,0 +1,36 @@
+.visitors
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 25px 0 37px
+	border-top: 1px solid #eee
+	+sm
+		padding: 10px 0
+		justify-content: center
+	&__print-btn
+		background: none
+		color: #c9c2b4
+		span
+			margin-right: 4px
+		+md
+			display: none	
+	.icon
+		fill: #c9c2b4
+		font-size: 13px	
+
+.counter
+	display: flex
+	align-items: center
+	&__item
+		font-size: 15px
+		color: #c9c2b4
+		+sm
+			font-size: 12px
+		&:not(:last-child)
+			margin-right: 21px
+			+sm
+				margin-right: 15px	
+		.icon-eye
+			position: relative
+			margin-bottom: -1px
+			font-size: 12px

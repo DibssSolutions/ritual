@@ -1,6 +1,9 @@
 .blog-content_wrap .side-widget h5
 	padding-bottom: 8px
-	
+
+.post-wrap
+	+sm
+		padding-bottom: 15px	
 
 .post-wrap .article-box article
 	border-bottom: none
@@ -16,28 +19,102 @@
 
 .post-wrap article h5
 	margin-bottom: 22px
+	+sm
+		font-size: 21px
+
+.post-wrap .related-comments
+	margin-bottom: 52px
+	+sm
+		margin-bottom: 0
 
 .article-box blockquote
 	position: relative
-	margin: 45px 0 32px
+	margin: 45px 0 32px 37px
 	font-family: $cormorant_infant
 	line-height: 1.25
 	font-style: italic
 	font-weight: 500
 	font-size: 24px
-	margin-left: 37px
 	padding-left: 22px
 	border-left: 2px solid #f3f3f3
+	+sm
+		margin: 15px 0 15px 27px
+		padding-left: 12px
+		font-size: 18px
 	.quote
 		position: absolute
 		top: -8px
-		left: -38px	
+		left: -38px
+		+sm
+			left: -28px
 
 .article-box .quote .icon-quote
 	fill: $brown_orange
 	font-size: 19px
 
-
 .social-block
+	display: flex
+	align-items: center
+	justify-content: flex-end
 	margin: 47px 0 25px
+	+sm
+		justify-content: center
+		margin: 15px 0
 
+.related-comments h5
+	padding-bottom: 8px
+	border-bottom: 1px solid $silver
+	margin-bottom: 28px
+	+sm
+		padding-bottom: 0
+		margin-bottom: 20px
+		border-bottom: none
+
+.posts-image_mod
+	width: 136px
+	height: 136px
+	+md
+		width: 85px
+		height: 85px
+
+.related-comments .team-info
+	padding-bottom: 0
+	margin-bottom: 18px
+
+.related-comments .staff-title
+	color: #c9c2b4
+	+md
+		padding-left: 110px
+
+.post-wrap .team-info p
+	padding-top: 20px
+	padding-bottom: 15px
+	+md
+		padding-top: 30px
+
+.blog-comment-form h5
+	padding-bottom: 8px
+	border-bottom: 1px solid $silver
+	margin-bottom: 37px
+	+sm
+		padding-bottom: 0
+		margin-bottom: 20px
+		border-bottom: none
+
+.post-wrap .blog-comment-form form input,
+.post-wrap .blog-comment-form form textarea	
+	background-color: $white_brown_bg
+	resize: none
+	color: $brown_orange
+
+.post-wrap .blog-comment-form form input::placeholder,
+.post-wrap .blog-comment-form form textarea::placeholder
+	color: $brown_orange
+
+.post-wrap .bottom-image img
+	margin-top: -90px
+
+.post-wrap .padding_top
+	padding-top: 15px
+	+md
+		padding: 0
