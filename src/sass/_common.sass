@@ -78,6 +78,19 @@ body
 			color: $brown
 	+sm
 		padding: 8px 20px
+	&_small
+		padding: 4px 22px
+		+sm
+			padding: 5px 15px
+		.flaticon-arrows
+			margin: 0 -8px 4px 10px
+			font-size: 10px
+			vertical-align: middle
+			display: inline-block
+	&_bold
+		font-weight: 700 
+		+sm
+			font-weight: 500
 		
 .btn_border
 	box-shadow: inset 0 0 0 2px $brown_orange
@@ -146,3 +159,17 @@ body
 	width: 100%
 	img
 		max-width: 100%
+
+.ratings
+	.ratings__appraisal
+		top: 0
+		margin-left: 10px
+		color: #65594d
+		font-size: 16px
+		font-weight: 700
+		+sm
+			margin-left: 3px
+			font-size: 11px
+	span, .fi
+		+sm
+			font-size: 10px
