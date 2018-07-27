@@ -1,0 +1,190 @@
+
+.select2-container--default
+    .select2-results__option[aria-selected=true]
+        background: none
+    .select2-results__option--highlighted[aria-selected]
+        background: none
+        color: inherit
+        text-decoration: underline
+    .select2-selection--single
+        background-color: #efece6
+        border: none
+        height: 33px
+        .select2-selection__rendered
+            padding-left: 34px
+            line-height: 33px
+            color: $brown_orange
+
+.all-companies
+    padding-top: 36px
+    &__tile
+        margin-bottom: 60px
+    &__list
+        margin-bottom: 60px
+        .companies-item
+            margin-bottom: 16px
+            &:last-child
+                margin-bottom: 60px
+            &__wrap
+                flex-direction: row
+            &__name
+                margin-bottom: 2px
+            &__type
+                margin-bottom: 22px
+            &__descr
+                margin-bottom: 18px
+            p
+                line-height: 1.6
+                margin-bottom: 25px
+            .sf-thumb
+                max-width: 270px
+                margin: 0 25px 0 0
+        
+    &__head
+        margin-bottom: 43px
+    &__top
+        .shop-sort-wrap
+            padding: 4px 17px 4px 28px
+            background-color: $white_brown_bg
+        .ps-options
+            display: flex
+            align-items: center
+            margin-bottom: 0
+            span
+                width: auto
+                margin-right: 22px
+                font-size: 13px
+                color: $brown_orange
+        .ps-select
+            background-color: #fff
+            width: 90px
+            height: 31px
+            select
+                color: $brown_orange
+                font-size: 13px
+                text-align: center
+                padding: 0 41px
+                height: 31px
+            i
+                line-height: 31px
+        .shop-sort
+            font-family: Flaticon
+    &__title
+        line-height: 0.9
+        margin-bottom: 7px
+    .select
+        margin-bottom: 30px
+        h5
+            margin-bottom: 12px
+            border: none
+    .side-form
+        button
+            display: block
+//         padding: 10px 30px
+//         background-color: $white_brown_bg
+//         border-radius: 3px
+//         display: flex
+//         align-items: center
+//         justify-content: space-between
+//     &__amount
+//         display: flex
+//         align-items: center
+//         .select2-container--default
+//             .select2-results__option[aria-selected=true]
+//                 background: none
+//             .select2-results__option--highlighted[aria-selected]
+//                 background: none
+//                 color: inherit
+//                 text-decoration: underline
+//             .select2-selection--single
+//                 background-color: #fff
+//                 border: none
+//         .select2-container
+//             .select2-selection--single
+//                 .select2-selection__rendered
+//                     text-align: center
+//     &__view
+//         display: flex
+//         align-items: center
+//         li:not(:last-child)
+//             margin-right: 15px
+
+.companies-item
+    display: block
+    padding: 7px 10px
+    &__wrap
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__text
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__name
+        margin-bottom: 4px
+        +sm
+            order: 2
+    &__type
+        font-size: 14px
+        color: #b4aa96
+        margin-bottom: 20px
+        +sm
+            order: 1
+    &__descr
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        margin-bottom: 16px
+        +sm
+            flex-direction: column
+            align-items: flex-start
+            order: 3
+    &__region
+        color: #b4aa96
+        font-size: 12px
+    &:hover
+        box-shadow: 3px 3px 16px 0 rgba(0,0,0,.2)
+        .product-reviews__details
+            visibility: visible
+    .btn
+        order: 4
+    .sf-thumb
+        height: 234px
+        line-height: 234px
+        text-align: center
+        border: 1px solid #e4e4e4
+        width: 100%
+        margin-bottom: 28px
+        &:after
+            display: none
+        img
+            max-height: 234px
+            max-width: 100%
+            width: auto
+            vertical-align: middle
+    .flaticon-favorite
+        font-family: Flaticon
+    .product-reviews
+        display: flex
+        align-items: center
+        margin-right: 5px
+        &__details
+            visibility: hidden
+            transition: all .4s
+            white-space: nowrap
+            span
+                font-size: 12px
+                color: #c3beb6
+            .icon-users
+                fill: #c3beb6
+                font-size: 10px
+        .pr-ratings
+            white-space: nowrap
+            font-size: 0
+            margin-right: 5px
+            i
+                font-size: 9px
+                color: $brown_orange
+                top: 0
+                margin-right: 1px
