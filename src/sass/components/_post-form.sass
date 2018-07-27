@@ -1,0 +1,39 @@
+.post-form
+	&__col
+		position: relative
+		&:not(:last-child)
+			+sm
+				margin-bottom: 37px
+	&__label
+		position: absolute
+		display: block
+		top: 13px
+		left: 40px
+		font-size: 14px
+		+sm
+			top: -28px
+			left: 12px		
+	&__input,
+	&__textarea
+		width: 100%
+		border: none
+		resize: none
+		color: $brown_orange
+		font-size: 14px
+		padding: 15px 25px
+		margin-bottom: 20px
+		transition: opacity .3s
+		background-color: $white_brown_bg
+		z-index: -1
+		&:focus ~ .post-form__label
+			opacity: 0
+			+sm
+				opacity: 1
+		+sm	
+			margin-bottom: 0
+	&__input
+		height: 45px
+	&__textarea
+		height: 180px
+		+sm
+			margin-bottom: 20px			
