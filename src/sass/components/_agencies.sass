@@ -1,0 +1,65 @@
+.agencies
+	padding: 65px 0 75px
+	+sm
+		padding: 20px 0 15px
+	&__row
+		&:not(:last-child)
+			margin-bottom: 25px
+			+sm
+				margin-bottom: 10px
+	&__col
+		+sm
+			&:not(:last-child)
+				margin-bottom: 10px
+.agency
+	border: 1px solid #f3eee8
+	transition: box-shadow .4s
+	&:hover
+		box-shadow: 1.5px 2.6px 7px rgba(0, 0, 0, 0.18)
+	&__head
+		padding: 13px 23px 11px 30px
+		border-bottom: 1px solid #f3eee8
+		+clr
+		+sm
+			padding: 6px 10px
+	&__logo
+		float: left
+		max-width: 130px
+		+sm
+			max-width: 70px
+		img
+			max-width: 100%
+			max-height: 56px
+			display: block
+	&__rating,
+	&__link
+		float: right
+	&__rating
+		margin-top: 20px
+		+sm
+			margin-top: 4px
+		.ratings
+			+sm
+				padding: 0
+	&__link
+		margin-top: 15px
+		+sm
+			margin-top: 0
+		&:not(:first-child)
+			margin-left: 20px
+			+sm
+				margin-left: 9px
+	&__content
+		padding: 17px 15px 15px 30px
+		+sm
+			padding: 10px 20px
+	&__title
+		color: #65594d
+		font-family: $cormorant_infant
+		font-size: 24px
+		font-weight: 700
+		line-height: 1.2
+	&__contacts
+		margin-top: 20px
+		+sm
+			margin-top: 10px

@@ -1,35 +1,8 @@
-/* eslint-disable */
 const EasyGoogleMaps = require('easygooglemaps');
 const mapNode = $('.js-map');
 
-const getJSON = function(url, callback) {
-  let xhr = new XMLHttpRequest();
-  xhr.open('GET', url, true);
-  xhr.responseType = 'json';
-  xhr.onload = function() {
-    let status = xhr.status;
-    if (status === 200) {
-      callback(null, xhr.response);
-    } else {
-      callback(status);
-    }
-  };
-  xhr.send();
-};
-
 if (mapNode.length) {
 
-  let path = mapNode.data('file');
-  let mapData = [];
-
-
-  getJSON(path, function(err, data) {
-    if (err != null) {
-      console.error('ошибочка, data not found ' + err);
-    } else {
-      mapData = data;
-    } 
-  });
   let map = new EasyGoogleMaps({
     map: {
       APIKEY: 'AIzaSyDMWIxCN9ijYRfiH7bmQN-LNRDtoboLZqY',
@@ -289,7 +262,7 @@ if (mapNode.length) {
     },
 
     infobox: {
-      template: '#infobox',
+      template: '.js-infobox',
       class: 'awesome-infobox',
       onlyOneBox: true,
       style: {
