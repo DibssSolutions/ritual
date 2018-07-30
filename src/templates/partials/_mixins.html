@@ -1,3 +1,20 @@
 {% macro icon(i) %}
 <svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
 {% endmacro %}
+
+{% macro windHead(headName, title) %}
+<!-- begin wind-head -->
+<div class="wind-head">
+	<div class="wind-head__title">{{ title or 'Название компании' }}</div>
+	<div class="wind-head__name">{{ headName }}</div>
+</div>
+<!-- end wind-head -->
+{% endmacro %}
+
+{% macro readAll(text) %}
+<!-- begin read-all -->
+<div class="read-all">
+    <a href="#" class="read-all__link">{{ text or 'Читать всю информацию' }}<span class="fi flaticon-arrows"></span></a>
+</div>
+<!-- end read-all -->
+{% endmacro %}

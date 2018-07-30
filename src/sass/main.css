@@ -780,7 +780,12 @@ footer .footer-bottom i {
 	color: #65594d;
 	position: absolute;
 	right: 20px;
+	opacity: 0;
 	font-size: 14px;
+}
+
+.links a.active i {
+	opacity: 1;
 }
 
 .links a:hover {
