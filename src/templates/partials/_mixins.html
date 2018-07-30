@@ -11,9 +11,9 @@
 <!-- end wind-head -->
 {% endmacro %}
 
-{% macro readAll(text) %}
+{% macro readAll(text, class) %}
 <!-- begin read-all -->
-<div class="read-all">
+<div class="read-all {{ class }}">
     <a href="#" class="read-all__link">{{ text or 'Читать всю информацию' }}<span class="fi flaticon-arrows"></span></a>
 </div>
 <!-- end read-all -->

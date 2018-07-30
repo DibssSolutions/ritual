@@ -23,7 +23,7 @@
                         <li>приобретение вещей для умершего человека и их доставка;</li>
                         <li>приобретение гроба и других панихидных атрибутов;</li>
                     </ul>
-                    {{ mixins.readAll() }}
+                    {{ mixins.readAll(null, 'mob-hide') }}
                     <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
                 </div>
                 <!-- end wind -->
@@ -57,19 +57,23 @@
                             <div class="about-agency__col col-md-4">
                                 <div class="about-agency__info">
                                     <div class="about-agency__info-wrap">
-                                        <div class="about-agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
-                                        <div class="about-agency__rating"> 
-                                            <span class="ratings">
-                                                <span class="fi flaticon-favorite"></span>
-                                                <span class="fi flaticon-favorite"></span>
-                                                <span class="fi flaticon-favorite"></span>
-                                                <span class="fi flaticon-favorite"></span>
-                                                <span class="fi flaticon-favorite no"></span>
-                                                <span class="ratings__appraisal">4.0</span>
-                                            </span>
+                                        <div class="about-agency__head">
+                                            <div class="about-agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+                                            <div class="about-agency__rating"> 
+                                                <span class="ratings">
+                                                    <span class="fi flaticon-favorite"></span>
+                                                    <span class="fi flaticon-favorite"></span>
+                                                    <span class="fi flaticon-favorite"></span>
+                                                    <span class="fi flaticon-favorite"></span>
+                                                    <span class="fi flaticon-favorite no"></span>
+                                                    <span class="ratings__appraisal">4.0</span>
+                                                </span>
+                                            </div>
                                         </div>
-                                        <p>8 (111) 123 123 </p>
-                                        <p>С 7.00 до 21.00, без выходных </p>
+                                        <div class="about-agency__contact">
+                                            <p>8 (111) 123 123 </p>
+                                            <p>С 7.00 до 21.00, без выходных </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +85,7 @@
                         </div>
                     </div>
                     <!-- end about-agency -->
-                    {{ mixins.readAll() }}
+                    {{ mixins.readAll(null, 'mob-hide') }}
                     <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
                 </div>
                 <!-- end wind -->
