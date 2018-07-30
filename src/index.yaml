@@ -13,3 +13,5 @@ PageList:
   ready: 50 
 - file: all-companies.html
   ready: 50   
+- file: 16_goods_services.html
+  ready: 50   
