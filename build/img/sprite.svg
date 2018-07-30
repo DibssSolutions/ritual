@@ -17,6 +17,15 @@
         </style>
     
         <style>
+            .cls-1{fill:#f1ede8;fill-rule:evenodd;filter:url(#filter)}
+        </style>
+        <filter id="filter" x="1497" y="392" width="14" height="14" filterUnits="userSpaceOnUse">
+            <feFlood result="flood" flood-color="#c9c2b6"/>
+            <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+            <feBlend result="blend" in2="SourceGraphic"/>
+        </filter>
+    
+        <style>
             .cls-1{fill:#c9c2b4;fill-rule:evenodd}
         </style>
     
@@ -42,11 +51,24 @@
         </style>
     
         <style>
+            .cls-1{fill-rule:evenodd;filter:url(#filter)}
+        </style>
+        <filter id="filter" x="1468" y="392" width="14" height="14" filterUnits="userSpaceOnUse">
+            <feFlood result="flood" flood-color="#62594f"/>
+            <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+            <feBlend result="blend" in2="SourceGraphic"/>
+        </filter>
+    
+        <style>
             .cls-1{fill:#65594d;stroke:#e6ddd0;stroke-width:3px;opacity:.75;fill-rule:evenodd}
         </style>
     
         <style>
             .cls-1{fill:#62594f;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#c3bdb5;fill-rule:evenodd}
         </style>
     </defs><symbol id="icon-calendar" viewBox="0 0 12 12">
     
@@ -64,6 +86,9 @@
     <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M1485.68 1352.72v-2.56h-1.28v2.56h-2.56v1.28h2.56v2.56h1.28V1354h2.56v-1.28h-2.56zm-11.52 0v2.56h3.62a3.84 3.84 0 1 1-3.62-5.12 3.786 3.786 0 0 1 2.49.93l1.68-1.93a6.306 6.306 0 0 0-4.17-1.56 6.4 6.4 0 1 0 6.4 6.4v-1.28h-6.4z" transform="translate(-1467.75 -1347.59)"/>
 </symbol><symbol id="icon-house" viewBox="0 0 17 17">
     <image width="17" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAsVBMVEV0aV7///90aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV50aV4AAABiYxTcAAAAOXRSTlMAADSfPEP9U1RwZot5p4zDDNskuvvh5t2OBAbH/kjZ6aWoodBM1rdiUr5yv3TYwXbzglptuFwwtBkwhJWLAAAAAWJLR0Q6TgnE+gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IHGBE7My5T9CAAAACNSURBVBjTVczXFoJADATQIIpYsGNFEHuva8n//5iTs64s8zKT+xAinYJb1MP5QcljLtvis6SSSZV1akbqbBJoaXCWZgvisp12h7qcT4/Cfmjd3mBIo/HEkmgqn2OsZJbOF0JLkRXGGr0R2RrZofc5OaCPfzlhnNEXEV/kihGjbyJ3kYdS6ol+vZVKP84XGN0kJ6ChOMQAAAAASUVORK5CYII="/>
+</symbol><symbol id="icon-list" viewBox="0 0 14 14">
+    
+    <path id="List_designed_by_Vectors_Market_from_Flaticon.com" data-name="List designed by Vectors Market from Flaticon.com" class="cls-1" d="M1497 392h2.79v2.8H1497V392zm3.96.751H1511v1.24h-10.04v-1.24zM1497 397.6h2.79v2.8H1497v-2.8zm3.96.751H1511v1.24h-10.04v-1.24zM1497 403.2h2.79v2.8H1497v-2.8zm3.96.748H1511v1.239h-10.04v-1.239z" transform="translate(-1497 -392)"/>
 </symbol><symbol id="icon-printer" viewBox="0 0 13 12">
     
     <path id="Printer_designed_by_Yannick_from_Flaticon.com" data-name="Printer designed by Yannick from Flaticon.com" class="cls-1" d="M681.75 1437h-6.5v4h6.5v-4zm-.812 3.2h-4.876v-.8h4.876v.8zm0-1.6h-4.876v-.8h4.876v.8zm.812-9.6h-6.5v4h6.5v-4zm1.626 2.4h-.813v2.4h-8.126v-2.4h-.813A1.734 1.734 0 0 0 672 1433v4a1.734 1.734 0 0 0 1.625 1.6h.813v-2.4h8.126v2.4h.813A1.735 1.735 0 0 0 685 1437v-4a1.735 1.735 0 0 0-1.624-1.6z" transform="translate(-672 -1429)"/>
@@ -75,10 +100,16 @@
 </symbol><symbol id="icon-smile" viewBox="0 0 21.94 14.85">
     
     <path id="&#x424;&#x438;&#x433;&#x443;&#x440;&#x430;_527" data-name="&#x424;&#x438;&#x433;&#x443;&#x440;&#x430; 527" class="cls-1" d="M1436.44 1358.2a11.406 11.406 0 0 1-15.43-.01c-.3.51-.57.98-.85 1.45a1.269 1.269 0 0 1-1.05.71 1.2 1.2 0 0 1-1.22-1.75c.81-1.5 1.69-2.96 2.58-4.41a1.206 1.206 0 0 1 1.63-.36 1.19 1.19 0 0 1 .5 1.58.724.724 0 0 0 .17.97 7.4 7.4 0 0 0 4.34 2.17 8.768 8.768 0 0 0 5.86-.89 12.447 12.447 0 0 0 1.82-1.43.552.552 0 0 0 .13-.74 1.2 1.2 0 0 1 .49-1.67 1.238 1.238 0 0 1 1.72.53c.8 1.36 1.58 2.72 2.36 4.09a1.258 1.258 0 1 1-2.18 1.25c-.29-.47-.56-.96-.87-1.49zm-5.53-9.84a2 2 0 0 1 2.01-2.01 2.027 2.027 0 0 1 2.04 2 2.069 2.069 0 0 1-2.03 2.02 2.032 2.032 0 0 1-2.02-2.01zm-4.36.06a2 2 0 1 1-3.99-.13 2 2 0 1 1 3.99.13z" transform="translate(-1417.75 -1346.34)"/>
+</symbol><symbol id="icon-tile" viewBox="0 0 14 14">
+    
+    <path id="Keyboard_buttons_or_visualization_button_of_nine_squares_designed_by_Freepik_from_Flaticon.com" data-name="Keyboard buttons or visualization button of nine squares designed by Freepik from Flaticon.com" class="cls-1" d="M1471.81 392.434a.43.43 0 0 0-.43-.435h-2.94a.439.439 0 0 0-.44.435v2.931a.439.439 0 0 0 .44.436h2.94a.439.439 0 0 0 .44-.436v-2.931h-.01zm5.1 0a.439.439 0 0 0-.44-.435h-2.94a.439.439 0 0 0-.44.435v2.931a.439.439 0 0 0 .44.436h2.94a.439.439 0 0 0 .44-.436v-2.931zm5.09 0a.439.439 0 0 0-.44-.435h-2.94a.439.439 0 0 0-.44.435v2.931a.439.439 0 0 0 .44.436h2.94a.439.439 0 0 0 .44-.436v-2.931zm-10.19 5.1a.431.431 0 0 0-.43-.435h-2.94a.44.44 0 0 0-.44.435v2.929a.44.44 0 0 0 .44.436h2.94a.44.44 0 0 0 .44-.436v-2.929h-.01zm5.1 0a.44.44 0 0 0-.44-.435h-2.94a.44.44 0 0 0-.44.435v2.929a.44.44 0 0 0 .44.436h2.94a.44.44 0 0 0 .44-.436v-2.929zm5.09 0a.44.44 0 0 0-.44-.435h-2.94a.44.44 0 0 0-.44.435v2.929a.44.44 0 0 0 .44.436h2.94a.44.44 0 0 0 .44-.436v-2.929zm-10.62 4.663h-2.94a.439.439 0 0 0-.44.435v2.931a.44.44 0 0 0 .44.436h2.94a.44.44 0 0 0 .44-.436v-2.931a.447.447 0 0 0-.44-.432zm5.09 0h-2.94a.439.439 0 0 0-.44.435v2.931a.44.44 0 0 0 .44.436h2.94a.44.44 0 0 0 .44-.436v-2.931a.44.44 0 0 0-.44-.432zm5.09 0h-2.94a.439.439 0 0 0-.44.435v2.931a.44.44 0 0 0 .44.436h2.94a.44.44 0 0 0 .44-.436v-2.931a.44.44 0 0 0-.44-.432z" transform="translate(-1468 -392)"/>
 </symbol><symbol id="icon-up" viewBox="0 0 58.25 58.25">
     
     <path d="M4.5 32.125c0 15.256 12.368 27.625 27.625 27.625 15.256 0 27.625-12.369 27.625-27.625C59.75 16.867 47.381 4.5 32.125 4.5 16.868 4.5 4.5 16.867 4.5 32.125zm29.496-8.418c.134.134.248.282.347.436l10.368 10.368a2.573 2.573 0 0 1 0 3.647 2.58 2.58 0 0 1-3.648 0l-8.935-8.934-8.889 8.889a2.58 2.58 0 0 1-3.648-3.648l10.321-10.322a2.549 2.549 0 0 1 2.216-1.187 2.56 2.56 0 0 1 1.868.751z" class="cls-1"/>
 </symbol><symbol id="icon-user" viewBox="0 0 39.188 48.94">
     
     <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M745.5 1788.6c7.238 0 9.842-7.26 10.524-13.21.84-7.35-2.628-12.87-10.524-12.87s-11.364 5.52-10.524 12.87c.683 5.95 3.286 13.21 10.524 13.21zm19.579 17.27a49.563 49.563 0 0 0-.753-6.91c-.488-2.76-1.11-6.8-3.515-8.6-1.391-1.04-3.192-1.38-4.785-2a23.029 23.029 0 0 1-2.12-.95 11.462 11.462 0 0 1-16.812 0 23.052 23.052 0 0 1-2.121.95c-1.592.62-3.393.96-4.784 2-2.4 1.8-3.027 5.84-3.515 8.6a49.563 49.563 0 0 0-.753 6.91c-.061 1.79.822 2.04 2.319 2.59a45.723 45.723 0 0 0 5.758 1.59 46.972 46.972 0 0 0 23 0 45.662 45.662 0 0 0 5.757-1.59c1.502-.55 2.385-.8 2.324-2.59z" transform="translate(-725.906 -1762.53)"/>
+</symbol><symbol id="icon-users" viewBox="0 0 16 13.375">
+    
+    <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M782.655 786.1a2.9 2.9 0 0 1 1.354 2.149 2.333 2.333 0 1 0-1.354-2.149zm-1.537 4.782a2.336 2.336 0 1 0-2.347-2.335 2.342 2.342 0 0 0 2.347 2.334zm1 .159h-1.991a3 3 0 0 0-3 2.991v2.424l.006.038.168.052a13.724 13.724 0 0 0 4.085.656 8.417 8.417 0 0 0 3.567-.667l.157-.079h.017v-2.424a3 3 0 0 0-3.014-2.992zm3.882-2.412h-1.98a2.874 2.874 0 0 1-.892 2 3.557 3.557 0 0 1 2.55 3.4v.747a8.11 8.11 0 0 0 3.149-.659l.157-.079H789v-2.425a3 3 0 0 0-3-2.984zm-9-.159a2.336 2.336 0 0 0 1.248-.361 2.89 2.89 0 0 1 1.092-1.843c0-.044.007-.087.007-.131A2.347 2.347 0 1 0 777 788.47zm2.108 2.164a2.873 2.873 0 0 1-.892-1.994c-.073 0-.146-.011-.221-.011H776a3 3 0 0 0-3 2.99v2.425l.006.037.168.053a14.135 14.135 0 0 0 3.383.633v-.732a3.558 3.558 0 0 1 2.551-3.401z" transform="translate(-773 -783.813)"/>
 </symbol></svg>

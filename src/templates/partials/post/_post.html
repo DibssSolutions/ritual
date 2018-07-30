@@ -219,7 +219,7 @@
                                 </div>
                             </div>
                             <div class="related-comments facilities">
-                                <h5 class="title-s_mod">Комментарии (2)</h5>
+                                <h5 class="title-s_mod">Комментарии (2) <span class="arrow-up"><i class="fa fas fa-caret-up"></i></span></h5>
                                 <div class="team-info no-border">
                                     <div class="col-md-3">
                                         <div class="posts-image posts-image_mod" style="background-image: url(img/user1.png);">
@@ -251,20 +251,9 @@
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="blog-comment-form">
-                                <h5 class="title-s_mod">Оставить комментарий</h5>
-                                <form>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <input type="text" placeholder="Ваше имя">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <textarea placeholder="Комментарий"></textarea>
-                                    <button type="submit" class="btn btn-md padding-horizontal-40">Отправить</button>
-                                </form>
+                            <div class="comment-form">
+                                <h5 class="comment-form__title title-s_mod">Оставить комментарий <span class="arrow-up"><i class="fa fas fa-caret-up"></i></span></h5>
+                                {% include "partials/post/_post-form.html" %}
                             </div>
                         </div>
                     </div>

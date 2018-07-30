@@ -9,24 +9,52 @@
             </ul>
         </div>
     </div>
-    <div class="companies">
+    <div class="all-companies">
         <div class="container">
-            <div class="companies__content">
-                <div class="companies__head section-head text-center">
-                    <h3 class="companies__title title-l">Все компании</h3>
+            <div class="all-companies__content">
+                <div class="all-companies__head section-head text-center">
+                    <h3 class="all-companies__title title-l">Все компании</h3>
                     <p>Подзаголовок страницы</p>
                 </div>
                 <div class="row">
                     <div class="aside-position">
-                        <aside class="col-md-3 col-sm-5 sidebar padding-aside bg-color">
+                        <aside class="col-md-3 col-sm-4 sidebar padding-aside bg-color">
                         <div class="side-widget">
-                            <h5 class="title-s">Фильтр</h5>
-                            <form class="search color">
-                                <input type="search" placeholder="Поиск">
-                                <button type="submit"><i class="fa fa-search"></i></button>
+                            <form action="/" class="side-form">
+                                <h5 class="title-m">Фильтр</h5>
+                                <div class="region select">
+                                    <h5 class="title-s">Район</h5>
+                                    <select name="region" id="region" style="width: 232px" class="js-select">
+                                        <option value="1">Железнодорожный</option>
+                                        <option value="2">Индустриальный</option>
+                                        <option value="3">Кировский</option>
+                                        <option value="4">Краснофлотский</option>
+                                        <option value="5">Центральный</option>
+                                    </select>
+                                </div>
+                                <div class="age select">
+                                    <h5 class="title-s">Возраст компании</h5>
+                                    <select name="age" id="age" style="width: 232px" class="js-select">
+                                        <option value="1">до 1 года</option>
+                                        <option value="2">от 1 до 5 лет</option>
+                                        <option value="3">от 5 до 10 лет</option>
+                                        <option value="4">от 10 до 20 лет</option>
+                                        <option value="5">больше 20 лет</option>
+                                    </select>
+                                </div>
+                                <div class="review select">
+                                    <h5 class="title-s">Количество отзывов</h5>
+                                    <select name="review" id="review" style="width: 232px" class="js-select">
+                                        <option value="1">до 10</option>
+                                        <option value="2">от 10 до 20</option>
+                                        <option value="3">от 20 до 50</option>
+                                        <option value="4">больше 50</option>
+                                    </select>
+                                </div>
+                                <div class="side-btn"> <button class="btn">Применить</button> </div>
                             </form>
                         </div>
-                        <div class="side-widget">
+                        <!-- <div class="side-widget">
                             <form class="side-form" action="/">
                                 <h5 class="title-s">Рубрики</h5>
                                 <ul class="side-cat">
@@ -115,11 +143,11 @@
                                     <button class="btn">Применить</button>
                                 </div>
                             </form>
-                        </div>
+                        </div> -->
                         <div class="side-widget width-img-angel hidein">
                             <img src="img/angel-statue.jpg" alt="angel-statue">
                         </div>
-                        <div class="side-widget hidein">
+                        <!-- <div class="side-widget hidein">
                             <h5 class="title-s">Недавние публикации</h5>
                             <ul class="side-posts">
                                 <li class="margin-bottom-30">
@@ -147,7 +175,7 @@
                                     <span class="meta">Имя Фаилия</span>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                         <div class="side-widget hidein">
                             <div class="banner">
                                 <img src="img/banner.png" alt="banner">
@@ -155,11 +183,134 @@
                         </div>
                         </aside>
                     </div>
-                    <div class="col-md-9 col-sm-7">
+                    <div class="col-md-9 col-sm-8">
+                        <div class="all-companies__tile">
+                            <div class="all-companies__top mob-hide">
+                                <div class="shop-sort-wrap">
+                                    <div class="ps-options pull-left">
+                                        <span>Показывать по:</span>
+                                        <div class="ps-select">
+                                            <i class="fa fa-caret-down"></i>
+                                            <select>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option selected>6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="shop-sort">
+                                        <a href="#" class="active"><i class="flaticon-squares"></i></a>
+                                        <a href="#"><i class="flaticon-signs-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                            {% for i in range(0, 6) %}
+                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                    <a href="#" class="margin-bottom-50 all-companies__item companies-item">
+                                        <div class="companies-item__wrap">
+                                            <div class="sf-thumb">
+                                                <img src="./img/all-companies/logo-1.jpg" alt="img">
+                                            </div>
+                                            <div class="companies-item__text">
+                                                <h4 class="title-s companies-item__name">Название компании</h4>
+                                                <div class="companies-item__type">Ритуальное агентство</div>
+                                                <div class="companies-item__descr">
+                                                    <div class="product-reviews">
+                                                        <span class="pr-ratings">
+                                                            <i class="flaticon-favorite"></i>
+                                                            <i class="flaticon-favorite"></i>
+                                                            <i class="flaticon-favorite"></i>
+                                                            <i class="flaticon-favorite"></i>
+                                                            <i class="flaticon-favorite"></i>
+                                                        </span>
+                                                        <div class="product-reviews__details mob-hide">
+                                                            <span>5.0</span>
+                                                            <span>{{ mixins.icon('users') }}</span>
+                                                            <span>(1)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="companies-item__region">
+                                                        Железнодорожный
+                                                    </div>
+                                                </div>
+
+                                            <span class="btn">Подробнее</span>
+                                        </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            {% endfor %}
+                            </div>
+                            <!-- Start page-nav -->
+                            {% include "partials/blogs/_page-nav.html" %}
+                            <!-- End page-nav -->
+                        </div>
+                        <div class="all-companies__list mob-hide">
+                            <div class="all-companies__top mob-hide">
+                                <div class="shop-sort-wrap">
+                                    <div class="ps-options pull-left">
+                                        <span>Показывать по:</span>
+                                        <div class="ps-select">
+                                            <i class="fa fa-caret-down"></i>
+                                            <select>
+                                                <option selected>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="shop-sort">
+                                        <a href="#"><i class="flaticon-squares"></i></a>
+                                        <a href="#" class="active"><i class="flaticon-signs-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {% for i in range(0, 4) %}
+                                <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
+                                    <a href="#" class="all-companies__item companies-item">
+                                        <div class="companies-item__wrap">
+                                            <div class="sf-thumb">
+                                                <img src="./img/all-companies/logo-1.jpg" alt="img">
+                                            </div>
+                                            <div class="companies-item__text">
+                                                <h4 class="title-s companies-item__name">Название компании</h4>
+                                                <div class="companies-item__type">Ритуальное агентство</div>
+                                                <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
+                                                <div class="companies-item__descr">
+                                                    <div class="product-reviews">
+                                                        <span class="pr-ratings">
+                                                            <i class="flaticon-favorite"></i>
+                                                            <i class="flaticon-favorite"></i>
+                                                            <i class="flaticon-favorite"></i>
+                                                            <i class="flaticon-favorite"></i>
+                                                            <i class="flaticon-favorite"></i>
+                                                        </span>
+                                                        <div class="product-reviews__details mob-hide">
+                                                            <span>5.0</span>
+                                                            <span>{{ mixins.icon('users') }}</span>
+                                                            <span>(1)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="companies-item__region">
+                                                        Железнодорожный
+                                                    </div>
+                                                </div>
+                                            
+
+                                                <span class="btn">Подробнее</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                <!-- </div> -->
+                            {% endfor %}
+                            <!-- Start page-nav -->
+                            {% include "partials/blogs/_page-nav.html" %}
+                            <!-- End page-nav -->
+                        </div>
                         
-                        <!-- Start page-nav -->
-                        {% include "partials/blogs/_page-nav.html" %}
-                        <!-- End page-nav -->
                     </div>
                 </div>
                 <div class="bottom-image">
