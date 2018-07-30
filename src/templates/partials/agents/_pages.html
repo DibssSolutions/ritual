@@ -236,7 +236,7 @@
                 <div class="wind">
                     {{ mixins.windHead('Ритуальный агент') }}
                     <!-- begin agency -->
-                    <div class="agency">
+                    <div class="wind__agency agency">
                         <div class="agency__table">
                             <div class="agency__table-cell">
                                 <div class="agency__logo agency__logo_md">
@@ -265,9 +265,130 @@
                     </div>
                     <!-- end agency -->
                     <!-- begin map -->
-                    <div class="map-wrap">
-                    <div class="js-map map" data-center-lat="-34.097" data-center-lng="150.644"></div>
-                    </div>
+                    <div class="js-map map map_md" id="mapInf" data-center-lat="-34.097" data-center-lng="150.644"></div>
+                        {% set tamplate = '<div class="baloon">
+                            <div class="baloon__content">
+                                <div class="baloon__row">
+                                    <div class="baloon__col">
+                                        {{? baloon.img }}
+                                        <div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
+                                        {{?}}
+                                        {{? baloon.title }}
+                                        <div class="baloon__title">{{=baloon.title}}</div>
+                                        {{?}}
+                                        {{? baloon.linkText }}
+                                        <div class="baloon__footer">
+                                            <a href="{{=baloon.linkUrl}}" class="btn btn_small">{{=baloon.linkText}}<i class="fi flaticon-arrows"></i></a>
+                                        </div>
+                                        {{?}}
+                                    </div>
+                                    <div class="baloon__col">
+                                        {{? baloon.address }}
+                                            <div class="baloon__item"><i class="fa fa-map-marker"></i>{{=baloon.address}}</div>
+                                        {{?}}
+                                        {{? baloon.address }}
+                                            <div class="baloon__item"><i class="fi flaticon-technology"></i>{{=baloon.phone}}</div>
+                                        {{?}}
+                                        {{? baloon.address }}
+                                            <div class="baloon__item"><i class="fi flaticon-black"></i>{{=baloon.email}}</div>
+                                        {{?}}
+                                        {{? baloon.address }}
+                                            <div class="baloon__item"><i class="fi flaticon-clock"></i>{{=baloon.time}}</div>
+                                        {{?}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>' %}
+                        {% set array = '[
+                                {
+                                    "content": {
+                                        "title": "1. Название компании",
+                                        "linkUrl": "#",
+                                        "linkText": "Перейти",
+                                        "img": "./img/map-img.png",
+                                        "imgAlt": "img",
+                                        "address": "Хабаровск, Гоголя, 8",
+                                        "phone": "8 (111) 123 123",
+                                        "email": "dmitryz5700@gmail.com",
+                                        "time": "С 7.00 до 21.00, без выходных",
+                                        "list": [
+                                            {
+                                                "bla": "bla"
+                                            },
+                                            {
+                                                "bla": "bla"
+                                            }
+                                        ]
+                                    },
+                                    "marker": {
+                                        "id": 2,
+                                        "position": {
+                                            "lat": -34.397,
+                                            "lng": 151.044
+                                        },
+                                        "icon": {
+                                            "default": "img/marker.png",
+                                            "active": "img/marker.png",
+                                            "size": {
+                                                "x": 50,
+                                                "y": 64
+                                            },
+                                            "centering": {
+                                                "x": 20,
+                                                "y": 58
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "content": {
+                                        "title": "1. Название компании",
+                                        "linkUrl": "#",
+                                        "linkText": "Перейти",
+                                        "img": "./img/map-img.png",
+                                        "imgAlt": "img",
+                                        "address": "Хабаровск, Гоголя, 8",
+                                        "phone": "8 (111) 123 123",
+                                        "email": "dmitryz5700@gmail.com",
+                                        "time": "С 7.00 до 21.00, без выходных",
+                                        "list": [
+                                            {
+                                                "bla": "bla"
+                                            },
+                                            {
+                                                "bla": "bla"
+                                            }
+                                        ]
+                                    },
+                                    "marker": {
+                                        "id": 3,
+                                        "position": {
+                                            "lat": -34.397,
+                                            "lng": 151.444
+                                        },
+                                        "icon": {
+                                            "default": "img/marker.png",
+                                            "active": "img/marker.png",
+                                            "size": {
+                                                "x": 50,
+                                                "y": 64
+                                            },
+                                            "centering": {
+                                                "x": 20,
+                                                "y": 58
+                                            }
+                                        }
+                                    }
+                                }
+                            ]' %}
+                        <script type="text/template" class="js-mapInf">
+                            {{ tamplate | safe }}
+                        </script>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function(){
+                                window.mapInf.add({{array | safe}})
+                            });
+                        </script>
                     <!-- end map -->
                 </div>
                 <!-- end wind -->
