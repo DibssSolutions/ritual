@@ -5,10 +5,10 @@
 	&__row
 		&:not(:last-child)
 			margin-bottom: 25px
-			+sm
+			+md
 				margin-bottom: 10px
 	&__col
-		+sm
+		+md
 			&:not(:last-child)
 				margin-bottom: 10px
 .agency
@@ -27,6 +27,9 @@
 		max-width: 130px
 		+sm
 			max-width: 70px
+		&_md
+			+sm
+				max-width: 130px
 		img
 			max-width: 100%
 			max-height: 56px
@@ -41,6 +44,10 @@
 		.ratings
 			+sm
 				padding: 0
+	&__stars
+		float: left
+		margin-top: 8px
+		width: 100%
 	&__link
 		margin-top: 15px
 		+sm
@@ -63,3 +70,31 @@
 		margin-top: 20px
 		+sm
 			margin-top: 10px
+	&__table
+		padding: 23px 30px
+		width: 100%
+		table-layout: fixed
+		display: table
+		+md
+			padding: 10px
+			column-count: 2
+	&__table-cell
+		width: 33.3%
+		vertical-align: middle
+		display: table-cell
+		+clr
+		+md
+			width: 50%
+			font-size: 12px
+			vertical-align: top
+			display: inline-block
+		&:first-child
+			+md
+				height: min-content
+		&:not(:last-child)
+			padding-right: 10px
+			+md
+				padding-right: 0
+		&_mob
+			+md
+				margin-left: 50%

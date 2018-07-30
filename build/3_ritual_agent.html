@@ -112,8 +112,8 @@
       <div class="clearfix"></div>
       <!-- begin map -->
       <div class="map-wrap">
-        <div class="js-map map" data-center-lat="-34.097" data-center-lng="150.644"></div>
-        <script type="text/template" class="js-infobox">
+        <div class="js-map map" id="mapInfobox" data-center-lat="-34.097" data-center-lng="150.644"></div>
+        <script type="text/template" class="js-mapInfobox">
           <div class="baloon">
             <!-- <button class="baloon__close js-infobox-close"></button> -->
             <div class="baloon__content">
@@ -134,7 +134,7 @@
         <script>
           document.addEventListener('DOMContentLoaded', function()
           {
-            window.map.add([
+            window.mapInfobox.add([
             {
               "content":
               {
@@ -228,7 +228,131 @@
           });
 
         </script>
-      </div>
+        <!-- 	FOR EXEMPLE
+<div class="js-map map" id="mapInf" data-center-lat="-34.097" data-center-lng="150.644"></div>
+	
+	
+	<script type="text/template" class="js-mapInf">
+		<div class="baloon">
+		<div class="baloon__content">
+			<div class="baloon__row">
+				<div class="baloon__col">
+					{{? baloon.img }}
+					<div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
+					{{?}}
+					{{? baloon.title }}
+					<div class="baloon__title">{{=baloon.title}}</div>
+					{{?}}
+					{{? baloon.linkText }}
+					<div class="baloon__footer">
+						<a href="{{=baloon.linkUrl}}" class="btn btn_small">{{=baloon.linkText}}<i class="fi flaticon-arrows"></i></a>
+					</div>
+					{{?}}
+				</div>
+				<div class="baloon__col">
+					{{? baloon.address }}
+						<div class="baloon__item"><i class="fa fa-map-marker"></i>{{=baloon.address}}</div>
+					{{?}}
+					{{? baloon.address }}
+						<div class="baloon__item"><i class="fi flaticon-technology"></i>{{=baloon.phone}}</div>
+					{{?}}
+					{{? baloon.address }}
+						<div class="baloon__item"><i class="fi flaticon-black"></i>{{=baloon.email}}</div>
+					{{?}}
+					{{? baloon.address }}
+						<div class="baloon__item"><i class="fi flaticon-clock"></i>{{=baloon.time}}</div>
+					{{?}}
+				</div>
+			</div>
+		</div>
+	</div>
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+			window.mapInf.add([
+			{
+				"content": {
+					"title": "1. Название компании",
+					"linkUrl": "#",
+					"linkText": "Перейти",
+					"img": "./img/map-img.png",
+					"imgAlt": "img",
+					"address": "Хабаровск, Гоголя, 8",
+					"phone": "8 (111) 123 123",
+					"email": "dmitryz5700@gmail.com",
+					"time": "С 7.00 до 21.00, без выходных",
+					"list": [
+						{
+							"bla": "bla"
+						},
+						{
+							"bla": "bla"
+						}
+					]
+				},
+				"marker": {
+					"id": 2,
+					"position": {
+						"lat": -34.397,
+						"lng": 151.044
+					},
+					"icon": {
+						"default": "img/marker.png",
+						"active": "img/marker.png",
+						"size": {
+							"x": 50,
+							"y": 64
+						},
+						"centering": {
+							"x": 20,
+							"y": 58
+						}
+					}
+				}
+			},
+			{
+				"content": {
+					"title": "1. Название компании",
+					"linkUrl": "#",
+					"linkText": "Перейти",
+					"img": "./img/map-img.png",
+					"imgAlt": "img",
+					"address": "Хабаровск, Гоголя, 8",
+					"phone": "8 (111) 123 123",
+					"email": "dmitryz5700@gmail.com",
+					"time": "С 7.00 до 21.00, без выходных",
+					"list": [
+						{
+							"bla": "bla"
+						},
+						{
+							"bla": "bla"
+						}
+					]
+				},
+				"marker": {
+					"id": 3,
+					"position": {
+						"lat": -34.397,
+						"lng": 151.444
+					},
+					"icon": {
+						"default": "img/marker.png",
+						"active": "img/marker.png",
+						"size": {
+							"x": 50,
+							"y": 64
+						},
+						"centering": {
+							"x": 20,
+							"y": 58
+						}
+					}
+				}
+			}
+		])
+		});
+	</script> --></div>
       <!-- end map -->
       <!-- begin agents -->
       <div class="agencies">
@@ -416,96 +540,454 @@
         </div>
       </div>
       <!-- end agents -->
-      <!-- begin footer -->
-      <footer class="footer">
-        <div class="footer__top">
-          <div class="footer__container container">
-            <div class="footer__bg"></div>
-            <div class="row">
-              <div class="col-md-3 col-sm-6"> <a href="#" class="footer-logo"><img src="./img/logo-sm.png" alt="logo-sm"></a>
-                <ul class="footer-list">
-                  <li class="footer-list__item"><a href="#" class="footer-list__link">О портале</a></li>
-                  <li class="footer-list__item"><a href="#" class="footer-list__link">Доска объявлений </a></li>
-                  <li class="footer-list__item"><a href="#" class="footer-list__link">Похороны своими силами</a></li>
-                  <li class="footer-list__item"><a href="#" class="footer-list__link">Рекламодателям</a></li>
+      <!-- begin pages -->
+      <div class="pages">
+        <div class="pages__container container">
+          <div class="row">
+            <aside class="col-md-3 col-sm-5">
+              <div class="links"> <a href="#">Описание <i class="fi flaticon-arrows-1"></i></a> <a class="active" href="#">О компании <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши услуги, тарифы <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши сотрудники <i class="fi flaticon-arrows-1"></i></a>                <a href="#">Наши контакты <i class="fi flaticon-arrows-1"></i></a> <a href="#">Карточка мероприятия <i class="fi flaticon-arrows-1"></i></a> </div>
+            </aside>
+            <div class="col-md-9 col-sm-7">
+              <!-- begin wind -->
+              <div class="wind">
+                <!-- begin wind-head -->
+                <div class="wind-head">
+                  <div class="wind-head__title">Название компании</div>
+                  <div class="wind-head__name">Ритуальный агент</div>
+                </div>
+                <!-- end wind-head -->
+                <p>С потерей любимого человека трудно принять тот факт, что его нет больше рядом, и еще труднее взять себя в руки, чтобы прощаться с ним достойно. Мы с пониманием относимся к вашему горю и готовы оказать помощь.</p>
+                <p>В спектр услуг ритуального агентства «Диорама» входят следующие обязанности:</p>
+                <ul class="wind__list">
+                  <li>реализация перевозки тела в покойницкую и на кладбище;</li>
+                  <li>приобретение вещей для умершего человека и их доставка;</li>
+                  <li>приобретение гроба и других панихидных атрибутов;</li>
                 </ul>
+                <!-- begin read-all -->
+                <div class="read-all mob-hide"> <a href="#" class="read-all__link">Читать всю информацию<span class="fi flaticon-arrows"></span></a> </div>
+                <!-- end read-all -->
+                <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
               </div>
-              <div class="col-md-3 col-sm-6 mob-hide">
-                <h4 class="title-sm">Последние некрологи</h4>
-                <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                  <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
-                    <div class="block__label">Дата похорон: </div>
-                    <div class="block__date">Вт. 03-12-2018</div>
+              <!-- end wind -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end pages -->
+      <!-- begin pages -->
+      <div class="pages">
+        <div class="pages__container container">
+          <div class="row">
+            <aside class="col-md-3 col-sm-5">
+              <div class="links"> <a href="#">Описание <i class="fi flaticon-arrows-1"></i></a> <a class="active" href="#">О компании <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши услуги, тарифы <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши сотрудники <i class="fi flaticon-arrows-1"></i></a>                <a href="#">Наши контакты <i class="fi flaticon-arrows-1"></i></a> <a href="#">Карточка мероприятия <i class="fi flaticon-arrows-1"></i></a> </div>
+            </aside>
+            <div class="col-md-9 col-sm-7">
+              <!-- begin wind -->
+              <div class="wind">
+                <!-- begin wind-head -->
+                <div class="wind-head">
+                  <div class="wind-head__title">Название компании</div>
+                  <div class="wind-head__name">Ритуальный агент</div>
+                </div>
+                <!-- end wind-head -->
+                <!-- begin about-agency -->
+                <div class="about-agency">
+                  <div class="about-agency__row row">
+                    <div class="about-agency__col col-md-4">
+                      <div class="about-agency__info">
+                        <div class="about-agency__info-wrap">
+                          <div class="about-agency__head">
+                            <div class="about-agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+                            <div class="about-agency__rating"> <span class="ratings">
+                                                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                              <span class="ratings__appraisal">4.0</span> </span>
+                            </div>
+                          </div>
+                          <div class="about-agency__contact">
+                            <p>8 (111) 123 123 </p>
+                            <p>С 7.00 до 21.00, без выходных </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="about-agency__col col-md-8">
+                      <h3 class="about-agency__title-s title-s">Название компании</h3>
+                      <p>Южный Ангел с Вами</p>
+                      <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения
+                        форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
+                    </div>
                   </div>
                 </div>
-                <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                  <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
-                    <div class="block__label">Дата похорон: </div>
-                    <div class="block__date">Вт. 03-12-2018</div>
-                  </div>
+                <!-- end about-agency -->
+                <!-- begin read-all -->
+                <div class="read-all mob-hide"> <a href="#" class="read-all__link">Читать всю информацию<span class="fi flaticon-arrows"></span></a> </div>
+                <!-- end read-all -->
+                <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
+              </div>
+              <!-- end wind -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end pages -->
+      <!-- begin pages -->
+      <div class="pages">
+        <div class="pages__container container">
+          <div class="row">
+            <aside class="col-md-3 col-sm-5">
+              <div class="links"> <a href="#">Описание <i class="fi flaticon-arrows-1"></i></a> <a class="active" href="#">О компании <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши услуги, тарифы <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши сотрудники <i class="fi flaticon-arrows-1"></i></a>                <a href="#">Наши контакты <i class="fi flaticon-arrows-1"></i></a> <a href="#">Карточка мероприятия <i class="fi flaticon-arrows-1"></i></a> </div>
+            </aside>
+            <div class="col-md-9 col-sm-7">
+              <!-- begin wind -->
+              <div class="wind">
+                <!-- begin wind-head -->
+                <div class="wind-head">
+                  <div class="wind-head__title">Название компании</div>
+                  <div class="wind-head__name">Ритуальный агент</div>
                 </div>
-                <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                  <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
-                    <div class="block__label">Дата похорон: </div>
-                    <div class="block__date">Вт. 03-12-2018</div>
+                <!-- end wind-head -->
+              </div>
+              <!-- end wind -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end pages -->
+      <!-- begin pages -->
+      <div class="pages">
+        <div class="pages__container container">
+          <div class="row">
+            <aside class="col-md-3 col-sm-5">
+              <div class="links"> <a href="#">Описание <i class="fi flaticon-arrows-1"></i></a> <a class="active" href="#">О компании <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши услуги, тарифы <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши сотрудники <i class="fi flaticon-arrows-1"></i></a>                <a href="#">Наши контакты <i class="fi flaticon-arrows-1"></i></a> <a href="#">Карточка мероприятия <i class="fi flaticon-arrows-1"></i></a> </div>
+            </aside>
+            <div class="col-md-9 col-sm-7">
+              <!-- begin wind -->
+              <div class="wind">
+                <!-- begin wind-head -->
+                <div class="wind-head">
+                  <div class="wind-head__title">Название компании</div>
+                  <div class="wind-head__name">Ритуальный агент</div>
+                </div>
+                <!-- end wind-head -->
+                <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
+              </div>
+              <!-- end wind -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end pages -->
+      <!-- begin pages -->
+      <div class="pages">
+        <div class="pages__container container">
+          <div class="row">
+            <aside class="col-md-3 col-sm-5">
+              <div class="links"> <a href="#">Описание <i class="fi flaticon-arrows-1"></i></a> <a class="active" href="#">О компании <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши услуги, тарифы <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши сотрудники <i class="fi flaticon-arrows-1"></i></a>                <a href="#">Наши контакты <i class="fi flaticon-arrows-1"></i></a> <a href="#">Карточка мероприятия <i class="fi flaticon-arrows-1"></i></a> </div>
+            </aside>
+            <div class="col-md-9 col-sm-7">
+              <!-- begin wind -->
+              <div class="wind">
+                <!-- begin wind-head -->
+                <div class="wind-head">
+                  <div class="wind-head__title">Название компании</div>
+                  <div class="wind-head__name">Ритуальный агент</div>
+                </div>
+                <!-- end wind-head -->
+                <div class="wind__row row">
+                  <div class="wind__preson col-md-4 col-sm-6 col-xs-6">
+                    <!-- begin person -->
+                    <a href="#" class="person">
+                      <div class="person__img" style="background-image: url(./img/person.png);"></div>
+                      <div class="person__name-wrap">
+                        <div class="person__name">Сергей</div>
+                      </div>
+                      <div class="person__position">Агент</div>
+                      <div class="person__text mob-hide">Опытный сотрудник, только положительные отзывы. Чуткий, понимающий профессионал</div>
+                    </a>
+                    <!-- end person -->
+                  </div>
+                  <div class="wind__preson col-md-4 col-sm-6 col-xs-6">
+                    <!-- begin person -->
+                    <a href="#" class="person">
+                      <div class="person__img" style="background-image: url(./img/person.png);"></div>
+                      <div class="person__name-wrap">
+                        <div class="person__name">Сергей</div>
+                      </div>
+                      <div class="person__position">Агент</div>
+                      <div class="person__text mob-hide">Опытный сотрудник, только положительные отзывы. Чуткий, понимающий профессионал</div>
+                    </a>
+                    <!-- end person -->
+                  </div>
+                  <div class="wind__preson col-md-4 col-sm-6 col-xs-6">
+                    <!-- begin person -->
+                    <a href="#" class="person">
+                      <div class="person__img" style="background-image: url(./img/person.png);"></div>
+                      <div class="person__name-wrap">
+                        <div class="person__name">Сергей</div>
+                      </div>
+                      <div class="person__position">Директор</div>
+                      <div class="person__text mob-hide">Директор компании, руководитель с мног mob-hideолетним стажем работы как в государственных, так и aастных компаниях сферы оказания услуг</div>
+                  </div>
+                  <!-- end person -->
+                </div>
+              </div>
+              <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
+            </div>
+            <!-- end wind -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end pages -->
+    <!-- begin pages -->
+    <div class="pages">
+      <div class="pages__container container">
+        <div class="row">
+          <aside class="col-md-3 col-sm-5">
+            <div class="links"> <a href="#">Описание <i class="fi flaticon-arrows-1"></i></a> <a class="active" href="#">О компании <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши услуги, тарифы <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши сотрудники <i class="fi flaticon-arrows-1"></i></a>              <a href="#">Наши контакты <i class="fi flaticon-arrows-1"></i></a> <a href="#">Карточка мероприятия <i class="fi flaticon-arrows-1"></i></a> </div>
+          </aside>
+          <div class="col-md-9 col-sm-7">
+            <!-- begin wind -->
+            <div class="wind">
+              <!-- begin wind-head -->
+              <div class="wind-head">
+                <div class="wind-head__title">Название компании</div>
+                <div class="wind-head__name">Ритуальный агент</div>
+              </div>
+              <!-- end wind-head -->
+              <!-- begin agency -->
+              <div class="wind__agency agency">
+                <div class="agency__table">
+                  <div class="agency__table-cell">
+                    <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
+                    <div class="agency__stars"> <span class="ratings">
+                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                      <span class="ratings__appraisal">4.0</span> </span>
+                    </div>
+                  </div>
+                  <div class="agency__table-cell">
+                    <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                    <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                  </div>
+                  <div class="agency__table-cell agency__table-cell_mob">
+                    <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                    <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 mob-hide">
-                <h4 class="title-sm">Последние статьи</h4>
-                <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                  <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
-                    <div class="block__label">Имя Фамилия</div>
+              <!-- end agency -->
+              <!-- begin map -->
+              <div class="js-map map map_md" id="mapInf" data-center-lat="-34.097" data-center-lng="150.644"></div>
+              <script type="text/template" class="js-mapInf">
+                <div class="baloon">
+                  <div class="baloon__content">
+                    <div class="baloon__row">
+                      <div class="baloon__col"> {{? baloon.img }}
+                        <div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div> {{?}} {{? baloon.title }}
+                        <div class="baloon__title">{{=baloon.title}}</div> {{?}} {{? baloon.linkText }}
+                        <div class="baloon__footer"> <a href="{{=baloon.linkUrl}}" class="btn btn_small">{{=baloon.linkText}}<i class="fi flaticon-arrows"></i></a> </div> {{?}} </div>
+                      <div class="baloon__col"> {{? baloon.address }}
+                        <div class="baloon__item"><i class="fa fa-map-marker"></i>{{=baloon.address}}</div> {{?}} {{? baloon.address }}
+                        <div class="baloon__item"><i class="fi flaticon-technology"></i>{{=baloon.phone}}</div> {{?}} {{? baloon.address }}
+                        <div class="baloon__item"><i class="fi flaticon-black"></i>{{=baloon.email}}</div> {{?}} {{? baloon.address }}
+                        <div class="baloon__item"><i class="fi flaticon-clock"></i>{{=baloon.time}}</div> {{?}} </div>
+                    </div>
                   </div>
                 </div>
-                <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                  <div class="block__wrap"> <a href="#" class="block__title">Что снится к любви и наслаждению, а что – к разлуке и печали</a>
-                    <div class="block__label">Имя Фамилия</div>
-                  </div>
-                </div>
-                <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                  <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
-                    <div class="block__label">Имя Фамилия</div>
-                  </div>
+              </script>
+              <script>
+                document.addEventListener('DOMContentLoaded', function()
+                {
+                  window.mapInf.add([
+                  {
+                    "content":
+                    {
+                      "title": "1. Название компании",
+                      "linkUrl": "#",
+                      "linkText": "Перейти",
+                      "img": "./img/map-img.png",
+                      "imgAlt": "img",
+                      "address": "Хабаровск, Гоголя, 8",
+                      "phone": "8 (111) 123 123",
+                      "email": "dmitryz5700@gmail.com",
+                      "time": "С 7.00 до 21.00, без выходных",
+                      "list": [
+                      {
+                        "bla": "bla"
+                      },
+                      {
+                        "bla": "bla"
+                      }]
+                    },
+                    "marker":
+                    {
+                      "id": 2,
+                      "position":
+                      {
+                        "lat": -34.397,
+                        "lng": 151.044
+                      },
+                      "icon":
+                      {
+                        "default": "img/marker.png",
+                        "active": "img/marker.png",
+                        "size":
+                        {
+                          "x": 50,
+                          "y": 64
+                        },
+                        "centering":
+                        {
+                          "x": 20,
+                          "y": 58
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "content":
+                    {
+                      "title": "1. Название компании",
+                      "linkUrl": "#",
+                      "linkText": "Перейти",
+                      "img": "./img/map-img.png",
+                      "imgAlt": "img",
+                      "address": "Хабаровск, Гоголя, 8",
+                      "phone": "8 (111) 123 123",
+                      "email": "dmitryz5700@gmail.com",
+                      "time": "С 7.00 до 21.00, без выходных",
+                      "list": [
+                      {
+                        "bla": "bla"
+                      },
+                      {
+                        "bla": "bla"
+                      }]
+                    },
+                    "marker":
+                    {
+                      "id": 3,
+                      "position":
+                      {
+                        "lat": -34.397,
+                        "lng": 151.444
+                      },
+                      "icon":
+                      {
+                        "default": "img/marker.png",
+                        "active": "img/marker.png",
+                        "size":
+                        {
+                          "x": 50,
+                          "y": 64
+                        },
+                        "centering":
+                        {
+                          "x": 20,
+                          "y": 58
+                        }
+                      }
+                    }
+                  }])
+                });
+
+              </script>
+              <!-- end map -->
+            </div>
+            <!-- end wind -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end pages -->
+    <!-- begin footer -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__container container">
+          <div class="footer__bg"></div>
+          <div class="row">
+            <div class="col-md-3 col-sm-6"> <a href="#" class="footer-logo"><img src="./img/logo-sm.png" alt="logo-sm"></a>
+              <ul class="footer-list">
+                <li class="footer-list__item"><a href="#" class="footer-list__link">О портале</a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Доска объявлений </a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Похороны своими силами</a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Рекламодателям</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 mob-hide">
+              <h4 class="title-sm">Последние некрологи</h4>
+              <div class="block">
+                <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
+                  <div class="block__label">Дата похорон: </div>
+                  <div class="block__date">Вт. 03-12-2018</div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6 mob-hide">
-                <h4 class="title-sm">Доска объявлений</h4>
-                <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                  <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
-                    <div class="block__label">Категория</div>
-                  </div>
+              <div class="block">
+                <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
+                  <div class="block__label">Дата похорон: </div>
+                  <div class="block__date">Вт. 03-12-2018</div>
                 </div>
-                <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                  <div class="block__wrap"> <a href="#" class="block__title">Еще один заголовок объявления</a>
-                    <div class="block__label">Категория</div>
-                  </div>
+              </div>
+              <div class="block">
+                <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
+                  <div class="block__label">Дата похорон: </div>
+                  <div class="block__date">Вт. 03-12-2018</div>
                 </div>
-                <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                  <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
-                    <div class="block__label">Категория</div>
-                  </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mob-hide">
+              <h4 class="title-sm">Последние статьи</h4>
+              <div class="block">
+                <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
+                  <div class="block__label">Имя Фамилия</div>
+                </div>
+              </div>
+              <div class="block">
+                <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                <div class="block__wrap"> <a href="#" class="block__title">Что снится к любви и наслаждению, а что – к разлуке и печали</a>
+                  <div class="block__label">Имя Фамилия</div>
+                </div>
+              </div>
+              <div class="block">
+                <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
+                  <div class="block__label">Имя Фамилия</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mob-hide">
+              <h4 class="title-sm">Доска объявлений</h4>
+              <div class="block">
+                <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
+                  <div class="block__label">Категория</div>
+                </div>
+              </div>
+              <div class="block">
+                <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                <div class="block__wrap"> <a href="#" class="block__title">Еще один заголовок объявления</a>
+                  <div class="block__label">Категория</div>
+                </div>
+              </div>
+              <div class="block">
+                <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
+                  <div class="block__label">Категория</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer__bottom">
-          <div class="footer__container container">
-            <div class="footer__wrapper"> <span class="copy">Copyright &copy; 2018.</span> Портал ритуальных услуг «Доверие». Хабаровск </div>
-          </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__container container">
+          <div class="footer__wrapper"> <span class="copy">Copyright &copy; 2018.</span> Портал ритуальных услуг «Доверие». Хабаровск </div>
         </div>
-        <div class="footer__up">
-          <div class="footer__container container"> <button class="btn-up js-btn-up" type="button">
+      </div>
+      <div class="footer__up">
+        <div class="footer__container container"> <button class="btn-up js-btn-up" type="button">
 				<svg width="59" height="59" viewBox="0 0 59 59" xmlns="http://www.w3.org/2000/svg">
 				    <title>up</title>
 				    <g stroke="#E6DDD0" fill="none" fill-rule="evenodd">
@@ -517,9 +999,9 @@
 				    </g>
 				</svg>
 			</button> </div>
-        </div>
-      </footer>
-      <!-- end footer -->
+      </div>
+    </footer>
+    <!-- end footer -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

@@ -1,0 +1,70 @@
+.shop-single-info
+	.product-prices
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 30px
+	.product-single-price
+		color: $brown
+		margin: 0
+		span
+			color: #bbb3a1
+			margin-left: 42px
+		img
+			display: block	
+	p
+		font-size: 14px
+		color: $brown
+		margin-bottom: 30px
+	.product-info
+		display: flex
+		align-items: center
+		justify-content: space-between
+		font-size: 14px
+		margin-bottom: 15px
+	.price-btn
+		display: flex
+		align-items: center
+		justify-content: space-between
+		
+.pr-ratings
+	&__left
+		font-size: 15px
+		font-weight: 600
+		margin-left: 6px
+	&__right
+		font-weight: 400
+
+
+.product-reviews
+	&__link
+		text-decoration: none
+		margin-right: 15px
+		color: #bbb3a1
+		i 
+			color: $brown
+			margin-right: 8px
+
+.price-list
+	color: $brown
+	font-size: 14px
+	margin-bottom: 58px
+	span
+		display: block
+		margin-bottom: 8px
+	&__item
+		position: relative
+		padding-left: 10px
+		margin-bottom: 10px
+		&:last-child
+			color: #b2afab
+		&:after
+			position: absolute
+			top: 11px
+			left: 0
+			transform: translate(0,-50% )
+			content: ''
+			width: 5px
+			height: 5px
+			border-radius: 50%
+			background-color: $brown	
