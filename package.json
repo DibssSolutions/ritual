@@ -15,6 +15,7 @@
   },
   "authors": "valeriiderevshchykov@gmail.com",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.3.5",
     "autoprefixer": "^6.3.3",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.2.3",
