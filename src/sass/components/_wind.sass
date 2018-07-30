@@ -23,9 +23,13 @@
 		background-position: 50% 50% 
 		background-size: cover
 		background-repeat: no-repeat
+	&__preson
+		+md
+			margin-bottom: 30px
 		
 .wind-head
 	margin-bottom: 34px
+	padding-bottom: 2px
 	text-align: right
 	border-bottom: 1px solid #F3EEE8 
 	+sm
@@ -145,3 +149,56 @@
 .links a
 	+sm
 		padding-left: 20px
+	&:last-child
+		+sm
+			margin-bottom: 20px
+
+.person
+	color: #605449
+	text-align: center
+	line-height: 1.6
+	display: block
+	&:hover
+		.person
+			&__img
+				opacity: 0.32 
+			&__name
+				border-color: currentColor 
+	&__img
+		margin: 0 auto 25px
+		height: 127px
+		width: 127px
+		border-radius: 50% 
+		box-shadow: 0 0 0 1px #E6DDD0 
+		border: 5px solid $white
+		transition: opacity .4s
+		background-position: 50% 50% 
+		background-size: cover
+		background-repeat: no-repeat
+		+sm
+			height: 107px
+			width: 107px
+			margin-bottom: 10px
+	&__name-wrap
+		margin-bottom: 18px
+		+sm
+			margin-bottom: 0
+	&__name
+		font-family: $tahoma
+		font-weight: 400
+		color: #605449
+		line-height: 1.2
+		font-size: 20px
+		transition: border-color .4s
+		text-transform: uppercase
+		border-bottom: 1px solid transparent
+		display: inline 
+		+sm
+			font-size: 18px
+	&__position
+		margin-bottom: 18px
+		color: #c3b8a8
+		font-size: 15px
+		+sm
+			margin-bottom: 0
+			font-size: 14px
