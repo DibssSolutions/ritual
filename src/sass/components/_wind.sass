@@ -1,0 +1,147 @@
+.wind
+	p
+		&:not(:last-child)
+			margin-bottom: 18px
+	&__list
+		li
+			position: relative
+			padding-left: 10px
+			display: block
+			&:before
+				position: absolute
+				content: "" 
+				top: 8px
+				left: 0
+				height: 5px
+				width: 5px
+				border-radius: 50% 
+				background-color: #65594d 
+			&:not(:last-child)
+				margin-bottom: 18px
+	&__bg
+		padding-bottom: 50%
+		background-position: 50% 50% 
+		background-size: cover
+		background-repeat: no-repeat
+		
+.wind-head
+	margin-bottom: 34px
+	text-align: right
+	border-bottom: 1px solid #F3EEE8 
+	+sm
+		display: none
+	&__title,
+	&__name
+		vertical-align: top
+		display: inline-block
+	&__title
+		color: #65594d
+		font-family: $cormorant_infant
+		font-size: 20px
+		font-weight: 700
+	&__name
+		position: relative
+		color: #d4c8b8
+		font-family: $tahoma
+		font-size: 15px
+		font-weight: 400
+		line-height: 1.9
+		&:not(:first-child)
+			padding-left: 15px
+			margin-left: 6px
+		&:before
+			position: absolute
+			content: "" 
+			top: 50%
+			left: 0
+			margin-top: -2px
+			width: 4px
+			height: 4px
+			border-radius: 50% 
+			background-color: #65594d
+.read-all
+	text-align: right
+	&:not(:first-child)
+		margin-top: 10px
+	&__link
+		color: #605449
+		font-size: 14px
+		font-weight: 400
+		border-bottom: 1px dashed  
+		&:hover
+			border-color: transparent 
+		.flaticon-arrows
+			margin-left: 10px
+			font-size: 12px
+			+rotate(90)
+			display: inline-block
+			
+.about-agency
+	&:not(:last-child)
+		margin-bottom: 35px
+	p
+		line-height: 1.6
+		&:not(:last-child)
+			margin-bottom: 26px
+			+md
+				margin-bottom: 18px
+	.ratings
+		padding: 0
+	&__info
+		padding: 25px
+		color: #65594d
+		font-size: 16px
+		font-weight: 400
+		border: 1px solid #f3eee8
+		+sm
+			padding: 8px 15px
+		p
+			&:not(:last-child)
+				margin-bottom: 10px
+				+sm
+					margin-bottom: 3px
+	&__info-wrap
+		margin: 0 auto
+		max-width: 127px
+		text-align: center
+		+sm
+			display: table
+			max-width: 100%
+			width: 100%
+	&__logo
+		margin-bottom: 10px
+		max-width: 271px
+		vertical-align: top
+		display: inline-block
+		+sm
+			max-width: 130px
+			display: block
+		img
+			max-width: 100%
+			display: block
+	&__head
+		margin-bottom: 25px
+		+sm
+			margin-bottom: 0
+			text-align: left
+	&__contact,
+	&__head
+		+sm
+			width: 50%
+			vertical-align: top
+			display: table-cell
+	&__contact
+		+sm
+			vertical-align: middle
+	&__title-s
+		text-transform: uppercase
+		margin-bottom: 30px
+		+md
+			margin-bottom: 18px
+	&__col
+		&:not(:last-child)
+			+md
+				margin-bottom: 25px
+.links a
+	+sm
+		padding-left: 20px
