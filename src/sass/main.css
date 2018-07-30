@@ -763,32 +763,32 @@ footer .footer-bottom i {
 	width: 100%;
 }
 
-.single-content aside .links a {
-	line-height: 58px;
-	background-color: #f4f4f4;
-	padding: 0 44px 0 22px;
+.links a {
+	background-color: #f3eee8;
+	padding: 19px 40px 19px 38px;
 	display: table;
 	width: 100%;
 	margin-bottom: 10px;
-	font-size: 18px;
-	font-family: 'Crimson Text', serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
 	color: #65594d;
 	position: relative;
 }
 
-.single-content aside .links a i {
-	color: #f4f4f4;
+.links a i {
+	color: #65594d;
 	position: absolute;
-	right: 25px;
+	right: 20px;
 	font-size: 14px;
 }
 
-.single-content aside .links a:hover {
-	background-color: #e6ddd0;
+.links a:hover {
+	background-color: #faf7f3;
 	color: #65594d;
 }
 
-.single-content aside .links a.active {
+.links a.active {
 	background-color: #e6ddd0;
 	color: #65594d;
 }
