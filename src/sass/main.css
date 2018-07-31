@@ -4901,8 +4901,10 @@ header .navbar-default .cart-table ul {
 .plan-title {
 	color: #65594d;
 	font-size: 40px;
+	font-family: 'CormorantInfant', 'Open Sans', sans-serif;
 	background: #d4c8b8;
 	line-height: 88px;
+	font-weight: 500;
 	margin: 0 -35px;
 }
 
@@ -4937,7 +4939,6 @@ header .navbar-default .cart-table ul {
 
 .popular .plan {
 	background: #65594d;
-	margin-top: -24px;
 }
 
 .popular .plan-title {
