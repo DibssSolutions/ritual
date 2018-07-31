@@ -15,13 +15,16 @@
     width: calc(50% + 84px)
     // float: left
     min-height: 170px
-    margin-bottom: 32px
     display: flex
     justify-content: flex-end
+    &:not(:last-child)   
+        margin-bottom: 32px
+    &:last-child
+        +sm
+            margin-bottom: 9px     
     +sm
-        margin-bottom: 20px
+        min-height: auto
         width: 100%
-        
     &:nth-child(even)
         align-self: flex-end
         justify-content: flex-start

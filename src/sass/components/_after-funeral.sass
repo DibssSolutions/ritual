@@ -1,6 +1,8 @@
 .funeral
     &__head
         margin-bottom: 60px
+        +sm
+            margin-bottom: 20px
         .section-head
             max-width: 970px
     &__text
@@ -13,24 +15,41 @@
         margin-bottom: 70px
     &__tile
         margin-bottom: 60px
-    &__group
+    &__item
+        margin-bottom: 10px
         .product-reviews__details
             visibility: visible
             opacity: 1
             font-weight: bold
             span
                 color: $brown_orange
-    &__item
-        margin-bottom: 10px
     &__selects
         margin-bottom: 30px
         display: flex
         align-items: center
         justify-content: space-around
+        .select
+            &:not(:last-child)
+                margin-right: 15px
         +sm
             flex-direction: column
             .select
                 margin-bottom: 20px
+                &:not(:last-child)
+                    margin-right: 0
+    &__list
+        margin-bottom: 50px
+        .companies-item__type
+            order: 1
+            +sm
+                order: 4
+        .companies-item__descr
+            order: 2
+            +sm
+                order: 5
+        .btn
+            +sm
+                order: 6
     .bottom-text
         p
             margin-bottom: 30px

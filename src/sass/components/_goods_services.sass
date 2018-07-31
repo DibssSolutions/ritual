@@ -15,15 +15,21 @@
 			right: 41px
 			transform: translate(50%,-50%)
 			z-index: 10
+			opacity: 0
+			transition: opacity .3s
 			.icon
 				font-size: 52px
 				fill: $gray_brown
 				+sm
 					font-size: 32px
-			+md
-				font-size: 32px
+				+md
+					font-size: 32px
 			+sm
-				display: none	
+				top: 35px
+				right: 105px		
+		&:hover
+			.zoom-img
+				opacity: 1
 	.shop-carousel
 		.slick-list
 			+sm
@@ -59,6 +65,9 @@
 	.next8
 		+sm
 			right: 95px			
+
+.item.slick-slide.slick-current.slick-active
+	outline: none
 
 	
 .section-head
@@ -153,7 +162,7 @@
 			font-size: 14px
 	p
 		+sm
-			margin-bottom: 10px
+			margin-bottom: 14px
 			font-size: 14px		 
 	.post-form__input,
 	.post-form__textarea
@@ -211,7 +220,7 @@
 			font-size: 18px
 
 .services-block
-	.mob-shows
+	.mob-show
 		display: none
 		+sm
 			display: block
@@ -315,6 +324,9 @@
 			padding: 0
 	.side-widget	
 		margin-top: 42px
+		&.hidein
+			+md
+				display: none
 	.bottom-image
 		img
 			margin-top: -100px

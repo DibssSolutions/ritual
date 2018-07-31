@@ -1,8 +1,8 @@
 <!-- begin map -->
 <div class="map-wrap">
 	<div class="map-wrap__container container">
-		<h3 class="map-wrap__title-l title-l">Карта офисов</h3>
-		<div class="map-wrap__select">
+		<h3 class="map-wrap__title-l title-l mob-hide">Карта офисов</h3>
+		<div class="map-wrap__select mob-hide">
 			<div class="select">
 			    <select name="region" id="region" style="width: 100%" class="js-select">
 			        <option value="1">Железнодорожный</option>
@@ -15,7 +15,7 @@
 		</div>
 	</div>
 	<div class="js-map map" id="mapInfobox" data-center-lat="-34.097" data-center-lng="150.644"></div>
-	{% set tamplate = '<div class="baloon">
+	{% set tamplate = '<div class="baloon mob-hide">
 		<!-- <button class="baloon__close js-infobox-close"></button> -->
 		<div class="baloon__content">
 			<div class="baloon__row">
