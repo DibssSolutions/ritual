@@ -4432,6 +4432,9 @@ header .navbar-default .cart-table ul {
 	margin-top: 29px;
 	padding-top: 24px;
 }
+.cart-dual-btns .btn {
+	padding: 11px 15px;
+}
 
 .cart-dual-btns a:first-child {
 	width: 43.5%;
