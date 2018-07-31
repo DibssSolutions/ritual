@@ -15,3 +15,7 @@ PageList:
   ready: 50   
 - file: 16_goods_services.html
   ready: 50   
+- file: vip-company.html
+  ready: 50   
+- file: after-funeral.html
+  ready: 50   
