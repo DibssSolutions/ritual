@@ -1,4 +1,11 @@
 .shop-single-info
+	.mob-show
+		display: none
+		+sm
+			display: block
+	.mob-hide
+		+sm
+			display: none		
 	.product-prices
 		display: flex
 		align-items: center
@@ -7,11 +14,17 @@
 	.product-single-price
 		color: $brown
 		margin: 0
+		+sm
+			font-size: 36px
 		span
 			color: #bbb3a1
 			margin-left: 42px
+			+sm
+				margin-left: 15px
 		img
-			display: block	
+			display: block
+			+sm
+				max-width: 120px	
 	p
 		font-size: 14px
 		color: $brown
@@ -22,16 +35,26 @@
 		justify-content: space-between
 		font-size: 14px
 		margin-bottom: 15px
+		+sm
+			span
+				margin-right: 0
 	.price-btn
 		display: flex
 		align-items: center
 		justify-content: space-between
+		+sm
+			justify-content: center
+			margin-bottom: 22px
 		
 .pr-ratings
+	margin-right: 0
 	&__left
 		font-size: 15px
 		font-weight: 600
 		margin-left: 6px
+		+sm
+			margin-left: 0
+			font-size: 13px
 	&__right
 		font-weight: 400
 
@@ -41,6 +64,10 @@
 		text-decoration: none
 		margin-right: 15px
 		color: #bbb3a1
+		white-space: nowrap
+		+sm
+			margin-right: 0
+			font-size: 13px
 		i 
 			color: $brown
 			margin-right: 8px
@@ -49,6 +76,8 @@
 	color: $brown
 	font-size: 14px
 	margin-bottom: 58px
+	+sm
+		margin-bottom: 0
 	span
 		display: block
 		margin-bottom: 8px
@@ -58,6 +87,8 @@
 		margin-bottom: 10px
 		&:last-child
 			color: #b2afab
+			+sm
+				display: none
 		&:after
 			position: absolute
 			top: 11px

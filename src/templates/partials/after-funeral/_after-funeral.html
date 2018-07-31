@@ -1,0 +1,231 @@
+<div class="wrapper">
+    <div class="clearfix"></div>
+    <div class="page-head">
+        <div class="container page-head__container">
+            <ul class="bcrumbs page-head__bcrumbs">
+                <li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
+                <li><a href="#">Obituaries</a></li>
+                <li>Past</li>
+            </ul>
+        </div>
+    </div>
+    <div class="funeral">
+        <div class="funeral__head simple-section"  style="background-image: url(./img/after-funeral/after-funeral_bg.jpg)">
+            <div class="funeral__container container">
+                <div class="section-head text-center">
+                    <h3 class="title-l">После похорон</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                </div>
+            </div>
+        </div>
+        <div class="funeral__text">
+            <div class="container funeral__container">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+        <div class="funeral__conteiner container">
+            <div class="row">
+                <div class="col-md-9 col-sm-7 col-md-offset-3 col-sm-offset-5">
+                    <div class="funeral__selects">
+                        <div class="select">
+                            <select name="region" id="region" style="width: 100%" class="js-select">
+                                <option value="1">Железнодорожный</option>
+                                <option value="2">Индустриальный</option>
+                                <option value="3">Кировский</option>
+                                <option value="4">Краснофлотский</option>
+                                <option value="5">Центральный</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <select name="rating" style="width: 100%" class="js-select">
+                                <option value="1">рейтинг</option>
+                                <option value="2">рейтинг</option>
+                                <option value="3">рейтинг</option>
+                                <option value="4">рейтинг</option>
+                                <option value="5">рейтинг</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="funeral__goods">
+            <div class="funeral__container container">
+                <div class="row">
+                    <aside class="col-md-3 col-sm-5">
+                        <div class="links">
+                            <a href="#">Подкатегория <i class="fi flaticon-arrows-1"></i></a>
+                            <a href="#">Подкатегория<i class="fi flaticon-arrows-1"></i></a>
+                            <a href="#">Подкатегория<i class="fi flaticon-arrows-1"></i></a>
+                            <a href="#">Подкатегория<i class="fi flaticon-arrows-1"></i></a>
+                            <a class="active" href="#">Венки искусственные<i class="fi flaticon-arrows-1"></i></a>
+                            <a href="#">Подкатегория<i class="fi flaticon-arrows-1"></i></a>
+                        </div>
+                    </aside>
+                    <div class="col-md-9 col-sm-7">
+                            <div class="funeral__tile">
+                                <div class="funeral__top top-bar mob-hide">
+                                    <div class="shop-sort-wrap">
+                                        <div class="ps-options pull-left">
+                                            <span>Показывать по:</span>
+                                            <div class="ps-select">
+                                                <i class="fa fa-caret-down"></i>
+                                                <select>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option selected>6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="shop-sort">
+                                            <a href="#" class="active"><i class="flaticon-squares"></i></a>
+                                            <a href="#"><i class="flaticon-signs-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="companies-group funeral__group">
+                                    <div class="row">
+                                        {% for i in range(0, 6) %}
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <a href="#" class="funeral__item companies-item">
+                                                <div class="companies-item__wrap">
+                                                    <div class="sf-thumb">
+                                                        <img src="./img/all-companies/logo-1.jpg" alt="img">
+                                                    </div>
+                                                    <div class="companies-item__text">
+                                                        <h4 class="title-s companies-item__name">Наименование товара</h4>
+                                                        <div class="companies-item__type">
+                                                            <div class="product-prices">
+                                                                <div class="product-single-price">690 ₽<span> 890 ₽</span>
+                                                                </div>
+                                                                <div class="product-single-price">
+                                                                    <img src="img/logo1.png" alt="map-img">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="companies-item__descr">
+                                                            <div class="product-reviews">
+                                                                <span class="pr-ratings">
+                                                                    <i class="flaticon-favorite"></i>
+                                                                    <i class="flaticon-favorite"></i>
+                                                                    <i class="flaticon-favorite"></i>
+                                                                    <i class="flaticon-favorite"></i>
+                                                                    <i class="flaticon-favorite"></i>
+                                                                </span>
+                                                                <div class="product-reviews__details mob-hide">
+                                                                    <span>5.0</span>
+                                                                    <!-- <span>{{ mixins.icon('users') }}</span>
+                                                                    <span>(1)</span> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    <div class="companies-item__btn">
+                                                        <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button>
+                                                    </div>    
+                                                </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <!-- Start page-nav -->
+                                {% include "partials/blogs/_page-nav.html" %}
+                                <!-- End page-nav -->
+                            </div>
+                            <div class="all-companies__list">
+                                <div class="all-companies__top top-bar mob-hide">
+                                    <div class="shop-sort-wrap">
+                                        <div class="ps-options pull-left">
+                                            <span>Показывать по:</span>
+                                            <div class="ps-select">
+                                                <i class="fa fa-caret-down"></i>
+                                                <select>
+                                                    <option selected>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="shop-sort">
+                                            <a href="#"><i class="flaticon-squares"></i></a>
+                                            <a href="#" class="active"><i class="flaticon-signs-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                {% for i in range(0, 4) %}
+                                    <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
+                                        <a href="#" class="all-companies__item companies-item companies-item_list">
+                                            <div class="companies-item__wrap">
+                                                <div class="sf-thumb">
+                                                    <img src="./img/all-companies/logo-1.jpg" alt="img">
+                                                </div>
+                                                <div class="companies-item__text">
+                                                    <h4 class="title-s companies-item__name">Название компании</h4>
+                                                    <div class="companies-item__type">Ритуальное агентство</div>
+                                                    <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
+                                                    <div class="companies-item__descr">
+                                                        <div class="product-reviews">
+                                                            <span class="pr-ratings">
+                                                                <i class="flaticon-favorite"></i>
+                                                                <i class="flaticon-favorite"></i>
+                                                                <i class="flaticon-favorite"></i>
+                                                                <i class="flaticon-favorite"></i>
+                                                                <i class="flaticon-favorite"></i>
+                                                            </span>
+                                                            <div class="product-reviews__details mob-hide">
+                                                                <span>5.0</span>
+                                                                <span>{{ mixins.icon('users') }}</span>
+                                                                <span>(1)</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="companies-item__region">
+                                                            Железнодорожный
+                                                        </div>
+                                                    </div>
+                                                
+    
+                                                    <span class="btn">Подробнее</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <!-- </div> -->
+                                {% endfor %}
+                                <!-- Start page-nav -->
+                                {% include "partials/blogs/_page-nav.html" %}
+                                <!-- End page-nav -->
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="funeral__map">
+            {% include "partials/agents/_map.html" %}
+        </div>
+        <div class="funera__container container">
+            <div class="row">
+                <aside class="col-md-3 col-sm-5">
+                </aside>
+                <div class="col-md-9 col-sm-7">
+                    
+                    <div class="bottom-text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    {{ mixins.readAll(null, 'mob-hide') }}
+                </div>
+            </div>
+            <div class="bottom-image">
+                <img src="img/rose-angel.png" alt="rose-angel">
+            </div>
+        </div>
+    </div>
+</div>
