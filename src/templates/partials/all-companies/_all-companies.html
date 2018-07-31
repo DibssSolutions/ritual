@@ -22,37 +22,160 @@
                         <div class="side-widget">
                             <form action="/" class="side-form">
                                 <h5 class="title-m">Фильтр</h5>
-                                <div class="region select">
+                                <div class="region side-block">
                                     <h5 class="title-s">Район</h5>
-                                    <select name="region" id="region" style="width: 232px" class="js-select">
-                                        <option value="1">Железнодорожный</option>
-                                        <option value="2">Индустриальный</option>
-                                        <option value="3">Кировский</option>
-                                        <option value="4">Краснофлотский</option>
-                                        <option value="5">Центральный</option>
-                                    </select>
+                                    <div class="select">
+                                        <select name="region" id="region" style="width: 100%" class="js-select">
+                                            <option value="1">Железнодорожный</option>
+                                            <option value="2">Индустриальный</option>
+                                            <option value="3">Кировский</option>
+                                            <option value="4">Краснофлотский</option>
+                                            <option value="5">Центральный</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="age select">
+                                <div class="age side-block">
                                     <h5 class="title-s">Возраст компании</h5>
-                                    <select name="age" id="age" style="width: 232px" class="js-select">
-                                        <option value="1">до 1 года</option>
-                                        <option value="2">от 1 до 5 лет</option>
-                                        <option value="3">от 5 до 10 лет</option>
-                                        <option value="4">от 10 до 20 лет</option>
-                                        <option value="5">больше 20 лет</option>
-                                    </select>
+                                    <div class="select">
+                                        <select name="age" id="age" style="width: 100%" class="js-select">
+                                            <option value="1">до 1 года</option>
+                                            <option value="2">от 1 до 5 лет</option>
+                                            <option value="3">от 5 до 10 лет</option>
+                                            <option value="4">от 10 до 20 лет</option>
+                                            <option value="5">больше 20 лет</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="review select">
+                                <div class="review side-block">
                                     <h5 class="title-s">Количество отзывов</h5>
-                                    <select name="review" id="review" style="width: 232px" class="js-select">
-                                        <option value="1">до 10</option>
-                                        <option value="2">от 10 до 20</option>
-                                        <option value="3">от 20 до 50</option>
-                                        <option value="4">больше 50</option>
-                                    </select>
+                                    <div class="select">
+                                        <select name="review" id="review" style="width: 100%" class="js-select">
+                                            <option value="1">до 10</option>
+                                            <option value="2">от 10 до 20</option>
+                                            <option value="3">от 20 до 50</option>
+                                            <option value="4">больше 50</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="rating-filter">
+                                    <h5 class="title-s">Рейтинг</h5>
+                                    <div class="rating-filter__wrap">
+                                        <div class="rating-filter__radio">
+                                            <input type="radio" id="rating-1" name="rating-filter">
+                                            <label for="rating-1">Любой</label>
+                                        </div>
+                                        <div class="rating-filter__radio">
+                                            <input type="radio" id="rating-2" name="rating-filter">
+                                            <label for="rating-2">
+                                                от 
+                                                <span class="pr-ratings">
+                                                    <i class="flaticon-favorite"></i>
+                                                    <i class="flaticon-favorite"></i>
+                                                    <i class="flaticon-favorite"></i>
+                                                    <i class="flaticon-favorite"></i>
+                                                    <i class="flaticon-favorite"></i>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="rating-filter__radio">
+                                            <input type="radio" id="rating-3" name="rating-filter">
+                                            <label for="rating-3">
+                                                от 
+                                                <span class="pr-ratings">
+                                                    <i class="flaticon-favorite"></i>
+                                                    <i class="flaticon-favorite"></i>
+                                                    <i class="flaticon-favorite"></i>
+                                                    <i class="flaticon-favorite"></i>
+                                                    <i class="no flaticon-favorite"></i>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="rating-filter__radio">
+                                            <input type="radio" id="rating-4" name="rating-filter">
+                                            <label for="rating-4">
+                                                от 
+                                                <span class="pr-ratings">
+                                                    <i class="flaticon-favorite"></i>
+                                                    <i class="flaticon-favorite"></i>
+                                                    <i class="flaticon-favorite"></i>
+                                                    <i class="no flaticon-favorite"></i>
+                                                    <i class="no flaticon-favorite"></i>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services-filter">
+                                    <h5 class="title-s">Услуги</h5>
+                                    <div class="services-filter__wrap">
+                                    <label class="checkbox-f">
+                                        <input type="checkbox">
+                                        <span class="checkbox-f__text"><span class="checkbox-f__img"><img src="./img/all-companies/elementary-school.png" alt="icon"></span>Зал для прощания</span>
+                                    </label>
+                                    <label class="checkbox-f">
+                                        <input type="checkbox">
+                                        <span class="checkbox-f__text"><span class="checkbox-f__img"><img src="./img/all-companies/tombstone-with-cross.png" alt="icon"></span>Похороны</span>
+                                    </label>
+                                    <label class="checkbox-f">
+                                        <input type="checkbox">
+                                        <span class="checkbox-f__text"><span class="checkbox-f__img"><img src="./img/all-companies/manager.png" alt="icon"></span>Ритуальный агент</span>
+                                    </label>
+                                    <label class="checkbox-f">
+                                        <input type="checkbox">
+                                        <span class="checkbox-f__text"><span class="checkbox-f__img"><img src="./img/all-companies/vase.png" alt="icon"></span>Кремация</span>
+                                    </label>
+                                    <label class="checkbox-f">
+                                        <input type="checkbox">
+                                        <span class="checkbox-f__text"><span class="checkbox-f__img"><img src="./img/all-companies/cup-with-brush-ruller-and-pencil.png" alt="icon"></span>Подготовка усопших</span>
+                                    </label>
+                                    <label class="checkbox-f">
+                                        <input type="checkbox">
+                                        <span class="checkbox-f__text"><span class="checkbox-f__img"><img src="./img/all-companies/bus-side-view.png" alt="icon"></span>Похоронный транспорт</span>
+                                    </label>
+                                    
+                                    <label class="checkbox-f">
+                                        <input type="checkbox">
+                                        <span class="checkbox-f__text"><span class="checkbox-f__img"><img src="./img/all-companies/delivery.png" alt="icon"></span>Ритуальные грузчики</span>
+                                    </label>
+                                    
+                                    <label class="checkbox-f">
+                                        <input type="checkbox">
+                                        <span class="checkbox-f__text"><span class="checkbox-f__img"><img src="./img/all-companies/dinner.png" alt="icon"></span>Поминальная трапеза</span>
+                                    </label>
+                                    <label class="checkbox-f">
+                                        <input type="checkbox">
+                                        <span class="checkbox-f__text"><span class="checkbox-f__img"><img src="./img/all-companies/signing-the-contract.png" alt="icon"></span>Оформление документов</span>
+                                    </label>
+                                    <label class="checkbox-f">
+                                        <input type="checkbox">
+                                        <span class="checkbox-f__text"><span class="checkbox-f__img"><img src="./img/all-companies/church.png" alt="icon"></span>Отпевание и заказ служб</span>
+                                    </label>
+                                    <label class="checkbox-f">
+                                        <input type="checkbox">
+                                        <span class="checkbox-f__text"><span class="checkbox-f__img"><img src="./img/all-companies/trumpet.png" alt="icon"></span>Оркестр траурный</span>
+                                    </label>
+                                    <label class="checkbox-f">
+                                        <input type="checkbox">
+                                        <span class="checkbox-f__text"><span class="checkbox-f__img"><img src="./img/all-companies/circle-between-hands.png" alt="icon"></span>Психологическая помощь</span>
+                                    </label>
+                                    <label class="checkbox-f">
+                                        <input type="checkbox">
+                                        <span class="checkbox-f__text"><span class="checkbox-f__img"><img src="./img/all-companies/animal-paw-print.png" alt="icon"></span>Ритуальные услуги для домашних животных</span>
+                                    </label>
+                                </div>
                                 </div>
                                 <div class="side-btn"> <button class="btn">Применить</button> </div>
                             </form>
+                        </div>
+                        <div class="side-widget mob-hide">
+                            <div class="new-company">
+                                <div class="new-company__text">
+                                    <div class="new-company__img">
+                                        <img src="./img/all-companies/forma-1.png" alt="img">
+                                    </div>
+                                    Добавить<br />новую компанию
+                                </div>
+                            </div>
                         </div>
                         <!-- <div class="side-widget">
                             <form class="side-form" action="/">
@@ -204,50 +327,51 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="row">
-                            {% for i in range(0, 6) %}
-                                <div class="col-md-4 col-sm-6 col-xs-6">
-                                    <a href="#" class="margin-bottom-50 all-companies__item companies-item">
-                                        <div class="companies-item__wrap">
-                                            <div class="sf-thumb">
-                                                <img src="./img/all-companies/logo-1.jpg" alt="img">
-                                            </div>
-                                            <div class="companies-item__text">
-                                                <h4 class="title-s companies-item__name">Название компании</h4>
-                                                <div class="companies-item__type">Ритуальное агентство</div>
-                                                <div class="companies-item__descr">
-                                                    <div class="product-reviews">
-                                                        <span class="pr-ratings">
-                                                            <i class="flaticon-favorite"></i>
-                                                            <i class="flaticon-favorite"></i>
-                                                            <i class="flaticon-favorite"></i>
-                                                            <i class="flaticon-favorite"></i>
-                                                            <i class="flaticon-favorite"></i>
-                                                        </span>
-                                                        <div class="product-reviews__details mob-hide">
-                                                            <span>5.0</span>
-                                                            <span>{{ mixins.icon('users') }}</span>
-                                                            <span>(1)</span>
+                            <div class="companies-group all-companies__group">
+                                <div class="row">
+                                {% for i in range(0, 6) %}
+                                    <div class="col-md-4 col-sm-6 col-xs-6">
+                                        <a href="#" class="all-companies__item companies-item">
+                                            <div class="companies-item__wrap">
+                                                <div class="sf-thumb">
+                                                    <img src="./img/all-companies/logo-1.jpg" alt="img">
+                                                </div>
+                                                <div class="companies-item__text">
+                                                    <h4 class="title-s companies-item__name">Название компании</h4>
+                                                    <div class="companies-item__type">Ритуальное агентство</div>
+                                                    <div class="companies-item__descr">
+                                                        <div class="product-reviews">
+                                                            <span class="pr-ratings">
+                                                                <i class="flaticon-favorite"></i>
+                                                                <i class="flaticon-favorite"></i>
+                                                                <i class="flaticon-favorite"></i>
+                                                                <i class="flaticon-favorite"></i>
+                                                                <i class="flaticon-favorite"></i>
+                                                            </span>
+                                                            <div class="product-reviews__details mob-hide">
+                                                                <span>5.0</span>
+                                                                <span>{{ mixins.icon('users') }}</span>
+                                                                <span>(1)</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="companies-item__region">
+                                                            Железнодорожный
                                                         </div>
                                                     </div>
-                                                    <div class="companies-item__region">
-                                                        Железнодорожный
-                                                    </div>
-                                                </div>
 
-                                            <span class="btn">Подробнее</span>
-                                        </div>
-                                        </div>
-                                    </a>
+                                                <span class="btn">Подробнее</span>
+                                            </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                {% endfor %}
                                 </div>
-                            {% endfor %}
                             </div>
                             <!-- Start page-nav -->
                             {% include "partials/blogs/_page-nav.html" %}
                             <!-- End page-nav -->
                         </div>
-                        <div class="all-companies__list mob-hide">
+                        <div class="all-companies__list">
                             <div class="all-companies__top mob-hide">
                                 <div class="shop-sort-wrap">
                                     <div class="ps-options pull-left">
@@ -270,7 +394,7 @@
 
                             {% for i in range(0, 4) %}
                                 <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
-                                    <a href="#" class="all-companies__item companies-item">
+                                    <a href="#" class="all-companies__item companies-item companies-item_list">
                                         <div class="companies-item__wrap">
                                             <div class="sf-thumb">
                                                 <img src="./img/all-companies/logo-1.jpg" alt="img">
@@ -310,7 +434,13 @@
                             {% include "partials/blogs/_page-nav.html" %}
                             <!-- End page-nav -->
                         </div>
-                        
+                        <div class="bottom-text">
+                            <p>
+                                Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной
+                                <span>деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные</span>
+                            </p>
+                        </div>
+                        {{ mixins.readAll(null, 'mob-hide') }}
                     </div>
                 </div>
                 <div class="bottom-image">

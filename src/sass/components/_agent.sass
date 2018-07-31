@@ -1,0 +1,56 @@
+.agent
+	width: 100%
+	table-layout: fixed
+	display: table
+	&__col-sm
+		width: 160px
+		vertical-align: middle
+		display: table-cell
+		+sm
+			width: 85px
+	&__col-md
+		padding-left: 34px
+		vertical-align: middle
+		display: table-cell
+		+sm
+			padding-left: 20px
+	&__title
+		margin: 0 auto 15px
+		max-width: 107px
+		color: #65594d
+		font-family: $cormorant_infant
+		font-size: 20px
+		font-weight: 700
+		text-align: center
+		line-height: 1.1
+		+md
+			margin-bottom: 12px
+			font-size: 16px
+	&__img
+		margin: 0 auto
+		width: 70px
+		height: 70px
+		border-radius: 50%
+		background-color: #f3eee8
+		background-position: 50% 50%
+		background-size: cover
+		display: block
+		+md
+			width: 54px
+			height: 54px
+	&__row
+		margin: 0 -15px
+		+clr
+	&__col
+		float: left
+		width: 50%
+		padding: 0 15px
+		+md
+			width: 100%
+		&:last-child
+			text-align: right
+			+md
+				text-align: left
+		&:not(:last-child)
+			+md
+				margin-bottom: 15px
