@@ -188,24 +188,33 @@
         order: 4
     .sf-thumb
         height: 234px
-        line-height: 234px
+        line-height: 232px
         text-align: center
         border: 1px solid #e4e4e4
         width: 100%
+        font-size: 0
         margin-bottom: 28px
+        background-position: 50% 50%
+        background-size: cover
+        background-repeat: no-repeat
         +sm
             height: 130px
-            line-height: 130px
+            line-height: 128px
             margin-bottom: 12px
+        &__wrap
+            display: inline-block
+            vertical-align: middle
+            line-height: 1
+            max-height: 100%
         &:after
             display: none
         img
-            max-height: 234px
+            max-height: 230px
             max-width: 100%
+            display: block
             width: auto
-            vertical-align: middle
             +sm
-                max-height: 130px
+                max-height: 124px
     &_list
         margin-bottom: 16px
         padding: 10px
@@ -236,8 +245,9 @@
             max-width: 270px
             margin: 0 25px 0 0
             +sm
-                margin: 0 0 25px 0
-                max-width: 100%
+                width: 130px
+                margin: 0 auto
+                margin-bottom: 25px
     .product-reviews
         display: flex
         align-items: center
