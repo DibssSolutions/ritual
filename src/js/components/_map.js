@@ -272,7 +272,7 @@ if (mapNode.length) {
           width: '571px'
         },
         position: {
-          x: 'left',
+          x: 'right',
           y: 'center'
         },
         closeButton: '.js-infobox-close'

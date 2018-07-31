@@ -17,3 +17,7 @@ PageList:
   ready: 100
 - file: 41_error_404.html
   ready: 50   
+- file: vip-company.html
+  ready: 50   
+- file: after-funeral.html
+  ready: 50   
