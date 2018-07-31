@@ -12,9 +12,13 @@
 {% endmacro %}
 
 {% macro readAll(text, class) %}
+
 <!-- begin read-all -->
 <div class="read-all {{ class }}">
-    <a href="#" class="read-all__link">{{ text or 'Читать всю информацию' }}<span class="fi flaticon-arrows"></span></a>
+    <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+    	<span class="drop__btn-text js-drop-btn-text">{{ text or 'Читать всю информацию' }}</span>
+    	<span class="fi flaticon-arrows"></span>
+    </a>
 </div>
 <!-- end read-all -->
 {% endmacro %}

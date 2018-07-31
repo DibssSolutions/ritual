@@ -2,22 +2,6 @@
 	p
 		&:not(:last-child)
 			margin-bottom: 18px
-	&__list
-		li
-			position: relative
-			padding-left: 10px
-			display: block
-			&:before
-				position: absolute
-				content: "" 
-				top: 8px
-				left: 0
-				height: 5px
-				width: 5px
-				border-radius: 50% 
-				background-color: #65594d 
-			&:not(:last-child)
-				margin-bottom: 18px
 	&__bg
 		padding-bottom: 50%
 		background-position: 50% 50% 
@@ -38,6 +22,24 @@
 		p
 			&:not(:last-child)
 				margin-bottom: 0
+.wind-list
+	&:not(:last-child)
+		margin-bottom: 18px
+	li
+		position: relative
+		padding-left: 10px
+		display: block
+		&:before
+			position: absolute
+			content: "" 
+			top: 8px
+			left: 0
+			height: 5px
+			width: 5px
+			border-radius: 50% 
+			background-color: #65594d 
+		&:not(:last-child)
+				margin-bottom: 18px
 .wind-head
 	margin-bottom: 34px
 	padding-bottom: 2px
@@ -76,8 +78,6 @@
 			background-color: #65594d
 .read-all
 	text-align: right
-	&:not(:first-child)
-		margin-top: 10px
 	&__link
 		color: #605449
 		font-size: 14px
@@ -85,12 +85,15 @@
 		border-bottom: 1px dashed  
 		&:hover
 			border-color: transparent 
+		&.is-open
+			.flaticon-arrows
+				+rotate(-90)
 		.flaticon-arrows
 			margin-left: 10px
 			font-size: 12px
 			+rotate(90)
+			transition: transform .3s
 			display: inline-block
-			
 .about-agency
 	&:not(:last-child)
 		margin-bottom: 35px
