@@ -1,5 +1,10 @@
 .goods_services
 	padding-top: 65px
+	+sm
+		padding-top: 13px
+	.shop-single-info
+		+sm
+			padding-top: 15px	
 	.shop-carousel-wrap
 		position: relative
 		cursor: pointer
@@ -13,7 +18,17 @@
 			.icon
 				font-size: 52px
 				fill: $gray_brown
+				+sm
+					font-size: 32px
+			+md
+				font-size: 32px
+			+sm
+				display: none	
 	.shop-carousel
+		.slick-list
+			+sm
+				margin-right: 70px
+		position: relative
 		a
 			display: block
 	.item
@@ -21,39 +36,75 @@
 		img
 			width: 100%
 	.slick-dots
+		+sm
+			position: absolute
+			right: -105px
+			bottom: 92px
+			transform: rotate(-90deg)
 		li
 			border: 1px solid $gray_brown
 			transition: box-shadow .3s
 			&:hover
 				box-shadow: 0 0 14px rgba(0,0,0,.2)
+			+sm
+				transform: rotate(90deg)
+					
 	.prev8,
 	.next8
 		transition: color .3s
+		+sm
+			opacity: 0
 		&:hover
 			color: $brown_orange
+	.next8
+		+sm
+			right: 95px			
+
 	
 .section-head
 	&__title
 		margin-bottom: 38px
+		+sm
+			margin-bottom: 10px
+
+
+.facilities .team-info
+	padding-bottom: 0
+
 
 .services-block
+	aside
+		+md
+			margin-bottom: 21px
 	&:not(:last-child)
 		margin-bottom: 50px
+		+sm
+			margin-bottom: 32px
 	.tab-pane
 		font-size: 0
 		padding: 0
+		+sm
+			border: none
 		.team-info
 			padding: 25px 40px
 			margin-bottom: 0
 			cursor: pointer
 			transition: box-shadow .3s
+			+sm
+				padding: 25px 0
+			&:not(:last-child)
+				border-bottom: 1px solid #eaeaea
 			&:hover
 				box-shadow: 0 0 14px rgba(0,0,0,.2)
+			.posts-image
+				margin-left: 15px
 
 .facilities .team-info .social
 	top: 25px
 	right: 40px
 	z-index: 2
+	+sm
+		display: none
 	a.social__link
 		background-color: $white_brown_bg
 		color: $brown_orange
@@ -69,6 +120,9 @@
 	color: $brown
 	&__title-block
 		margin-bottom: 15px
+		+md
+			padding-left: 100px
+			margin-bottom: 30px
 	&__title
 		font-family: $cormorant_infant
 		font-weight: 700
@@ -77,6 +131,7 @@
 		color: $brown
 		display: block
 		margin-bottom: 5px
+		text-align: left
 	&__description
 		font-style: italic
 		font-size: 15px
@@ -93,10 +148,23 @@
 	label
 		font-size: 15px
 		color: $brown
-		margin-bottom: 10px 
+		margin-bottom: 10px
+		+sm
+			font-size: 14px
+	p
+		+sm
+			margin-bottom: 10px
+			font-size: 14px		 
 	.post-form__input,
 	.post-form__textarea
 		margin-bottom: 10px
+	.post-form__col
+		+sm
+			margin-bottom: 0
+	.post-form__btn
+		text-align: right
+		+sm
+			text-align: left			
 
 .services-block .team-info
 	border-bottom: none
@@ -106,39 +174,149 @@
 	margin-bottom: 25px
 
 .companies-item__type
+	width: 100%
 	.product-prices
 		display: flex
 		align-items: center
 		justify-content: space-between
 		width: 100%
+		+sm
+			flex-wrap: wrap
 	.product-single-price
 		font-size: 24px
-		margin: 0				
+		margin: 0			
 		span
 			margin-left: 8px
 			font-size: 16px
 		&:last-child
 			max-width: 85px
 			font-size: 0
+			+sm
+				max-width: 64px
 		img
 			max-width: 100%
 
-.services-block
-	.about-agency__col
-		padding: 0
+.services-agency
+	.wind__agency
 		margin-bottom: 25px
-	.about-agency__info-wrap
-		display: flex
-		align-items: center
-		justify-content: space-between
-		flex-wrap: wrap
-		max-width: 100%
-		text-align: justify
-	.companies-item__name
-		width: 100%
-		margin-bottom: 8px
+	.agency__table
+		border: 1px solid #eaeaea	
+
+.product-single-price
+	+sm
+		font-size: 36px
+	span	
+		+sm
+			margin-left: 30px
+			font-size: 18px
+
+.services-block
+	.mob-shows
+		display: none
+		+sm
+			display: block
+	.mob-hide
+		+sm
+			display: none
+	.agency
+		border: none
+		font-size: 14px
+		p
+			+sm
+				font-size: 14px
+				color: $brown
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+		&:hover
+			box-shadow: none
+		&__title
+			margin: 10px 0 15px
+			text-align: center
+			text-transform: uppercase
+		&__head
+			border: none
+			+md
+				padding-right: 0
+				padding-left: 0
+			+sm
+				border: 1px solid #eaeaea
+				margin-bottom: 20px
+		&__logo
+			float: none
+			max-width: 100%
+			.row
+				+sm
+					width: 100%
+					display: flex
+					align-items: center
+					justify-content: space-between
+					margin-right: 0
+					margin-left: 0
+			img
+				max-width: 100%
+				max-height: 100px
+				+sm
+					width: 128px	
+		&__link
+			float: none
+			text-align: center
+			margin: 0
+		&__contacts
+			+sm
+				margin-top: 0	
+		.visitors
+			padding-top: 18px
+			padding-bottom: 10px
+			.counter__item
+				font-size: 14px		
+		.visitors_mod
+			padding-top: 0
+			border: none
+			margin-bottom: 40px		
+	.contacts-item			
+		&__icon
+			margin-top: 3px
+			margin-right: 3px
+			font-size: 12px
+		&.padding
+			padding-left: 17px	
+
+.services-block
+	.map
+		max-height: 398px
+
+.services-block
+	.all-companies__item
+		margin-bottom: 30px
+		margin-left: -10px
+		margin-right: -10px
 	.companies-item__text,
-	.companies-item__wrap
-		align-items: initial
-		.btn
-			flex: none
+	.companies-item__wrap	
+		width: 100%
+	.companies-item__name
+		order: 1	
+	.all-companies__tile
+		margin-bottom: 0
+	.companies-item__type	
+		margin-bottom: 10px
+	.sf-thumb
+		margin-bottom: 13px
+		+sm
+			height: 130px
+			line-height: 130px
+			img
+				max-width: 100%	
+	.page-nav
+		border-top: 1px solid #eaeaea
+		padding: 32px 0 51px
+		+sm
+			border: none
+			padding: 0
+	.side-widget	
+		margin-top: 42px
+	.bottom-image
+		img
+			margin-top: -100px
+	&.margin-bot
+		margin-bottom: 0			
