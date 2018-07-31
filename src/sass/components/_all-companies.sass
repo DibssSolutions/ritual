@@ -35,10 +35,11 @@
     
 .all-companies
     padding-top: 36px
-    &__tile
-        margin-bottom: 60px
+    &__tile,
     &__list
         margin-bottom: 60px
+        +sm
+            margin-bottom: 45px
     &__item
         margin-bottom: 10px
         +sm
@@ -91,6 +92,15 @@
         +sm
             padding-bottom: 12px
             margin-bottom: 0
+        .title-m
+            font-size: 30px
+            font-weight: bold
+            font-family: $tahoma
+            +sm
+                font-size: 16px!important
+        .title-s
+            +sm
+                font-size: 14px!important
         button
             display: block
     .rating-filter
@@ -101,6 +111,12 @@
         +sm
             .title-s
                 margin-bottom: 12px
+    .bottom-text
+        margin-bottom: 40px
+        +sm
+            margin-bottom: 25px
+    .read-all
+        margin-bottom: 30px
 .companies-group
     .col-xs-6:nth-child(even)
         .companies-item
@@ -278,10 +294,12 @@
         border-bottom: 1px solid #c0b1a1
         margin-bottom: 11px
         .checkbox-f
-            display: inline-block
+            +sm
+                display: inline-block
     &__wrap
-        columns: 2
-        column-gap: 15px
+        +sm
+            columns: 2
+            column-gap: 15px
 .checkbox-f
     position: relative
     display: block
@@ -300,11 +318,13 @@
     &__text
         position: relative
         padding-left: 45px
+        padding-right: 20px
         display: flex
         align-items: center
         cursor: pointer
         +sm
             padding-left: 17px
+            padding-right: 0
             font-size: 13px
         &:hover
             text-decoration: underline
@@ -373,31 +393,10 @@
         align-items: center
         justify-content: space-around
 
-
-//             .Прямоугольник_16_копия_54 {
-//   border-width: 1px;
-//   border-color: rgb(193, 193, 193);
-//   border-style: solid;
-//   background-color: rgb(255, 255, 255);
-//   box-shadow: inset 0px 3px 4.45px 0.55px rgba(0, 0, 0, 0.3);
-//   position: absolute;
-//   left: 632px;
-//   top: 1144px;
-//   width: 9px;
-//   height: 9px;
-//   z-index: 553;
-// }
-
-//     .Прямоугольник_16_копия_61 {
-//   border-width: 1px;
-//   border-color: rgb(203, 203, 203);
-//   border-style: solid;
-//   background-color: rgb(242, 242, 242);
-//   position: absolute;
-//   left: 631px;
-//   top: 1143px;
-//   width: 11px;
-//   height: 11px;
-//   z-index: 552;
-// }
+.bottom-text
+    line-height: 1.6
+    span
+        color: #ada8a1
+        +sm
+            color: inherit
 
