@@ -1,9 +1,19 @@
 body
+	position: relative
 	background: #FFF
 	line-height: 1.4
 	min-width: 320px
 	+sm
 		font-size: 14px
+	&.is-vip
+		&:before
+			position: fixed
+			content: "" 
+			top: 0
+			left: 0
+			bottom: 0
+			width: calc((100% - 1200px) / 2 + 288px)
+			background-color: #e6ddd0
 
 .inner
 	+sm
