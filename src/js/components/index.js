@@ -5,3 +5,4 @@ import './_map';
 import './_init-fancybox';
 import './_drop';
 import './_drop';
+import './_sidebar';
