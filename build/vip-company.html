@@ -238,27 +238,27 @@
                   </div>
                 </aside>
                 <div class="col-md-9 col-sm-8 vip-company__col">
-                  <div class="company-name" style="background-image: url(./img/company-name-bg.jpg)">
-                    <div class="company-name__head section-head">
-                      <h3 class="company-name__title title-l">Название компании</h3>
-                      <p>Салон художественной ковки</p>
-                    </div>
-                  </div>
-                  <div class="main-services">
-                    <div class="main-services__title title-sm">Основные услуги:</div>
-                    <div class="main-services__body">
-                      <div class="main-services__item">Ритуальный салон</div>
-                      <div class="main-services__item">Художественная ковка</div>
-                      <div class="main-services__item">Услуга 3</div>
-                      <div class="main-services__item">Памятники</div>
-                      <div class="main-services__item">Кованая мебель</div>
-                      <div class="main-services__item">Кованая мебель</div>
-                      <div class="main-services__item">Оградка</div>
-                      <div class="main-services__item">Художественная ковка</div>
-                      <div class="main-services__item">Оградка</div>
-                    </div>
-                  </div>
                   <div class="about-company js-navigation-section" id="about-company">
+                    <div class="company-name" style="background-image: url(./img/company-name-bg.jpg)">
+                      <div class="company-name__head section-head">
+                        <h3 class="company-name__title title-l">Название компании</h3>
+                        <p>Салон художественной ковки</p>
+                      </div>
+                    </div>
+                    <div class="main-services">
+                      <div class="main-services__title title-sm">Основные услуги:</div>
+                      <div class="main-services__body">
+                        <div class="main-services__item">Ритуальный салон</div>
+                        <div class="main-services__item">Художественная ковка</div>
+                        <div class="main-services__item">Услуга 3</div>
+                        <div class="main-services__item">Памятники</div>
+                        <div class="main-services__item">Кованая мебель</div>
+                        <div class="main-services__item">Кованая мебель</div>
+                        <div class="main-services__item">Оградка</div>
+                        <div class="main-services__item">Художественная ковка</div>
+                        <div class="main-services__item">Оградка</div>
+                      </div>
+                    </div>
                     <div class="row about-company__row">
                       <div class="about-company__img col-md-4 col-sm-4 mob-hide">
                         <div class="about-company__wrap"> <img src="./img/about-company-img.jpg" alt="img"> </div>
@@ -284,10 +284,9 @@
                         <!-- end read-all -->
                       </div>
                     </div>
-                  </div>
-                  <div class="video mob-hide">
-                    <div class="video__social">
-                      <div class="social pull-right"> <a class="social__link" href="#">
+                    <div class="video mob-hide">
+                      <div class="video__social">
+                        <div class="social pull-right"> <a class="social__link" href="#">
     	<i class="fa fab fa-vk social__icon"></i>
     </a> <a class="social__link" href="#">
     	<i class="fa fab fa-facebook-f social__icon"></i>
@@ -304,8 +303,9 @@
     </a> <a class="social__link" href="#">
     	<i class="fi flaticon-social-1 social__icon"></i>
     </a> </div>
+                      </div>
+                      <div class="video__player" id="video__player"> <iframe src="https://player.vimeo.com/video/281844431" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> </div>
                     </div>
-                    <div class="video__player" id="video__player"> <iframe src="https://player.vimeo.com/video/281844431" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> </div>
                   </div>
                   <div class="on-map js-navigation-section" id="on-map">
                     <div class="wind on-map__body">
@@ -463,10 +463,36 @@
                         </div>
                       </div>
                       <!-- end agency -->
-                      <h3 class="our-contacts__title title-m text-center">Как добраться</h3>
-                      <div class="c-info"> <span class="fa fa-map-marker"></span>
-                        <h4>Funeral Home California</h4>
-                        <p class="abbr"> <i class="fa fa-map-marker"></i> 484 Arbor Court Mountain View 129 <br> <i class="flaticon-black"></i> support@funeral-home-cali.com <br> <i class="flaticon-technology"></i> (012) 345 - 6789 <br> </p>
+                      <h3 class="our-contacts__title title-m text-center mob-hide">Как добраться</h3>
+                      <div class="our-contacts__loc mob-hide">
+                        <div class="our-contacts__loc-item"> <span class="fa fa-map-marker"></span>
+                          <h4>ост. “Краеведческий музей”</h4>
+                          <p class="abbr"> <i class="fa fa-bus"></i> Троллейбус № 1,3 </p>
+                        </div>
+                        <div class="our-contacts__loc-item"> <span class="fa fa-map-marker"></span>
+                          <h4>ост. “Комсомольская площадь”</h4>
+                          <p class="abbr"> <i class="fa fa-bus"></i>Автобус № 4,14,19 <br> <i class="fa fa-bus"></i>Троллейбус № 1,3 </p>
+                        </div>
+                      </div>
+                      <div class="our-contacts__text">
+                        <p> В нашей торгово-производственной фирме Студия Ангел вы можете воспользоваться услугами ритуального агента, который возьмет на себя все обязанности по подготовке и организации похорон ваших близких людей. </p>
+                        <div class="our-contacts__list">
+                        <span>Наш агент поможет вам осуществить:</span>
+                          <ul>
+                            <li>подготовку усопшего, в которую входит омовение тела, бальзамирование, грим при необходимости, облаченье в одежды;</li>
+                            <li>получение необходимых документов в районной поликлинике и органах ЗАГС;</li>
+                            <li>выбор и доставку необходимых принадлежностей для похорон;</li>
+                            <li>выбор места захоронения или получить разрешение на подзахоронение;</li>
+                            <li>заказ спец транспорта и автобуса для родственников;</li>
+                            <li>выбор места для поминальной трапезы.</li>
+                            </ol>
+                        </div>
+                        <!-- begin read-all -->
+                        <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
+    	<span class="fi flaticon-arrows"></span>
+    </a> </div>
+                        <!-- end read-all -->
                       </div>
                       <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
                     </div>
