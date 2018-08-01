@@ -1,4 +1,4 @@
-import Select2 from 'select2';
+import select2 from 'select2';
 
 $(document).ready(function() {
   $('.js-select').select2({

@@ -13,19 +13,17 @@
             </div>
         </div>
     </div>
-    <div class="vip-company">
+    <div class="schedule">
         <div class="container">
             <div class="vip-company__wrap">
-                <div class="vip-company__head section-head text-center">
-                    <h3 class="vip-company__title title-l">Все компании</h3>
-                    <p>Подзаголовок страницы</p>
-                </div>
-                <div class="row js-aside-container">
-                   <aside class="col-md-3 col-sm-4">
-                       {% include "partials/vip-company/_sedebar.html" %}
-                   </aside>
-                    <div class="col-md-9 col-sm-8" style="height: 10000px">
-                        
+                <div class="row vip-company__row js-aside-container">
+                    <aside class="col-md-3 col-sm-4">
+                        {% include "partials/vip-company/_sedebar.html" %}
+                    </aside>
+                    <div class="col-md-9 col-sm-8 vip-company__col">
+                        {% include "partials/vip-company/_company-name.html" %}
+                        {% include "partials/vip-company/_main-services.html" %}
+                        {% include "partials/vip-company/_about-company.html" %}
                     </div>
                 </div>
                 <div class="vip-block">
@@ -33,29 +31,27 @@
                         
                     </h4>
                     <div class="row">
-                        <div class="aside-position">
-                            <aside class="col-md-3 col-sm-4 sidebar padding-aside bg-color">
+                        <aside class="col-md-3 col-sm-4 sidebar padding-aside bg-color">
+                        <div class="side-widget hidein">
+                            <div class="banner">
+                                <img src="img/banner.png" alt="banner">
+                            </div>
+                        </div>
+                        </aside>
+                        <!-- Start page-nav -->
+                            {% include "partials/blogs/_page-nav.html" %}
+                        <!-- End page-nav -->
+                        <div class="single-meta mob-hide">
+                            <div class="col-md-9 col-sm-8">
+                                <!-- Start counter -->
+                               {% include "partials/post/_counter.html" %}
+                                <!-- End counter -->
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-8">
                             <div class="side-widget hidein">
                                 <div class="banner">
-                                    <img src="img/banner.png" alt="banner">
-                                </div>
-                            </div>
-                            </aside>
-                            <!-- Start page-nav -->
-                                {% include "partials/blogs/_page-nav.html" %}
-                            <!-- End page-nav -->
-                            <div class="single-meta mob-hide">
-                                <div class="col-md-9 col-sm-8">
-                                    <!-- Start counter -->
-                                   {% include "partials/post/_counter.html" %}
-                                    <!-- End counter -->
-                                </div>
-                            </div>
-                            <div class="col-md-9 col-sm-8">
-                                <div class="side-widget hidein">
-                                    <div class="banner">
-                                        <img src="img/banner1.png" alt="banner">
-                                    </div>
+                                    <img src="img/banner1.png" alt="banner">
                                 </div>
                             </div>
                         </div>
@@ -64,6 +60,11 @@
                 <div class="bottom-image">
                     <img src="img/rose-angel.png" alt="rose-angel">
                 </div>
+            <!-- Start schedule -->
+            {% include "partials/vip-company/_schedule.html" %}
+            <!-- End schedule -->
+            <div class="bottom-image">
+                <img src="img/rose-angel.png" alt="rose-angel">
             </div>
         </div>
     </div>
