@@ -16,11 +16,7 @@
     <div class="vip-company">
         <div class="container">
             <div class="vip-company__wrap">
-                <div class="vip-company__head section-head text-center">
-                    <h3 class="vip-company__title title-l">Все компании</h3>
-                    <p>Подзаголовок страницы</p>
-                </div>
-                <div class="row">
+                <div class="row vip-company__row">
                     <div class="aside-position">
                         <aside class="col-md-3 col-sm-4 sidebar padding-aside bg-color">
                         
@@ -28,8 +24,10 @@
                        
                         </aside>
                     </div>
-                    <div class="col-md-9 col-sm-8">
-                        
+                    <div class="col-md-9 col-sm-8 vip-company__col">
+                        {% include "partials/vip-company/_company-name.html" %}
+                        {% include "partials/vip-company/_main-services.html" %}
+                        {% include "partials/vip-company/_about-company.html" %}
                     </div>
                 </div>
                 <div class="vip-block">
