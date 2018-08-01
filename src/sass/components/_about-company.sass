@@ -1,6 +1,42 @@
 .about-company
+    padding: 32px 0 40px
+    border-bottom: 2px solid #f6f6f6
     &__img
+        font-size: 0
+        height: 280px
+        text-align: center
+        line-height: 280px
+        img
+            display: block
+            width: auto
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+    &__wrap
+        // display: inline-block
+        // vertical-align: middle
+        // line-height: 1
+        position: relative
+        height: 100%
+        width: 100%
+        overflow: hidden
+        &:before
+            content: ''
+            position: absolute
+            top: 8px
+            bottom: 8px
+            left: 8px
+            right: 8px
+            border: 2px solid $gray_brown
+            z-index: 2
     &__text
+        line-height: 1.7
+        color: $brown_orange
+        font-size: 14px
+        p
+            margin-bottom: 25px
     &__list
         ul
-            list-style: disc
+            li
+                list-style: disc inside

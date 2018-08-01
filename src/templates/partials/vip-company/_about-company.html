@@ -1,9 +1,12 @@
-<div class="about-company">
+<div class="about-company js-navigation-section" id="about-company">
     <div class="row about-company__row">
-        <div class="about-company__img col-md-4 mob-hide">
-            <img src="./img/about-company-img.jpg" alt="img">
+        <div class="about-company__img col-md-4 col-sm-4 mob-hide">
+            <div class="about-company__wrap">
+                <img src="./img/about-company-img.jpg" alt="img">
+            </div>
+            
         </div>
-        <div class="about-company__text col-md-8 col-sm-12">
+        <div class="about-company__text col-md-8 col-sm-8 col-xs-12">
             <p>
                 В нашей торгово-производственной фирме Студия Ангел вы можете воспользоваться услугами ритуального агента, который возьмет на себя все обязанности по подготовке и организации похорон ваших близких людей.
             </p>
@@ -18,6 +21,8 @@
                     <li>выбор места для поминальной трапезы.</li>
                 </ol>
             </div>
+            
+            {{ mixins.readAll(null, 'mob-hide') }}
         </div>
     </div>
 </div>
