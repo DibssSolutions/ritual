@@ -8,8 +8,10 @@
 		position: relative
 		padding-bottom: 38px
 		border-bottom: 1px solid #eee
+		width: 100%
 		&:hover
 			.aside-block
+				z-index: 3
 				opacity: 1
 	&__block	
 		width: 100%
@@ -22,6 +24,7 @@
 .aside-block
 	transition: opacity .3s
 	opacity: 0
+	z-index: -1
 	&__wrap
 		position: absolute
 		padding: 40px 28px
@@ -35,9 +38,24 @@
 		padding-left: 33px
 		&:not(:last-child)
 			margin-bottom: 25px
-		&:first-child
+		&.beige
 			.icon
-				fill: #c7bfb7	
+				fill: #c7bfb7
+		&.brown
+			.icon
+				fill: #65594d
+		&.yellow
+			.icon
+				fill: #f3daa0
+		&.red
+			.icon
+				fill: #e44b5a					
+		&.purpule
+			.icon
+				fill: #65594d				
+		&.gray
+			.icon
+				fill: #959595			
 	&__icon
 		position: absolute
 		top: 2px
