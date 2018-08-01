@@ -1,0 +1,45 @@
+.schedule
+	padding: 38px 0 0
+	&__title
+		text-align: center
+		margin-bottom: 25px
+		font-size: 36px
+	&__wrap
+		position: relative
+		padding-bottom: 38px
+		border-bottom: 1px solid #eee
+		&:hover
+			.aside-block
+				opacity: 1
+	&__block	
+		width: 100%
+		img
+			padding: 50px 25px
+			max-width: 100%
+			display: block
+			border: 1px solid #e6ddd0
+
+.aside-block
+	transition: opacity .3s
+	opacity: 0
+	&__wrap
+		position: absolute
+		padding: 40px 28px
+		width: 300px
+		left: -300px
+		top: 0
+	&__title
+		margin-bottom: 35px
+	&__item
+		position: relative
+		padding-left: 33px
+		&:not(:last-child)
+			margin-bottom: 25px
+		&:first-child
+			.icon
+				fill: #c7bfb7	
+	&__icon
+		position: absolute
+		top: 2px
+		left: 0
+
