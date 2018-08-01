@@ -1,4 +1,4 @@
-import stickySidebar from 'sticky-sidebar';
+import stickySidebar from '../lib/sticky-sidebar';
 
 const aside = '.js-aside';
 const sidebar = new stickySidebar(aside, {
