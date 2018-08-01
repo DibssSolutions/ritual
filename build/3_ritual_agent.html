@@ -110,11 +110,38 @@
         </header>
       </div>
       <div class="clearfix"></div>
+      <div class="page-head">
+        <div class="container page-head__container">
+          <ul class="bcrumbs page-head__bcrumbs">
+            <li><a href="#"><span class="showin">
+<svg class="icon icon-house"><use xlink:href="img/sprite.svg#icon-house"></use></svg>
+</span><span class="hidein">Home</span></a></li>
+            <li><a href="#">Obituaries</a></li>
+            <li>Past</li>
+          </ul>
+        </div>
+      </div>
+      <div class="first-section">
+        <div class="container first-section__container">
+          <div class="first-section__body">
+            <div class="section-head first-section__head text-right">
+              <h3 class="title-l first-section__title">Ритуальные услуги</h3>
+            </div>
+            <div class="first-section__img"> <img src="./img/ritual-agent.png" alt="img"> </div>
+            <div class="first-section__text">
+              <p class="mob-hide">Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой
+                то текст</p>
+              <p>тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой
+                то текст тут какой то текст тут какой то текст тут какой то текст</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- begin map -->
       <div class="map-wrap">
         <div class="map-wrap__container container">
-          <h3 class="map-wrap__title-l title-l">Карта офисов</h3>
-          <div class="map-wrap__select">
+          <h3 class="map-wrap__title-l title-l mob-hide">Карта офисов</h3>
+          <div class="map-wrap__select mob-hide">
             <div class="select"> <select name="region" id="region" style="width: 100%" class="js-select">
 			        <option value="1">Железнодорожный</option>
 			        <option value="2">Индустриальный</option>
@@ -126,7 +153,7 @@
         </div>
         <div class="js-map map" id="mapInfobox" data-center-lat="-34.097" data-center-lng="150.644"></div>
         <script type="text/template" class="js-mapInfobox">
-          <div class="baloon">
+          <div class="baloon mob-hide">
             <!-- <button class="baloon__close js-infobox-close"></button> -->
             <div class="baloon__content">
               <div class="baloon__row">
@@ -568,16 +595,36 @@
                   <div class="wind-head__name">Ритуальный агент</div>
                 </div>
                 <!-- end wind-head -->
-                <p>С потерей любимого человека трудно принять тот факт, что его нет больше рядом, и еще труднее взять себя в руки, чтобы прощаться с ним достойно. Мы с пониманием относимся к вашему горю и готовы оказать помощь.</p>
-                <p>В спектр услуг ритуального агентства «Диорама» входят следующие обязанности:</p>
-                <ul class="wind__list">
-                  <li>реализация перевозки тела в покойницкую и на кладбище;</li>
-                  <li>приобретение вещей для умершего человека и их доставка;</li>
-                  <li>приобретение гроба и других панихидных атрибутов;</li>
-                </ul>
-                <!-- begin read-all -->
-                <div class="read-all mob-hide"> <a href="#" class="read-all__link">Читать всю информацию<span class="fi flaticon-arrows"></span></a> </div>
-                <!-- end read-all -->
+                <!-- drop -->
+                <div class="drop js-drop">
+                  <div class="drop__wrap js-drop-wrap">
+                    <div class="drop__show js-drop-shows">
+                      <p>С потерей любимого человека трудно принять тот факт, что его нет больше рядом, и еще труднее взять себя в руки, чтобы прощаться с ним достойно. Мы с пониманием относимся к вашему горю и готовы оказать помощь.</p>
+                      <p>В спектр услуг ритуального агентства «Диорама» входят следующие обязанности:</p>
+                      <ul class="wind-list">
+                        <li>реализация перевозки тела в покойницкую и на кладбище;</li>
+                        <li>приобретение вещей для умершего человека и их доставка;</li>
+                        <li>приобретение гроба и других панихидных атрибутов;</li>
+                      </ul>
+                    </div>
+                    <div class="drop__hidden js-drop-hidden">
+                      <p>С потерей любимого человека трудно принять тот факт, что его нет больше рядом, и еще труднее взять себя в руки, чтобы прощаться с ним достойно. Мы с пониманием относимся к вашему горю и готовы оказать помощь.</p>
+                      <p>В спектр услуг ритуального агентства «Диорама» входят следующие обязанности:</p>
+                      <ul class="wind__list">
+                        <li>реализация перевозки тела в покойницкую и на кладбище;</li>
+                        <li>приобретение вещей для умершего человека и их доставка;</li>
+                        <li>приобретение гроба и других панихидных атрибутов;</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- begin read-all -->
+                  <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
+    	<span class="fi flaticon-arrows"></span>
+    </a> </div>
+                  <!-- end read-all -->
+                </div>
+                <!-- ¯\_(ツ)_/¯ -->
                 <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
               </div>
               <!-- end wind -->
@@ -623,16 +670,32 @@
                     </div>
                     <div class="about-agency__col col-md-8">
                       <h3 class="about-agency__title-s title-s">Название компании</h3>
-                      <p>Южный Ангел с Вами</p>
-                      <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения
-                        форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
+                      <!-- drop -->
+                      <div class="drop js-drop">
+                        <div class="drop__wrap js-drop-wrap">
+                          <div class="drop__show js-drop-shows">
+                            <p>Южный Ангел с Вами</p>
+                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме
+                              определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
+                          </div>
+                          <div class="drop__hidden js-drop-hidden">
+                            <p>Южный Ангел с Вами</p>
+                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме
+                              определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
+                          </div>
+                        </div>
+                        <!-- begin read-all -->
+                        <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
+    	<span class="fi flaticon-arrows"></span>
+    </a> </div>
+                        <!-- end read-all -->
+                      </div>
+                      <!-- ¯\_(ツ)_/¯ -->
                     </div>
                   </div>
                 </div>
                 <!-- end about-agency -->
-                <!-- begin read-all -->
-                <div class="read-all mob-hide"> <a href="#" class="read-all__link">Читать всю информацию<span class="fi flaticon-arrows"></span></a> </div>
-                <!-- end read-all -->
                 <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
               </div>
               <!-- end wind -->
@@ -674,7 +737,9 @@
                     <div class="col-md-4 col-sm-6 col-xs-6">
                       <a href="#" class="all-companies__item companies-item">
                         <div class="companies-item__wrap">
-                          <div class="sf-thumb"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                          <div class="sf-thumb">
+                            <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                          </div>
                           <div class="companies-item__text">
                             <h4 class="title-s companies-item__name">Название компании</h4>
                             <div class="companies-item__type">Ритуальное агентство</div>
@@ -698,7 +763,9 @@
                     <div class="col-md-4 col-sm-6 col-xs-6">
                       <a href="#" class="all-companies__item companies-item">
                         <div class="companies-item__wrap">
-                          <div class="sf-thumb"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                          <div class="sf-thumb">
+                            <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                          </div>
                           <div class="companies-item__text">
                             <h4 class="title-s companies-item__name">Название компании</h4>
                             <div class="companies-item__type">Ритуальное агентство</div>
@@ -722,7 +789,9 @@
                     <div class="col-md-4 col-sm-6 col-xs-6">
                       <a href="#" class="all-companies__item companies-item">
                         <div class="companies-item__wrap">
-                          <div class="sf-thumb"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                          <div class="sf-thumb">
+                            <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                          </div>
                           <div class="companies-item__text">
                             <h4 class="title-s companies-item__name">Название компании</h4>
                             <div class="companies-item__type">Ритуальное агентство</div>
@@ -746,7 +815,9 @@
                     <div class="col-md-4 col-sm-6 col-xs-6">
                       <a href="#" class="all-companies__item companies-item">
                         <div class="companies-item__wrap">
-                          <div class="sf-thumb"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                          <div class="sf-thumb">
+                            <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                          </div>
                           <div class="companies-item__text">
                             <h4 class="title-s companies-item__name">Название компании</h4>
                             <div class="companies-item__type">Ритуальное агентство</div>
@@ -770,7 +841,9 @@
                     <div class="col-md-4 col-sm-6 col-xs-6">
                       <a href="#" class="all-companies__item companies-item">
                         <div class="companies-item__wrap">
-                          <div class="sf-thumb"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                          <div class="sf-thumb">
+                            <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                          </div>
                           <div class="companies-item__text">
                             <h4 class="title-s companies-item__name">Название компании</h4>
                             <div class="companies-item__type">Ритуальное агентство</div>
@@ -794,7 +867,9 @@
                     <div class="col-md-4 col-sm-6 col-xs-6">
                       <a href="#" class="all-companies__item companies-item">
                         <div class="companies-item__wrap">
-                          <div class="sf-thumb"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                          <div class="sf-thumb">
+                            <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                          </div>
                           <div class="companies-item__text">
                             <h4 class="title-s companies-item__name">Название компании</h4>
                             <div class="companies-item__type">Ритуальное агентство</div>
@@ -844,7 +919,9 @@
                 <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
                 <a href="#" class="companies-item companies-item_list">
                   <div class="companies-item__wrap">
-                    <div class="sf-thumb"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                    <div class="sf-thumb">
+                      <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                    </div>
                     <div class="companies-item__text">
                       <h4 class="title-s companies-item__name">Название компании</h4>
                       <div class="companies-item__type">Ритуальное агентство</div>
@@ -869,7 +946,9 @@
                 <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
                 <a href="#" class="companies-item companies-item_list">
                   <div class="companies-item__wrap">
-                    <div class="sf-thumb"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                    <div class="sf-thumb">
+                      <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                    </div>
                     <div class="companies-item__text">
                       <h4 class="title-s companies-item__name">Название компании</h4>
                       <div class="companies-item__type">Ритуальное агентство</div>
@@ -894,7 +973,9 @@
                 <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
                 <a href="#" class="companies-item companies-item_list">
                   <div class="companies-item__wrap">
-                    <div class="sf-thumb"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                    <div class="sf-thumb">
+                      <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                    </div>
                     <div class="companies-item__text">
                       <h4 class="title-s companies-item__name">Название компании</h4>
                       <div class="companies-item__type">Ритуальное агентство</div>
@@ -919,7 +1000,9 @@
                 <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
                 <a href="#" class="companies-item companies-item_list">
                   <div class="companies-item__wrap">
-                    <div class="sf-thumb"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                    <div class="sf-thumb">
+                      <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                    </div>
                     <div class="companies-item__text">
                       <h4 class="title-s companies-item__name">Название компании</h4>
                       <div class="companies-item__type">Ритуальное агентство</div>

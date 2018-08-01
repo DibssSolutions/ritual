@@ -217,7 +217,9 @@
                                         <a href="#" class="all-companies__item companies-item">
                                             <div class="companies-item__wrap">
                                                 <div class="sf-thumb">
+                                                    <div class="sf-thumb__wrap">
                                                     <img src="./img/all-companies/logo-1.jpg" alt="img">
+                                                </div>
                                                 </div>
                                                 <div class="companies-item__text">
                                                     <h4 class="title-s companies-item__name">Название компании</h4>
@@ -280,7 +282,9 @@
                                 <a href="#" class="all-companies__item companies-item companies-item_list">
                                     <div class="companies-item__wrap">
                                         <div class="sf-thumb">
+                                            <div class="sf-thumb__wrap">
                                             <img src="./img/all-companies/logo-1.jpg" alt="img">
+                                        </div>
                                         </div>
                                         <div class="companies-item__text">
                                             <h4 class="title-s companies-item__name">Название компании</h4>
@@ -317,13 +321,19 @@
                             {% include "partials/blogs/_page-nav.html" %}
                             <!-- End page-nav -->
                         </div>
-                        <div class="bottom-text">
-                            <p>
-                                Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной
-                                <span>деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные</span>
-                            </p>
+                        <!-- drop -->
+                        <div class="drop js-drop">
+                            <div class="drop__wrap bottom-text js-drop-wrap">
+                                <div class="drop__show js-drop-shows">
+                                    <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные</p>
+                                </div>
+                                <div class="drop__hidden js-drop-hidden">
+                                    <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
+                                </div>
+                            </div>
+                            {{ mixins.readAll(null, 'mob-hide') }}
                         </div>
-                        {{ mixins.readAll(null, 'mob-hide') }}
+                        <!-- ¯\_(ツ)_/¯ -->
                     </div>
                 </div>
                 <div class="bottom-image">
