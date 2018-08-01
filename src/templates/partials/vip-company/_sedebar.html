@@ -33,8 +33,19 @@
     				{
     					icon: "about",
     					text: "О компании",
-    					href: "#"
+    					href: "about-company"
 
+    				},
+    				{
+    					icon: "mark",
+    					text: "На карте",
+    					href: "on-map"
+
+    				},
+    				{
+    					icon: "mark",
+    					text: "Наши контакты",
+    					href: "our-contacts"
     				},
     				{
     					icon: "photo",
@@ -81,12 +92,12 @@
     				{
     					icon: "delivery",
     					text: "Доставка и оплата",
-    					href: "#"
+    					href: "delivery"
 
     				}
     				] %}
     				<li class="menu__item{% if loop.first %} is-active{% endif %}">
-    					<a href="{{ item.href }}" class="menu__link js-menu-link">
+    					<a href="#{{ item.href }}" class="menu__link js-menu-link">
     						{{ mixins.icon(item.icon) }}
     						<span>{{ item.text }}</span>
     						<span class="fi flaticon-arrows-1"></span>
