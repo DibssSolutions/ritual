@@ -20,7 +20,7 @@ import { SCROLL_TO } from '../utils';
 
   link.on('click', function() {
   	let thisAttr = $(this).attr('href');
-  	let position = $(thisAttr).offset().top;
+  	let position = $(thisAttr).offset().top + $('.header4');
   	SCROLL_TO(position);
   });
 
