@@ -1,4 +1,6 @@
 <div class="about-company js-navigation-section" id="about-company">
+    {% include "partials/vip-company/_company-name.html" %}
+    {% include "partials/vip-company/_main-services.html" %}
     <div class="row about-company__row">
         <div class="about-company__img col-md-4 col-sm-4 mob-hide">
             <div class="about-company__wrap">
@@ -25,4 +27,5 @@
             {{ mixins.readAll(null, 'mob-hide') }}
         </div>
     </div>
+    {% include "partials/vip-company/_video.html" %}
 </div>
