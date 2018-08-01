@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     {% include "../partials/_media-tags.html" %}
   </head>
-  <body>
+  <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
 
     <!-- BEGIN content -->
     <div class="out">

@@ -2,15 +2,99 @@
     <div class="aside__container">
     	<div class="aside__item">
     		<!-- begin review -->
-    		<div class="review">
-    			<div class="review__img"></div>
-    			<div class="review__rating"></div>
-    			<div class="review__link"></div>
+    		<div class="aside__review review">
+    			<div class="review__img" style="background-image: url(./img/review-img.png);"></div>
+    			<div class="review__rating">
+					<span class="ratings">
+						<span class="fi flaticon-favorite"></span>
+                        <span class="fi flaticon-favorite"></span>
+                        <span class="fi flaticon-favorite"></span>
+                        <span class="fi flaticon-favorite"></span>
+                        <span class="fi flaticon-favorite no"></span>
+                        <span class="ratings__appraisal">
+                        	<span>4</span>
+                        	{{ mixins.icon('users') }}
+                        	<span>(1)</span>
+                    	</span>
+                    </span>
+    			</div>
+    			<div class="review__link">Добавить отзыв</div>
     		</div>
     		<!-- end review -->
-    		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reprehenderit nihil nobis nulla. Officia, necessitatibus! Quam beatae a excepturi repellat id, odio facere porro. Minima necessitatibus, pariatur repudiandae atque neque.
-    		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reprehenderit nihil nobis nulla. Officia, necessitatibus! Quam beatae a excepturi repellat id, odio facere porro. Minima necessitatibus, pariatur repudiandae atque neque.
     	</div>
-    	
+    	<div class="aside__item">
+    		<div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+    		<div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+    	</div>
+    	<div class="aside__item">
+    		<!-- begin menu -->
+    		<ul class="menu">
+    			{% for item in [
+    				{
+    					icon: "about",
+    					text: "О компании",
+    					href: "#"
+
+    				},
+    				{
+    					icon: "photo",
+    					text: "Фотоальбом",
+    					href: "#"
+
+    				},
+    				{
+    					icon: "star",
+    					text: "Отзывы заказчиков",
+    					href: "#"
+
+    				},
+    				{
+    					icon: "feedback",
+    					text: "Обратная связь",
+    					href: "#"
+
+    				},
+    				{
+    					icon: "products",
+    					text: "Все товары и услуги",
+    					href: "#"
+
+    				},
+    				{
+    					icon: "sales",
+    					text: "Акции и спецпредложения",
+    					href: "#"
+
+    				},
+    				{
+    					icon: "certificates",
+    					text: "Сертификаты и лицензии",
+    					href: "#"
+
+    				},
+    				{
+    					icon: "vacances",
+    					text: "Вакансии",
+    					href: "#"
+
+    				},
+    				{
+    					icon: "delivery",
+    					text: "Доставка и оплата",
+    					href: "#"
+
+    				}
+    				] %}
+    				<li class="menu__item{% if loop.first %} is-active{% endif %}">
+    					<a href="{{ item.href }}" class="menu__link js-menu-link">
+    						{{ mixins.icon(item.icon) }}
+    						<span>{{ item.text }}</span>
+    						<span class="fi flaticon-arrows-1"></span>
+    					</a>
+    				</li>
+    				{% endfor %}
+    		</ul>
+    		<!-- end menu -->
+    	</div>
     </div>
 </div>
