@@ -1,0 +1,37 @@
+<div class="main-services">
+    <div class="main-services__title title-sm">Основные услуги:</div>
+    <div class="main-services__body">
+        {% set services = [
+            {
+                name: "Ритуальный салон"
+            },
+            {
+                name: "Художественная ковка"
+            },
+            {
+                name: "Услуга 3"
+            },
+            {
+                name: "Памятники"
+            },
+            {
+                name: "Кованая мебель"
+            },
+            {
+                name: "Кованая мебель"
+            },
+            {
+                name: "Оградка"
+            },
+            {
+                name: "Художественная ковка"
+            },
+            {
+                name: "Оградка"
+            }
+        ] %}
+        {% for i in services %}
+        <div class="main-services__item">{{i.name}}</div>
+        {% endfor %}
+    </div>
+</div>
