@@ -1,13 +1,13 @@
 .schedule
-	padding: 38px 0 0
+	padding: 38px 0
+	margin-bottom: 35px
+	border-bottom: 1px solid #eee
 	&__title
 		text-align: center
 		margin-bottom: 25px
 		font-size: 36px
 	&__wrap
 		position: relative
-		padding-bottom: 38px
-		border-bottom: 1px solid #eee
 		width: 100%
 		&:hover
 			.aside-block
@@ -22,9 +22,11 @@
 			border: 1px solid #e6ddd0
 
 .aside-block
+	background-color: $white
 	transition: opacity .3s
 	opacity: 0
 	z-index: -1
+	color: $brown
 	&__wrap
 		position: absolute
 		padding: 40px 28px
@@ -32,8 +34,12 @@
 		left: -300px
 		top: 0
 	&__title
+		font-family: $tahoma
 		margin-bottom: 35px
+		font-weight: 600
+		text-transform: uppercase
 	&__item
+		font-size: 14px
 		position: relative
 		padding-left: 33px
 		&:not(:last-child)
