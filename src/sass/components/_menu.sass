@@ -1,0 +1,38 @@
+.menu
+	+font-smoothing
+	&__item
+		display: block
+		&:not(:first-child)
+			margin-top: 20px
+		.is-active
+			.flaticon-arrows-1
+				opacity: 1
+	&__link
+		position: relative
+		padding-left: 50px
+		padding-right: 20px
+		color: #65594d
+		font-family: $tahoma
+		font-size: 16px
+		font-weight: 400
+		display: block
+		&:hover
+			span
+				border-bottom: 1px solid currentColor 
+		.icon
+			position: absolute
+			top: 4px
+			left: 13px
+			width: 26px
+			fill: #65594d
+		.flaticon-arrows-1
+			position: absolute
+			top: 50%
+			right: 0
+			margin-top: -6px
+			font-size: 13px
+			line-height: 1
+			opacity: 0
+			transition: opacity .4s
+		span
+			border-bottom: 1px solid transparent 

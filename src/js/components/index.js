@@ -6,3 +6,4 @@ import './_init-fancybox';
 import './_drop';
 import './_drop';
 import './_sidebar';
+import './_menuActive';
