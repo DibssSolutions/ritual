@@ -19,8 +19,19 @@
 			margin-right: 10px	
 
 .delivery
+	.delivery-block
+		border-bottom: 1px solid #bfbab4
+		margin-bottom: 35px
+		padding-bottom: 35px
 	.wind__title
 		margin-bottom: 36px
+	.person
+		margin-bottom: 25px
+		&:hover
+			.person__name
+				border-bottom: none
+			.person__img
+				opacity: 1	
 	.person__img
 		width: 100%
 		border: none
@@ -41,5 +52,55 @@
 		margin-bottom: 0		
 	.person__name
 		font-size: 16px
+		border-bottom: none
 		text-transform: none
-			
+	.person__text
+		font-size: 14px	
+
+.work
+	&__title
+		margin-bottom: 36px
+
+.steps
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	margin-bottom: 45px
+	&__box
+		max-width: 150px
+		padding: 5px
+		text-align: center
+	&__number
+		position: relative
+		width: 60px
+		height: 60px
+		margin: 0 auto
+		border-radius: 50%
+		box-sizing: border-box
+		border: 1px solid $brown
+		font-size: 28px
+		font-weight: 500
+		line-height: 60px
+		text-align: center
+		font-family: $cormorant_infant
+		vertical-align: middle
+		background-color: $white
+		margin-bottom: 17px
+		z-index: 2
+		&:after
+			position: absolute
+			left: 59px
+			top: 50%
+			content: ''
+			width: 312%
+			height: 1px	
+			background-color: $brown
+			z-index: 1
+		&.dis-none
+			&:after
+				display: none
+	&__description
+		display: block
+		font-size: 16px
+		font-weight: 600
+		margin-bottom: 25px					
