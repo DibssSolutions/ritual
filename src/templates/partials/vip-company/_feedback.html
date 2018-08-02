@@ -16,9 +16,9 @@
 		<div class="row">
 			<div class="feedback-form">
 				<form class="post-form col-md-7">
-					<div class="post-form__icon">
+					<span class="post-form__icon">
 						{{ mixins.icon('flaticon') }}
-					</div>
+					</span>
 					<h5 class="post-form__title title-m">Оставить сообщение</h5>
 					<div class="post-form__row row">
 						<div class="post-form__col">
@@ -30,13 +30,17 @@
 							<label class="post-form__label" for="email">Email</label>
 						</div>
 						<div class="post-form__col">
+							<input class="post-form__input" type="text" id="phone">
+							<label class="post-form__label" for="phone">Телефон</label>
+						</div>
+						<div class="post-form__col">
 							<textarea class="post-form__textarea" id="message"></textarea>
 							<label class="post-form__label" class="post-form__label" for="message">Комментарий</label>
 						</div>
 					</div>
 					<button type="submit" class="btn btn-md">Отправить</button>
 				</form>
-				<div class="col-md-5">
+				<div class="col-md-5 hide-md md-hide">
 					<div class="feedback-form__image">
 						<img src="img/feedback-img.png" alt="feedback-img">
 					</div>

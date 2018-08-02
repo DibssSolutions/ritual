@@ -22,9 +22,39 @@
 			font-weight: 600
 
 .feedback-form
+	margin-left: 15px
+	margin-right: 15px
+	&__image
+		position: relative
+		width: 100%
+		margin-left: -60px
+		img
+			max-width: 100%
 	.post-form
+		flex-wrap: no-wrap
 		margin-top: 45px
 		border: 2px solid #eaeaea
 		padding: 20px 45px 30px
-	&__title
-		font-size: 36px
+		text-align: center
+		&__row
+			margin-left: 0
+			margin-right: 0
+		&__icon
+			display: block
+			margin-bottom: 15px
+			.icon	
+				font-size: 63px
+				fill: #e6ddd0
+		&__title
+			font-size: 36px
+			margin-bottom: 15px
+		&__input,
+		&__textarea
+			background: none
+			border-bottom: 2px solid #eaeaea
+		&__input
+		&__textarea
+			height: 75px
+			margin-bottom: 30px
+		&__label
+			left: 0	
