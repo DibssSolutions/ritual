@@ -274,7 +274,7 @@ $(document).ready(function() {
             slidesToScroll: 1,
             dots: false,
             arrows: true,
-            prevArrow: '<button class="full-slider__prev">Назад<span class="fi flaticon-arrows"></span></button>',
+            prevArrow: '<button class="full-slider__prev"><span class="fi flaticon-arrows"></span>Назад</button>',
             nextArrow: '<button class="full-slider__next">Вперед<span class="fi flaticon-arrows"></span></button>'
         });
     }
