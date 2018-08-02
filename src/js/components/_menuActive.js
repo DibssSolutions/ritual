@@ -11,7 +11,8 @@ import { SCROLL_TO } from '../utils';
     $blockItem.each(function() {
       let $that = $(this);
       let id = $that.attr('id');
-      if ($that.offset().top <= $scrollPos && $that.offset().top + $that.height() > $scrollPos) {
+      let headerHeight = $('.header4').height();
+      if ($that.offset().top-headerHeight/1.5 <= $scrollPos && $that.offset().top-headerHeight/1.5 + $that.height() > $scrollPos) {
       	link.removeClass(ACTIVE);
         $('[href="#'+id+'"]').addClass(ACTIVE);
       }
@@ -20,8 +21,9 @@ import { SCROLL_TO } from '../utils';
 
   link.on('click', function() {
   	let thisAttr = $(this).attr('href');
-  	let position = $(thisAttr).offset().top + $('.header4');
-  	SCROLL_TO(position);
+  	let position = $(thisAttr).offset().top;
+    let headerHeight = $('.header4').height();
+  	SCROLL_TO(position-headerHeight/1.5);
   });
 
   WIN.on('scroll touchend', onScroll);

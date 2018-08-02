@@ -3,7 +3,6 @@ const mapNode = $('.js-map');
 
 if (mapNode.length) {
   mapNode.each((i,container) => {
-    console.log(container);
     const id = $(container).attr('id');
     if (!id) return;
     let map = new EasyGoogleMaps({

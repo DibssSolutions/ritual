@@ -94,11 +94,19 @@
     					text: "Доставка и оплата",
     					href: "delivery"
 
+    				},
+    				{
+    					text: "Наши преимущества",
+    					href: "advantages"
+    				},
+    				{
+    					text: "Наша команда",
+    					href: "team"
     				}
     				] %}
     				<li class="menu__item{% if loop.first %} is-active{% endif %}">
     					<a href="#{{ item.href }}" class="menu__link js-menu-link">
-    						{{ mixins.icon(item.icon) }}
+    						{% if item.icon %}{{ mixins.icon(item.icon) }}{% endif %}
     						<span class="menu__link-text">{{ item.text }}</span>
     						<span class="fi flaticon-arrows-1"></span>
     					</a>

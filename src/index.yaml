@@ -4,20 +4,20 @@ PageList:
 - file: page.html
   ready: 100
 - file: 3_ritual_agent.html
-  ready: 50
+  ready: 100
 - file: 24_blogs.html
   ready: 100
 - file: 2_grief.html
-  ready: 50
+  ready: 100
 - file: 25_post.html
   ready: 100 
 - file: all-companies.html
-  ready: 50   
+  ready: 100   
 - file: 16_goods_services.html
   ready: 100
 - file: 41_error_404.html
-  ready: 50   
+  ready: 100   
 - file: vip-company.html
   ready: 50   
 - file: after-funeral.html
-  ready: 50   
+  ready: 100   
