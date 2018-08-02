@@ -1,73 +1,95 @@
 <div class="our-contacts js-navigation-section" id="our-contacts">
-    <div class="wind our-contacts__body">
-        {{ mixins.windHead('Салон художественной ковки') }}
-        <!-- begin agency -->
-        <div class="wind__agency agency">
-            <div class="agency__table">
-                <div class="agency__table-cell">
-                    <div class="agency__logo agency__logo_md">
-                        <img src="./img/map-img.png" alt="img">
-                    </div>
-                    <div class="agency__stars">
-                        <span class="ratings">
-                            <span class="fi flaticon-favorite"></span>
-                            <span class="fi flaticon-favorite"></span>
-                            <span class="fi flaticon-favorite"></span>
-                            <span class="fi flaticon-favorite"></span>
-                            <span class="fi flaticon-favorite"></span>
-                            <span class="ratings__appraisal">5.0</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="agency__table-cell">
-                    <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
-                    <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
-                </div>
-                <div class="agency__table-cell agency__table-cell_mob">
-                    <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
-                    <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
-                </div>
-            </div>
-        </div>
-        <!-- end agency -->
-        <h3 class="our-contacts__title title-m text-center mob-hide">Как добраться</h3>
-        <div class="our-contacts__loc mob-hide">
-            <div class="our-contacts__loc-item">
-                <span class="fa fa-map-marker"></span>
-                <h4>ост. “Краеведческий музей”</h4>
-                <p class="abbr">
-                    <i class="fa fa-bus"></i> Троллейбус № 1,3
-                </p>
-            </div>
-            <div class="our-contacts__loc-item">
-                <span class="fa fa-map-marker"></span>
-                <h4>ост. “Комсомольская площадь”</h4>
-                <p class="abbr">
-                    <i class="fa fa-bus"></i>Автобус № 4,14,19
-                    <br>
-                    <i class="fa fa-bus"></i>Троллейбус № 1,3
-                </p>
-            </div>
-            
-        </div>
-        <div class="our-contacts__text">
-                <p>
-                    В нашей торгово-производственной фирме Студия Ангел вы можете воспользоваться услугами ритуального агента, который возьмет на себя все обязанности по подготовке и организации похорон ваших близких людей.
-                </p>
-                <div class="our-contacts__list">
-                    <span>Наш агент поможет вам осуществить:</span>
-                    <ul>
-                        <li>подготовку усопшего, в которую входит омовение тела, бальзамирование, грим при необходимости, облаченье в одежды;</li>
-                        <li>получение необходимых документов в районной поликлинике и органах ЗАГС;</li>
-                        <li>выбор и доставку необходимых принадлежностей для похорон;</li>
-                        <li>выбор места захоронения или получить разрешение на подзахоронение;</li>
-                        <li>заказ спец транспорта и автобуса для родственников;</li>
-                        <li>выбор места для поминальной трапезы.</li>
-                    </ol>
-                </div>
-                
-                {{ mixins.readAll(null, 'mob-hide') }}
-            </div>
-    <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
-    </div>
+	<div class="wind our-contacts__body">
+		{{ mixins.windHead('Салон художественной ковки') }}
+		<!-- begin agency -->
+		<div class="wind__agency agency">
+			<div class="agency__table">
+				<div class="agency__table-cell">
+					<div class="agency__logo agency__logo_md">
+						<img src="./img/map-img.png" alt="img">
+					</div>
+					<div class="agency__stars">
+						<span class="ratings">
+							<span class="fi flaticon-favorite"></span>
+							<span class="fi flaticon-favorite"></span>
+							<span class="fi flaticon-favorite"></span>
+							<span class="fi flaticon-favorite"></span>
+							<span class="fi flaticon-favorite"></span>
+							<span class="ratings__appraisal">5.0</span>
+						</span>
+					</div>
+				</div>
+				<div class="agency__table-cell">
+					<div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+					<div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+				</div>
+				<div class="agency__table-cell agency__table-cell_mob">
+					<div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+					<div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+				</div>
+			</div>
+		</div>
+		<!-- end agency -->
+		<h3 class="our-contacts__title title-m text-center mob-hide">Как добраться</h3>
+		<div class="our-contacts__loc mob-hide">
+			<div class="our-contacts__loc-item">
+				<span class="fa fa-map-marker"></span>
+				<h4>ост. “Краеведческий музей”</h4>
+				<p class="abbr">
+					<i class="fa fa-bus"></i> Троллейбус № 1,3
+				</p>
+			</div>
+			<div class="our-contacts__loc-item">
+				<span class="fa fa-map-marker"></span>
+				<h4>ост. “Комсомольская площадь”</h4>
+				<p class="abbr">
+					<i class="fa fa-bus"></i>Автобус № 4,14,19
+					<br>
+					<i class="fa fa-bus"></i>Троллейбус № 1,3
+				</p>
+			</div>
+		</div>
+		<div class="drop js-drop">
+			<div class="drop__wrap js-drop-wrap">
+				<div class="drop__show js-drop-shows">
+					<p>
+						В нашей торгово-производственной фирме Студия Ангел вы можете воспользоваться услугами ритуального агента, который возьмет на себя все обязанности по подготовке и организации похорон ваших близких людей.
+					</p>
+					<div class="our-contacts__list">
+						<span>Наш агент поможет вам осуществить:</span>
+						<ul>
+							<li>подготовку усопшего, в которую входит омовение тела, бальзамирование, грим при необходимости, облаченье в одежды;</li>
+							<li>получение необходимых документов в районной поликлинике и органах ЗАГС;</li>
+							<li>выбор и доставку необходимых принадлежностей для похорон;</li>
+							<li>выбор места захоронения или получить разрешение на подзахоронение;</li>
+							<li>заказ спец транспорта и автобуса для родственников;</li>
+							<li>выбор места для поминальной трапезы.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="drop__hidden js-drop-hidden">
+					<p>
+						В нашей торгово-производственной фирме Студия Ангел вы можете воспользоваться услугами ритуального агента, который возьмет на себя все обязанности по подготовке и организации похорон ваших близких людей.
+					</p>
+					<div class="our-contacts__list">
+						<span>Наш агент поможет вам осуществить:</span>
+						<ul>
+							<li>подготовку усопшего, в которую входит омовение тела, бальзамирование, грим при необходимости, облаченье в одежды;</li>
+							<li>получение необходимых документов в районной поликлинике и органах ЗАГС;</li>
+							<li>выбор и доставку необходимых принадлежностей для похорон;</li>
+							<li>выбор места захоронения или получить разрешение на подзахоронение;</li>
+							<li>заказ спец транспорта и автобуса для родственников;</li>
+							<li>выбор места для поминальной трапезы.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="price-btn mob-hide">
+			{{ mixins.readAll(null, 'mob-hide') }}
+			</div>
+		</div>
+		<div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);">
+		</div>
+	</div>
 </div>
+

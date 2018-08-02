@@ -1,6 +1,8 @@
 .feedback
 	&__contact
 		display: flex
+		+sm
+			flex-wrap: wrap
 	&__contact-col
 		position: relative
 		max-width: 255px
@@ -15,6 +17,8 @@
 				width: 2px
 				height: 80%
 				background-color: #c7bfb7
+				+sm
+					display: none
 		&:last-child
 			margin-left: 10px
 		p span
@@ -31,7 +35,7 @@
 		img
 			max-width: 100%
 	.post-form
-		flex-wrap: no-wrap
+		// flex-wrap: no-wrap
 		margin-top: 45px
 		border: 2px solid #eaeaea
 		padding: 20px 45px 30px
@@ -50,11 +54,18 @@
 			margin-bottom: 15px
 		&__input,
 		&__textarea
+			padding-left: 0
 			background: none
 			border-bottom: 2px solid #eaeaea
+			&:focus ~ .post-form__label
+				opacity: 0
+				+sm
+					opacity: 0
 		&__input
 		&__textarea
 			height: 75px
 			margin-bottom: 30px
 		&__label
-			left: 0	
+			left: 0
+			+sm
+				top: 12px	
