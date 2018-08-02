@@ -266,6 +266,19 @@ $(document).ready(function() {
         });
     }
 
+    var fullSlider = $('.js-full-slider');
+    if (fullSlider.length) {
+        fullSlider.slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+            prevArrow: '<button class="full-slider__prev"><span class="fi flaticon-arrows"></span>Назад</button>',
+            nextArrow: '<button class="full-slider__next">Вперед<span class="fi flaticon-arrows"></span></button>'
+        });
+    }
+
     new WOW().init();
 
     $(".cart-header").on("click", function() {

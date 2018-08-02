@@ -1,0 +1,41 @@
+.full-slider
+	position: relative
+	padding-bottom: 40px
+	&__next,
+	&__prev
+		position: absolute
+		bottom: 0
+		color: #65594d
+		font-family: $tahoma
+		font-size: 15px
+		font-weight: 400
+		.fi
+			font-size: 8px
+			color: #65594d
+			vertical-align: middle
+			display: inline-block
+	&__next
+		right: 0
+		.fi
+			margin-left: 4px
+	&__prev
+		left: 0
+		.fi
+			margin-right: 4px
+			+rotate(180)
+.full-img
+	position: relative
+	display: block
+	&:hover
+		.icon-full
+			opacity: 1
+	img
+		max-width: 100%
+		display: block
+	.icon-full
+		position: absolute
+		top: 24px
+		right: 26px
+		font-size: 52px
+		opacity: 0
+		transition: opacity .4s

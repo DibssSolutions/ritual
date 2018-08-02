@@ -1,29 +1,30 @@
 <div class="wrapper">
 	<div class="clearfix"></div>
-	<div class="page-head">
-		<div class="container page-head__container">
-			<div class="row">
-				<div class="col-md-3 col-sm-12 page-head__col">
-					<ul class="bcrumbs page-head__bcrumbs">
-						<li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
-						<li><a href="#">Obituaries</a></li>
-						<li>Past</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div class="vip-company">
+        <div class="page-head">
+            <div class="container page-head__container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 page-head__col">
+                        <ul class="bcrumbs page-head__bcrumbs">
+                            <li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
+                            <li><a href="#">Obituaries</a></li>
+                            <li>Past</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 		<div class="container">
 			<div class="vip-company__wrap">
 				<div class="row vip-company__row js-aside-container">
-					<aside class="col-md-3 col-sm-12">
+					<aside class="vip-company__aside col-md-3 col-sm-12 md-hide">
 						{% include "partials/vip-company/_sedebar.html" %}
 					</aside>
-					<div class="col-md-9 col-sm-8 vip-company__col">
+					<div class="col-md-9 col-sm-12 vip-company__col">
 						{% include "partials/vip-company/_about-company.html" %}
 						{% include "partials/vip-company/_on-map.html" %}
 						{% include "partials/vip-company/_our-contacts.html" %}
+						{% include "partials/vip-company/_photoalbum.html" %}
 						<!-- Start feedback -->
 						{% include "partials/vip-company/_feedback.html" %}
 						<!-- End feedback -->
@@ -79,7 +80,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>    
 			<div class="bottom-image">
 				<img src="img/rose-angel.png" alt="rose-angel">

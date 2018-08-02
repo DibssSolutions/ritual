@@ -13,7 +13,11 @@ body
 			left: 0
 			bottom: 0
 			width: calc((100% - 1200px) / 2 + 288px)
+			min-width: 243px
+			z-index: 1
 			background-color: #e6ddd0
+			+r(1049)
+				display: none
 
 .inner
 	+sm
@@ -125,6 +129,10 @@ body
 	margin-bottom: 20px
 	+sm
 		background-color: rgba(#d9c8ab,.2)
+
+.md-hide
+	+r(1049)
+		display: none !important
 
 .mob-hide
 	+sm
