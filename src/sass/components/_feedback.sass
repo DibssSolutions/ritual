@@ -1,0 +1,30 @@
+.feedback
+	&__contact
+		display: flex
+	&__contact-col
+		position: relative
+		max-width: 255px
+		padding: 0 10px 10px
+		&:first-child
+			margin-right: 10px
+			&:after
+				position: absolute
+				content: ''
+				right: -10px
+				top: 0
+				width: 2px
+				height: 80%
+				background-color: #c7bfb7
+		&:last-child
+			margin-left: 10px
+		p span
+			font-size: 20px
+			font-weight: 600
+
+.feedback-form
+	.post-form
+		margin-top: 45px
+		border: 2px solid #eaeaea
+		padding: 20px 45px 30px
+	&__title
+		font-size: 36px

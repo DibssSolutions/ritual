@@ -1,0 +1,48 @@
+<div id="feedback" class="feedback js-navigation-section">
+	<div class="wind">
+		{{ mixins.windHead('Салон художественной ковки') }}
+		<div class="row">
+			<div class="col-md-12">
+				<div class="feedback__contact">
+					<div class="feedback__contact-col">
+						<p>Звоните нам по телефону: <br><i class="fa fas fa-phone"></i><span> 8 (111) 123 123</span></p>
+					</div>
+					<div class="feedback__contact-col">
+						<span>Или заполните форму ниже и мы свяжемся с Вами:</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="feedback-form">
+				<form class="post-form col-md-7">
+					<div class="post-form__icon">
+						{{ mixins.icon('flaticon') }}
+					</div>
+					<h5 class="post-form__title title-m">Оставить сообщение</h5>
+					<div class="post-form__row row">
+						<div class="post-form__col">
+							<input class="post-form__input" type="text" id="name">
+							<label class="post-form__label" for="name">Ваше имя</label>
+						</div>
+						<div class="post-form__col">
+							<input class="post-form__input" type="text" id="email">
+							<label class="post-form__label" for="email">Email</label>
+						</div>
+						<div class="post-form__col">
+							<textarea class="post-form__textarea" id="message"></textarea>
+							<label class="post-form__label" class="post-form__label" for="message">Комментарий</label>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-md">Отправить</button>
+				</form>
+				<div class="col-md-5">
+					<div class="feedback-form__image">
+						<img src="img/feedback-img.png" alt="feedback-img">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
+	</div>
+</div>

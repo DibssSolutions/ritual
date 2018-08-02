@@ -1,1 +1,42 @@
 .shares
+	.team-info
+		border-bottom: none
+		padding: 20px 10px
+		transition: box-shadow .3s
+		&:hover
+			box-shadow: 0 0 15px rgba(0,0,0,.4)
+			cursor: pointer
+	.posts-image
+		position: relative
+		width: 270px
+		height: 270px
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+		border-radius: 0
+		&:after
+			position: absolute
+			content: ''
+			top: 8px
+			right: 8px
+			bottom: 8px
+			left: 8px
+			border: 2px solid #e6ddd0
+			z-index: 1
+		&__sale
+			position: absolute
+			display: block
+			top: 18px
+			left: 18px
+			text-align: center
+			width: 104px
+			height: 104px
+			border-radius: 50%
+			background-color: #ef2735
+			font-size: 30px
+			color: $white
+			font-weight: 600
+			line-height: 104px
+			vertical-align: middle
+			text-decoration: none
+			z-index: 2	
