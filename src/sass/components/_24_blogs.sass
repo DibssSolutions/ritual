@@ -51,11 +51,19 @@
 	&_full-md,
 	&_full-lg
 		position: relative
+		margin: 0 auto
 		width: 100%
-		max-width: 247px
+		height: auto
 		padding-bottom: 100%
+		+sm
+			margin-bottom: 30px
+			padding-bottom: 0
+			width: 247px
+			height: 247px
 	&_full-lg
-		max-width: 250px
+		+sm
+			width: 250px
+			height: 250px
 	&_full-rd
 		overflow: hidden
 		border-radius: 50%
