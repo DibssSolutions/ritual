@@ -1,31 +1,54 @@
 <div class="about-company js-navigation-section" id="about-company">
-    {% include "partials/vip-company/_company-name.html" %}
-    {% include "partials/vip-company/_main-services.html" %}
-    <div class="row about-company__row">
-        <div class="about-company__img col-md-4 col-sm-4 mob-hide">
-            <div class="about-company__wrap">
-                <img src="./img/about-company-img.jpg" alt="img">
-            </div>
-            
-        </div>
-        <div class="about-company__text col-md-8 col-sm-8 col-xs-12">
-            <p>
-                В нашей торгово-производственной фирме Студия Ангел вы можете воспользоваться услугами ритуального агента, который возьмет на себя все обязанности по подготовке и организации похорон ваших близких людей.
-            </p>
-            <div class="about-company__list">
-                <span>Наш агент поможет вам осуществить:</span>
-                <ul>
-                    <li>подготовку усопшего, в которую входит омовение тела, бальзамирование, грим при необходимости, облаченье в одежды;</li>
-                    <li>получение необходимых документов в районной поликлинике и органах ЗАГС;</li>
-                    <li>выбор и доставку необходимых принадлежностей для похорон;</li>
-                    <li>выбор места захоронения или получить разрешение на подзахоронение;</li>
-                    <li>заказ спец транспорта и автобуса для родственников;</li>
-                    <li>выбор места для поминальной трапезы.</li>
-                </ol>
-            </div>
-            
-            {{ mixins.readAll(null, 'mob-hide') }}
-        </div>
-    </div>
-    {% include "partials/vip-company/_video.html" %}
+	{% include "partials/vip-company/_company-name.html" %}
+	{% include "partials/vip-company/_main-services.html" %}
+	<div class="row about-company__row">
+		<div class="about-company__img col-md-4 col-sm-4 mob-hide">
+			<div class="about-company__wrap">
+				<img src="./img/about-company-img.jpg" alt="img">
+			</div>
+		</div>
+		<div class="about-company__text col-md-8 col-sm-8 col-xs-12">
+			<div class="drop js-drop">
+				<div class="drop__wrap js-drop-wrap">
+					<div class="drop__show js-drop-shows">
+						<p>
+							В нашей торгово-производственной фирме Студия Ангел вы можете воспользоваться услугами ритуального агента, который возьмет на себя все обязанности по подготовке и организации похорон ваших близких людей.
+						</p>
+						<div class="about-company__list">
+							<span>Наш агент поможет вам осуществить:</span>
+							<ul>
+								<li>подготовку усопшего, в которую входит омовение тела, бальзамирование, грим при необходимости, облаченье в одежды;</li>
+								<li>получение необходимых документов в районной поликлинике и органах ЗАГС;</li>
+								<li>выбор и доставку необходимых принадлежностей для похорон;</li>
+								<li>выбор места захоронения или получить разрешение на подзахоронение;</li>
+								<li>заказ спец транспорта и автобуса для родственников;</li>
+								<li>выбор места для поминальной трапезы.</li>
+							</ol>
+						</div>
+					</div>
+					<div class="drop__hidden js-drop-hidden">
+						<p>
+							В нашей торгово-производственной фирме Студия Ангел вы можете воспользоваться услугами ритуального агента, который возьмет на себя все обязанности по подготовке и организации похорон ваших близких людей.
+						</p>
+						<div class="about-company__list">
+							<span>Наш агент поможет вам осуществить:</span>
+							<ul>
+								<li>подготовку усопшего, в которую входит омовение тела, бальзамирование, грим при необходимости, облаченье в одежды;</li>
+								<li>получение необходимых документов в районной поликлинике и органах ЗАГС;</li>
+								<li>выбор и доставку необходимых принадлежностей для похорон;</li>
+								<li>выбор места захоронения или получить разрешение на подзахоронение;</li>
+								<li>заказ спец транспорта и автобуса для родственников;</li>
+								<li>выбор места для поминальной трапезы.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="price-btn mob-hide">
+				{{ mixins.readAll(null, 'mob-hide') }}
+				</div>
+			</div>	
+		</div>
+	</div>
+	{% include "partials/vip-company/_video.html" %}
 </div>
+
