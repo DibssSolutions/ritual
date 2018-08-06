@@ -1,5 +1,4 @@
 import { OPEN, ACTIVE, widthMD, widthSM, WIN } from '../constants';
-import { TimelineMax } from 'gsap';
 
 ;(function() {
 
