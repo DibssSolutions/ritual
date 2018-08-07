@@ -22,4 +22,6 @@ PageList:
 - file: after-funeral.html
   ready: 100
 - file: 4_choice.html
+  ready: 100  
+- file: 9_invite-relatives.html
   ready: 50   
