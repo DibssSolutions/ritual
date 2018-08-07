@@ -20,4 +20,6 @@ PageList:
 - file: vip-company.html
   ready: 50   
 - file: after-funeral.html
-  ready: 100   
+  ready: 100
+- file: 4_choice.html
+  ready: 50   
