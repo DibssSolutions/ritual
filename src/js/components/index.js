@@ -7,3 +7,4 @@ import './_drop';
 import './_drop';
 import './_sidebar';
 import './_menuActive';
+import './_tooltipster';
