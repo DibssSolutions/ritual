@@ -1,0 +1,58 @@
+.priority-issues
+    padding: 40px 0 90px
+    background-color: $white_brown_bg
+    &__container
+    &__head
+        margin-bottom: 50px
+    &__title
+    &__accordeon
+        max-width: 775px
+        margin: 0 auto
+
+
+.accordeon
+    &__item
+        margin-bottom: 10px
+    &__head
+        margin-bottom: 20px
+        cursor: pointer
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &:hover
+            .accordeon__icon
+                border-color: #b2a99e
+                &:before,
+                &:after
+                    background-color: #b2a99e
+    &__icon
+        position: relative
+        width: 28px
+        height: 28px
+        border-radius: 50%
+        border: 2px solid $brown_orange
+        display: block
+        &:before,
+        &:after
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            background-color: $brown_orange
+        &:before
+            width: 2px
+            height: 8px
+        &:after
+            width: 8px
+            height: 2px
+    &__body
+        display: none
+        margin-bottom: 5px
+        p
+            margin-bottom: 25px
+    &_active
+        .accordeon__icon
+            &:before
+                transform: translate(-50%, -50%) rotate(90deg)
+

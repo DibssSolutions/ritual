@@ -25,3 +25,5 @@ PageList:
   ready: 100  
 - file: 9_invite-relatives.html
   ready: 50   
+- file: 10_by_own_hands.html
+  ready: 50 
