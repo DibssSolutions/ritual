@@ -4,6 +4,7 @@ import './_header';
 import './_map';
 import './_init-fancybox';
 import './_init_date-picker';
+import './_init-slider';
 import './_drop';
 import './_drop';
 import './_sidebar';
