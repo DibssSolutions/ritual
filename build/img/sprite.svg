@@ -116,6 +116,15 @@
         </style>
     
         <style>
+            .cls-1 { fill-rule: evenodd; filter: url(#filter); }
+        </style>
+        <filter id="filter" x="1285.66" y="2438.91" width="18.68" height="17.18" filterUnits="userSpaceOnUse">
+            <feFlood result="flood" flood-color="#62594f"/>
+            <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+            <feBlend result="blend" in2="SourceGraphic"/>
+        </filter>
+    
+        <style>
             .cls-1 { fill: #c9c2b4; fill-rule: evenodd; }
         </style>
     
@@ -266,6 +275,9 @@
 </symbol><symbol id="icon-photo" viewBox="0 0 16.312 13.312">
     
     <path d="M15 13.32H1.31c-.724 0-1.314-.592-1.314-1.316V4.016c0-.72.585-1.306 1.305-1.306h.328V1.35H3.26v1.36h.36L4.708-.01h6.896l1.088 2.72h2.32c.72 0 1.304.586 1.304 1.306v7.988c0 .724-.59 1.315-1.315 1.315zM2.717 1.893h-.544v.816h.544v-.816zm5.44.544c-2.7 0-4.896 2.196-4.896 4.896 0 2.7 2.196 4.897 4.896 4.897 2.7 0 4.896-2.195 4.896-4.896 0-2.7-2.196-4.896-4.896-4.896zm5.984 1.36c-.6 0-1.088.488-1.088 1.088 0 .6.488 1.088 1.088 1.088.6 0 1.088-.488 1.088-1.088 0-.6-.488-1.088-1.088-1.088zm-5.984 6.8c-1.8 0-3.264-1.463-3.264-3.264 0-1.8 1.464-3.263 3.264-3.263 1.8 0 3.264 1.464 3.264 3.264 0 1.8-1.464 3.264-3.264 3.264z" class="cls-1"/>
+</symbol><symbol id="icon-pointer-advice" viewBox="0 0 18.68 17.18">
+    
+    <path id="Pointer_Advice_designed_by_Freepik_from_Flaticon.com_&#x43A;&#x43E;&#x43F;&#x438;&#x44F;" data-name="Pointer Advice designed by Freepik from Flaticon.com &#x43A;&#x43E;&#x43F;&#x438;&#x44F;" class="cls-1" d="M8.54 7.52H2.98a.5.5 0 0 0-.48.36l-1.06 3.69 7.47.81.58-2.8a13.744 13.744 0 0 1-.95-2.06zm6.97 5.58l2.25.25-.67-2.32-.27.39c-.45.63-.91 1.21-1.31 1.68zm-4.86-1.71l-.24 1.15 1.21.14c-.3-.38-.63-.8-.95-1.26a.053.053 0 0 1-.02-.03zM0 16.53a.532.532 0 0 0 .08.44.493.493 0 0 0 .4.2h7.43l.69-3.32-7.59-.82zm18.21-1.63l-8.11-.88-.66 3.15h8.76a.5.5 0 0 0 .5-.5.467.467 0 0 0-.03-.17zm-4.67-1.16a.288.288 0 0 0 .2.09.333.333 0 0 0 .21-.09 29.622 29.622 0 0 0 2.26-2.76c1.13-1.59 2.49-3.94 2.49-6.02a4.96 4.96 0 0 0-9.92 0c0 2.09 1.36 4.43 2.5 6.03a26.287 26.287 0 0 0 2.26 2.75zm.2-11.87a3.02 3.02 0 1 1-3.03 3.02 3.032 3.032 0 0 1 3.03-3.02z"/>
 </symbol><symbol id="icon-printer" viewBox="0 0 13 12">
     
     <path id="Printer_designed_by_Yannick_from_Flaticon.com" data-name="Printer designed by Yannick from Flaticon.com" class="cls-1" d="M9.75 8h-6.5v4h6.5V8zm-.812 3.2H4.062v-.8h4.876v.8zm0-1.6H4.062v-.8h4.876v.8zM9.75 0h-6.5v4h6.5V0zm1.626 2.4h-.813v2.4H2.437V2.4h-.813A1.734 1.734 0 0 0 0 4v4a1.734 1.734 0 0 0 1.625 1.6h.813V7.2h8.126v2.4h.813A1.735 1.735 0 0 0 13 8V4a1.735 1.735 0 0 0-1.624-1.6z"/>
