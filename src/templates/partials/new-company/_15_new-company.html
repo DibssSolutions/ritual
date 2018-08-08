@@ -1,0 +1,67 @@
+<div class="wrapper">
+	<div class="clearfix"></div>
+	<div class="page_head ">
+		<div class="container">
+			<ul class="bcrumbs pull-left">
+				<li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
+				<li><a href="#">Obituaries</a></li>
+				<li>Blog</li>
+			</ul>
+		</div>
+	</div>
+	<div class="new-company">
+		<div class="new-company__container container">
+			<div class="new-company__wrap">
+				<div class="new-company__head section-head">
+					<h3 class="new-company__title title-l">Добавление новой компании</h3>
+					<p>Написать подзаголовок, если нужно</p>
+				</div>
+				<form class="company-form">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="file_upload">
+								<div class="file_upload__wrap">
+									<span class="file_upload__icon">{{ mixins.icon('camera') }}</span>
+									<span class="file_upload__description">Загрузите логотип</span>
+									<div class="file_upload__photo" style="background-image: url(img/check-list2.png);"></div>
+								</div>
+								<span id="title-input" class="file_upload__title-input js-title-input">Файл не выбран</span>
+								<label class="file_upload__label btn" for="file_upload">Выбрать файл</label>
+								<input type="file" name="file_upload" id="file_upload" class="file_upload__input">
+							</div>
+						</div>
+						<div class="col-md-9">
+							<div class="post-form">
+								<div class="post-form__col">
+									<span class="post-form__title-row">Название компании:</span>
+									<input class="post-form__input" type="text" id="name">
+									<label class="post-form__label" for="name">Введите название компании</label>
+								</div>
+								<div class="post-form__col">
+									<span class="post-form__title-row">Специализация:</span>
+									<input class="post-form__input" type="text" id="email">
+									<label class="post-form__label" for="email">Пример: салон ритуальных услуг</label>
+								</div>
+								<div class="map-wrap__select">
+									<span class="post-form__title-row">Год создания компании:</span>
+									<div class="select">
+										<select name="region" id="region" style="width: 100%" class="js-select">
+											<option value="1">2018</option>
+											<option value="2">2017</option>
+											<option value="3">2016</option>
+											<option value="4">2015</option>
+											<option value="5">2014</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="bottom-image">
+					<img src="img/rose-angel.png" alt="rose-angel">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

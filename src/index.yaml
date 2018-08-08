@@ -31,3 +31,5 @@ PageList:
   ready: 50  
 - file: 9_invite-relatives.html
   ready: 50
+- file: 15_new-company.html
+  ready: 50

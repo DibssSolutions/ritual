@@ -1,0 +1,95 @@
+.new-company
+	&__head
+		text-align: center
+		margin-bottom: 20px
+	&__title	
+		margin-bottom: 10px
+
+.company-form
+	.post-form
+		margin-top: 20px
+		margin-left: 250px
+		margin-right: 65px
+		&__title-row
+			display: block
+			position: absolute
+			left: -250px
+			top: 15px
+			padding-right: 32px
+			text-align: right
+			width: 250px
+		&__col
+			width: 100%		
+		&__input
+			max-width: 570px
+			padding: 15px 27px
+		&__label
+			left: 27px
+			+sm
+				top: 13px
+				left: 27px
+				font-size: 14px
+	.map-wrap__select
+		position: relative
+		max-width: 100%
+	.select .select2-selection--single .select2-selection__rendered
+		padding-left: 27px
+		padding-top: 6px
+		padding-bottom: 6px
+	.select .select2-selection--single
+		height: 47px
+	.select .select2-selection--single .select2-selection__arrow
+		height: 47px
+		width: 40px
+	.select2-container--default .select2-selection--multiple,
+	.select2-container--default .select2-selection--single
+		border-radius: 0			
+
+.file_upload
+	max-width: 175px
+	text-align: center
+	&__wrap
+		position: relative
+		width: 135px
+		height: 135px
+		border-radius: 50%
+		margin: 0 auto 3px
+		background-color: #e6ddd0
+		padding: 23px
+		z-index: 1
+	&__photo
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		width: 135px
+		height: 135px
+		border-radius: 50%
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+		z-index: 2
+		display: none	
+	&__icon
+		font-size: 34px
+		display: block
+		margin-bottom: 5px
+		.icon
+			fill: $brown
+	&__description
+		font-size: 14px
+		color: $brown	
+	&__title-input
+		display: inline-block
+		margin-bottom: 10px
+		color: #c8bdad
+		font-size: 14px
+		&.is-hover
+			opacity: 0	
+	&__label
+		font-size: 15px
+		font-weight: 600
+	input[type="file"]
+		display: none
+
