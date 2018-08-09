@@ -1,0 +1,95 @@
+<div class="memory-gallery">
+        <div class="memory-gallery__container container">
+            <div class="row memory-gallery__row">
+                <div class="col-md-3 col-sm-3 memory-gallery__col">
+                    <div class="page-of-memory__person person-info">
+                        <div class="person-info__photo">
+                            <img src="./img/memory-item.jpg" alt="photo">
+                            <div class="person-info__img">
+                                <img src="./img/candles.gif" alt="img">
+                            </div>
+                            <div class="person-info__img person-info__img_1">
+                                <img src="./img/ribbon.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="person-info__general text-center">
+                            <p>
+                                Фамилия Имя Отчество
+                            </p>
+                            <span>
+                                1937 - 1991
+                            </span>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="#">Основное <i class="fi flaticon-arrows-1"></i></a>
+                        <a href="#">Некрологи<i class="fi flaticon-arrows-1"></i></a>
+                        <a href="#">Свеча памяти<i class="fi flaticon-arrows-1"></i></a>
+                        <a class="active" href="#">Фотоальбом<i class="fi flaticon-arrows-1"></i></a>
+                        <a href="#">Заказать цветы<i class="fi flaticon-arrows-1"></i></a>
+                        <a href="#">Заказать уход<i class="fi flaticon-arrows-1"></i></a>
+                    </div>
+                </div>
+    
+                <div class="col-md-9 col-sm-9 memory-gallery__col">
+                    
+                    <div class="memory-gallery__top top-bar mob-hide">
+                        <div class="shop-sort-wrap">
+                            <div class="ps-options pull-left">
+                                <span>Показывать по:</span>
+                                <div class="ps-select">
+                                    <i class="fa fa-caret-down"></i>
+                                    <select>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option selected>9</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="shop-sort">
+                                <a href="#" class="active"><i class="flaticon-squares"></i></a>
+                                <a href="#"><i class="flaticon-signs-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="memory-gallery__list">
+
+                        {% for i in [1,2,3] %}
+        
+                        <div class="memory-gallery__row row">
+            
+                            {% for item in [1,2,3] %}
+                                
+                            <div class="memory-gallery__col col-md-4 col-sm-6">
+                                <a href="#" class="memory-gallery__card services-card">
+                                    <div class="services-card__img memory-gallery__img">
+                                        <img src="./img/flowers.jpg" data-object-fit="cover" alt="img">
+                                    </div>
+                                    <div class="service-card__text memory-gallery__text">
+                                        <p>Подпись к фото будет тут</p>
+                                    </div>
+                                </a>
+                            </div>
+            
+                            {% endfor %}
+                            
+                        </div>
+            
+                        {% endfor %}
+                        <!-- Start page-nav -->
+                        {% include "partials/blogs/_page-nav.html" %}
+                        <!-- End page-nav -->
+
+                    </div>
+
+                <!-- Start counter -->
+                {% include "partials/post/_counter.html" %}
+                <!-- End counter -->
+                <div class="bottom-image">
+                        <img src="img/rose-candle.png" alt="rose-angel">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

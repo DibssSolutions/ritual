@@ -5,12 +5,33 @@
     background-repeat: no-repeat
     &__container
     &__head
+        margin-bottom: 55px
     &__title
         line-height: 0.9
         margin-bottom: 17px
-    &__person
-        display: flex
-        flex-direction: column
+    &__details
+        span
+            font-weight: 700
+    &__personal-info
+        margin-bottom: 40px
+    &__list
+        margin-bottom: 25px
+        .agent
+            border-top: 1px solid #f3f1ea
+            padding: 18px 0 10px
+            &:hover
+                .agent__title
+                    display: block
+            &__title
+                display: none
+            .address
+                margin-left: 40px
+    &__counter
+        margin-top: 50px
+
+.person-info
+    display: flex
+    flex-direction: column
     &__photo
         position: relative
         img
@@ -51,21 +72,3 @@
             font-family: $tahoma
             font-size: 15px
             font-weight: normal
-    &__details
-        span
-            font-weight: 700
-    &__personal-info
-    &__list
-        margin-bottom: 25px
-        .agent
-            border-top: 1px solid #f3f1ea
-            padding: 18px 0 10px
-            &:hover
-                .agent__title
-                    display: block
-            &__title
-                display: none
-            .address
-                margin-left: 40px
-    &__counter
-        margin-top: 50px

@@ -35,3 +35,5 @@ PageList:
   ready: 50 
 - file: 15_new-company.html
   ready: 50
+- file: 23_page_of_memory.html
+  ready: 50
