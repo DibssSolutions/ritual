@@ -21,9 +21,17 @@ PageList:
   ready: 50   
 - file: after-funeral.html
   ready: 100
-- file: 4_choice.html
+- file: 4_choice-cemetery.html
   ready: 100  
+- file: 6_choice-hall.html
+  ready: 50
+- file: 7_choice-church.html
+  ready: 50
+- file: 8_choice-restaurant.html
+  ready: 50  
 - file: 9_invite-relatives.html
   ready: 50   
 - file: 10_by_own_hands.html
   ready: 50 
+- file: 15_new-company.html
+  ready: 50
