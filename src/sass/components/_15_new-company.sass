@@ -1,11 +1,11 @@
-.new-company
+.new-companys
 	&__head
 		text-align: center
 		margin-bottom: 20px
 	&__title	
 		margin-bottom: 10px
-
-.company-form
+	.select
+		width: 100%		
 	.post-form
 		margin-top: 20px
 		margin-left: 250px
@@ -19,9 +19,10 @@
 			text-align: right
 			width: 250px
 		&__col
-			width: 100%		
+			width: 100%
 		&__input
 			max-width: 570px
+			margin-bottom: 10px	
 			padding: 15px 27px
 		&__label
 			left: 27px
@@ -29,7 +30,13 @@
 				top: 13px
 				left: 27px
 				font-size: 14px
-	.map-wrap__select
+
+.company-form
+	&__row
+		border-bottom: 1px solid #eee
+		margin-bottom: 25px
+		padding-bottom: 38px
+	.select-wrap
 		position: relative
 		max-width: 100%
 	.select .select2-selection--single .select2-selection__rendered
@@ -37,7 +44,7 @@
 		padding-top: 6px
 		padding-bottom: 6px
 	.select .select2-selection--single
-		height: 47px
+		height: 45px
 	.select .select2-selection--single .select2-selection__arrow
 		height: 47px
 		width: 40px
@@ -45,7 +52,7 @@
 	.select2-container--default .select2-selection--single
 		border-radius: 0			
 
-.file_upload
+.file-upload
 	max-width: 175px
 	text-align: center
 	&__wrap
@@ -93,3 +100,234 @@
 	input[type="file"]
 		display: none
 
+.hint
+	position: absolute
+	right: -60px
+	top: 0
+	width: 28px
+	height: 28px
+	&__icon
+		border-radius: 50%
+		line-height: 28px
+		text-align: center
+		vertical-align: middle
+		color: $brown
+		background-color: $white_brown_bg
+		transition: color .3s, background-color .3s
+		&:hover
+			color: $white_brown_bg
+			background-color: $brown
+	&:hover		
+		.hint__text
+			display: block
+			opacity: 1
+	&__text
+		position: absolute
+		top: 30px
+		left: -186px
+		width: 200px
+		background-color: $white_brown_bg
+		z-index: 2
+		display: none
+		opacity: 0
+		font-size: 12px
+		color: $brown
+		transition: opacity .5s
+		padding: 15px 10px
+		box-shadow: 0 0 10px rgba(#625a4f,.2)
+
+.basic-services
+	.post-form
+		margin-top: 0	
+	.select-wrap
+		max-width: 570px
+		margin-left: 220px	
+
+.title-box
+	display: flex
+	align-items: center
+	margin-bottom: 20px
+	&__btn
+		margin-left: 58px
+
+
+.basic-contacts
+	&__map
+		margin-bottom: 38px
+	.post-form
+		margin-top: 0
+		max-width: 570px
+		margin-left: 220px
+		margin-bottom: 25px
+	.map
+		height: 410px
+	.map-wrap
+		padding: 0
+		margin-bottom: 38px		
+		
+.contact-form
+	&__textarea
+		.post-form
+			max-width: 100%
+	.post-form
+		margin-right: 0
+		margin-bottom: 0
+		&__input
+			max-width: 370px
+		&__textarea	
+			height: 76px
+			margin-bottom: 5px
+	.post-form__mods
+		margin-left: 220px
+		&__input
+			max-width: 570px
+
+.upload-photo
+	&__wrap
+	&__gallery
+		margin: 0 15px				
+	&__item
+		position: relative
+		width: 272px
+		height: 175px
+		background-color: #e6ddd0
+		padding: 50px 23px 23px
+		z-index: 1
+		text-align: center
+		margin-bottom: 30px
+		&:not(:last-child)
+			margin-right: 30px
+	&__photo
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		width: 100%
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+		z-index: 2
+	&__icon
+		font-size: 34px
+		display: block
+		margin-bottom: 5px
+		.icon
+			fill: $brown
+	&__description
+		font-size: 14px
+		color: $brown
+
+.upload-gallery
+	.post-form
+		margin: 0
+	.title-hint
+		display: block
+		margin-bottom: 15px
+		font-size: 15px
+		color: #65594d	
+	.file-upload
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		max-width: 100%	
+	.post-form__col
+		max-width: 470px
+		margin-right: 32px
+		.post-form__icon
+			position: absolute
+			top: 50%
+			right: 25px
+			transform: translate(50%, -50%)
+			color: $brown
+			font-size: 16px
+	.post-form__input
+		max-width: 100%
+		margin-bottom: 0
+		padding-right: 45px
+
+.table
+	&__thead
+		padding-bottom: 8px
+		margin-bottom: 8px
+		border-bottom: 2px solid $brown
+		margin-right: 35px
+	&__tbody
+		.table__tr
+			padding: 4px 0
+			margin-bottom: 4px
+			margin-right: 35px
+			&:not(:last-child)	
+				border-bottom: 1px solid #eee
+	&__tr
+		display: flex
+		align-items: flex-start
+	&__th
+		font-size: 14px
+		font-weight: 600
+		color: $brown
+		&:first-child
+			width: 344px
+		&:not(:first-child)
+			text-align: right
+			width: 172px
+	&__td
+		width: 172px
+		text-align: left
+		&:not(:last-child)
+			margin-right: 27px
+		&:not(:first-child)
+			padding: 12px 0
+		&:last-child
+			margin-right: 35px		
+	&__img
+		width: 172px
+		height: 100px		
+		font-size: 0
+		img
+			max-width: 100%
+	&__name
+		color: $brown
+		font-size: 14px
+	&__block-btn
+		padding-top: 12px
+		width: 172px
+		text-align: right
+		a
+			border-bottom: none !important
+	&__btn
+		background: none
+		border: none
+		outline: none
+		font-size: 18px
+		.icon
+			fill: $brown
+		&:not(:last-child)
+			margin-right: 25px
+			
+
+
+			
+
+
+.counter-price
+	display: flex
+	align-items: center
+	justify-content: center
+	&__input
+		width: 34px
+	&__box-btn
+		display: flex
+		flex-direction: column	
+	&__plus
+		margin-bottom: 10px
+		transform: rotate(180deg)
+	&__plus,
+	&__minus
+		background: none
+		border: none
+		outline: none
+		height: 16px
+		.icon
+			fill: $brown
+			font-size: 16px

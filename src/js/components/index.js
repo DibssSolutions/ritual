@@ -5,6 +5,7 @@ import './_map';
 import './_init-fancybox';
 import './_init_date-picker';
 import './_init-slider';
+import './_counter-price';
 import './_file_upload';
 import './_drop';
 import './_drop';
