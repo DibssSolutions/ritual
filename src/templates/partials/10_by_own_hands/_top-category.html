@@ -11,26 +11,38 @@
                             {% for i in range(0, 10) %}
                                 
                             <li class="rating-list__item rating-item">
-                                {% if i < 3 %}
-                                    <span class="rating-item__icon"><i class="fa fa-trophy" aria-hidden="true"></i></span>
-                                {% endif %}
-                                <div class="rating-item__name">
-                                    Название компании
-                                </div>
-                                <div class="rating-item__description">
-                                    Ритуальное агентство
-                                </div>
+                                <a href="#">
+                                    {% if i < 3 %}
+                                        <span class="rating-item__icon"><i class="fa fa-trophy" aria-hidden="true"></i></span>
+                                    {% endif %}
+                                    <div class="rating-item__name">
+                                        Название компании
+                                    </div>
+                                    <div class="rating-item__description">
+                                        Ритуальное агентство
+                                    </div>
+                                </a>
                             </li>
 
                             {% endfor %}
                         </ul>
                         <div class="rating-bar__nav">
                             <ul>
-                                <li class="active">1-10</li>
-                                <li>10-20</li>
-                                <li>20-30</li>
-                                <li>30-40</li>
-                                <li>40-50</li>
+                                <li class="active">
+                                    <a>1-10</a>
+                                </li>
+                                <li>
+                                    <a href="#">10-20</a>
+                                </li>
+                                <li>
+                                    <a href="#">20-30</a>
+                                </li>
+                                <li>
+                                    <a href="#">30-40</a>
+                                </li>
+                                <li>
+                                    <a href="#">40-50</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
