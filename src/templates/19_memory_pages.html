@@ -1,0 +1,39 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+    {% include "partials/_header.html" %}
+    
+	<!-- Start memory-pages -->
+	{% include "partials/memory-pages/_memory-pages.html" %}
+    <!-- End memory-pages -->
+    
+	<!-- Start make-page -->
+	{% include "partials/memory-pages/_make-page.html" %}
+    <!-- End make-page -->
+    
+	<!-- Start 5-steps -->
+	{% include "partials/memory-pages/_5-steps.html" %}
+    <!-- End 5-steps -->
+    
+	<!-- Start find-necrology -->
+	{% include "partials/memory-pages/_find-necrology.html" %}
+    <!-- End find-necrology -->
+    
+	<!-- Start commemorate -->
+	{% include "partials/memory-pages/_commemorate.html" %}
+    <!-- End commemorate -->
+    
+	<!-- Start order-flowers -->
+	{% include "partials/memory-pages/_order-flowers.html" %}
+    <!-- End order-flowers -->
+    
+    
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+    
+{% endblock %}
