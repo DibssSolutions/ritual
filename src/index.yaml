@@ -37,3 +37,9 @@ PageList:
   ready: 50
 - file: 23_page_of_memory.html
   ready: 50
+- file: 19_memory_pages.html
+  ready: 50
+- file: 12_category.html
+  ready: 50
+- file: 11_all_categories.html
+  ready: 50
