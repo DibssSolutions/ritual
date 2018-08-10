@@ -14,3 +14,4 @@ import './_menuActive';
 import './_tooltipster';
 import './_accordeon';
 import './_init-object-fit';
+import './_init-multiselect';
