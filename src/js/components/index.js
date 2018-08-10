@@ -15,3 +15,5 @@ import './_tooltipster';
 import './_accordeon';
 import './_init-object-fit';
 import './_init-multiselect';
+import '../lib/jquery-ui';
+import './_rangeSlider';
