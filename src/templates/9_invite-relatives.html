@@ -1,0 +1,29 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{% include "partials/_header.html" %}
+	<!-- Start top-steps -->
+	{% include "partials/invite-relatives/_top-steps.html" %}
+    <!-- End top-steps -->
+    
+	<!-- Start memory-page -->
+	{% include "partials/invite-relatives/_memory-page.html" %}
+	<!-- End memory-page -->
+    
+	<!-- Start funeral-info -->
+	{% include "partials/invite-relatives/_funeral-info.html" %}
+	<!-- End funeral-info -->
+    
+	<!-- Start invitation -->
+	{% include "partials/invite-relatives/_invitation.html" %}
+	<!-- End invitation -->
+
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+    
+{% endblock %}

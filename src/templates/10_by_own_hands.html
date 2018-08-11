@@ -1,0 +1,43 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+    {% include "partials/_header.html" %}
+    
+	<!-- Start funeral-by-own-hands -->
+	{% include "partials/10_by_own_hands/_funeral-by-own-hands.html" %}
+    <!-- End funeral-by-own-hands -->
+    
+	<!-- Start priority-issues -->
+	{% include "partials/10_by_own_hands/_priority-issues.html" %}
+    <!-- End priority-issues -->
+
+	<!-- Start ritual-map -->
+	{% include "partials/10_by_own_hands/_ritual-map.html" %}
+    <!-- End ritual-map -->
+
+	<!-- Start ritual-services -->
+	{% include "partials/10_by_own_hands/_ritual-services.html" %}
+    <!-- End ritual-services -->
+
+	<!-- Start mail-form -->
+	{% include "partials/home/_mail-form.html" %}
+    <!-- End mail-form -->
+
+	<!-- Start associated-goods -->
+	{% include "partials/10_by_own_hands/_associated-goods.html" %}
+    <!-- End associated-goods -->
+
+	<!-- Start top-category -->
+	{% include "partials/10_by_own_hands/_top-category.html" %}
+    <!-- End top-category -->
+
+    
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+    
+{% endblock %}

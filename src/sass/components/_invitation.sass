@@ -1,0 +1,127 @@
+.invitation
+    padding-top: 50px
+    background-color: $white_brown_bg
+    margin-bottom: 80px
+    &__title
+        margin-bottom: 20px
+    &__text
+
+
+.bordered-text
+    max-width: 912px
+    margin: 0 auto
+    margin-bottom: 30px
+    padding: 25px 25px 30px 30px
+    background-color: #fff
+    border: 1px solid #e3e3e3
+    &__title
+        text-transform: none
+        margin-bottom: 20px
+    p:not(:last-child)
+        margin-bottom: 25px
+
+.invitation-form
+    &__top
+        max-width: 770px
+        margin: 0 auto
+        margin-bottom: 55px
+    &__title
+        padding-bottom: 8px
+        text-transform: none
+        &_bordered
+            border-bottom: 1px solid #fff
+            margin-bottom: 20px
+    &__row
+        margin-bottom: 11px
+    &__col
+        position: relative
+        &:not(:last-child)
+            +sm
+                margin-bottom: 11px
+    &__label
+        position: absolute
+        display: block
+        top: 13px
+        left: 40px
+        font-size: 14px
+        color: #929292
+        +sm
+            top: -28px
+            left: 12px		
+    &__input
+        width: 100%
+        border: none
+        resize: none
+        color: #929292
+        font-size: 14px
+        padding: 15px
+        transition: opacity .3s
+        background-color: #fff
+        z-index: -1
+        +placeholder
+            font-size: 14px
+            color: #929292
+    &__input
+        height: 45px
+    &__bottom
+        max-width: 980px
+        margin: 0 auto
+        padding-bottom: 45px
+    &__bg
+        max-width: 860px
+        padding: 65px 0 116px
+        margin: 0 auto
+        background-position: 50% 100%
+        background-size: contain
+        background-repeat: no-repeat
+
+.invited-list
+    padding-left: 30px
+    margin-bottom: 35px
+    +sm
+        margin-bottom: 5px
+        text-align: center
+        padding-left: 0
+.invited
+    position: relative
+    &__name
+        display: inline-block
+        margin-right: 10px
+    &__icon
+        display: inline-block
+        font-size: 11px
+    &__input
+        position: absolute
+        opacity: 0
+        visibility: hidden
+
+.subtitle
+    font-size: 18px
+    font-weight: 700
+    color: #3d362d
+    margin-bottom: 35px
+    font-family: $tahoma
+
+.tooltip_templates
+    display: none
+
+.hint
+    padding: 7px
+    background-color: #fff
+    border-radius: 4px
+    font-size: 12px
+    box-shadow: 0px 0px 7px 2px rgba(0,0,0,.28)
+    &:after,
+    &:before
+        content: ''
+        position: absolute
+        border: 10px solid transparent
+        border-top: 10px solid #e3e3e3
+        bottom: -20px
+        left: 50%
+
+    &:after
+        border-top: 10px solid #fff
+        bottom: -19px
+.tooltipster-content
+    overflow: visible

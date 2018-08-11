@@ -1,0 +1,28 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+    {% include "partials/_header.html" %}
+    
+	<!-- Start category-main -->
+	{% include "partials/category/_category-main.html" %}
+    <!-- End category-main -->
+    
+	<!-- Start category-goods -->
+	{% include "partials/category/_category-goods.html" %}
+    <!-- End category-goods -->
+    
+	<!-- Start top-category -->
+	{% include "partials/category/_category-top.html" %}
+    <!-- End top-category -->
+    
+    
+    
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+    
+{% endblock %}

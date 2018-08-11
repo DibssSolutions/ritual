@@ -319,9 +319,9 @@
                       <h5 class="comment-form__title title-s_mod">Оставить комментарий <span class="arrow-up"><i class="fa fas fa-caret-up"></i></span></h5>
                       <form class="post-form">
                         <div class="post-form__row row">
-                          <div class="post-form__col col-md-6"> <input class="post-form__input" type="text" id="name"> <label class="post-form__label" for="name">Ваше имя</label> </div>
-                          <div class="post-form__col col-md-6"> <input class="post-form__input" type="text" id="email"> <label class="post-form__label" for="email">Email</label> </div>
-                          <div class="post-form__col col-md-12"> <textarea class="post-form__textarea" id="message"></textarea> <label class="post-form__label" class="post-form__label" for="message">Комментарий</label> </div>
+                          <div class="post-form__col col-md-6"> <input class="post-form__input" type="text" id="name" value="" name="name"> <label class="post-form__label" for="name">Ваше имя</label> </div>
+                          <div class="post-form__col col-md-6"> <input class="post-form__input" type="text" id="email" value="" name="email"> <label class="post-form__label" for="email">Email</label> </div>
+                          <div class="post-form__col col-md-12"> <textarea class="post-form__textarea" id="message" value="" name="message"></textarea> <label class="post-form__label" class="post-form__label" for="message">Комментарий</label> </div>
                         </div> <button type="submit" class="btn btn-md">Отправить</button> </form>
                     </div>
                   </div>
@@ -442,12 +442,15 @@
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
-    <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/lib/vendor/jquery.min.js"></script>
     <script src="js/lib/vendor/bootstrap.min.js"></script>
+    <script src="js/lib/vendor/moment-with-locales.min.js"></script>
+    <script src="js/lib/vendor/bootstrap-datetimepicker.min.js"></script>
     <script src="js/lib/vendor/slick/slick.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/froogaloop.js"></script>
     <script src="js/lib/vendor/lity/lity.min.js"></script>
+    <script src="js/lib/sol.js"></script>
     <script src="js/lib/main.js"></script>
     <!-- END scripts -->
   </body>
