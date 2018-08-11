@@ -9,4 +9,4 @@ if ($(aside).length) {
 	  innerWrapperSelector: '.sidebar__container',
 	  resizeSensor: true
   });
-}
+};
