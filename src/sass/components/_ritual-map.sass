@@ -1,0 +1,48 @@
+.ritual-map
+    position: relative
+    padding-top: 40px
+    padding-bottom: 19%
+    background-size: contain
+    background-position: 50% 100%
+    background-repeat: no-repeat
+    &__head
+        margin-bottom: 40px
+    &__title
+        text-align: center
+    &__icons
+        margin-bottom: 50px
+    &__item
+        +md
+            margin-bottom: 20px
+        .person
+            &:hover
+                .person__img
+                    box-shadow: 0 0 0 1px $brown_orange
+                    opacity: 1
+            &__img
+                position: relative
+                width: 88px
+                height: 88px
+                background-color: $gray_brown
+                border: none
+                box-shadow: none
+                transition: box-shadow .3s
+            &__icon
+                position: absolute
+                display: block
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                font-size: 36px
+                .icon
+                    fill: $brown_orange
+    &__map
+        margin-bottom: 45px
+    &__agencies
+        padding: 30px 0 0
+    &__bg
+        position: absolute
+        bottom: 0
+        width: 100%
+        z-index: 2
+        

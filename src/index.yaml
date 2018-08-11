@@ -18,10 +18,32 @@ PageList:
 - file: 41_error_404.html
   ready: 100   
 - file: vip-company.html
-  ready: 50   
+  ready: 100   
 - file: after-funeral.html
+  ready: 100
+- file: 4_choice-cemetery.html
+  ready: 100  
+- file: 6_choice-hall.html
+  ready: 100
+- file: 7_choice-church.html
+  ready: 100
+- file: 8_choice-restaurant.html
+  ready: 100  
+- file: 9_invite-relatives.html
+  ready: 100   
+- file: 10_by_own_hands.html
+  ready: 100 
+- file: 15_new-company.html
+  ready: 100
+- file: 23_page_of_memory.html
+  ready: 100
+- file: 19_memory_pages.html
+  ready: 100
+- file: 12_category.html
+  ready: 100
+- file: 11_all_categories.html
   ready: 100
 - file: promo.html
   ready: 100
 - file: 4_choice.html
-  ready: 50  
+  ready: 100 

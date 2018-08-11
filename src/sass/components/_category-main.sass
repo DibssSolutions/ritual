@@ -1,0 +1,83 @@
+.big-icon-btn
+    position: relative
+    height: 70px
+    text-align: left
+    font-size: 16px
+    display: flex
+    align-items: center
+    padding-left: 100px
+    background-color: $white_brown_bg
+    &:hover
+        background-color: $brown_orange
+        color: #fff
+    i
+        position: absolute
+        left: 0
+        top: 0
+        width: 70px
+        height: 70px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $gray_brown
+        font-size: 30px
+        color: $brown_orange
+
+.category-main
+    padding-top: 40px
+    &__head
+        margin-bottom: 45px
+    &__container
+    &__row
+    &__col
+        .shop-sort-wrap
+            margin-bottom: 40px
+    &__catalogue
+        padding-top: 45px
+    &__tile
+    &__list
+        .services-card
+            text-align: left
+            &__title
+            &__text
+                padding-top: 30px
+                margin-bottom: 50px
+            &__descr
+                padding-top: 25px
+                +clr
+            .btn
+                float: right
+    .services-card
+        &__title
+            font-size: 21px
+            font-family: $tahoma
+
+
+.catalogue
+    margin-bottom: 55px
+    &__subcategory
+        display: none
+    li
+        padding-left: 30px
+        position: relative
+        &:hover
+            .catalogue__subcategory
+                display: block
+        a
+            display: block
+            margin-bottom: 30px
+            &:hover
+                font-weight: 700
+                i
+                    transform: rotate(90deg)
+    i
+        position: absolute
+        left: 12px
+        transition: transform .3s
+
+.category-range
+    margin-bottom: 55px
+    +clr
+    .btn
+        font-size: 13px
+        float: right

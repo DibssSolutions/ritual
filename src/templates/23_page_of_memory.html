@@ -1,0 +1,37 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+    {% include "partials/_header.html" %}
+    
+	<!-- Start page-of-memory -->
+	{% include "partials/page-of-memory/_page-of-memory.html" %}
+    <!-- End page-of-memory -->
+    
+	<!-- Start necrology -->
+	{% include "partials/page-of-memory/_necrology.html" %}
+    <!-- End necrology -->
+    
+	<!-- Start memory-candle -->
+	{% include "partials/page-of-memory/_memory-candle.html" %}
+    <!-- End memory-candle -->
+    
+	<!-- Start memory-gallery -->
+	{% include "partials/page-of-memory/_memory-gallery.html" %}
+    <!-- End memory-gallery -->
+    
+	<!-- Start memory-goods -->
+	{% include "partials/page-of-memory/_memory-goods.html" %}
+    <!-- End memory-goods -->
+    
+
+
+    
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+    
+{% endblock %}

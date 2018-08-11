@@ -1,0 +1,107 @@
+.choice	
+	.wind__bg
+		background-position: 50% 0
+	.cemetery-selection__col-right
+		margin-bottom: 15px	
+	.cemetery-selection__img-map
+		padding-bottom: 47%
+		min-height: auto
+	.agent	
+		margin-bottom: 16px
+		padding-bottom: 16px
+		border-bottom: 1px solid #e7e7e7
+		+md
+			display: flex
+			flex-direction: column
+		+sm
+			font-size: 13px
+		&.border
+			border: none
+	.agent__row
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		+md
+	.agent__col-sm
+		+md
+			margin-bottom: 15px
+		+sm
+			margin: 0 auto 15px		
+	.agent__col-md
+		padding-left: 25px
+		+sm
+			padding-left: 0
+	.agent__col
+		width: auto
+		text-align: left
+		&.text-center
+			text-align: center
+			+sm
+				text-align: left
+	.agent__col-title
+		text-transform: none
+		text-align: center
+		margin-bottom: 15px
+		+sm
+			text-align: left
+	.contacts-item	
+		display: flex
+		align-items: center
+		span
+			display: inline-block
+			margin-left: 10px
+			font-weight: 600
+			+xs
+				display: block
+
+.bottom-text
+	max-width: 975px
+	margin: 0 auto
+	+md
+		margin: 30px auto
+	.drop__show p,
+	.drop__hidden p	
+		margin-bottom: 25px
+	.drop__title
+		font-size: 18px
+		font-family: $tahoma
+		font-weight: 600
+	.our-contacts__list
+
+.input-group
+	margin-left: 20px
+	max-width: 280px
+	.form-control
+		position: relative
+		border-radius: 0
+		background-color: #f3eee8
+		box-shadow: none
+		outline: none
+		border: none	
+	.input-group-addon
+		background-color: #f3eee8
+		border: none
+		outline: none
+		border-radius: 0
+
+
+.datepicker
+	color: $brown
+	position: absolute
+	visibility: inherit !important
+	opacity: 1
+	max-width: 300px
+	// top: 0 !important
+	left: initial !important
+	right: initial !important
+	margin: 0
+	padding: 20px
+	&.dropdown-menu
+	table tr td.active
+		background-color: #e6ddd0 !important
+	table tr td.active,
+	table tr td.active.disabled,
+	table tr td.active.disabled:hover,
+	table tr td.active:hover
+		background-image: linear-gradient(to bottom,#e6ddd0,#e6ddd0) !important
+		color: $brown

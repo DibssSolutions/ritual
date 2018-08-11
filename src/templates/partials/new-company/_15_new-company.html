@@ -1,0 +1,1025 @@
+<div class="wrapper">
+	<div class="clearfix"></div>
+	<div class="page_head ">
+		<div class="container">
+			<ul class="bcrumbs pull-left">
+				<li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
+				<li><a href="#">Obituaries</a></li>
+				<li>Blog</li>
+			</ul>
+		</div>
+	</div>
+	<div class="new-companys">
+		<div class="new-companys__container container">
+			<div class="new-companys__wrap js-accordion-wrap">
+				<div class="new-companys__head section-head">
+					<h3 class="new-companys__title title-l">Добавление новой компании</h3>
+					<p>Написать подзаголовок, если нужно</p>
+				</div>
+				<form class="company-form" action="/">
+					<div class="company-form__row">
+						<div class="row">
+							<div class="col-md-3">
+								<div class="file-upload">
+									<div class="file-upload__wrap">
+										<span class="file-upload__icon">
+											{{ mixins.icon('camera') }}
+										</span>
+										<span class="file-upload__description">
+											Загрузите логотип
+										</span>
+										<div class="file-upload__photo" style="background-image: url(img/check-list2.png);">
+										</div>
+									</div>
+									<span id="title-input" class="file-upload__title-input js-title-input">
+										Файл не выбран
+									</span>
+									<label class="file-upload__label btn" for="file-upload1">
+										Выбрать файл
+									</label>
+									<input type="file" name="file-upload1" id="file-upload1" class="file-upload__input" value="">
+								</div>
+							</div>
+							<div class="col-md-9">
+								<div class="post-form">
+									<div class="post-form__col">
+										<span class="post-form__title-row">
+											Название компании:
+										</span>
+										<input class="post-form__input" type="text" id="name-company" value="" name="name-company">
+										<label class="post-form__label" for="name-company">
+											Введите название компании
+										</label>
+										<div class="hints">
+											<div class="hints__icon">
+												<i class="fa fas fa-question"></i>
+											</div>
+											<div class="hints__text">
+												Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст
+											</div>
+										</div>
+									</div>
+									<div class="post-form__col">
+										<span class="post-form__title-row">
+											Специализация:
+										</span>
+										<input class="post-form__input" type="text" id="specialization" value="" name="specialization">
+										<label class="post-form__label" for="specialization">
+											Пример: салон ритуальных услуг
+										</label>
+										<div class="hints">
+											<div class="hints__icon">
+												<i class="fa fas fa-question"></i>
+											</div>
+											<div class="hints__text">
+												Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст
+											</div>
+										</div>
+									</div>
+									<div class="select-wrap">
+										<span class="post-form__title-row">
+											Год создания компании:
+										</span>
+										<div class="select">
+											<select name="year-company" id="years" style="width: 100%" class="js-select">
+												<option value="1">2018</option>
+												<option value="2">2017</option>
+												<option value="3">2016</option>
+												<option value="4">2015</option>
+												<option value="5">2014</option>
+											</select>
+										</div>
+										<div class="hints">
+											<div class="hints__icon">
+												<i class="fa fas fa-question"></i>
+											</div>
+											<div class="hints__text">
+												Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="company-form__row company-form__row_mod">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="basic-services js-accord">
+									<div class="basic-services__header title-box">
+										<h4 class="title-box__title title-m">
+											Основные услуги
+										</h4>
+										<button type="button" class="title-box__btn hide-block-btn js-accord-btn">
+											<span class="js-accord-text-btn">Скрыть</span> раздел
+										</button>
+									</div>
+									<div class="select-wrap js-accordion__hide-block">
+										<span class="post-form__title-row">
+											Выберите из списка:
+										</span>
+										<div class="select">
+											<select class="js-select-mult" name="character" multiple="multiple">
+	                                            <option value="Dedicated Development Team">Dedicated Development Team</option>
+	                                            <option value="Lois">Lois Griffin</option>
+	                                            <option value="Chris">Chris Griffin</option>
+	                                            <option value="Meg">Meg Griffin</option>
+	                                            <option value="Stewie">Stewie Griffin</option>
+	                                            <option value="Cleveland">Cleveland Brown</option>
+	                                            <option value="Joe">Joe Swanson</option>
+	                                            <option value="Quagmire">Glenn Quagmire</option>
+	                                            <option value="Evil Monkey">Evil Monkey</option>
+	                                            <option value="Herbert">John Herbert</option>
+	                                        </select>
+										</div>
+										<div class="hints">
+											<div class="hints__icon">
+												<i class="fa fas fa-question"></i>
+											</div>
+											<div class="hints__text">
+												Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="company-form__row">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="basic-contacts js-accord">
+									<div class="basic-contacts__header title-box">
+										<h4 class="title-box__title title-m">
+											Контакты
+										</h4>
+										<button type="button" class="title-box__btn hide-block-btn js-accord-btn">
+											<span class="js-accord-text-btn">Скрыть</span> раздел
+										</button>
+									</div>
+									<div class="basic-contacts__wrap js-accordion__hide-block">
+										<div class="post-form post-form__mods">
+											<div class="post-form__col">
+												<span class="post-form__title-row">
+													Адрес компании:Выбрать услугу из списка
+												</span>
+												<input class="post-form__input" type="text" id="adress-company" value="" name="adress-company">
+												<label class="post-form__label" for="adress-company">
+													Адрес будет написан тут
+												</label>
+												<div class="hints">
+													<div class="hints__icon">
+														<i class="fa fas fa-question"></i>
+													</div>
+													<div class="hints__text">
+														Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="basic-services__map">
+											<!-- begin map -->
+											<div class="map-wrap">
+												<div class="js-map map" id="mapInfobox" data-center-lat="-34.097" data-center-lng="150.644"></div>
+												{% set tamplate = '<div class="baloon mob-hide">
+													<!-- <button class="baloon__close js-infobox-close"></button> -->
+													<div class="baloon__content">
+														<div class="baloon__row">
+															<div class="baloon__col">
+																{{? baloon.img }}
+																<div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
+																{{?}}
+																{{? baloon.title }}
+																<div class="baloon__title">{{=baloon.title}}</div>
+																{{?}}
+																{{? baloon.linkText }}
+																<div class="baloon__footer">
+																	<a href="{{=baloon.linkUrl}}" class="btn btn_small">{{=baloon.linkText}}<i class="fi flaticon-arrows"></i></a>
+																</div>
+																{{?}}
+															</div>
+															<div class="baloon__col">
+																{{? baloon.address }}
+																	<div class="baloon__item"><i class="fa fa-map-marker"></i>{{=baloon.address}}</div>
+																{{?}}
+																{{? baloon.address }}
+																	<div class="baloon__item"><i class="fi flaticon-technology"></i>{{=baloon.phone}}</div>
+																{{?}}
+																{{? baloon.address }}
+																	<div class="baloon__item"><i class="fi flaticon-black"></i>{{=baloon.email}}</div>
+																{{?}}
+																{{? baloon.address }}
+																	<div class="baloon__item"><i class="fi flaticon-clock"></i>{{=baloon.time}}</div>
+																{{?}}
+															</div>
+														</div>
+													</div>
+												</div>' %}
+												{% set array = '[
+														{
+															"content": {
+																"title": "1. Название компании",
+																"linkUrl": "#",
+																"linkText": "Перейти",
+																"img": "./img/map-img.png",
+																"imgAlt": "img",
+																"address": "Хабаровск, Гоголя, 8",
+																"phone": "8 (111) 123 123",
+																"email": "dmitryz5700@gmail.com",
+																"time": "С 7.00 до 21.00, без выходных",
+																"list": [
+																	{
+																		"bla": "bla"
+																	},
+																	{
+																		"bla": "bla"
+																	}
+																]
+															},
+															"marker": {
+																"id": 2,
+																"position": {
+																	"lat": -34.397,
+																	"lng": 151.044
+																},
+																"icon": {
+																	"default": "img/marker.png",
+																	"active": "img/marker.png",
+																	"size": {
+																		"x": 50,
+																		"y": 64
+																	},
+																	"centering": {
+																		"x": 20,
+																		"y": 58
+																	}
+																}
+															}
+														},
+														{
+															"content": {
+																"title": "1. Название компании",
+																"linkUrl": "#",
+																"linkText": "Перейти",
+																"img": "./img/map-img.png",
+																"imgAlt": "img",
+																"address": "Хабаровск, Гоголя, 8",
+																"phone": "8 (111) 123 123",
+																"email": "dmitryz5700@gmail.com",
+																"time": "С 7.00 до 21.00, без выходных",
+																"list": [
+																	{
+																		"bla": "bla"
+																	},
+																	{
+																		"bla": "bla"
+																	}
+																]
+															},
+															"marker": {
+																"id": 3,
+																"position": {
+																	"lat": -34.397,
+																	"lng": 151.444
+																},
+																"icon": {
+																	"default": "img/marker.png",
+																	"active": "img/marker.png",
+																	"size": {
+																		"x": 50,
+																		"y": 64
+																	},
+																	"centering": {
+																		"x": 20,
+																		"y": 58
+																	}
+																}
+															}
+														}
+													]' %}
+												<script type="text/template" class="js-mapInfobox">
+													{{ tamplate | safe }}
+												</script>
+												<script>
+													document.addEventListener('DOMContentLoaded', function(){
+														window.mapInfobox.add({{array | safe}})
+													});
+												</script>
+											</div>
+											<!-- end map -->
+										</div>
+										<div class="contact-form">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="post-form">
+														<div class="post-form__col">
+															<span class="post-form__title-row">
+																Телефон 1:
+															</span>
+															<input class="post-form__input" type="text" id="phone1" value="" name="phone1">
+															<label class="post-form__label" for="phone1">
+																+7 (111) 123-45-67
+															</label>
+														</div>
+														<div class="post-form__col">
+															<span class="post-form__title-row">
+																Email:
+															</span>
+															<input class="post-form__input" type="text" id="email1" value="" name="email1">
+															<label class="post-form__label" for="email1">
+																vashemail@mail.ru
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="post-form">
+														<div class="post-form__col">
+															<span class="post-form__title-row">
+																Телефон 2:
+															</span>
+															<input class="post-form__input" type="text" id="phone2" value="" name="phone2">
+															<label class="post-form__label" for="phone2">
+																+7 (111) 123-45-67
+															</label>
+														</div>
+														<div class="post-form__col">
+															<span class="post-form__title-row">
+																Ваш сайт:
+															</span>
+															<input class="post-form__input" type="text" id="site1" value="" name="site1">
+															<label class="post-form__label" for="site1">
+																vash-site.com
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="contact-form__textarea">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="post-form">
+															<div class="post-form__col">
+																<span class="post-form__title-row">
+																	Описание:
+																</span>
+																<textarea class="post-form__textarea" id="message" value="" name="message"></textarea>
+																<label class="post-form__label" class="post-form__label" for="message">
+																	Описание
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="post-form">
+														<div class="post-form__col">
+															<span class="post-form__title-row">
+																График работы 1:
+															</span>
+															<input class="post-form__input" type="text" id="graphic-work1" value="" name="graphic-work1">
+															<label class="post-form__label" for="graphic-work1">
+																ПН-ВТ: 09:00-19:00
+															</label>
+														</div>
+														<div class="post-form__col">
+															<span class="post-form__title-row">
+																Перерыв:
+															</span>
+															<input class="post-form__input" type="text" id="break" value="" name="break">
+															<label class="post-form__label" for="break">
+																13:00-14:00
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="post-form">
+														<div class="post-form__col">
+															<span class="post-form__title-row">
+																График работы 2:
+															</span>
+															<input class="post-form__input" type="text" id="graphic-work2" value="" name="graphic-work2">
+															<label class="post-form__label" for="graphic-work2">
+																СБ-ВС: 10:00-18:00
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="company-form__row">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="upload-photo js-accord">
+									<div class="upload-photo__header title-box">
+										<h4 class="title-box__title title-m">
+											Добавление фото
+										</h4>
+										<button type="button" class="title-box__btn hide-block-btn js-accord-btn">
+											<span class="js-accord-text-btn">Скрыть</span> раздел
+										</button>
+									</div>
+									<div class="upload-photo__wrap js-accordion__hide-block">
+										<div class="row">
+											<div class="upload-photo__gallery">
+												<div class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
+													<span class="upload-photo__icon">
+														{{ mixins.icon('camera') }}
+													</span>
+													<span class="upload-photo__description">
+														Добавить фото
+													</span>
+													<div class="upload-photo__photo" style="background-image: url(img/upload.png);">
+													</div>
+												</div>
+												<div class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
+													<span class="upload-photo__icon">
+														{{ mixins.icon('camera') }}
+													</span>
+													<span class="upload-photo__description">
+														Добавить фото
+													</span>
+													<div class="upload-photo__photo" style="background-image: url(img/upload.png);">
+													</div>
+												</div>
+												<div class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
+													<span class="upload-photo__icon">
+														{{ mixins.icon('camera') }}
+													</span>
+													<span class="upload-photo__description">
+														Добавить фото
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="upload-gallery">
+												<div class="post-form col-md-7">
+													<span class="title-hint">
+														Выберите файл формата jpg, Размер файла не более 6 Мб
+													</span>	
+													<div class="file-upload">
+														<div class="post-form__col">
+															<input class="post-form__input" type="text" id="way1" value="" name="way1">
+															<label class="post-form__label" for="way1">:/Путь файла будет тут.....</label>
+															<span class="post-form__icon"><i class="fa fas fa-camera"></i></span>
+														</div>
+														<label class="file-upload__label btn btn_big" for="file-upload-photo1">
+															Добавить
+														</label>
+														<input type="file" name="file-upload-photo1" id="file-upload-photo1" class="file-upload__input" value="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="company-form__row">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="upload-photo js-accord">
+									<div class="upload-photo__header title-box">
+										<h4 class="title-box__title title-m">
+											Каталог товаров/услуг
+										</h4>
+										<button type="button" class="title-box__btn hide-block-btn js-accord-btn">
+											<span class="js-accord-text-btn">Скрыть</span> раздел
+										</button>
+									</div>
+									<div class="upload-photo__wrap js-accordion__hide-block">
+										<div class="upload-photo__nav">
+											<div class="row">
+												<div class="col-md-10">
+													<div class="sorting">
+														<div class="sorting__col">
+															<span class="sorting__title">
+																Сортировать по
+															</span>
+															<div class="sorting__dropdown">
+																<span class="sorting__active-name">
+																	рейтингу
+																	<span class="sorting__icon">
+																		{{ mixins.icon('arrow') }}
+																	</span>
+																</span>
+																<ul class="sorting__list">
+																	<li class="sorting__item">
+																		<a href="#" class="sorting__link">
+																			дате
+																		</a>
+																	</li>
+																	<li class="sorting__item">
+																		<a href="#" class="sorting__link">
+																			популярности
+																		</a>
+																	</li>
+																	<li class="sorting__item">
+																		<a href="#" class="sorting__link">
+																			просмотрам
+																		</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div class="sorting__col">
+															<span class="sorting__title">
+																Показывать по
+															</span>
+															<div class="sorting__dropdown">
+																<span class="sorting__active-name">
+																	10
+																	<span class="sorting__icon">
+																		{{ mixins.icon('arrow') }}
+																	</span>
+																</span>
+																<ul class="sorting__list">
+																	<li class="sorting__item">
+																		<a href="#" class="sorting__link">
+																			5
+																		</a>
+																	</li>
+																	<li class="sorting__item">
+																		<a href="#" class="sorting__link">
+																			10
+																		</a>
+																	</li>
+																	<li class="sorting__item">
+																		<a href="#" class="sorting__link">
+																			15
+																		</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-2">
+													<nav class="navigation-page">
+													    <ul class="page-nav">
+													        <li class="page-nav__item active"><a class="page-nav__link" href="#">1</a></li>
+													        <li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
+													        <li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
+													        <li class="page-nav__item"><a class="page-nav__link" href="#">4</a></li>
+													        <li class="page-nav__item"><a class="page-nav__link" href="#">...</a></li>
+													    </ul>
+													</nav>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<!-- begin table -->
+												<div class="table">
+													<div class="table__thead mob-hide">
+														<div class="table__tr">
+															<div class="table__th" data-column="photo">
+																Фото
+															</div>
+															<div class="table__th" data-column="name">
+																Товары/услуги
+															</div>
+															<div class="table__th" data-column="qua">
+																Порядок
+															</div>
+															<div class="table__th" data-column="price">
+																Стоимость
+															</div>
+															<div class="table__th" data-column="group">
+																Группа
+															</div>
+															<div class="table__th" data-column="group">
+																
+															</div>
+														</div>
+													</div>
+													<div id="style-scroll" class="table__tbody">
+														<div class="table__tr">
+															<div class="table__td" data-column="photo">
+																<div class="table__img">
+																	<img src="img/picture.png" class="table__img-in" alt="image">
+																</div>
+															</div>
+															<div class="table__td" data-column="photo">
+																<div class="table__name">
+																	<div class="table__name-label">
+																		Название услуги или товара
+																	</div>
+																</div>
+															</div>
+															<div class="table__td" data-column="qua">
+																<div class="table__counter">
+																	<div class="counter-price js-counter">
+																		<input class="counter-price__input js-counter-input" type="text" value="1">
+																		<div class="counter-price__box-btn">
+																			<button class="counter-price__plus js-counter-plus" type="button">
+																				{{ mixins.icon('arrow') }}
+																			</button>
+																			<button class="counter-price__minus js-counter-minus" type="button">
+																				{{ mixins.icon('arrow') }}
+																			</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="table__td" data-column="price">
+																<div class="table__value">
+																	1 000 руб.
+																</div>
+															</div>
+															<div class="table__td" data-column="group">
+																<div class="table__group">
+																	Подходящая категория
+																</div>
+															</div>
+															<div class="table__block-btn">
+																<button class="table__btn">
+																	{{ mixins.icon('filse-copy') }}
+														  		</button>
+														  		<a class="table__btn" href="#">
+														  			{{ mixins.icon('pen') }}
+														  		</a>
+																<button class="table__btn">
+																	{{ mixins.icon('close') }}
+														  		</button>
+															</div>
+														</div>
+														<div class="table__tr">
+															<div class="table__td" data-column="photo">
+																<div class="table__img">
+																	<img src="img/picture.png" class="table__img-in" alt="image">
+																</div>
+															</div>
+															<div class="table__td" data-column="photo">
+																<div class="table__name">
+																	<div class="table__name-label">
+																		Название услуги или товара
+																	</div>
+																</div>
+															</div>
+															<div class="table__td" data-column="qua">
+																<div class="table__counter">
+																	<div class="counter-price js-counter">
+																		<input class="counter-price__input js-counter-input" type="text" value="1">
+																		<div class="counter-price__box-btn">
+																			<button class="counter-price__plus js-counter-plus" type="button">
+																				{{ mixins.icon('arrow') }}
+																			</button>
+																			<button class="counter-price__minus js-counter-minus" type="button">
+																				{{ mixins.icon('arrow') }}
+																			</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="table__td" data-column="price">
+																<div class="table__value">
+																	1 000 руб.
+																</div>
+															</div>
+															<div class="table__td" data-column="group">
+																<div class="table__group">
+																	Подходящая категория
+																</div>
+															</div>
+															<div class="table__block-btn">
+																<button class="table__btn">
+																	{{ mixins.icon('filse-copy') }}
+														  		</button>
+														  		<a class="table__btn" href="#">
+														  			{{ mixins.icon('pen') }}
+														  		</a>
+																<button class="table__btn">
+																	{{ mixins.icon('close') }}
+														  		</button>
+															</div>
+														</div>
+														<div class="table__tr">
+															<div class="table__td" data-column="photo">
+																<div class="table__img">
+																	<img src="img/picture.png" class="table__img-in" alt="image">
+																</div>
+															</div>
+															<div class="table__td" data-column="photo">
+																<div class="table__name">
+																	<div class="table__name-label">
+																		Название услуги или товара
+																	</div>
+																</div>
+															</div>
+															<div class="table__td" data-column="qua">
+																<div class="table__counter">
+																	<div class="counter-price js-counter">
+																		<input class="counter-price__input js-counter-input" type="text" value="1">
+																		<div class="counter-price__box-btn">
+																			<button class="counter-price__plus js-counter-plus" type="button">
+																				{{ mixins.icon('arrow') }}
+																			</button>
+																			<button class="counter-price__minus js-counter-minus" type="button">
+																				{{ mixins.icon('arrow') }}
+																			</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+													  		<div class="table__td" data-column="price">
+																<div class="table__value">
+																	1 000 руб.
+																</div>
+													  		</div>
+															<div class="table__td" data-column="group">
+																<div class="table__group">
+																	Подходящая категория
+																</div>
+															</div>
+															<div class="table__block-btn">
+																<button class="table__btn">
+																	{{ mixins.icon('filse-copy') }}
+														  		</button>
+														  		<a class="table__btn" href="#">
+														  			{{ mixins.icon('pen') }}
+														  		</a>
+																<button class="table__btn">
+																	{{ mixins.icon('close') }}
+														  		</button>
+															</div>
+														</div>
+														<div class="table__tr">
+															<div class="table__td" data-column="photo">
+																<div class="table__img">
+																	<img src="img/picture.png" class="table__img-in" alt="image">
+																</div>
+															</div>
+															<div class="table__td" data-column="photo">
+																<div class="table__name">
+																	<div class="table__name-label">
+																		Название услуги или товара
+																	</div>
+																</div>
+															</div>
+															<div class="table__td" data-column="qua">
+																<div class="table__counter">
+																	<div class="counter-price js-counter">
+																		<input class="counter-price__input js-counter-input" type="text" value="1">
+																		<div class="counter-price__box-btn">
+																			<button class="counter-price__plus js-counter-plus" type="button">
+																				{{ mixins.icon('arrow') }}
+																			</button>
+																			<button class="counter-price__minus js-counter-minus" type="button">
+																				{{ mixins.icon('arrow') }}
+																			</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="table__td" data-column="price">
+																<div class="table__value">
+																	1 000 руб.
+																</div>
+															</div>
+															<div class="table__td" data-column="group">
+																<div class="table__group">
+																	Подходящая категория
+																</div>
+															</div>
+															<div class="table__block-btn">
+																<button class="table__btn">
+																	{{ mixins.icon('filse-copy') }}
+														  		</button>
+														  		<a class="table__btn" href="#">
+														  			{{ mixins.icon('pen') }}
+														  		</a>
+																<button class="table__btn">
+																	{{ mixins.icon('close') }}
+														  		</button>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- end table -->
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="add-product">
+													<a href="#" class="add-product__btn">
+														+
+													</a>
+													<span class="add-product__text">
+														Добавить услугу/товар
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-3">
+												<div class="upload-photo">
+													<div class="upload-photo__gallery upload-photo__gallery_mod">
+														<div class="upload-photo__item">
+															<span class="upload-photo__icon">
+																{{ mixins.icon('camera') }}
+															</span>
+															<span class="upload-photo__description">
+																Добавить фото
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9">
+												<div class="post-form">
+													<div class="post-form__col">
+														<span class="post-form__title-row">
+															Название:
+														</span>
+														<input class="post-form__input" type="text" id="name-product2" value="" name="name-product2">
+														<label class="post-form__label" for="name-product2">
+															Написать название
+														</label>
+														<div class="hints">
+															<div class="hints__icon">
+																<i class="fa fas fa-question"></i>
+															</div>
+															<div class="hints__text">
+																Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст
+															</div>
+														</div>
+													</div>
+													<div class="select-wrap">
+														<span class="post-form__title-row">
+															Группа:
+														</span>
+														<div class="select">
+															<select name="group-product" id="group-product" style="width: 100%" class="js-select">
+																<option value="1">Выбрать из списка подходящее</option>
+																<option value="2">2017</option>
+																<option value="3">2016</option>
+																<option value="4">2015</option>
+																<option value="5">2014</option>
+															</select>
+														</div>
+														<div class="hints">
+															<div class="hints__icon">
+																<i class="fa fas fa-question"></i>
+															</div>
+															<div class="hints__text">
+																Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст
+															</div>
+														</div>
+													</div>
+													<div class="post-form__col">
+														<span class="post-form__title-row">
+															Цена:
+														</span>
+														<input class="post-form__input" type="text" id="price-product" value="" name="price-product">
+														<label class="post-form__label" for="price-product">
+															1000 руб.
+														</label>
+														<div class="hints">
+															<div class="hints__icon">
+																<i class="fa fas fa-question"></i>
+															</div>
+															<div class="hints__text">
+																Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="upload-gallery">
+												<div class="post-form col-md-12">
+													<span class="title-hint">
+														Выберите файл формата jpg, Размер файла не более 6 Мб
+													</span>	
+													<div class="file-upload">
+														<div class="post-form__col">
+															<input class="post-form__input" type="text" id="upload-way2" value="" name="upload-way2">
+															<label class="post-form__label" for="way2">:/Путь файла будет тут.....</label>
+															<span class="post-form__icon"><i class="fa fas fa-camera"></i></span>
+														</div>
+														<label class="file-upload__label btn btn_big" for="file-upload-photo2">
+															Добавить
+														</label>
+														<input type="file" name="file-upload-photo2" id="file-upload-photo2" class="file-upload__input" value="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="company-form__row">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="basic-services js-accord">
+									<div class="basic-services__header title-box">
+										<h4 class="title-box__title title-m">
+											Подробности о товаре/услуге
+										</h4>
+										<button type="button" class="title-box__btn hide-block-btn js-accord-btn">
+											<span class="js-accord-text-btn">Скрыть</span> раздел
+										</button>
+									</div>
+									<div class="details js-accordion__hide-block">
+										<div class="contact-form">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="post-form">
+														<div class="post-form__col">
+															<span class="post-form__title-row">
+																Характеристика 1:
+															</span>
+															<input class="post-form__input" type="text" id="characteristics1" value="" name="characteristics1">
+															<label class="post-form__label" for="characteristics1">
+																Материал товара
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="post-form">
+														<div class="post-form__col">
+															<span class="post-form__title-row">
+																Характеристика 2:
+															</span>
+															<input class="post-form__input" type="text" id="characteristics2" value="" name="characteristics2">
+															<label class="post-form__label" for="characteristics2">
+																Характеристика (поля повторяются дальше)
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="contact-form__textarea">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="post-form">
+															<div class="post-form__col">
+																<span class="post-form__title-row">
+																	Описание:
+																</span>
+																<textarea class="post-form__textarea" id="characteristics-message" value="" name="characteristics-message"></textarea>
+																<label class="post-form__label" class="post-form__label" for="characteristics-message">
+																	Описание
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="details__save">
+													<button type="submit" class="details__save-btn btn btn_big">Сохранить и добавить</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="new-companys__footer">
+								<div class="basic-services">
+									<div class="basic-services__header title-box">
+										<h4 class="title-box__title title-m">
+											Сохранение и просмотр компании
+										</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="details__save">
+										<button type="submit" class="details__save-btn btn btn_border btn_big">Предпросмотр</button>
+									</div>
+									<div class="details__save">
+										<button type="submit" class="details__save-btn btn btn_big">Сохранить и компанию</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="bottom-image">
+					<img src="img/rose-angel.png" alt="rose-angel">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

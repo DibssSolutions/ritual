@@ -1,0 +1,159 @@
+<div class="page-head">
+    <div class="container page-head__container">
+        <ul class="bcrumbs page-head__bcrumbs">
+            <li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
+            <li><a href="#">Obituaries</a></li>
+            <li>Past</li>
+        </ul>
+    </div>
+</div>
+
+<div class="category-main">
+    <div class="container category-main__container">
+        <div class="category-main__head section-head text-center">
+            <h3 class="category-main__title title-l">Заголовок Категории</h3>
+            <p>Подзаголовок страницы</p>
+        </div>
+    </div>
+    <div class="container category-main__container">
+        <div class="category-main__row row">
+            <div class="category-main__col col-md-3 col-sm-3 sidebar">
+                <a href="#">
+                    <div class="big-icon-btn">
+                        <i class="fi flaticon-people"></i> Вызвать 
+                        ритуального агента
+                    </div>
+                </a>
+                <div class="side-widget category-main__catalogue">
+                    <h5 class="title-s">Каталог</h5>
+                    <ul class="catalogue">
+                        {% for i in range(0,5) %}
+                        <li class="catalogue__item"><a href="#"><i class="fa fa-angle-right"></i>Категория</a>
+                            <ul class="catalogue__subcategory">
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Подкатегория</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Подкатегория</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Подкатегория</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Подкатегория</a></li>
+                            </ul>
+                        </li>
+                        
+                            
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div class="side-widget category-range">
+                    <h5 class="title-s">Диапазон цен</h5>
+                    <div class="s_range">
+                        <div id="sliderRange"></div>
+                        <div class="range_v">
+                            <input type="text" id="price1" name="price1" title="" value="$45" class="input" />
+                            <div class="range_sep"></div>
+                            <input type="text" id="price2" name="price2" title="" value="$79" class="input" />
+                        </div>
+                    </div>
+                    <div class="category-range__btn">
+                        <a class="btn" href="#">Применить</a>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="big-icon-btn">
+                        <i class="fi flaticon-nature"></i>Послать цветы
+                    </div>
+                </a>
+                
+            </div>
+            <div class="category-main__col col-md-9 col-sm-9">
+                <div class="category-main__top top-bar mob-hide">
+                    <div class="shop-sort-wrap">
+                        <div class="ps-options pull-left">
+                            <span>Показывать по:</span>
+                            <div class="ps-select">
+                                <i class="fa fa-caret-down"></i>
+                                <select>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option selected>6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="shop-sort">
+                            <a href="#" class="active"><i class="flaticon-squares"></i></a>
+                            <a href="#"><i class="flaticon-signs-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-main__tile row">
+            
+                    {% for item in range(0,3) %}
+                        
+                    <div class="ritual-services__col col-md-4 col-sm-4">
+                        <a href="#" class="category-main__card services-card">
+                            <div class="services-card__img">
+                                <img src="./img/category-main-1.jpg" data-object-fit="cover" alt="img">
+                            </div>
+                            <div class="services-card__title">
+                                    Подкатегория (5)
+                            </div>
+                        </a>
+                    </div>
+    
+                    {% endfor %}
+
+                </div><div class="category-main__top top-bar mob-hide">
+                    <div class="shop-sort-wrap">
+                        <div class="ps-options pull-left">
+                            <span>Показывать по:</span>
+                            <div class="ps-select">
+                                <i class="fa fa-caret-down"></i>
+                                <select>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option selected>6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="shop-sort">
+                            <a href="#" class="active"><i class="flaticon-squares"></i></a>
+                            <a href="#"><i class="flaticon-signs-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-main__list">
+            
+                    {% for item in range(0,3) %}
+                        
+                    
+                        <a href="#" class="category-main__card services-card">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="services-card__img">
+                                        <img src="./img/category-main-1.jpg" data-object-fit="cover" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="services-card__descr">
+                                        <div class="services-card__title">
+                                                Подкатегория (5)
+                                        </div>
+                                        <div class="services-card__text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </p>
+                                        </div>
+                                        <button href="#" class="btn">Перейти</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+    
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

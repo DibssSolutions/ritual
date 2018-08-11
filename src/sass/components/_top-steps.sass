@@ -1,0 +1,79 @@
+.top-steps
+    padding-top: 70px
+    &__container
+    &__head
+        position: relative
+        max-width: 775px
+        margin: 0 auto
+        margin-bottom: 50px
+        p
+            line-height: 1.6
+    &__title
+        margin-bottom: 40px
+    &__img-left
+        position: absolute
+        top: 30px
+        left: -360px
+    &__img-right
+        top: -45px
+        right: -170px
+    &__img-right-2
+        top: 45px
+        right: -285px
+    &__steps-list
+        position: relative
+    &__steps
+        flex-direction: column
+        padding-left: 11.11%
+        justify-content: flex-end
+        align-items: flex-start
+        +sm
+            align-items: center
+            padding-left: 0
+    &__item
+        display: flex
+        justify-content: flex-end
+        position: relative
+        max-width: 340px
+        &:hover
+            .top-steps__number
+                background-color: #e6dfd6
+        &:not(:last-child):after
+            content: ""
+            position: absolute
+            top: 59px
+            bottom: -5px
+            width: 2px
+            right: 34px
+            background-color: $brown_orange
+    &__number
+        flex-shrink: 0
+        order: 2
+        border-width: 2px
+        font-size: 30px
+        &:after
+            display: none
+    &__text
+        text-align: right
+        margin-right: 30px
+        padding: 18px 0
+    &__description
+        font-size: 24px
+        font-weight: bold
+        line-height: 1
+        font-family: $cormorant_infant
+    &__bg
+        position: absolute
+        left: 370px
+        top: 0
+        z-index: -1
+        img
+            display: block
+            width: 100%
+
+.img-right
+    position: absolute
+    img
+        display: block
+
+

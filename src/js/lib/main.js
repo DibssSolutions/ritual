@@ -278,6 +278,26 @@ $(document).ready(function() {
             nextArrow: '<button class="full-slider__next">Вперед<span class="fi flaticon-arrows"></span></button>'
         });
     }
+    
+    var memorySlider = $('.js-memory-slider');
+    if (memorySlider.length) {
+        memorySlider.slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+            prevArrow: '<button class="memory-slider__prev"><span class="icon icon-arrow-big-left"></span></button>',
+            nextArrow: '<button class="memory-slider__next"><span class="icon icon-arrow-big-right"></span></button>',
+            responsive: [{
+                breakpoint:1023,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+     				}
+    			}]
+        });
+    }
 
     new WOW().init();
 
