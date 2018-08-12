@@ -47,3 +47,9 @@ PageList:
   ready: 100
 - file: 4_choice.html
   ready: 100 
+- file: 20_all_pages_of_memory.html
+  ready: 100
+- file: 21_Catalog_AZ.html
+  ready: 100
+- file: 22_Funeral_Calendar.html
+  ready: 100
