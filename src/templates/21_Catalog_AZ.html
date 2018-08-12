@@ -1,0 +1,108 @@
+---
+title: Каталог А-Я
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+    {% include "partials/_header.html" %}
+    
+	<div class="page-head">
+	    <div class="container page-head__container">
+	        <ul class="bcrumbs page-head__bcrumbs">
+	            <li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
+	            <li><a href="#">Obituaries</a></li>
+	            <li>Past</li>
+	        </ul>
+	    </div>
+	</div>
+
+	<div class="category-main">
+	    <div class="container category-main__container">
+	        <div class="category-main__head section-head text-center">
+	            <h3 class="category-main__title title-l">Каталог А-Я</h3>
+	            <p>Подзаголовок страницы</p>
+	        </div>
+	    </div>
+	    <div class="container category-main__container">
+	        <div class="category-main__row row">
+	            <div class="category-main__col col-md-9 col-sm-12">
+	            	<div class="category-main__alphabetic-search alphabetic-search">
+	            		<div class="alphabetic-search__label">.Поиск по фамилии:</div>
+		                <ul class="alphabetic-search__list">
+		                	{% for letter in ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ж', 'З', 'И', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Э', 'Ю', 'Я'] %}
+		                	<li class="alphabetic-search__item{% if loop.index === 6 %} is-active{% endif %}"><a href="#" class="alphabetic-search__link">{{ letter }}</a></li>
+		                	{% endfor %}
+		                </ul>
+	            	</div>
+	                <table class="table-simple">
+	                	<tr>
+	                		<th><span>Фамилия Имя Отчество</span></th>
+	                		<th><span>Дата смерти</span></th>
+	                		<th class="mob-hide"><span></span></th>
+	                	</tr>
+	                	{% for i in range(0, 11) -%}
+	                		<tr>
+	                			<td><span>Фамилия Имя Отчество</span></td>
+	                			<td><span>Вт. 03-12-2016</span></td>
+	                			<td class="mob-hide"><img class="table-candle" src="./img/table-img.png" alt="img"></td>
+	                		</tr>
+	                	{%- endfor %}
+	                </table>
+                    <nav class="navigation-page navigation-page_main">
+                        <ul class="page-nav page-nav_filter">
+                        	<li><a class="page-nav__btn left-btn" href="#"><i class="fa fa-angle-left"></i> &nbsp;Предыдущая</a></li>
+                        	<li class="page-nav__item active"><a class="page-nav__link" href="#">1</a></li>
+                        	<li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
+                        	<li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
+                        	<li><a class="page-nav__btn right-btn" href="#">Следующая&nbsp; <i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                     </nav>
+	                <div class="single-meta md-hide">
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                          <!-- Start counter -->
+                          <div class="visitors">
+                          	<button class="visitors__print-btn" type="button">
+                          		<span><svg class="icon icon-printer"><use xlink:href="img/sprite.svg#icon-printer"></use></svg></span>Распечатать
+                          	</button>
+                            <ul class="counter">
+                              <li class="counter__item"> Просмотры: </li>
+                              <li class="counter__item counter__item_icon"> <svg class="icon icon-eye"><use xlink:href="img/sprite.svg#icon-eye"></use></svg> </li>
+                              <li class="counter__item"> Всего 100 </li>
+                              <li class="counter__item"> | </li>
+                              <li class="counter__item"> За месяц 15 </li>
+                            </ul>
+                          </div>
+                          <!-- End counter -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="side-widget hidein">
+                    	<a href="#" class="banner"> <img src="img/banner1.png" alt="banner"> </a>
+                    </div>
+	            </div>
+	            <div class="category-main__col col-md-3 md-hide sidebar">
+	                <div class="image">
+	                	<img src="./img/angel.jpg" alt="img">
+	                </div>
+	                <div class="banner">
+	                    <img src="img/banner.png" alt="banner">
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="container">
+		<div class="bottom-image">
+		    <img src="img/rose-angel.png" alt="rose-angel">
+		</div>
+	</div>
+    
+    
+    
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+    
+{% endblock %}

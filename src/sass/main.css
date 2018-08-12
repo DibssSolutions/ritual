@@ -1914,7 +1914,7 @@ header .col-md-8 {
 
 header .navbar-brand {
 	margin: 0;
-	padding: 37px 0;
+	padding: 20px 0;
 	height: auto;
 }
 
@@ -5486,7 +5486,7 @@ header .navbar-default .cart-table ul {
 .header4 .navbar-default {
 	height: auto;
 	background-color: transparent;
-	padding-top: 21px;
+	padding-top: 12px;
 	position: static;
 }
 
@@ -5518,7 +5518,7 @@ header .navbar-default .cart-table ul {
 }
 
 .header4 .container > .row > .col-md-9 {
-	padding: 28px 15px 0;
+	padding: 12px 15px 0;
 	position: static;
 }
 
@@ -5621,7 +5621,7 @@ header .navbar-default .cart-table ul {
 
 .header4.header5 {
 	background: rgba(0,0,0,0.4);
-	height: 139px;
+	height: 98px;
 }
 
 .header4.header5 .navbar-default {
@@ -5634,7 +5634,7 @@ header .navbar-default .cart-table ul {
 	float: right;
 	width: 85%;
 	margin-top: 0px;
-	padding-bottom: 23px;
+	padding-bottom: 12px;
 }
 
 .header-top i {

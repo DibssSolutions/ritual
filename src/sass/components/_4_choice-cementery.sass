@@ -87,7 +87,6 @@
 
 .datepicker
 	color: $brown
-	position: absolute
 	visibility: inherit !important
 	opacity: 1
 	max-width: 300px
@@ -96,12 +95,13 @@
 	right: initial !important
 	margin: 0
 	padding: 20px
-	&.dropdown-menu
-	table tr td.active
-		background-color: #e6ddd0 !important
-	table tr td.active,
-	table tr td.active.disabled,
-	table tr td.active.disabled:hover,
-	table tr td.active:hover
-		background-image: linear-gradient(to bottom,#e6ddd0,#e6ddd0) !important
-		color: $brown
+	&:not(.datepicker-inline)
+		position: absolute
+		table tr td.active
+			background-color: #e6ddd0 !important
+		table tr td.active,
+		table tr td.active.disabled,
+		table tr td.active.disabled:hover,
+		table tr td.active:hover
+			background-image: linear-gradient(to bottom,#e6ddd0,#e6ddd0) !important
+			color: $brown

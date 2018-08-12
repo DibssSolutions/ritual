@@ -3,19 +3,27 @@
     background-position: 50% 100%
     background-size: contain
     background-repeat: no-repeat
-    &__container
+    &_inner
+        padding: 0
     &__head
         margin-bottom: 55px
     &__title
         line-height: 0.9
-        margin-bottom: 17px
+        margin-bottom: 15px
     &__details
         span
             font-weight: 700
     &__personal-info
-        margin-bottom: 40px
+        &:not(:last-child)
+            margin-bottom: 40px
+    &__row
+        &:not(:first-child)
+            margin-top: 55px
+            +sm
+                margin-top: 30px
     &__list
-        margin-bottom: 25px
+        &:not(:last-child)
+            margin-bottom: 25px
         .agent
             border-top: 1px solid #f3f1ea
             padding: 18px 0 10px
@@ -28,6 +36,17 @@
                 margin-left: 40px
     &__counter
         margin-top: 50px
+    &__footer
+        margin-top: 10px
+        padding-top: 10px
+        border-top: 1px solid #F3F3F3 
+    &__col
+        &:not(:first-child)
+            margin-top: 20px
+    &__btn
+        margin-top: 5px
+        +sm
+            margin-top: 10px
 
 .person-info
     display: flex
@@ -42,7 +61,7 @@
         width: 89px
         height: 80px
         left: 0
-        bottom: 0
+        bottom: 1px
         +md
             width: 45px
             height: 40px
