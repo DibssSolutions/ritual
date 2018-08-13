@@ -2,6 +2,8 @@
     padding-top: 50px
     background-color: $white_brown_bg
     margin-bottom: 80px
+    +sm
+        padding-top: 20px
     &__title
         margin-bottom: 20px
     &__text
@@ -25,6 +27,8 @@
         max-width: 770px
         margin: 0 auto
         margin-bottom: 55px
+        +sm
+            margin-bottom: 25px
     &__title
         padding-bottom: 8px
         text-transform: none
@@ -36,7 +40,7 @@
     &__col
         position: relative
         &:not(:last-child)
-            +sm
+            +md
                 margin-bottom: 11px
     &__label
         position: absolute
@@ -67,9 +71,11 @@
         max-width: 980px
         margin: 0 auto
         padding-bottom: 45px
+        +sm
+            padding-bottom: 15px
     &__bg
         max-width: 860px
-        padding: 65px 0 116px
+        padding: 5.6% 0 10%
         margin: 0 auto
         background-position: 50% 100%
         background-size: contain

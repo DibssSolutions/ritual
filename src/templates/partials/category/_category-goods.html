@@ -28,7 +28,7 @@
                     </ul>
                 </div>
                 
-                <div class="side-widget category-range">
+                {# <div class="side-widget category-range">
                     <h5 class="title-s">Диапазон цен</h5>
                     <div class="s_range">
                         <div id="sliderRange"></div>
@@ -41,7 +41,7 @@
                     <div class="category-range__btn">
                         <a class="btn" href="#">Применить</a>
                     </div>
-                </div>
+                </div> #}
                 <a href="#">
                     <div class="big-icon-btn">
                         <i class="fi flaticon-nature"></i>Послать цветы
@@ -75,8 +75,7 @@
                             
                         </div>
                     </div>
-                        <div class="row margin-bott">
-                            <div class="col-md-12">		
+                        <div class="row margin-bott">	
                                 {% for i in range(0, 6) %}
                                 <div class="col-md-4 col-sm-6 col-xs-6">
                                     <a href="#" class="all-companies__item companies-item">
@@ -121,14 +120,11 @@
                                     </a>
                                 </div>
                             {% endfor %}
-                            </div>
-                            <div class="col-md-12">
-                            <!-- Start page-nav -->
-                                {% include "partials/blogs/_page-nav.html" %}
-                            <!-- End page-nav -->
-                            </div>
                         </div>	
-                        <div class="row">
+                        <!-- Start page-nav -->
+                            {% include "partials/blogs/_page-nav.html" %}
+                        <!-- End page-nav -->
+                        <div class="row margin-top">
                             <div class="col-md-12">
                                
                                     <div class="all-companies__top top-bar mob-hide">

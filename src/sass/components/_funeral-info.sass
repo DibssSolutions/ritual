@@ -1,12 +1,16 @@
 .funeral-info
-    padding: 75px 0 440px
+    padding: 75px 0 23.1%
     background-position: 50% 100%
     background-size: contain
     background-repeat: no-repeat
+    +sm
+        padding-top: 25px
     &_inner
         padding: 0
     &__head
         margin-bottom: 55px
+        +sm
+            margin-bottom: 20px
     &__title
         line-height: 0.9
         margin-bottom: 15px
@@ -16,6 +20,8 @@
     &__personal-info
         &:not(:last-child)
             margin-bottom: 40px
+            +sm
+                margin-bottom: 20px
     &__row
         &:not(:first-child)
             margin-top: 55px
@@ -36,6 +42,8 @@
                 margin-left: 40px
     &__counter
         margin-top: 50px
+        +sm
+            margin-top: 25px
     &__footer
         margin-top: 10px
         padding-top: 10px
@@ -87,6 +95,8 @@
         font-family: $cormorant_infant
         font-weight: 600
         font-size: 24px
+        +sm
+            padding-top: 10px
         span
             font-family: $tahoma
             font-size: 15px

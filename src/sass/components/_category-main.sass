@@ -7,6 +7,10 @@
     align-items: center
     padding-left: 100px
     background-color: $white_brown_bg
+    +md
+        padding-left: 60px
+    +sm
+        padding-left: 100px
     &:hover
         background-color: $brown_orange
         color: #fff
@@ -22,6 +26,10 @@
         background-color: $gray_brown
         font-size: 30px
         color: $brown_orange
+        +md
+            width: 55px
+        +sm
+            width: 70px
 
 .category-main
     padding-top: 40px
@@ -35,15 +43,23 @@
     &__catalogue
         padding-top: 45px
     &__tile
+        +sm
+            padding-top: 30px
     &__list
         .services-card
             text-align: left
+            +sm
+                margin-bottom: 25px
             &__title
             &__text
                 padding-top: 30px
                 margin-bottom: 50px
+                +sm
+                    margin-bottom: 30px
             &__descr
                 padding-top: 25px
+                +sm
+                    padding-top: 0
                 +clr
             .btn
                 float: right
@@ -84,3 +100,4 @@
     .btn
         font-size: 13px
         float: right
+        margin-top: 30px
