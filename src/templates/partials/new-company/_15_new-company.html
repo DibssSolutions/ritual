@@ -118,7 +118,7 @@
 										<span class="post-form__title-row">
 											Выберите из списка:
 										</span>
-										<div class="select">
+										<div class="select select_mod">
 											<select class="js-select-mult" name="character" multiple="multiple">
 	                                            <option value="Dedicated Development Team">Dedicated Development Team</option>
 	                                            <option value="Lois">Lois Griffin</option>
@@ -430,7 +430,7 @@
 									<div class="upload-photo__wrap js-accordion__hide-block">
 										<div class="row">
 											<div class="upload-photo__gallery">
-												<div class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
+												<a href="#" class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
 													<span class="upload-photo__icon">
 														{{ mixins.icon('camera') }}
 													</span>
@@ -439,8 +439,8 @@
 													</span>
 													<div class="upload-photo__photo" style="background-image: url(img/upload.png);">
 													</div>
-												</div>
-												<div class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
+												</a>
+												<a href="#" class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
 													<span class="upload-photo__icon">
 														{{ mixins.icon('camera') }}
 													</span>
@@ -449,15 +449,15 @@
 													</span>
 													<div class="upload-photo__photo" style="background-image: url(img/upload.png);">
 													</div>
-												</div>
-												<div class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
+												</a>
+												<a href="#" class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
 													<span class="upload-photo__icon">
 														{{ mixins.icon('camera') }}
 													</span>
 													<span class="upload-photo__description">
 														Добавить фото
 													</span>
-												</div>
+												</a>
 											</div>
 										</div>
 										<div class="row">
@@ -470,7 +470,7 @@
 														<div class="post-form__col">
 															<input class="post-form__input" type="text" id="way1" value="" name="way1">
 															<label class="post-form__label" for="way1">:/Путь файла будет тут.....</label>
-															<span class="post-form__icon"><i class="fa fas fa-camera"></i></span>
+															<label class="post-form__icon" for="file-upload-photo1"><i class="fa fas fa-camera"></i></label>
 														</div>
 														<label class="file-upload__label btn btn_big" for="file-upload-photo1">
 															Добавить
@@ -579,234 +579,7 @@
 										</div>
 										<div class="row">
 											<div class="col-md-12">
-												<!-- begin table -->
-												<div class="table">
-													<div class="table__thead mob-hide">
-														<div class="table__tr">
-															<div class="table__th" data-column="photo">
-																Фото
-															</div>
-															<div class="table__th" data-column="name">
-																Товары/услуги
-															</div>
-															<div class="table__th" data-column="qua">
-																Порядок
-															</div>
-															<div class="table__th" data-column="price">
-																Стоимость
-															</div>
-															<div class="table__th" data-column="group">
-																Группа
-															</div>
-															<div class="table__th" data-column="group">
-																
-															</div>
-														</div>
-													</div>
-													<div id="style-scroll" class="table__tbody">
-														<div class="table__tr">
-															<div class="table__td" data-column="photo">
-																<div class="table__img">
-																	<img src="img/picture.png" class="table__img-in" alt="image">
-																</div>
-															</div>
-															<div class="table__td" data-column="photo">
-																<div class="table__name">
-																	<div class="table__name-label">
-																		Название услуги или товара
-																	</div>
-																</div>
-															</div>
-															<div class="table__td" data-column="qua">
-																<div class="table__counter">
-																	<div class="counter-price js-counter">
-																		<input class="counter-price__input js-counter-input" type="text" value="1">
-																		<div class="counter-price__box-btn">
-																			<button class="counter-price__plus js-counter-plus" type="button">
-																				{{ mixins.icon('arrow') }}
-																			</button>
-																			<button class="counter-price__minus js-counter-minus" type="button">
-																				{{ mixins.icon('arrow') }}
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="table__td" data-column="price">
-																<div class="table__value">
-																	1 000 руб.
-																</div>
-															</div>
-															<div class="table__td" data-column="group">
-																<div class="table__group">
-																	Подходящая категория
-																</div>
-															</div>
-															<div class="table__block-btn">
-																<button class="table__btn">
-																	{{ mixins.icon('filse-copy') }}
-														  		</button>
-														  		<a class="table__btn" href="#">
-														  			{{ mixins.icon('pen') }}
-														  		</a>
-																<button class="table__btn">
-																	{{ mixins.icon('close') }}
-														  		</button>
-															</div>
-														</div>
-														<div class="table__tr">
-															<div class="table__td" data-column="photo">
-																<div class="table__img">
-																	<img src="img/picture.png" class="table__img-in" alt="image">
-																</div>
-															</div>
-															<div class="table__td" data-column="photo">
-																<div class="table__name">
-																	<div class="table__name-label">
-																		Название услуги или товара
-																	</div>
-																</div>
-															</div>
-															<div class="table__td" data-column="qua">
-																<div class="table__counter">
-																	<div class="counter-price js-counter">
-																		<input class="counter-price__input js-counter-input" type="text" value="1">
-																		<div class="counter-price__box-btn">
-																			<button class="counter-price__plus js-counter-plus" type="button">
-																				{{ mixins.icon('arrow') }}
-																			</button>
-																			<button class="counter-price__minus js-counter-minus" type="button">
-																				{{ mixins.icon('arrow') }}
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="table__td" data-column="price">
-																<div class="table__value">
-																	1 000 руб.
-																</div>
-															</div>
-															<div class="table__td" data-column="group">
-																<div class="table__group">
-																	Подходящая категория
-																</div>
-															</div>
-															<div class="table__block-btn">
-																<button class="table__btn">
-																	{{ mixins.icon('filse-copy') }}
-														  		</button>
-														  		<a class="table__btn" href="#">
-														  			{{ mixins.icon('pen') }}
-														  		</a>
-																<button class="table__btn">
-																	{{ mixins.icon('close') }}
-														  		</button>
-															</div>
-														</div>
-														<div class="table__tr">
-															<div class="table__td" data-column="photo">
-																<div class="table__img">
-																	<img src="img/picture.png" class="table__img-in" alt="image">
-																</div>
-															</div>
-															<div class="table__td" data-column="photo">
-																<div class="table__name">
-																	<div class="table__name-label">
-																		Название услуги или товара
-																	</div>
-																</div>
-															</div>
-															<div class="table__td" data-column="qua">
-																<div class="table__counter">
-																	<div class="counter-price js-counter">
-																		<input class="counter-price__input js-counter-input" type="text" value="1">
-																		<div class="counter-price__box-btn">
-																			<button class="counter-price__plus js-counter-plus" type="button">
-																				{{ mixins.icon('arrow') }}
-																			</button>
-																			<button class="counter-price__minus js-counter-minus" type="button">
-																				{{ mixins.icon('arrow') }}
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-													  		<div class="table__td" data-column="price">
-																<div class="table__value">
-																	1 000 руб.
-																</div>
-													  		</div>
-															<div class="table__td" data-column="group">
-																<div class="table__group">
-																	Подходящая категория
-																</div>
-															</div>
-															<div class="table__block-btn">
-																<button class="table__btn">
-																	{{ mixins.icon('filse-copy') }}
-														  		</button>
-														  		<a class="table__btn" href="#">
-														  			{{ mixins.icon('pen') }}
-														  		</a>
-																<button class="table__btn">
-																	{{ mixins.icon('close') }}
-														  		</button>
-															</div>
-														</div>
-														<div class="table__tr">
-															<div class="table__td" data-column="photo">
-																<div class="table__img">
-																	<img src="img/picture.png" class="table__img-in" alt="image">
-																</div>
-															</div>
-															<div class="table__td" data-column="photo">
-																<div class="table__name">
-																	<div class="table__name-label">
-																		Название услуги или товара
-																	</div>
-																</div>
-															</div>
-															<div class="table__td" data-column="qua">
-																<div class="table__counter">
-																	<div class="counter-price js-counter">
-																		<input class="counter-price__input js-counter-input" type="text" value="1">
-																		<div class="counter-price__box-btn">
-																			<button class="counter-price__plus js-counter-plus" type="button">
-																				{{ mixins.icon('arrow') }}
-																			</button>
-																			<button class="counter-price__minus js-counter-minus" type="button">
-																				{{ mixins.icon('arrow') }}
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="table__td" data-column="price">
-																<div class="table__value">
-																	1 000 руб.
-																</div>
-															</div>
-															<div class="table__td" data-column="group">
-																<div class="table__group">
-																	Подходящая категория
-																</div>
-															</div>
-															<div class="table__block-btn">
-																<button class="table__btn">
-																	{{ mixins.icon('filse-copy') }}
-														  		</button>
-														  		<a class="table__btn" href="#">
-														  			{{ mixins.icon('pen') }}
-														  		</a>
-																<button class="table__btn">
-																	{{ mixins.icon('close') }}
-														  		</button>
-															</div>
-														</div>
-													</div>
-												</div>
-												<!-- end table -->
+												{% include "partials/new-company/_table.html" %}
 											</div>
 										</div>
 										<div class="row">
@@ -824,8 +597,8 @@
 										<div class="row">
 											<div class="col-md-3">
 												<div class="upload-photo">
-													<div class="upload-photo__gallery upload-photo__gallery_mod">
-														<div class="upload-photo__item">
+													<a href="#" class="upload-photo__gallery upload-photo__gallery_mod">
+														<div class="upload-photo__item upload-photo__item_mod">
 															<span class="upload-photo__icon">
 																{{ mixins.icon('camera') }}
 															</span>
@@ -833,7 +606,7 @@
 																Добавить фото
 															</span>
 														</div>
-													</div>
+													</a>
 												</div>
 											</div>
 											<div class="col-md-9">
@@ -907,7 +680,7 @@
 														<div class="post-form__col">
 															<input class="post-form__input" type="text" id="upload-way2" value="" name="upload-way2">
 															<label class="post-form__label" for="way2">:/Путь файла будет тут.....</label>
-															<span class="post-form__icon"><i class="fa fas fa-camera"></i></span>
+															<label class="post-form__icon" for="file-upload-photo2"><i class="fa fas fa-camera"></i></label>
 														</div>
 														<label class="file-upload__label btn btn_big" for="file-upload-photo2">
 															Добавить
@@ -958,7 +731,7 @@
 															</span>
 															<input class="post-form__input" type="text" id="characteristics2" value="" name="characteristics2">
 															<label class="post-form__label" for="characteristics2">
-																Характеристика (поля повторяются дальше)
+																Характеристика
 															</label>
 														</div>
 													</div>
