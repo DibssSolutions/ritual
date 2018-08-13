@@ -202,7 +202,7 @@
                         <div class="select-wrap js-accordion__hide-block"> <span class="post-form__title-row">
 											Выберите из списка:
 										</span>
-                          <div class="select"> <select class="js-select-mult" name="character" multiple="multiple">
+                          <div class="select select_mod"> <select class="js-select-mult" name="character" multiple="multiple">
 	                                            <option value="Dedicated Development Team">Dedicated Development Team</option>
 	                                            <option value="Lois">Lois Griffin</option>
 	                                            <option value="Chris">Chris Griffin</option>
@@ -451,33 +451,38 @@
 										</button> </div>
                         <div class="upload-photo__wrap js-accordion__hide-block">
                           <div class="row">
-                            <div class="upload-photo__gallery">
-                              <div class="upload-photo__item col-md-3 col-sm-4 col-xs-6"> <span class="upload-photo__icon">
+                            <div class="upload-photo__gallery"> <a href="#" class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
+													<span class="upload-photo__icon">
 														
 <svg class="icon icon-camera"><use xlink:href="img/sprite.svg#icon-camera"></use></svg>
 
-													</span> <span class="upload-photo__description">
+													</span>
+													<span class="upload-photo__description">
 														Добавить фото
 													</span>
-                                <div class="upload-photo__photo" style="background-image: url(img/upload.png);"> </div>
-                              </div>
-                              <div class="upload-photo__item col-md-3 col-sm-4 col-xs-6"> <span class="upload-photo__icon">
+													<div class="upload-photo__photo" style="background-image: url(img/upload.png);">
+													</div>
+												</a> <a href="#" class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
+													<span class="upload-photo__icon">
 														
 <svg class="icon icon-camera"><use xlink:href="img/sprite.svg#icon-camera"></use></svg>
 
-													</span> <span class="upload-photo__description">
+													</span>
+													<span class="upload-photo__description">
 														Добавить фото
 													</span>
-                                <div class="upload-photo__photo" style="background-image: url(img/upload.png);"> </div>
-                              </div>
-                              <div class="upload-photo__item col-md-3 col-sm-4 col-xs-6"> <span class="upload-photo__icon">
+													<div class="upload-photo__photo" style="background-image: url(img/upload.png);">
+													</div>
+												</a> <a href="#" class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
+													<span class="upload-photo__icon">
 														
 <svg class="icon icon-camera"><use xlink:href="img/sprite.svg#icon-camera"></use></svg>
 
-													</span> <span class="upload-photo__description">
+													</span>
+													<span class="upload-photo__description">
 														Добавить фото
-													</span> </div>
-                            </div>
+													</span>
+												</a> </div>
                           </div>
                           <div class="row">
                             <div class="upload-gallery">
@@ -485,7 +490,7 @@
 														Выберите файл формата jpg, Размер файла не более 6 Мб
 													</span>
                                 <div class="file-upload">
-                                  <div class="post-form__col"> <input class="post-form__input" type="text" id="way1" value="" name="way1"> <label class="post-form__label" for="way1">:/Путь файла будет тут.....</label> <span class="post-form__icon"><i class="fa fas fa-camera"></i></span>                                    </div> <label class="file-upload__label btn btn_big" for="file-upload-photo1">
+                                  <div class="post-form__col"> <input class="post-form__input" type="text" id="way1" value="" name="way1"> <label class="post-form__label" for="way1">:/Путь файла будет тут.....</label> <label class="post-form__icon" for="file-upload-photo1"><i class="fa fas fa-camera"></i></label>                                    </div> <label class="file-upload__label btn btn_big" for="file-upload-photo1">
 															Добавить
 														</label> <input type="file" name="file-upload-photo1" id="file-upload-photo1" class="file-upload__input" value=""> </div>
                               </div>
@@ -576,8 +581,7 @@
                               <div class="table">
                                 <div class="table__thead mob-hide">
                                   <div class="table__tr">
-                                    <div class="table__th" data-column="photo"> Фото </div>
-                                    <div class="table__th" data-column="name"> Товары/услуги </div>
+                                    <div class="table__th" data-column="photo"> Добавленные товары/услуги </div>
                                     <div class="table__th" data-column="qua"> Порядок </div>
                                     <div class="table__th" data-column="price"> Стоимость </div>
                                     <div class="table__th" data-column="group"> Группа </div>
@@ -596,17 +600,11 @@
                                     </div>
                                     <div class="table__td" data-column="qua">
                                       <div class="table__counter">
-                                        <div class="counter-price js-counter"> <input class="counter-price__input js-counter-input" type="text" value="1">
-                                          <div class="counter-price__box-btn"> <button class="counter-price__plus js-counter-plus" type="button">
-																				
+                                        <div class="counter-price"> <span class="counter-price__input">1</span> <button class="counter-price__plus" type="button">
+							
 <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
 
-																			</button> <button class="counter-price__minus js-counter-minus" type="button">
-																				
-<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
-
-																			</button> </div>
-                                        </div>
+						</button> </div>
                                       </div>
                                     </div>
                                     <div class="table__td" data-column="price">
@@ -616,18 +614,18 @@
                                       <div class="table__group"> Подходящая категория </div>
                                     </div>
                                     <div class="table__block-btn"> <button class="table__btn">
-																	
+					
 <svg class="icon icon-filse-copy"><use xlink:href="img/sprite.svg#icon-filse-copy"></use></svg>
 
-														  		</button> <a class="table__btn" href="#">
-														  			
+		  		</button> <a class="table__btn" href="#">
+		  			
 <svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
 
-														  		</a> <button class="table__btn">
-																	
+		  		</a> <button class="table__btn">
+					
 <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
 
-														  		</button> </div>
+		  		</button> </div>
                                   </div>
                                   <div class="table__tr">
                                     <div class="table__td" data-column="photo">
@@ -640,17 +638,11 @@
                                     </div>
                                     <div class="table__td" data-column="qua">
                                       <div class="table__counter">
-                                        <div class="counter-price js-counter"> <input class="counter-price__input js-counter-input" type="text" value="1">
-                                          <div class="counter-price__box-btn"> <button class="counter-price__plus js-counter-plus" type="button">
-																				
+                                        <div class="counter-price"> <span class="counter-price__input">1</span> <button class="counter-price__plus" type="button">
+							
 <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
 
-																			</button> <button class="counter-price__minus js-counter-minus" type="button">
-																				
-<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
-
-																			</button> </div>
-                                        </div>
+						</button> </div>
                                       </div>
                                     </div>
                                     <div class="table__td" data-column="price">
@@ -660,18 +652,18 @@
                                       <div class="table__group"> Подходящая категория </div>
                                     </div>
                                     <div class="table__block-btn"> <button class="table__btn">
-																	
+					
 <svg class="icon icon-filse-copy"><use xlink:href="img/sprite.svg#icon-filse-copy"></use></svg>
 
-														  		</button> <a class="table__btn" href="#">
-														  			
+		  		</button> <a class="table__btn" href="#">
+		  			
 <svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
 
-														  		</a> <button class="table__btn">
-																	
+		  		</a> <button class="table__btn">
+					
 <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
 
-														  		</button> </div>
+		  		</button> </div>
                                   </div>
                                   <div class="table__tr">
                                     <div class="table__td" data-column="photo">
@@ -684,17 +676,11 @@
                                     </div>
                                     <div class="table__td" data-column="qua">
                                       <div class="table__counter">
-                                        <div class="counter-price js-counter"> <input class="counter-price__input js-counter-input" type="text" value="1">
-                                          <div class="counter-price__box-btn"> <button class="counter-price__plus js-counter-plus" type="button">
-																				
+                                        <div class="counter-price"> <span class="counter-price__input">1</span> <button class="counter-price__plus" type="button">
+							
 <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
 
-																			</button> <button class="counter-price__minus js-counter-minus" type="button">
-																				
-<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
-
-																			</button> </div>
-                                        </div>
+						</button> </div>
                                       </div>
                                     </div>
                                     <div class="table__td" data-column="price">
@@ -704,18 +690,18 @@
                                       <div class="table__group"> Подходящая категория </div>
                                     </div>
                                     <div class="table__block-btn"> <button class="table__btn">
-																	
+					
 <svg class="icon icon-filse-copy"><use xlink:href="img/sprite.svg#icon-filse-copy"></use></svg>
 
-														  		</button> <a class="table__btn" href="#">
-														  			
+		  		</button> <a class="table__btn" href="#">
+		  			
 <svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
 
-														  		</a> <button class="table__btn">
-																	
+		  		</a> <button class="table__btn">
+					
 <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
 
-														  		</button> </div>
+		  		</button> </div>
                                   </div>
                                   <div class="table__tr">
                                     <div class="table__td" data-column="photo">
@@ -728,17 +714,11 @@
                                     </div>
                                     <div class="table__td" data-column="qua">
                                       <div class="table__counter">
-                                        <div class="counter-price js-counter"> <input class="counter-price__input js-counter-input" type="text" value="1">
-                                          <div class="counter-price__box-btn"> <button class="counter-price__plus js-counter-plus" type="button">
-																				
+                                        <div class="counter-price"> <span class="counter-price__input">1</span> <button class="counter-price__plus" type="button">
+							
 <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
 
-																			</button> <button class="counter-price__minus js-counter-minus" type="button">
-																				
-<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
-
-																			</button> </div>
-                                        </div>
+						</button> </div>
                                       </div>
                                     </div>
                                     <div class="table__td" data-column="price">
@@ -748,18 +728,94 @@
                                       <div class="table__group"> Подходящая категория </div>
                                     </div>
                                     <div class="table__block-btn"> <button class="table__btn">
-																	
+					
 <svg class="icon icon-filse-copy"><use xlink:href="img/sprite.svg#icon-filse-copy"></use></svg>
 
-														  		</button> <a class="table__btn" href="#">
-														  			
+		  		</button> <a class="table__btn" href="#">
+		  			
 <svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
 
-														  		</a> <button class="table__btn">
-																	
+		  		</a> <button class="table__btn">
+					
 <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
 
-														  		</button> </div>
+		  		</button> </div>
+                                  </div>
+                                  <div class="table__tr">
+                                    <div class="table__td" data-column="photo">
+                                      <div class="table__img"> <img src="img/picture.png" class="table__img-in" alt="image"> </div>
+                                    </div>
+                                    <div class="table__td" data-column="photo">
+                                      <div class="table__name">
+                                        <div class="table__name-label"> Название услуги или товара </div>
+                                      </div>
+                                    </div>
+                                    <div class="table__td" data-column="qua">
+                                      <div class="table__counter">
+                                        <div class="counter-price"> <span class="counter-price__input">1</span> <button class="counter-price__plus" type="button">
+							
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+
+						</button> </div>
+                                      </div>
+                                    </div>
+                                    <div class="table__td" data-column="price">
+                                      <div class="table__value"> 1 000 руб. </div>
+                                    </div>
+                                    <div class="table__td" data-column="group">
+                                      <div class="table__group"> Подходящая категория </div>
+                                    </div>
+                                    <div class="table__block-btn"> <button class="table__btn">
+					
+<svg class="icon icon-filse-copy"><use xlink:href="img/sprite.svg#icon-filse-copy"></use></svg>
+
+		  		</button> <a class="table__btn" href="#">
+		  			
+<svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
+
+		  		</a> <button class="table__btn">
+					
+<svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
+
+		  		</button> </div>
+                                  </div>
+                                  <div class="table__tr">
+                                    <div class="table__td" data-column="photo">
+                                      <div class="table__img"> <img src="img/picture.png" class="table__img-in" alt="image"> </div>
+                                    </div>
+                                    <div class="table__td" data-column="photo">
+                                      <div class="table__name">
+                                        <div class="table__name-label"> Название услуги или товара </div>
+                                      </div>
+                                    </div>
+                                    <div class="table__td" data-column="qua">
+                                      <div class="table__counter">
+                                        <div class="counter-price"> <span class="counter-price__input">1</span> <button class="counter-price__plus" type="button">
+							
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+
+						</button> </div>
+                                      </div>
+                                    </div>
+                                    <div class="table__td" data-column="price">
+                                      <div class="table__value"> 1 000 руб. </div>
+                                    </div>
+                                    <div class="table__td" data-column="group">
+                                      <div class="table__group"> Подходящая категория </div>
+                                    </div>
+                                    <div class="table__block-btn"> <button class="table__btn">
+					
+<svg class="icon icon-filse-copy"><use xlink:href="img/sprite.svg#icon-filse-copy"></use></svg>
+
+		  		</button> <a class="table__btn" href="#">
+		  			
+<svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
+
+		  		</a> <button class="table__btn">
+					
+<svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
+
+		  		</button> </div>
                                   </div>
                                 </div>
                               </div>
@@ -778,15 +834,15 @@
                           <div class="row">
                             <div class="col-md-3">
                               <div class="upload-photo">
-                                <div class="upload-photo__gallery upload-photo__gallery_mod">
-                                  <div class="upload-photo__item"> <span class="upload-photo__icon">
+                                <a href="#" class="upload-photo__gallery upload-photo__gallery_mod">
+                                  <div class="upload-photo__item upload-photo__item_mod"> <span class="upload-photo__icon">
 																
 <svg class="icon icon-camera"><use xlink:href="img/sprite.svg#icon-camera"></use></svg>
 
 															</span> <span class="upload-photo__description">
 																Добавить фото
 															</span> </div>
-                                </div>
+                                </a>
                               </div>
                             </div>
                             <div class="col-md-9">
@@ -835,7 +891,7 @@
 														Выберите файл формата jpg, Размер файла не более 6 Мб
 													</span>
                                 <div class="file-upload">
-                                  <div class="post-form__col"> <input class="post-form__input" type="text" id="upload-way2" value="" name="upload-way2"> <label class="post-form__label" for="way2">:/Путь файла будет тут.....</label> <span class="post-form__icon"><i class="fa fas fa-camera"></i></span>                                    </div> <label class="file-upload__label btn btn_big" for="file-upload-photo2">
+                                  <div class="post-form__col"> <input class="post-form__input" type="text" id="upload-way2" value="" name="upload-way2"> <label class="post-form__label" for="way2">:/Путь файла будет тут.....</label> <label class="post-form__icon" for="file-upload-photo2"><i class="fa fas fa-camera"></i></label>                                    </div> <label class="file-upload__label btn btn_big" for="file-upload-photo2">
 															Добавить
 														</label> <input type="file" name="file-upload-photo2" id="file-upload-photo2" class="file-upload__input" value=""> </div>
                               </div>
@@ -871,7 +927,7 @@
                                   <div class="post-form__col"> <span class="post-form__title-row">
 																Характеристика 2:
 															</span> <input class="post-form__input" type="text" id="characteristics2" value="" name="characteristics2"> <label class="post-form__label" for="characteristics2">
-																Характеристика (поля повторяются дальше)
+																Характеристика
 															</label> </div>
                                 </div>
                               </div>
@@ -1034,6 +1090,8 @@
     <script src="js/app.js"></script>
     <script src="js/lib/vendor/jquery.min.js"></script>
     <script src="js/lib/vendor/bootstrap.min.js"></script>
+    <script src="js/lib/vendor/moment-with-locales.min.js"></script>
+    <script src="js/lib/vendor/bootstrap-datetimepicker.min.js"></script>
     <script src="js/lib/vendor/slick/slick.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/froogaloop.js"></script>
     <script src="js/lib/vendor/lity/lity.min.js"></script>

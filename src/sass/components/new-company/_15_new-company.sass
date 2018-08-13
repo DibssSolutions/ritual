@@ -22,7 +22,11 @@
 							width: 210px
 						+xs
 							margin-right: 0	
-							margin-bottom: 10px	
+							margin-bottom: 10px
+	.select_mod
+		position: relative
+		padding-bottom: 46px
+								
 	.select
 		width: 100%
 		max-width: 570px
@@ -83,8 +87,9 @@
 		padding-bottom: 6px
 	.select .select2-selection--single
 		height: 45px
+		background-color: #f1ede8 
 	.select .select2-selection--single .select2-selection__arrow
-		height: 47px
+		height: 42px
 		width: 40px
 	.select2-container--default .select2-selection--multiple,
 	.select2-container--default .select2-selection--single
@@ -93,7 +98,7 @@
 .file-upload
 	max-width: 175px
 	text-align: center
-	+sm
+	+md
 		margin: 0 auto
 	&__wrap
 		position: relative
@@ -235,7 +240,7 @@
 
 .company-form__row_mod
 	.select-wrap
-		padding-bottom: 60px
+		// padding-bottom: 60px
 	.basic-contacts.is-active
 		.company-form__row_mod
 			padding-bottom: 60px
@@ -247,15 +252,47 @@
 	border-right: 4px solid transparent
 	border-left: 4px solid transparent
 
+.sol-selection
+	padding: 10px 55px 10px 25px
+
 .sol-inner-container
+	position: absolute
+	top: 0
+	left: 0
 	height: 45px
-	background-color: #efece6
+	background-color: #f1ede8 
 	border-radius: 0
 	border: none
+	outline: none
+	max-width: 570px
+	width: 100%
+
+.sol-option
+	cursor: pointer
+
+.sol-option.keyboard-selection,
+.sol-selection:not(.sol-keyboard-navigation) .sol-option:hover
+	background: inherit
+	color: $brown
+	text-decoration: underline
+
+
+.sol-container.sol-active .sol-inner-container
+	border-color: none
+	box-shadow: none
+	background-color: #f1ede8
+
+.sol-container.sol-active .sol-selection-container
+	border-radius: 0
+	border: 0	
 	
 .sol-input-container input[type=text]	
 	color: #62594f
 	padding-left: 27px
+
+.sol-label
+	cursor: pointer
+	border-bottom: 1px solid #f5f5f5	
 
 .sol-results-count,
 .sol-selected-display-item
@@ -267,14 +304,16 @@
 	margin-bottom: 5px
 	border-collapse: separate
 	border-radius: 4px
+	font-family: $tahoma
 
 .sol-quick-delete
 	color: #65594d
 
 .sol-current-selection
-	position: absolute
+	position: relative
 	top: 50px
-	left: 0			
+	left: 0
+	margin-bottom: 10px	
 		
 .contact-form
 	&__textarea
@@ -302,6 +341,7 @@
 
 .upload-photo
 	&__gallery
+		display: block
 		margin: 0 15px				
 	&__item
 		position: relative
@@ -370,95 +410,11 @@
 			transform: translate(50%, -50%)
 			color: $brown
 			font-size: 16px
+			cursor: pointer
 	.post-form__input
 		max-width: 100%
 		margin-bottom: 0
 		padding-right: 45px
-
-.table
-	&__thead
-		padding-bottom: 8px
-		margin-bottom: 8px
-		border-bottom: 2px solid $brown
-		margin-right: 35px
-	&__tbody
-		max-height: 460px
-		overflow: auto
-		.table__tr
-			padding: 4px 0
-			margin-bottom: 4px
-			margin-right: 35px
-			&:not(:last-child)	
-				border-bottom: 1px solid #eee
-	&__tr
-		display: flex
-		align-items: flex-start
-		+sm
-			flex-direction: column
-	&__th
-		font-size: 14px
-		font-weight: 600
-		color: $brown
-		text-align: left
-		flex: 1 1 25%
-		+sm
-			flex: 1 1 100%
-	&__td
-		width: 100%
-		text-align: left
-		&:not(:last-child)
-			margin-right: 27px
-			text-align: center
-			+sm
-				margin-right: 0
-		&:not(:first-child)
-			padding: 12px 0
-		&:last-child
-			margin-right: 35px		
-	&__img
-		width: 100%
-		height: 100px		
-		font-size: 0
-		+sm
-			height: 150px
-		img
-			max-width: 100%
-			height: 100%
-	&__name
-		color: $brown
-		font-size: 14px
-	&__block-btn
-		padding-top: 12px
-		width: 100%
-		text-align: right
-		white-space: nowrap
-		order: -1
-		+sm
-			margin-bottom: 10px
-		a
-			border-bottom: none !important
-	&__btn
-		background: none
-		border: none
-		outline: none
-		font-size: 20px
-		.icon
-			fill: $brown
-		&:not(:last-child)
-			margin-right: 25px
-
-#style-scroll::-webkit-scrollbar-track
-	// -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #Ffffff
-	border: 1px solid #c4c1c1
-	
-#style-scroll::-webkit-scrollbar
-	width: 5px;
-	background-color: #F5F5F5
-
-#style-scroll::-webkit-scrollbar-thumb
-	background-color: #c4c1c1
-
 			
 .upload-photo
 	&__nav
@@ -472,6 +428,8 @@
 			font-weight: 600
 	.upload-photo__gallery_mod
 		margin: 0
+	.upload-photo__item_mod
+		margin: 0 auto 36px	
 	.post-form
 		margin-top: 0
 
@@ -535,22 +493,15 @@
 .counter-price
 	display: flex
 	align-items: center
-	justify-content: center
-
-	&__input
-		width: 34px
-	&__box-btn
-		display: flex
-		flex-direction: column	
+	justify-content: center	
 	&__plus
-		margin-bottom: 10px
+		margin-left: 10px
+		margin-bottom: 5px
 		transform: rotate(180deg)
-	&__plus,
-	&__minus
+	&__plus
 		background: none
 		border: none
 		outline: none
-		height: 16px
 		.icon
 			fill: $brown
 			font-size: 16px

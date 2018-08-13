@@ -1,0 +1,78 @@
+.promo
+	&__bg
+		padding: 64px 0 44px
+		width: 100%
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+		text-align: right
+		+md
+			padding: 32px 0 27px
+	&__text	
+		padding-right: 65px
+		margin-bottom: 70px
+		+md
+			padding-right: 32px
+			margin-bottom: 35px
+		p
+			max-width: 475px
+			margin: 0 0 0 auto
+			font-size: 14px
+			line-height: 1.4
+			color: $brown
+			+md
+				font-size: 12px
+				// background-color: rgba(255,255,255,.6)
+			&:not(:last-child)
+				margin-bottom: 30px
+				+md
+					margin-bottom: 15px
+	&__title
+		margin: 0 0 48px auto
+		max-width: 675px
+		font-family: $tahoma
+		font-size: 40px
+		+md
+			margin: 0 0 24px auto
+			font-size: 20px
+	&__banner
+		position: relative
+		background-color: #cb4331
+		padding: 40px 44px 44px
+		border-radius: 10px 0 0 10px
+		max-width: 600px
+		margin: 0 0 0 auto
+		+md
+			max-width: 420px
+			padding: 20px 22px 22px
+		+sm
+			max-width: 320px	
+		p
+			font-size: 14px
+			color: $white
+			+md
+				font-size: 12px
+		&:after
+			position: absolute
+			content: ''
+			left: -132px
+			top: -10px
+			background-image: url(../img/candle.png)
+			width: 175px
+			height: 235px
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: 50% 50%
+			+md
+				left: -80px
+				width: 100px
+				height: 150px
+			+xs
+				display: none	
+	&__banner-title
+		font-size: 55px
+		font-family: $tahoma
+		color: $white
+		margin-bottom: 6px
+		+md
+			font-size: 35px		
