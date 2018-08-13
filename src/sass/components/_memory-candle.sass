@@ -1,5 +1,7 @@
 .memory-candle
     padding-top: 100px
+    +sm
+        padding-top: 75px
     &__container
     &__row
     &__col
@@ -22,6 +24,8 @@
         margin-bottom: 40px
     &__message
         margin-bottom: 40px
+        +sm
+            margin-bottom: 0
         label
             margin-bottom: 15px
             padding-left: 5px
@@ -33,7 +37,7 @@
             top: 50%
             transform: translateY(-50%)
             opacity: 0
-        input:checked + span
+        input:checked + div
             .check
                 opacity: 1
             
@@ -48,15 +52,13 @@
             height: 12px
             border: 1px solid #cbcbcb
             left: 0
-            top: 50%
-            transform: translateY(-50%)
+            top: 3px
         .check
             font-size: 9px
             position: absolute
             line-height: 9px
             vertical-align: middle
-            top: 50%
-            transform: translateY(-50%)
+            top: 4px
             left: 2px
             opacity: 0
             text-align: center
@@ -64,6 +66,12 @@
         +placeholder
             font-size: 14px
             color: #929292
+    &__textarea
+        +sm
+            margin-bottom: 0
+    .post-form__col
+        +sm
+            margin-bottom: 15px
 
 .form-radio
     &__radio
