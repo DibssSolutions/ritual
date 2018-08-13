@@ -20,17 +20,13 @@ accordionWrapper.each(function() {
   var accorTrig = _this.find('.js-accord-btn');
   var accordions = _this.find('.js-accord');
   var accordTextBtn = _this.find('.js-accord-text-btn');
-  // var allContentBlocks = _this.find('.js-accordion__hide-block');
  
-  accorTrig.on('click', function(e) {
-  	e.preventDefault();
+  accorTrig.on('click', function() {
     var parent = $(this).parents('.js-accord');
     var open = 'is-open';
     var contentBlock = parent.find('.js-accordion__hide-block');
     var contentText = parent.find('.js-accord-text-btn');
     if (!parent.hasClass(open)) {
-      accordions.removeClass(open);
-      // allContentBlocks.slideUp(500);
       parent.addClass(open);
       contentText.text('Показать');
       contentBlock.slideUp(500);

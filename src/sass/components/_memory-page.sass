@@ -1,6 +1,8 @@
 .memory-page
     background-color: $white_brown_bg
-    padding: 60px
+    padding: 60px 0
+    +sm
+        padding: 30px 0
     &__container
     &__head
         margin-bottom: 35px
@@ -11,12 +13,16 @@
         max-width: 775px
         margin: 0 auto
         margin-bottom: 50px
+        +sm
+            margin-bottom: 10px
         p
             line-height: 1.6
             &:not(:last-child)
                 margin-bottom: 23px
     &__slider
         margin-bottom: 40px
+        +sm
+            margin-bottom: 10px
     &__item
         padding: 19px 1px 19px 11px
         margin: 7px

@@ -1,6 +1,8 @@
 .find-necrology
     padding-top: 45px
     background-color: $white_brown_bg
+    +sm
+        padding-top: 15px
     &__head
         margin: 0 auto
         margin-bottom: 30px
@@ -14,5 +16,13 @@
         background-size: contain
         background-position: 50% 100%
         background-repeat: no-repeat
+        +sm
+            padding-bottom: 40%
+            display: flex
+            flex-direction: column
+            align-items: center
         a:not(:last-child)
             margin-right: 30px
+            +sm
+                margin-right: 0
+                margin-bottom: 15px
