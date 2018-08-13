@@ -76,68 +76,6 @@ body
 	+f(20px, 700, 1.2)
 	text-transform: uppercase
 
-.btn
-	position: relative
-	padding: 11px 25px
-	background-color: $gray_brown
-	border-radius: 5px
-	font-size: 14px
-	font-weight: 400
-	font-family: $tahoma
-	white-space: normal
-	color: $brown
-	transition: color .4s, background-color .4s, border-color .4s, box-shadow .4s
-	&:hover
-		background-color: $hover_btn
-		color: $white
-		+sm
-			background-color: $gray_brown
-			color: $brown
-	+sm
-		padding: 8px 20px
-	&_small
-		padding: 4px 22px
-		+sm
-			padding: 5px 15px
-		.flaticon-arrows
-			margin: 0 -8px 4px 10px
-			font-size: 10px
-			vertical-align: middle
-			display: inline-block
-	&_fat
-		padding: 12px 15px
-	&_bold
-		font-weight: 700 
-		+sm
-			font-weight: 500
-	&_big
-		padding: 12px 45px
-		
-	&_border
-		box-shadow: inset 0 0 0 2px $brown_orange
-		background-color: transparent
-		&:hover
-			background-color: #6a6455
-			color: $white
-			box-shadow: inset 0 0 0 2px #6a6455
-	&_bg-light
-		background-color: $white_brown_bg
-	&_dark
-		color: $white 
-		background-color: #65594d 
-		&:hover
-			background-color: #c3b5a7 
-
-.hide-block-btn
-	background: none
-	border: none
-	outline: none
-	font-size: 16px
-	border-bottom: 2px solid $gray_brown
-	transition: border-color .3s
-	&:hover
-		border-bottom: 2px solid $brown
-
 .line
 	height: 1px
 	width: 100%
@@ -179,19 +117,19 @@ body
 	top: 3px
 	width: 14px
 	height: 14px
-	background-color: $silver
+	background: repeating-linear-gradient(to bottom right,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
+	background: repeating-linear-gradient(top left,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
 	z-index: 1
 
 .side-form .cbox label:before
-	top: 5px
-	left: -14px
-	width: 10px
-	height: 10px
+	top: 4px
+	left: -15px
+	width: 12px
+	height: 12px
 	content: ''
 	border: 1px solid #ccc
 	z-index: 2
-	background-image: repeating-linear-gradient(to bottom right,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
-	background-image: -ms-repeating-linear-gradient(top left,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
+	background-color: $brown
 
 .padding-aside
 	+sm
@@ -217,7 +155,6 @@ body
 	span, .fi
 		+sm
 			font-size: 10px
-
 
 .image
 	margin: 55px 0
