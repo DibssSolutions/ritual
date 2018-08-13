@@ -25,7 +25,7 @@
 							margin-bottom: 10px
 	.select_mod
 		position: relative
-		padding-bottom: 46px
+		padding-bottom: 68px
 								
 	.select
 		width: 100%
@@ -296,22 +296,38 @@
 
 .sol-results-count,
 .sol-selected-display-item
+	position: relative
 	display: inline-table
-	border: 1px solid #c7bfb7
+	border: 1px solid #c3beb6
 	background: #ffffff
-	font-size: .9em
-	margin-right: 5px
-	margin-bottom: 5px
+	font-size: 15px
+	margin-right: 30px
+	margin-bottom: 10px
 	border-collapse: separate
 	border-radius: 4px
 	font-family: $tahoma
+	padding: 4px 40px 4px 13px
+	font-style: italic
+	font-weight: 500
+	color: #625a4f
+
+.sol-quick-delete, .sol-selected-display-item-text
+	padding: 0
 
 .sol-quick-delete
-	color: #65594d
+	position: absolute
+	top: 1px
+	right: 5px
+	font-size: 18px
+	font-style: normal
+	color: #625a4f
+	&:hover
+		color: #625a4f
+
 
 .sol-current-selection
 	position: relative
-	top: 50px
+	top: 75px
 	left: 0
 	margin-bottom: 10px	
 		

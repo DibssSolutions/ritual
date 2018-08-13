@@ -40,6 +40,9 @@
 .choice-price
 	background-color: #f3eee8
 	padding: 28px 0 0
+	&__container
+		padding-left: 0
+		padding-right: 0
 	&__title
 		text-align: center
 		margin-bottom: 20px
@@ -64,12 +67,18 @@
 		display: inline-block
 	&__item
 		padding: 15px 120px 15px 100px
+		+sm
+			font-size: 14px
 		&:nth-child(odd)
 			background-color: #f3eee8
 	&__list-title
-		padding: 15px 100px
+		padding: 15px 0
 		font-size: 24px
 		border-bottom: 1px solid #e7e7e7
+		white-space: nowrap
+		+sm
+			font-size: 15px
+			padding: 15px 0
 	.visitors
 		padding-bottom: 28px
 
