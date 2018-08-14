@@ -53,3 +53,5 @@ PageList:
   ready: 100
 - file: 22_Funeral_Calendar.html
   ready: 100
+- file: 23-1_new_page_of_memory.html
+  ready: 50
