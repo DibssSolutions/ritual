@@ -34,20 +34,50 @@
       <div class="header-wrap js-header-wrap">
         <div class="topbar topbar3">
           <div class="container">
-            <div class="lang-select pull-right"> <i class="fa fa-angle-down"></i> <select>
-                    <option value="">EN</option>
-                    <option value="">PO</option>
-                    <option value="">FR</option>
-                </select> </div>
+            <div class="topbar__wrap">
+              <ul class="topbar__list list-dropdown">
+                <li class="list-dropdown__item list-dropdown__item_mod"> <a href="#" class="list-dropdown__link">
+							<span class="list-dropdown__icon">
+								
+<svg class="icon icon-mark"><use xlink:href="img/sprite.svg#icon-mark"></use></svg>
+
+							</span>
+							Выберите район
+							<span class="fa fa-angle-down"></span>
+						</a>
+                  <ul class="list-dropdown__menu">
+                    <li><a href="#">Железнодорожный</a></li>
+                    <li><a href="#">Индустриальный</a></li>
+                    <li><a href="#">Кировский</a></li>
+                    <li><a href="#">Краснофлотский</a></li>
+                    <li><a href="#">Центральный</a></li>
+                  </ul>
+                </li>
+                <li class="list-dropdown__item"> <a href="#" class="list-dropdown__link">
+							<span class="list-dropdown__icon">
+								
+<svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg>
+
+							</span>
+							Войти
+						</a> </li>
+                <li class="list-dropdown__item"> <span class="vertical-slash">|</span> </li>
+                <li class="list-dropdown__item"> <a href="#" class="list-dropdown__link">
+							 Зарегистрироваться
+						</a> </li>
+              </ul>
+            </div>
           </div>
         </div>
         <header class="header4 header5 header-bg">
           <div class="container">
             <div class="row">
-              <div class="col-md-3 col-sm-3 col-xs-8"> <a href="./index.html" class="navbar-brand"><img src="img/logo.png" class="img-responsive" alt=""></a> </div>
+              <div class="col-md-3 col-sm-3 col-xs-8"> <a href="./index.html" class="navbar-brand">
+						<img src="img/logo.png" class="img-responsive" alt="logo">
+					</a> </div>
               <div class="col-md-9 col-sm-9 col-xs-4">
                 <div class="header-top">
-                  <div class="cart-header2 hidden-xs cart-show pull-right"> <i class="fi flaticon-web"></i> <span>My Cart (0)</span>
+                  <div class="cart-header2 hidden-xs cart-show pull-right"> <i class="fi flaticon-web"></i> <span>My Cart (3)</span>
                     <div class="cart-table">
                       <h3>My Cart (3 items)</h3>
                       <div class="margin-bottom-20"></div>
@@ -75,28 +105,37 @@
                 </div>
                 <div class="clearfix"></div>
                 <nav class="navbar navbar-default"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	                        <span>
-						        <em></em>
-						        <em></em>
-						        <em></em>
-						    </span>
-	                    </button>
+							<span>
+								<em></em>
+								<em></em>
+								<em></em>
+							</span>
+						</button>
                   <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                       <li><a href="./index.html">Главная</a></li>
-                      <li class="dropdown dropdown-normal"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Если случилось горе <span class="fa fa-angle-down"></span></a>
+                      <li class="dropdown dropdown_mod"> <a href="#" class="dropdown-toggle">Если случилось горе <span class="fa fa-angle-down"></span></a>
                         <ul class="dropdown-menu dropdown-menu-v3">
-                          <li><a href="./blog.html">Blog</a></li>
-                          <li><a href="./blog-single.html">Blog Single</a></li>
+                          <li><a href="#">Блог</a></li>
+                          <li><a href="#">Блог 1</a></li>
+                          <li><a href="#">Блог 2</a></li>
                         </ul>
                       </li>
                       <li><a href="#">После похорон</a></li>
-                      <li class="dropdown dropdown-normal active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Страницы памяти<span class="fa fa-angle-down"></span></a>
+                      <li class="dropdown dropdown_mod"> <a href="#" class="dropdown-toggle">
+										Страницы памяти
+										<span class="fa fa-angle-down"></span>
+									</a>
                         <ul class="dropdown-menu dropdown-menu-v3">
-                          <li><a href="./contact-v1.html">Contact</a></li>
-                          <li><a href="./contact-v2.html">Contact V2</a></li>
-                          <li><a href="./locations.html">Locations</a></li>
-                          <li><a href="./location-single.html">Location - Single</a></li>
+                          <li> <a href="#">
+												Каталог А-Я
+											</a> </li>
+                          <li> <a href="#">
+												Календарь похорон
+											</a> </li>
+                          <li> <a href="./locations.html">
+												Все никрологи
+											</a> </li>
                         </ul>
                       </li>
                     </ul>
@@ -129,7 +168,7 @@
             <div class="blog-content_wrap">
               <div class="post-wrap">
                 <div class="section-head text-center mob-hide">
-                  <h3 class="title-m">Название статьи будет тут длинное в две строки</h3>
+                  <h1 class="title-m">Название статьи будет тут длинное в две строки</h1>
                 </div>
                 <div class="row">
                   <aside class="col-md-3 col-sm-5 sidebar padding-aside bg-color">
@@ -271,7 +310,7 @@
                       <div class="row">
                         <div class="col-md-12 col-sm-12">
                           <!-- Start counter -->
-                          <div class="visitors"> <button class="visitors__print-btn" type="button">
+                          <div class="visitors"> <button class="visitors__print-btn" type="button" onclick='print();'>
         <span>
 <svg class="icon icon-printer"><use xlink:href="img/sprite.svg#icon-printer"></use></svg>
 </span>

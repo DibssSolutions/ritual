@@ -112,10 +112,46 @@
 		.fa
 			+sm
 				display: none
-		
-	.dropdown-menu 
+	.header4 .navbar-nav>li>a:hover
+		font-weight: 500
+		color: $white !important
+	.navbar-default .navbar-nav>li>a:focus
+		color: $white !important	
+	.dropdown-menu
+		padding: 20px 20px 27px 27px
 		+sm
 			display: none
+		&.dropdown-menu-v3
+			position: absolute
+			top: 80px
+			right: 0 !important
+			width: auto
+			opacity: 0
+			animation: opacity 1s
+			li
+				a
+					font-family: $tahoma
+					padding: 7px 0
+					line-height: 1.4
+					font-size: 14px
+					color: #62594f
+					margin: 0
+					&:hover
+						color: $brown_orange		
+	.dropdown
+		&.dropdown_mod
+			position: relative
+			cursor: pointer
+			&:hover		
+				.dropdown-menu-v3
+					opacity: 1
+				.dropdown-toggle
+					color: $white !important
+		.fa-angle-down
+			margin-left: 8px
+	.header4.header5 .dropdown-menu.dropdown-menu-v3
+		margin-top: -40px!important
+
 .header-bg
 	background-image: url(../img/header-bg.png) 
 	background-position: 50% 50% 
@@ -136,5 +172,70 @@
 	+sm
 		width: 100%
 .topbar
+	position: relative
+	z-index: 10
+	height: auto
+	background-color: #e3dccf
 	+sm
 		display: none
+	&__wrap
+		padding: 7px 0 0	
+	&__list
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		li
+			a
+				font-size: 14px
+				color: $brown
+				&:hover	
+					color: $brown
+
+.list-dropdown
+	&__link
+		display: flex
+		align-items: center
+		border-bottom: 1px solid transparent
+
+		.fa-angle-down
+			margin-left: 8px
+	&__menu
+		position: absolute
+		top: 31px
+		left: 0
+		padding: 20px 20px 27px 27px
+		background-color: $white
+		box-shadow: 0 0 5px rgba(4,5,5,.1)
+		opacity: 0
+		transition: opacity .3s
+		z-index: -100
+		li
+			&:not(:last-child)
+				border-bottom: 1px solid #eee
+				padding: 7px 0
+			a
+				padding: 7px 0
+	&__item
+		position: relative
+		border-bottom: 1px solid transparent
+		padding-bottom: 10px			
+		&:hover	
+			.list-dropdown__link				
+				border-bottom: 1px solid $brown
+			.list-dropdown__menu
+				opacity: 1
+				z-index: 100
+	&__icon
+		font-size: 16px
+		margin-right: 10px
+		height: 16px
+		.icon
+			fill: $brown				
+	&__item_mod
+		margin-right: 50px
+		&:hover	
+			.list-dropdown__link				
+				border-bottom: 1px solid transparent
+	.vertical-slash
+		margin-right: 6px		
+		margin-left: 6px
