@@ -1,5 +1,5 @@
 .key-questions
-    padding: 39px 0 27px
+    padding: 39px 0 68px
     background-color: $white_brown_bg
     &__container
     &__list
@@ -12,16 +12,32 @@
 
 .key-item
     position: relative
-    width: calc(50% + 84px)
+    width: calc(50% + 85px)
     // float: left
     min-height: 170px
     display: flex
     justify-content: flex-end
+    &:before
+        position: absolute
+        content: ""
+        top: 0
+        right: 84px
+        width: 2px
+        height: 100%
+        background-color: #7d7369
+        +sm
+            display: none
+    &:nth-child(even)
+        &:before
+            right: auto
+            left: 84px
     &:not(:last-child)   
-        margin-bottom: 32px
+        padding-bottom: 32px
     &:last-child
         +sm
-            margin-bottom: 9px     
+            margin-bottom: 9px
+        &:before
+            display: none
     +sm
         min-height: auto
         width: 100%
@@ -39,10 +55,6 @@
         .key-item__img
             margin-left: 0
             margin-right: 20px
-            +sm
-    &:last-child
-        .key-item__img:before
-            display: none
     &__body
         padding-top: 12px
         // float: left
@@ -89,13 +101,4 @@
             width: 112px
             height: 112px
         &:before
-            position: absolute
-            content: ""
-            top: 100%
-            left: 50%
-            margin-left: -1px
-            width: 2px
-            height: 145px 
-            background-color: #7D7369 
-            +sm
-                display: none
+            

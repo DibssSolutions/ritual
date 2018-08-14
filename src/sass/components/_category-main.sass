@@ -1,35 +1,36 @@
 .big-icon-btn
-	position: relative
-	height: 70px
-	text-align: left
-	font-size: 16px
-	display: flex
-	align-items: center
-	padding-left: 100px
-	background-color: $white_brown_bg
-	+md
-		padding-left: 60px
-	+sm
-		padding-left: 100px
-	&:hover
-		background-color: $brown_orange
-		color: #fff
-	i
-		position: absolute
-		left: 0
-		top: 0
-		width: 70px
-		height: 70px
-		display: flex
-		align-items: center
-		justify-content: center
-		background-color: $gray_brown
-		font-size: 30px
-		color: $brown_orange
-		+md
-			width: 55px
-		+sm
-			width: 70px
+    position: relative
+    height: 70px
+    text-align: left
+    font-size: 16px
+    display: flex
+    align-items: center
+    padding-left: 100px
+    background-color: $white_brown_bg
+    transition: background-color .3s, color .3s
+    +md
+        padding-left: 60px
+    +sm
+        padding-left: 100px
+    &:hover
+        background-color: $brown_orange
+        color: #fff
+    i
+        position: absolute
+        left: 0
+        top: 0
+        width: 70px
+        height: 70px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $gray_brown
+        font-size: 30px
+        color: $brown_orange
+        +md
+            width: 55px
+        +sm
+            width: 70px
 
 .category-main
 	padding-top: 40px

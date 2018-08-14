@@ -80,7 +80,6 @@
         .title-m
             font-size: 30px
             font-weight: bold
-            font-family: $tahoma
             +sm
                 font-size: 16px!important
         .title-s
@@ -123,7 +122,7 @@
             color: $brown_orange
             font-size: 13px
             text-align: center
-            padding: 0 41px
+            padding: 0 39px
             height: 31px
         i
             line-height: 31px
@@ -183,8 +182,8 @@
     .btn
         order: 4
     .sf-thumb
-        height: 234px
-        line-height: 232px
+        height: 152px
+        line-height: 150px
         text-align: center
         border: 1px solid #e4e4e4
         width: 100%
@@ -205,7 +204,7 @@
         &:after
             display: none
         img
-            max-height: 230px
+            max-height: 148px
             max-width: 100%
             display: block
             width: auto
@@ -394,10 +393,15 @@
 
 .new-company
     margin-bottom: 235px
+    &:hover
+        .new-company__text
+            background-color: $brown_orange
+            color: #fff
     &__text
         padding: 17px 0 17px 100px
         position: relative
         background-color: $white_brown_bg
+        transition: background-color .3s, color .3s
     &__img
         position: absolute
         width: 71px

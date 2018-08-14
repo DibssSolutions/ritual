@@ -1,67 +1,76 @@
 .map-wrap
-	padding: 20px 0 0
-	+sm
-		padding: 0
-	&__container
-		text-align: center
-	&__title-l
-		margin-bottom: 17px
-	&__select
-		max-width: 359px
-		margin: 0 auto 12px
-		.select
-			text-align: left
-			width: 100%
+    padding: 20px 0 0
+    +sm
+        padding: 0
+    &__container
+        text-align: center
+    &__title-l
+        margin-bottom: 17px
+    &__select
+        max-width: 359px
+        margin: 0 auto 12px
+        .select
+            text-align: left
+            width: 100%
+.map
+    .gm-style
+[class*="gm-"]
+    box-sizing: initial 
+    -webkit-box-sizing: initial 
+    -moz-box-sizing: initial 
+    *
+        box-sizing: initial
+    .gm-style-mtc div
+        font-size: 15px!important
 
 .map
-	height: 625px
-	width: 100%
-	+sm
-		height: 195px
-	&_md
-		height: 425px
-
+    height: 625px
+    width: 100%
+    +sm
+        height: 195px
+    &_md
+        height: 425px
 .awesome-infobox
-	box-shadow: 0 -2px 5.8px 0.2px rgba(0,0,0,.21)
+    box-shadow: 0 -2px 5.8px 0.2px rgba(0,0,0,.21)
 .baloon
-	padding: 25px
-	width: 571px
-	background-color: $white
-	border: 1px solid #f3eee8
-	box-shadow: 0 -2px 5.8px 0.2px rgba(0, 0, 0, 0.21)
-	// &__close
-	&__content
-		color: #65594d
-		font-family: $tahoma
-		font-size: 16px
-		font-weight: 400
-		line-height: 1.2
-	&__img
-		width: 100px
-		display: block
-		img
-			max-width: 100% !important
-			display: block
-	&__title
-		margin-top: 25px
-		color: #65594d
-		font-family: $cormorant_infant
-		font-size: 20px
-		font-weight: 700
-		line-height: 1.2
-	&__footer
-		margin-top: 15px
-	&__item
-		margin-top: 13px
-		&:not(:first-child)
-			margin-top: 15px
-		i, .fa, .fi
-			margin-right: 6px
-			font-size: 14px
-	&__row
-		margin: 0 -15px
-		+clr
-	&__col
-		float: left
-		width: 50%
-		padding: 0 15px
+    padding: 25px
+    width: 571px
+    background-color: $white
+    border: 1px solid #f3eee8
+    box-shadow: 0 -2px 5.8px 0.2px rgba(0, 0, 0, 0.21)
+    // &__close
+    &__content
+        color: #65594d
+        font-family: $tahoma
+        font-size: 16px
+        font-weight: 400
+        line-height: 1.2
+    &__img
+        width: 100px
+        display: block
+        img
+            max-width: 100% !important
+            display: block
+    &__title
+        margin-top: 25px
+        color: #65594d
+        font-family: $cormorant_infant
+        font-size: 20px
+        font-weight: 700
+        line-height: 1.2
+    &__footer
+        margin-top: 15px
+    &__item
+        margin-top: 13px
+        &:not(:first-child)
+            margin-top: 15px
+        i, .fa, .fi
+            margin-right: 6px
+            font-size: 14px
+    &__row
+        margin: 0 -15px
+        +clr
+    &__col
+        float: left
+        width: 50%
+        padding: 0 15px
