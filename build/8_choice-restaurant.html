@@ -36,22 +36,19 @@
           <div class="container">
             <div class="topbar__wrap">
               <ul class="topbar__list list-dropdown">
-                <li class="list-dropdown__item list-dropdown__item_mod"> <a href="#" class="list-dropdown__link">
-							<span class="list-dropdown__icon">
+                <li class="list-dropdown__item list-dropdown__item_mod">
+                  <div class="map-wrap__select"> <span class="list-dropdown__icon">
 								
 <svg class="icon icon-mark"><use xlink:href="img/sprite.svg#icon-mark"></use></svg>
 
 							</span>
-							Выберите район
-							<span class="fa fa-angle-down"></span>
-						</a>
-                  <ul class="list-dropdown__menu">
-                    <li><a href="#">Железнодорожный</a></li>
-                    <li><a href="#">Индустриальный</a></li>
-                    <li><a href="#">Кировский</a></li>
-                    <li><a href="#">Краснофлотский</a></li>
-                    <li><a href="#">Центральный</a></li>
-                  </ul>
+                    <div class="select"> <select name="region" id="heade-region" style="width: 100%" class="js-select" placeholder="Выберите район">
+									<option value="1">Выберите район</option>
+									<option value="2">Индустриальный</option>
+									<option value="3">Кировский</option>
+									<option value="4">Краснофлотский</option>
+								</select> </div>
+                  </div>
                 </li>
                 <li class="list-dropdown__item"> <a href="#" class="list-dropdown__link">
 							<span class="list-dropdown__icon">
@@ -1021,9 +1018,8 @@
                         <div class="agent__row">
                           <div class="agent__col">
                             <div class="contacts-item"><i class="fi flaticon-people">
-		                                    	
-		                                    </i>Агентство/Агент: <span>название</span> </div>
-                            <div class="contacts-item"> <i class="fi flaticon-technology"></i>Контактный телефон: <span>8 (800) 123 45 67</span> </div>
+		                                    </i>Агентство/Агент: <span>Название</span> </div>
+                            <div class="contacts-item"> <i class="fi flaticon-technology"></i> Контактный телефон: <span>8 (800) 123 45 67</span> </div>
                           </div>
                         </div>
                       </div>
@@ -1038,9 +1034,9 @@
                       <div class="agent__col-md">
                         <div class="agent__row">
                           <div class="agent__col">
-                            <div class="contacts-item"> <i class="fa fa-map-marker"></i>Адрес: <span>Адрес зала для прощание</span> </div>
+                            <div class="contacts-item"> <i class="fa fa-map-marker"></i> Адрес: <span>Адрес зала для прощание</span> </div>
                             <div class="contacts-item"> <i class="fa fa-calendar"></i> Дата: <span>Вт. 04-12-16</span> </div>
-                            <div class="contacts-item"> <i class="fi flaticon-clock"></i>Время проведения: <span>12:00</span> </div>
+                            <div class="contacts-item"> <i class="fi flaticon-clock"></i> Время проведения: <span>12:00</span> </div>
                           </div>
                         </div>
                       </div>
@@ -1072,7 +1068,7 @@
                       <div class="agent__col-md">
                         <div class="agent__row">
                           <div class="agent__col">
-                            <div class="contacts-item"> <i class="fa fa-map-marker"></i>Адрес: <span>Адрес зала для прощание</span> </div>
+                            <div class="contacts-item"> <i class="fa fa-map-marker"></i>Адрес: <span>Адрес церкви для отпевания</span> </div>
                             <div class="contacts-item"> <i class="fa fa-calendar"></i> Дата: <span>Вт. 04-12-2016</span> </div>
                             <div class="contacts-item"> <i class="fi flaticon-clock"></i>Время проведения: <span>12:00</span> </div>
                           </div>
@@ -1089,13 +1085,17 @@
                       <div class="agent__col-md">
                         <div class="agent__row">
                           <div class="agent__col">
-                            <div class="contacts-item"> <i class="fa fa-map-marker"></i> Адрес: <span>Адрес Кладбища</span> </div>
+                            <div class="contacts-item"> <i class="fa fa-map-marker"></i> Адрес: <span>Адрес ресторана</span> </div>
                             <div class="contacts-item"> <i class="fa fa-calendar"></i> Дата:
                               <div class="input-group date js-datepicker"> <input type="text" class="form-control">
                                 <div class="input-group-addon"> <i class="fa fa-calendar"></i> </div>
                               </div>
                             </div>
-                            <div class="contacts-item"> <i class="fi flaticon-clock"></i> Время проведения: <span>12:00</span> </div>
+                            <div class="contacts-item"> <i class="fi flaticon-clock"></i> Время проведения: <input class="contacts-item__input" id="time2" type="text" placeholder="12:00" name="time2"> <label class="contacts-item__label" for="time2">
+													
+<svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
+
+												</label> </div>
                           </div>
                           <div class="agent__col text-center">
                             <h4 class="agent__col-title title-sm">Название ресторана</h4> <a href="#" class="btn">Выбрать ресторана</a> </div>
@@ -1192,7 +1192,7 @@
                       <li class="choice-price__item"> <span class="choice-price__lef-col">Услуга 9</span> <span class="choice-price__right-col">1 000</span> </li>
                       <li class="choice-price__item"> <span class="choice-price__lef-col">Еще одна услуга</span> <span class="choice-price__right-col">300</span> </li>
                     </ul>
-                    <div class="visitors"> <button class="visitors__print-btn" type="button">
+                    <div class="visitors"> <button class="visitors__print-btn" type="button" onclick='print();'>
 							        <span>
 <svg class="icon icon-printer"><use xlink:href="img/sprite.svg#icon-printer"></use></svg>
 </span>

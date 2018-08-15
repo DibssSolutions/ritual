@@ -725,12 +725,12 @@
 		                            <div class="agent__row">
 		                                <div class="agent__col">
 		                                    <div class="contacts-item"><i class="fi flaticon-people">
-		                                    	
 		                                    </i>Агентство/Агент: 
-		                                    <span>название</span>
+		                                    <span>Название</span>
 		                                	</div>
 		                                    <div class="contacts-item">
-		                                    	<i class="fi flaticon-technology"></i>Контактный телефон: 
+		                                    	<i class="fi flaticon-technology"></i>
+		                                    	Контактный телефон: 
 		                                    	<span>8 (800) 123 45 67</span>
 		                                    </div>
 		                                </div>
@@ -749,7 +749,8 @@
 		                            <div class="agent__row">
 		                                <div class="agent__col">
 		                                    <div class="contacts-item">
-		                                    	<i class="fa fa-map-marker"></i>Адрес:   
+		                                    	<i class="fa fa-map-marker"></i>
+		                                    	Адрес:   
 		                                    	<span>Адрес зала для прощание</span>
 		                                    </div>
 		                                    <div class="contacts-item">
@@ -758,7 +759,8 @@
 		                                    	<span>Вт. 04-12-16</span>
 		                                    </div>
 		                                    <div class="contacts-item">
-		                                    	<i class="fi flaticon-clock"></i>Время проведения:  
+		                                    	<i class="fi flaticon-clock"></i>
+		                                    	Время проведения:  
 		                                    	<span>12:00</span>
 		                                    </div>
 		                                </div>
@@ -808,7 +810,7 @@
 		                                <div class="agent__col">
 		                                    <div class="contacts-item">
 		                                    	<i class="fa fa-map-marker"></i>Адрес:   
-		                                    	<span>Адрес зала для прощание</span>
+		                                    	<span>Адрес церкви для отпевания</span>
 		                                    </div>
 		                                    <div class="contacts-item">
 		                                    	<i class="fa fa-calendar"></i>
@@ -837,7 +839,7 @@
 		                                    <div class="contacts-item">
 		                                    	<i class="fa fa-map-marker"></i>
 		                                    	Адрес:  
-		                                    	<span>Адрес Кладбища</span>
+		                                    	<span>Адрес ресторана</span>
 		                                    </div>
 		                                    <div class="contacts-item">
 		                                    	<i class="fa fa-calendar"></i>
@@ -852,7 +854,10 @@
 		                                    <div class="contacts-item">
 		                                    	<i class="fi flaticon-clock"></i>
 		                                    	Время проведения: 
-		                                    	<span>12:00</span> 
+		                                    	<input class="contacts-item__input" id="time2" type="text" placeholder="12:00" name="time2">
+												<label class="contacts-item__label" for="time2">
+													{{ mixins.icon('pen') }}
+												</label> 
 		                                    </div>
 		                                </div>
 		                                <div class="agent__col text-center">
@@ -962,7 +967,7 @@
 								</li>
 							</ul>
 							<div class="visitors">
-							    <button class="visitors__print-btn" type="button">
+							    <button class="visitors__print-btn" type="button" onclick='print();'>
 							        <span>{{ mixins.icon('printer') }}</span>
 							        Распечатать
 							    </button>

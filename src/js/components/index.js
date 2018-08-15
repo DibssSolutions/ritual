@@ -6,7 +6,6 @@ import './_init-fancybox';
 import './_init_date-picker';
 import './_init-slider';
 import './_init-perfect-scrollbar';
-import './_file_upload';
 import './_drop';
 import './_drop';
 import './_sidebar';
