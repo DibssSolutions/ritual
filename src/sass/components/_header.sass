@@ -218,13 +218,44 @@
 	&__item
 		position: relative
 		border-bottom: 1px solid transparent
-		padding-bottom: 10px			
 		&:hover	
 			.list-dropdown__link				
 				border-bottom: 1px solid $brown
 			.list-dropdown__menu
 				opacity: 1
 				z-index: 100
+		.map-wrap__select
+			position: relative
+			display: flex
+			align-items: center
+			margin-bottom: 0
+			.list-dropdown__icon
+				position: absolute
+				display: block
+				left: 17px
+				top: 46%
+				transform: translate(-50%,-50%)
+				z-index: 10
+				.select2-results__option
+					white-space: nowrap
+					
+			.select2-container--open .select2-dropdown
+				margin-top: 4px
+			.select .select2-selection--single .select2-selection__rendered
+				// padding-left: 0
+			.select .select2-selection--single
+				background-color: #e3dccf
+			.select2-container .select2-selection--single .select2-selection__rendered
+				padding-right: 45px
+			.select2-container--default .select2-results>.select2-results__options
+				padding: 20px 20px 27px 27px !important
+				font-size: 14px
+			.select2-container--default .select2-results__option[aria-selected=true]				
+			.select2-container--default .select2-selection--single .select2-selection__arrow
+				right: 15px
+			.select2-container--classic .select2-selection--single .select2-selection__arrow b,
+			.select2-container--default .select2-selection--single .select2-selection__arrow b	
+		
 	&__icon
 		font-size: 16px
 		margin-right: 10px

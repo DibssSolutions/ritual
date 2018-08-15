@@ -36,22 +36,19 @@
           <div class="container">
             <div class="topbar__wrap">
               <ul class="topbar__list list-dropdown">
-                <li class="list-dropdown__item list-dropdown__item_mod"> <a href="#" class="list-dropdown__link">
-							<span class="list-dropdown__icon">
+                <li class="list-dropdown__item list-dropdown__item_mod">
+                  <div class="map-wrap__select"> <span class="list-dropdown__icon">
 								
 <svg class="icon icon-mark"><use xlink:href="img/sprite.svg#icon-mark"></use></svg>
 
 							</span>
-							Выберите район
-							<span class="fa fa-angle-down"></span>
-						</a>
-                  <ul class="list-dropdown__menu">
-                    <li><a href="#">Железнодорожный</a></li>
-                    <li><a href="#">Индустриальный</a></li>
-                    <li><a href="#">Кировский</a></li>
-                    <li><a href="#">Краснофлотский</a></li>
-                    <li><a href="#">Центральный</a></li>
-                  </ul>
+                    <div class="select"> <select name="region" id="heade-region" style="width: 100%" class="js-select" placeholder="Выберите район">
+									<option value="1">Выберите район</option>
+									<option value="2">Индустриальный</option>
+									<option value="3">Кировский</option>
+									<option value="4">Краснофлотский</option>
+								</select> </div>
+                  </div>
                 </li>
                 <li class="list-dropdown__item"> <a href="#" class="list-dropdown__link">
 							<span class="list-dropdown__icon">
@@ -223,12 +220,12 @@
               </div>
               <div class="map-wrap__select mob-hide">
                 <div class="select"> <select name="region" id="region" style="width: 100%" class="js-select">
-                            <option value="1">Выберите район</option>
-                            <option value="2">Индустриальный</option>
-                            <option value="3">Кировский</option>
-                            <option value="4">Краснофлотский</option>
-                            <option value="5">Центральный</option>
-                        </select> </div>
+							<option value="1">Выберите район</option>
+							<option value="2">Индустриальный</option>
+							<option value="3">Кировский</option>
+							<option value="4">Краснофлотский</option>
+							<option value="5">Центральный</option>
+						</select> </div>
               </div>
               <div class="js-map map" id="mapInfobox" data-center-lat="-34.097" data-center-lng="150.644"></div>
               <script type="text/template" class="js-mapInfobox">
@@ -614,7 +611,7 @@
                               <div class="about-agency__head">
                                 <div class="about-agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
                                 <div class="about-agency__rating"> <span class="ratings">
-						                                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span>                                  <span class="ratings__appraisal">5.0</span> </span>
+															<span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                                  </span>
                                 </div>
                               </div>
                               <div class="about-agency__contact">
@@ -679,23 +676,23 @@
                       <!-- end wind-head -->
                       <div class="full-slider js-full-slider">
                         <div class="full-slider__slide"> <a href="./img/full-slider-img.jpg" data-fancybox="gallery" class="full-img">
-					    					
+											
 <svg class="icon icon-full"><use xlink:href="img/sprite.svg#icon-full"></use></svg>
 
-					    					<img src="./img/choice-slide.png" alt="img">
-					    				</a> </div>
+											<img src="./img/choice-slide.png" alt="img">
+										</a> </div>
                         <div class="full-slider__slide"> <a href="./img/choice-slide.png" data-fancybox="gallery" class="full-img">
-					    					
+											
 <svg class="icon icon-full"><use xlink:href="img/sprite.svg#icon-full"></use></svg>
 
-					    					<img src="./img/choice-slide.png" alt="img">
-					    				</a> </div>
+											<img src="./img/choice-slide.png" alt="img">
+										</a> </div>
                         <div class="full-slider__slide"> <a href="./img/choice-slide.png" data-fancybox="gallery" class="full-img">
-					    					
+											
 <svg class="icon icon-full"><use xlink:href="img/sprite.svg#icon-full"></use></svg>
 
-					    					<img src="./img/choice-slide.png" alt="img">
-					    				</a> </div>
+											<img src="./img/choice-slide.png" alt="img">
+										</a> </div>
                       </div>
                       <div class="wind__bg" style="background-image: url(./img/choice-cementery.png);"></div>
                     </div>
@@ -729,10 +726,10 @@
                             <div class="shop-sort-wrap">
                               <div class="ps-options pull-left"> <span>Показывать по:</span>
                                 <div class="ps-select"> <i class="fa fa-caret-down"></i> <select>
-			    											<option>4</option>
-			    											<option>5</option>
-			    											<option selected>6</option>
-			    										</select> </div>
+															<option>4</option>
+															<option>5</option>
+															<option selected>6</option>
+														</select> </div>
                               </div>
                               <div class="shop-sort"> <a href="#" class="active"><i class="flaticon-squares"></i></a> <a href="#"><i class="flaticon-signs-1"></i></a> </div>
                             </div>
@@ -758,12 +755,12 @@
                                 </div>
                                 <div class="companies-item__descr">
                                   <div class="product-reviews"> <span class="pr-ratings">
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    											</span>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+															</span>
                                     <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span> <span>(1)</span> </div>
@@ -790,12 +787,12 @@
                                 </div>
                                 <div class="companies-item__descr">
                                   <div class="product-reviews"> <span class="pr-ratings">
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    											</span>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+															</span>
                                     <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span> <span>(1)</span> </div>
@@ -822,12 +819,12 @@
                                 </div>
                                 <div class="companies-item__descr">
                                   <div class="product-reviews"> <span class="pr-ratings">
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    											</span>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+															</span>
                                     <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span> <span>(1)</span> </div>
@@ -854,12 +851,12 @@
                                 </div>
                                 <div class="companies-item__descr">
                                   <div class="product-reviews"> <span class="pr-ratings">
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    											</span>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+															</span>
                                     <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span> <span>(1)</span> </div>
@@ -886,12 +883,12 @@
                                 </div>
                                 <div class="companies-item__descr">
                                   <div class="product-reviews"> <span class="pr-ratings">
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    											</span>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+															</span>
                                     <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span> <span>(1)</span> </div>
@@ -918,12 +915,12 @@
                                 </div>
                                 <div class="companies-item__descr">
                                   <div class="product-reviews"> <span class="pr-ratings">
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    											</span>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+															</span>
                                     <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span> <span>(1)</span> </div>
@@ -955,10 +952,10 @@
                             <div class="shop-sort-wrap">
                               <div class="ps-options pull-left"> <span>Показывать по:</span>
                                 <div class="ps-select"> <i class="fa fa-caret-down"></i> <select>
-			    											<option>4</option>
-			    											<option>5</option>
-			    											<option selected>6</option>
-			    										</select> </div>
+															<option>4</option>
+															<option>5</option>
+															<option selected>6</option>
+														</select> </div>
                               </div>
                               <div class="shop-sort"> <a href="#" class="active"><i class="flaticon-squares"></i></a> <a href="#"><i class="flaticon-signs-1"></i></a> </div>
                             </div>
@@ -983,17 +980,17 @@
                               <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
                               <div class="companies-item__descr">
                                 <div class="product-reviews"> <span class="pr-ratings">
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                            </span>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+														</span>
                                   <div class="product-reviews__details mob-hide"> <span>5.0</span>
                                     <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span>
-			                                                <span>(1)</span> --></div>
+															<span>(1)</span> --></div>
                                 </div>
                               </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
                           </div>
@@ -1014,17 +1011,17 @@
                               <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
                               <div class="companies-item__descr">
                                 <div class="product-reviews"> <span class="pr-ratings">
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                            </span>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+														</span>
                                   <div class="product-reviews__details mob-hide"> <span>5.0</span>
                                     <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span>
-			                                                <span>(1)</span> --></div>
+															<span>(1)</span> --></div>
                                 </div>
                               </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
                           </div>
@@ -1045,17 +1042,17 @@
                               <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
                               <div class="companies-item__descr">
                                 <div class="product-reviews"> <span class="pr-ratings">
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                            </span>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+														</span>
                                   <div class="product-reviews__details mob-hide"> <span>5.0</span>
                                     <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span>
-			                                                <span>(1)</span> --></div>
+															<span>(1)</span> --></div>
                                 </div>
                               </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
                           </div>
@@ -1076,17 +1073,17 @@
                               <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
                               <div class="companies-item__descr">
                                 <div class="product-reviews"> <span class="pr-ratings">
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                            </span>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+														</span>
                                   <div class="product-reviews__details mob-hide"> <span>5.0</span>
                                     <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span>
-			                                                <span>(1)</span> --></div>
+															<span>(1)</span> --></div>
                                 </div>
                               </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
                           </div>
@@ -1135,7 +1132,7 @@
                         <div class="agency__table-cell">
                           <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
                           <div class="agency__stars"> <span class="ratings">
-                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                            <span class="ratings__appraisal">4.0</span> </span>
+										<span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span> <span class="ratings__appraisal">4.0</span>                            </span>
                           </div>
                         </div>
                         <div class="agency__table-cell">
@@ -1304,8 +1301,7 @@
                         <div class="agent__row">
                           <div class="agent__col">
                             <div class="contacts-item"><i class="fi flaticon-people">
-		                                    	
-		                                    </i>Агентство/Агент: <span>название</span> </div>
+											</i>Агентство/Агент: <span>название</span> </div>
                             <div class="contacts-item"> <i class="fi flaticon-technology"></i>Контактный телефон: <span>8 (800) 123 45 67</span> </div>
                           </div>
                         </div>
@@ -1327,7 +1323,11 @@
                                 <div class="input-group-addon"> <i class="fa fa-calendar"></i> </div>
                               </div>
                             </div>
-                            <div class="contacts-item"> <i class="fi flaticon-clock"></i>Время проведения: <span>12:00</span> </div>
+                            <div class="contacts-item"> <i class="fi flaticon-clock"></i>Время проведения: <input class="contacts-item__input" id="time3" type="text" placeholder="12:00" name="time3"> <label class="contacts-item__label" for="time3">
+													
+<svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
+
+												</label> </div>
                           </div>
                           <div class="agent__col text-center">
                             <h4 class="agent__col-title title-sm">Выбор зала</h4> <a href="#" class="btn">Выбрать зала для прощания</a> </div>
@@ -1424,12 +1424,12 @@
                       <li class="choice-price__item"> <span class="choice-price__lef-col">Услуга 9</span> <span class="choice-price__right-col">1 000</span> </li>
                       <li class="choice-price__item"> <span class="choice-price__lef-col">Еще одна услуга</span> <span class="choice-price__right-col">300</span> </li>
                     </ul>
-                    <div class="visitors"> <button class="visitors__print-btn" type="button">
-							        <span>
+                    <div class="visitors"> <button class="visitors__print-btn" type="button" onclick='print();'>
+									<span>
 <svg class="icon icon-printer"><use xlink:href="img/sprite.svg#icon-printer"></use></svg>
 </span>
-							        Распечатать
-							    </button> </div>
+									Распечатать
+								</button> </div>
                   </div>
                 </div>
               </div>
@@ -1449,7 +1449,7 @@
                       <div class="agency__table-cell">
                         <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
                         <div class="agency__stars"> <span class="ratings">
-						                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                          </span>
+											<span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                          </span>
                         </div>
                       </div>
                       <div class="agency__table-cell agency__table-cell_lg">
@@ -1477,7 +1477,7 @@
                       <div class="agency__table-cell">
                         <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
                         <div class="agency__stars"> <span class="ratings">
-						                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                          </span>
+											<span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                          </span>
                         </div>
                       </div>
                       <div class="agency__table-cell agency__table-cell_lg">
@@ -1505,7 +1505,7 @@
                       <div class="agency__table-cell">
                         <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
                         <div class="agency__stars"> <span class="ratings">
-						                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                          </span>
+											<span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                          </span>
                         </div>
                       </div>
                       <div class="agency__table-cell agency__table-cell_lg">
