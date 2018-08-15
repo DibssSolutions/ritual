@@ -109,13 +109,13 @@
         display: flex
         align-items: center
         margin-bottom: 0
-        span
+        &>span
             width: auto
             margin-right: 22px
             font-size: 13px
             color: $brown_orange
     .ps-select
-        background-color: #fff
+        background: none
         width: 90px
         height: 31px
         select
@@ -126,8 +126,41 @@
             height: 31px
         i
             line-height: 31px
+            display: none
     .shop-sort
         font-family: Flaticon
+    .select--small
+        visibility: visible
+        opacity: 1
+        background-color: #fff
+        width: 90px
+        height: 31px
+        border-radius: 5px
+        .selection
+            width: 100%
+        .select2-selection
+            border: none
+            width: 100%
+            height: 100%
+        .select2-selection__rendered
+            line-height: 31px
+            color: $brown_orange
+            padding-right: 8px
+            width: 100%
+            text-align: center
+        
+
+.select--small
+    &__drop
+        .select2-results__options
+            padding: 0 0 5px
+            text-align: center
+        .select2-results__option
+            border-radius: 5px
+            &:hover
+                background-color: #6a6455
+                color: #fff
+
 .companies-group
     +md
         .col-xs-6:nth-child(even)
