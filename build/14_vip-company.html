@@ -34,20 +34,47 @@
       <div class="header-wrap js-header-wrap">
         <div class="topbar topbar3">
           <div class="container">
-            <div class="lang-select pull-right"> <i class="fa fa-angle-down"></i> <select>
-                    <option value="">EN</option>
-                    <option value="">PO</option>
-                    <option value="">FR</option>
-                </select> </div>
+            <div class="topbar__wrap">
+              <ul class="topbar__list list-dropdown">
+                <li class="list-dropdown__item list-dropdown__item_mod">
+                  <div class="map-wrap__select"> <span class="list-dropdown__icon">
+								
+<svg class="icon icon-mark"><use xlink:href="img/sprite.svg#icon-mark"></use></svg>
+
+							</span>
+                    <div class="select"> <select name="region" id="heade-region" style="width: 100%" class="js-select" placeholder="Выберите район">
+									<option value="1">Выберите район</option>
+									<option value="2">Индустриальный</option>
+									<option value="3">Кировский</option>
+									<option value="4">Краснофлотский</option>
+								</select> </div>
+                  </div>
+                </li>
+                <li class="list-dropdown__item"> <a href="#" class="list-dropdown__link">
+							<span class="list-dropdown__icon">
+								
+<svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg>
+
+							</span>
+							Войти
+						</a> </li>
+                <li class="list-dropdown__item"> <span class="vertical-slash">|</span> </li>
+                <li class="list-dropdown__item"> <a href="#" class="list-dropdown__link">
+							 Зарегистрироваться
+						</a> </li>
+              </ul>
+            </div>
           </div>
         </div>
         <header class="header4 header5 header-bg">
           <div class="container">
             <div class="row">
-              <div class="col-md-3 col-sm-3 col-xs-8"> <a href="./index.html" class="navbar-brand"><img src="img/logo.png" class="img-responsive" alt=""></a> </div>
+              <div class="col-md-3 col-sm-3 col-xs-8"> <a href="./index.html" class="navbar-brand">
+						<img src="img/logo.png" class="img-responsive" alt="logo">
+					</a> </div>
               <div class="col-md-9 col-sm-9 col-xs-4">
                 <div class="header-top">
-                  <div class="cart-header2 hidden-xs cart-show pull-right"> <i class="fi flaticon-web"></i> <span>My Cart (0)</span>
+                  <div class="cart-header2 hidden-xs cart-show pull-right"> <i class="fi flaticon-web"></i> <span>My Cart (3)</span>
                     <div class="cart-table">
                       <h3>My Cart (3 items)</h3>
                       <div class="margin-bottom-20"></div>
@@ -75,28 +102,37 @@
                 </div>
                 <div class="clearfix"></div>
                 <nav class="navbar navbar-default"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	                        <span>
-						        <em></em>
-						        <em></em>
-						        <em></em>
-						    </span>
-	                    </button>
+							<span>
+								<em></em>
+								<em></em>
+								<em></em>
+							</span>
+						</button>
                   <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                       <li><a href="./index.html">Главная</a></li>
-                      <li class="dropdown dropdown-normal"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Если случилось горе <span class="fa fa-angle-down"></span></a>
+                      <li class="dropdown dropdown_mod"> <a href="#" class="dropdown-toggle">Если случилось горе <span class="fa fa-angle-down"></span></a>
                         <ul class="dropdown-menu dropdown-menu-v3">
-                          <li><a href="./blog.html">Blog</a></li>
-                          <li><a href="./blog-single.html">Blog Single</a></li>
+                          <li><a href="#">Блог</a></li>
+                          <li><a href="#">Блог 1</a></li>
+                          <li><a href="#">Блог 2</a></li>
                         </ul>
                       </li>
                       <li><a href="#">После похорон</a></li>
-                      <li class="dropdown dropdown-normal active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Страницы памяти<span class="fa fa-angle-down"></span></a>
+                      <li class="dropdown dropdown_mod"> <a href="#" class="dropdown-toggle">
+										Страницы памяти
+										<span class="fa fa-angle-down"></span>
+									</a>
                         <ul class="dropdown-menu dropdown-menu-v3">
-                          <li><a href="./contact-v1.html">Contact</a></li>
-                          <li><a href="./contact-v2.html">Contact V2</a></li>
-                          <li><a href="./locations.html">Locations</a></li>
-                          <li><a href="./location-single.html">Location - Single</a></li>
+                          <li> <a href="#">
+												Каталог А-Я
+											</a> </li>
+                          <li> <a href="#">
+												Календарь похорон
+											</a> </li>
+                          <li> <a href="./locations.html">
+												Все никрологи
+											</a> </li>
                         </ul>
                       </li>
                     </ul>
@@ -161,13 +197,6 @@
     						<span class="menu__link-text">О компании</span>
     						<span class="fi flaticon-arrows-1"></span>
     					</a> </li>
-                          <li class="menu__item"> <a href="#on-map" class="menu__link js-menu-link">
-    						
-<svg class="icon icon-mark"><use xlink:href="img/sprite.svg#icon-mark"></use></svg>
-
-    						<span class="menu__link-text">На карте</span>
-    						<span class="fi flaticon-arrows-1"></span>
-    					</a> </li>
                           <li class="menu__item"> <a href="#our-contacts" class="menu__link js-menu-link">
     						
 <svg class="icon icon-mark"><use xlink:href="img/sprite.svg#icon-mark"></use></svg>
@@ -182,6 +211,11 @@
     						<span class="menu__link-text">Фотоальбом</span>
     						<span class="fi flaticon-arrows-1"></span>
     					</a> </li>
+                          <li class="menu__item"> <a href="#advantages" class="menu__link js-menu-link">
+    						
+    						<span class="menu__link-text">Наши преимущества</span>
+    						<span class="fi flaticon-arrows-1"></span>
+    					</a> </li>
                           <li class="menu__item"> <a href="#review-customer" class="menu__link js-menu-link">
     						
 <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
@@ -189,14 +223,14 @@
     						<span class="menu__link-text">Отзывы заказчиков</span>
     						<span class="fi flaticon-arrows-1"></span>
     					</a> </li>
-                          <li class="menu__item"> <a href="#reviews-block" class="menu__link js-menu-link">
+                          <li class="menu__item"> <a href="#feedback" class="menu__link js-menu-link">
     						
 <svg class="icon icon-feedback"><use xlink:href="img/sprite.svg#icon-feedback"></use></svg>
 
     						<span class="menu__link-text">Обратная связь</span>
     						<span class="fi flaticon-arrows-1"></span>
     					</a> </li>
-                          <li class="menu__item"> <a href="#feedback" class="menu__link js-menu-link">
+                          <li class="menu__item"> <a href="#all-services" class="menu__link js-menu-link">
     						
 <svg class="icon icon-products"><use xlink:href="img/sprite.svg#icon-products"></use></svg>
 
@@ -208,6 +242,11 @@
 <svg class="icon icon-sales"><use xlink:href="img/sprite.svg#icon-sales"></use></svg>
 
     						<span class="menu__link-text">Акции и спецпредложения</span>
+    						<span class="fi flaticon-arrows-1"></span>
+    					</a> </li>
+                          <li class="menu__item"> <a href="#schedule" class="menu__link js-menu-link">
+    						
+    						<span class="menu__link-text">Рейтинги</span>
     						<span class="fi flaticon-arrows-1"></span>
     					</a> </li>
                           <li class="menu__item"> <a href="#license" class="menu__link js-menu-link">
@@ -231,11 +270,6 @@
     						<span class="menu__link-text">Доставка и оплата</span>
     						<span class="fi flaticon-arrows-1"></span>
     					</a> </li>
-                          <li class="menu__item"> <a href="#advantages" class="menu__link js-menu-link">
-    						
-    						<span class="menu__link-text">Наши преимущества</span>
-    						<span class="fi flaticon-arrows-1"></span>
-    					</a> </li>
                           <li class="menu__item"> <a href="#team" class="menu__link js-menu-link">
     						
     						<span class="menu__link-text">Наша команда</span>
@@ -251,22 +285,40 @@
                   <div class="about-company js-navigation-section" id="about-company">
                     <div class="company-name" style="background-image: url(./img/company-name-bg.jpg)">
                       <div class="company-name__head section-head">
-                        <h3 class="company-name__title title-l">Название компании</h3>
+                        <h1 class="company-name__title title-l">Название компании</h1>
                         <p>Салон художественной ковки</p>
                       </div>
                     </div>
                     <div class="main-services">
                       <div class="main-services__title title-sm">Основные услуги:</div>
                       <div class="main-services__body">
-                        <div class="main-services__item">Ритуальный салон</div>
-                        <div class="main-services__item">Художественная ковка</div>
-                        <div class="main-services__item">Услуга 3</div>
-                        <div class="main-services__item">Памятники</div>
-                        <div class="main-services__item">Кованая мебель</div>
-                        <div class="main-services__item">Кованая мебель</div>
-                        <div class="main-services__item">Оградка</div>
-                        <div class="main-services__item">Художественная ковка</div>
-                        <div class="main-services__item">Оградка</div>
+                        <a href="#">
+                          <div class="main-services__item">Ритуальный салон</div>
+                        </a>
+                        <a href="#">
+                          <div class="main-services__item">Художественная ковка</div>
+                        </a>
+                        <a href="#">
+                          <div class="main-services__item">Услуга 3</div>
+                        </a>
+                        <a href="#">
+                          <div class="main-services__item">Памятники</div>
+                        </a>
+                        <a href="#">
+                          <div class="main-services__item">Кованая мебель</div>
+                        </a>
+                        <a href="#">
+                          <div class="main-services__item">Кованая мебель</div>
+                        </a>
+                        <a href="#">
+                          <div class="main-services__item">Оградка</div>
+                        </a>
+                        <a href="#">
+                          <div class="main-services__item">Художественная ковка</div>
+                        </a>
+                        <a href="#">
+                          <div class="main-services__item">Оградка</div>
+                        </a>
                       </div>
                     </div>
                     <div class="row about-company__row">
@@ -499,7 +551,7 @@
                       <div class="our-contacts__loc mob-hide">
                         <div class="our-contacts__loc-item"> <span class="fa fa-map-marker"></span>
                           <h4>ост. “Краеведческий музей”</h4>
-                          <p class="abbr"> <i class="fa fa-bus"></i> Троллейбус № 1,3 </p>
+                          <p class="abbr"> <i class="fa fa-bus"></i>Троллейбус № 1,3 </p>
                         </div>
                         <div class="our-contacts__loc-item"> <span class="fa fa-map-marker"></span>
                           <h4>ост. “Комсомольская площадь”</h4>
@@ -555,7 +607,7 @@
                       <!-- begin wind-head -->
                       <div class="wind-head">
                         <div class="wind-head__title">Название компании</div>
-                        <div class="wind-head__name">Ритуальный агент</div>
+                        <div class="wind-head__name">Салон художественной ковки</div>
                       </div>
                       <!-- end wind-head -->
                       <div class="full-slider js-full-slider">
@@ -582,961 +634,6 @@
                     </div>
                   </div>
                   <!-- end photoalbum -->
-                  <!-- Start review-customer -->
-                  <div id="review-customer" class="review-customer js-navigation-section">
-                    <div class="wind">
-                      <!-- begin wind-head -->
-                      <div class="wind-head">
-                        <div class="wind-head__title">Название компании</div>
-                        <div class="wind-head__name">Салон художественной ковки</div>
-                      </div>
-                      <!-- end wind-head -->
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="tab-content">
-                            <div id="menu2" class="tab-pane facilities fade in active">
-                              <div class="team-info">
-                                <div class="social pull-right"> <a class="social__link" href="#">
-									<i class="fa fab fa-facebook-f social__icon"></i>
-								</a> <a class="social__link" href="#">
-									<i class="fa fab fa-odnoklassniki social__icon"></i>
-								</a> <a class="social__link" href="#">
-									<i class="fi flaticon-social-1 social__icon"></i>
-								</a> <a class="social__link" href="#">
-									<i class="fa fab fa-vk social__icon"></i>
-								</a> </div>
-                                <div class="col-md-3 col-sm-3 col-xs-12">
-                                  <div class="posts-image posts-image_full-md posts-image_full-rad" style="background-image: url(img/user.png);"> </div>
-                                </div>
-                                <div class="col-md-9 col-sm-9 col-xs-12">
-                                  <div class="staff">
-                                    <div class="staff__title-block"> <span class="staff__title">Имя Фамилия</span> <span class="staff__description">Funeral Director/Embalmer</span> </div>
-                                    <p> I like to call Funeral Home my home. It was in Sun Prairie, Wisconsin where I graduated from high school in 1969 and lettered in football at Sun prairie High school. </p>
-                                    <p> <i class="fi flaticon-black"></i> carla@funeral-home.com </p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="team-info">
-                                <div class="social pull-right"> <a class="social__link" href="#">
-									<i class="fa fab fa-facebook-f social__icon"></i>
-								</a> <a class="social__link" href="#">
-									<i class="fa fab fa-odnoklassniki social__icon"></i>
-								</a> <a class="social__link" href="#">
-									<i class="fi flaticon-social-1 social__icon"></i>
-								</a> <a class="social__link" href="#">
-									<i class="fa fab fa-vk social__icon"></i>
-								</a> </div>
-                                <div class="col-md-3 col-sm-3 col-xs-12">
-                                  <div class="posts-image posts-image_full-md posts-image_full-rad" style="background-image: url(img/user1.png);"> </div>
-                                </div>
-                                <div class="col-md-9 col-sm-9 col-xs-12">
-                                  <div class="staff">
-                                    <div class="staff__title-block"> <span class="staff__title">Имя Фамилия</span> <span class="staff__description">Funeral Director/Embalmer</span> </div>
-                                    <p> Thank you for visiting Funeral Home. As a member of the family and leadership team, I want to make myself available to visit with you at your convenience for any need you may have. </p>
-                                    <p> <i class="fi flaticon-black"></i> jody@funeral-home.com </p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="team-info">
-                                <div class="social pull-right"> <a class="social__link" href="#">
-									<i class="fa fab fa-facebook-f social__icon"></i>
-								</a> <a class="social__link" href="#">
-									<i class="fa fab fa-odnoklassniki social__icon"></i>
-								</a> <a class="social__link" href="#">
-									<i class="fi flaticon-social-1 social__icon"></i>
-								</a> <a class="social__link" href="#">
-									<i class="fa fab fa-vk social__icon"></i>
-								</a> </div>
-                                <div class="col-md-3 col-sm-3 col-xs-12">
-                                  <div class="posts-image posts-image_full-md posts-image_full-rad" style="background-image: url(img/user1.png);"> </div>
-                                </div>
-                                <div class="col-md-9 col-sm-9 col-xs-12">
-                                  <div class="staff">
-                                    <div class="staff__title-block"> <span class="staff__title">Имя Фамилия</span> <span class="staff__description">Funeral Director/Embalmer</span> </div>
-                                    <p> Lisa graduated from the University of Minnesota in 1996, with a B.S. in mortuary science. She previously was a licensed funeral director in California before she obtained her funeral directors license in Wisconsin in
-                                      2001. Lisa resides in Sun Prairie with her husband and two children. </p>
-                                    <p> <i class="fi flaticon-black"></i> lisa@funeral-home.com </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
-                    </div>
-                  </div>
-                  <!-- End review-customer -->
-                  <!-- Start reviews-block -->
-                  <div id="reviews-block" class="reviews-block js-navigation-section">
-                    <div class="wind">
-                      <!-- begin wind-head -->
-                      <div class="wind-head">
-                        <div class="wind-head__title">Название компании</div>
-                        <div class="wind-head__name">Салон художественной ковки</div>
-                      </div>
-                      <!-- end wind-head -->
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="team-info">
-                            <form class="post-form">
-                              <div class="post-form__row row">
-                                <div class="post-form__col col-md-7 col-xs-12"> <label for="">Введите свое имя, чтобы оно отображалось в сообщении</label> <input class="post-form__input" type="text" id="name"> </div>
-                                <div class="post-form__col col-md-7 col-xs-12"> <label for="email">Введите Ваш email</label> <input class="post-form__input" type="text" id="email"> </div>
-                                <div class="post-form__col col-md-7 col-xs-12"> <label for="position">Введите Вашу должность (при желании)</label> <input class="post-form__input" type="text" id="position"> </div>
-                                <div class="post-form__col col-md-12 col-xs-12"> <label for="message">Ваш отзыв</label> <textarea class="post-form__textarea" id="message"></textarea> </div>
-                              </div>
-                              <p class="text-left"> Ваш отзыв будет проверен модератором. После этого он появится на сайте. </p>
-                              <div class="post-form__btn"> <button type="submit" class="btn btn-md">Отправить</button> </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
-                    </div>
-                  </div>
-                  <!-- End reviews-block -->
-                  <!-- Start feedback -->
-                  <div id="feedback" class="feedback js-navigation-section">
-                    <div class="wind">
-                      <!-- begin wind-head -->
-                      <div class="wind-head">
-                        <div class="wind-head__title">Название компании</div>
-                        <div class="wind-head__name">Салон художественной ковки</div>
-                      </div>
-                      <!-- end wind-head -->
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="feedback__contact">
-                            <div class="feedback__contact-col">
-                              <p>Звоните нам по телефону: <br><i class="fa fas fa-phone"></i><span> 8 (111) 123 123</span></p>
-                            </div>
-                            <div class="feedback__contact-col"> <span>Или заполните форму ниже и мы свяжемся с Вами:</span> </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="feedback-form">
-                          <form class="post-form col-md-7"> <span class="post-form__icon">
-						
-<svg class="icon icon-flaticon"><use xlink:href="img/sprite.svg#icon-flaticon"></use></svg>
-
-					</span>
-                            <h5 class="post-form__title title-m">Оставить сообщение</h5>
-                            <div class="post-form__row row">
-                              <div class="post-form__col"> <input class="post-form__input" type="text" id="names"> <label class="post-form__label" for="names">Ваше имя</label> </div>
-                              <div class="post-form__col"> <input class="post-form__input" type="text" id="emails"> <label class="post-form__label" for="emails">Email</label> </div>
-                              <div class="post-form__col"> <input class="post-form__input" type="text" id="phones"> <label class="post-form__label" for="phones">Телефон</label> </div>
-                              <div class="post-form__col"> <textarea class="post-form__textarea" id="messages"></textarea> <label class="post-form__label" class="post-form__label" for="messages">Комментарий</label> </div>
-                            </div> <button type="submit" class="btn btn-md">Отправить</button> </form>
-                          <div class="col-md-5 hide-md md-hide">
-                            <div class="feedback-form__image"> <img src="img/feedback-img.png" alt="feedback-img"> </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
-                    </div>
-                  </div>
-                  <!-- End feedback -->
-                  <!-- Start all-services -->
-                  <div id="all-services" class="all-services js-navigation-section">
-                    <div class="row">
-                      <div class="wind">
-                        <!-- begin wind-head -->
-                        <div class="wind-head">
-                          <div class="wind-head__title">Название компании</div>
-                          <div class="wind-head__name">Салон художественной ковки</div>
-                        </div>
-                        <!-- end wind-head -->
-                        <div class="wind__row row">
-                          <div class="col-md-12">
-                            <div class="all-companies__tile">
-                              <div class="all-companies__top top-bar mob-hide">
-                                <div class="shop-sort-wrap">
-                                  <div class="ps-options pull-left"> <span>Показывать по:</span>
-                                    <div class="ps-select"> <i class="fa fa-caret-down"></i> <select>
-											<option>4</option>
-											<option>5</option>
-											<option selected>6</option>
-										</select> </div>
-                                  </div>
-                                  <div class="shop-sort"> <a href="#" class="active"><i class="flaticon-squares"></i></a> <a href="#"><i class="flaticon-signs-1"></i></a> </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row margin-bott">
-                          <div class="col-md-12">
-                            <div class="col-md-4 col-sm-6 col-xs-6">
-                              <a href="#" class="all-companies__item companies-item">
-                                <div class="companies-item__wrap">
-                                  <div class="sf-thumb">
-                                    <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
-                                  </div>
-                                  <div class="companies-item__text">
-                                    <h4 class="title-s_mod companies-item__name">Наименование товара</h4>
-                                    <div class="companies-item__type">
-                                      <div class="product-prices">
-                                        <div class="product-single-price">690 ₽ </div>
-                                        <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
-                                      </div>
-                                    </div>
-                                    <div class="companies-item__descr">
-                                      <div class="product-reviews"> <span class="pr-ratings">
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-											</span>
-                                        <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
-<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-6">
-                              <a href="#" class="all-companies__item companies-item">
-                                <div class="companies-item__wrap">
-                                  <div class="sf-thumb">
-                                    <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
-                                  </div>
-                                  <div class="companies-item__text">
-                                    <h4 class="title-s_mod companies-item__name">Наименование товара</h4>
-                                    <div class="companies-item__type">
-                                      <div class="product-prices">
-                                        <div class="product-single-price">690 ₽ </div>
-                                        <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
-                                      </div>
-                                    </div>
-                                    <div class="companies-item__descr">
-                                      <div class="product-reviews"> <span class="pr-ratings">
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-											</span>
-                                        <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
-<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-6">
-                              <a href="#" class="all-companies__item companies-item">
-                                <div class="companies-item__wrap">
-                                  <div class="sf-thumb">
-                                    <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
-                                  </div>
-                                  <div class="companies-item__text">
-                                    <h4 class="title-s_mod companies-item__name">Наименование товара</h4>
-                                    <div class="companies-item__type">
-                                      <div class="product-prices">
-                                        <div class="product-single-price">690 ₽ </div>
-                                        <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
-                                      </div>
-                                    </div>
-                                    <div class="companies-item__descr">
-                                      <div class="product-reviews"> <span class="pr-ratings">
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-											</span>
-                                        <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
-<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-6">
-                              <a href="#" class="all-companies__item companies-item">
-                                <div class="companies-item__wrap">
-                                  <div class="sf-thumb">
-                                    <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
-                                  </div>
-                                  <div class="companies-item__text">
-                                    <h4 class="title-s_mod companies-item__name">Наименование товара</h4>
-                                    <div class="companies-item__type">
-                                      <div class="product-prices">
-                                        <div class="product-single-price">690 ₽ </div>
-                                        <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
-                                      </div>
-                                    </div>
-                                    <div class="companies-item__descr">
-                                      <div class="product-reviews"> <span class="pr-ratings">
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-											</span>
-                                        <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
-<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-6">
-                              <a href="#" class="all-companies__item companies-item">
-                                <div class="companies-item__wrap">
-                                  <div class="sf-thumb">
-                                    <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
-                                  </div>
-                                  <div class="companies-item__text">
-                                    <h4 class="title-s_mod companies-item__name">Наименование товара</h4>
-                                    <div class="companies-item__type">
-                                      <div class="product-prices">
-                                        <div class="product-single-price">690 ₽ </div>
-                                        <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
-                                      </div>
-                                    </div>
-                                    <div class="companies-item__descr">
-                                      <div class="product-reviews"> <span class="pr-ratings">
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-											</span>
-                                        <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
-<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-6">
-                              <a href="#" class="all-companies__item companies-item">
-                                <div class="companies-item__wrap">
-                                  <div class="sf-thumb">
-                                    <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
-                                  </div>
-                                  <div class="companies-item__text">
-                                    <h4 class="title-s_mod companies-item__name">Наименование товара</h4>
-                                    <div class="companies-item__type">
-                                      <div class="product-prices">
-                                        <div class="product-single-price">690 ₽ </div>
-                                        <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
-                                      </div>
-                                    </div>
-                                    <div class="companies-item__descr">
-                                      <div class="product-reviews"> <span class="pr-ratings">
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-												<i class="flaticon-favorite"></i>
-											</span>
-                                        <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
-<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
-                                </div>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Start page-nav -->
-                        <nav class="navigation-page">
-                          <ul class="page-nav">
-                            <li><button class="page-nav__btn left-btn" type="button"><i class="fa fa-angle-left"></i> &nbsp;Предыдущая</button></li>
-                            <li class="page-nav__item active"><a class="page-nav__link" href="#">1</a></li>
-                            <li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
-                            <li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
-                            <li><button class="page-nav__btn right-btn" type="button">Следующая&nbsp; <i class="fa fa-angle-right"></i></button></li>
-                          </ul>
-                        </nav>
-                        <!-- End page-nav -->
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="all-companies__tile">
-                              <div class="all-companies__top top-bar mob-hide">
-                                <div class="shop-sort-wrap">
-                                  <div class="ps-options pull-left"> <span>Показывать по:</span>
-                                    <div class="ps-select"> <i class="fa fa-caret-down"></i> <select>
-											<option>4</option>
-											<option>5</option>
-											<option selected>6</option>
-										</select> </div>
-                                  </div>
-                                  <div class="shop-sort"> <a href="#" class="active"><i class="flaticon-squares"></i></a> <a href="#"><i class="flaticon-signs-1"></i></a> </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
-                            <a href="#" class="funeral__item companies-item companies-item_list">
-                              <div class="companies-item__wrap">
-                                <div class="sf-thumb" style="background-image: url(./img/wreath-2.png)"> </div>
-                                <div class="companies-item__text">
-                                  <h4 class="title-s companies-item__name">Название компании</h4>
-                                  <div class="companies-item__type">
-                                    <div class="product-prices">
-                                      <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
-                                      <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
-                                    </div>
-                                  </div>
-                                  <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
-                                  <div class="companies-item__descr">
-                                    <div class="product-reviews"> <span class="pr-ratings">
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                        </span>
-                                      <div class="product-reviews__details mob-hide"> <span>5.0</span>
-                                        <!-- <span>
-<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span>
-                                            <span>(1)</span> --></div>
-                                    </div>
-                                  </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
-                              </div>
-                            </a>
-                            <!-- </div> -->
-                            <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
-                            <a href="#" class="funeral__item companies-item companies-item_list">
-                              <div class="companies-item__wrap">
-                                <div class="sf-thumb" style="background-image: url(./img/wreath-2.png)"> </div>
-                                <div class="companies-item__text">
-                                  <h4 class="title-s companies-item__name">Название компании</h4>
-                                  <div class="companies-item__type">
-                                    <div class="product-prices">
-                                      <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
-                                      <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
-                                    </div>
-                                  </div>
-                                  <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
-                                  <div class="companies-item__descr">
-                                    <div class="product-reviews"> <span class="pr-ratings">
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                        </span>
-                                      <div class="product-reviews__details mob-hide"> <span>5.0</span>
-                                        <!-- <span>
-<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span>
-                                            <span>(1)</span> --></div>
-                                    </div>
-                                  </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
-                              </div>
-                            </a>
-                            <!-- </div> -->
-                            <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
-                            <a href="#" class="funeral__item companies-item companies-item_list">
-                              <div class="companies-item__wrap">
-                                <div class="sf-thumb" style="background-image: url(./img/wreath-2.png)"> </div>
-                                <div class="companies-item__text">
-                                  <h4 class="title-s companies-item__name">Название компании</h4>
-                                  <div class="companies-item__type">
-                                    <div class="product-prices">
-                                      <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
-                                      <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
-                                    </div>
-                                  </div>
-                                  <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
-                                  <div class="companies-item__descr">
-                                    <div class="product-reviews"> <span class="pr-ratings">
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                        </span>
-                                      <div class="product-reviews__details mob-hide"> <span>5.0</span>
-                                        <!-- <span>
-<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span>
-                                            <span>(1)</span> --></div>
-                                    </div>
-                                  </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
-                              </div>
-                            </a>
-                            <!-- </div> -->
-                            <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
-                            <a href="#" class="funeral__item companies-item companies-item_list">
-                              <div class="companies-item__wrap">
-                                <div class="sf-thumb" style="background-image: url(./img/wreath-2.png)"> </div>
-                                <div class="companies-item__text">
-                                  <h4 class="title-s companies-item__name">Название компании</h4>
-                                  <div class="companies-item__type">
-                                    <div class="product-prices">
-                                      <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
-                                      <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
-                                    </div>
-                                  </div>
-                                  <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
-                                  <div class="companies-item__descr">
-                                    <div class="product-reviews"> <span class="pr-ratings">
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                            <i class="flaticon-favorite"></i>
-                                        </span>
-                                      <div class="product-reviews__details mob-hide"> <span>5.0</span>
-                                        <!-- <span>
-<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span>
-                                            <span>(1)</span> --></div>
-                                    </div>
-                                  </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
-                              </div>
-                            </a>
-                            <!-- </div> -->
-                          </div>
-                        </div>
-                        <!-- Start page-nav -->
-                        <nav class="navigation-page">
-                          <ul class="page-nav">
-                            <li><button class="page-nav__btn left-btn" type="button"><i class="fa fa-angle-left"></i> &nbsp;Предыдущая</button></li>
-                            <li class="page-nav__item active"><a class="page-nav__link" href="#">1</a></li>
-                            <li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
-                            <li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
-                            <li><button class="page-nav__btn right-btn" type="button">Следующая&nbsp; <i class="fa fa-angle-right"></i></button></li>
-                          </ul>
-                        </nav>
-                        <!-- End page-nav -->
-                        <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End all-services -->
-                  <!-- Start shares -->
-                  <div id="shares" class="shares js-navigation-section">
-                    <div class="row">
-                      <div class="wind">
-                        <!-- begin wind-head -->
-                        <div class="wind-head">
-                          <div class="wind-head__title">Название компании</div>
-                          <div class="wind-head__name">Салон художественной ковки</div>
-                        </div>
-                        <!-- end wind-head -->
-                        <div class="wind__row row">
-                          <div class="col-md-12">
-                            <div class="tab-content">
-                              <div id="menu2" class="tab-pane facilities fade in active">
-                                <div class="team-info">
-                                  <div class="col-md-4 col-sm-3 col-xs-12">
-                                    <div class="posts-image posts-image_full-lg posts-image_full-radius" style="background-image: url(img/shares.png);"> <a href="#" class="posts-image__sale">-20%</a> </div>
-                                  </div>
-                                  <div class="col-md-8 col-sm-9 col-md-12">
-                                    <div class="staff">
-                                      <div class="staff__title-block"> <span class="staff__title">Название акции</span> </div>
-                                      <div class="drop js-drop">
-                                        <div class="drop__wrap js-drop-wrap">
-                                          <div class="drop__show js-drop-shows">
-                                            <p> Условия проведения: Текстовое описание услови акции идет тут в нескольстрок. Текстовое опис.... </p> <span>Срок действия акции:  до 31 декабря 2018 года</span>
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-                                              </p>
-                                          </div>
-                                          <div class="drop__hidden js-drop-hidden">
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-                                              </p>
-                                          </div>
-                                        </div>
-                                        <!-- begin read-all -->
-                                        <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
-    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
-    	<span class="fi flaticon-arrows"></span>
-    </a> </div>
-                                        <!-- end read-all -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="team-info">
-                                  <div class="col-md-4 col-sm-3 col-xs-12">
-                                    <div class="posts-image posts-image_full-lg posts-image_full-radius" style="background-image: url(img/shares.png);"> </div>
-                                  </div>
-                                  <div class="col-md-8 col-sm-9 col-md-12">
-                                    <div class="staff">
-                                      <div class="staff__title-block"> <span class="staff__title">Название акции</span> </div>
-                                      <div class="drop js-drop">
-                                        <div class="drop__wrap js-drop-wrap">
-                                          <div class="drop__show js-drop-shows">
-                                            <p> Условия проведения: Текстовое описание услови акции идет тут в нескольстрок. Текстовое опис.... </p> <span>Срок действия акции:  до 31 декабря 2018 года</span>
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-                                              </p>
-                                          </div>
-                                          <div class="drop__hidden js-drop-hidden">
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-                                              </p>
-                                          </div>
-                                        </div>
-                                        <!-- begin read-all -->
-                                        <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
-    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
-    	<span class="fi flaticon-arrows"></span>
-    </a> </div>
-                                        <!-- end read-all -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Start page-nav -->
-                            <nav class="navigation-page">
-                              <ul class="page-nav">
-                                <li><button class="page-nav__btn left-btn" type="button"><i class="fa fa-angle-left"></i> &nbsp;Предыдущая</button></li>
-                                <li class="page-nav__item active"><a class="page-nav__link" href="#">1</a></li>
-                                <li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
-                                <li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
-                                <li><button class="page-nav__btn right-btn" type="button">Следующая&nbsp; <i class="fa fa-angle-right"></i></button></li>
-                              </ul>
-                            </nav>
-                            <!-- End page-nav -->
-                          </div>
-                        </div>
-                        <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End shares -->
-                  <!-- Start license -->
-                  <div id="license" class="license js-navigation-section md-hide">
-                    <div class="wind">
-                      <!-- begin wind-head -->
-                      <div class="wind-head">
-                        <div class="wind-head__title">Название компании</div>
-                        <div class="wind-head__name">Салон художественной ковки</div>
-                      </div>
-                      <!-- end wind-head -->
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="certificate">
-                            <div class="certificate__box"> <img src="img/certificate.png" alt="certificate"> </div>
-                            <div class="certificate__box"> <img src="img/certificate.png" alt="certificate"> </div>
-                            <div class="certificate__box"> <img src="img/certificate.png" alt="certificate"> </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="certificate__text col-md-12">
-                          <p> Текстовое описание условий акции идет тут в несколько строк. Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк. </p>
-                          <p> Текстовое описание условий акции идет тут в несколько строк. Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк. </p>
-                        </div>
-                      </div>
-                      <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
-                    </div>
-                  </div>
-                  <!-- End license -->
-                  <!-- Start vacancies -->
-                  <div id="vacancies" class="vacancies js-navigation-section">
-                    <div class="row">
-                      <div class="wind">
-                        <!-- begin wind-head -->
-                        <div class="wind-head">
-                          <div class="wind-head__title">Название компании</div>
-                          <div class="wind-head__name">Салон художественной ковки</div>
-                        </div>
-                        <!-- end wind-head -->
-                        <div class="wind__row row">
-                          <div class="col-md-12">
-                            <div class="tab-content">
-                              <div id="menu2" class="tab-pane facilities active">
-                                <div class="team-info">
-                                  <div class="col-md-3 col-sm-3 col-xs-12">
-                                    <div class="posts-image posts-image_full-md posts-image_full-radius" style="background-image: url(img/user.png);"> </div>
-                                  </div>
-                                  <div class="col-md-9 col-sm-9 col-xs-12">
-                                    <div class="staff">
-                                      <div class="staff__title-block"> <span class="staff__title">Имя Фамилия</span> </div>
-                                      <div class="drop js-drop">
-                                        <div class="drop__wrap js-drop-wrap">
-                                          <div class="drop__show js-drop-shows">
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-                                              </p>
-                                          </div>
-                                          <div class="drop__hidden js-drop-hidden">
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-                                              </p>
-                                          </div>
-                                        </div>
-                                        <!-- begin read-all -->
-                                        <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
-    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
-    	<span class="fi flaticon-arrows"></span>
-    </a> </div>
-                                        <!-- end read-all -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="team-info">
-                                  <div class="col-md-3 col-sm-3 col-xs-12">
-                                    <div class="posts-image posts-image_full-md posts-image_full-radius" style="background-image: url(img/user1.png);"> </div>
-                                  </div>
-                                  <div class="col-md-9 col-sm-9 col-xs-12">
-                                    <div class="staff">
-                                      <div class="staff__title-block"> <span class="staff__title">Имя Фамилия</span> </div>
-                                      <div class="drop js-drop">
-                                        <div class="drop__wrap js-drop-wrap">
-                                          <div class="drop__show js-drop-shows">
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-                                              </p>
-                                          </div>
-                                          <div class="drop__hidden js-drop-hidden">
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-                                              </p>
-                                          </div>
-                                        </div>
-                                        <!-- begin read-all -->
-                                        <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
-    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
-    	<span class="fi flaticon-arrows"></span>
-    </a> </div>
-                                        <!-- end read-all -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="team-info">
-                                  <div class="col-md-3 col-sm-3 col-xs-12">
-                                    <div class="posts-image posts-image_full-md posts-image_full-radius" style="background-image: url(img/user1.png);"> </div>
-                                  </div>
-                                  <div class="col-md-9 col-sm-9 col-xs-12">
-                                    <div class="staff">
-                                      <div class="staff__title-block"> <span class="staff__title">Имя Фамилия</span> </div>
-                                      <div class="drop js-drop">
-                                        <div class="drop__wrap js-drop-wrap">
-                                          <div class="drop__show js-drop-shows">
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-                                              </p>
-                                          </div>
-                                          <div class="drop__hidden js-drop-hidden">
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-                                              </p>
-                                          </div>
-                                        </div>
-                                        <!-- begin read-all -->
-                                        <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
-    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
-    	<span class="fi flaticon-arrows"></span>
-    </a> </div>
-                                        <!-- end read-all -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End vacancies -->
-                  <!-- Start delivery -->
-                  <div id="delivery" class="delivery js-navigation-section">
-                    <div class="wind">
-                      <!-- begin wind-head -->
-                      <div class="wind-head">
-                        <div class="wind-head__title">Название компании</div>
-                        <div class="wind-head__name">Салон художественной ковки</div>
-                      </div>
-                      <!-- end wind-head -->
-                      <div class="wind__row row">
-                        <div class="variants col-md-12">
-                          <h5 class="variants__title title-s_mod"> Доступные варианты доставки: </h5>
-                          <div class="variants__block">
-                            <h6 class="variants__block-title"> <i class="fa fas fa-check-circle"></i> Вариант доставки 1 </h6>
-                            <p> Текстовое описание условий акции идет тут в несколько строк. Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк. </p>
-                          </div>
-                          <div class="variants__block">
-                            <h6 class="variants__block-title"> <i class="fa fas fa-check-circle"></i> Вариант доставки 2 </h6>
-                            <p> Текстовое описание условий акции идет тут в несколько строк. Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк. </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="delivery-block">
-                        <div class="wind__row row">
-                          <h5 class="wind__title title-s_mod"> Доступные варианты доставки: </h5>
-                          <div class="wind__preson col-md-4 col-sm-4">
-                            <!-- begin person -->
-                            <div class="person">
-                              <div class="person__img"> <span class="sberbank-icon"></span> </div>
-                              <div class="person__name-wrap">
-                                <div class="person__name">Сбербанк онлайн</div>
-                              </div>
-                              <div class="person__text">
-                                <ul class="pay-list">
-                                  <li class="pay-list"> Номер карты: </li>
-                                  <li class="pay-list"> 1234 1234 5678 5678 </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <!-- end person -->
-                          </div>
-                          <div class="wind__preson col-md-4 col-sm-4">
-                            <!-- begin person -->
-                            <div class="person">
-                              <div class="person__img"> <span class="person__icon">
-<svg class="icon icon-bank"><use xlink:href="img/sprite.svg#icon-bank"></use></svg>
-</span> </div>
-                              <div class="person__name-wrap">
-                                <div class="person__name">Безналичным платежом</div>
-                              </div>
-                              <div class="person__text">
-                                <ul class="pay-list">
-                                  <li class="pay-list"> Реквизиты: </li>
-                                  <li class="pay-list"> ОГРН: 12345660908 </li>
-                                  <li class="pay-list"> ИНН: 122344 </li>
-                                  <li class="pay-list"> ОКПО: 8975983793 </li>
-                                  <li class="pay-list"> что-то еще.... </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <!-- end person -->
-                          </div>
-                          <div class="wind__preson col-md-4 col-sm-4">
-                            <!-- begin person -->
-                            <div class="person">
-                              <div class="person__img"> <span class="person__icon">
-<svg class="icon icon-card"><use xlink:href="img/sprite.svg#icon-card"></use></svg>
-</span> </div>
-                              <div class="person__name-wrap">
-                                <div class="person__name">Перевод с карты на карту</div>
-                              </div>
-                              <div class="person__text">
-                                <ul class="pay-list">
-                                  <li class="pay-list"> Номер карты: </li>
-                                  <li class="pay-list"> 1234 1234 5678 5678 </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <!-- end person -->
-                          </div>
-                        </div>
-                        <div class="wind__row row">
-                          <div class="wind__preson col-md-4 col-sm-4">
-                            <!-- begin person -->
-                            <div class="person">
-                              <div class="person__img"> <span class="person__icon">
-<svg class="icon icon-banknote"><use xlink:href="img/sprite.svg#icon-banknote"></use></svg>
-</span> </div>
-                              <div class="person__name-wrap">
-                                <div class="person__name">Наличный расчет</div>
-                              </div>
-                              <div class="person__text">
-                                <ul class="pay-list">
-                                  <li class="pay-list"> Оплатите по адресу: </li>
-                                  <li class="pay-list"> г. Хабаровск, ул. Название, д.1 </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <!-- end person -->
-                          </div>
-                          <div class="wind__preson col-md-4 col-sm-4">
-                            <!-- begin person -->
-                            <div class="person">
-                              <div class="person__img"> <span class="yandex-pay-icon"></span> </div>
-                              <div class="person__name-wrap">
-                                <div class="person__name"> Электронные платежи Яндекс Деньги, Webmoney, Qiwi кошелек </div>
-                              </div>
-                              <div class="person__text">
-                                <ul class="pay-list">
-                                  <li class="pay-list"> Яндекс кошелек: </li>
-                                  <li class="pay-list"> 123456744574 </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <!-- end person -->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row md-hide">
-                        <div class="col-md-12">
-                          <div class="work">
-                            <h5 class="work__title title-s_mod">Как мы работаем:</h5>
-                            <div class="steps">
-                              <div class="steps__box">
-                                <div class="steps__number">1</div> <span class="steps__description">Шаг 1</span>
-                                <p> Краткое описание шага номер 1 </p>
-                              </div>
-                              <div class="steps__box">
-                                <div class="steps__number">2</div> <span class="steps__description">Шаг 2</span>
-                                <p> Краткое описание шага в две или три строки </p>
-                              </div>
-                              <div class="steps__box">
-                                <div class="steps__number">3</div> <span class="steps__description">Шаг 3</span>
-                                <p> Краткое описание шага номер 3 </p>
-                              </div>
-                              <div class="steps__box">
-                                <div class="steps__number dis-none">4</div> <span class="steps__description">Шаг 4</span>
-                                <p> Краткое описание шага в две или три строки </p>
-                              </div>
-                            </div>
-                            <div class="drop js-drop">
-                              <div class="drop__wrap js-drop-wrap">
-                                <div class="drop__show js-drop-shows">
-                                  <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора,
-                                    кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
-                                </div>
-                                <div class="drop__hidden js-drop-hidden">
-                                  <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора,
-                                    кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
-                                </div>
-                              </div>
-                              <!-- begin read-all -->
-                              <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
-    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
-    	<span class="fi flaticon-arrows"></span>
-    </a> </div>
-                              <!-- end read-all -->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="wind__bg " style="background-image: url(./img/wind-bg.jpg);"></div>
-                    </div>
-                  </div>
-                  <!-- End delivery -->
                   <!-- Start advantages -->
                   <div id="advantages" class="advantages js-navigation-section md-hide">
                     <div class="row">
@@ -1634,49 +731,626 @@
                     </div>
                   </div>
                   <!-- End advantages -->
-                  <!-- Start team -->
-                  <div id="team" class="team js-navigation-section">
+                  <!-- Start review-customer -->
+                  <div id="review-customer" class="review-customer js-navigation-section">
+                    <div class="wind">
+                      <!-- begin wind-head -->
+                      <div class="wind-head">
+                        <div class="wind-head__title">Название компании</div>
+                        <div class="wind-head__name">Салон художественной ковки</div>
+                      </div>
+                      <!-- end wind-head -->
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="tab-content">
+                            <div id="menu2" class="tab-pane facilities fade in active">
+                              <div class="team-info">
+                                <div class="social pull-right"> <a class="social__link" href="#">
+									<i class="fa fab fa-facebook-f social__icon"></i>
+								</a> <a class="social__link" href="#">
+									<i class="fa fab fa-odnoklassniki social__icon"></i>
+								</a> <a class="social__link" href="#">
+									<i class="fi flaticon-social-1 social__icon"></i>
+								</a> <a class="social__link" href="#">
+									<i class="fa fab fa-vk social__icon"></i>
+								</a> </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                  <div class="posts-image posts-image_full-md posts-image_full-rad" style="background-image: url(img/person-1.png);"> </div>
+                                </div>
+                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                  <div class="staff">
+                                    <div class="staff__title-block"> <span class="staff__title">Имя Фамилия</span> <span class="staff__description">Funeral Director/Embalmer</span> </div>
+                                    <p> I like to call Funeral Home my home. It was in Sun Prairie, Wisconsin where I graduated from high school in 1969 and lettered in football at Sun prairie High school. </p>
+                                    <p> <i class="fi flaticon-black"></i> carla@funeral-home.com </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="team-info">
+                                <div class="social pull-right"> <a class="social__link" href="#">
+									<i class="fa fab fa-facebook-f social__icon"></i>
+								</a> <a class="social__link" href="#">
+									<i class="fa fab fa-odnoklassniki social__icon"></i>
+								</a> <a class="social__link" href="#">
+									<i class="fi flaticon-social-1 social__icon"></i>
+								</a> <a class="social__link" href="#">
+									<i class="fa fab fa-vk social__icon"></i>
+								</a> </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                  <div class="posts-image posts-image_full-md posts-image_full-rad" style="background-image: url(img/user1.png);"> </div>
+                                </div>
+                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                  <div class="staff">
+                                    <div class="staff__title-block"> <span class="staff__title">Имя Фамилия</span> <span class="staff__description">Funeral Director/Embalmer</span> </div>
+                                    <p> Thank you for visiting Funeral Home. As a member of the family and leadership team, I want to make myself available to visit with you at your convenience for any need you may have. </p>
+                                    <p> <i class="fi flaticon-black"></i> jody@funeral-home.com </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="team-info">
+                                <div class="social pull-right"> <a class="social__link" href="#">
+									<i class="fa fab fa-facebook-f social__icon"></i>
+								</a> <a class="social__link" href="#">
+									<i class="fa fab fa-odnoklassniki social__icon"></i>
+								</a> <a class="social__link" href="#">
+									<i class="fi flaticon-social-1 social__icon"></i>
+								</a> <a class="social__link" href="#">
+									<i class="fa fab fa-vk social__icon"></i>
+								</a> </div>
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                  <div class="posts-image posts-image_full-md posts-image_full-rad" style="background-image: url(img/user1.png);"> </div>
+                                </div>
+                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                  <div class="staff">
+                                    <div class="staff__title-block"> <span class="staff__title">Имя Фамилия</span> <span class="staff__description">Funeral Director/Embalmer</span> </div>
+                                    <p> Lisa graduated from the University of Minnesota in 1996, with a B.S. in mortuary science. She previously was a licensed funeral director in California before she obtained her funeral directors license in Wisconsin in
+                                      2001. Lisa resides in Sun Prairie with her husband and two children. </p>
+                                    <p> <i class="fi flaticon-black"></i> lisa@funeral-home.com </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
+                    </div>
+                  </div>
+                  <!-- End review-customer -->
+                  <!-- Start feedback -->
+                  <div id="feedback" class="feedback js-navigation-section">
+                    <div class="wind">
+                      <!-- begin wind-head -->
+                      <div class="wind-head">
+                        <div class="wind-head__title">Название компании</div>
+                        <div class="wind-head__name">Салон художественной ковки</div>
+                      </div>
+                      <!-- end wind-head -->
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="feedback__contact">
+                            <div class="feedback__contact-col">
+                              <p>Звоните нам по телефону: <br><i class="fa fas fa-phone"></i><span> 8 (111) 123 123</span></p>
+                            </div>
+                            <div class="feedback__contact-col"> <span>Или заполните форму ниже и мы свяжемся с Вами:</span> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="feedback-form">
+                          <form class="post-form col-md-7"> <span class="post-form__icon">
+						
+<svg class="icon icon-flaticon"><use xlink:href="img/sprite.svg#icon-flaticon"></use></svg>
+
+					</span>
+                            <h5 class="post-form__title title-m">Оставить сообщение</h5>
+                            <div class="post-form__row row">
+                              <div class="post-form__col"> <input class="post-form__input" type="text" id="names"> <label class="post-form__label" for="names">Ваше имя</label> </div>
+                              <div class="post-form__col"> <input class="post-form__input" type="text" id="emails"> <label class="post-form__label" for="emails">Email</label> </div>
+                              <div class="post-form__col"> <input class="post-form__input" type="text" id="phones"> <label class="post-form__label" for="phones">Телефон</label> </div>
+                              <div class="post-form__col"> <textarea class="post-form__textarea" id="messages"></textarea> <label class="post-form__label" class="post-form__label" for="messages">Комментарий</label> </div>
+                            </div> <button type="submit" class="btn btn-md">Отправить</button> </form>
+                          <div class="col-md-5 hide-md md-hide">
+                            <div class="feedback-form__image"> <img src="img/feedback-img.png" alt="feedback-img"> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
+                    </div>
+                  </div>
+                  <!-- End feedback -->
+                  <!-- Start all-services -->
+                  <div id="all-services" class="all-services js-navigation-section">
                     <div class="row">
                       <div class="wind">
                         <!-- begin wind-head -->
                         <div class="wind-head">
                           <div class="wind-head__title">Название компании</div>
-                          <div class="wind-head__name">Ритуальный агент</div>
+                          <div class="wind-head__name">Салон художественной ковки</div>
                         </div>
                         <!-- end wind-head -->
                         <div class="wind__row row">
-                          <div class="wind__preson col-md-6 col-sm-6 col-xs-12">
-                            <!-- begin person -->
-                            <a href="#" class="person">
-                              <div class="person__img" style="background-image: url(./img/person.png);"></div>
-                              <div class="person__name-wrap">
-                                <div class="person__name">Сергей Иванов</div>
+                          <div class="col-md-12">
+                            <div class="all-companies__tile">
+                              <div class="all-companies__top top-bar mob-hide">
+                                <div class="shop-sort-wrap">
+                                  <div class="ps-options pull-left"> <span>Показывать по:</span>
+                                    <div class="ps-select"> <i class="fa fa-caret-down"></i> <select>
+											<option>4</option>
+											<option>5</option>
+											<option selected>6</option>
+										</select> </div>
+                                  </div>
+                                  <div class="shop-sort"> <a href="#" class="active"><i class="flaticon-squares"></i></a> <a href="#"><i class="flaticon-signs-1"></i></a> </div>
+                                </div>
                               </div>
-                              <div class="person__position">Ритуальный агент</div>
-                              <div class="person__text mob-hide">Опытный сотрудник, только положительные отзывы. Чуткий, понимающий профессионал</div>
-                              <div class="person__mail"><i class="fi flaticon-black"></i> carla@funeral-home.com</div>
-                            </a>
-                            <!-- end person -->
-                          </div>
-                          <div class="wind__preson col-md-6 col-sm-6 col-xs-12">
-                            <!-- begin person -->
-                            <a href="#" class="person">
-                              <div class="person__img" style="background-image: url(./img/person.png);"></div>
-                              <div class="person__name-wrap">
-                                <div class="person__name">Сергей Иванов</div>
-                              </div>
-                              <div class="person__position">Ритуальный агент</div>
-                              <div class="person__text mob-hide">Опытный сотрудник, только положительные отзывы. Чуткий, понимающий профессионал</div>
-                              <div class="person__mail"><i class="fi flaticon-black"></i> carla@funeral-home.com</div>
-                            </a>
-                            <!-- end person -->
+                            </div>
                           </div>
                         </div>
-                        <div class="wind__bg md-hide" style="background-image: url(./img/wind-bg.jpg);"></div>
+                        <div class="row margin-bott">
+                          <div class="col-md-12">
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                              <a href="#" class="all-companies__item companies-item">
+                                <div class="companies-item__wrap">
+                                  <div class="sf-thumb">
+                                    <div class="sf-thumb__wrap"> <img src="./img/wreath-1.png" alt="img"> </div>
+                                  </div>
+                                  <div class="companies-item__text">
+                                    <h4 class="title-s_mod companies-item__name">Наименование товара</h4>
+                                    <div class="companies-item__type">
+                                      <div class="product-prices">
+                                        <div class="product-single-price">690 ₽ </div>
+                                        <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                                      </div>
+                                    </div>
+                                    <div class="companies-item__descr">
+                                      <div class="product-reviews"> <span class="pr-ratings">
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+											</span>
+                                        <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
+</span> <span>(1)</span> </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                              <a href="#" class="all-companies__item companies-item">
+                                <div class="companies-item__wrap">
+                                  <div class="sf-thumb">
+                                    <div class="sf-thumb__wrap"> <img src="./img/wreath-1.png" alt="img"> </div>
+                                  </div>
+                                  <div class="companies-item__text">
+                                    <h4 class="title-s_mod companies-item__name">Наименование товара</h4>
+                                    <div class="companies-item__type">
+                                      <div class="product-prices">
+                                        <div class="product-single-price">690 ₽ </div>
+                                        <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                                      </div>
+                                    </div>
+                                    <div class="companies-item__descr">
+                                      <div class="product-reviews"> <span class="pr-ratings">
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+											</span>
+                                        <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
+</span> <span>(1)</span> </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                              <a href="#" class="all-companies__item companies-item">
+                                <div class="companies-item__wrap">
+                                  <div class="sf-thumb">
+                                    <div class="sf-thumb__wrap"> <img src="./img/wreath-1.png" alt="img"> </div>
+                                  </div>
+                                  <div class="companies-item__text">
+                                    <h4 class="title-s_mod companies-item__name">Наименование товара</h4>
+                                    <div class="companies-item__type">
+                                      <div class="product-prices">
+                                        <div class="product-single-price">690 ₽ </div>
+                                        <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                                      </div>
+                                    </div>
+                                    <div class="companies-item__descr">
+                                      <div class="product-reviews"> <span class="pr-ratings">
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+											</span>
+                                        <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
+</span> <span>(1)</span> </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                              <a href="#" class="all-companies__item companies-item">
+                                <div class="companies-item__wrap">
+                                  <div class="sf-thumb">
+                                    <div class="sf-thumb__wrap"> <img src="./img/wreath-1.png" alt="img"> </div>
+                                  </div>
+                                  <div class="companies-item__text">
+                                    <h4 class="title-s_mod companies-item__name">Наименование товара</h4>
+                                    <div class="companies-item__type">
+                                      <div class="product-prices">
+                                        <div class="product-single-price">690 ₽ </div>
+                                        <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                                      </div>
+                                    </div>
+                                    <div class="companies-item__descr">
+                                      <div class="product-reviews"> <span class="pr-ratings">
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+											</span>
+                                        <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
+</span> <span>(1)</span> </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                              <a href="#" class="all-companies__item companies-item">
+                                <div class="companies-item__wrap">
+                                  <div class="sf-thumb">
+                                    <div class="sf-thumb__wrap"> <img src="./img/wreath-1.png" alt="img"> </div>
+                                  </div>
+                                  <div class="companies-item__text">
+                                    <h4 class="title-s_mod companies-item__name">Наименование товара</h4>
+                                    <div class="companies-item__type">
+                                      <div class="product-prices">
+                                        <div class="product-single-price">690 ₽ </div>
+                                        <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                                      </div>
+                                    </div>
+                                    <div class="companies-item__descr">
+                                      <div class="product-reviews"> <span class="pr-ratings">
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+											</span>
+                                        <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
+</span> <span>(1)</span> </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                              <a href="#" class="all-companies__item companies-item">
+                                <div class="companies-item__wrap">
+                                  <div class="sf-thumb">
+                                    <div class="sf-thumb__wrap"> <img src="./img/wreath-1.png" alt="img"> </div>
+                                  </div>
+                                  <div class="companies-item__text">
+                                    <h4 class="title-s_mod companies-item__name">Наименование товара</h4>
+                                    <div class="companies-item__type">
+                                      <div class="product-prices">
+                                        <div class="product-single-price">690 ₽ </div>
+                                        <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                                      </div>
+                                    </div>
+                                    <div class="companies-item__descr">
+                                      <div class="product-reviews"> <span class="pr-ratings">
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+											</span>
+                                        <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
+</span> <span>(1)</span> </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Start page-nav -->
+                        <nav class="navigation-page">
+                          <ul class="page-nav">
+                            <li><button class="page-nav__btn left-btn" type="button"><i class="fa fa-angle-left"></i> &nbsp;Предыдущая</button></li>
+                            <li class="page-nav__item active"><a class="page-nav__link" href="#">1</a></li>
+                            <li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
+                            <li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
+                            <li><button class="page-nav__btn right-btn" type="button">Следующая&nbsp; <i class="fa fa-angle-right"></i></button></li>
+                          </ul>
+                        </nav>
+                        <!-- End page-nav -->
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="all-companies__tile">
+                              <div class="all-companies__top top-bar mob-hide">
+                                <div class="shop-sort-wrap">
+                                  <div class="ps-options pull-left"> <span>Показывать по:</span>
+                                    <div class="ps-select"> <i class="fa fa-caret-down"></i> <select>
+											<option>4</option>
+											<option>5</option>
+											<option selected>6</option>
+										</select> </div>
+                                  </div>
+                                  <div class="shop-sort"> <a href="#" class="active"><i class="flaticon-squares"></i></a> <a href="#"><i class="flaticon-signs-1"></i></a> </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
+                            <a href="#" class="funeral__item companies-item companies-item_list">
+                              <div class="companies-item__wrap">
+                                <div class="sf-thumb" style="background-image: url(./img/wreath-2.png)"> </div>
+                                <div class="companies-item__text">
+                                  <h4 class="title-s companies-item__name">Наименование товара</h4>
+                                  <div class="companies-item__type">
+                                    <div class="product-prices">
+                                      <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                                      <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                                    </div>
+                                  </div>
+                                  <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
+                                  <div class="companies-item__descr">
+                                    <div class="product-reviews"> <span class="pr-ratings">
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                        </span>
+                                      <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                                        <!-- <span>
+<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
+</span>
+                                            <span>(1)</span> --></div>
+                                    </div>
+                                  </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                              </div>
+                            </a>
+                            <!-- </div> -->
+                            <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
+                            <a href="#" class="funeral__item companies-item companies-item_list">
+                              <div class="companies-item__wrap">
+                                <div class="sf-thumb" style="background-image: url(./img/wreath-2.png)"> </div>
+                                <div class="companies-item__text">
+                                  <h4 class="title-s companies-item__name">Наименование товара</h4>
+                                  <div class="companies-item__type">
+                                    <div class="product-prices">
+                                      <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                                      <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                                    </div>
+                                  </div>
+                                  <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
+                                  <div class="companies-item__descr">
+                                    <div class="product-reviews"> <span class="pr-ratings">
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                        </span>
+                                      <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                                        <!-- <span>
+<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
+</span>
+                                            <span>(1)</span> --></div>
+                                    </div>
+                                  </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                              </div>
+                            </a>
+                            <!-- </div> -->
+                            <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
+                            <a href="#" class="funeral__item companies-item companies-item_list">
+                              <div class="companies-item__wrap">
+                                <div class="sf-thumb" style="background-image: url(./img/wreath-2.png)"> </div>
+                                <div class="companies-item__text">
+                                  <h4 class="title-s companies-item__name">Наименование товара</h4>
+                                  <div class="companies-item__type">
+                                    <div class="product-prices">
+                                      <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                                      <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                                    </div>
+                                  </div>
+                                  <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
+                                  <div class="companies-item__descr">
+                                    <div class="product-reviews"> <span class="pr-ratings">
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                        </span>
+                                      <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                                        <!-- <span>
+<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
+</span>
+                                            <span>(1)</span> --></div>
+                                    </div>
+                                  </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                              </div>
+                            </a>
+                            <!-- </div> -->
+                            <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
+                            <a href="#" class="funeral__item companies-item companies-item_list">
+                              <div class="companies-item__wrap">
+                                <div class="sf-thumb" style="background-image: url(./img/wreath-2.png)"> </div>
+                                <div class="companies-item__text">
+                                  <h4 class="title-s companies-item__name">Наименование товара</h4>
+                                  <div class="companies-item__type">
+                                    <div class="product-prices">
+                                      <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                                      <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                                    </div>
+                                  </div>
+                                  <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
+                                  <div class="companies-item__descr">
+                                    <div class="product-reviews"> <span class="pr-ratings">
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                            <i class="flaticon-favorite"></i>
+                                        </span>
+                                      <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                                        <!-- <span>
+<svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
+</span>
+                                            <span>(1)</span> --></div>
+                                    </div>
+                                  </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                              </div>
+                            </a>
+                            <!-- </div> -->
+                          </div>
+                        </div>
+                        <!-- Start page-nav -->
+                        <nav class="navigation-page">
+                          <ul class="page-nav">
+                            <li><button class="page-nav__btn left-btn" type="button"><i class="fa fa-angle-left"></i> &nbsp;Предыдущая</button></li>
+                            <li class="page-nav__item active"><a class="page-nav__link" href="#">1</a></li>
+                            <li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
+                            <li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
+                            <li><button class="page-nav__btn right-btn" type="button">Следующая&nbsp; <i class="fa fa-angle-right"></i></button></li>
+                          </ul>
+                        </nav>
+                        <!-- End page-nav -->
+                        <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
                       </div>
                     </div>
                   </div>
-                  <!-- End team -->
+                  <!-- End all-services -->
+                  <!-- Start shares -->
+                  <div id="shares" class="shares js-navigation-section">
+                    <div class="row">
+                      <div class="wind">
+                        <!-- begin wind-head -->
+                        <div class="wind-head">
+                          <div class="wind-head__title">Название компании</div>
+                          <div class="wind-head__name">Салон художественной ковки</div>
+                        </div>
+                        <!-- end wind-head -->
+                        <div class="wind__row row">
+                          <div class="col-md-12">
+                            <div class="tab-content">
+                              <div id="menu2" class="tab-pane facilities fade in active">
+                                <div class="team-info">
+                                  <div class="col-md-4 col-sm-3 col-xs-12">
+                                    <div class="posts-image posts-image_full-lg posts-image_full-radius" style="background-image: url(img/shares.png);"> <a href="#" class="posts-image__sale">-20%</a> </div>
+                                  </div>
+                                  <div class="col-md-8 col-sm-9 col-md-12">
+                                    <div class="staff">
+                                      <div class="staff__title-block"> <span class="staff__title">Название акции</span> </div>
+                                      <div class="drop js-drop">
+                                        <div class="drop__wrap js-drop-wrap">
+                                          <div class="drop__show js-drop-shows">
+                                            <p> Условия проведения: Текстовое описание услови акции идет тут в нескольстрок. Текстовое опис.... </p> <span class="staff__term">Срок действия акции:  до 31 декабря 2018 года</span>
+                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+                                              </p>
+                                          </div>
+                                          <div class="drop__hidden js-drop-hidden">
+                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+                                              </p>
+                                          </div>
+                                        </div>
+                                        <!-- begin read-all -->
+                                        <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
+    	<span class="fi flaticon-arrows"></span>
+    </a> </div>
+                                        <!-- end read-all -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="team-info">
+                                  <div class="col-md-4 col-sm-3 col-xs-12">
+                                    <div class="posts-image posts-image_full-lg posts-image_full-radius" style="background-image: url(img/shares.png);"> </div>
+                                  </div>
+                                  <div class="col-md-8 col-sm-9 col-md-12">
+                                    <div class="staff">
+                                      <div class="staff__title-block"> <span class="staff__title">Название акции</span> </div>
+                                      <div class="drop js-drop">
+                                        <div class="drop__wrap js-drop-wrap">
+                                          <div class="drop__show js-drop-shows">
+                                            <p> Условия проведения: Текстовое описание услови акции идет тут в нескольстрок. Текстовое опис.... </p> <span class="staff__term">Срок действия акции:  до 31 декабря 2018 года</span>
+                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+                                              </p>
+                                          </div>
+                                          <div class="drop__hidden js-drop-hidden">
+                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+                                              </p>
+                                          </div>
+                                        </div>
+                                        <!-- begin read-all -->
+                                        <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
+    	<span class="fi flaticon-arrows"></span>
+    </a> </div>
+                                        <!-- end read-all -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Start page-nav -->
+                            <nav class="navigation-page">
+                              <ul class="page-nav">
+                                <li><button class="page-nav__btn left-btn" type="button"><i class="fa fa-angle-left"></i> &nbsp;Предыдущая</button></li>
+                                <li class="page-nav__item active"><a class="page-nav__link" href="#">1</a></li>
+                                <li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
+                                <li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
+                                <li><button class="page-nav__btn right-btn" type="button">Следующая&nbsp; <i class="fa fa-angle-right"></i></button></li>
+                              </ul>
+                            </nav>
+                            <!-- End page-nav -->
+                          </div>
+                        </div>
+                        <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End shares -->
                   <!-- Start schedule -->
                   <div id="schedule" class="schedule js-navigation-section md-hide">
                     <div class="row">
@@ -1726,6 +1400,339 @@
                     </div>
                   </div>
                   <!-- End schedule -->
+                  <!-- Start license -->
+                  <div id="license" class="license js-navigation-section md-hide">
+                    <div class="wind">
+                      <!-- begin wind-head -->
+                      <div class="wind-head">
+                        <div class="wind-head__title">Название компании</div>
+                        <div class="wind-head__name">Салон художественной ковки</div>
+                      </div>
+                      <!-- end wind-head -->
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="certificate">
+                            <div class="certificate__box"> <img src="img/certificate.png" alt="certificate"> </div>
+                            <div class="certificate__box"> <img src="img/certificate.png" alt="certificate"> </div>
+                            <div class="certificate__box"> <img src="img/certificate.png" alt="certificate"> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="certificate__text col-md-12">
+                          <p> Текстовое описание условий акции идет тут в несколько строк. Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк. </p>
+                          <p> Текстовое описание условий акции идет тут в несколько строк. Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк. </p>
+                        </div>
+                      </div>
+                      <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
+                    </div>
+                  </div>
+                  <!-- End license -->
+                  <!-- Start vacancies -->
+                  <div id="vacancies" class="vacancies js-navigation-section">
+                    <div class="row">
+                      <div class="wind">
+                        <!-- begin wind-head -->
+                        <div class="wind-head">
+                          <div class="wind-head__title">Название компании</div>
+                          <div class="wind-head__name">Салон художественной ковки</div>
+                        </div>
+                        <!-- end wind-head -->
+                        <div class="wind__row row">
+                          <div class="col-md-12">
+                            <div class="tab-content">
+                              <div id="menu2" class="tab-pane facilities active">
+                                <div class="team-info">
+                                  <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <div class="posts-image posts-image_full-md posts-image_full-radius" style="background-image: url(img/vacancies.png);"> </div>
+                                  </div>
+                                  <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <div class="staff">
+                                      <div class="staff__title-block"> <span class="staff__title">Название вакансии</span> </div>
+                                      <div class="drop js-drop">
+                                        <div class="drop__wrap js-drop-wrap">
+                                          <div class="drop__show js-drop-shows">
+                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+                                              </p>
+                                          </div>
+                                          <div class="drop__hidden js-drop-hidden">
+                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+                                              </p>
+                                          </div>
+                                        </div>
+                                        <!-- begin read-all -->
+                                        <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
+    	<span class="fi flaticon-arrows"></span>
+    </a> </div>
+                                        <!-- end read-all -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="team-info">
+                                  <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <div class="posts-image posts-image_full-md posts-image_full-radius" style="background-image: url(img/vacancies.png);"> </div>
+                                  </div>
+                                  <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <div class="staff">
+                                      <div class="staff__title-block"> <span class="staff__title">Название вакансии</span> </div>
+                                      <div class="drop js-drop">
+                                        <div class="drop__wrap js-drop-wrap">
+                                          <div class="drop__show js-drop-shows">
+                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+                                              </p>
+                                          </div>
+                                          <div class="drop__hidden js-drop-hidden">
+                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+                                              выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+                                              </p>
+                                          </div>
+                                        </div>
+                                        <!-- begin read-all -->
+                                        <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
+    	<span class="fi flaticon-arrows"></span>
+    </a> </div>
+                                        <!-- end read-all -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End vacancies -->
+                  <!-- Start delivery -->
+                  <div id="delivery" class="delivery js-navigation-section">
+                    <div class="wind">
+                      <!-- begin wind-head -->
+                      <div class="wind-head">
+                        <div class="wind-head__title">Название компании</div>
+                        <div class="wind-head__name">Салон художественной ковки</div>
+                      </div>
+                      <!-- end wind-head -->
+                      <div class="wind__row row">
+                        <div class="variants col-md-12">
+                          <h5 class="variants__title title-s_mod"> Доступные варианты доставки: </h5>
+                          <div class="variants__block">
+                            <h6 class="variants__block-title"> <i class="fa fas fa-check-circle"></i> Вариант доставки 1 </h6>
+                            <p> Текстовое описание условий акции идет тут в несколько строк. Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк. </p>
+                          </div>
+                          <div class="variants__block">
+                            <h6 class="variants__block-title"> <i class="fa fas fa-check-circle"></i> Вариант доставки 2 </h6>
+                            <p> Текстовое описание условий акции идет тут в несколько строк. Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк. </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="delivery-block">
+                        <div class="wind__row row">
+                          <h5 class="wind__title title-s_mod"> Доступные варианты оплаты: </h5>
+                          <div class="wind__preson col-md-4 col-sm-4">
+                            <!-- begin person -->
+                            <div class="person">
+                              <div class="person__img"> <span class="person__icon">
+								
+<svg class="icon icon-sberbank"><use xlink:href="img/sprite.svg#icon-sberbank"></use></svg>
+
+							</span> </div>
+                              <div class="person__name-wrap">
+                                <div class="person__name">Сбербанк онлайн</div>
+                              </div>
+                              <div class="person__text">
+                                <ul class="pay-list">
+                                  <li class="pay-list"> Номер карты: </li>
+                                  <li class="pay-list"> 1234 1234 5678 5678 </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <!-- end person -->
+                          </div>
+                          <div class="wind__preson col-md-4 col-sm-4">
+                            <!-- begin person -->
+                            <div class="person">
+                              <div class="person__img"> <span class="person__icon">
+								
+<svg class="icon icon-bank"><use xlink:href="img/sprite.svg#icon-bank"></use></svg>
+
+							</span> </div>
+                              <div class="person__name-wrap">
+                                <div class="person__name">Безналичным платежом</div>
+                              </div>
+                              <div class="person__text">
+                                <ul class="pay-list">
+                                  <li class="pay-list"> Реквизиты: </li>
+                                  <li class="pay-list"> ОГРН: 12345660908 </li>
+                                  <li class="pay-list"> ИНН: 122344 </li>
+                                  <li class="pay-list"> ОКПО: 8975983793 </li>
+                                  <li class="pay-list"> что-то еще.... </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <!-- end person -->
+                          </div>
+                          <div class="wind__preson col-md-4 col-sm-4">
+                            <!-- begin person -->
+                            <div class="person">
+                              <div class="person__img"> <span class="person__icon">
+								
+<svg class="icon icon-card"><use xlink:href="img/sprite.svg#icon-card"></use></svg>
+
+							</span> </div>
+                              <div class="person__name-wrap">
+                                <div class="person__name">Перевод с карты на карту</div>
+                              </div>
+                              <div class="person__text">
+                                <ul class="pay-list">
+                                  <li class="pay-list"> Номер карты: </li>
+                                  <li class="pay-list"> 1234 1234 5678 5678 </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <!-- end person -->
+                          </div>
+                        </div>
+                        <div class="wind__row row">
+                          <div class="wind__preson col-md-4 col-sm-4">
+                            <!-- begin person -->
+                            <div class="person">
+                              <div class="person__img"> <span class="person__icon">
+								
+<svg class="icon icon-banknote"><use xlink:href="img/sprite.svg#icon-banknote"></use></svg>
+
+							</span> </div>
+                              <div class="person__name-wrap">
+                                <div class="person__name">Наличный расчет</div>
+                              </div>
+                              <div class="person__text">
+                                <ul class="pay-list">
+                                  <li class="pay-list"> Оплатите по адресу: </li>
+                                  <li class="pay-list"> г. Хабаровск, ул. Название, д.1 </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <!-- end person -->
+                          </div>
+                          <div class="wind__preson col-md-4 col-sm-4">
+                            <!-- begin person -->
+                            <div class="person">
+                              <div class="person__img"> <span class="person__icon">
+								
+<svg class="icon icon-logo-webmoney"><use xlink:href="img/sprite.svg#icon-logo-webmoney"></use></svg>
+
+							</span> </div>
+                              <div class="person__name-wrap">
+                                <div class="person__name"> Электронные платежи Яндекс Деньги, Webmoney, Qiwi кошелек </div>
+                              </div>
+                              <div class="person__text">
+                                <ul class="pay-list">
+                                  <li class="pay-list"> Яндекс кошелек: </li>
+                                  <li class="pay-list"> 123456744574 </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <!-- end person -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row md-hide">
+                        <div class="col-md-12">
+                          <div class="work">
+                            <h5 class="work__title title-s_mod">Как мы работаем:</h5>
+                            <div class="steps">
+                              <div class="steps__box">
+                                <div class="steps__number">1</div> <span class="steps__description">Шаг 1</span>
+                                <p> Краткое описание шага номер 1 </p>
+                              </div>
+                              <div class="steps__box">
+                                <div class="steps__number">2</div> <span class="steps__description">Шаг 2</span>
+                                <p> Краткое описание шага в две или три строки </p>
+                              </div>
+                              <div class="steps__box">
+                                <div class="steps__number">3</div> <span class="steps__description">Шаг 3</span>
+                                <p> Краткое описание шага номер 3 </p>
+                              </div>
+                              <div class="steps__box">
+                                <div class="steps__number dis-none">4</div> <span class="steps__description">Шаг 4</span>
+                                <p> Краткое описание шага в две или три строки </p>
+                              </div>
+                            </div>
+                            <div class="drop js-drop">
+                              <div class="drop__wrap js-drop-wrap">
+                                <div class="drop__show js-drop-shows">
+                                  <p>Текстовое описание условий акции идет тут в несколько строк. Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк. Текстовое описание условий акции идет
+                                    тут в несколько строк. Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк.</p>
+                                </div>
+                                <div class="drop__hidden js-drop-hidden">
+                                  <p>Текстовое описание условий акции идет тут в несколько строк. Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк. Текстовое описание условий акции идет
+                                    тут в несколько строк. Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк.Текстовое описание условий акции идет тут в несколько строк.</p>
+                                </div>
+                              </div>
+                              <!-- begin read-all -->
+                              <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+    	<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
+    	<span class="fi flaticon-arrows"></span>
+    </a> </div>
+                              <!-- end read-all -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wind__bg " style="background-image: url(./img/wind-bg.jpg);"></div>
+                    </div>
+                  </div>
+                  <!-- End delivery -->
+                  <!-- Start team -->
+                  <div id="team" class="team js-navigation-section">
+                    <div class="row">
+                      <div class="wind">
+                        <!-- begin wind-head -->
+                        <div class="wind-head">
+                          <div class="wind-head__title">Название компании</div>
+                          <div class="wind-head__name">Ритуальный агент</div>
+                        </div>
+                        <!-- end wind-head -->
+                        <div class="wind__row row">
+                          <div class="wind__preson col-md-6 col-sm-6 col-xs-12">
+                            <!-- begin person -->
+                            <a href="#" class="person">
+                              <div class="person__img" style="background-image: url(./img/person-1.png);"></div>
+                              <div class="person__name-wrap">
+                                <div class="person__name">Дарья иванова</div>
+                              </div>
+                              <div class="person__position">ритуальный агент</div>
+                              <div class="person__text mob-hide">Текст описания работы сотрудника идет тут в две три строки Текст описания работы сотрудника идет тут в две три строки</div>
+                              <div class="person__mail"><i class="fi flaticon-black"></i> carla@funeral-home.com</div>
+                            </a>
+                            <!-- end person -->
+                          </div>
+                          <div class="wind__preson col-md-6 col-sm-6 col-xs-12">
+                            <!-- begin person -->
+                            <a href="#" class="person">
+                              <div class="person__img" style="background-image: url(./img/person-1.png);"></div>
+                              <div class="person__name-wrap">
+                                <div class="person__name">Дарья иванова</div>
+                              </div>
+                              <div class="person__position">ритуальный агент</div>
+                              <div class="person__text mob-hide">Текст описания работы сотрудника идет тут в две три строки Текст описания работы сотрудника идет тут в две три строки</div>
+                              <div class="person__mail"><i class="fi flaticon-black"></i> carla@funeral-home.com</div>
+                            </a>
+                            <!-- end person -->
+                          </div>
+                        </div>
+                        <div class="wind__bg md-hide" style="background-image: url(./img/wind-bg.jpg);"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End team -->
                 </div>
               </div>
               <div class="row md-hide">
@@ -1750,7 +1757,7 @@
                   <!-- End page-nav -->
                   <div class="single-meta mob-hide">
                     <!-- Start counter -->
-                    <div class="visitors"> <button class="visitors__print-btn" type="button">
+                    <div class="visitors"> <button class="visitors__print-btn" type="button" onclick='print();'>
         <span>
 <svg class="icon icon-printer"><use xlink:href="img/sprite.svg#icon-printer"></use></svg>
 </span>
@@ -1793,21 +1800,21 @@
               <div class="col-md-3 col-sm-6 mob-hide">
                 <h4 class="title-sm">Последние некрологи</h4>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/tie.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
                     <div class="block__label">Дата похорон: </div>
                     <div class="block__date">Вт. 03-12-2018</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/photo-with-ribbon.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
                     <div class="block__label">Дата похорон: </div>
                     <div class="block__date">Вт. 03-12-2018</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/tie.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
                     <div class="block__label">Дата похорон: </div>
                     <div class="block__date">Вт. 03-12-2018</div>
@@ -1817,19 +1824,19 @@
               <div class="col-md-3 col-sm-6 mob-hide">
                 <h4 class="title-sm">Последние статьи</h4>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/aside-post-img.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
                     <div class="block__label">Имя Фамилия</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/post-img.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Что снится к любви и наслаждению, а что – к разлуке и печали</a>
                     <div class="block__label">Имя Фамилия</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/aside-post-img.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
                     <div class="block__label">Имя Фамилия</div>
                   </div>
@@ -1838,19 +1845,19 @@
               <div class="col-md-3 col-sm-6 mob-hide">
                 <h4 class="title-sm">Доска объявлений</h4>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/notes.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
                     <div class="block__label">Категория</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/notes.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Еще один заголовок объявления</a>
                     <div class="block__label">Категория</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/notes.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
                     <div class="block__label">Категория</div>
                   </div>

@@ -80,7 +80,6 @@
         .title-m
             font-size: 30px
             font-weight: bold
-            font-family: $tahoma
             +sm
                 font-size: 16px!important
         .title-s
@@ -110,25 +109,58 @@
         display: flex
         align-items: center
         margin-bottom: 0
-        span
+        &>span
             width: auto
             margin-right: 22px
             font-size: 13px
             color: $brown_orange
     .ps-select
-        background-color: #fff
+        background: none
         width: 90px
         height: 31px
         select
             color: $brown_orange
             font-size: 13px
             text-align: center
-            padding: 0 41px
+            padding: 0 39px
             height: 31px
         i
             line-height: 31px
+            display: none
     .shop-sort
         font-family: Flaticon
+    .select--small
+        visibility: visible
+        opacity: 1
+        background-color: #fff
+        width: 90px
+        height: 31px
+        border-radius: 5px
+        .selection
+            width: 100%
+        .select2-selection
+            border: none
+            width: 100%
+            height: 100%
+        .select2-selection__rendered
+            line-height: 31px
+            color: $brown_orange
+            padding-right: 8px
+            width: 100%
+            text-align: center
+        
+
+.select--small
+    &__drop
+        .select2-results__options
+            padding: 0 0 5px
+            text-align: center
+        .select2-results__option
+            border-radius: 5px
+            &:hover
+                background-color: #6a6455
+                color: #fff
+
 .companies-group
     +md
         .col-xs-6:nth-child(even)
@@ -183,8 +215,8 @@
     .btn
         order: 4
     .sf-thumb
-        height: 234px
-        line-height: 232px
+        height: 152px
+        line-height: 150px
         text-align: center
         border: 1px solid #e4e4e4
         width: 100%
@@ -205,7 +237,7 @@
         &:after
             display: none
         img
-            max-height: 230px
+            max-height: 148px
             max-width: 100%
             display: block
             width: auto
@@ -394,10 +426,15 @@
 
 .new-company
     margin-bottom: 235px
+    &:hover
+        .new-company__text
+            background-color: $brown_orange
+            color: #fff
     &__text
         padding: 17px 0 17px 100px
         position: relative
         background-color: $white_brown_bg
+        transition: background-color .3s, color .3s
     &__img
         position: absolute
         width: 71px

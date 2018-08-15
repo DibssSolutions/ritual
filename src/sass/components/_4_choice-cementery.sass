@@ -17,36 +17,53 @@
 			font-size: 13px
 		&.border
 			border: none
-	.agent__row
-		display: flex
-		align-items: center
-		flex-wrap: wrap
-		+md
-	.agent__col-sm
-		+md
-			margin-bottom: 15px
-		+sm
-			margin: 0 auto 15px		
-	.agent__col-md
-		padding-left: 25px
-		+sm
-			padding-left: 0
-	.agent__col
-		width: auto
-		text-align: left
-		&.text-center
+		&__row
+			display: flex
+			align-items: center
+			flex-wrap: wrap
+		&__col-sm
+			+md
+				margin-bottom: 15px
+			+sm
+				margin: 0 auto 15px
+		&__col-md
+			padding-left: 25px
+			+sm
+				padding-left: 0
+		&__col
+			width: auto
+			text-align: left
+			&.text-center
+				text-align: center
+				+sm
+					text-align: left
+		&__col-title
+			text-transform: none
 			text-align: center
+			margin-bottom: 15px
 			+sm
 				text-align: left
-	.agent__col-title
-		text-transform: none
-		text-align: center
-		margin-bottom: 15px
-		+sm
-			text-align: left
-	.contacts-item	
+	.contacts-item
+		position: relative
 		display: flex
 		align-items: center
+		&__input
+			padding: 0 20px 0 10px
+			font-weight: 600
+			color: $brown
+			font-size: 15px
+			width: 100px
+			+placeholder
+				font-weight: 600
+				color: $brown
+				font-size: 15px
+		&__label
+			position: absolute
+			right: 60px
+			top: 0
+			cursor: pointer
+			.icon
+				fill: $brown
 		span
 			display: inline-block
 			margin-left: 10px
@@ -90,9 +107,6 @@
 	visibility: inherit !important
 	opacity: 1
 	max-width: 300px
-	// top: 0 !important
-	left: initial !important
-	right: initial !important
 	margin: 0
 	padding: 20px
 	&:not(.datepicker-inline)

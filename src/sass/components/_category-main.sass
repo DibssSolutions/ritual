@@ -7,6 +7,7 @@
     align-items: center
     padding-left: 100px
     background-color: $white_brown_bg
+    transition: background-color .3s, color .3s
     +md
         padding-left: 60px
     +sm
@@ -32,72 +33,104 @@
             width: 70px
 
 .category-main
-    padding-top: 40px
-    &__head
-        margin-bottom: 45px
-    &__container
-    &__row
-    &__col
-        .shop-sort-wrap
-            margin-bottom: 40px
-    &__catalogue
-        padding-top: 45px
-    &__tile
-        +sm
-            padding-top: 30px
-    &__list
-        .services-card
-            text-align: left
-            +sm
-                margin-bottom: 25px
-            &__title
-            &__text
-                padding-top: 30px
-                margin-bottom: 50px
-                +sm
-                    margin-bottom: 30px
-            &__descr
-                padding-top: 25px
-                +sm
-                    padding-top: 0
-                +clr
-            .btn
-                float: right
-    &__alphabetic-search
-        margin-bottom: 20px
-    .services-card
-        &__title
-            font-size: 21px
-            font-family: $tahoma
-    &__datepicker-inline
-        margin-bottom: 47px
+	padding-top: 40px
+	&__head
+		margin-bottom: 45px
+	&__container
+	&__row
+	&__col
+		.shop-sort-wrap
+			margin-bottom: 40px
+	&__catalogue
+		padding-top: 45px
+	&__tile
+		+sm
+			padding-top: 30px
+	&__list
+		.services-card
+			text-align: left
+			+sm
+				margin-bottom: 25px
+			&__title
+			&__text
+				padding-top: 30px
+				margin-bottom: 50px
+				+sm
+					margin-bottom: 30px
+			&__descr
+				padding-top: 25px
+				+sm
+					padding-top: 0
+				+clr
+			.btn
+				float: right
+	&__alphabetic-search
+		margin-bottom: 20px
+	.services-card
+		&__title
+			font-size: 21px
+			font-family: $tahoma
+	&__datepicker-inline
+		position: relative
+		margin-bottom: 47px
+	&__img
+		position: absolute
+		left: 0
+		bottom: -178px
+		width: 245px
+		height: 445px
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+		z-index: 2
+		+sm
+			display: none
+	.funeral-info,	
+	&__top
+		position: relative
+		z-index: 3
+	.funeral-info__footer
+		position: relative
+		.funeral-info__img
+			position: absolute
+			top: 20px
+			width: 89px
+			height: 80px
+			right: 0
+			+sm
+				top: 8px
+				width: 69px
+				height: 60px
+			img
+				max-width: 100%
+
 
 .catalogue
-    margin-bottom: 55px
-    &__subcategory
-        display: none
-    li
-        padding-left: 30px
-        position: relative
-        &:hover
-            .catalogue__subcategory
-                display: block
-        a
-            display: block
-            margin-bottom: 30px
-            &:hover
-                font-weight: 700
-                i
-                    transform: rotate(90deg)
-    i
-        position: absolute
-        left: 12px
-        transition: transform .3s
+	margin-bottom: 55px
+	&__subcategory
+		display: none
+	li
+		padding-left: 30px
+		position: relative
+		&:hover
+			.catalogue__subcategory
+				display: block
+		a
+			display: block
+			margin-bottom: 30px
+			&:hover
+				font-weight: 700
+				i
+					transform: rotate(90deg)
+	i
+		position: absolute
+		left: 12px
+		transition: transform .3s
 
 .category-range
-    margin-bottom: 55px
-    +clr
-    .btn
-        font-size: 13px
-        float: right
-        margin-top: 30px
+	margin-bottom: 55px
+	+clr
+	.btn
+		font-size: 13px
+		float: right
+		margin-top: 30px

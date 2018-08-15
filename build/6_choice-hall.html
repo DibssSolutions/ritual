@@ -34,20 +34,47 @@
       <div class="header-wrap js-header-wrap">
         <div class="topbar topbar3">
           <div class="container">
-            <div class="lang-select pull-right"> <i class="fa fa-angle-down"></i> <select>
-                    <option value="">EN</option>
-                    <option value="">PO</option>
-                    <option value="">FR</option>
-                </select> </div>
+            <div class="topbar__wrap">
+              <ul class="topbar__list list-dropdown">
+                <li class="list-dropdown__item list-dropdown__item_mod">
+                  <div class="map-wrap__select"> <span class="list-dropdown__icon">
+								
+<svg class="icon icon-mark"><use xlink:href="img/sprite.svg#icon-mark"></use></svg>
+
+							</span>
+                    <div class="select"> <select name="region" id="heade-region" style="width: 100%" class="js-select" placeholder="Выберите район">
+									<option value="1">Выберите район</option>
+									<option value="2">Индустриальный</option>
+									<option value="3">Кировский</option>
+									<option value="4">Краснофлотский</option>
+								</select> </div>
+                  </div>
+                </li>
+                <li class="list-dropdown__item"> <a href="#" class="list-dropdown__link">
+							<span class="list-dropdown__icon">
+								
+<svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg>
+
+							</span>
+							Войти
+						</a> </li>
+                <li class="list-dropdown__item"> <span class="vertical-slash">|</span> </li>
+                <li class="list-dropdown__item"> <a href="#" class="list-dropdown__link">
+							 Зарегистрироваться
+						</a> </li>
+              </ul>
+            </div>
           </div>
         </div>
         <header class="header4 header5 header-bg">
           <div class="container">
             <div class="row">
-              <div class="col-md-3 col-sm-3 col-xs-8"> <a href="./index.html" class="navbar-brand"><img src="img/logo.png" class="img-responsive" alt=""></a> </div>
+              <div class="col-md-3 col-sm-3 col-xs-8"> <a href="./index.html" class="navbar-brand">
+						<img src="img/logo.png" class="img-responsive" alt="logo">
+					</a> </div>
               <div class="col-md-9 col-sm-9 col-xs-4">
                 <div class="header-top">
-                  <div class="cart-header2 hidden-xs cart-show pull-right"> <i class="fi flaticon-web"></i> <span>My Cart (0)</span>
+                  <div class="cart-header2 hidden-xs cart-show pull-right"> <i class="fi flaticon-web"></i> <span>My Cart (3)</span>
                     <div class="cart-table">
                       <h3>My Cart (3 items)</h3>
                       <div class="margin-bottom-20"></div>
@@ -75,28 +102,37 @@
                 </div>
                 <div class="clearfix"></div>
                 <nav class="navbar navbar-default"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	                        <span>
-						        <em></em>
-						        <em></em>
-						        <em></em>
-						    </span>
-	                    </button>
+							<span>
+								<em></em>
+								<em></em>
+								<em></em>
+							</span>
+						</button>
                   <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                       <li><a href="./index.html">Главная</a></li>
-                      <li class="dropdown dropdown-normal"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Если случилось горе <span class="fa fa-angle-down"></span></a>
+                      <li class="dropdown dropdown_mod"> <a href="#" class="dropdown-toggle">Если случилось горе <span class="fa fa-angle-down"></span></a>
                         <ul class="dropdown-menu dropdown-menu-v3">
-                          <li><a href="./blog.html">Blog</a></li>
-                          <li><a href="./blog-single.html">Blog Single</a></li>
+                          <li><a href="#">Блог</a></li>
+                          <li><a href="#">Блог 1</a></li>
+                          <li><a href="#">Блог 2</a></li>
                         </ul>
                       </li>
                       <li><a href="#">После похорон</a></li>
-                      <li class="dropdown dropdown-normal active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Страницы памяти<span class="fa fa-angle-down"></span></a>
+                      <li class="dropdown dropdown_mod"> <a href="#" class="dropdown-toggle">
+										Страницы памяти
+										<span class="fa fa-angle-down"></span>
+									</a>
                         <ul class="dropdown-menu dropdown-menu-v3">
-                          <li><a href="./contact-v1.html">Contact</a></li>
-                          <li><a href="./contact-v2.html">Contact V2</a></li>
-                          <li><a href="./locations.html">Locations</a></li>
-                          <li><a href="./location-single.html">Location - Single</a></li>
+                          <li> <a href="#">
+												Каталог А-Я
+											</a> </li>
+                          <li> <a href="#">
+												Календарь похорон
+											</a> </li>
+                          <li> <a href="./locations.html">
+												Все никрологи
+											</a> </li>
                         </ul>
                       </li>
                     </ul>
@@ -130,7 +166,7 @@
               <div class="choice-slider">
                 <!-- begin slider -->
                 <div class="choice-slider__wrap">
-                  <h4 class="choice-slider__title title-l">Прощание с покойным - выбор зала</h4>
+                  <h1 class="choice-slider__title title-l">Прощание с покойным - выбор зала</h1>
                   <p> Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой
                     то текст </p>
                   <div class="choice__slider slider">
@@ -184,12 +220,12 @@
               </div>
               <div class="map-wrap__select mob-hide">
                 <div class="select"> <select name="region" id="region" style="width: 100%" class="js-select">
-                            <option value="1">Выберите район</option>
-                            <option value="2">Индустриальный</option>
-                            <option value="3">Кировский</option>
-                            <option value="4">Краснофлотский</option>
-                            <option value="5">Центральный</option>
-                        </select> </div>
+							<option value="1">Выберите район</option>
+							<option value="2">Индустриальный</option>
+							<option value="3">Кировский</option>
+							<option value="4">Краснофлотский</option>
+							<option value="5">Центральный</option>
+						</select> </div>
               </div>
               <div class="js-map map" id="mapInfobox" data-center-lat="-34.097" data-center-lng="150.644"></div>
               <script type="text/template" class="js-mapInfobox">
@@ -575,7 +611,7 @@
                               <div class="about-agency__head">
                                 <div class="about-agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
                                 <div class="about-agency__rating"> <span class="ratings">
-						                                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span>                                  <span class="ratings__appraisal">5.0</span> </span>
+															<span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                                  </span>
                                 </div>
                               </div>
                               <div class="about-agency__contact">
@@ -640,23 +676,23 @@
                       <!-- end wind-head -->
                       <div class="full-slider js-full-slider">
                         <div class="full-slider__slide"> <a href="./img/full-slider-img.jpg" data-fancybox="gallery" class="full-img">
-					    					
+											
 <svg class="icon icon-full"><use xlink:href="img/sprite.svg#icon-full"></use></svg>
 
-					    					<img src="./img/choice-slide.png" alt="img">
-					    				</a> </div>
+											<img src="./img/choice-slide.png" alt="img">
+										</a> </div>
                         <div class="full-slider__slide"> <a href="./img/choice-slide.png" data-fancybox="gallery" class="full-img">
-					    					
+											
 <svg class="icon icon-full"><use xlink:href="img/sprite.svg#icon-full"></use></svg>
 
-					    					<img src="./img/choice-slide.png" alt="img">
-					    				</a> </div>
+											<img src="./img/choice-slide.png" alt="img">
+										</a> </div>
                         <div class="full-slider__slide"> <a href="./img/choice-slide.png" data-fancybox="gallery" class="full-img">
-					    					
+											
 <svg class="icon icon-full"><use xlink:href="img/sprite.svg#icon-full"></use></svg>
 
-					    					<img src="./img/choice-slide.png" alt="img">
-					    				</a> </div>
+											<img src="./img/choice-slide.png" alt="img">
+										</a> </div>
                       </div>
                       <div class="wind__bg" style="background-image: url(./img/choice-cementery.png);"></div>
                     </div>
@@ -690,10 +726,10 @@
                             <div class="shop-sort-wrap">
                               <div class="ps-options pull-left"> <span>Показывать по:</span>
                                 <div class="ps-select"> <i class="fa fa-caret-down"></i> <select>
-			    											<option>4</option>
-			    											<option>5</option>
-			    											<option selected>6</option>
-			    										</select> </div>
+															<option>4</option>
+															<option>5</option>
+															<option selected>6</option>
+														</select> </div>
                               </div>
                               <div class="shop-sort"> <a href="#" class="active"><i class="flaticon-squares"></i></a> <a href="#"><i class="flaticon-signs-1"></i></a> </div>
                             </div>
@@ -719,12 +755,12 @@
                                 </div>
                                 <div class="companies-item__descr">
                                   <div class="product-reviews"> <span class="pr-ratings">
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    											</span>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+															</span>
                                     <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span> <span>(1)</span> </div>
@@ -751,12 +787,12 @@
                                 </div>
                                 <div class="companies-item__descr">
                                   <div class="product-reviews"> <span class="pr-ratings">
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    											</span>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+															</span>
                                     <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span> <span>(1)</span> </div>
@@ -783,12 +819,12 @@
                                 </div>
                                 <div class="companies-item__descr">
                                   <div class="product-reviews"> <span class="pr-ratings">
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    											</span>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+															</span>
                                     <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span> <span>(1)</span> </div>
@@ -815,12 +851,12 @@
                                 </div>
                                 <div class="companies-item__descr">
                                   <div class="product-reviews"> <span class="pr-ratings">
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    											</span>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+															</span>
                                     <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span> <span>(1)</span> </div>
@@ -847,12 +883,12 @@
                                 </div>
                                 <div class="companies-item__descr">
                                   <div class="product-reviews"> <span class="pr-ratings">
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    											</span>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+															</span>
                                     <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span> <span>(1)</span> </div>
@@ -879,12 +915,12 @@
                                 </div>
                                 <div class="companies-item__descr">
                                   <div class="product-reviews"> <span class="pr-ratings">
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    												<i class="flaticon-favorite"></i>
-			    											</span>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+																<i class="flaticon-favorite"></i>
+															</span>
                                     <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span> <span>(1)</span> </div>
@@ -916,10 +952,10 @@
                             <div class="shop-sort-wrap">
                               <div class="ps-options pull-left"> <span>Показывать по:</span>
                                 <div class="ps-select"> <i class="fa fa-caret-down"></i> <select>
-			    											<option>4</option>
-			    											<option>5</option>
-			    											<option selected>6</option>
-			    										</select> </div>
+															<option>4</option>
+															<option>5</option>
+															<option selected>6</option>
+														</select> </div>
                               </div>
                               <div class="shop-sort"> <a href="#" class="active"><i class="flaticon-squares"></i></a> <a href="#"><i class="flaticon-signs-1"></i></a> </div>
                             </div>
@@ -944,17 +980,17 @@
                               <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
                               <div class="companies-item__descr">
                                 <div class="product-reviews"> <span class="pr-ratings">
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                            </span>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+														</span>
                                   <div class="product-reviews__details mob-hide"> <span>5.0</span>
                                     <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span>
-			                                                <span>(1)</span> --></div>
+															<span>(1)</span> --></div>
                                 </div>
                               </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
                           </div>
@@ -975,17 +1011,17 @@
                               <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
                               <div class="companies-item__descr">
                                 <div class="product-reviews"> <span class="pr-ratings">
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                            </span>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+														</span>
                                   <div class="product-reviews__details mob-hide"> <span>5.0</span>
                                     <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span>
-			                                                <span>(1)</span> --></div>
+															<span>(1)</span> --></div>
                                 </div>
                               </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
                           </div>
@@ -1006,17 +1042,17 @@
                               <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
                               <div class="companies-item__descr">
                                 <div class="product-reviews"> <span class="pr-ratings">
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                            </span>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+														</span>
                                   <div class="product-reviews__details mob-hide"> <span>5.0</span>
                                     <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span>
-			                                                <span>(1)</span> --></div>
+															<span>(1)</span> --></div>
                                 </div>
                               </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
                           </div>
@@ -1037,17 +1073,17 @@
                               <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
                               <div class="companies-item__descr">
                                 <div class="product-reviews"> <span class="pr-ratings">
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                                <i class="flaticon-favorite"></i>
-			                                            </span>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+															<i class="flaticon-favorite"></i>
+														</span>
                                   <div class="product-reviews__details mob-hide"> <span>5.0</span>
                                     <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
 </span>
-			                                                <span>(1)</span> --></div>
+															<span>(1)</span> --></div>
                                 </div>
                               </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
                           </div>
@@ -1096,7 +1132,7 @@
                         <div class="agency__table-cell">
                           <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
                           <div class="agency__stars"> <span class="ratings">
-                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                            <span class="ratings__appraisal">4.0</span> </span>
+										<span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span> <span class="ratings__appraisal">4.0</span>                            </span>
                           </div>
                         </div>
                         <div class="agency__table-cell">
@@ -1265,8 +1301,7 @@
                         <div class="agent__row">
                           <div class="agent__col">
                             <div class="contacts-item"><i class="fi flaticon-people">
-		                                    	
-		                                    </i>Агентство/Агент: <span>название</span> </div>
+											</i>Агентство/Агент: <span>название</span> </div>
                             <div class="contacts-item"> <i class="fi flaticon-technology"></i>Контактный телефон: <span>8 (800) 123 45 67</span> </div>
                           </div>
                         </div>
@@ -1288,7 +1323,11 @@
                                 <div class="input-group-addon"> <i class="fa fa-calendar"></i> </div>
                               </div>
                             </div>
-                            <div class="contacts-item"> <i class="fi flaticon-clock"></i>Время проведения: <span>12:00</span> </div>
+                            <div class="contacts-item"> <i class="fi flaticon-clock"></i>Время проведения: <input class="contacts-item__input" id="time3" type="text" placeholder="12:00" name="time3"> <label class="contacts-item__label" for="time3">
+													
+<svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
+
+												</label> </div>
                           </div>
                           <div class="agent__col text-center">
                             <h4 class="agent__col-title title-sm">Выбор зала</h4> <a href="#" class="btn">Выбрать зала для прощания</a> </div>
@@ -1385,12 +1424,12 @@
                       <li class="choice-price__item"> <span class="choice-price__lef-col">Услуга 9</span> <span class="choice-price__right-col">1 000</span> </li>
                       <li class="choice-price__item"> <span class="choice-price__lef-col">Еще одна услуга</span> <span class="choice-price__right-col">300</span> </li>
                     </ul>
-                    <div class="visitors"> <button class="visitors__print-btn" type="button">
-							        <span>
+                    <div class="visitors"> <button class="visitors__print-btn" type="button" onclick='print();'>
+									<span>
 <svg class="icon icon-printer"><use xlink:href="img/sprite.svg#icon-printer"></use></svg>
 </span>
-							        Распечатать
-							    </button> </div>
+									Распечатать
+								</button> </div>
                   </div>
                 </div>
               </div>
@@ -1410,7 +1449,7 @@
                       <div class="agency__table-cell">
                         <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
                         <div class="agency__stars"> <span class="ratings">
-						                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                          </span>
+											<span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                          </span>
                         </div>
                       </div>
                       <div class="agency__table-cell agency__table-cell_lg">
@@ -1438,7 +1477,7 @@
                       <div class="agency__table-cell">
                         <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
                         <div class="agency__stars"> <span class="ratings">
-						                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                          </span>
+											<span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                          </span>
                         </div>
                       </div>
                       <div class="agency__table-cell agency__table-cell_lg">
@@ -1466,7 +1505,7 @@
                       <div class="agency__table-cell">
                         <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
                         <div class="agency__stars"> <span class="ratings">
-						                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                          </span>
+											<span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="ratings__appraisal">5.0</span>                          </span>
                         </div>
                       </div>
                       <div class="agency__table-cell agency__table-cell_lg">
@@ -1562,21 +1601,21 @@
               <div class="col-md-3 col-sm-6 mob-hide">
                 <h4 class="title-sm">Последние некрологи</h4>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/tie.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
                     <div class="block__label">Дата похорон: </div>
                     <div class="block__date">Вт. 03-12-2018</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/photo-with-ribbon.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
                     <div class="block__label">Дата похорон: </div>
                     <div class="block__date">Вт. 03-12-2018</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/tie.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
                     <div class="block__label">Дата похорон: </div>
                     <div class="block__date">Вт. 03-12-2018</div>
@@ -1586,19 +1625,19 @@
               <div class="col-md-3 col-sm-6 mob-hide">
                 <h4 class="title-sm">Последние статьи</h4>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/aside-post-img.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
                     <div class="block__label">Имя Фамилия</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/post-img.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Что снится к любви и наслаждению, а что – к разлуке и печали</a>
                     <div class="block__label">Имя Фамилия</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/aside-post-img.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
                     <div class="block__label">Имя Фамилия</div>
                   </div>
@@ -1607,19 +1646,19 @@
               <div class="col-md-3 col-sm-6 mob-hide">
                 <h4 class="title-sm">Доска объявлений</h4>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/notes.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
                     <div class="block__label">Категория</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/notes.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Еще один заголовок объявления</a>
                     <div class="block__label">Категория</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/notes.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
                     <div class="block__label">Категория</div>
                   </div>

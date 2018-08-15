@@ -1,50 +1,108 @@
-{% set servicesCards = [
-    {
-        img: 'services-item-1.jpg',
-        title: 'Ритуальный агент'
-    },
-    {
-        img: 'services-item-2.jpg',
-        title: 'Похороны'
-    },
-    {
-        img: 'services-item-3.jpg',
-        title: 'Подготовка усопших, бальзамирование'
-    },
-    {
-        img: 'services-item-4.jpg',
-        title: 'Кремация'
-    }
+{% set servicesCards1 = [
+	{
+		img: 'car.png',
+		title: 'Ритуальный агент'
+	},
+	{
+		img: 'services-item-2.jpg',
+		title: 'Похороны'
+	},
+	{
+		img: 'services-item-3.jpg',
+		title: 'Подготовка усопших, бальзамирование'
+	},
+	{
+		img: 'services-item-4.jpg',
+		title: 'Кремация'
+	}
+] %}
+
+{% set servicesCards2 = [
+	{
+		img: '1200.png',
+		title: 'Кремация'
+	},
+	{
+		img: '1201.png',
+		title: 'Похороны'
+	},
+	{
+		img: '1202.png',
+		title: 'Подготовка усопших, бальзамирование'
+	},
+	{
+		img: '1203.png',
+		title: 'Кремация'
+	}
+] %}
+
+{% set servicesCards3 = [
+	{
+		img: '1204.png',
+		title: 'Кремация'
+	},
+	{
+		img: '1205.png',
+		title: 'Похороны'
+	},
+	{
+		img: '1206.png',
+		title: 'Подготовка усопших, бальзамирование'
+	},
+	{
+		img: '1207.png',
+		title: 'Кремация'
+	}
 ] %}
 
 <div class="ritual-services">
-    <div class="container ritual-services__container">
-        <div class="section-head ritual-services__head text-center">
-            <h3 class="title-l ritual-services__title">Ритуальные услуги</h3>
-        </div>
-        <div class="ritual-services__body">
-            {% for i in [1,2,3,4] %}
-            
-            <div class="ritual-services__row row">
-
-                {% for item in servicesCards %}
-                    
-                <div class="ritual-services__col col-md-3 col-sm-6">
-                    <a href="#" class="ritual-services__card services-card">
-                        <div class="services-card__img">
-                            <img src="./img/{{item.img}}" data-object-fit="cover" alt="img">
-                        </div>
-                        <div class="services-card__title title-s">
-                            {{item.title}}
-                        </div>
-                    </a>
-                </div>
-
-                {% endfor %}
-                
-            </div>
-
-            {% endfor %}
-        </div>
-    </div>
+	<div class="container ritual-services__container">
+		<div class="section-head ritual-services__head text-center">
+			<h3 class="title-l ritual-services__title">Ритуальные услуги</h3>
+		</div>
+		<div class="ritual-services__body">
+			<div class="ritual-services__row row">
+				{% for item in servicesCards1 %}
+				<div class="ritual-services__col col-md-3 col-sm-6">
+					<a href="#" class="ritual-services__card services-card">
+						<div class="services-card__img">
+							<img src="./img/{{item.img}}" data-object-fit="cover" alt="img">
+						</div>
+						<div class="services-card__title title-s">
+							{{item.title}}
+						</div>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="ritual-services__row row">
+				{% for item in servicesCards2 %}
+				<div class="ritual-services__col col-md-3 col-sm-6">
+					<a href="#" class="ritual-services__card services-card">
+						<div class="services-card__img">
+							<img src="./img/{{item.img}}" data-object-fit="cover" alt="img">
+						</div>
+						<div class="services-card__title title-s">
+							{{item.title}}
+						</div>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="ritual-services__row row">
+				{% for item in servicesCards3 %}
+				<div class="ritual-services__col col-md-3 col-sm-6">
+					<a href="#" class="ritual-services__card services-card">
+						<div class="services-card__img">
+							<img src="./img/{{item.img}}" data-object-fit="cover" alt="img">
+						</div>
+						<div class="services-card__title title-s">
+							{{item.title}}
+						</div>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
 </div>
