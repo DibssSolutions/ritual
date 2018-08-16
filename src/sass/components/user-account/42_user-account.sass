@@ -1,25 +1,29 @@
-.use-account
+.user-account
 	&__wrap
-		padding-top: 50px	
-	.memory-form__btn
-		font-weight: 600
-	.memory-form__title-block
-		display: flex
-		align-items: center
-		justify-content: space-between
+		padding-top: 70px
+	&__row
+		margin-bottom: 20px	
+	&__info-list
+		text-align: center
+		font-size: 15px
+		color: #b7aea3
+		border-bottom: 1px solid #eee
 		padding-bottom: 10px
-	.select	
-		width: 100%
-	.select .select2-selection--single .select2-selection__rendered
-		padding-left: 27px
-		padding-top: 6px
-		padding-bottom: 6px
-	.select .select2-selection--single
-		height: 45px
-		background-color: #f1ede8 
-	.select .select2-selection--single .select2-selection__arrow
-		height: 42px
-		width: 40px
-	.select2-container--default .select2-selection--multiple,
-	.select2-container--default .select2-selection--single
-		border-radius: 0
+		margin-bottom: 10px
+	&__nav-list
+		padding-left: 40px
+	&__nav-item	
+		font-size: 15px
+		color: $brown
+		padding: 5px 0
+	&__nav-link
+		display: block
+		padding: 5px 0	
+		&.is-active
+			font-weight: 600			
+		&:hover
+			font-weight: 600
+		i
+			margin-right: 15px
+	
+	
