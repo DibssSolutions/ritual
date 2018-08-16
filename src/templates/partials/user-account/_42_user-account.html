@@ -1,47 +1,35 @@
 <div class="wrapper">
-	<div class="use-account">
-        <div class="page-head">
-            <div class="container page-head__container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-12 page-head__col">
-                        <ul class="bcrumbs page-head__bcrumbs">
-                            <li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
-                            <li><a href="#">Obituaries</a></li>
-                            <li>Past</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-		<div class="container">
-			<div class="use-account__wrap">
-				<div class="use-account__row row">
-					<aside class="use-account__aside col-md-3 col-sm-12">
-						<div class="person-info__photo">
-						    <img src="./img/memory-item.jpg" alt="photo">
-						    <div class="person-info__img">
-						        <img src="./img/candles.gif" alt="img">
-						    </div>
-						    <div class="person-info__img person-info__img_1">
-						        <img src="./img/ribbon.png" alt="img">
-						    </div>
-						</div>
-						<div class="person-info__general text-center">
-						    <p>
-						        Фамилия Имя Отчество
-						    </p>
-						    <span>
-						        1937 - 1991
-						    </span>
-						</div>
-					</aside>
-					<div class="col-md-9 col-sm-12">
-						<!-- Start schedule -->
-						{% include "partials/user-account/_personal-info.html" %}
-						<!-- End schedule -->
-					</div>    
+	<div class="user-account">
+		<div class="page-head">
+			<div class="container page-head__container">
+				<div class="row">
+					<div class="col-md-3 col-sm-12 page-head__col">
+						<ul class="bcrumbs page-head__bcrumbs">
+							<li>	
+								<a href="#">
+									<span class="showin">
+										{{ mixins.icon('house') }}
+									</span>
+									<span class="hidein">Home</span>
+								</a></li>
+							<li>
+								<a href="#">Obituaries</a>
+							</li>
+							<li>Past</li>
+						</ul>
+					</div>
 				</div>
-			</div>    
+			</div>
+		</div>
+		<div class="container">
+			<div class="user-account__wrap">
+				<!-- Start schedule -->
+				{% include "partials/user-account/_personal-info.html" %}
+				<!-- End schedule -->
+				<!-- Start schedule -->
+				{% include "partials/user-account/_announcements.html" %}
+				<!-- End schedule -->
+			</div>
 			<div class="bottom-image">
 				<img src="img/rose-angel.png" alt="rose-angel">
 			</div>

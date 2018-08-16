@@ -1,0 +1,95 @@
+.announcements
+	margin-bottom: 0
+	
+.ritual-agent
+	position: relative
+	padding: 20px 20px 10px 15px
+	transition: box-shadow .3s
+	border: 1px solid #e3e3e3
+	margin-bottom: 20px
+	&:hover
+		box-shadow: 0 0 10px rgba(0,0,0,.2)
+	&__label
+	&:after
+		top: 3px
+		width: 14px
+		height: 14px
+		background: repeating-linear-gradient(to bottom right,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
+		background: repeating-linear-gradient(top left,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
+		z-index: 1
+	&:before
+		top: 4px
+		left: -15px
+		width: 12px
+		height: 12px
+		content: ''
+		border: 1px solid #ccc
+		z-index: 2
+		background-color: $brown		
+	&__wrap
+		display: flex
+		align-items: flex-start
+		margin-bottom: 10px
+	&__image
+		position: relative
+		width: 130px
+		height: 135px
+		background-color: #f1ede8
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+
+		&:after
+			position: absolute
+			top: 4px
+			right: 4px
+			bottom: 4px
+			left: 4px
+			content: ''
+			border: 1px solid #eae5dc
+	&__text
+		margin-left: 20px
+	&__descr
+		margin-bottom: 15px
+	&__price
+		margin-bottom: 10px	
+		.product-prices
+			&__first
+				font-size: 24px
+				color: $brown
+			&__last
+				font-size: 16px
+				color: #bfbfbf		
+	.input-checkbox
+		position: absolute
+		display: inline-block
+		top: 5px
+		right: 8px
+		cursor: pointer			
+
+.cv
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	background-color: #f1ede7
+	border-top: 1px solid #d0ccc5
+	padding: 9px 25px 9px 9px
+	color: #d5d4cf
+	font-size: 14px
+	&__date
+		display: inline-block
+		margin-right: 9px
+		color: #857e75
+	&__text
+		display: inline-block
+		color: #a39e96
+		margin-left: 9px
+		margin-right: 9px
+	&__views
+		margin-left: 9px	
+	&__views-icon
+		.icon
+			fill: #c9c2b4
+			font-size: 10px
+	&__views-counter
+		color: #857e75
