@@ -1,0 +1,69 @@
+.about-advantages
+    padding: 55px 0 70px
+    +sm
+        padding: 25px 0 40px
+    &__container
+    &__head
+        margin-bottom: 65px
+        +sm
+            margin-bottom: 40px
+    &__title
+    &__body
+        .person
+            max-width: 270px
+            margin-bottom: 65px
+            +md
+                max-width: none
+            +sm
+                display: flex
+                align-items: center
+                margin-bottom: 40px
+                &__name-wrap
+                    margin-bottom: 15px
+                &__name
+                    text-transform: none
+                &__img
+                    flex-shrink: 0
+                    margin: 0 15px 0 0
+                    width: 60px
+                    height: 60px
+                &__descr
+                    text-align: left
+            &__img
+                position: relative
+                width: 70px
+                height: 70px
+                background-color: $gray_brown
+                border: none
+                box-shadow: none
+                transition: background-color .3s
+            .icon
+                transition: fill .3s
+                fill: $brown_orange
+            &__icon
+                position: absolute
+                display: block
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                font-size: 25px
+                color: $brown_orange
+            &:hover
+                .person__img
+                    background-color: $brown_orange
+                    opacity: 1
+                .icon
+                    fill: #fff
+                .person__icon
+                    color: #fff
+    .col-xs-12
+        +sm
+            &:nth-child(even)
+                .person
+                    justify-content: flex-end
+                    &__img
+                        order: 1
+                        margin-right: 0
+                        margin-left: 15px
+                    &__descr
+                        text-align: right

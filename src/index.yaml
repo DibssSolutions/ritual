@@ -52,4 +52,6 @@ PageList:
 - file: 42_user-account.html
   ready: 50
 - file: promo.html
-  ready: 100 
+  ready: 100
+- file: 26_about_us.html
+  ready: 50  
