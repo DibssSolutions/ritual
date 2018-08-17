@@ -1,14 +1,36 @@
+{% set inputId = [
+	{
+		id: 'cbox1',
+		for: 'cbox1'
+	},
+	{
+		id: 'cbox2',
+		for: 'cbox2'
+	},
+	{
+		id: 'cbox3',
+		for: 'cbox3'
+	},
+	{
+		id: 'cbox4',
+		for: 'cbox4'
+	},
+	{
+		id: 'cbox5',
+		for: 'cbox5'
+	},
+	{
+		id: 'cbox6',
+		for: 'cbox6'
+	}
+]
+%}
+
 <div class="user-account__row row">
 	<aside class="user-account__aside">
 		<div class="col col-md-3 col-sm-12">
 			<div class="person-info__photo">
 				<img src="./img/memory-item.jpg" alt="photo">
-				<div class="person-info__img">
-					<img src="./img/candles.gif" alt="img">
-				</div>
-				<div class="person-info__img person-info__img_1">
-					<img src="./img/ribbon.png" alt="img">
-				</div>
 			</div>
 			<div class="person-info__general text-center">
 				<p>
@@ -73,68 +95,79 @@
 	</aside>
 	<div class="col-md-9 col-sm-12">
 		<div class="announcements__title-block memory-form__title_bordered">
-			<h4 class="memory-form__title title-sm memory-form__title_bordered">
+			<h4 class="memory-form__title title-sm">
 				Все мои объявления
 			</h4>
-			<div class="announcements__form">
-				<div class="row">
-					{% for i in range(0, 6) %}
-					<div class="col-md-6 col-sm-6 col-xs-6">
-						<div class="ritual-agent">
-							<input class="input-checkbox" type="checkbox" name="verify" id="cbox7">
-							<label class="ritual-agent__label" for="cbox7">
-								<div class="ritual-agent__wrap">
-									<div class="ritual-agent__image" style="background-image: url(./img/ritual.png);">
-									</div>
-									<div class="ritual-agent__text">
-										<h4 class="ritual-agent__name-title title-s ">
-											Ритуальный агент
-										</h4>
-										<div class="ritual-agent__descr">
-											<div class="product-reviews">
-												<span class="pr-ratings">
-													<i class="flaticon-favorite"></i>
-													<i class="flaticon-favorite"></i>
-													<i class="flaticon-favorite"></i>
-													<i class="flaticon-favorite"></i>
-													<i class="flaticon-favorite"></i>
-												</span>
-											</div>
-										</div>
-										<div class="ritual-agent__price">
-											<div class="product-prices">
-												<span class="product-prices__first">
-													690 ₽
-													<span class="product-prices__last"> 890 ₽</span>
-												</span>
-											</div>
-										</div>
-										<div class="cv">
-											<span class="cv__date">23.02.18</span>
-											|
-											<span class="cv__text">Резюме</span>
-											|
-											<div class="cv__views">
-												<span class="cv__views-icon">
-													{{ mixins.icon('eye') }}
-												</span>
-												<span class="cv__views-counter">47</span>
-											</div>
-										</div>
-									</div>
+		</div>
+		<form class="announcements__form memory-form__title_bordered">
+			<div class="row">
+				{% for item in inputId %}
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<div class="ritual-agent">
+						<input class="input-checkbox" type="checkbox" name="verify" id="{{ item.id }}">
+						<label class="ritual-agent__label" for="{{ item.for }}">
+							<div class="ritual-agent__wrap">
+								<div class="ritual-agent__image" style="background-image: url(./img/ritual.png);">
 								</div>
-								<div class="ritual-agent__btn-panel">
-									<button type="button" class="ritual-agent__btn">
-										
-									</button>
-								</div>    
-							</label>
-						</div>
+								<div class="ritual-agent__text">
+									<h4 class="ritual-agent__name-title title-s ">
+										Ритуальный агент
+									</h4>
+									<div class="ritual-agent__descr">
+										<div class="product-reviews">
+											<span class="pr-ratings">
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+											</span>
+										</div>
+									</div>
+									<div class="ritual-agent__price">
+										<div class="product-prices">
+											<span class="product-prices__first">
+												690 ₽
+												<span class="product-prices__last"> 890 ₽</span>
+											</span>
+										</div>
+									</div>
+									<!-- Start delete-account -->
+										{% include "partials/user-account/_cv.html" %}
+									<!-- End delete-account	 -->
+								</div>
+							</div>
+							<div class="btn-panel">
+								<div class="btn-panel__col">
+									<a href="#" class="btn-panel__btn">
+										<span class="btn-panel__btn-icon">
+											{{ mixins.icon('pen') }}
+										</span>
+										Редактировать 
+									</a>
+								</div>
+								<div class="btn-panel__col">
+									<a href="#" class="btn-panel__btn">
+										<span class="btn-panel__btn-icon">
+											{{ mixins.icon('cancel') }}
+										</span>
+										Удалить
+									</a>
+								</div>
+							</div>    
+						</label>
 					</div>
-					{% endfor %}
+				</div>
+				{% endfor %}
+			</div>
+			<div class="row">
+				<div class="col-md-11">
+					<!-- Start delete-account -->
+						{% include "partials/user-account/_paid-services.html" %}
+					<!-- End delete-account	 -->
 				</div>
 			</div>
-		</div>
+		</form>
 		<!-- Start delete-account -->
 			{% include "partials/user-account/_delete-account.html" %}
 		<!-- End delete-account	 -->
