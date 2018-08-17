@@ -1,0 +1,55 @@
+<div class="about-feedback">
+    <div class="about-feedback__container container">
+        <div class="about-feedback__top">
+                <div class="feedback__contact">
+                    <div class="feedback__contact-col">
+                        <p>Звоните нам по телефону: <br><i class="fa fas fa-phone"></i><span> 8 (111) 123 123</span></p>
+                    </div>
+                    <div class="feedback__contact-col">
+                        <div class="contacts-item"><i class="fa fa-map-marker"></i>г.Хабаровск, Название улицы, 10</div>
+                        <div class="contacts-item"><i class="fi flaticon-black"></i>username@mail.ru</div>
+                    </div>
+                    <div class="feedback__contact-col">
+                        <div class="contacts-item"><i class="fa fas fa-phone"></i><span>(099) 999 - 99 - 99</span><br></div>
+                        <div class="contacts-item">{{ mixins.icon('alarm-clock') }}</i><span> круглосуточно</span></div>
+                    </div>
+                </div>
+                <div class="about-feedback__title text-center mob-hide">Или заполните форму ниже и мы свяжемся с Вами:</div>
+        </div>
+        <div class="about-feedback__body">
+            <div class="feedback-form">
+                
+                <form class="post-form">
+                    <span class="post-form__icon">
+                        {{ mixins.icon('flaticon') }}
+                    </span>
+                    <h5 class="post-form__title title-m">Оставить сообщение</h5>
+                    <div class="post-form__row row">
+                        <div class="post-form__col">
+                            <input class="post-form__input" type="text" id="names">
+                            <label class="post-form__label" for="names">Ваше имя</label>
+                        </div>
+                        <div class="post-form__col">
+                            <input class="post-form__input" type="text" id="emails">
+                            <label class="post-form__label" for="emails">Email</label>
+                        </div>
+                        <div class="post-form__col">
+                            <input class="post-form__input" type="text" id="phones">
+                            <label class="post-form__label" for="phones">Телефон</label>
+                        </div>
+                        <div class="post-form__col">
+                            <textarea class="post-form__textarea" id="messages"></textarea>
+                            <label class="post-form__label" class="post-form__label" for="messages">Сообщение</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-md">Отправить</button>
+                </form>
+                <div class="hide-md md-hide">
+                    <div class="feedback-form__image">
+                        <img src="img/feedback-img.png" alt="feedback-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
