@@ -55,3 +55,7 @@ PageList:
   ready: 100
 - file: 26_about_us.html
   ready: 50  
+- file: 27_services.html
+  ready: 50  
+- file: 28_ratings.html
+  ready: 50  
