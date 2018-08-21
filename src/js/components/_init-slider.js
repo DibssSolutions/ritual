@@ -31,3 +31,12 @@ $('.js-slider-nav').slick({
   //   }
   // ]
 });
+
+
+$('.js-single-slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  prevArrow: '<button type="button" class="slider__prev"><i class="fa fas fa-angle-left"></i></button>',
+  nextArrow: '<button type="button" class="slider__next"><i class="fa fas fa-angle-right"></i></buttont>'
+});
