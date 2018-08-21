@@ -1,0 +1,55 @@
+.ratings-schedule
+    padding-bottom: 30px
+    .aside-block
+        opacity: 1
+        z-index: 1
+        &__wrap
+            position: sticky
+            background: none
+    &__row
+        +md
+            display: flex
+            flex-direction: column
+    &__aside
+        order: 1
+    &__bottom
+        max-width: 870px
+        margin: 0 auto
+        .banner
+            margin-bottom: 40px
+    .schedule
+        border: none
+        padding-top: 0
+        +sm
+            padding-bottom: 0
+        &__block
+            padding: 50px 100px 50px 25px
+            border: 1px solid #e6ddd0
+            img
+                padding: 0
+                border: none
+                width: 100%
+
+.aside-block__nav-item
+    display: inline-block
+    a
+        padding: 5px 22px
+        font-size: 27px
+        border: 1px solid $brown_orange
+        border-radius: 5px
+        line-height: 29px
+        transition: background-color .3s
+        display: block
+    &:not(:last-child)
+        margin-right: 14px
+    svg
+        fill: $brown_orange
+        transition: fill .3s
+        display: block
+    &:hover
+        a
+            background-color: $brown_orange
+        svg
+            fill: #fff
+.aside-block__nav-name
+    margin-bottom: 15px

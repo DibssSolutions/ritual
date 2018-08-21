@@ -1,0 +1,37 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+    {% include "partials/_header.html" %}
+    
+	<!-- Start author-top -->
+	{% include "partials/author/_author-top.html" %}
+    <!-- End author-top -->
+    
+	<!-- Start author-ads -->
+	{% include "partials/author/_author-ads.html" %}
+    <!-- End author-ads -->
+    
+	<!-- Start author-reviews -->
+	{% include "partials/author/_author-reviews.html" %}
+    <!-- End author-reviews -->
+    
+	<!-- Start author-companies -->
+	{% include "partials/author/_author-companies.html" %}
+    <!-- End author-companies -->
+    
+	<!-- Start author-blogs -->
+	{% include "partials/author/_author-blogs.html" %}
+    <!-- End author-blogs -->
+    
+
+
+    
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+    
+{% endblock %}

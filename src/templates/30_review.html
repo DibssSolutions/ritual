@@ -1,0 +1,21 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+    {% include "partials/_header.html" %}
+    
+	<!-- Start all-reviews -->
+	{% include "partials/review/_review.html" %}
+    <!-- End all-reviews -->
+    
+
+
+    
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+    
+{% endblock %}

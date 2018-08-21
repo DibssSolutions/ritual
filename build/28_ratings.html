@@ -162,7 +162,17 @@
         <div class="top-category">
           <div class="container top-category__container">
             <div class="section-head top-category__head text-center">
-              <h3 class="title-l top-category__title">ТОР-50 компаний</h3>
+              <h1 class="title-l top-category__title">ТОР-50 компаний</h1>
+            </div>
+            <div class="top-category__row row">
+              <div class="col-md-3"></div>
+              <div class="col-md-9">
+                <div class="ratings-top__filter rating-filter">
+                  <div class="rating-filter__radio"> <input type="radio" id="ratings-top-1" name="ratings-top-filter"> <label for="ratings-top-1">По отзывам</label> </div>
+                  <div class="rating-filter__radio"> <input type="radio" id="ratings-top-2" name="ratings-top-filter"> <label for="ratings-top-2">По оценкам</label> </div>
+                  <div class="rating-filter__radio"> <input type="radio" id="ratings-top-3" name="ratings-top-filter"> <label for="ratings-top-3">По мнению портала</label> </div>
+                </div>
+              </div>
             </div>
             <div class="top-category__body">
               <div class="top-category__row row">
@@ -257,11 +267,6 @@
                   </div>
                 </div>
                 <div class="top-category__col col-md-9">
-                  <div class="ratings-top__filter rating-filter">
-                    <div class="rating-filter__radio"> <input type="radio" id="ratings-top-1" name="ratings-top-filter"> <label for="ratings-top-1">По отзывам</label> </div>
-                    <div class="rating-filter__radio"> <input type="radio" id="ratings-top-2" name="ratings-top-filter"> <label for="ratings-top-2">По оценкам</label> </div>
-                    <div class="rating-filter__radio"> <input type="radio" id="ratings-top-3" name="ratings-top-filter"> <label for="ratings-top-3">По мнению портала</label> </div>
-                  </div>
                   <!-- begin map -->
                   <div class="js-map map on-map__map top-category__map" id="mapTop" data-center-lat="-34.097" data-center-lng="150.644"></div>
                   <script type="text/template" class="js-mapTop">
@@ -386,6 +391,630 @@
         </div>
       </div>
       <!-- End ratings-top -->
+      <!-- Start ratings-list -->
+      <div class="ratings-list">
+        <div class="ratings-list__container container">
+          <div class="ratings-list__top top-bar mob-hide">
+            <div class="shop-sort-wrap">
+              <div class="ps-options pull-left"> <span>Показывать по:</span>
+                <div class="ps-select"> <i class="fa fa-caret-down"></i> <select>
+                            <option>4</option>
+                            <option>5</option>
+                            <option selected>6</option>
+                        </select> </div>
+              </div>
+              <div class="shop-sort"> <a href="#" class="active"><i class="flaticon-squares"></i></a> <a href="#"><i class="flaticon-signs-1"></i></a> </div>
+            </div>
+          </div>
+          <div class="agencies">
+            <div class="agencies__container container">
+              <div class="agencies__row row">
+                <div class="agencies__col col-md-6">
+                  <!-- begin agency -->
+                  <div class="agency">
+                    <div class="agency__head">
+                      <div class="agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                      <div class="agency__rating"> <span class="ratings">
+                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                        <span class="ratings__appraisal">4.0</span> </span>
+                      </div>
+                    </div>
+                    <div class="agency__content">
+                      <h5 class="agency__title">1. Название компании</h5>
+                      <div class="agency__contacts">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                            <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                          </div>
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end agency -->
+                </div>
+                <div class="agencies__col col-md-6">
+                  <!-- begin agency -->
+                  <div class="agency">
+                    <div class="agency__head">
+                      <div class="agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                      <div class="agency__rating"> <span class="ratings">
+                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                        <span class="ratings__appraisal">4.0</span> </span>
+                      </div>
+                    </div>
+                    <div class="agency__content">
+                      <h5 class="agency__title">1. Название компании</h5>
+                      <div class="agency__contacts">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                            <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                          </div>
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end agency -->
+                </div>
+              </div>
+              <div class="agencies__row row">
+                <div class="agencies__col col-md-6">
+                  <!-- begin agency -->
+                  <div class="agency">
+                    <div class="agency__head">
+                      <div class="agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                      <div class="agency__rating"> <span class="ratings">
+                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                        <span class="ratings__appraisal">4.0</span> </span>
+                      </div>
+                    </div>
+                    <div class="agency__content">
+                      <h5 class="agency__title">1. Название компании</h5>
+                      <div class="agency__contacts">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                            <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                          </div>
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end agency -->
+                </div>
+                <div class="agencies__col col-md-6">
+                  <!-- begin agency -->
+                  <div class="agency">
+                    <div class="agency__head">
+                      <div class="agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                      <div class="agency__rating"> <span class="ratings">
+                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                        <span class="ratings__appraisal">4.0</span> </span>
+                      </div>
+                    </div>
+                    <div class="agency__content">
+                      <h5 class="agency__title">1. Название компании</h5>
+                      <div class="agency__contacts">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                            <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                          </div>
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end agency -->
+                </div>
+              </div>
+              <div class="agencies__row row">
+                <div class="agencies__col col-md-6">
+                  <!-- begin agency -->
+                  <div class="agency">
+                    <div class="agency__head">
+                      <div class="agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                      <div class="agency__rating"> <span class="ratings">
+                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                        <span class="ratings__appraisal">4.0</span> </span>
+                      </div>
+                    </div>
+                    <div class="agency__content">
+                      <h5 class="agency__title">1. Название компании</h5>
+                      <div class="agency__contacts">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                            <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                          </div>
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end agency -->
+                </div>
+                <div class="agencies__col col-md-6">
+                  <!-- begin agency -->
+                  <div class="agency">
+                    <div class="agency__head">
+                      <div class="agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                      <div class="agency__rating"> <span class="ratings">
+                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                        <span class="ratings__appraisal">4.0</span> </span>
+                      </div>
+                    </div>
+                    <div class="agency__content">
+                      <h5 class="agency__title">1. Название компании</h5>
+                      <div class="agency__contacts">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                            <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                          </div>
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end agency -->
+                </div>
+              </div>
+              <div class="agencies__row row">
+                <div class="agencies__col col-md-6">
+                  <!-- begin agency -->
+                  <div class="agency">
+                    <div class="agency__head">
+                      <div class="agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                      <div class="agency__rating"> <span class="ratings">
+                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                        <span class="ratings__appraisal">4.0</span> </span>
+                      </div>
+                    </div>
+                    <div class="agency__content">
+                      <h5 class="agency__title">1. Название компании</h5>
+                      <div class="agency__contacts">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                            <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                          </div>
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end agency -->
+                </div>
+                <div class="agencies__col col-md-6">
+                  <!-- begin agency -->
+                  <div class="agency">
+                    <div class="agency__head">
+                      <div class="agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                      <div class="agency__rating"> <span class="ratings">
+                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                        <span class="ratings__appraisal">4.0</span> </span>
+                      </div>
+                    </div>
+                    <div class="agency__content">
+                      <h5 class="agency__title">1. Название компании</h5>
+                      <div class="agency__contacts">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                            <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                          </div>
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end agency -->
+                </div>
+              </div>
+              <div class="agencies__row row">
+                <div class="agencies__col col-md-6">
+                  <!-- begin agency -->
+                  <div class="agency">
+                    <div class="agency__head">
+                      <div class="agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                      <div class="agency__rating"> <span class="ratings">
+                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                        <span class="ratings__appraisal">4.0</span> </span>
+                      </div>
+                    </div>
+                    <div class="agency__content">
+                      <h5 class="agency__title">1. Название компании</h5>
+                      <div class="agency__contacts">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                            <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                          </div>
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end agency -->
+                </div>
+                <div class="agencies__col col-md-6">
+                  <!-- begin agency -->
+                  <div class="agency">
+                    <div class="agency__head">
+                      <div class="agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                      <div class="agency__rating"> <span class="ratings">
+                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                        <span class="ratings__appraisal">4.0</span> </span>
+                      </div>
+                    </div>
+                    <div class="agency__content">
+                      <h5 class="agency__title">1. Название компании</h5>
+                      <div class="agency__contacts">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                            <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                          </div>
+                          <div class="col-md-6 col-sm-6">
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                            <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end agency -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end agents -->
+          <!-- Start page-nav -->
+          <nav class="navigation-page">
+            <ul class="page-nav">
+              <li><button class="page-nav__btn left-btn" type="button"><i class="fa fa-angle-left"></i> &nbsp;Предыдущая</button></li>
+              <li class="page-nav__item active"><a class="page-nav__link" href="#">1</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
+              <li><button class="page-nav__btn right-btn" type="button">Следующая&nbsp; <i class="fa fa-angle-right"></i></button></li>
+            </ul>
+          </nav>
+          <!-- End page-nav -->
+          <div class="ratings-list__top top-bar md-hide">
+            <div class="shop-sort-wrap">
+              <div class="ps-options pull-left"> <span>Показывать по:</span>
+                <div class="ps-select"> <i class="fa fa-caret-down"></i> <select>
+                            <option>4</option>
+                            <option>5</option>
+                            <option selected>6</option>
+                        </select> </div>
+              </div>
+              <div class="shop-sort"> <a href="#" class="active"><i class="flaticon-squares"></i></a> <a href="#"><i class="flaticon-signs-1"></i></a> </div>
+            </div>
+          </div>
+          <div class="ratings-list__wrap md-hide">
+            <div class="ratings-list__list">
+              <!-- begin agency -->
+              <div class="wind__agency agency">
+                <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
+                <div class="agency__descr">
+                  <h5 class="agency__title">1. Название компании длинное в несколько слов</h5>
+                  <div class="agency__table">
+                    <div class="agency__table-cell text-left">
+                      <div class="agency__stars"> <span class="ratings">
+                                            <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span>                        <span class="ratings__appraisal">5.0</span> </span>
+                      </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                    </div>
+                    <div class="agency__table-cell">
+                      <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                      <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                    </div>
+                    <div class="agency__table-cell agency__table-cell_mob">
+                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                    </div>
+                    <div class="agency__table-cell agency__table-cell_mob">
+                      <div class="contacts-item text-center"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, <br>без выходных</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end agency -->
+              <!-- begin agency -->
+              <div class="wind__agency agency">
+                <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
+                <div class="agency__descr">
+                  <h5 class="agency__title">1. Название компании длинное в несколько слов</h5>
+                  <div class="agency__table">
+                    <div class="agency__table-cell text-left">
+                      <div class="agency__stars"> <span class="ratings">
+                                            <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span>                        <span class="ratings__appraisal">5.0</span> </span>
+                      </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                    </div>
+                    <div class="agency__table-cell">
+                      <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                      <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                    </div>
+                    <div class="agency__table-cell agency__table-cell_mob">
+                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                    </div>
+                    <div class="agency__table-cell agency__table-cell_mob">
+                      <div class="contacts-item text-center"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, <br>без выходных</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end agency -->
+              <!-- begin agency -->
+              <div class="wind__agency agency">
+                <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
+                <div class="agency__descr">
+                  <h5 class="agency__title">1. Название компании длинное в несколько слов</h5>
+                  <div class="agency__table">
+                    <div class="agency__table-cell text-left">
+                      <div class="agency__stars"> <span class="ratings">
+                                            <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span>                        <span class="ratings__appraisal">5.0</span> </span>
+                      </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                    </div>
+                    <div class="agency__table-cell">
+                      <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                      <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                    </div>
+                    <div class="agency__table-cell agency__table-cell_mob">
+                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                    </div>
+                    <div class="agency__table-cell agency__table-cell_mob">
+                      <div class="contacts-item text-center"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, <br>без выходных</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end agency -->
+              <!-- begin agency -->
+              <div class="wind__agency agency">
+                <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
+                <div class="agency__descr">
+                  <h5 class="agency__title">1. Название компании длинное в несколько слов</h5>
+                  <div class="agency__table">
+                    <div class="agency__table-cell text-left">
+                      <div class="agency__stars"> <span class="ratings">
+                                            <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span>                        <span class="ratings__appraisal">5.0</span> </span>
+                      </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                    </div>
+                    <div class="agency__table-cell">
+                      <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                      <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                    </div>
+                    <div class="agency__table-cell agency__table-cell_mob">
+                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                    </div>
+                    <div class="agency__table-cell agency__table-cell_mob">
+                      <div class="contacts-item text-center"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, <br>без выходных</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end agency -->
+              <!-- begin agency -->
+              <div class="wind__agency agency">
+                <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
+                <div class="agency__descr">
+                  <h5 class="agency__title">1. Название компании длинное в несколько слов</h5>
+                  <div class="agency__table">
+                    <div class="agency__table-cell text-left">
+                      <div class="agency__stars"> <span class="ratings">
+                                            <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span>                        <span class="ratings__appraisal">5.0</span> </span>
+                      </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                    </div>
+                    <div class="agency__table-cell">
+                      <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                      <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                    </div>
+                    <div class="agency__table-cell agency__table-cell_mob">
+                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                    </div>
+                    <div class="agency__table-cell agency__table-cell_mob">
+                      <div class="contacts-item text-center"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, <br>без выходных</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end agency -->
+              <!-- begin agency -->
+              <div class="wind__agency agency">
+                <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
+                <div class="agency__descr">
+                  <h5 class="agency__title">1. Название компании длинное в несколько слов</h5>
+                  <div class="agency__table">
+                    <div class="agency__table-cell text-left">
+                      <div class="agency__stars"> <span class="ratings">
+                                            <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span>                        <span class="ratings__appraisal">5.0</span> </span>
+                      </div>
+                      <div class="agency__link"> <a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                    </div>
+                    <div class="agency__table-cell">
+                      <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                      <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                    </div>
+                    <div class="agency__table-cell agency__table-cell_mob">
+                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                    </div>
+                    <div class="agency__table-cell agency__table-cell_mob">
+                      <div class="contacts-item text-center"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, <br>без выходных</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end agency -->
+            </div>
+            <!-- Start page-nav -->
+            <nav class="navigation-page">
+              <ul class="page-nav">
+                <li><button class="page-nav__btn left-btn" type="button"><i class="fa fa-angle-left"></i> &nbsp;Предыдущая</button></li>
+                <li class="page-nav__item active"><a class="page-nav__link" href="#">1</a></li>
+                <li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
+                <li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
+                <li><button class="page-nav__btn right-btn" type="button">Следующая&nbsp; <i class="fa fa-angle-right"></i></button></li>
+              </ul>
+            </nav>
+            <!-- End page-nav -->
+          </div>
+        </div>
+      </div>
+      <!-- End ratings-list -->
+      <!-- Start ratings-schedule -->
+      <div class="ratings-schedule">
+        <div class="container">
+          <div class="schedule">
+            <div class="row ratings-schedule__row">
+              <div class="col-md-3"></div>
+              <div class="col-md-9">
+                <h4 class="schedule__title title-m"> Заголовок для блока рейтингов </h4>
+                <div class="ratings-top__filter rating-filter">
+                  <div class="rating-filter__radio"> <input type="radio" id="ratings-schedule-1" name="ratings-schedule-filter"> <label for="ratings-schedule-1">По отзывам</label> </div>
+                  <div class="rating-filter__radio"> <input type="radio" id="ratings-schedule-2" name="ratings-schedule-filter"> <label for="ratings-schedule-2">По оценкам</label> </div>
+                  <div class="rating-filter__radio"> <input type="radio" id="ratings-schedule-3" name="ratings-schedule-filter"> <label for="ratings-schedule-3">По мнению портала</label> </div>
+                </div>
+              </div>
+              <div class="col-md-3 ratings-schedule__aside">
+                <div class="aside-block">
+                  <div class="aside-block__wrap">
+                    <h5 class="aside-block__title"> Обозначения: </h5>
+                    <ul class="aside-block__list">
+                      <li class="aside-block__item beige"> <span class="aside-block__icon">
+                                    
+<svg class="icon icon-square"><use xlink:href="img/sprite.svg#icon-square"></use></svg>
+
+                                    </span> - Обозначение метки на графике </li>
+                      <li class="aside-block__item brown"> <span class="aside-block__icon">
+                                    
+<svg class="icon icon-square"><use xlink:href="img/sprite.svg#icon-square"></use></svg>
+
+                                    </span> - Обозначение метки на графике </li>
+                      <li class="aside-block__item yellow"> <span class="aside-block__icon">
+                                    
+<svg class="icon icon-square"><use xlink:href="img/sprite.svg#icon-square"></use></svg>
+
+                                    </span> - Обозначение на графике </li>
+                      <li class="aside-block__item red"> <span class="aside-block__icon">
+                                    
+<svg class="icon icon-square"><use xlink:href="img/sprite.svg#icon-square"></use></svg>
+
+                                    </span> - Обозначение метки на графике </li>
+                      <li class="aside-block__item purpule"> <span class="aside-block__icon">
+                                    
+<svg class="icon icon-square"><use xlink:href="img/sprite.svg#icon-square"></use></svg>
+
+                                    </span> - Обозначение на графике </li>
+                      <li class="aside-block__item gray"> <span class="aside-block__icon">
+                                    
+<svg class="icon icon-square"><use xlink:href="img/sprite.svg#icon-square"></use></svg>
+
+                                    </span> - Обозначение метки на графике </li>
+                    </ul>
+                  </div>
+                  <div class="aside-block__nav text-center">
+                    <div class="aside-block__nav-name"> Вариант графика выбрать </div>
+                    <ul>
+                      <li class="aside-block__nav-item"><a href="#">
+<svg class="icon icon-chart-pie"><use xlink:href="img/sprite.svg#icon-chart-pie"></use></svg>
+</a></li>
+                      <li class="aside-block__nav-item"><a href="#">
+<svg class="icon icon-growing-bar-chart"><use xlink:href="img/sprite.svg#icon-growing-bar-chart"></use></svg>
+</a></li>
+                      <li class="aside-block__nav-item"><a href="#">
+<svg class="icon icon-line-chart"><use xlink:href="img/sprite.svg#icon-line-chart"></use></svg>
+</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="schedule__wrap">
+                  <div class="schedule__block"> <img src="img/schedule.png" alt="schedule"> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ratings-schedule__bottom">
+            <div class="banner"> <img src="img/banner1.png" alt="banner"> </div>
+            <div class="drop js-drop has-show-block">
+              <div class="drop__wrap js-drop-wrap">
+                <div class="drop__show js-drop-shows">
+                  <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения
+                    форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
+                </div>
+                <div class="drop__hidden js-drop-hidden">
+                  <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения
+                    форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
+                </div>
+              </div>
+              <!-- begin read-all -->
+              <div class="read-all mob-hide"> <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+                        <span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
+                        <span class="fi flaticon-arrows"></span>
+                    </a> </div>
+              <!-- end read-all -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="bottom-image"> <img src="img/rose-angel.png" alt="rose-angel"> </div>
+      </div>
+      <!-- End ratings-schedule -->
       <!-- Start footer -->
       <!-- begin footer -->
       <footer class="footer">
