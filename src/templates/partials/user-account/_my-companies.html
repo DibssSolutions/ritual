@@ -131,7 +131,7 @@
 				</div>
 				<div class="row">
 					{% for item in inputIdOne %}
-					<div class="col-md-6 col-sm-6 col-xs-6">
+					<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="ritual-agent">
 							<input class="input-checkbox" type="checkbox" name="verify" id="{{ item.id1 }}">
 							<label class="ritual-agent__label ritual-agent__label_mod" for="{{ item.for1 }}">
@@ -205,7 +205,7 @@
 													Поднятие вверх списка
 												</label>
 											</div>
-											<div class="paid-list__col">
+											<div class="paid-list__col hidein">
 												<p>
 													(пояснительный текст к услуге идет тут в одну строку)
 												</p>
@@ -225,14 +225,14 @@
 											</div>
 											<div class="paid-list__col">
 												<div class="select">
-													<select name="year-company" id="period1" style="width: 100%" class="js-select">
+													<select name="year-company" id="period5" style="width: 100%" class="js-select">
 														<option value="1">Неделя</option>
 														<option value="2">Месяц</option>
 														<option value="3">Год</option>
 													</select>
 												</div>
 											</div>
-											<div class="paid-list__col">
+											<div class="paid-list__col hidein">
 												<p>
 													(пояснительный текст к услуге идет тут)
 												</p>
@@ -252,14 +252,14 @@
 											</div>
 											<div class="paid-list__col">
 												<div class="select">
-													<select name="year-company" id="period2" style="width: 100%" class="js-select">
+													<select name="year-company" id="period6" style="width: 100%" class="js-select">
 														<option value="1">Неделя</option>
 														<option value="2">Месяц</option>
 														<option value="3">Год</option>
 													</select>
 												</div>
 											</div>
-											<div class="paid-list__col">
+											<div class="paid-list__col hidein">
 												<p>
 													(пояснительный текст к услуге идет тут)
 												</p>
@@ -279,14 +279,14 @@
 											</div>
 											<div class="paid-list__col">
 												<div class="select">
-													<select name="year-company" id="period3" style="width: 100%" class="js-select">
+													<select name="year-company" id="period7" style="width: 100%" class="js-select">
 														<option value="1">Неделя</option>
 														<option value="2">Месяц</option>
 														<option value="3">Год</option>
 													</select>
 												</div>
 											</div>
-											<div class="paid-list__col">
+											<div class="paid-list__col hidein">
 												<p>
 													(пояснительный текст к услуге идет тут)
 												</p>
@@ -306,14 +306,14 @@
 											</div>
 											<div class="paid-list__col">
 												<div class="select">
-													<select name="year-company" id="period4" style="width: 100%" class="js-select">
+													<select name="year-company" id="period8" style="width: 100%" class="js-select">
 														<option value="1">Неделя</option>
 														<option value="2">Месяц</option>
 														<option value="3">Год</option>
 													</select>
 												</div>
 											</div>
-											<div class="paid-list__col">
+											<div class="paid-list__col hidein">
 												<p>
 													(пояснительный текст к услуге идет тут)
 												</p>
@@ -339,11 +339,11 @@
 									</ul>
 									<div class="paid-services__footer">
 										<div class="paid-info">
-											<div class="paid-info__balance">
+											<div class="paid-info__balance hidein">
 												На вашем балансе  
 												<span class="paid-info__balance-sum">355 ₽</span>
 											</div>
-											<div class="paid-info__pay">
+											<div class="paid-info__pay hidein">
 												Требуется дополнительно оплатить 
 												<span class="paid-info__pay-sum">944 ₽</span>
 											</div>
@@ -358,7 +358,7 @@
 					</div>
 				</div>
 			</form>
-			<form class="my-companies__form" action="/">
+			<form class="my-companies__form hidein" action="/">
 				<div class="my-companies__title-block memory-form__title_bordered">
 					<div class="my-companies__col">
 						<h4 class="memory-form__title title-sm">
@@ -461,7 +461,7 @@
 				</div>
 			</form>
 			<form class="my-companies__form memory-form__title_bordered" action="/">
-				<div class="row">
+				<div class="row hidein_md">
 					<div class="my-companies__title-block memory-form__title_bordered">
 						<h4 class="memory-form__title title-sm col-md-3">
 							Мои акции
@@ -508,7 +508,7 @@
 									{{ mixins.icon('copy') }}
 								</button>
 								<div class="team-info">
-									<div class="col-md-4 col-sm-3 col-xs-12">
+									<div class="col-md-4 col-sm-12 col-xs-12">
 										<div class="posts-image posts-image_full-lg posts-image_full-radius" style="background-image: url(img/shares.png);">
 											<a href="#" class="posts-image__sale">-20%</a>
 										</div>
@@ -516,8 +516,12 @@
 									<div class="col-md-8 col-sm-9 col-md-12">
 										<div class="staff">
 											<div class="staff__title-block">
-											<span class="staff__title">Название акции</span> </div>
-											<div class="drop js-drop has-show-block">
+												<span class="staff__title">Название акции</span>
+												<span class="staff__term showin">
+													Срок действия акции:  до 31 декабря 2018 года
+												</span> 
+											</div>
+											<div class="drop js-drop has-show-block  hidein">
 												<div class="drop__wrap js-drop-wrap">
 													<div class="drop__show js-drop-shows">
 														<p>
@@ -565,7 +569,7 @@
 									{{ mixins.icon('copy') }}
 								</button>
 								<div class="team-info">
-									<div class="col-md-4 col-sm-3 col-xs-12">
+									<div class="col-md-4 col-sm-12 col-xs-12">
 										<div class="posts-image posts-image_full-lg posts-image_full-radius" style="background-image: url(img/shares.png);">
 										</div>
 									</div>
@@ -573,8 +577,11 @@
 										<div class="staff">
 											<div class="staff__title-block">
 												<span class="staff__title">Название акции</span>
+												<span class="staff__term showin">
+													Срок действия акции:  до 31 декабря 2018 года
+												</span>
 											</div>
-											<div class="drop js-drop has-show-block">
+											<div class="drop js-drop has-show-block hidein">
 												<div class="drop__wrap js-drop-wrap">
 													<div class="drop__show js-drop-shows">
 														<p>
@@ -616,7 +623,7 @@
 				<div class="my-companies__title-block border_top">
 					<div class="my-companies__col">
 						<div class="delete-account">
-							<button type="submit" class="delete-account__btn">
+							<button type="submit" class="delete-account__btn hidein">
 								<span class="delete-account__text">
 									Выбрать все
 								</span>

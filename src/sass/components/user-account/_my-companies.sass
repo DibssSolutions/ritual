@@ -5,12 +5,20 @@
 		justify-content: space-between
 		padding-bottom: 10px
 		position: relative
+		+md
+			flex-wrap: wrap
 		&.border_top
 			margin-top: 10px
 			padding-top: 15px
 			padding-bottom: 25px
 			border-top: 1px solid #f3f1ea
 			border-bottom: 1px solid #f3f1ea
+			+sm
+				padding-bottom: 10px
+				border-bottom: 0
+				border-top: 0
+				padding-top: 0
+				margin-top: 0
 		&.border_bottom
 			border-bottom: none	
 			margin-bottom: 20px
@@ -34,6 +42,9 @@
 	&__col
 		display: flex	
 		align-items: center
+		+md
+			flex-wrap: wrap
+			margin-bottom: 10px
 		.memory-form__title
 			padding-bottom: 0
 		.memory-form__descr
@@ -42,6 +53,10 @@
 		.delete-account
 			margin-right: 20px
 			color: #b1a79b
+			+sm
+				display: block
+				.delete-account__btn
+					margin-bottom: 10px
 		.delete-account__text
 			border-bottom: 1px solid transparent
 	.companies-item__wrap
@@ -53,6 +68,8 @@
 			padding: 16px 0
 			width: 100%
 			border: 1px solid #f1ede8
+			+sm
+				padding-bottom: 0
 		&__wrap
 			display: block
 		&__image
@@ -68,6 +85,8 @@
 			border-top: 1px solid #f1ede8
 			margin-left: 0
 			padding: 25px 12px 0 18px
+			+sm
+				padding: 25px 0 0
 		&__name-title
 			margin-bottom: 22px
 		&__copy-btn
@@ -98,18 +117,22 @@
 			transition: border-color .3s
 			border: 1px solid transparent
 			padding: 0
-			padding: 8px 14px 0 14px
+			padding: 25px 20px 0 14px
 			&:hover
 				border: 1px solid #e3dccf
 			&:after
-				top: 18px
-				right: 24px
+				top: 10px
+				right: 4px
 			&:before
-				top: 21px
-				right: 27px	
+				top: 13px
+				right: 7px	
+		.team-info	
+			+md
+				padding-top: 25px
 		.sf-thumb__wrap
 			font-size: 0
 			border: 1px solid #e3e3e3
+			margin-bottom: 25px
 	.article-item__btn-block
 		margin-bottom: 50px				
 	.ratings__appraisal
@@ -127,6 +150,10 @@
 		background-size: cover
 		background-position: 50% 50%
 		border-radius: 0
+		+md
+			margin-bottom: 15px
+		+sm
+			width: 100%
 		&:after
 			position: absolute
 			content: ''
@@ -154,6 +181,15 @@
 			text-decoration: none
 			z-index: 2
 	.staff
+		&__title
+			text-transform: none
+		&__term
+			color: #999083
+		&__title-block
+			+sm
+				margin-bottom: 0
+			+md		
+				padding-left: 0
 		.drop__show
 			span
 				display: block

@@ -108,7 +108,7 @@
 		<form class="announcements__form memory-form__title_bordered">
 			<div class="row">
 				{% for item in inputId %}
-				<div class="col-md-6 col-sm-6 col-xs-6">
+				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="ritual-agent">
 						<input class="input-checkbox" type="checkbox" name="verify" id="{{ item.id }}">
 						<label class="ritual-agent__label" for="{{ item.for }}">
@@ -166,6 +166,7 @@
 				</div>
 				{% endfor %}
 			</div>
+			<span class="desition">Выберите компанию, которую собираетесь редактировать.</span>
 			<div class="row">
 				<div class="col-md-11">
 					<!-- Start delete-account -->
