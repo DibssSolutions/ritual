@@ -510,14 +510,19 @@
 			    											</span>
 			    											<div class="product-reviews__details mob-hide">
 			    												<span>5.0</span>
-			    												<span>{{ mixins.icon('users') }}</span>
+			    												<span>
+			    													{{ mixins.icon('users') }}
+			    												</span>
 			    												<span>(1)</span>
 			    											</div>
 			    										</div>
 			    									</div>
 			    								</div>
 			    								<div class="companies-item__btn">
-			    									<button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button>
+			    									<span class="btn">
+			    										<i class="fi flaticon-web"></i> 
+			    										&nbsp;Купить
+			    									</span>
 			    								</div>    
 			    							</div>
 			    						</a>
@@ -590,7 +595,10 @@
 			                                            </div>
 			                                        </div>
 			                                    </div>
-			                                    <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button>
+			                                    <span class="btn">
+			                                    	<i class="fi flaticon-web"></i> 
+			                                    	&nbsp;Купить
+			                                    </span>
 			                                </div>
 			                            </div>
 			                        </a>
@@ -601,7 +609,8 @@
 			    			<!-- Start page-nav -->
 			                    {% include "partials/blogs/_page-nav.html" %}
 			                <!-- End page-nav -->
-			    			<div class="wind__bg" style="background-image: url(./img/choice-church.png);"></div>
+			    			<div class="wind__bg" style="background-image: url(./img/choice-church.png);">
+			    			</div>
 			    		</div>
 			    		<!-- end-wind -->
 					</div>

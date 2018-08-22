@@ -2,35 +2,45 @@
 	margin-bottom: 0
 	
 .ritual-agent
+	position: relative
 	margin-bottom: 25px
 	&__label
 		position: relative
 		padding: 20px 20px 10px 15px
 		border: 1px solid #e3e3e3
 		transition: box-shadow .3s
-		&:after
+		+sm
+			width: 100%
+		.label-checkbox
 			position: absolute
-			cursor: pointer			
 			top: 8px
-			right: 10px
+			right: 10px 
 			width: 14px
 			height: 14px
-			content: ''
-			background: repeating-linear-gradient(to bottom right,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
-			background: repeating-linear-gradient(top left,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
-			z-index: 4
+			z-index: 100	
 			border: 1px solid #ccc
-		&:before
-			position: absolute
-			top: 11px
-			right: 13px
-			width: 8px
-			height: 8px
-			content: ''
-			cursor: pointer
-			z-index: 3
-			background-color: $brown
-			opacity: 0
+			&:after
+				position: absolute
+				cursor: pointer			
+				top: 1px
+				right: 1px
+				width: 10px
+				height: 10px
+				content: ''
+				background: repeating-linear-gradient(to bottom right,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
+				background: repeating-linear-gradient(top left,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
+				z-index: 4
+			&:before
+				position: absolute
+				top: 1px
+				right: 1px
+				width: 10px
+				height: 10px
+				content: ''
+				cursor: pointer
+				z-index: 3
+				background-color: $brown
+				opacity: 0
 		&:hover 
 			box-shadow: 0 0 10px rgba(0,0,0,.2)
 			.btn-panel
@@ -38,16 +48,21 @@
 				height: auto
 				z-index: 2
 			.cv
-				background-color: #f1ede7	
+				background-color: #f1ede7
+				+sm
+					background-color: transparent	
 	.input-checkbox
 		display: none
-		&:checked ~ .ritual-agent__label:before
+		&:checked ~ .label-checkbox:before
 			z-index: 5
 			opacity: 1
 	&__wrap
 		display: flex
 		align-items: flex-start
 		margin-bottom: 10px
+		+sm
+			flex-wrap: wrap
+			margin-bottom: 0
 	&__image
 		position: relative
 		width: 130px
@@ -56,6 +71,12 @@
 		background-repeat: no-repeat
 		background-size: cover
 		background-position: 50% 50%
+		margin-right: 20px
+		+sm
+			width: 155px
+			margin-bottom: 10px
+		+xs
+			margin: 0 auto 10px
 		&:after
 			position: absolute
 			top: 4px
@@ -65,7 +86,9 @@
 			content: ''
 			border: 1px solid #eae5dc
 	&__text
-		margin-left: 20px
+		+xs
+			width: 100%
+			text-align: center	
 	&__descr
 		margin-bottom: 10px
 	&__price
@@ -90,6 +113,8 @@
 	width: 100%
 	background-color: $white
 	padding: 5px 5px 15px
+	+sm
+		display: none
 	&:after
 		position: absolute
 		top: 15px
@@ -121,112 +146,3 @@
 		.icon
 			transition: fill .3s
 			fill: #bfbfbf
-
-
-.paid-services
-	padding-top: 30px
-	&__title-block
-		text-align: center
-		margin-bottom: 15px
-	&__title
-		display: flex
-		align-items: center
-		justify-content: center
-	&__icon
-		padding-top: 4px
-		margin-right: 3px
-		.icon
-			font-size: 30px
-			fill: $brown
-	&__text		
-		font-size: 20px
-	&__desc
-		font-size: 14px
-		color: #62594f					
-	&__wrap
-		margin-bottom: 28px
-
-.paid-list
-	margin-bottom: 25px
-	&__item
-		display: flex
-		align-items: center
-		justify-content: space-between
-		background-color: #f9f8f5
-		padding: 13px 33px 11px 11px
-		margin-bottom: 15px
-		min-height: 58px
-	&__col
-		&:first-child
-			width: 100%
-			max-width: 230px
-		p
-			font-size: 14px
-			color: #b1a79b
-		&__col-text
-			font-size: 18px
-			color: $brown	
-		.select
-			height: 34px
-			line-height: 1.3
-			width: 136px
-			.select2-selection.select2-selection--single
-				height: 34px
-				background-color: $white
-				border: 1px solid #c3c3c3
-			.select2-selection--single .select2-selection__rendered
-				padding-top: 0
-				padding-bottom: 0
-			.select2-selection--single .select2-selection__arrow
-				height: 34px
-			.select2-selection--single .select2-selection__rendered		
-				color: #656565
-	&__label
-		padding-left: 44px
-		position: relative
-		font-size: 14px
-		&:after
-			position: absolute
-			cursor: pointer			
-			top: 50%
-			left: 0px
-			width: 14px
-			height: 14px
-			content: ''
-			transform: translate(0, -50%)
-			background: repeating-linear-gradient(to bottom right,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
-			background: repeating-linear-gradient(top left,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
-			z-index: 4
-			border: 1px solid #ccc
-		&:before
-			position: absolute		
-			top: 50%
-			left: 3px
-			width: 8px
-			height: 8px
-			content: ''
-			transform: translate(0, -50%)
-			cursor: pointer
-			z-index: 3
-			background-color: $brown
-			opacity: 0		
-	&__input
-		display: none
-		&:checked ~ label:before
-			z-index: 5
-			opacity: 1
-
-.paid-info
-	text-align: center
-	font-size: 14px
-	&__balance-sum
-		display: inline-block
-		margin-left: 10px
-		font-size: 18px
-		color: #61a260
-	&__pay-sum
-		display: inline-block
-		margin-left: 10px
-		font-size: 18px
-	&__pay	
-		margin-bottom: 25px

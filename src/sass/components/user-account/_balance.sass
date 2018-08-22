@@ -1,16 +1,22 @@
-.balance
-
 .balance-form
 	margin-left: 95px
+	+sm
+		margin-left: 0
 	&__title
 		font-size: 18px
 		font-family: $tahoma
-		margin-bottom: 28px				
+		margin-bottom: 28px
+		+sm
+			font-size: 16px
+			margin-bottom: 15px				
 	&__box
 		max-width: 470px
 		border: 1px solid #e6e6e6
 		padding: 23px 23px 35px
-		margin-bottom: 21px	
+		margin-bottom: 21px
+		+sm
+			padding: 10px 12px 12px
+			max-width: 100%	
 		.paid-info
 			&__balance
 				width: 100%
@@ -23,7 +29,11 @@
 	&__btn-block
 		text-align: center			
 	&__row
-		padding-bottom: 25px
+		padding-bottom: 15px
+		margin-bottom: 25px
+		border-bottom: 1px solid #f4f1ea
+		+sm
+			border-bottom: 1px solid #f4f1ea
 		.form-radio
 			display: flex		
 			flex-direction: column
@@ -45,6 +55,9 @@
 		height: 46px
 		margin: 0 20px
 		padding: 5px 20px
+		color: $brown
+		font-size: 20px
+		font-weight: 500
 		+placeholder
 			text-align: center
 			color: $brown
@@ -65,7 +78,6 @@
 		span
 			&:not(:last-child)
 				margin-right: 20px
-	&__date
-		width: 100%
-		max-width: 140px	
+	&__price
+		white-space: nowrap
 				

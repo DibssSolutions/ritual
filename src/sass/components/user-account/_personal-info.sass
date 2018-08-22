@@ -1,15 +1,28 @@
 .user-account
-	.memory-form__btn
-		font-weight: 600
-	.memory-form__title-block
-		display: flex
-		align-items: center
-		justify-content: space-between
-		padding-bottom: 10px
+	.memory-form
+		&__title-block
+			display: flex
+			align-items: center
+			justify-content: space-between
+			padding-bottom: 10px
+		&__title_bordered	
+			+sm
+				border-bottom: 0
+				flex-wrap: wrap
+				margin-bottom: 0
+		&__title
+			margin-right: 10px	
+		&__btn
+			font-weight: 600
 	.select	
 		width: 100%
+		min-width: 105px
+		+md
+			margin-bottom: 20px
+		+sm
+			margin-bottom: 0
 	.select .select2-selection--single .select2-selection__rendered
-		padding-left: 27px
+		padding-left: 17px
 		padding-top: 6px
 		padding-bottom: 6px
 	.select .select2-selection--single
@@ -27,19 +40,27 @@
 		margin-bottom: 10px
 	.post-form
 		margin-bottom: 27px
+		+sm
+			margin-bottom: 0
 	.form-radio
 		display: flex
 		align-items: center
 		margin-top: 12px
 		padding-bottom: 40px
 		+sm
+			margin-top: 0
 			flex-wrap: wrap
+			padding-bottom: 0
 		&__radio
 			display: flex
 			align-items: center
 			margin-bottom: 0
+			+sm
+				margin-bottom: 10px
 			&:not(:last-child)
 				margin-right: 45px
+				+sm
+					margin-right: 35px
 			input	
 				cursor: pointer
 		.social__link
