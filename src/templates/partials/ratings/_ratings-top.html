@@ -10,11 +10,31 @@
 
 
 <div class="ratings-top">
-
+        
         <div class="top-category">
                 <div class="container top-category__container">
                     <div class="section-head top-category__head text-center">
-                        <h3 class="title-l top-category__title">ТОР-50 компаний</h3>
+                        <h1 class="title-l top-category__title">ТОР-50 компаний</h1>
+                    </div>
+                    <div class="top-category__row row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-9">
+                            <div class="ratings-top__filter rating-filter">
+                                                
+                                    <div class="rating-filter__radio">
+                                        <input type="radio" id="ratings-top-1" name="ratings-top-filter">
+                                        <label for="ratings-top-1">По отзывам</label>
+                                    </div>
+                                    <div class="rating-filter__radio">
+                                        <input type="radio" id="ratings-top-2" name="ratings-top-filter">
+                                        <label for="ratings-top-2">По оценкам</label>
+                                    </div>
+                                    <div class="rating-filter__radio">
+                                        <input type="radio" id="ratings-top-3" name="ratings-top-filter">
+                                        <label for="ratings-top-3">По мнению портала</label>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="top-category__body">            
                         <div class="top-category__row row">
@@ -62,21 +82,6 @@
                             </div>
                             
                             <div class="top-category__col col-md-9">
-                                    <div class="ratings-top__filter rating-filter">
-                                        
-                                            <div class="rating-filter__radio">
-                                                <input type="radio" id="ratings-top-1" name="ratings-top-filter">
-                                                <label for="ratings-top-1">По отзывам</label>
-                                            </div>
-                                            <div class="rating-filter__radio">
-                                                <input type="radio" id="ratings-top-2" name="ratings-top-filter">
-                                                <label for="ratings-top-2">По оценкам</label>
-                                            </div>
-                                            <div class="rating-filter__radio">
-                                                <input type="radio" id="ratings-top-3" name="ratings-top-filter">
-                                                <label for="ratings-top-3">По мнению портала</label>
-                                            </div>
-                                    </div>
                                     <!-- begin map -->
                                     <div class="js-map map on-map__map top-category__map" id="mapTop" data-center-lat="-34.097" data-center-lng="150.644"></div>
                                     {% set tamplate = '<div class="baloon">

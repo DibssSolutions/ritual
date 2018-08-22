@@ -59,3 +59,9 @@ PageList:
   ready: 50  
 - file: 28_ratings.html
   ready: 50  
+- file: 29_all_reviews.html
+  ready: 50 
+- file: 30_review.html
+  ready: 50 
+- file: 31_author.html
+  ready: 50 
