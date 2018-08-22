@@ -58,13 +58,13 @@
 						</ul>
 						<ul class="user-account__nav-list  mob-hide">
 							<li class="user-account__nav-item">
-								<a href="#" class="user-account__nav-link is-active">
+								<a href="#" class="user-account__nav-link">
 									<i class="fa fa-angle-right"></i>
 									Личная информация
 								</a>
 							</li>
 							<li class="user-account__nav-item">
-								<a href="#" class="user-account__nav-link">
+								<a href="#" class="user-account__nav-link is-active">
 									<i class="fa fa-angle-right"></i>
 									Мои объявления
 								</a>
@@ -110,8 +110,9 @@
 				{% for item in inputId %}
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="ritual-agent">
-						<input class="input-checkbox" type="checkbox" name="verify" id="{{ item.id }}">
-						<label class="ritual-agent__label" for="{{ item.for }}">
+						<div class="ritual-agent__label">
+							<input class="input-checkbox" type="checkbox" name="verify" id="{{ item.id }}">
+							<label class="label-checkbox" for="{{ item.for }}"></label>
 							<div class="ritual-agent__wrap">
 								<div class="ritual-agent__image" style="background-image: url(./img/ritual.png);">
 								</div>
@@ -161,7 +162,7 @@
 									</a>
 								</div>
 							</div>    
-						</label>
+						</div>
 					</div>
 				</div>
 				{% endfor %}
