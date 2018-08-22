@@ -1,0 +1,50 @@
+<div class="wrapper">
+	<div class="user-account">
+		<div class="page-head">
+			<div class="container page-head__container">
+				<div class="row">
+					<div class="col-md-3 col-sm-12 page-head__col">
+						<ul class="bcrumbs page-head__bcrumbs">
+							<li>	
+								<a href="#">
+									<span class="showin">
+										{{ mixins.icon('house') }}
+									</span>
+									<span class="hidein">Home</span>
+								</a></li>
+							<li>
+								<a href="#">Obituaries</a>
+							</li>
+							<li>Past</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="user-account__wrap">
+				<!-- Start schedule -->
+				{% include "partials/user-account/_personal-info.html" %}
+				<!-- End schedule -->
+				<!-- Start announcements -->
+				{% include "partials/user-account/_announcements.html" %}
+				<!-- End announcements -->
+				<!-- Start balance -->
+				{% include "partials/user-account/_balance.html" %}
+				<!-- End balance -->
+				<!-- Start my-posts -->
+				{% include "partials/user-account/_my-posts.html" %}
+				<!-- End my-posts -->
+				<!-- Start my-companies -->
+				{% include "partials/user-account/_my-companies.html" %}
+				<!-- End my-companies -->
+				<!-- Start banner-advertising -->
+				{% include "partials/user-account/_banner-advertising.html" %}
+				<!-- End banner-advertising -->
+			</div>
+			<div class="bottom-image">
+				<img src="img/rose-angel.png" alt="rose-angel">
+			</div>
+		</div>
+	</div>
+</div>

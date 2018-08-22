@@ -1,4 +1,4 @@
-{% set servicesCards = [
+{% set servicesCards1 = [
     {
         img: 'associated-goods-1.png',
         title: 'Урны для праха'
@@ -17,18 +17,33 @@
     }
 ] %}
 
+{% set servicesCards2 = [
+    {
+        img: '1212.png',
+        title: 'Венки и цветы ритуальные'
+    },
+    {
+        img: '1213.png',
+        title: 'Текстиль погребальный'
+    },
+    {
+        img: '1214.png',
+        title: 'Оградка, столик, скамейка'
+    },
+    {
+        img: '1215.png',
+        title: 'Обслуживание могил'
+    }
+] %}
+
 <div class="associated-goods">
     <div class="container associated-goods__container">
         <div class="section-head associated-goods__head text-center">
             <h3 class="title-l associated-goods__title">Сопутствующие товары</h3>
         </div>
         <div class="associated-goods__body">
-            {% for i in [1,2] %}
-            
             <div class="associated-goods__row row">
-
-                {% for item in servicesCards %}
-                    
+                {% for item in servicesCards1 %}
                 <div class="associated-goods__col col-md-3 col-sm-6">
                     <a href="#" class="associated-goods__card services-card">
                         <div class="services-card__img">
@@ -39,12 +54,22 @@
                         </div>
                     </a>
                 </div>
-
                 {% endfor %}
-                
             </div>
-
-            {% endfor %}
+            <div class="associated-goods__row row">
+                {% for item in servicesCards2 %}
+                <div class="associated-goods__col col-md-3 col-sm-6">
+                    <a href="#" class="associated-goods__card services-card">
+                        <div class="services-card__img">
+                            <img src="./img/{{item.img}}" alt="img">
+                        </div>
+                        <div class="services-card__title title-s">
+                            {{item.title}} (<span>5</span>)
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>

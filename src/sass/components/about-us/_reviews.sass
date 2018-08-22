@@ -1,0 +1,63 @@
+.reviews
+    padding: 75px 0
+    max-width: 870px
+    margin: 0 auto
+    &__container
+    &__head
+        margin-bottom: 55px
+    &__title
+    &__body
+        margin-bottom: 75px
+    &__list
+        border: 1px solid #e9e9e9
+        margin-bottom: 20px
+        li
+            padding: 0 40px 0 30px
+            transition: background-color .3s, border .3s
+            border-bottom: 1px solid transparent
+            &:hover
+                background-color: #fbf8f4
+                border-color: #e9e9e9
+                .social
+                    opacity: 1
+                    visibility: visible
+                .staff
+                    p:last-child
+                        opacity: 1
+                        visibility: visible
+            &:last-child
+                .team-info
+                        border: none
+        .team-info
+            display: block
+            margin-bottom: 0
+            padding: 25px 0
+            border-bottom: 1px solid $white_brown_bg
+            +clr
+            .staff
+                padding-left: 15px
+                .fa-calendar
+                    color: $brown_orange
+                    font-size: 13px
+                    margin-left: 35px
+                p
+                    transition: opacity .3s, visibility .3s
+                    &:last-child
+                        opacity: 0
+                        visibility: hidden
+                        +sm
+                            opacity: 1
+                            visibility: visible
+                            span
+                                display: none
+            .social
+                right: 0
+                opacity: 0
+                visibility: hidden
+                transition: opacity .3s, visibility .3s
+                +sm
+                    display: none
+                a.social__link
+                    margin: 0 0 0 10px
+                    background-color: $brown_orange
+                    color: #fff

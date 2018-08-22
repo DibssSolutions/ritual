@@ -13,7 +13,7 @@
         <div class="funeral__head simple-section"  style="background-image: url(./img/after-funeral/after-funeral_bg.jpg)">
             <div class="funeral__container container">
                 <div class="section-head text-center">
-                    <h3 class="title-l">После похорон</h3>
+                    <h1 class="title-l">После похорон</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                 </div>
             </div>
@@ -210,7 +210,261 @@
             </div>
         </div>
         <div class="funeral__map">
-            {% include "partials/agents/_map.html" %}
+            <!-- begin map -->
+            <div class="map-wrap">
+                <div class="js-map map" id="mapInfobox" data-center-lat="-34.097" data-center-lng="150.644"></div>
+                {% set tamplate = '<div class="baloon mob-hide">
+                    <!-- <button class="baloon__close js-infobox-close"></button> -->
+                    <div class="baloon__content">
+                        <div class="baloon__row">
+                            <div class="baloon__col">
+                                {{? baloon.img }}
+                                <div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
+                                {{?}}
+                                {{? baloon.title }}
+                                <div class="baloon__title">{{=baloon.title}}</div>
+                                {{?}}
+                                {{? baloon.linkText }}
+                                <div class="baloon__footer">
+                                    <a href="{{=baloon.linkUrl}}" class="btn btn_small">{{=baloon.linkText}}<i class="fi flaticon-arrows"></i></a>
+                                </div>
+                                {{?}}
+                            </div>
+                            <div class="baloon__col">
+                                {{? baloon.address }}
+                                    <div class="baloon__item"><i class="fa fa-map-marker"></i>{{=baloon.address}}</div>
+                                {{?}}
+                                {{? baloon.address }}
+                                    <div class="baloon__item"><i class="fi flaticon-technology"></i>{{=baloon.phone}}</div>
+                                {{?}}
+                                {{? baloon.address }}
+                                    <div class="baloon__item"><i class="fi flaticon-black"></i>{{=baloon.email}}</div>
+                                {{?}}
+                                {{? baloon.address }}
+                                    <div class="baloon__item"><i class="fi flaticon-clock"></i>{{=baloon.time}}</div>
+                                {{?}}
+                            </div>
+                        </div>
+                    </div>
+                </div>' %}
+                {% set array = '[
+                        {
+                            "content": {
+                                "title": "1. Название компании",
+                                "linkUrl": "#",
+                                "linkText": "Перейти",
+                                "img": "./img/map-img.png",
+                                "imgAlt": "img",
+                                "address": "Хабаровск, Гоголя, 8",
+                                "phone": "8 (111) 123 123",
+                                "email": "dmitryz5700@gmail.com",
+                                "time": "С 7.00 до 21.00, без выходных",
+                                "list": [
+                                    {
+                                        "bla": "bla"
+                                    },
+                                    {
+                                        "bla": "bla"
+                                    }
+                                ]
+                            },
+                            "marker": {
+                                "id": 2,
+                                "position": {
+                                    "lat": -34.397,
+                                    "lng": 151.044
+                                },
+                                "icon": {
+                                    "default": "img/marker.png",
+                                    "active": "img/marker.png",
+                                    "size": {
+                                        "x": 50,
+                                        "y": 64
+                                    },
+                                    "centering": {
+                                        "x": 20,
+                                        "y": 58
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "content": {
+                                "title": "1. Название компании",
+                                "linkUrl": "#",
+                                "linkText": "Перейти",
+                                "img": "./img/map-img.png",
+                                "imgAlt": "img",
+                                "address": "Хабаровск, Гоголя, 8",
+                                "phone": "8 (111) 123 123",
+                                "email": "dmitryz5700@gmail.com",
+                                "time": "С 7.00 до 21.00, без выходных",
+                                "list": [
+                                    {
+                                        "bla": "bla"
+                                    },
+                                    {
+                                        "bla": "bla"
+                                    }
+                                ]
+                            },
+                            "marker": {
+                                "id": 3,
+                                "position": {
+                                    "lat": -34.397,
+                                    "lng": 151.444
+                                },
+                                "icon": {
+                                    "default": "img/marker.png",
+                                    "active": "img/marker.png",
+                                    "size": {
+                                        "x": 50,
+                                        "y": 64
+                                    },
+                                    "centering": {
+                                        "x": 20,
+                                        "y": 58
+                                    }
+                                }
+                            }
+                        }
+                    ]' %}
+                <script type="text/template" class="js-mapInfobox">
+                    {{ tamplate | safe }}
+                </script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function(){
+                        window.mapInfobox.add({{array | safe}})
+                    });
+                </script>
+
+            <!-- 	FOR EXEMPLE
+            <div class="js-map map" id="mapInf" data-center-lat="-34.097" data-center-lng="150.644"></div>
+                {% set tamplate = '<div class="baloon">
+                    <div class="baloon__content">
+                        <div class="baloon__row">
+                            <div class="baloon__col">
+                                {{? baloon.img }}
+                                <div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
+                                {{?}}
+                                {{? baloon.title }}
+                                <div class="baloon__title">{{=baloon.title}}</div>
+                                {{?}}
+                                {{? baloon.linkText }}
+                                <div class="baloon__footer">
+                                    <a href="{{=baloon.linkUrl}}" class="btn btn_small">{{=baloon.linkText}}<i class="fi flaticon-arrows"></i></a>
+                                </div>
+                                {{?}}
+                            </div>
+                            <div class="baloon__col">
+                                {{? baloon.address }}
+                                    <div class="baloon__item"><i class="fa fa-map-marker"></i>{{=baloon.address}}</div>
+                                {{?}}
+                                {{? baloon.address }}
+                                    <div class="baloon__item"><i class="fi flaticon-technology"></i>{{=baloon.phone}}</div>
+                                {{?}}
+                                {{? baloon.address }}
+                                    <div class="baloon__item"><i class="fi flaticon-black"></i>{{=baloon.email}}</div>
+                                {{?}}
+                                {{? baloon.address }}
+                                    <div class="baloon__item"><i class="fi flaticon-clock"></i>{{=baloon.time}}</div>
+                                {{?}}
+                            </div>
+                        </div>
+                    </div>
+                </div>' %}
+                {% set array = '[
+                        {
+                            "content": {
+                                "title": "1. Название компании",
+                                "linkUrl": "#",
+                                "linkText": "Перейти",
+                                "img": "./img/map-img.png",
+                                "imgAlt": "img",
+                                "address": "Хабаровск, Гоголя, 8",
+                                "phone": "8 (111) 123 123",
+                                "email": "dmitryz5700@gmail.com",
+                                "time": "С 7.00 до 21.00, без выходных",
+                                "list": [
+                                    {
+                                        "bla": "bla"
+                                    },
+                                    {
+                                        "bla": "bla"
+                                    }
+                                ]
+                            },
+                            "marker": {
+                                "id": 2,
+                                "position": {
+                                    "lat": -34.397,
+                                    "lng": 151.044
+                                },
+                                "icon": {
+                                    "default": "img/marker.png",
+                                    "active": "img/marker.png",
+                                    "size": {
+                                        "x": 50,
+                                        "y": 64
+                                    },
+                                    "centering": {
+                                        "x": 20,
+                                        "y": 58
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "content": {
+                                "title": "1. Название компании",
+                                "linkUrl": "#",
+                                "linkText": "Перейти",
+                                "img": "./img/map-img.png",
+                                "imgAlt": "img",
+                                "address": "Хабаровск, Гоголя, 8",
+                                "phone": "8 (111) 123 123",
+                                "email": "dmitryz5700@gmail.com",
+                                "time": "С 7.00 до 21.00, без выходных",
+                                "list": [
+                                    {
+                                        "bla": "bla"
+                                    },
+                                    {
+                                        "bla": "bla"
+                                    }
+                                ]
+                            },
+                            "marker": {
+                                "id": 3,
+                                "position": {
+                                    "lat": -34.397,
+                                    "lng": 151.444
+                                },
+                                "icon": {
+                                    "default": "img/marker.png",
+                                    "active": "img/marker.png",
+                                    "size": {
+                                        "x": 50,
+                                        "y": 64
+                                    },
+                                    "centering": {
+                                        "x": 20,
+                                        "y": 58
+                                    }
+                                }
+                            }
+                        }
+                    ]' %}
+                <script type="text/template" class="js-mapInf">
+                    {{ tamplate | safe }}
+                </script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function(){
+                        window.mapInf.add({{array | safe}})
+                    });
+                </script> -->
+            </div>
+            <!-- end map -->
         </div>
         <div class="funera__container container">
             <div class="row">
@@ -218,15 +472,17 @@
                 </aside>
                 <div class="col-md-9 col-sm-7">
                     
-                    <div class="bottom-text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+					<div class="drop js-drop">
+                        <div class="drop__wrap js-drop-wrap">
+                            <div class="drop__show js-drop-shows">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="drop__hidden js-drop-hidden">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        {{ mixins.readAll(null, 'mob-hide') }}
                     </div>
-                    {{ mixins.readAll(null, 'mob-hide') }}
                 </div>
             </div>
             <div class="bottom-image">

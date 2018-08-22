@@ -1,0 +1,89 @@
+.author-ads
+    background-color: $white_brown_bg
+    padding: 25px 0 60px
+    &__title
+        font-size: 21px
+        font-weight: 700
+        margin-bottom: 20px
+    .companies-item
+        +sm
+            padding: 0
+        &:hover
+            +sm
+                box-shadow: none
+    .companies-item__type
+        .product-single-price
+            &:last-child
+                font-size: 16px
+                color: $brown_orange
+                +sm
+                    float: right
+                    display: flex
+                    align-items: center
+                    justify-content: flex-end
+                i
+                    font-size: 14px
+                    margin-right: 5px
+        .product-prices
+            +sm
+                display: block
+    .companies-item__wrap
+        position: relative
+        overflow: hidden
+        &:before
+            position: absolute
+            top: 10px
+            left: -50px
+            content: 'топ'
+            height: 30px
+            font-size: 19px
+            width: 150px
+            background-color: #fcfbf9
+            line-height: 30px
+            text-align: center
+            z-index: 1
+            transform: rotate(-45deg)
+            opacity: .6
+    .sf-thumb
+        position: relative
+        &:before
+            position: absolute
+            content: ''
+            top: 6px
+            left: 6px
+            bottom: 6px
+            right: 6px
+            border: 1px solid #b2a89d
+            pointer-events: none
+    .companies-item__text
+        width: 100%
+        padding: 0 5px
+        +sm
+            padding: 0
+            display: block
+    .companies-item__name
+        +sm
+            order: 1
+    .companies-item__view
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        border-top: 1px solid #d0ccc5
+        font-size: 14px
+        padding-top: 10px
+        +sm
+            order: 3
+            flex-wrap: wrap
+            padding-top: 2px
+            span:nth-child(2)
+                width: 100%
+                order: 3
+        svg
+            font-size: 11px
+            fill: #c9c2b4
+    .companies-item__descr
+        margin-bottom: 10px
+        +sm
+            float: left
+            width: auto

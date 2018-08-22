@@ -1,0 +1,186 @@
+<div class="user-account__row row">
+	<aside class="user-account__aside">
+		<div class="col col-md-3 col-sm-12">
+			<div class="person-info__photo">
+				<img src="./img/memory-item.jpg" alt="photo">
+			</div>
+			<div class="person-info__general text-center">
+				<p>
+					Фамилия Имя Отчество
+				</p>
+			</div>
+			<div class="user-account__nav">
+				<ul class="user-account__info-list">
+					<li class="user-account__info-item">
+						На сайте с: 12.09.17
+					</li>
+					<li class="user-account__info-item">
+						Последний визит: 12.09.17
+					</li>
+					<li class="user-account__info-item">
+						Всего отзывов: 15
+					</li>
+					<li class="user-account__info-item">
+						Всего статей: 11
+					</li>
+				</ul>
+				<ul class="user-account__nav-list">
+					<li class="user-account__nav-item">
+						<a href="#" class="user-account__nav-link is-active">
+							<i class="fa fa-angle-right"></i>
+							Личная информация
+						</a>
+					</li>
+					<li class="user-account__nav-item">
+						<a href="#" class="user-account__nav-link">
+							<i class="fa fa-angle-right"></i>
+							Мои объявления
+						</a>
+					</li>
+					<li class="user-account__nav-item">
+						<a href="#" class="user-account__nav-link">
+							<i class="fa fa-angle-right"></i>
+							Баланс
+						</a>
+					</li>
+					<li class="user-account__nav-item">
+						<a href="#" class="user-account__nav-link">
+							<i class="fa fa-angle-right"></i>
+							Мои посты
+						</a>
+					</li>
+					<li class="user-account__nav-item">
+						<a href="#" class="user-account__nav-link">
+							<i class="fa fa-angle-right"></i>
+							Мои компании и товары
+						</a>
+					</li>
+					<li class="user-account__nav-item">
+						<a href="#" class="user-account__nav-link">
+							<i class="fa fa-angle-right"></i>
+							Баннерная реклама
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</aside>
+	<div class="col-md-9 col-sm-12">
+		<form class="post-form memory-candle__form memory-form">
+			<div class="memory-form__title-block memory-form__title_bordered">
+				<h4 class="memory-form__title title-sm">
+					Контактная информация
+				</h4>
+				<button type="submit" class="memory-form__btn btn">
+					Сохранить изменения
+				</button>
+			</div>
+			<div class="post-form__row row memory-form__info">
+				<div class="post-form__col col-md-6 col-xs-12">
+					<input class="post-form__input memory-form__input" type="text" placeholder="Ваше имя">
+				</div>
+				<div class="post-form__col col-md-6 col-xs-12">
+					<input class="post-form__input memory-form__input" type="text" placeholder="Никнейм">
+				</div>
+			</div>
+			<div class="post-form__row row memory-form__info">
+				<div class="post-form__col col-md-6 col-xs-12">
+					<div class="select">
+						<select name="center" id="years" style="width: 100%" class="js-select">
+							<option value="1">Центральный</option>
+							<option value="2">2017</option>
+							<option value="3">2016</option>
+							<option value="4">2015</option>
+							<option value="5">2014</option>
+						</select>
+					</div>
+				</div>
+				<div class="post-form__col col-md-6 col-xs-12">
+					<input class="post-form__input memory-form__input" type="text" placeholder="Телефон">
+				</div>
+			</div>
+			<div class="post-form__row row memory-form__info">
+				<div class="post-form__col col-md-6 col-xs-12">
+					<input class="post-form__input memory-form__input" type="text" placeholder="E-mail">
+				</div>
+				<div class="post-form__col col-md-6 col-xs-12">
+					<input class="post-form__input memory-form__input" type="text" placeholder="Skype">
+				</div>
+			</div>
+		</form>
+		<form class="post-form memory-candle__form memory-form">
+			<div class="memory-form__title-block memory-form__title_bordered">
+				<h4 class="memory-form__title title-sm">
+					Изменение пароля
+				</h4>
+				<button type="submit" class="memory-form__btn btn">
+					Сохранить изменения
+				</button>
+			</div>
+			<div class="post-form__row row memory-form__info">
+				<div class="post-form__col col-md-6 col-xs-12">
+					<input class="post-form__input memory-form__input" type="text" placeholder="Текущий пароль">
+				</div>
+				<div class="post-form__col col-md-6 col-xs-12">
+					<input id="pass" class="post-form__input memory-form__input" type="text" placeholder="Новый пароль">
+				</div>
+			</div>
+			<!-- Start password-strangth -->
+				{% include "partials/user-account/_password-strangth.html" %}
+			<!-- End password-strangth	 -->
+			<div class="memory-form__title-block memory-form__title_bordered">
+				<h4 class="memory-form__title title-sm">
+					Авторизация по соцсетям
+				</h4>
+			</div>
+			<div class="post-form__row row">
+				<div class="post-form__col col-md-12">
+					<div class="form-radio social memory-form__title_bordered">
+						<div class="form-radio__radio">
+							<label class="social__link" for="1">
+								<i class="fa fab fa-vk social__icon"></i>
+							</label>
+							<input type="radio" id="1" name="memory-candle">
+						</div>
+						<div class="form-radio__radio">
+							<label class="social__link" for="2">
+								<i class="fa fab fa-facebook-f social__icon"></i>
+							</label>
+							<input type="radio" id="2" name="memory-candle" checked>
+						</div>
+						<div class="form-radio__radio">
+							<label class="social__link" for="3">
+								<i class="fa fab fa-odnoklassniki social__icon"></i>
+							</label>
+							<input type="radio" id="3" name="memory-candle">
+						</div>
+						<div class="form-radio__radio">
+							<label class="social__link" for="4">
+								<span class="social__icon social__icon_mod">{{ mixins.icon('smile') }}</span>
+							</label>
+							<input type="radio" id="4" name="memory-candle">
+						</div>
+						<div class="form-radio__radio">
+							<label class="social__link" for="5">
+								<span class="social__icon social__icon_mod">{{ mixins.icon('google') }}</span>
+							</label>
+							<input type="radio" id="5" name="memory-candle">
+						</div>
+						<div class="form-radio__radio">
+							<label class="social__link" for="6">
+								<i class="fi flaticon-social-1 social__icon"></i>
+							</label>
+							<input type="radio" id="6" name="memory-candle">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Start delete-account -->
+				{% include "partials/user-account/_delete-account.html" %}
+			<!-- End delete-account	 -->
+		</form>
+		<div class="bottom-image">
+			<img src="img/rose-candle.png" alt="rose-angel">
+		</div>
+	</div>
+</div>

@@ -20,7 +20,7 @@ title: Каталог А-Я
 	<div class="category-main">
 	    <div class="container category-main__container">
 	        <div class="category-main__head section-head text-center">
-	            <h3 class="category-main__title title-l">Каталог А-Я</h3>
+	            <h1 class="category-main__title title-l">Каталог А-Я</h1>
 	            <p>Подзаголовок страницы</p>
 	        </div>
 	    </div>
@@ -28,7 +28,7 @@ title: Каталог А-Я
 	        <div class="category-main__row row">
 	            <div class="category-main__col col-md-9 col-sm-12">
 	            	<div class="category-main__alphabetic-search alphabetic-search">
-	            		<div class="alphabetic-search__label">.Поиск по фамилии:</div>
+	            		<div class="alphabetic-search__label">Поиск по фамилии:</div>
 		                <ul class="alphabetic-search__list">
 		                	{% for letter in ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ж', 'З', 'И', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Э', 'Ю', 'Я'] %}
 		                	<li class="alphabetic-search__item{% if loop.index === 6 %} is-active{% endif %}"><a href="#" class="alphabetic-search__link">{{ letter }}</a></li>

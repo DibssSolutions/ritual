@@ -1,0 +1,44 @@
+    
+<div class="author-ads">
+    <div class="container">
+        <h3 class="author-ads__title">Все объявления автора</h3>   
+        <div class="row">
+        {% for i in range(0, 7) %}
+        <div class="col-md-3 col-sm-6 col-xs-6">    
+            <div href="#" class="funeral__item companies-item">
+                <div class="companies-item__wrap">
+                    <div class="sf-thumb" style="background-image: url(./img/ritual.png)">
+                        
+                    </div>
+                    <div class="companies-item__text">
+                        <h4 class="title-s companies-item__name">Ритуальный агент</h4>
+                        <div class="companies-item__type">
+                            <div class="product-prices">
+                                <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                                <div class="product-single-price"> <i class="fa fa-user"></i> Татьяна</div>
+                            </div>
+                        </div>
+                        <div class="companies-item__descr">
+                            <div class="product-reviews"> 
+                                <span class="pr-ratings">
+                                    <i class="flaticon-favorite"></i>
+                                    <i class="flaticon-favorite"></i>
+                                    <i class="flaticon-favorite"></i>
+                                    <i class="flaticon-favorite"></i>
+                                    <i class="flaticon-favorite"></i>
+                                </span>
+                            </div>  
+                        </div>
+                        <div class="companies-item__view"> 
+                            <span>23.02.2018</span>
+                            <span>Резюме</span>
+                            <span>{{ mixins.icon('eye') }}47</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+</div> 

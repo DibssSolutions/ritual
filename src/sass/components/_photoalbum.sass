@@ -1,6 +1,18 @@
 .full-slider
 	position: relative
 	padding-bottom: 40px
+	&__slide
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 8px
+			left: 8px
+			right: 8px
+			bottom: 8px
+			border: 2px solid $gray_brown
+			z-index: 1
+			pointer-events: none
 	&__next,
 	&__prev
 		position: absolute

@@ -1,0 +1,37 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+    {% include "partials/_header.html" %}
+    
+	<!-- Start about-us -->
+	{% include "partials/about-us/_about-us.html" %}
+    <!-- End about-us -->
+
+	<!-- Start mail-form -->
+	{% include "partials/home/_mail-form.html" %}
+    <!-- End mail-form -->
+    
+    <!-- Start reviews -->
+    {% include "partials/about-us/_reviews.html" %}
+    <!-- End reviews -->
+    
+    <!-- Start about-feedback -->
+    {% include "partials/about-us/_about-feedback.html" %}
+    <!-- End about-feedback -->
+    
+    <!-- Start about-advantages -->
+    {% include "partials/about-us/_about-advantages.html" %}
+    <!-- End about-advantages -->
+    
+
+
+    
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+    
+{% endblock %}

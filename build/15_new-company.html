@@ -34,20 +34,47 @@
       <div class="header-wrap js-header-wrap">
         <div class="topbar topbar3">
           <div class="container">
-            <div class="lang-select pull-right"> <i class="fa fa-angle-down"></i> <select>
-                    <option value="">EN</option>
-                    <option value="">PO</option>
-                    <option value="">FR</option>
-                </select> </div>
+            <div class="topbar__wrap">
+              <ul class="topbar__list list-dropdown">
+                <li class="list-dropdown__item list-dropdown__item_mod">
+                  <div class="map-wrap__select"> <span class="list-dropdown__icon">
+								
+<svg class="icon icon-mark"><use xlink:href="img/sprite.svg#icon-mark"></use></svg>
+
+							</span>
+                    <div class="select"> <select name="region" id="heade-region" style="width: 100%" class="js-select" placeholder="Выберите район">
+									<option value="1">Выберите район</option>
+									<option value="2">Индустриальный</option>
+									<option value="3">Кировский</option>
+									<option value="4">Краснофлотский</option>
+								</select> </div>
+                  </div>
+                </li>
+                <li class="list-dropdown__item"> <a href="#" class="list-dropdown__link">
+							<span class="list-dropdown__icon">
+								
+<svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg>
+
+							</span>
+							Войти
+						</a> </li>
+                <li class="list-dropdown__item"> <span class="vertical-slash">|</span> </li>
+                <li class="list-dropdown__item"> <a href="#" class="list-dropdown__link">
+							 Зарегистрироваться
+						</a> </li>
+              </ul>
+            </div>
           </div>
         </div>
         <header class="header4 header5 header-bg">
           <div class="container">
             <div class="row">
-              <div class="col-md-3 col-sm-3 col-xs-8"> <a href="./index.html" class="navbar-brand"><img src="img/logo.png" class="img-responsive" alt=""></a> </div>
+              <div class="col-md-3 col-sm-3 col-xs-8"> <a href="./index.html" class="navbar-brand">
+						<img src="img/logo.png" class="img-responsive" alt="logo">
+					</a> </div>
               <div class="col-md-9 col-sm-9 col-xs-4">
                 <div class="header-top">
-                  <div class="cart-header2 hidden-xs cart-show pull-right"> <i class="fi flaticon-web"></i> <span>My Cart (0)</span>
+                  <div class="cart-header2 hidden-xs cart-show pull-right"> <i class="fi flaticon-web"></i> <span>My Cart (3)</span>
                     <div class="cart-table">
                       <h3>My Cart (3 items)</h3>
                       <div class="margin-bottom-20"></div>
@@ -75,28 +102,37 @@
                 </div>
                 <div class="clearfix"></div>
                 <nav class="navbar navbar-default"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	                        <span>
-						        <em></em>
-						        <em></em>
-						        <em></em>
-						    </span>
-	                    </button>
+							<span>
+								<em></em>
+								<em></em>
+								<em></em>
+							</span>
+						</button>
                   <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                       <li><a href="./index.html">Главная</a></li>
-                      <li class="dropdown dropdown-normal"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Если случилось горе <span class="fa fa-angle-down"></span></a>
+                      <li class="dropdown dropdown_mod"> <a href="#" class="dropdown-toggle">Если случилось горе <span class="fa fa-angle-down"></span></a>
                         <ul class="dropdown-menu dropdown-menu-v3">
-                          <li><a href="./blog.html">Blog</a></li>
-                          <li><a href="./blog-single.html">Blog Single</a></li>
+                          <li><a href="#">Блог</a></li>
+                          <li><a href="#">Блог 1</a></li>
+                          <li><a href="#">Блог 2</a></li>
                         </ul>
                       </li>
                       <li><a href="#">После похорон</a></li>
-                      <li class="dropdown dropdown-normal active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Страницы памяти<span class="fa fa-angle-down"></span></a>
+                      <li class="dropdown dropdown_mod"> <a href="#" class="dropdown-toggle">
+										Страницы памяти
+										<span class="fa fa-angle-down"></span>
+									</a>
                         <ul class="dropdown-menu dropdown-menu-v3">
-                          <li><a href="./contact-v1.html">Contact</a></li>
-                          <li><a href="./contact-v2.html">Contact V2</a></li>
-                          <li><a href="./locations.html">Locations</a></li>
-                          <li><a href="./location-single.html">Location - Single</a></li>
+                          <li> <a href="#">
+												Каталог А-Я
+											</a> </li>
+                          <li> <a href="#">
+												Календарь похорон
+											</a> </li>
+                          <li> <a href="./locations.html">
+												Все никрологи
+											</a> </li>
                         </ul>
                       </li>
                     </ul>
@@ -110,7 +146,7 @@
         </header>
       </div>
       <div class="clearfix"></div>
-      <!-- Start 24_blogs -->
+      <!-- Start 15_new-company -->
       <div class="wrapper">
         <div class="clearfix"></div>
         <div class="page_head ">
@@ -128,35 +164,31 @@
           <div class="new-companys__container container">
             <div class="new-companys__wrap js-accordion-wrap">
               <div class="new-companys__head section-head">
-                <h3 class="new-companys__title title-l">Добавление новой компании</h3>
+                <h1 class="new-companys__title title-l">Добавление новой компании</h1>
                 <p>Написать подзаголовок, если нужно</p>
               </div>
               <form class="company-form" action="/">
                 <div class="company-form__row">
                   <div class="row">
                     <div class="col-md-3">
-                      <div class="file-upload">
-                        <div class="file-upload__wrap"> <span class="file-upload__icon">
+                      <div class="file-upload"> <label class="file-upload__wrap" for="file-upload1">
+										<span class="file-upload__icon">
 											
 <svg class="icon icon-camera"><use xlink:href="img/sprite.svg#icon-camera"></use></svg>
 
-										</span> <span class="file-upload__description">
+										</span>
+										<span class="file-upload__description">
 											Загрузите логотип
 										</span>
-                          <div class="file-upload__photo" style="background-image: url(img/check-list2.png);"> </div>
-                        </div> <span id="title-input" class="file-upload__title-input js-title-input">
-										Файл не выбран
-									</span> <label class="file-upload__label btn" for="file-upload1">
-										Выбрать файл
+										<div class="file-upload__photo" style="background-image: url();">
+										</div>
 									</label> <input type="file" name="file-upload1" id="file-upload1" class="file-upload__input" value=""> </div>
                     </div>
                     <div class="col-md-9">
                       <div class="post-form">
                         <div class="post-form__col"> <span class="post-form__title-row">
 											Название компании:
-										</span> <input class="post-form__input" type="text" id="name-company" value="" name="name-company"> <label class="post-form__label" for="name-company">
-											Введите название компании
-										</label>
+										</span> <input class="post-form__input" type="text" id="name-company" value="" name="name-company" placeholder="Введите название компании">
                           <div class="hints">
                             <div class="hints__icon"> <i class="fa fas fa-question"></i> </div>
                             <div class="hints__text"> Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст </div>
@@ -164,9 +196,7 @@
                         </div>
                         <div class="post-form__col"> <span class="post-form__title-row">
 											Специализация:
-										</span> <input class="post-form__input" type="text" id="specialization" value="" name="specialization"> <label class="post-form__label" for="specialization">
-											Пример: салон ритуальных услуг
-										</label>
+										</span> <input class="post-form__input" type="text" id="specialization" value="" name="specialization" placeholder="Пример: салон ритуальных услуг">
                           <div class="hints">
                             <div class="hints__icon"> <i class="fa fas fa-question"></i> </div>
                             <div class="hints__text"> Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст </div>
@@ -202,17 +232,14 @@
                         <div class="select-wrap js-accordion__hide-block"> <span class="post-form__title-row">
 											Выберите из списка:
 										</span>
-                          <div class="select"> <select class="js-select-mult" name="character" multiple="multiple">
-	                                            <option value="Dedicated Development Team">Dedicated Development Team</option>
-	                                            <option value="Lois">Lois Griffin</option>
-	                                            <option value="Chris">Chris Griffin</option>
-	                                            <option value="Meg">Meg Griffin</option>
-	                                            <option value="Stewie">Stewie Griffin</option>
-	                                            <option value="Cleveland">Cleveland Brown</option>
-	                                            <option value="Joe">Joe Swanson</option>
-	                                            <option value="Quagmire">Glenn Quagmire</option>
-	                                            <option value="Evil Monkey">Evil Monkey</option>
-	                                            <option value="Herbert">John Herbert</option>
+                          <div class="select select_mod"> <select class="js-select-mult" name="character" multiple="multiple">
+	                                            <option value="Lois">Ритуальный салон</option>
+	                                            <option value="Chris">Художественная ковка</option>
+	                                            <option value="Meg">Услуга 3</option>
+	                                            <option value="Stewie">Памятники</option>
+	                                            <option value="Cleveland">Кованая мебель</option>
+	                                            <option value="Joe">Кованая мебель</option>
+	                                            <option value="Quagmire">Памятники</option>
 	                                        </select> </div>
                           <div class="hints">
                             <div class="hints__icon"> <i class="fa fas fa-question"></i> </div>
@@ -235,9 +262,7 @@
                           <div class="post-form post-form__mods">
                             <div class="post-form__col"> <span class="post-form__title-row">
 													Адрес компании:Выбрать услугу из списка
-												</span> <input class="post-form__input" type="text" id="adress-company" value="" name="adress-company"> <label class="post-form__label" for="adress-company">
-													Адрес будет написан тут
-												</label>
+												</span> <input class="post-form__input" type="text" id="adress-company" value="" name="adress-company" placeholder="Адрес будет написан тут">
                               <div class="hints">
                                 <div class="hints__icon"> <i class="fa fas fa-question"></i> </div>
                                 <div class="hints__text"> Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст </div>
@@ -372,28 +397,20 @@
                                 <div class="post-form">
                                   <div class="post-form__col"> <span class="post-form__title-row">
 																Телефон 1:
-															</span> <input class="post-form__input" type="text" id="phone1" value="" name="phone1"> <label class="post-form__label" for="phone1">
-																+7 (111) 123-45-67
-															</label> </div>
+															</span> <input class="post-form__input" type="text" id="phone1" value="" name="phone1" placeholder="+7 (111) 123-45-67"> </div>
                                   <div class="post-form__col"> <span class="post-form__title-row">
 																Email:
-															</span> <input class="post-form__input" type="text" id="email1" value="" name="email1"> <label class="post-form__label" for="email1">
-																vashemail@mail.ru
-															</label> </div>
+															</span> <input class="post-form__input" type="text" id="email1" value="" name="email1" placeholder="vashemail@mail.ru"> </div>
                                 </div>
                               </div>
                               <div class="col-md-6">
                                 <div class="post-form">
                                   <div class="post-form__col"> <span class="post-form__title-row">
 																Телефон 2:
-															</span> <input class="post-form__input" type="text" id="phone2" value="" name="phone2"> <label class="post-form__label" for="phone2">
-																+7 (111) 123-45-67
-															</label> </div>
+															</span> <input class="post-form__input" type="text" id="phone2" value="" name="phone2" placeholder="+7 (111) 123-45-67"> </div>
                                   <div class="post-form__col"> <span class="post-form__title-row">
 																Ваш сайт:
-															</span> <input class="post-form__input" type="text" id="site1" value="" name="site1"> <label class="post-form__label" for="site1">
-																vash-site.com
-															</label> </div>
+															</span> <input class="post-form__input" type="text" id="site1" value="" name="site1" placeholder="vash-site.com"> </div>
                                 </div>
                               </div>
                             </div>
@@ -403,9 +420,7 @@
                                   <div class="post-form">
                                     <div class="post-form__col"> <span class="post-form__title-row">
 																	Описание:
-																</span> <textarea class="post-form__textarea" id="message" value="" name="message"></textarea> <label class="post-form__label" class="post-form__label" for="message">
-																	Описание
-																</label> </div>
+																</span> <textarea class="post-form__textarea" id="message" value="" name="message" placeholder="Описание"></textarea> </div>
                                   </div>
                                 </div>
                               </div>
@@ -415,23 +430,17 @@
                                 <div class="post-form">
                                   <div class="post-form__col"> <span class="post-form__title-row">
 																График работы 1:
-															</span> <input class="post-form__input" type="text" id="graphic-work1" value="" name="graphic-work1"> <label class="post-form__label" for="graphic-work1">
-																ПН-ВТ: 09:00-19:00
-															</label> </div>
+															</span> <input class="post-form__input" type="text" id="graphic-work1" value="" name="graphic-work1" placeholder="ПН-ВТ: 09:00-19:00"> </div>
                                   <div class="post-form__col"> <span class="post-form__title-row">
 																Перерыв:
-															</span> <input class="post-form__input" type="text" id="break" value="" name="break"> <label class="post-form__label" for="break">
-																13:00-14:00
-															</label> </div>
+															</span> <input class="post-form__input" type="text" id="break" value="" name="break" placeholder="13:00-14:00"> </div>
                                 </div>
                               </div>
                               <div class="col-md-6">
                                 <div class="post-form">
                                   <div class="post-form__col"> <span class="post-form__title-row">
 																График работы 2:
-															</span> <input class="post-form__input" type="text" id="graphic-work2" value="" name="graphic-work2"> <label class="post-form__label" for="graphic-work2">
-																СБ-ВС: 10:00-18:00
-															</label> </div>
+															</span> <input class="post-form__input" type="text" id="graphic-work2" value="" name="graphic-work2" placeholder="СБ-ВС: 10:00-18:00"> </div>
                                 </div>
                               </div>
                             </div>
@@ -451,33 +460,40 @@
 										</button> </div>
                         <div class="upload-photo__wrap js-accordion__hide-block">
                           <div class="row">
-                            <div class="upload-photo__gallery">
-                              <div class="upload-photo__item col-md-3 col-sm-4 col-xs-6"> <span class="upload-photo__icon">
+                            <div class="upload-photo__gallery"> <a href="#" class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
+													<span class="upload-photo__icon">
 														
 <svg class="icon icon-camera"><use xlink:href="img/sprite.svg#icon-camera"></use></svg>
 
-													</span> <span class="upload-photo__description">
+													</span>
+													<span class="upload-photo__description">
 														Добавить фото
 													</span>
-                                <div class="upload-photo__photo" style="background-image: url(img/upload.png);"> </div>
-                              </div>
-                              <div class="upload-photo__item col-md-3 col-sm-4 col-xs-6"> <span class="upload-photo__icon">
+													<div class="upload-photo__photo" style="background-image: url(img/upload.png);">
+													</div>
+												</a> <a href="#" class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
+													<span class="upload-photo__icon">
 														
 <svg class="icon icon-camera"><use xlink:href="img/sprite.svg#icon-camera"></use></svg>
 
-													</span> <span class="upload-photo__description">
+													</span>
+													<span class="upload-photo__description">
 														Добавить фото
 													</span>
-                                <div class="upload-photo__photo" style="background-image: url(img/upload.png);"> </div>
-                              </div>
-                              <div class="upload-photo__item col-md-3 col-sm-4 col-xs-6"> <span class="upload-photo__icon">
+													<div class="upload-photo__photo" style="background-image: url(img/upload.png);">
+													</div>
+												</a> <a href="#" class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
+													<span class="upload-photo__icon">
 														
 <svg class="icon icon-camera"><use xlink:href="img/sprite.svg#icon-camera"></use></svg>
 
-													</span> <span class="upload-photo__description">
+													</span>
+													<span class="upload-photo__description">
 														Добавить фото
-													</span> </div>
-                            </div>
+													</span>
+													<div class="upload-photo__photo" style="background-image: url();">
+													</div>
+												</a> </div>
                           </div>
                           <div class="row">
                             <div class="upload-gallery">
@@ -485,7 +501,8 @@
 														Выберите файл формата jpg, Размер файла не более 6 Мб
 													</span>
                                 <div class="file-upload">
-                                  <div class="post-form__col"> <input class="post-form__input" type="text" id="way1" value="" name="way1"> <label class="post-form__label" for="way1">:/Путь файла будет тут.....</label> <span class="post-form__icon"><i class="fa fas fa-camera"></i></span>                                    </div> <label class="file-upload__label btn btn_big" for="file-upload-photo1">
+                                  <div class="post-form__col"> <input class="post-form__input" type="text" id="way1" value="" name="way1" placeholder=":/Путь файла будет тут....."> <label class="post-form__icon" for="file-upload-photo1"><i class="fa fas fa-camera"></i></label> </div>
+                                  <label class="file-upload__label btn btn_big" for="file-upload-photo1">
 															Добавить
 														</label> <input type="file" name="file-upload-photo1" id="file-upload-photo1" class="file-upload__input" value=""> </div>
                               </div>
@@ -502,7 +519,8 @@
                       <div class="upload-photo js-accord">
                         <div class="upload-photo__header title-box">
                           <h4 class="title-box__title title-m"> Каталог товаров/услуг </h4> <button type="button" class="title-box__btn hide-block-btn js-accord-btn">
-											<span class="js-accord-text-btn">Скрыть</span> раздел
+											<span class="js-accord-text-btn">Скрыть</span>
+											раздел
 										</button> </div>
                         <div class="upload-photo__wrap js-accordion__hide-block">
                           <div class="upload-photo__nav">
@@ -560,11 +578,11 @@
                               <div class="col-md-2">
                                 <nav class="navigation-page">
                                   <ul class="page-nav">
-                                    <li class="page-nav__item active"><a class="page-nav__link" href="#">1</a></li>
-                                    <li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
-                                    <li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
-                                    <li class="page-nav__item"><a class="page-nav__link" href="#">4</a></li>
-                                    <li class="page-nav__item"><a class="page-nav__link" href="#">...</a></li>
+                                    <li class="page-nav__item active"> <a class="page-nav__link" href="#">1</a> </li>
+                                    <li class="page-nav__item"> <a class="page-nav__link" href="#">2</a> </li>
+                                    <li class="page-nav__item"> <a class="page-nav__link" href="#">3</a> </li>
+                                    <li class="page-nav__item"> <a class="page-nav__link" href="#">4</a> </li>
+                                    <li class="page-nav__item"> <a class="page-nav__link" href="#">...</a> </li>
                                   </ul>
                                 </nav>
                               </div>
@@ -576,11 +594,10 @@
                               <div class="table">
                                 <div class="table__thead mob-hide">
                                   <div class="table__tr">
-                                    <div class="table__th" data-column="photo"> Фото </div>
-                                    <div class="table__th" data-column="name"> Товары/услуги </div>
+                                    <div class="table__th" data-column="photo"> Добавленные товары/услуги </div>
                                     <div class="table__th" data-column="qua"> Порядок </div>
                                     <div class="table__th" data-column="price"> Стоимость </div>
-                                    <div class="table__th" data-column="group"> Группа </div>
+                                    <div class="table__th table__th_mod" data-column="group"> Группа </div>
                                     <div class="table__th" data-column="group"> </div>
                                   </div>
                                 </div>
@@ -596,17 +613,11 @@
                                     </div>
                                     <div class="table__td" data-column="qua">
                                       <div class="table__counter">
-                                        <div class="counter-price js-counter"> <input class="counter-price__input js-counter-input" type="text" value="1">
-                                          <div class="counter-price__box-btn"> <button class="counter-price__plus js-counter-plus" type="button">
-																				
+                                        <div class="counter-price"> <span class="counter-price__input">1</span> <button class="counter-price__plus" type="button">
+							
 <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
 
-																			</button> <button class="counter-price__minus js-counter-minus" type="button">
-																				
-<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
-
-																			</button> </div>
-                                        </div>
+						</button> </div>
                                       </div>
                                     </div>
                                     <div class="table__td" data-column="price">
@@ -616,18 +627,18 @@
                                       <div class="table__group"> Подходящая категория </div>
                                     </div>
                                     <div class="table__block-btn"> <button class="table__btn">
-																	
+					
 <svg class="icon icon-filse-copy"><use xlink:href="img/sprite.svg#icon-filse-copy"></use></svg>
 
-														  		</button> <a class="table__btn" href="#">
-														  			
+		  		</button> <a class="table__btn" href="#">
+		  			
 <svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
 
-														  		</a> <button class="table__btn">
-																	
+		  		</a> <button class="table__btn">
+					
 <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
 
-														  		</button> </div>
+		  		</button> </div>
                                   </div>
                                   <div class="table__tr">
                                     <div class="table__td" data-column="photo">
@@ -640,17 +651,11 @@
                                     </div>
                                     <div class="table__td" data-column="qua">
                                       <div class="table__counter">
-                                        <div class="counter-price js-counter"> <input class="counter-price__input js-counter-input" type="text" value="1">
-                                          <div class="counter-price__box-btn"> <button class="counter-price__plus js-counter-plus" type="button">
-																				
+                                        <div class="counter-price"> <span class="counter-price__input">1</span> <button class="counter-price__plus" type="button">
+							
 <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
 
-																			</button> <button class="counter-price__minus js-counter-minus" type="button">
-																				
-<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
-
-																			</button> </div>
-                                        </div>
+						</button> </div>
                                       </div>
                                     </div>
                                     <div class="table__td" data-column="price">
@@ -660,18 +665,18 @@
                                       <div class="table__group"> Подходящая категория </div>
                                     </div>
                                     <div class="table__block-btn"> <button class="table__btn">
-																	
+					
 <svg class="icon icon-filse-copy"><use xlink:href="img/sprite.svg#icon-filse-copy"></use></svg>
 
-														  		</button> <a class="table__btn" href="#">
-														  			
+		  		</button> <a class="table__btn" href="#">
+		  			
 <svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
 
-														  		</a> <button class="table__btn">
-																	
+		  		</a> <button class="table__btn">
+					
 <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
 
-														  		</button> </div>
+		  		</button> </div>
                                   </div>
                                   <div class="table__tr">
                                     <div class="table__td" data-column="photo">
@@ -684,17 +689,11 @@
                                     </div>
                                     <div class="table__td" data-column="qua">
                                       <div class="table__counter">
-                                        <div class="counter-price js-counter"> <input class="counter-price__input js-counter-input" type="text" value="1">
-                                          <div class="counter-price__box-btn"> <button class="counter-price__plus js-counter-plus" type="button">
-																				
+                                        <div class="counter-price"> <span class="counter-price__input">1</span> <button class="counter-price__plus" type="button">
+							
 <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
 
-																			</button> <button class="counter-price__minus js-counter-minus" type="button">
-																				
-<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
-
-																			</button> </div>
-                                        </div>
+						</button> </div>
                                       </div>
                                     </div>
                                     <div class="table__td" data-column="price">
@@ -704,18 +703,18 @@
                                       <div class="table__group"> Подходящая категория </div>
                                     </div>
                                     <div class="table__block-btn"> <button class="table__btn">
-																	
+					
 <svg class="icon icon-filse-copy"><use xlink:href="img/sprite.svg#icon-filse-copy"></use></svg>
 
-														  		</button> <a class="table__btn" href="#">
-														  			
+		  		</button> <a class="table__btn" href="#">
+		  			
 <svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
 
-														  		</a> <button class="table__btn">
-																	
+		  		</a> <button class="table__btn">
+					
 <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
 
-														  		</button> </div>
+		  		</button> </div>
                                   </div>
                                   <div class="table__tr">
                                     <div class="table__td" data-column="photo">
@@ -728,17 +727,11 @@
                                     </div>
                                     <div class="table__td" data-column="qua">
                                       <div class="table__counter">
-                                        <div class="counter-price js-counter"> <input class="counter-price__input js-counter-input" type="text" value="1">
-                                          <div class="counter-price__box-btn"> <button class="counter-price__plus js-counter-plus" type="button">
-																				
+                                        <div class="counter-price"> <span class="counter-price__input">1</span> <button class="counter-price__plus" type="button">
+							
 <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
 
-																			</button> <button class="counter-price__minus js-counter-minus" type="button">
-																				
-<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
-
-																			</button> </div>
-                                        </div>
+						</button> </div>
                                       </div>
                                     </div>
                                     <div class="table__td" data-column="price">
@@ -748,18 +741,94 @@
                                       <div class="table__group"> Подходящая категория </div>
                                     </div>
                                     <div class="table__block-btn"> <button class="table__btn">
-																	
+					
 <svg class="icon icon-filse-copy"><use xlink:href="img/sprite.svg#icon-filse-copy"></use></svg>
 
-														  		</button> <a class="table__btn" href="#">
-														  			
+		  		</button> <a class="table__btn" href="#">
+		  			
 <svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
 
-														  		</a> <button class="table__btn">
-																	
+		  		</a> <button class="table__btn">
+					
 <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
 
-														  		</button> </div>
+		  		</button> </div>
+                                  </div>
+                                  <div class="table__tr">
+                                    <div class="table__td" data-column="photo">
+                                      <div class="table__img"> <img src="img/picture.png" class="table__img-in" alt="image"> </div>
+                                    </div>
+                                    <div class="table__td" data-column="photo">
+                                      <div class="table__name">
+                                        <div class="table__name-label"> Название услуги или товара </div>
+                                      </div>
+                                    </div>
+                                    <div class="table__td" data-column="qua">
+                                      <div class="table__counter">
+                                        <div class="counter-price"> <span class="counter-price__input">1</span> <button class="counter-price__plus" type="button">
+							
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+
+						</button> </div>
+                                      </div>
+                                    </div>
+                                    <div class="table__td" data-column="price">
+                                      <div class="table__value"> 1 000 руб. </div>
+                                    </div>
+                                    <div class="table__td" data-column="group">
+                                      <div class="table__group"> Подходящая категория </div>
+                                    </div>
+                                    <div class="table__block-btn"> <button class="table__btn">
+					
+<svg class="icon icon-filse-copy"><use xlink:href="img/sprite.svg#icon-filse-copy"></use></svg>
+
+		  		</button> <a class="table__btn" href="#">
+		  			
+<svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
+
+		  		</a> <button class="table__btn">
+					
+<svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
+
+		  		</button> </div>
+                                  </div>
+                                  <div class="table__tr">
+                                    <div class="table__td" data-column="photo">
+                                      <div class="table__img"> <img src="img/picture.png" class="table__img-in" alt="image"> </div>
+                                    </div>
+                                    <div class="table__td" data-column="photo">
+                                      <div class="table__name">
+                                        <div class="table__name-label"> Название услуги или товара </div>
+                                      </div>
+                                    </div>
+                                    <div class="table__td" data-column="qua">
+                                      <div class="table__counter">
+                                        <div class="counter-price"> <span class="counter-price__input">1</span> <button class="counter-price__plus" type="button">
+							
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+
+						</button> </div>
+                                      </div>
+                                    </div>
+                                    <div class="table__td" data-column="price">
+                                      <div class="table__value"> 1 000 руб. </div>
+                                    </div>
+                                    <div class="table__td" data-column="group">
+                                      <div class="table__group"> Подходящая категория </div>
+                                    </div>
+                                    <div class="table__block-btn"> <button class="table__btn">
+					
+<svg class="icon icon-filse-copy"><use xlink:href="img/sprite.svg#icon-filse-copy"></use></svg>
+
+		  		</button> <a class="table__btn" href="#">
+		  			
+<svg class="icon icon-pen"><use xlink:href="img/sprite.svg#icon-pen"></use></svg>
+
+		  		</a> <button class="table__btn">
+					
+<svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
+
+		  		</button> </div>
                                   </div>
                                 </div>
                               </div>
@@ -778,15 +847,17 @@
                           <div class="row">
                             <div class="col-md-3">
                               <div class="upload-photo">
-                                <div class="upload-photo__gallery upload-photo__gallery_mod">
-                                  <div class="upload-photo__item"> <span class="upload-photo__icon">
+                                <a href="#" class="upload-photo__gallery upload-photo__gallery_mod">
+                                  <div class="upload-photo__item upload-photo__item_mod"> <span class="upload-photo__icon">
 																
 <svg class="icon icon-camera"><use xlink:href="img/sprite.svg#icon-camera"></use></svg>
 
 															</span> <span class="upload-photo__description">
 																Добавить фото
-															</span> </div>
-                                </div>
+															</span>
+                                    <div class="upload-photo__photo" style="background-image: url();"> </div>
+                                  </div>
+                                </a>
                               </div>
                             </div>
                             <div class="col-md-9">
@@ -829,19 +900,25 @@
                               </div>
                             </div>
                           </div>
-                          <div class="row">
-                            <div class="upload-gallery">
-                              <div class="post-form col-md-12"> <span class="title-hint">
+                          <!-- <div class="row">
+											<div class="upload-gallery">
+												<div class="post-form col-md-7">
+													<span class="title-hint">
 														Выберите файл формата jpg, Размер файла не более 6 Мб
-													</span>
-                                <div class="file-upload">
-                                  <div class="post-form__col"> <input class="post-form__input" type="text" id="upload-way2" value="" name="upload-way2"> <label class="post-form__label" for="way2">:/Путь файла будет тут.....</label> <span class="post-form__icon"><i class="fa fas fa-camera"></i></span>                                    </div> <label class="file-upload__label btn btn_big" for="file-upload-photo2">
+													</span>	
+													<div class="file-upload">
+														<div class="post-form__col">
+															<input class="post-form__input" type="text" id="way1" value="" name="way1" placeholder=":/Путь файла будет тут.....">
+															<label class="post-form__icon" for="file-upload-photo1"><i class="fa fas fa-camera"></i></label>
+														</div>
+														<label class="file-upload__label btn btn_big" for="file-upload-photo1">
 															Добавить
-														</label> <input type="file" name="file-upload-photo2" id="file-upload-photo2" class="file-upload__input" value=""> </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+														</label>
+														<input type="file" name="file-upload-photo1" id="file-upload-photo1" class="file-upload__input" value="">
+													</div>
+												</div>
+											</div>
+										</div> --></div>
                       </div>
                     </div>
                   </div>
@@ -858,22 +935,38 @@
                           <div class="contact-form">
                             <div class="row">
                               <div class="col-md-6">
-                                <div class="post-form">
-                                  <div class="post-form__col"> <span class="post-form__title-row">
-																Характеристика 1:
-															</span> <input class="post-form__input" type="text" id="characteristics1" value="" name="characteristics1"> <label class="post-form__label" for="characteristics1">
-																Материал товара
-															</label> </div>
+                                <!-- <div class="post-form"> -->
+                                <div class="post-form__col">
+                                  <div class="select-wrap"> <span class="post-form__title-row">
+																	Характеристика 1
+																</span>
+                                    <div class="select"> <select name="group-product1" id="group-product1" style="width: 100%" class="js-select">
+																		<option value="1">Выбрать из списка подходящее</option>
+																		<option value="2">2017</option>
+																		<option value="3">2016</option>
+																		<option value="4">2015</option>
+																		<option value="5">2014</option>
+																	</select> </div>
+                                  </div>
                                 </div>
+                                <!-- </div> -->
                               </div>
                               <div class="col-md-6">
-                                <div class="post-form">
-                                  <div class="post-form__col"> <span class="post-form__title-row">
-																Характеристика 2:
-															</span> <input class="post-form__input" type="text" id="characteristics2" value="" name="characteristics2"> <label class="post-form__label" for="characteristics2">
-																Характеристика (поля повторяются дальше)
-															</label> </div>
+                                <!-- <div class="post-form"> -->
+                                <div class="post-form__col">
+                                  <div class="select-wrap"> <span class="post-form__title-row">
+																	Характеристика 1
+																</span>
+                                    <div class="select"> <select name="group-product2" id="group-product2" style="width: 100%" class="js-select">
+																		<option value="1">Выбрать из списка подходящее</option>
+																		<option value="2">2017</option>
+																		<option value="3">2016</option>
+																		<option value="4">2015</option>
+																		<option value="5">2014</option>
+																	</select> </div>
+                                  </div>
                                 </div>
+                                <!-- </div> -->
                               </div>
                             </div>
                             <div class="contact-form__textarea">
@@ -882,9 +975,7 @@
                                   <div class="post-form">
                                     <div class="post-form__col"> <span class="post-form__title-row">
 																	Описание:
-																</span> <textarea class="post-form__textarea" id="characteristics-message" value="" name="characteristics-message"></textarea> <label class="post-form__label" class="post-form__label" for="characteristics-message">
-																	Описание
-																</label> </div>
+																</span> <textarea class="post-form__textarea" id="characteristics-message" value="" name="characteristics-message" placeholder="Описание"></textarea> </div>
                                   </div>
                                 </div>
                               </div>
@@ -892,7 +983,9 @@
                           </div>
                           <div class="row">
                             <div class="col-md-12">
-                              <div class="details__save"> <button type="submit" class="details__save-btn btn btn_big">Сохранить и добавить</button> </div>
+                              <div class="details__save"> <button type="submit" class="details__save-btn btn btn_big">
+														Сохранить и добавить
+													</button> </div>
                             </div>
                           </div>
                         </div>
@@ -909,8 +1002,12 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="details__save"> <button type="submit" class="details__save-btn btn btn_border btn_big">Предпросмотр</button> </div>
-                        <div class="details__save"> <button type="submit" class="details__save-btn btn btn_big">Сохранить и компанию</button> </div>
+                        <div class="details__save"> <button type="submit" class="details__save-btn btn btn_border btn_big">
+											Предпросмотр
+										</button> </div>
+                        <div class="details__save"> <button type="submit" class="details__save-btn btn btn_big">
+											Сохранить и компанию
+										</button> </div>
                       </div>
                     </div>
                   </div>
@@ -921,7 +1018,7 @@
           </div>
         </div>
       </div>
-      <!-- End 24_blogs -->
+      <!-- End 15_new-company -->
       <!-- Start footer -->
       <!-- begin footer -->
       <footer class="footer">
@@ -940,21 +1037,21 @@
               <div class="col-md-3 col-sm-6 mob-hide">
                 <h4 class="title-sm">Последние некрологи</h4>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/tie.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
                     <div class="block__label">Дата похорон: </div>
                     <div class="block__date">Вт. 03-12-2018</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/photo-with-ribbon.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
                     <div class="block__label">Дата похорон: </div>
                     <div class="block__date">Вт. 03-12-2018</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/tie.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
                     <div class="block__label">Дата похорон: </div>
                     <div class="block__date">Вт. 03-12-2018</div>
@@ -964,19 +1061,19 @@
               <div class="col-md-3 col-sm-6 mob-hide">
                 <h4 class="title-sm">Последние статьи</h4>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/aside-post-img.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
                     <div class="block__label">Имя Фамилия</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/post-img.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Что снится к любви и наслаждению, а что – к разлуке и печали</a>
                     <div class="block__label">Имя Фамилия</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/aside-post-img.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
                     <div class="block__label">Имя Фамилия</div>
                   </div>
@@ -985,19 +1082,19 @@
               <div class="col-md-3 col-sm-6 mob-hide">
                 <h4 class="title-sm">Доска объявлений</h4>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/notes.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
                     <div class="block__label">Категория</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/notes.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Еще один заголовок объявления</a>
                     <div class="block__label">Категория</div>
                   </div>
                 </div>
                 <div class="block">
-                  <div class="block__img" style="background-image: url(./img/1.png);"></div>
+                  <div class="block__img" style="background-image: url(./img/notes.png);"></div>
                   <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
                     <div class="block__label">Категория</div>
                   </div>

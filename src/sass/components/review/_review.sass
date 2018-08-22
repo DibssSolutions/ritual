@@ -1,0 +1,215 @@
+.review
+    +sm
+        padding-top: 10px
+    &__container
+    &__head
+        +sm
+            margin-bottom: 30px
+    &__title
+    &__subtitle
+        border-bottom: 1px solid #ededed
+        margin-bottom: 35px
+    &__top
+        margin-bottom: 16px
+    &__company-name
+        padding-bottom: 20px
+        border-bottom: 1px solid #ededed
+        margin-bottom: 15px
+        +sm
+            padding-top: 12px
+            font-size: 25px!important
+            text-align: center
+    &__company-info
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 37px
+        p
+            color: #b4a996
+        span
+            color: $brown_orange
+            font-weight: 700
+    &__list
+        margin-bottom: 20px
+        &-title
+            margin-bottom: 30px
+            +sm
+                margin-bottom: 20px
+    &__item
+        width: 100%
+        padding: 24px 38px
+        border-bottom: 1px solid #ededed
+        +sm
+            padding: 0
+        .posts-image_full-md
+            +sm
+                width: 105px
+                height: 105px
+        .staff
+            padding-top: 14px
+            +sm
+                padding: 0
+            &__title-block
+                margin-bottom: 30px
+                +sm
+                    margin-bottom: 20px
+            .icon
+                margin-right: 12px
+                fill: $brown_orange
+            &__date
+                color: #8e867a
+                margin-bottom: 20px
+                +sm
+                    margin-bottom: 12px
+                span
+                    margin-left: 20px
+                    font-size: 14px
+            &__reviews
+                color: #8e867a
+                span
+                    text-decoration: underline
+                    color: $brown_orange
+    &__advantages
+        padding-top: 25px
+        margin-bottom: 45px
+        +sm
+            padding-bottom: 20px
+            margin-bottom: 20px
+            border-bottom: 1px solid #f6f6f6
+    &__advantage
+        display: flex
+        align-items: flex-start
+        +sm
+            flex-direction: column
+        &:not(:last-child)
+            margin-bottom: 25px
+        &-title
+            display: flex
+            align-items: center
+            margin-right: 20px
+            min-width: 170px
+            +sm
+                margin-bottom: 10px
+        &-text
+            line-height: 1.6
+            padding-top: 2px
+    &__icon
+        position: relative
+        width: 28px
+        height: 28px
+        border-radius: 50%
+        border: 2px solid #62594f
+        display: inline-block
+        margin-right: 15px
+        &:before,
+        &:after
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            background-color: $brown_orange
+        &:before
+            width: 2px
+            height: 8px
+        &:after
+            width: 8px
+            height: 2px
+        &_negative
+            &:before
+                display: none
+    &__text
+        line-height: 1.6
+        margin-bottom: 50px
+        padding-left: 5px
+        +sm
+            margin-bottom: 30px
+    &__company-ratings
+        width: 100%
+        max-width: none
+        display: table
+        padding: 0 5px 30px
+        border-bottom: 1px solid #f6f6f6
+        +sm
+            display: block
+            padding-bottom: 20px
+        .company-ratings__wrap
+            display: table-cell
+            +sm
+                display: block
+            &:first-child
+                padding-right: 30px
+                +sm
+                    padding: 0
+            .company-ratings__item
+                +sm
+                    margin-bottom: 14px
+
+
+    .search
+        margin-bottom: 20px
+    .ps__thumb-y
+        background-color: #c9c2b4
+    .table__tbody
+        margin-bottom: 50px
+    .rating-filter
+        margin-bottom: 70px
+        +sm
+            margin-bottom: 0
+        &__radio
+            &:not(:last-child)
+                margin-bottom: 20px
+            input
+                margin-right: 10px
+                +md
+                    position: absolute
+                    opacity: 0
+                    visibility: hidden
+                &:checked+label
+                    font-weight: 700
+
+    .width-img-angel
+        margin-bottom: 125px
+
+    .team-info
+        border-bottom: 1px solid #f2f2f2
+        display: inline-block
+        transition: box-shadow .3s
+        padding: 20px
+        +clr
+        &:hover
+            box-shadow: 0 0 15px rgba(0,0,0,.4)
+            cursor: pointer
+            .staff__date,
+            .ratings
+                opacity: 1
+                visibility: visible
+        .staff__date
+            color: #8e867a
+            opacity: 0
+            visibility: hidden
+            transition: opacity .3s, visibility .3s
+        .ratings
+            opacity: 0
+            visibility: hidden
+            transition: opacity .3s, visibility .3s
+    .navigation-page
+        +sm
+            margin-bottom: 20px
+    .sidebar
+        +sm
+            background-color: $white_brown_bg
+            padding-top: 20px
+    .social
+        float: right
+        margin-bottom: 55px
+        +sm
+            float: left
+            margin-bottom: 25px
+        &__link
+            width: 23px
+            height: 23px
+            background-color: $brown_orange
+        &__icon
+            font-size: 14px
+            color: #fff

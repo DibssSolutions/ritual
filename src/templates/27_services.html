@@ -1,0 +1,49 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+    {% include "partials/_header.html" %}
+    
+	<!-- Start portal-services -->
+	{% include "partials/services/_portal-services.html" %}
+    <!-- End portal-services -->
+    
+	<!-- Start services-main-list -->
+	{% include "partials/services/_services-main-list.html" %}
+    <!-- End services-main-list -->
+    
+	<!-- Start info-placement -->
+	{% include "partials/services/_info-placement.html" %}
+    <!-- End info-placement -->
+    
+	<!-- Start vip-placement -->
+	{% include "partials/services/_vip-placement.html" %}
+    <!-- End vip-placement -->
+    
+	<!-- Start ritual-board -->
+	{% include "partials/services/_ritual-board.html" %}
+    <!-- End ritual-board -->
+    
+	<!-- Start ad-banner -->
+	{% include "partials/services/_advert-banner.html" %}
+    <!-- End ad-banner -->
+    
+	<!-- Start raise-top -->
+	{% include "partials/services/_raise-top.html" %}
+    <!-- End raise-top -->
+    
+	<!-- Start rates -->
+	{% include "partials/services/_rates.html" %}
+    <!-- End rates -->
+    
+
+
+    
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+    
+{% endblock %}

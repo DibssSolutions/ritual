@@ -12,7 +12,7 @@ import { SCROLL_TO } from '../utils';
       let $that = $(this);
       let id = $that.attr('id');
       let headerHeight = $('.header4').height();
-      if ($that.offset().top-headerHeight/1.5 <= $scrollPos && $that.offset().top-headerHeight/1.5 + $that.height() > $scrollPos) {
+      if ($that.offset().top-headerHeight/2 <= $scrollPos && $that.offset().top-headerHeight/1.5 + $that.height() > $scrollPos) {
       	link.removeClass(ACTIVE);
         $('[href="#'+id+'"]').addClass(ACTIVE);
       }
@@ -23,7 +23,7 @@ import { SCROLL_TO } from '../utils';
   	let thisAttr = $(this).attr('href');
   	let position = $(thisAttr).offset().top;
     let headerHeight = $('.header4').height();
-  	SCROLL_TO(position-headerHeight/1.5);
+  	SCROLL_TO(position-headerHeight/2);
   });
 
   WIN.on('scroll touchend', onScroll);

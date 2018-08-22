@@ -1,0 +1,198 @@
+<div class="page-head">
+    <div class="container page-head__container">
+        <ul class="bcrumbs page-head__bcrumbs">
+            <li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
+            <li><a href="#">Obituaries</a></li>
+            <li>Past</li>
+        </ul>
+    </div>
+</div>
+
+<div class="all-reviews">
+    <div class="all-reviews__container container">
+        <div class="all-reviews__head section-head text-center">
+            <h1 class="all-reviews__title title-l">Все отзывы</h1>
+            <p>Подзаголовок страницы</p>
+        </div>
+
+        <div class="all-reviews__subtitle title-m mob-hide">Компании</div>
+        <div class="all-reviews__row row">
+            <div class="col-md-3 col-sm-3 sidebar">
+                <div class="side-widget mob-hide">
+                    <form class="search color"> <input type="search" placeholder="Поиск"> <button type="submit"><i class="fa fa-search"></i></button> </form>
+                </div>
+                <div class="table__tbody ps ps--active-y" id="style-scroll">
+                    {% for i in [1,2,3,4] %}
+                        <a href="#" class="company-card">
+                            <div class="company-card__type">Ритуальное агентство</div>
+                            <div class="company-card__name">Название компании в две строки</div>
+                            <div class="company-card__rating">
+                                <span class="ratings">
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="ratings__appraisal">5.0</span>
+                                </span>
+                            </div>
+                            <div class="company-card__info">
+                                <ul>
+                                    <li>{{ mixins.icon('eye') }}111</li>
+                                    <li>{{ mixins.icon('speech') }}7</li>
+                                    <li>{{ mixins.icon('heart') }}16</li>
+                                </ul>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+                <div class="side-widget">
+                    <div class="rating-filter">
+                        <h5 class="title-s">Сортировка</h5>
+                        <div class="rating-filter__wrap">
+                            <div class="rating-filter__radio"> <input type="radio" id="sorting-1" name="rating-filter" checked> <label for="sorting-1">По количеству отзывов</label> </div>
+                            <div class="rating-filter__radio"> <input type="radio" id="sorting-2" name="rating-filter"> <label for="sorting-2">Новизне</label> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-widget width-img-angel hidein"> <img src="img/angel-statue.jpg" alt="angel-statue"> </div>
+                <div class="side-widget hidein">
+                    <div class="banner"> <img src="img/banner.png" alt="banner"> </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-9">
+                <div class="all-reviews__top">
+                    <div class="all-reviews__company-name title-m">Название компании в несколько слов</div>
+                    <div class="all-reviews__company-info">
+                        <p>
+                            По компании - <span>20</span> отзывов, средняя оценка <span>4,37</span>
+                        </p>
+                        <a href="#" class="btn btn_bold mob-hide">Добавить отзыв</a>
+                    </div>
+                    <div class="all-reviews__company-ratings company-ratings">
+                        <div class="company-ratings__item">
+                            <div class="company-ratings__col-left">
+                                <span>Чистота, уют</span>
+                            </div>
+                            <div class="company-ratings__col-right">
+                                <span class="ratings">
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="ratings__appraisal">5.0</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="company-ratings__item">
+                            <div class="company-ratings__col-left">
+                                <span>Соответствие Цена-качество</span>
+                            </div>
+                            <div class="company-ratings__col-right">
+                                <span class="ratings">
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="ratings__appraisal">5.0</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="company-ratings__item">
+                            <div class="company-ratings__col-left">
+                                <span>Персонал</span>
+                            </div>
+                            <div class="company-ratings__col-right">
+                                <span class="ratings">
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="ratings__appraisal">5.0</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="company-ratings__item">
+                            <div class="company-ratings__col-left">
+                                <span>Порекомендую друзьям</span>
+                            </div>
+                            <div class="company-ratings__col-right">
+                                <span class="ratings">
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="fi flaticon-favorite"></span> 
+                                    <span class="ratings__appraisal">5.0</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all-reviews__list">
+                    {% for i in range(0, 6) %}
+                    <div class="team-info">
+                        
+                        <span class="ratings pull-right">
+                            <span class="fi flaticon-favorite"></span> 
+                            <span class="fi flaticon-favorite"></span> 
+                            <span class="fi flaticon-favorite"></span> 
+                            <span class="fi flaticon-favorite"></span> 
+                            <span class="fi flaticon-favorite"></span> 
+                            <span class="ratings__appraisal">5.0</span>
+                        </span>
+
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="posts-image posts-image_full-md posts-image_full-rad" style="background-image: url(img/person-1.png);"> </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="staff">
+                            <div class="staff__title-block"> <span class="staff__title">Имя Фамилия</span> <span class="staff__description">Funeral Director/Embalmer</span> </div>
+                            <p> I like to call Funeral Home my home. It was in Sun Prairie, Wisconsin where I graduated from high school in 1969 and lettered in football at Sun prairie High school. </p>
+                            <div class="staff__date"> 23/11/17 </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+        
+                <!-- Start page-nav -->
+                {% include "partials/blogs/_page-nav.html" %}
+                <!-- End page-nav -->
+
+                
+                <div class="drop js-drop has-show-block mob-hide">
+                    <div class="drop__wrap js-drop-wrap">
+                        <div class="drop__show js-drop-shows">
+                        <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения
+                            форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
+                        </div>
+                        <div class="drop__hidden js-drop-hidden">
+                        <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения
+                            форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
+                        </div>
+                    </div>
+                    <!-- begin read-all -->
+                    <div class="read-all mob-hide">
+                        <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+                            <span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
+                            <span class="fi flaticon-arrows"></span>
+                        </a>
+                    </div>
+                    <!-- end read-all -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="bottom-image">
+        <img src="img/rose-angel.png" alt="rose-angel">
+    </div>
+</div>

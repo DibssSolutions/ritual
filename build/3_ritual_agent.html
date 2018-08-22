@@ -34,20 +34,47 @@
       <div class="header-wrap js-header-wrap">
         <div class="topbar topbar3">
           <div class="container">
-            <div class="lang-select pull-right"> <i class="fa fa-angle-down"></i> <select>
-                    <option value="">EN</option>
-                    <option value="">PO</option>
-                    <option value="">FR</option>
-                </select> </div>
+            <div class="topbar__wrap">
+              <ul class="topbar__list list-dropdown">
+                <li class="list-dropdown__item list-dropdown__item_mod">
+                  <div class="map-wrap__select"> <span class="list-dropdown__icon">
+								
+<svg class="icon icon-mark"><use xlink:href="img/sprite.svg#icon-mark"></use></svg>
+
+							</span>
+                    <div class="select"> <select name="region" id="heade-region" style="width: 100%" class="js-select" placeholder="Выберите район">
+									<option value="1">Выберите район</option>
+									<option value="2">Индустриальный</option>
+									<option value="3">Кировский</option>
+									<option value="4">Краснофлотский</option>
+								</select> </div>
+                  </div>
+                </li>
+                <li class="list-dropdown__item"> <a href="#" class="list-dropdown__link">
+							<span class="list-dropdown__icon">
+								
+<svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg>
+
+							</span>
+							Войти
+						</a> </li>
+                <li class="list-dropdown__item"> <span class="vertical-slash">|</span> </li>
+                <li class="list-dropdown__item"> <a href="#" class="list-dropdown__link">
+							 Зарегистрироваться
+						</a> </li>
+              </ul>
+            </div>
           </div>
         </div>
         <header class="header4 header5 header-bg">
           <div class="container">
             <div class="row">
-              <div class="col-md-3 col-sm-3 col-xs-8"> <a href="./index.html" class="navbar-brand"><img src="img/logo.png" class="img-responsive" alt=""></a> </div>
+              <div class="col-md-3 col-sm-3 col-xs-8"> <a href="./index.html" class="navbar-brand">
+						<img src="img/logo.png" class="img-responsive" alt="logo">
+					</a> </div>
               <div class="col-md-9 col-sm-9 col-xs-4">
                 <div class="header-top">
-                  <div class="cart-header2 hidden-xs cart-show pull-right"> <i class="fi flaticon-web"></i> <span>My Cart (0)</span>
+                  <div class="cart-header2 hidden-xs cart-show pull-right"> <i class="fi flaticon-web"></i> <span>My Cart (3)</span>
                     <div class="cart-table">
                       <h3>My Cart (3 items)</h3>
                       <div class="margin-bottom-20"></div>
@@ -75,28 +102,37 @@
                 </div>
                 <div class="clearfix"></div>
                 <nav class="navbar navbar-default"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	                        <span>
-						        <em></em>
-						        <em></em>
-						        <em></em>
-						    </span>
-	                    </button>
+							<span>
+								<em></em>
+								<em></em>
+								<em></em>
+							</span>
+						</button>
                   <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                       <li><a href="./index.html">Главная</a></li>
-                      <li class="dropdown dropdown-normal"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Если случилось горе <span class="fa fa-angle-down"></span></a>
+                      <li class="dropdown dropdown_mod"> <a href="#" class="dropdown-toggle">Если случилось горе <span class="fa fa-angle-down"></span></a>
                         <ul class="dropdown-menu dropdown-menu-v3">
-                          <li><a href="./blog.html">Blog</a></li>
-                          <li><a href="./blog-single.html">Blog Single</a></li>
+                          <li><a href="#">Блог</a></li>
+                          <li><a href="#">Блог 1</a></li>
+                          <li><a href="#">Блог 2</a></li>
                         </ul>
                       </li>
                       <li><a href="#">После похорон</a></li>
-                      <li class="dropdown dropdown-normal active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Страницы памяти<span class="fa fa-angle-down"></span></a>
+                      <li class="dropdown dropdown_mod"> <a href="#" class="dropdown-toggle">
+										Страницы памяти
+										<span class="fa fa-angle-down"></span>
+									</a>
                         <ul class="dropdown-menu dropdown-menu-v3">
-                          <li><a href="./contact-v1.html">Contact</a></li>
-                          <li><a href="./contact-v2.html">Contact V2</a></li>
-                          <li><a href="./locations.html">Locations</a></li>
-                          <li><a href="./location-single.html">Location - Single</a></li>
+                          <li> <a href="#">
+												Каталог А-Я
+											</a> </li>
+                          <li> <a href="#">
+												Календарь похорон
+											</a> </li>
+                          <li> <a href="./locations.html">
+												Все никрологи
+											</a> </li>
                         </ul>
                       </li>
                     </ul>
@@ -125,7 +161,7 @@
         <div class="container first-section__container">
           <div class="first-section__body">
             <div class="section-head first-section__head text-right">
-              <h3 class="title-l first-section__title">Ритуальные услуги</h3>
+              <h1 class="title-l first-section__title">Ритуальные услуги</h1>
             </div>
             <div class="first-section__img"> <img src="./img/ritual-agent.png" alt="img"> </div>
             <div class="first-section__text">
@@ -658,7 +694,7 @@
                           <div class="about-agency__head">
                             <div class="about-agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
                             <div class="about-agency__rating"> <span class="ratings">
-                                                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                              <span class="ratings__appraisal">4.0</span> </span>
+													<span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span> <span class="ratings__appraisal">4.0</span>                              </span>
                             </div>
                           </div>
                           <div class="about-agency__contact">
@@ -724,10 +760,10 @@
                   <div class="shop-sort-wrap">
                     <div class="ps-options pull-left"> <span>Показывать по:</span>
                       <div class="ps-select"> <i class="fa fa-caret-down"></i> <select>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option selected>6</option>
-                                    </select> </div>
+										<option>4</option>
+										<option>5</option>
+										<option selected>6</option>
+									</select> </div>
                     </div>
                     <div class="shop-sort"> <a href="#" class="active"><i class="flaticon-squares"></i></a> <a href="#"><i class="flaticon-signs-1"></i></a> </div>
                   </div>
@@ -735,158 +771,206 @@
                 <div class="companies-group all-companies__group">
                   <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-6">
-                      <a href="#" class="all-companies__item companies-item">
+                      <a href="#" class="funeral__item companies-item">
                         <div class="companies-item__wrap">
                           <div class="sf-thumb">
-                            <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                            <div class="sf-thumb__wrap"> <img src="./img/wreath-1.png" alt="img"> </div>
                           </div>
                           <div class="companies-item__text">
-                            <h4 class="title-s companies-item__name">Название компании</h4>
-                            <div class="companies-item__type">Ритуальное агентство</div>
+                            <h4 class="title-s companies-item__name">Наименование товара</h4>
+                            <div class="companies-item__type">
+                              <div class="product-prices">
+                                <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                                <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                              </div>
+                            </div>
                             <div class="companies-item__descr">
                               <div class="product-reviews"> <span class="pr-ratings">
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                    </span>
-                                <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+												</span>
+                                <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                                  <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
+</span>
+													<span>(1)</span> --></div>
                               </div>
-                              <div class="companies-item__region"> Железнодорожный </div>
-                            </div> <span class="btn">Подробнее</span> </div>
+                            </div>
+                            <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                          </div>
                         </div>
                       </a>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-6">
-                      <a href="#" class="all-companies__item companies-item">
+                      <a href="#" class="funeral__item companies-item">
                         <div class="companies-item__wrap">
                           <div class="sf-thumb">
-                            <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                            <div class="sf-thumb__wrap"> <img src="./img/wreath-1.png" alt="img"> </div>
                           </div>
                           <div class="companies-item__text">
-                            <h4 class="title-s companies-item__name">Название компании</h4>
-                            <div class="companies-item__type">Ритуальное агентство</div>
+                            <h4 class="title-s companies-item__name">Наименование товара</h4>
+                            <div class="companies-item__type">
+                              <div class="product-prices">
+                                <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                                <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                              </div>
+                            </div>
                             <div class="companies-item__descr">
                               <div class="product-reviews"> <span class="pr-ratings">
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                    </span>
-                                <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+												</span>
+                                <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                                  <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
+</span>
+													<span>(1)</span> --></div>
                               </div>
-                              <div class="companies-item__region"> Железнодорожный </div>
-                            </div> <span class="btn">Подробнее</span> </div>
+                            </div>
+                            <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                          </div>
                         </div>
                       </a>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-6">
-                      <a href="#" class="all-companies__item companies-item">
+                      <a href="#" class="funeral__item companies-item">
                         <div class="companies-item__wrap">
                           <div class="sf-thumb">
-                            <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                            <div class="sf-thumb__wrap"> <img src="./img/wreath-1.png" alt="img"> </div>
                           </div>
                           <div class="companies-item__text">
-                            <h4 class="title-s companies-item__name">Название компании</h4>
-                            <div class="companies-item__type">Ритуальное агентство</div>
+                            <h4 class="title-s companies-item__name">Наименование товара</h4>
+                            <div class="companies-item__type">
+                              <div class="product-prices">
+                                <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                                <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                              </div>
+                            </div>
                             <div class="companies-item__descr">
                               <div class="product-reviews"> <span class="pr-ratings">
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                    </span>
-                                <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+												</span>
+                                <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                                  <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
+</span>
+													<span>(1)</span> --></div>
                               </div>
-                              <div class="companies-item__region"> Железнодорожный </div>
-                            </div> <span class="btn">Подробнее</span> </div>
+                            </div>
+                            <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                          </div>
                         </div>
                       </a>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-6">
-                      <a href="#" class="all-companies__item companies-item">
+                      <a href="#" class="funeral__item companies-item">
                         <div class="companies-item__wrap">
                           <div class="sf-thumb">
-                            <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                            <div class="sf-thumb__wrap"> <img src="./img/wreath-1.png" alt="img"> </div>
                           </div>
                           <div class="companies-item__text">
-                            <h4 class="title-s companies-item__name">Название компании</h4>
-                            <div class="companies-item__type">Ритуальное агентство</div>
+                            <h4 class="title-s companies-item__name">Наименование товара</h4>
+                            <div class="companies-item__type">
+                              <div class="product-prices">
+                                <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                                <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                              </div>
+                            </div>
                             <div class="companies-item__descr">
                               <div class="product-reviews"> <span class="pr-ratings">
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                    </span>
-                                <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+												</span>
+                                <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                                  <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
+</span>
+													<span>(1)</span> --></div>
                               </div>
-                              <div class="companies-item__region"> Железнодорожный </div>
-                            </div> <span class="btn">Подробнее</span> </div>
+                            </div>
+                            <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                          </div>
                         </div>
                       </a>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-6">
-                      <a href="#" class="all-companies__item companies-item">
+                      <a href="#" class="funeral__item companies-item">
                         <div class="companies-item__wrap">
                           <div class="sf-thumb">
-                            <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                            <div class="sf-thumb__wrap"> <img src="./img/wreath-1.png" alt="img"> </div>
                           </div>
                           <div class="companies-item__text">
-                            <h4 class="title-s companies-item__name">Название компании</h4>
-                            <div class="companies-item__type">Ритуальное агентство</div>
+                            <h4 class="title-s companies-item__name">Наименование товара</h4>
+                            <div class="companies-item__type">
+                              <div class="product-prices">
+                                <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                                <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                              </div>
+                            </div>
                             <div class="companies-item__descr">
                               <div class="product-reviews"> <span class="pr-ratings">
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                    </span>
-                                <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+												</span>
+                                <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                                  <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
+</span>
+													<span>(1)</span> --></div>
                               </div>
-                              <div class="companies-item__region"> Железнодорожный </div>
-                            </div> <span class="btn">Подробнее</span> </div>
+                            </div>
+                            <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                          </div>
                         </div>
                       </a>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-6">
-                      <a href="#" class="all-companies__item companies-item">
+                      <a href="#" class="funeral__item companies-item">
                         <div class="companies-item__wrap">
                           <div class="sf-thumb">
-                            <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
+                            <div class="sf-thumb__wrap"> <img src="./img/wreath-1.png" alt="img"> </div>
                           </div>
                           <div class="companies-item__text">
-                            <h4 class="title-s companies-item__name">Название компании</h4>
-                            <div class="companies-item__type">Ритуальное агентство</div>
+                            <h4 class="title-s companies-item__name">Наименование товара</h4>
+                            <div class="companies-item__type">
+                              <div class="product-prices">
+                                <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                                <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                              </div>
+                            </div>
                             <div class="companies-item__descr">
                               <div class="product-reviews"> <span class="pr-ratings">
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                        <i class="flaticon-favorite"></i>
-                                                    </span>
-                                <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+												</span>
+                                <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                                  <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
+</span>
+													<span>(1)</span> --></div>
                               </div>
-                              <div class="companies-item__region"> Железнодорожный </div>
-                            </div> <span class="btn">Подробнее</span> </div>
+                            </div>
+                            <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                          </div>
                         </div>
                       </a>
                     </div>
@@ -908,119 +992,135 @@
                   <div class="shop-sort-wrap">
                     <div class="ps-options pull-left"> <span>Показывать по:</span>
                       <div class="ps-select"> <i class="fa fa-caret-down"></i> <select>
-                                        <option selected>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                    </select> </div>
+										<option selected>4</option>
+										<option>5</option>
+										<option>6</option>
+									</select> </div>
                     </div>
                     <div class="shop-sort"> <a href="#"><i class="flaticon-squares"></i></a> <a href="#" class="active"><i class="flaticon-signs-1"></i></a> </div>
                   </div>
                 </div>
                 <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
-                <a href="#" class="companies-item companies-item_list">
+                <a href="#" class="funeral__item companies-item companies-item_list">
                   <div class="companies-item__wrap">
-                    <div class="sf-thumb">
-                      <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
-                    </div>
+                    <div class="sf-thumb" style="background-image: url(./img/wreath-2.png)"> </div>
                     <div class="companies-item__text">
-                      <h4 class="title-s companies-item__name">Название компании</h4>
-                      <div class="companies-item__type">Ритуальное агентство</div>
+                      <h4 class="title-s companies-item__name">Наименование товара</h4>
+                      <div class="companies-item__type">
+                        <div class="product-prices">
+                          <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                          <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                        </div>
+                      </div>
                       <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
                       <div class="companies-item__descr">
                         <div class="product-reviews"> <span class="pr-ratings">
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                            </span>
-                          <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+												</span>
+                          <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                            <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
+</span>
+													<span>(1)</span> --></div>
                         </div>
-                        <div class="companies-item__region"> Железнодорожный </div>
-                      </div> <span class="btn">Подробнее</span> </div>
+                      </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
                   </div>
                 </a>
                 <!-- </div> -->
                 <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
-                <a href="#" class="companies-item companies-item_list">
+                <a href="#" class="funeral__item companies-item companies-item_list">
                   <div class="companies-item__wrap">
-                    <div class="sf-thumb">
-                      <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
-                    </div>
+                    <div class="sf-thumb" style="background-image: url(./img/wreath-2.png)"> </div>
                     <div class="companies-item__text">
-                      <h4 class="title-s companies-item__name">Название компании</h4>
-                      <div class="companies-item__type">Ритуальное агентство</div>
+                      <h4 class="title-s companies-item__name">Наименование товара</h4>
+                      <div class="companies-item__type">
+                        <div class="product-prices">
+                          <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                          <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                        </div>
+                      </div>
                       <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
                       <div class="companies-item__descr">
                         <div class="product-reviews"> <span class="pr-ratings">
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                            </span>
-                          <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+												</span>
+                          <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                            <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
+</span>
+													<span>(1)</span> --></div>
                         </div>
-                        <div class="companies-item__region"> Железнодорожный </div>
-                      </div> <span class="btn">Подробнее</span> </div>
+                      </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
                   </div>
                 </a>
                 <!-- </div> -->
                 <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
-                <a href="#" class="companies-item companies-item_list">
+                <a href="#" class="funeral__item companies-item companies-item_list">
                   <div class="companies-item__wrap">
-                    <div class="sf-thumb">
-                      <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
-                    </div>
+                    <div class="sf-thumb" style="background-image: url(./img/wreath-2.png)"> </div>
                     <div class="companies-item__text">
-                      <h4 class="title-s companies-item__name">Название компании</h4>
-                      <div class="companies-item__type">Ритуальное агентство</div>
+                      <h4 class="title-s companies-item__name">Наименование товара</h4>
+                      <div class="companies-item__type">
+                        <div class="product-prices">
+                          <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                          <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                        </div>
+                      </div>
                       <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
                       <div class="companies-item__descr">
                         <div class="product-reviews"> <span class="pr-ratings">
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                            </span>
-                          <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+												</span>
+                          <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                            <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
+</span>
+													<span>(1)</span> --></div>
                         </div>
-                        <div class="companies-item__region"> Железнодорожный </div>
-                      </div> <span class="btn">Подробнее</span> </div>
+                      </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
                   </div>
                 </a>
                 <!-- </div> -->
                 <!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
-                <a href="#" class="companies-item companies-item_list">
+                <a href="#" class="funeral__item companies-item companies-item_list">
                   <div class="companies-item__wrap">
-                    <div class="sf-thumb">
-                      <div class="sf-thumb__wrap"> <img src="./img/all-companies/logo-1.jpg" alt="img"> </div>
-                    </div>
+                    <div class="sf-thumb" style="background-image: url(./img/wreath-2.png)"> </div>
                     <div class="companies-item__text">
-                      <h4 class="title-s companies-item__name">Название компании</h4>
-                      <div class="companies-item__type">Ритуальное агентство</div>
+                      <h4 class="title-s companies-item__name">Наименование товара</h4>
+                      <div class="companies-item__type">
+                        <div class="product-prices">
+                          <div class="product-single-price">690 ₽<span> 890 ₽</span> </div>
+                          <div class="product-single-price"> <img src="img/logo1.png" alt="map-img"> </div>
+                        </div>
+                      </div>
                       <p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
                       <div class="companies-item__descr">
                         <div class="product-reviews"> <span class="pr-ratings">
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                                <i class="flaticon-favorite"></i>
-                                            </span>
-                          <div class="product-reviews__details mob-hide"> <span>5.0</span> <span>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+												</span>
+                          <div class="product-reviews__details mob-hide"> <span>5.0</span>
+                            <!-- <span>
 <svg class="icon icon-users"><use xlink:href="img/sprite.svg#icon-users"></use></svg>
-</span> <span>(1)</span> </div>
+</span>
+													<span>(1)</span> --></div>
                         </div>
-                        <div class="companies-item__region"> Железнодорожный </div>
-                      </div> <span class="btn">Подробнее</span> </div>
+                      </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
                   </div>
                 </a>
                 <!-- </div> -->
@@ -1093,510 +1193,510 @@
                       </div>
                       <div class="person__position">Директор</div>
                       <div class="person__text mob-hide">Директор компании, руководитель с мног mob-hideолетним стажем работы как в государственных, так и aастных компаниях сферы оказания услуг</div>
+                    </a>
+                    <!-- end person -->
                   </div>
-                  <!-- end person -->
                 </div>
+                <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
               </div>
-              <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
+              <!-- end wind -->
             </div>
-            <!-- end wind -->
           </div>
         </div>
       </div>
-    </div>
-    <!-- end pages -->
-    <!-- begin pages -->
-    <div class="pages">
-      <div class="pages__container container">
-        <div class="row">
-          <aside class="col-md-3 col-sm-5">
-            <div class="links"> <a class="active" href="#">Описание <i class="fi flaticon-arrows-1"></i></a> <a href="#">О компании <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши услуги, тарифы <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши сотрудники <i class="fi flaticon-arrows-1"></i></a>              <a href="#">Наши контакты <i class="fi flaticon-arrows-1"></i></a> <a href="#">Карточка мероприятия <i class="fi flaticon-arrows-1"></i></a> </div>
-          </aside>
-          <div class="col-md-9 col-sm-7">
-            <!-- begin wind -->
-            <div class="wind">
-              <!-- begin wind-head -->
-              <div class="wind-head">
-                <div class="wind-head__title">Название компании</div>
-                <div class="wind-head__name">Ритуальный агент</div>
+      <!-- end pages -->
+      <!-- begin pages -->
+      <div class="pages">
+        <div class="pages__container container">
+          <div class="row">
+            <aside class="col-md-3 col-sm-5">
+              <div class="links"> <a class="active" href="#">Описание <i class="fi flaticon-arrows-1"></i></a> <a href="#">О компании <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши услуги, тарифы <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши сотрудники <i class="fi flaticon-arrows-1"></i></a>                <a href="#">Наши контакты <i class="fi flaticon-arrows-1"></i></a> <a href="#">Карточка мероприятия <i class="fi flaticon-arrows-1"></i></a> </div>
+            </aside>
+            <div class="col-md-9 col-sm-7">
+              <!-- begin wind -->
+              <div class="wind">
+                <!-- begin wind-head -->
+                <div class="wind-head">
+                  <div class="wind-head__title">Название компании</div>
+                  <div class="wind-head__name">Ритуальный агент</div>
+                </div>
+                <!-- end wind-head -->
+                <!-- begin agency -->
+                <div class="wind__agency agency">
+                  <div class="agency__table">
+                    <div class="agency__table-cell">
+                      <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
+                      <div class="agency__stars"> <span class="ratings">
+										<span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span> <span class="ratings__appraisal">4.0</span>                        </span>
+                      </div>
+                    </div>
+                    <div class="agency__table-cell">
+                      <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                      <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                    </div>
+                    <div class="agency__table-cell agency__table-cell_mob">
+                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                      <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end agency -->
+                <!-- begin map -->
+                <div class="js-map map map_md" id="mapInf" data-center-lat="-34.097" data-center-lng="150.644"></div>
+                <script type="text/template" class="js-mapInf">
+                  <div class="baloon">
+                    <div class="baloon__content">
+                      <div class="baloon__row">
+                        <div class="baloon__col"> {{? baloon.img }}
+                          <div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div> {{?}} {{? baloon.title }}
+                          <div class="baloon__title">{{=baloon.title}}</div> {{?}} {{? baloon.linkText }}
+                          <div class="baloon__footer"> <a href="{{=baloon.linkUrl}}" class="btn btn_small">{{=baloon.linkText}}<i class="fi flaticon-arrows"></i></a> </div> {{?}} </div>
+                        <div class="baloon__col"> {{? baloon.address }}
+                          <div class="baloon__item"><i class="fa fa-map-marker"></i>{{=baloon.address}}</div> {{?}} {{? baloon.address }}
+                          <div class="baloon__item"><i class="fi flaticon-technology"></i>{{=baloon.phone}}</div> {{?}} {{? baloon.address }}
+                          <div class="baloon__item"><i class="fi flaticon-black"></i>{{=baloon.email}}</div> {{?}} {{? baloon.address }}
+                          <div class="baloon__item"><i class="fi flaticon-clock"></i>{{=baloon.time}}</div> {{?}} </div>
+                      </div>
+                    </div>
+                  </div>
+                </script>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function()
+                  {
+                    window.mapInf.add([
+                    {
+                      "content":
+                      {
+                        "title": "1. Название компании",
+                        "linkUrl": "#",
+                        "linkText": "Перейти",
+                        "img": "./img/map-img.png",
+                        "imgAlt": "img",
+                        "address": "Хабаровск, Гоголя, 8",
+                        "phone": "8 (111) 123 123",
+                        "email": "dmitryz5700@gmail.com",
+                        "time": "С 7.00 до 21.00, без выходных",
+                        "list": [
+                        {
+                          "bla": "bla"
+                        },
+                        {
+                          "bla": "bla"
+                        }]
+                      },
+                      "marker":
+                      {
+                        "id": 2,
+                        "position":
+                        {
+                          "lat": -34.397,
+                          "lng": 151.044
+                        },
+                        "icon":
+                        {
+                          "default": "img/marker.png",
+                          "active": "img/marker.png",
+                          "size":
+                          {
+                            "x": 50,
+                            "y": 64
+                          },
+                          "centering":
+                          {
+                            "x": 20,
+                            "y": 58
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "content":
+                      {
+                        "title": "1. Название компании",
+                        "linkUrl": "#",
+                        "linkText": "Перейти",
+                        "img": "./img/map-img.png",
+                        "imgAlt": "img",
+                        "address": "Хабаровск, Гоголя, 8",
+                        "phone": "8 (111) 123 123",
+                        "email": "dmitryz5700@gmail.com",
+                        "time": "С 7.00 до 21.00, без выходных",
+                        "list": [
+                        {
+                          "bla": "bla"
+                        },
+                        {
+                          "bla": "bla"
+                        }]
+                      },
+                      "marker":
+                      {
+                        "id": 3,
+                        "position":
+                        {
+                          "lat": -34.397,
+                          "lng": 151.444
+                        },
+                        "icon":
+                        {
+                          "default": "img/marker.png",
+                          "active": "img/marker.png",
+                          "size":
+                          {
+                            "x": 50,
+                            "y": 64
+                          },
+                          "centering":
+                          {
+                            "x": 20,
+                            "y": 58
+                          }
+                        }
+                      }
+                    }])
+                  });
+
+                </script>
+                <!-- end map -->
+                <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
               </div>
-              <!-- end wind-head -->
+              <!-- end wind -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end pages -->
+      <!-- begin pages -->
+      <div class="pages">
+        <div class="pages__container container">
+          <div class="row">
+            <aside class="col-md-3 col-sm-5">
+              <div class="links"> <a href="#">Описание <i class="fi flaticon-arrows-1"></i></a> <a class="active" href="#">О компании <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши услуги, тарифы <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши сотрудники <i class="fi flaticon-arrows-1"></i></a>                <a href="#">Наши контакты <i class="fi flaticon-arrows-1"></i></a> <a href="#">Карточка мероприятия <i class="fi flaticon-arrows-1"></i></a> </div>
+            </aside>
+            <div class="col-md-9 col-sm-7">
+              <!-- begin wind -->
+              <div class="wind">
+                <!-- begin wind-head -->
+                <div class="wind-head">
+                  <div class="wind-head__title">Название компании</div>
+                  <div class="wind-head__name">Ритуальный агент</div>
+                </div>
+                <!-- end wind-head -->
+                <div class="wind__description">
+                  <p>Если Вы остановили выбор на этой услуге / компании, пожалуйста, добавьте ее в карточку мероприятия:</p>
+                  <p>просмотреть выбранные услуги можно, кликнув "Карточка мероприятия" в верхней правой части сайта</p>
+                </div>
+                <!-- begin agent -->
+                <div class="agent">
+                  <div class="agent__col-sm">
+                    <div class="agent__title">Ритуальный агент</div>
+                    <div class="agent__img" style="background-image: url(./img/agent-img.png);"></div>
+                  </div>
+                  <div class="agent__col-md">
+                    <div class="agent__row">
+                      <div class="agent__col">
+                        <div class="contacts-item"><i class="fi flaticon-people"></i>Агентство/Агент:</div>
+                        <div class="contacts-item"><i class="fi flaticon-technology"></i>Контактный телефон:</div>
+                      </div>
+                      <div class="agent__col"> <a href="#" class="btn">Выбрать ритуальным агентом</a> </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end agent -->
+                <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
+              </div>
+              <!-- end wind -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end pages -->
+      <!-- begin check-list -->
+      <div class="check-list">
+        <div class="check-list__container container">
+          <h2 class="check-list__title-l title-l">Чек-лист</h2>
+          <div class="check-list__description">Подзаголовок блока будет тут</div>
+          <div class="check-list__row row">
+            <div class="check-list__col col-md-6 col-sm-6">
+              <div class="check-item">
+                <div class="check-item__icon"> <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg> </div>
+                <div class="check-item__wrap">
+                  <div class="check-item__title">Пожелание 1</div>
+                  <p>Описание пожеланию, соответствие (две-три строки текста будет тут Описание пожеланию, соответствие (две-три строки текста будет тутОписание пожеланию, соответствие (две-три строки текста будет тут</p>
+                </div>
+              </div>
+              <div class="check-item">
+                <div class="check-item__icon"> <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg> </div>
+                <div class="check-item__wrap">
+                  <div class="check-item__title">Пожелание 2</div>
+                  <p>Описание пожеланию, соответствие (две-три строки текста будет тут Описание пожеланию, соответствие (две-три строки текста будет тутОписание пожеланию, соответствие (две-три строки текста будет тут</p>
+                </div>
+              </div>
+              <div class="check-item">
+                <div class="check-item__icon"> <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg> </div>
+                <div class="check-item__wrap">
+                  <div class="check-item__title">Пожелание 3</div>
+                  <p>Описание пожеланию, соответствие (две-три строки текста будет тут Описание пожеланию, соответствие (две-три строки текста будет тутОписание пожеланию, соответствие (две-три строки текста будет тут</p>
+                </div>
+              </div>
+              <div class="check-item">
+                <div class="check-item__icon"> <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg> </div>
+                <div class="check-item__wrap">
+                  <div class="check-item__title">Пожелание 4</div>
+                  <p>Описание пожеланию, соответствие (две-три строки текста будет тут Описание пожеланию, соответствие (две-три строки текста будет тутОписание пожеланию, соответствие (две-три строки текста будет тут</p>
+                </div>
+              </div>
+              <div class="check-item">
+                <div class="check-item__icon"> <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg> </div>
+                <div class="check-item__wrap">
+                  <div class="check-item__title">Пожелание 5</div>
+                  <p>Описание пожеланию, соответствие (две-три строки текста будет тут Описание пожеланию, соответствие (две-три строки текста будет тутОписание пожеланию, соответствие (две-три строки текста будет тут</p>
+                </div>
+              </div>
+            </div>
+            <div class="check-list__col col-md-6 col-sm-6">
+              <div class="check-list__img"> <img src="./img/check-list-img.png" alt="img"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end check-list -->
+      <!-- begin expenses -->
+      <div class="expenses">
+        <div class="expenses__container container">
+          <h3 class="expenses__title-l title-l">Затраты на похороны</h3>
+          <div class="expenses__description">Средние цены по Хабаровску</div>
+          <div class="pricing-2">
+            <div class="col-md-4 col-sm-4 no-padding">
+              <div class="plan">
+                <div class="plan-title">Basic</div>
+                <ul>
+                  <li>Hearse and attendants at the funeral</li>
+                  <li>Provision of advice on all matters relating to the funeral</li>
+                  <li>One following limousine</li>
+                  <li>A distinctive solid wood coffin, lined & fitted (sides, lid and mouldings)</li>
+                </ul>
+                <div class="plan-price">399<span>99</span>₽</div> <a href="#" class="btn btn_dark btn padding-horizontal-40">Choose Plan</a> </div>
+            </div>
+            <div class="col-md-4 col-sm-4 popular no-padding">
+              <div class="plan">
+                <div class="plan-title">Business</div>
+                <ul>
+                  <li>Hearse and attendants at the funeral</li>
+                  <li>Provision of advice on all matters relating to the funeral</li>
+                  <li>One following limousine</li>
+                  <li>A distinctive solid wood coffin, lined & fitted (sides, lid and mouldings)</li>
+                </ul>
+                <div class="plan-price">499<span>99</span>₽</div> <a href="#" class="btn btn-default btn-md padding-horizontal-40">Choose Plan</a> </div>
+            </div>
+            <div class="col-md-4 col-sm-4 no-padding">
+              <div class="plan">
+                <div class="plan-title">Ultimate</div>
+                <ul>
+                  <li>Hearse and attendants at the funeral</li>
+                  <li>Provision of advice on all matters relating to the funeral</li>
+                  <li>One following limousine</li>
+                  <li>A distinctive solid wood coffin, lined & fitted (sides, lid and mouldings)</li>
+                </ul>
+                <div class="plan-price">599<span>99</span>₽</div> <a href="#" class="btn btn_dark btn padding-horizontal-40">Choose Plan</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end expenses -->
+      <!-- begin top -->
+      <div class="top">
+        <div class="top__container container">
+          <h3 class="top__title-l title-l">ТОП компаний</h3>
+          <div class="top__description">Подзаголовок блока будет тут</div>
+          <div class="top__row row">
+            <div class="top__col col-md-9">
               <!-- begin agency -->
-              <div class="wind__agency agency">
+              <div class="top__agency agency">
                 <div class="agency__table">
                   <div class="agency__table-cell">
                     <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
                     <div class="agency__stars"> <span class="ratings">
-                                        <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span>                      <span class="ratings__appraisal">4.0</span> </span>
+				                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span> <span class="ratings__appraisal">4.0</span>                      </span>
                     </div>
                   </div>
-                  <div class="agency__table-cell">
-                    <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
-                    <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
-                  </div>
-                  <div class="agency__table-cell agency__table-cell_mob">
-                    <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
-                    <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                  <div class="agency__table-cell agency__table-cell_lg">
+                    <div class="agency__top">
+                      <div class="agency__title">1. Название компании</div>
+                      <div class="agency__btn"> <a href="#" class="btn btn_small">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                    </div>
+                    <div class="agency__row">
+                      <div class="agency__table-cell">
+                        <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                        <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                      </div>
+                      <div class="agency__table-cell agency__table-cell_mob">
+                        <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                        <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- end agency -->
-              <!-- begin map -->
-              <div class="js-map map map_md" id="mapInf" data-center-lat="-34.097" data-center-lng="150.644"></div>
-              <script type="text/template" class="js-mapInf">
-                <div class="baloon">
-                  <div class="baloon__content">
-                    <div class="baloon__row">
-                      <div class="baloon__col"> {{? baloon.img }}
-                        <div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div> {{?}} {{? baloon.title }}
-                        <div class="baloon__title">{{=baloon.title}}</div> {{?}} {{? baloon.linkText }}
-                        <div class="baloon__footer"> <a href="{{=baloon.linkUrl}}" class="btn btn_small">{{=baloon.linkText}}<i class="fi flaticon-arrows"></i></a> </div> {{?}} </div>
-                      <div class="baloon__col"> {{? baloon.address }}
-                        <div class="baloon__item"><i class="fa fa-map-marker"></i>{{=baloon.address}}</div> {{?}} {{? baloon.address }}
-                        <div class="baloon__item"><i class="fi flaticon-technology"></i>{{=baloon.phone}}</div> {{?}} {{? baloon.address }}
-                        <div class="baloon__item"><i class="fi flaticon-black"></i>{{=baloon.email}}</div> {{?}} {{? baloon.address }}
-                        <div class="baloon__item"><i class="fi flaticon-clock"></i>{{=baloon.time}}</div> {{?}} </div>
+              <!-- begin agency -->
+              <div class="top__agency agency">
+                <div class="agency__table">
+                  <div class="agency__table-cell">
+                    <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
+                    <div class="agency__stars"> <span class="ratings">
+				                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span> <span class="ratings__appraisal">4.0</span>                      </span>
+                    </div>
+                  </div>
+                  <div class="agency__table-cell agency__table-cell_lg">
+                    <div class="agency__top">
+                      <div class="agency__title">1. Название компании</div>
+                      <div class="agency__btn"> <a href="#" class="btn btn_small">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                    </div>
+                    <div class="agency__row">
+                      <div class="agency__table-cell">
+                        <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                        <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                      </div>
+                      <div class="agency__table-cell agency__table-cell_mob">
+                        <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                        <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </script>
-              <script>
-                document.addEventListener('DOMContentLoaded', function()
-                {
-                  window.mapInf.add([
-                  {
-                    "content":
-                    {
-                      "title": "1. Название компании",
-                      "linkUrl": "#",
-                      "linkText": "Перейти",
-                      "img": "./img/map-img.png",
-                      "imgAlt": "img",
-                      "address": "Хабаровск, Гоголя, 8",
-                      "phone": "8 (111) 123 123",
-                      "email": "dmitryz5700@gmail.com",
-                      "time": "С 7.00 до 21.00, без выходных",
-                      "list": [
-                      {
-                        "bla": "bla"
-                      },
-                      {
-                        "bla": "bla"
-                      }]
-                    },
-                    "marker":
-                    {
-                      "id": 2,
-                      "position":
-                      {
-                        "lat": -34.397,
-                        "lng": 151.044
-                      },
-                      "icon":
-                      {
-                        "default": "img/marker.png",
-                        "active": "img/marker.png",
-                        "size":
-                        {
-                          "x": 50,
-                          "y": 64
-                        },
-                        "centering":
-                        {
-                          "x": 20,
-                          "y": 58
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "content":
-                    {
-                      "title": "1. Название компании",
-                      "linkUrl": "#",
-                      "linkText": "Перейти",
-                      "img": "./img/map-img.png",
-                      "imgAlt": "img",
-                      "address": "Хабаровск, Гоголя, 8",
-                      "phone": "8 (111) 123 123",
-                      "email": "dmitryz5700@gmail.com",
-                      "time": "С 7.00 до 21.00, без выходных",
-                      "list": [
-                      {
-                        "bla": "bla"
-                      },
-                      {
-                        "bla": "bla"
-                      }]
-                    },
-                    "marker":
-                    {
-                      "id": 3,
-                      "position":
-                      {
-                        "lat": -34.397,
-                        "lng": 151.444
-                      },
-                      "icon":
-                      {
-                        "default": "img/marker.png",
-                        "active": "img/marker.png",
-                        "size":
-                        {
-                          "x": 50,
-                          "y": 64
-                        },
-                        "centering":
-                        {
-                          "x": 20,
-                          "y": 58
-                        }
-                      }
-                    }
-                  }])
-                });
-
-              </script>
-              <!-- end map -->
-              <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
+              </div>
+              <!-- end agency -->
+              <!-- begin agency -->
+              <div class="top__agency agency">
+                <div class="agency__table">
+                  <div class="agency__table-cell">
+                    <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
+                    <div class="agency__stars"> <span class="ratings">
+				                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span> <span class="ratings__appraisal">4.0</span>                      </span>
+                    </div>
+                  </div>
+                  <div class="agency__table-cell agency__table-cell_lg">
+                    <div class="agency__top">
+                      <div class="agency__title">1. Название компании</div>
+                      <div class="agency__btn"> <a href="#" class="btn btn_small">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                    </div>
+                    <div class="agency__row">
+                      <div class="agency__table-cell">
+                        <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
+                        <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+                      </div>
+                      <div class="agency__table-cell agency__table-cell_mob">
+                        <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
+                        <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end agency -->
+              <div class="banner"> <img src="img/banner1.png" alt="banner"> </div>
             </div>
-            <!-- end wind -->
+            <div class="col-md-3">
+              <div class="banner"> <img src="img/banner.png" alt="banner"> </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- end pages -->
-    <!-- begin pages -->
-    <div class="pages">
-      <div class="pages__container container">
-        <div class="row">
-          <aside class="col-md-3 col-sm-5">
-            <div class="links"> <a href="#">Описание <i class="fi flaticon-arrows-1"></i></a> <a class="active" href="#">О компании <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши услуги, тарифы <i class="fi flaticon-arrows-1"></i></a> <a href="#">Наши сотрудники <i class="fi flaticon-arrows-1"></i></a>              <a href="#">Наши контакты <i class="fi flaticon-arrows-1"></i></a> <a href="#">Карточка мероприятия <i class="fi flaticon-arrows-1"></i></a> </div>
-          </aside>
-          <div class="col-md-9 col-sm-7">
-            <!-- begin wind -->
-            <div class="wind">
-              <!-- begin wind-head -->
-              <div class="wind-head">
-                <div class="wind-head__title">Название компании</div>
-                <div class="wind-head__name">Ритуальный агент</div>
-              </div>
-              <!-- end wind-head -->
-              <div class="wind__description">
-                <p>Если Вы остановили выбор на этой услуге / компании, пожалуйста, добавьте ее в карточку мероприятия:</p>
-                <p>просмотреть выбранные услуги можно, кликнув "Карточка мероприятия" в верхней правой части сайта</p>
-              </div>
-              <!-- begin agent -->
-              <div class="agent">
-                <div class="agent__col-sm">
-                  <div class="agent__title">Ритуальный агент</div>
-                  <div class="agent__img" style="background-image: url(./img/agent-img.png);"></div>
-                </div>
-                <div class="agent__col-md">
-                  <div class="agent__row">
-                    <div class="agent__col">
-                      <div class="contacts-item"><i class="fi flaticon-people"></i>Агентство/Агент:</div>
-                      <div class="contacts-item"><i class="fi flaticon-technology"></i>Контактный телефон:</div>
-                    </div>
-                    <div class="agent__col"> <a href="#" class="btn">Выбрать ритуальным агентом</a> </div>
-                  </div>
-                </div>
-              </div>
-              <!-- end agent -->
-              <div class="wind__bg" style="background-image: url(./img/wind-bg.jpg);"></div>
-            </div>
-            <!-- end wind -->
-          </div>
-        </div>
+      <!-- end top -->
+      <div class="container">
+        <div class="bottom-image"> <img src="img/rose-angel.png" alt="rose-angel"> </div>
       </div>
-    </div>
-    <!-- end pages -->
-    <!-- begin check-list -->
-    <div class="check-list">
-      <div class="check-list__container container">
-        <h2 class="check-list__title-l title-l">Чек-лист</h2>
-        <div class="check-list__description">Подзаголовок блока будет тут</div>
-        <div class="check-list__row row">
-          <div class="check-list__col col-md-6 col-sm-6">
-            <div class="check-item">
-              <div class="check-item__icon"> <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg> </div>
-              <div class="check-item__wrap">
-                <div class="check-item__title">Пожелание 1</div>
-                <p>Описание пожеланию, соответствие (две-три строки текста будет тут Описание пожеланию, соответствие (две-три строки текста будет тутОписание пожеланию, соответствие (две-три строки текста будет тут</p>
+      <!-- begin footer -->
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__container container">
+            <div class="footer__bg"></div>
+            <div class="row">
+              <div class="col-md-3 col-sm-6"> <a href="#" class="footer-logo"><img src="./img/logo-sm.png" alt="logo-sm"></a>
+                <ul class="footer-list">
+                  <li class="footer-list__item"><a href="#" class="footer-list__link">О портале</a></li>
+                  <li class="footer-list__item"><a href="#" class="footer-list__link">Доска объявлений </a></li>
+                  <li class="footer-list__item"><a href="#" class="footer-list__link">Похороны своими силами</a></li>
+                  <li class="footer-list__item"><a href="#" class="footer-list__link">Рекламодателям</a></li>
+                </ul>
               </div>
-            </div>
-            <div class="check-item">
-              <div class="check-item__icon"> <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg> </div>
-              <div class="check-item__wrap">
-                <div class="check-item__title">Пожелание 2</div>
-                <p>Описание пожеланию, соответствие (две-три строки текста будет тут Описание пожеланию, соответствие (две-три строки текста будет тутОписание пожеланию, соответствие (две-три строки текста будет тут</p>
-              </div>
-            </div>
-            <div class="check-item">
-              <div class="check-item__icon"> <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg> </div>
-              <div class="check-item__wrap">
-                <div class="check-item__title">Пожелание 3</div>
-                <p>Описание пожеланию, соответствие (две-три строки текста будет тут Описание пожеланию, соответствие (две-три строки текста будет тутОписание пожеланию, соответствие (две-три строки текста будет тут</p>
-              </div>
-            </div>
-            <div class="check-item">
-              <div class="check-item__icon"> <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg> </div>
-              <div class="check-item__wrap">
-                <div class="check-item__title">Пожелание 4</div>
-                <p>Описание пожеланию, соответствие (две-три строки текста будет тут Описание пожеланию, соответствие (две-три строки текста будет тутОписание пожеланию, соответствие (две-три строки текста будет тут</p>
-              </div>
-            </div>
-            <div class="check-item">
-              <div class="check-item__icon"> <svg class="icon icon-check"><use xlink:href="img/sprite.svg#icon-check"></use></svg> </div>
-              <div class="check-item__wrap">
-                <div class="check-item__title">Пожелание 5</div>
-                <p>Описание пожеланию, соответствие (две-три строки текста будет тут Описание пожеланию, соответствие (две-три строки текста будет тутОписание пожеланию, соответствие (две-три строки текста будет тут</p>
-              </div>
-            </div>
-          </div>
-          <div class="check-list__col col-md-6 col-sm-6">
-            <div class="check-list__img"> <img src="./img/check-list-img.png" alt="img"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end check-list -->
-    <!-- begin expenses -->
-    <div class="expenses">
-      <div class="expenses__container container">
-        <h3 class="expenses__title-l title-l">Затраты на похороны</h3>
-        <div class="expenses__description">Средние цены по Хабаровску</div>
-        <div class="pricing-2">
-          <div class="col-md-4 col-sm-4 no-padding">
-            <div class="plan">
-              <div class="plan-title">Basic</div>
-              <ul>
-                <li>Hearse and attendants at the funeral</li>
-                <li>Provision of advice on all matters relating to the funeral</li>
-                <li>One following limousine</li>
-                <li>A distinctive solid wood coffin, lined & fitted (sides, lid and mouldings)</li>
-              </ul>
-              <div class="plan-price">399<span>99</span>₽</div> <a href="#" class="btn btn_dark btn padding-horizontal-40">Choose Plan</a> </div>
-          </div>
-          <div class="col-md-4 col-sm-4 popular no-padding">
-            <div class="plan">
-              <div class="plan-title">Business</div>
-              <ul>
-                <li>Hearse and attendants at the funeral</li>
-                <li>Provision of advice on all matters relating to the funeral</li>
-                <li>One following limousine</li>
-                <li>A distinctive solid wood coffin, lined & fitted (sides, lid and mouldings)</li>
-              </ul>
-              <div class="plan-price">499<span>99</span>₽</div> <a href="#" class="btn btn-default btn-md padding-horizontal-40">Choose Plan</a> </div>
-          </div>
-          <div class="col-md-4 col-sm-4 no-padding">
-            <div class="plan">
-              <div class="plan-title">Ultimate</div>
-              <ul>
-                <li>Hearse and attendants at the funeral</li>
-                <li>Provision of advice on all matters relating to the funeral</li>
-                <li>One following limousine</li>
-                <li>A distinctive solid wood coffin, lined & fitted (sides, lid and mouldings)</li>
-              </ul>
-              <div class="plan-price">599<span>99</span>₽</div> <a href="#" class="btn btn_dark btn padding-horizontal-40">Choose Plan</a> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end expenses -->
-    <!-- begin top -->
-    <div class="top">
-      <div class="top__container container">
-        <h3 class="top__title-l title-l">ТОП компаний</h3>
-        <div class="top__description">Подзаголовок блока будет тут</div>
-        <div class="top__row row">
-          <div class="top__col col-md-9">
-            <!-- begin agency -->
-            <div class="top__agency agency">
-              <div class="agency__table">
-                <div class="agency__table-cell">
-                  <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
-                  <div class="agency__stars"> <span class="ratings">
-				                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span> <span class="ratings__appraisal">4.0</span>                    </span>
+              <div class="col-md-3 col-sm-6 mob-hide">
+                <h4 class="title-sm">Последние некрологи</h4>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/tie.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
+                    <div class="block__label">Дата похорон: </div>
+                    <div class="block__date">Вт. 03-12-2018</div>
                   </div>
                 </div>
-                <div class="agency__table-cell agency__table-cell_lg">
-                  <div class="agency__top">
-                    <div class="agency__title">1. Название компании</div>
-                    <div class="agency__btn"> <a href="#" class="btn btn_small">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/photo-with-ribbon.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
+                    <div class="block__label">Дата похорон: </div>
+                    <div class="block__date">Вт. 03-12-2018</div>
                   </div>
-                  <div class="agency__row">
-                    <div class="agency__table-cell">
-                      <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
-                      <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
-                    </div>
-                    <div class="agency__table-cell agency__table-cell_mob">
-                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
-                      <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
-                    </div>
+                </div>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/tie.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
+                    <div class="block__label">Дата похорон: </div>
+                    <div class="block__date">Вт. 03-12-2018</div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- end agency -->
-            <!-- begin agency -->
-            <div class="top__agency agency">
-              <div class="agency__table">
-                <div class="agency__table-cell">
-                  <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
-                  <div class="agency__stars"> <span class="ratings">
-				                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span> <span class="ratings__appraisal">4.0</span>                    </span>
+              <div class="col-md-3 col-sm-6 mob-hide">
+                <h4 class="title-sm">Последние статьи</h4>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/aside-post-img.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
+                    <div class="block__label">Имя Фамилия</div>
                   </div>
                 </div>
-                <div class="agency__table-cell agency__table-cell_lg">
-                  <div class="agency__top">
-                    <div class="agency__title">1. Название компании</div>
-                    <div class="agency__btn"> <a href="#" class="btn btn_small">Перейти<i class="fi flaticon-arrows"></i></a> </div>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/post-img.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__title">Что снится к любви и наслаждению, а что – к разлуке и печали</a>
+                    <div class="block__label">Имя Фамилия</div>
                   </div>
-                  <div class="agency__row">
-                    <div class="agency__table-cell">
-                      <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
-                      <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
-                    </div>
-                    <div class="agency__table-cell agency__table-cell_mob">
-                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
-                      <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
-                    </div>
+                </div>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/aside-post-img.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
+                    <div class="block__label">Имя Фамилия</div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- end agency -->
-            <!-- begin agency -->
-            <div class="top__agency agency">
-              <div class="agency__table">
-                <div class="agency__table-cell">
-                  <div class="agency__logo agency__logo_md"> <img src="./img/map-img.png" alt="img"> </div>
-                  <div class="agency__stars"> <span class="ratings">
-				                    <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite"></span> <span class="fi flaticon-favorite no"></span> <span class="ratings__appraisal">4.0</span>                    </span>
+              <div class="col-md-3 col-sm-6 mob-hide">
+                <h4 class="title-sm">Доска объявлений</h4>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/notes.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
+                    <div class="block__label">Категория</div>
                   </div>
                 </div>
-                <div class="agency__table-cell agency__table-cell_lg">
-                  <div class="agency__top">
-                    <div class="agency__title">1. Название компании</div>
-                    <div class="agency__btn"> <a href="#" class="btn btn_small">Перейти<i class="fi flaticon-arrows"></i></a> </div>
-                  </div>
-                  <div class="agency__row">
-                    <div class="agency__table-cell">
-                      <div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
-                      <div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
-                    </div>
-                    <div class="agency__table-cell agency__table-cell_mob">
-                      <div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
-                      <div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
-                    </div>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/notes.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__title">Еще один заголовок объявления</a>
+                    <div class="block__label">Категория</div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- end agency -->
-            <div class="banner"> <img src="img/banner1.png" alt="banner"> </div>
-          </div>
-          <div class="col-md-3">
-            <div class="banner"> <img src="img/banner.png" alt="banner"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end top -->
-    <div class="container">
-      <div class="bottom-image"> <img src="img/rose-angel.png" alt="rose-angel"> </div>
-    </div>
-    <!-- begin footer -->
-    <footer class="footer">
-      <div class="footer__top">
-        <div class="footer__container container">
-          <div class="footer__bg"></div>
-          <div class="row">
-            <div class="col-md-3 col-sm-6"> <a href="#" class="footer-logo"><img src="./img/logo-sm.png" alt="logo-sm"></a>
-              <ul class="footer-list">
-                <li class="footer-list__item"><a href="#" class="footer-list__link">О портале</a></li>
-                <li class="footer-list__item"><a href="#" class="footer-list__link">Доска объявлений </a></li>
-                <li class="footer-list__item"><a href="#" class="footer-list__link">Похороны своими силами</a></li>
-                <li class="footer-list__item"><a href="#" class="footer-list__link">Рекламодателям</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 mob-hide">
-              <h4 class="title-sm">Последние некрологи</h4>
-              <div class="block">
-                <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
-                  <div class="block__label">Дата похорон: </div>
-                  <div class="block__date">Вт. 03-12-2018</div>
-                </div>
-              </div>
-              <div class="block">
-                <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
-                  <div class="block__label">Дата похорон: </div>
-                  <div class="block__date">Вт. 03-12-2018</div>
-                </div>
-              </div>
-              <div class="block">
-                <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                <div class="block__wrap"> <a href="#" class="block__name">Фамилия И. О.</a>
-                  <div class="block__label">Дата похорон: </div>
-                  <div class="block__date">Вт. 03-12-2018</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 mob-hide">
-              <h4 class="title-sm">Последние статьи</h4>
-              <div class="block">
-                <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
-                  <div class="block__label">Имя Фамилия</div>
-                </div>
-              </div>
-              <div class="block">
-                <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                <div class="block__wrap"> <a href="#" class="block__title">Что снится к любви и наслаждению, а что – к разлуке и печали</a>
-                  <div class="block__label">Имя Фамилия</div>
-                </div>
-              </div>
-              <div class="block">
-                <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                <div class="block__wrap"> <a href="#" class="block__title">Что такое сглаз и как от него избавится?</a>
-                  <div class="block__label">Имя Фамилия</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 mob-hide">
-              <h4 class="title-sm">Доска объявлений</h4>
-              <div class="block">
-                <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
-                  <div class="block__label">Категория</div>
-                </div>
-              </div>
-              <div class="block">
-                <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                <div class="block__wrap"> <a href="#" class="block__title">Еще один заголовок объявления</a>
-                  <div class="block__label">Категория</div>
-                </div>
-              </div>
-              <div class="block">
-                <div class="block__img" style="background-image: url(./img/1.png);"></div>
-                <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
-                  <div class="block__label">Категория</div>
+                <div class="block">
+                  <div class="block__img" style="background-image: url(./img/notes.png);"></div>
+                  <div class="block__wrap"> <a href="#" class="block__title">Заголовок объявления</a>
+                    <div class="block__label">Категория</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="footer__container container">
-          <div class="footer__wrapper"> <span class="copy">Copyright &copy; 2018.</span> Портал ритуальных услуг «Доверие». Хабаровск </div>
+        <div class="footer__bottom">
+          <div class="footer__container container">
+            <div class="footer__wrapper"> <span class="copy">Copyright &copy; 2018.</span> Портал ритуальных услуг «Доверие». Хабаровск </div>
+          </div>
         </div>
-      </div>
-      <div class="footer__up">
-        <div class="footer__container container"> <button class="btn-up js-btn-up" type="button">
+        <div class="footer__up">
+          <div class="footer__container container"> <button class="btn-up js-btn-up" type="button">
 				<svg width="59" height="59" viewBox="0 0 59 59" xmlns="http://www.w3.org/2000/svg">
 				    <title>up</title>
 				    <g stroke="#E6DDD0" fill="none" fill-rule="evenodd">
@@ -1608,9 +1708,9 @@
 				    </g>
 				</svg>
 			</button> </div>
-      </div>
-    </footer>
-    <!-- end footer -->
+        </div>
+      </footer>
+      <!-- end footer -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

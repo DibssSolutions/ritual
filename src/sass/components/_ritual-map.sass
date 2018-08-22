@@ -5,19 +5,28 @@
     background-size: contain
     background-position: 50% 100%
     background-repeat: no-repeat
+    +sm
+        padding-top: 15px
     &__head
         margin-bottom: 40px
     &__title
         text-align: center
     &__icons
         margin-bottom: 50px
+        +sm
+            margin-bottom: 15px
     &__item
         +md
             margin-bottom: 20px
         .person
+            &__name
+                text-transform: none
+                font-family: $cormorant_infant
+                font-weight: 700
+                font-size: 24px
             &:hover
                 .person__img
-                    box-shadow: 0 0 0 1px $brown_orange
+                    box-shadow: inset 0 0 0 1px $brown_orange
                     opacity: 1
             &__img
                 position: relative
@@ -27,6 +36,7 @@
                 border: none
                 box-shadow: none
                 transition: box-shadow .3s
+                box-shadow: inset 0 0 0 1px transparent
             &__icon
                 position: absolute
                 display: block
@@ -38,6 +48,8 @@
                     fill: $brown_orange
     &__map
         margin-bottom: 45px
+        +sm
+            margin-bottom: 25px
     &__agencies
         padding: 30px 0 0
     &__bg
@@ -45,4 +57,5 @@
         bottom: 0
         width: 100%
         z-index: 2
+    
         
