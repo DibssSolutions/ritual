@@ -1,0 +1,47 @@
+.ratings-top
+    &__filter
+        padding: 13px 23px
+        background-color: $white_brown_bg
+        display: inline-block
+        margin-bottom: 47px
+        +md
+            width: 100%
+            display: flex
+            justify-content: space-around
+            align-items: center
+            text-align: center
+            padding: 0
+            background: none
+            margin-bottom: 15px
+        +sm
+            padding: 0
+            border: none
+        .rating-filter__radio
+            display: inline-block
+            margin-bottom: 0
+            &:not(:last-child)
+                margin-right: 90px
+                +md
+                    margin-right: 15px
+                    margin-bottom: 0
+            input
+                margin-right: 10px
+                +md
+                    position: absolute
+                    opacity: 0
+                    visibility: hidden
+                &:checked+label
+                    font-weight: 700
+    .rating-bar
+        +md
+            margin-bottom: 15px
+            padding: 0
+            padding-bottom: 20px
+    .top-category__head
+        margin-bottom: 30px
+    .rating-bar__nav li
+        padding: 3px 5px
+        transition: font-weight .3s
+        &:hover
+            a
+                font-weight: 700

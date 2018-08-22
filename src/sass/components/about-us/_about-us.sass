@@ -1,0 +1,102 @@
+.about-us
+    padding: 40px 0 145px
+    position: relative
+    +sm
+        padding: 10px 0 0
+    &__img
+        position: absolute
+        display: block
+        &_1
+            top: 280px
+            left: -230px
+        &_2
+            left: -360px
+            top: 500px
+            z-index: 1
+            +md
+                display: none
+        &_3
+            // right: -45px
+            top: 135px
+            left: 1035px
+            +sm
+                top: auto
+                left: auto
+                bottom: -10px
+                right: -5px
+                width: 105px
+                height: 75px
+        &_4
+            right: -165px
+            top: 235px
+            +sm
+                width: 50px
+                height: 58px
+                top: auto
+                bottom: -7px
+                right: 115px
+                transform: rotate(45deg)
+        &_5
+            right: -150px
+            top: 605px
+    &__container
+        position: relative
+    &__head
+        margin-bottom: 30px
+    &__title
+    &__text
+        margin: 0 auto
+        margin-bottom: 40px
+        max-width: 980px
+        p:not(:last-child)
+            margin-bottom: 30px
+    &__subtext
+        +sm
+            display: flex
+            padding-bottom: 10px
+    &__photo
+        display: none
+        width: 35%
+        margin-right: 10px
+        margin-left: -25px
+        +sm
+            display: block
+            flex: none
+        img
+            display: block
+            width: 100%
+    &__wrap
+        +sm
+            background-color: #f3eee8
+            padding: 10px 0 15px
+    &__questions
+        display: flex
+        align-items: flex-start
+        padding-right: 30px
+        +sm
+            padding-right: 0
+        img
+            margin-right: 50px
+            margin-left: -40px
+            +sm
+                display: none
+    &__accordeon
+        width: 100%
+        padding-top: 40px
+        +sm
+            padding-top: 0
+        .accordeon__icon
+            flex-shrink: 0
+            margin-left: 15px
+        .accordeon__item
+            padding-bottom: 10px
+            border-bottom: 1px solid #f3f1ea
+        .accordeon__head
+            margin-bottom: 0
+            font-size: 30px
+            font-weight: 600
+        .accordeon__body
+            p:last-child
+                margin-bottom: 0
+        .accordeon_active
+            margin-bottom: 18px

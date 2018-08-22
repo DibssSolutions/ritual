@@ -1,0 +1,227 @@
+.my-companies
+	&__title-block
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding-bottom: 10px
+		position: relative
+		+md
+			flex-wrap: wrap
+		&.border_top
+			margin-top: 10px
+			padding-top: 15px
+			padding-bottom: 25px
+			border-top: 1px solid #f3f1ea
+			border-bottom: 1px solid #f3f1ea
+			+sm
+				padding-bottom: 10px
+				border-bottom: 0
+				border-top: 0
+				padding-top: 0
+				margin-top: 0
+		&.border_bottom
+			border-bottom: none	
+			margin-bottom: 20px
+		.hints
+			position: absolute
+			right: -30px
+			top: 10px
+			&__icon
+				width: 28px
+				height: 28px
+				border-radius: 50%
+				background-color: #f1ede8
+				text-align: center
+				line-height: 28px
+				text-align: center
+				vertical-align: middle
+				&:hover
+					background-color: $brown
+			&__text
+				background-color: #f8f8f8				
+	&__col
+		display: flex	
+		align-items: center
+		+md
+			flex-wrap: wrap
+			margin-bottom: 10px
+		.memory-form__title
+			padding-bottom: 0
+		.memory-form__descr
+			margin-left: 20px
+			color: #b1a79b
+		.delete-account
+			margin-right: 20px
+			color: #b1a79b
+			+sm
+				display: block
+				.delete-account__btn
+					margin-bottom: 10px
+		.delete-account__text
+			border-bottom: 1px solid transparent
+	.companies-item__wrap
+		padding-bottom: 0
+		.sf-thumb
+			width: 100%
+	.ritual-agent				
+		&__label_mod
+			padding: 16px 0
+			width: 100%
+			border: 1px solid #f1ede8
+			+sm
+				padding-bottom: 0
+		&__wrap
+			display: block
+		&__image
+			margin: 0 auto
+			max-width: 174px
+			height: auto
+			background-color: transparent
+			img
+				max-width: 100%
+			&:after
+				display: none
+		&__text
+			border-top: 1px solid #f1ede8
+			margin-left: 0
+			padding: 25px 12px 0 18px
+			+sm
+				text-align: center
+				padding: 25px 0 0
+		&__name-title
+			margin-bottom: 22px
+		&__copy-btn
+			display: inline-block
+			position: absolute
+			z-index: 10
+			top: 13px
+			right: 50px
+			border: none
+			outline: none
+			background: none
+			font-size: 20px
+			.icon	
+				transition: fill .3s
+				fill: #999083
+			&:hover
+				.icon
+					fill: $brown	
+
+	.ritual-agent_mod
+		.product-reviews
+			display: flex
+			align-items: center
+			.product-reviews__details
+				margin-left: 15px
+				font-weight: 600
+		.ritual-agent__label		
+			transition: border-color .3s
+			border: 1px solid transparent
+			padding: 0
+			padding: 25px 20px 0 14px
+			&:hover
+				border: 1px solid #e3dccf
+			&:after
+				top: 10px
+				right: 4px
+			&:before
+				top: 13px
+				right: 7px	
+		.team-info	
+			+md
+				padding-top: 25px
+		.sf-thumb__wrap
+			font-size: 0
+			border: 1px solid #e3e3e3
+			margin-bottom: 25px
+	.article-item__btn-block
+		margin-bottom: 50px				
+	.ratings__appraisal
+		font-weight: 600		
+	// .cv
+	// 	justify-content: flex-start
+		&__views
+			margin-left: 35px		
+			i
+				font-size: 12px
+				color: #c9c2b4
+	.posts-image
+		position: relative
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+		border-radius: 0
+		+md
+			margin-bottom: 15px
+		+sm
+			width: 100%
+		&:after
+			position: absolute
+			content: ''
+			top: 8px
+			right: 8px
+			bottom: 8px
+			left: 8px
+			border: 2px solid #e6ddd0
+			z-index: 1
+		&__sale
+			position: absolute
+			display: block
+			top: 18px
+			left: 18px
+			text-align: center
+			width: 104px
+			height: 104px
+			border-radius: 50%
+			background-color: #ef2735
+			font-size: 30px
+			color: $white
+			font-weight: 600
+			line-height: 104px
+			vertical-align: middle
+			text-decoration: none
+			z-index: 2
+	.staff
+		&__title
+			text-transform: none
+		&__term
+			color: #999083
+		&__title-block
+			+sm
+				margin-bottom: 0
+			+md		
+				padding-left: 0
+		.drop__show
+			span
+				display: block
+				color: #999083
+				margin-bottom: 15px
+			.read-all
+				display: none	
+
+.new-sliders
+	margin-right: 40px
+	position: relative	
+	&__slide
+		max-width: 230px
+		padding: 10px
+		font-size: 21px
+		color: #bab1a5
+		transition: color .3s
+		&:hover
+			color: $brown
+	.slider__next,
+	.slider__prev
+		bottom: -15px
+		font-size: 30px
+		transition: color .3s
+		color: #bab1a5
+		line-height: 1.4
+		&:hover
+			color: $brown
+
+.desition
+	display: block
+	font-size: 14px
+	color: #b1a79b
+	text-align: center
