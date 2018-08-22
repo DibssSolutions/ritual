@@ -4,9 +4,9 @@ const aside = '.js-aside';
 if ($(aside).length) {
   const sidebar = new stickySidebar(aside, {
 	  topSpacing: 100,
-	  bottomSpacing: 320,
+	  bottomSpacing: 20,
 	  containerSelector: '.js-aside-container',
-	  innerWrapperSelector: '.sidebar__container',
+	  innerWrapperSelector: '.aside__container',
 	  resizeSensor: true
   });
 };
