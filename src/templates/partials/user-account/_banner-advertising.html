@@ -501,21 +501,24 @@
 													<div class="slidecontainer__title">
 														Цвет шрифта
 													</div>
-													<input type="range" min="0" max="300" value="30" class="slidecontainer__slider">
+													<input id="range1" type="range" min="0" max="300" value="0">
+													<label for="range1" class="slidecontainer__label js-color-slide"></label>
 												</div>
 											</div>
 											<div class="post-form__col">
 												<input class="post-form__input" type="text" id="advertising-slogan" value="" name="advertising-slogan" placeholder="Рекламный слоган">
 												<label class="post-form__label" for="advertising-slogan"></label>
 												<div class="slidecontainer">
-													<input type="range" min="0" max="300" value="30" class="slidecontainer__slider">
+													<input id="range2" type="range" min="0" max="300" value="0">
+													<label for="range2" class="slidecontainer__label js-color-slide"></label>
 												</div>
 											</div>
 											<div class="post-form__col">
 												<input class="post-form__input" type="text" id="phone" value="" name="phone">
 												<label class="post-form__label" for="phone">Телефон</label>
 												<div class="slidecontainer">
-													<input type="range" min="0" max="300" value="30" class="slidecontainer__slider">
+													<input id="range3" type="range" min="0" max="300" value="0">
+													<label for="range3" class="slidecontainer__label js-color-slide"></label>
 												</div>
 											</div>
 											<div class="upload-gallery">
@@ -633,13 +636,10 @@
 						</div>
 					</div>
 				</div>
-			</form>
+			</form>   
 			<!-- Start delete-account -->
 				{% include "partials/user-account/_delete-account.html" %}
 			<!-- End delete-account  -->
-			<div class="bottom-image">
-				<img src="img/rose-candle.png" alt="rose-angel">
-			</div>
 		</div>
 	</div>
 </div>
