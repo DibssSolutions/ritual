@@ -77,7 +77,7 @@
 						</ul>
 						<ul class="user-account__nav-list  mob-hide">
 							<li class="user-account__nav-item">
-								<a href="#" class="user-account__nav-link is-active">
+								<a href="#" class="user-account__nav-link">
 									<i class="fa fa-angle-right"></i>
 									Личная информация
 								</a>
@@ -101,7 +101,7 @@
 								</a>
 							</li>
 							<li class="user-account__nav-item">
-								<a href="#" class="user-account__nav-link">
+								<a href="#" class="user-account__nav-link is-active">
 									<i class="fa fa-angle-right"></i>
 									Мои компании и товары
 								</a>
@@ -133,8 +133,9 @@
 					{% for item in inputIdOne %}
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="ritual-agent">
-							<input class="input-checkbox" type="checkbox" name="verify" id="{{ item.id1 }}">
-							<label class="ritual-agent__label ritual-agent__label_mod" for="{{ item.for1 }}">
+							<div class="ritual-agent__label ritual-agent__label_mod">
+								<input class="input-checkbox" type="checkbox" name="verify" id="{{ item.id1 }}">
+								<label  for="{{ item.for1 }}" class="label-checkbox"></label>
 								<div class="ritual-agent__wrap">
 									<div class="ritual-agent__image">
 										<img src="./img/logo1.png" alt="logo">
@@ -173,7 +174,7 @@
 										</div>
 									</div>
 								</div>    
-							</label>
+							</div>
 						</div>
 					</div>
 					{% endfor %}
@@ -393,8 +394,9 @@
 					{% for item in inputIdTwo %}
 					<div class="col-md-4 col-sm-6 col-xs-6">
 						<div class="ritual-agent ritual-agent_mod">
-							<input class="input-checkbox" type="checkbox" name="verify" id="{{ item.id2 }}">
-							<label class="ritual-agent__label" for="{{ item.for2 }}">
+							<div class="ritual-agent__label">
+								<input class="input-checkbox" type="checkbox" name="verify" id="{{ item.id2 }}">
+								<label  for="{{ item.for2 }}" class="label-checkbox"></label>
 								<div class="companies-item__wrap">
 									<div class="sf-thumb">
 										<div class="sf-thumb__wrap">
@@ -448,7 +450,7 @@
 										</div>    
 									</div>
 								</div>
-							</label>
+							</div>
 						</div>	
 					</div>
 					{% endfor %}
@@ -501,122 +503,128 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<div class="ritual-agent ritual-agent_mod">
-							<input class="input-checkbox" type="checkbox" name="verify" id="team1">
-							<label class="ritual-agent__label padding-bottom-15 padding-top-20" for="team1">
+						<div class="ritual-agent">
+							<div class="ritual-agent__label">
+								<input class="input-checkbox" type="checkbox" name="verify" id="team1">
+								<label for="team1" class="label-checkbox"></label>
 								<button type="button" class="ritual-agent__copy-btn" title="Копировать акцию в текущий месяц">
 									{{ mixins.icon('copy') }}
 								</button>
 								<div class="team-info">
-									<div class="col-md-4 col-sm-12 col-xs-12">
-										<div class="posts-image posts-image_full-lg posts-image_full-radius" style="background-image: url(img/shares.png);">
-											<a href="#" class="posts-image__sale">-20%</a>
-										</div>
-									</div>
-									<div class="col-md-8 col-sm-9 col-md-12">
-										<div class="staff">
-											<div class="staff__title-block">
-												<span class="staff__title">Название акции</span>
-												<span class="staff__term showin">
-													Срок действия акции:  до 31 декабря 2018 года
-												</span> 
+									<div class="row">
+										<div class="col-md-4 col-sm-12 col-xs-12">
+											<div class="posts-image posts-image_full-lg posts-image_full-radius" style="background-image: url(img/shares.png);">
+												<a href="#" class="posts-image__sale">-20%</a>
 											</div>
-											<div class="drop js-drop has-show-block  hidein">
-												<div class="drop__wrap js-drop-wrap">
-													<div class="drop__show js-drop-shows">
-														<p>
-															Условия проведения: Текстовое описание услови акции идет тут в нескольстрок. Текстовое опис....
-														</p>
-														<span class="staff__term">
-															Срок действия акции:  до 31 декабря 2018 года
-														</span>
-														<p>
-															Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-												  			выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-														</p>
-													</div>
-													<div class="drop__hidden js-drop-hidden">
-														<p>
-															Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-															выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-														</p>
-													</div>
+										</div>
+										<div class="col-md-8 col-sm-9 col-md-12">
+											<div class="staff">
+												<div class="staff__title-block">
+													<span class="staff__title">Название акции</span>
+													<span class="staff__term showin">
+														Срок действия акции:  до 31 декабря 2018 года
+													</span> 
 												</div>
-												<!-- begin read-all -->
-												<div class="read-all mob-hide">
-													<a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
-														<span class="drop__btn-text js-drop-btn-text">
-														Читать всю информацию
-														</span>
-														<span class="fi flaticon-arrows"></span>
-													</a>
+												<div class="drop js-drop has-show-block  hidein">
+													<div class="drop__wrap js-drop-wrap">
+														<div class="drop__show js-drop-shows">
+															<p>
+																Условия проведения: Текстовое описание услови акции идет тут в нескольстрок. Текстовое опис....
+															</p>
+															<span class="staff__term">
+																Срок действия акции:  до 31 декабря 2018 года
+															</span>
+															<p>
+																Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+													  			выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+															</p>
+														</div>
+														<div class="drop__hidden js-drop-hidden">
+															<p>
+																Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+																выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+															</p>
+														</div>
+													</div>
+													<!-- begin read-all -->
+													<div class="read-all mob-hide">
+														<a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+															<span class="drop__btn-text js-drop-btn-text">
+															Читать всю информацию
+															</span>
+															<span class="fi flaticon-arrows"></span>
+														</a>
+													</div>
+													<!-- end read-all -->
 												</div>
-												<!-- end read-all -->
 											</div>
 										</div>
 									</div>
 								</div>
-							</label>
+							</div>
 						</div>	
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<div class="ritual-agent ritual-agent_mod">
-							<input class="input-checkbox" type="checkbox" name="verify" id="team2">
-							<label class="ritual-agent__label padding-bottom-15 padding-top-20" for="team2">
+						<div class="ritual-agent">
+							<div class="ritual-agent__label">
+								<input class="input-checkbox" type="checkbox" name="verify" id="team2">
+								<label for="team2" class="label-checkbox"></label>
 								<button type="button" class="ritual-agent__copy-btn" title="Копировать акцию в текущий месяц">
 									{{ mixins.icon('copy') }}
 								</button>
 								<div class="team-info">
-									<div class="col-md-4 col-sm-12 col-xs-12">
-										<div class="posts-image posts-image_full-lg posts-image_full-radius" style="background-image: url(img/shares.png);">
-										</div>
-									</div>
-									<div class="col-md-8 col-sm-9 col-md-12">
-										<div class="staff">
-											<div class="staff__title-block">
-												<span class="staff__title">Название акции</span>
-												<span class="staff__term showin">
-													Срок действия акции:  до 31 декабря 2018 года
-												</span>
+									<div class="row">
+										<div class="col-md-4 col-sm-12 col-xs-12">
+											<div class="posts-image posts-image_full-lg posts-image_full-radius" style="background-image: url(img/shares.png);">
 											</div>
-											<div class="drop js-drop has-show-block hidein">
-												<div class="drop__wrap js-drop-wrap">
-													<div class="drop__show js-drop-shows">
-														<p>
-															Условия проведения: Текстовое описание услови акции идет тут в нескольстрок. Текстовое опис....
-														</p>
-															<span class="staff__term">
-																Срок действия акции:  до 31 декабря 2018 года
+										</div>
+										<div class="col-md-8 col-sm-9 col-md-12">
+											<div class="staff">
+												<div class="staff__title-block">
+													<span class="staff__title">Название акции</span>
+													<span class="staff__term showin">
+														Срок действия акции:  до 31 декабря 2018 года
+													</span>
+												</div>
+												<div class="drop js-drop has-show-block hidein">
+													<div class="drop__wrap js-drop-wrap">
+														<div class="drop__show js-drop-shows">
+															<p>
+																Условия проведения: Текстовое описание услови акции идет тут в нескольстрок. Текстовое опис....
+															</p>
+																<span class="staff__term">
+																	Срок действия акции:  до 31 декабря 2018 года
+																</span>
+															<p>
+																Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+													  			выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+															</p>
+														</div>
+														<div class="drop__hidden js-drop-hidden">
+															<p>
+																Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+																выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+															</p>
+														</div>
+													</div>
+													<!-- begin read-all -->
+													<div class="read-all mob-hide">
+														<a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+															<span class="drop__btn-text js-drop-btn-text">
+															Читать всю информацию
 															</span>
-														<p>
-															Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-												  			выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-														</p>
+															<span class="fi flaticon-arrows"></span>
+														</a>
 													</div>
-													<div class="drop__hidden js-drop-hidden">
-														<p>
-															Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
-															выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
-														</p>
-													</div>
+													<!-- end read-all -->
 												</div>
-												<!-- begin read-all -->
-												<div class="read-all mob-hide">
-													<a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
-														<span class="drop__btn-text js-drop-btn-text">
-														Читать всю информацию
-														</span>
-														<span class="fi flaticon-arrows"></span>
-													</a>
-												</div>
-												<!-- end read-all -->
 											</div>
 										</div>
 									</div>
 								</div>
-							</label>
+							</div>
 						</div>	
 					</div>
 				</div>

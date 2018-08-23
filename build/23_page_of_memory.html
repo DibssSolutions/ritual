@@ -42,7 +42,7 @@
 <svg class="icon icon-mark"><use xlink:href="img/sprite.svg#icon-mark"></use></svg>
 
 							</span>
-                    <div class="select"> <select name="region" id="heade-region" style="width: 100%" class="js-select" placeholder="Выберите район">
+                    <div class="select"> <select name="region" id="heade-region" style="width: 100%" class="js-select">
 									<option value="1">Выберите район</option>
 									<option value="2">Индустриальный</option>
 									<option value="3">Кировский</option>
@@ -286,11 +286,13 @@
             </div>
           </div>
         </div>
-        <div class="tooltip_templates"> <span id="tooltip_content-1">
-			<div class="hint">
-				<div class="hint-map">Посмотреть на карте</div>
-			</div>
-		</span> </div>
+        <div class="tooltip_templates">
+          <div id="tooltip_content-1">
+            <div class="hint">
+              <div class="hint-map">Посмотреть на карте</div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- End page-of-memory -->
       <!-- Start necrology -->
@@ -414,23 +416,23 @@
                   </div>
                 </div>
                 <div class="post-form__row row memory-form__message">
-                  <div class="post-form__col col-md-6 col-xs-12"> <label for="">Введите свое имя, чтобы оно отображалось в сообщении</label> <input class="post-form__input memory-form__input" type="text" id="name"> </div>
+                  <div class="post-form__col col-md-6 col-xs-12"> <label for="name">Введите свое имя, чтобы оно отображалось в сообщении</label> <input class="post-form__input memory-form__input" type="text" id="name"> </div>
                   <div class="post-form__col col-md-12 col-xs-12"> <label for="message">Ваш отзыв</label> <textarea class="post-form__textarea memory-form__textarea" id="message"></textarea> </div>
                   <div class="post-form__col col-md-12 col-xs-12"> <label class="memory-form__checkbox">
 								<input type="checkbox" checked>
-								<div class="memory-form__checkbox-text">
+								<span class="memory-form__checkbox-text">
 									<span class="check fa fa-check"></span>
 									Пожалуйста, поставьте галочку здесь, чтобы получить одноразовое электронное письмо за неделю до годовщины
-								</div>
+								</span>
 							</label> </div>
                 </div>
                 <h4 class="memory-form__title title-sm memory-form__title_bordered"> Способ оплаты </h4>
                 <div class="post-form__row row">
                   <div class="post-form__col col-md-12">
                     <div class="form-radio memory-form__radio">
-                      <div class="form-radio__radio"> <input type="radio" id="1" name="memory-pay"> <label for="1">Visa / Master card</label> </div>
-                      <div class="form-radio__radio"> <input type="radio" id="2" name="memory-pay" checked> <label for="2">Сбербанк онлайн</label> </div>
-                      <div class="form-radio__radio"> <input type="radio" id="3" name="memory-pay"> <label for="3">Яндекс деньги</label> </div>
+                      <div class="form-radio__radio"> <input type="radio" id="11" name="memory-pay"> <label for="11">Visa / Master card</label> </div>
+                      <div class="form-radio__radio"> <input type="radio" id="22" name="memory-pay" checked> <label for="22">Сбербанк онлайн</label> </div>
+                      <div class="form-radio__radio"> <input type="radio" id="33" name="memory-pay"> <label for="33">Яндекс деньги</label> </div>
                     </div>
                   </div>
                 </div>
@@ -599,13 +601,13 @@
 								Выберите файл формата jpg, Размер файла не более 6 Мб
 							</span>
                     <div class="file-upload">
-                      <div class="post-form__col"> <input class="post-form__input" type="text" id="name" value="" name="way"> <label class="post-form__label" for="name">:/Путь файла будет тут.....</label> <label class="post-form__icon" for="file-upload"><i class="fa fas fa-camera"></i></label>                        </div>
+                      <div class="post-form__col"> <input class="post-form__input" type="text" id="name1" placeholder=":/Путь файла будет тут....." name="way"> <label class="post-form__icon" for="file-upload"><i class="fa fas fa-camera"></i></label> </div>
                       <!-- <label class="file-upload__label btn btn_big" for="file-upload">
 									Добавить
-								</label> --><input type="file" name="file-upload-photo" id="file-upload" class="file-upload__input" value="" name="file-photo"> </div> <span class="title-hint">
+								</label> --><input type="file" name="file-upload-photo" id="file-upload" class="file-upload__input"> </div> <span class="title-hint">
 								Введите свое имя, чтобы оно отображалось в сообщении
 							</span>
-                    <div class="post-form__col"> <input class="post-form__input" type="text" id="message" value="" name="way"> </div> <button class="btn btn_bold btn_big btn_fat" type="submit"><span><i class="fa fa-plus-circle"></i> </span>Добавить фото</button> </div>
+                    <div class="post-form__col"> <input class="post-form__input" type="text" id="message1" value="" name="way"> </div> <button class="btn btn_bold btn_big btn_fat" type="submit"><span><i class="fa fa-plus-circle"></i> </span>Добавить фото</button> </div>
                 </form>
               </div>
             </div>
@@ -675,7 +677,7 @@
 														<span>(1)</span> --></div>
                               </div>
                             </div>
-                            <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                            <div class="companies-item__btn"> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                           </div>
                         </div>
                       </a>
@@ -709,7 +711,7 @@
 														<span>(1)</span> --></div>
                               </div>
                             </div>
-                            <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                            <div class="companies-item__btn"> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                           </div>
                         </div>
                       </a>
@@ -743,7 +745,7 @@
 														<span>(1)</span> --></div>
                               </div>
                             </div>
-                            <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                            <div class="companies-item__btn"> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                           </div>
                         </div>
                       </a>
@@ -777,7 +779,7 @@
 														<span>(1)</span> --></div>
                               </div>
                             </div>
-                            <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                            <div class="companies-item__btn"> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                           </div>
                         </div>
                       </a>
@@ -811,7 +813,7 @@
 														<span>(1)</span> --></div>
                               </div>
                             </div>
-                            <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                            <div class="companies-item__btn"> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                           </div>
                         </div>
                       </a>
@@ -845,7 +847,7 @@
 														<span>(1)</span> --></div>
                               </div>
                             </div>
-                            <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                            <div class="companies-item__btn"> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                           </div>
                         </div>
                       </a>
@@ -922,7 +924,7 @@
 </span>
 												<span>(1)</span> --></div>
                         </div>
-                      </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                      </div> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                   </div>
                 </a>
                 <!-- </div> -->
@@ -953,7 +955,7 @@
 </span>
 												<span>(1)</span> --></div>
                         </div>
-                      </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                      </div> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                   </div>
                 </a>
                 <!-- </div> -->
@@ -984,7 +986,7 @@
 </span>
 												<span>(1)</span> --></div>
                         </div>
-                      </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                      </div> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                   </div>
                 </a>
                 <!-- </div> -->
@@ -1015,7 +1017,7 @@
 </span>
 												<span>(1)</span> --></div>
                         </div>
-                      </div> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                      </div> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                   </div>
                 </a>
                 <!-- </div> -->

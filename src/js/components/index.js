@@ -17,4 +17,3 @@ import './_init-multiselect';
 import '../lib/jquery-ui';
 import './_rangeSlider';
 import './_password-strength';
-import './_color-picker';
