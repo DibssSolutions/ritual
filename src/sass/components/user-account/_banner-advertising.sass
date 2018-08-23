@@ -160,32 +160,32 @@
 .slidecontainer
 	position: relative
 	flex: 1 1 182px
+	&__label
+		display: block
+		width: 100%
+		height: 8px
+		background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)
+		outline: none
+		border: 1px solid $brown
+		border-radius: 0
 	&__title
 		position: absolute
 		top: -45px
 		left: 0
 		font-size: 15px
 		color: $brown
-	&__slider
-		-webkit-appearance: none
-		appearance: none
-		width: 100%
-		height: 8px
-		background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)
+	.ui-slider-handle.ui-state-default.ui-corner-all
+		border: none
+		background: #c2c0c0
+		font-weight: 400
+		color: #555
+		width: 9px
+		height: 30px
+		border-radius: 0
 		outline: none
-		border: 1px solid $brown
-		&::-webkit-slider-thumb
-			-webkit-appearance: none
-			appearance: none
-			width: 9px
-			height: 30px
-			background: #c2c0c0
-			cursor: pointer
-		&::-moz-range-thumb
-			width: 9px
-			height: 30px
-			background: #c2c0c0
-			cursor: pointer
+		margin-top: -8px
+input[type="range"]
+	display: none
 
 .delivery-period
 	margin-bottom: 50px
@@ -197,6 +197,8 @@
 			display: flex
 			align-items: center
 			justify-content: space-between
+			+md
+				flex-wrap: wrap
 	.contacts-item
 		display: flex
 		align-items: center
