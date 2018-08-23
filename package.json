@@ -76,6 +76,7 @@
     "through2": "^2.0.1",
     "tooltipster": "^4.2.6",
     "underscore": "^1.9.1",
+    "vanilla-lazyload": "^8.15.0",
     "vinyl-buffer": "^1.0.1",
     "webpack": "^2.2.1",
     "webpack-bundle-analyzer": "^1.5.3"
