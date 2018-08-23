@@ -1,0 +1,148 @@
+.announcements
+	margin-bottom: 0
+	
+.ritual-agent
+	position: relative
+	margin-bottom: 25px
+	&__label
+		position: relative
+		padding: 20px 20px 10px 15px
+		border: 1px solid #e3e3e3
+		transition: box-shadow .3s
+		+sm
+			width: 100%
+		.label-checkbox
+			position: absolute
+			top: 8px
+			right: 10px 
+			width: 14px
+			height: 14px
+			z-index: 100	
+			border: 1px solid #ccc
+			&:after
+				position: absolute
+				cursor: pointer			
+				top: 1px
+				right: 1px
+				width: 10px
+				height: 10px
+				content: ''
+				background: repeating-linear-gradient(to bottom right,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
+				background: repeating-linear-gradient(top left,rgb(192, 192, 192) 0%,rgb(255, 255, 255) 100%)
+				z-index: 4
+			&:before
+				position: absolute
+				top: 1px
+				right: 1px
+				width: 10px
+				height: 10px
+				content: ''
+				cursor: pointer
+				z-index: 3
+				background-color: $brown
+				opacity: 0
+		&:hover 
+			box-shadow: 0 0 10px rgba(0,0,0,.2)
+			.btn-panel
+				transform: scale(1)
+				height: auto
+				z-index: 2
+			.cv
+				background-color: #f1ede7
+				+sm
+					background-color: transparent	
+	.input-checkbox
+		display: none
+		&:checked ~ .label-checkbox:before
+			z-index: 5
+			opacity: 1
+	&__wrap
+		display: flex
+		align-items: flex-start
+		margin-bottom: 10px
+		+sm
+			flex-wrap: wrap
+			margin-bottom: 0
+	&__image
+		position: relative
+		width: 130px
+		height: 135px
+		background-color: #f1ede8
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+		margin-right: 20px
+		+sm
+			width: 155px
+			margin-bottom: 10px
+		+xs
+			margin: 0 auto 10px
+		&:after
+			position: absolute
+			top: 4px
+			right: 4px
+			bottom: 4px
+			left: 4px
+			content: ''
+			border: 1px solid #eae5dc
+	&__text
+		+xs
+			width: 100%
+			text-align: center	
+	&__descr
+		margin-bottom: 10px
+	&__price
+		margin-bottom: 8px	
+		.product-prices
+			&__first
+				font-size: 24px
+				color: $brown
+			&__last
+				font-size: 16px
+				color: #bfbfbf
+
+.btn-panel
+	position: absolute
+	bottom: -27px
+	left: 0	
+	display: flex
+	align-items: center
+	height: 0
+	transform: scale(0)
+	z-index: 1
+	width: 100%
+	background-color: $white
+	padding: 5px 5px 15px
+	+sm
+		display: none
+	&:after
+		position: absolute
+		top: 15px
+		left: 0
+		height: 60%
+		width: 100%
+		content: ''
+		box-shadow: 0 5px 10px rgba(0,0,0,.2)
+		z-index: -1
+	&__col
+		flex: 1 1 50%
+		text-align: center
+	&__btn
+		display: inline-block
+		padding: 5px 5px 0
+		font-size: 12px
+		line-height: 1.4
+		color: $brown
+		border-bottom: 1px solid transparent
+		transition: border-color .3s
+		white-space: nowrap
+		&:hover
+			border-bottom: 1px solid $brown
+			&__btn-icon
+			.icon
+				fill: $brown 
+	&__btn-icon
+		margin-right: 5px
+		.icon
+			transition: fill .3s
+			fill: #bfbfbf

@@ -1,0 +1,128 @@
+.table
+	&__thead
+		padding-bottom: 8px
+		margin-bottom: 8px
+		border-bottom: 2px solid $brown
+		margin-right: 35px
+	&__tbody
+		max-height: 460px
+		overflow: auto
+		.table__tr
+			padding: 4px 0
+			margin-bottom: 4px
+			margin-right: 35px
+			&:not(:last-child)	
+				border-bottom: 1px solid #eee
+	&__tr
+		display: flex
+		align-items: flex-start
+		+sm
+			flex-direction: column
+	&__th
+		font-size: 14px
+		font-weight: 600
+		color: $brown
+		text-align: center
+		flex: 1 1 25%
+		&:first-child
+			text-align: left
+			flex: 1 1 50%
+		&.table__th_mod
+			text-align: left
+			padding-left: 27px	
+		+sm
+			flex: 1 1 100%
+	&__td
+		width: 100%
+		text-align: left
+		&:not(:last-child)
+			margin-right: 27px
+			text-align: center
+			+sm
+				margin-right: 0
+		&:not(:first-child)
+			padding: 12px 0
+		&:last-child
+			margin-right: 35px		
+	&__img
+		width: 100%
+		height: 100px		
+		font-size: 0
+		+sm
+			height: 150px
+		img
+			max-width: 100%
+			height: 100%
+	&__name
+		color: $brown
+		font-size: 14px
+	&__block-btn
+		padding-top: 12px
+		width: 100%
+		text-align: right
+		white-space: nowrap
+		+sm
+			order: -1
+			margin-bottom: 10px
+		a
+			border-bottom: none !important
+	&__btn
+		background: none
+		border: none
+		outline: none
+		font-size: 20px
+		.icon
+			fill: $brown
+		&:not(:last-child)
+			margin-right: 25px
+
+#style-scroll
+	position: relative
+
+.ps__thumb-x,
+.ps__thumb-y
+	border-radius: 0
+
+.ps__rail-y,
+.ps__rail-x
+	background-color: transparent
+	border: 1px solid #c2c0c0
+	opacity: 1
+	right: 3px
+	&:hover
+		background-color: transparent
+
+.ps__rail-x
+	opacity: 0
+
+.ps__rail-y
+	right: 4px
+	width: 6px
+
+.ps__thumb-y
+	right: -2px
+	width: 8px
+
+.ps__rail-y.ps--clicking .ps__thumb-y,
+.ps__rail-y:focus>.ps__thumb-y,
+.ps__rail-y:hover>.ps__thumb-y
+	width: 8px
+	border-radius: 0
+	background-color: #c2c0c0	
+
+.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-x:hover
+	opacity: 0	
+
+.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-x:hover,
+.ps .ps__rail-y.ps--clicking,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-y:hover.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-x:focus, .ps .ps__rail-x:hover,
+.ps .ps__rail-y.ps--clicking,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-y:hover
+	opacity: 1

@@ -1,0 +1,151 @@
+---
+title: 20. Все страницы памяти
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{% include "partials/_header.html" %}
+	
+	<div class="page-head">
+		<div class="container page-head__container">
+			<ul class="bcrumbs page-head__bcrumbs">
+				<li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
+				<li><a href="#">Obituaries</a></li>
+				<li>Past</li>
+			</ul>
+		</div>
+	</div>
+	<div class="category-main">
+		<div class="container category-main__container">
+			<div class="category-main__head section-head text-center">
+				<h1 class="category-main__title title-l">
+					Страницы памяти
+				</h1>
+				<p>Подзаголовок страницы</p>
+			</div>
+		</div>
+		<div class="container category-main__container">
+			<div class="category-main__row row">
+				<div class="category-main__col col-md-9 col-sm-12">
+					<div class="category-main__top top-bar mob-hide">
+						<div class="shop-sort-wrap">
+							<div class="ps-options pull-left">
+								<span>Показывать по:</span>
+								<div class="ps-select">
+									<i class="fa fa-caret-down"></i>
+									<select>
+										<option>4</option>
+										<option>5</option>
+										<option selected>6</option>
+									</select>
+								</div>
+							</div>
+							<div class="shop-sort">
+								<nav class="navigation-page">
+									<ul class="page-nav page-nav_filter">
+									  <li><a class="page-nav__btn left-btn" href="#"><i class="fa fa-angle-left"></i> &nbsp;Предыдущая</a></li>
+									  <li class="page-nav__item active"><a class="page-nav__link" href="#">1</a></li>
+									  <li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
+									  <li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
+									  <li><a class="page-nav__btn right-btn" href="#">Следующая&nbsp; <i class="fa fa-angle-right"></i></a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="funeral-info funeral-info_inner">
+						{% for item in range(0,5) %}
+						<div class="row funeral-info__row">
+							<div class="funeral-info__col col-md-5 col-sm-5 funeral-info__person person-info">
+								<div class="person-info__photo">
+									<img class="js-lazy" data-src="./img/img-bla.png" alt="photo">
+									<div class="person-info__img person-info__img_1">
+										<img class="js-lazy" data-src="./img/ribbon.png" alt="img">
+									</div>
+								</div>
+							</div>
+							<div class="funeral-info__col col-md-7 col-sm-7">
+								<div class="funeral-info__personal-info">
+									<div class="title-s funeral-info__title">Фамилия Имя Отчество</div>
+									<div class="contacts-item">Дата рождения: Вт. 03-12-1954</div>
+									<div class="contacts-item">Дата смерти: Вт. 03-12-2016</div>
+									<div class="contacts-item">Возраст: 62</div>
+									<div class="funeral-info__footer">
+										<div class="funeral-info__img">
+											<img class="js-lazy" data-src="./img/candles.gif" alt="img">
+										</div>
+										<div class="contacts-item">
+											<i class="fa fa-calendar"></i>
+											Дата:
+											<strong>Вт. 04-12-2016</strong>
+										</div>
+										<div class="funeral-info__btn">
+											<a href="#" class="btn">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+					<nav class="navigation-page navigation-page_main navigation-page_bord">
+						<ul class="page-nav page-nav_filter">
+							<li><a class="page-nav__btn left-btn" href="#"><i class="fa fa-angle-left"></i> &nbsp;Предыдущая</a></li>
+							<li class="page-nav__item active"><a class="page-nav__link" href="#">1</a></li>
+							<li class="page-nav__item"><a class="page-nav__link" href="#">2</a></li>
+							<li class="page-nav__item"><a class="page-nav__link" href="#">3</a></li>
+							<li><a class="page-nav__btn right-btn" href="#">Следующая&nbsp; <i class="fa fa-angle-right"></i></a></li>
+						</ul>
+					 </nav>
+					<div class="single-meta md-hide">
+					  <div class="row">
+						<div class="col-md-12 col-sm-12">
+						  <!-- Start counter -->
+						  <div class="visitors">
+							<button class="visitors__print-btn" type="button" onclick='print();'>
+								<span><svg class="icon icon-printer"><use xlink:href="img/sprite.svg#icon-printer"></use></svg></span>Распечатать
+							</button>
+							<ul class="counter">
+							  <li class="counter__item"> Просмотры: </li>
+							  <li class="counter__item counter__item_icon"> <svg class="icon icon-eye"><use xlink:href="img/sprite.svg#icon-eye"></use></svg> </li>
+							  <li class="counter__item"> Всего 100 </li>
+							  <li class="counter__item"> | </li>
+							  <li class="counter__item"> За месяц 15 </li>
+							</ul>
+						  </div>
+						  <!-- End counter -->
+						</div>
+					  </div>
+					</div>
+					<div class="side-widget hidein">
+						<a href="#" class="banner">
+							<img class="js-lazy" data-src="img/banner1.png" alt="banner">
+						</a>
+					</div>
+				</div>
+				<div class="category-main__col col-md-3 md-hide sidebar">
+					<a href="#">
+						<div class="big-icon-btn">
+							<i class="fi flaticon-nature"></i>Послать цветы
+						</div>
+					</a>
+					<div class="image">
+						<img class="js-lazy" data-src="./img/angel.jpg" alt="img">
+					</div>
+					<div class="banner">
+						<img class="js-lazy" data-src="img/banner.png" alt="banner">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="bottom-image">
+			<img class="js-lazy" data-src="img/rose-angel.png" alt="rose-angel">
+		</div>
+	</div>
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+{% endblock %}

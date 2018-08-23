@@ -1,0 +1,186 @@
+{% set inputId = [
+	{
+		id: 'cbox1',
+		for: 'cbox1'
+	},
+	{
+		id: 'cbox2',
+		for: 'cbox2'
+	},
+	{
+		id: 'cbox3',
+		for: 'cbox3'
+	},
+	{
+		id: 'cbox4',
+		for: 'cbox4'
+	},
+	{
+		id: 'cbox5',
+		for: 'cbox5'
+	},
+	{
+		id: 'cbox6',
+		for: 'cbox6'
+	}
+]
+%}
+
+<div class="user-account__row row">
+	<aside class="user-account__aside">
+		<div class="col col-md-3 col-sm-4 col-xs-12">
+			<div class="person-info__row">
+				<div class="person-info__col">
+					<div class="person-info__photo">
+						<img class="js-lazy" data-src="./img/memory-item.jpg" alt="photo">
+					</div>
+				</div>
+				<div class="person-info__col">
+					<div class="person-info__general text-center">
+						<p>
+							Фамилия Имя Отчество
+						</p>
+					</div>
+					<div class="user-account__nav">
+						<ul class="user-account__info-list">
+							<li class="user-account__info-item">
+								На сайте с: 12.09.17
+							</li>
+							<li class="user-account__info-item">
+								Последний визит: 12.09.17
+							</li>
+							<li class="user-account__info-item">
+								Всего отзывов: 15
+							</li>
+							<li class="user-account__info-item">
+								Всего статей: 11
+							</li>
+						</ul>
+						<ul class="user-account__nav-list  mob-hide">
+							<li class="user-account__nav-item">
+								<a href="#" class="user-account__nav-link">
+									<i class="fa fa-angle-right"></i>
+									Личная информация
+								</a>
+							</li>
+							<li class="user-account__nav-item">
+								<a href="#" class="user-account__nav-link is-active">
+									<i class="fa fa-angle-right"></i>
+									Мои объявления
+								</a>
+							</li>
+							<li class="user-account__nav-item">
+								<a href="#" class="user-account__nav-link">
+									<i class="fa fa-angle-right"></i>
+									Баланс
+								</a>
+							</li>
+							<li class="user-account__nav-item">
+								<a href="#" class="user-account__nav-link">
+									<i class="fa fa-angle-right"></i>
+									Мои посты
+								</a>
+							</li>
+							<li class="user-account__nav-item">
+								<a href="#" class="user-account__nav-link">
+									<i class="fa fa-angle-right"></i>
+									Мои компании и товары
+								</a>
+							</li>
+							<li class="user-account__nav-item">
+								<a href="#" class="user-account__nav-link">
+									<i class="fa fa-angle-right"></i>
+									Баннерная реклама
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<div class="col-md-9 col-sm-8 col-xs-12">
+		<div class="announcements__title-block memory-form__title_bordered">
+			<h4 class="memory-form__title title-sm">
+				Все мои объявления
+			</h4>
+		</div>
+		<form class="announcements__form memory-form__title_bordered">
+			<div class="row">
+				{% for item in inputId %}
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					<div class="ritual-agent">
+						<div class="ritual-agent__label">
+							<input class="input-checkbox" type="checkbox" name="verify" id="{{ item.id }}">
+							<label class="label-checkbox" for="{{ item.for }}"></label>
+							<div class="ritual-agent__wrap">
+								<div class="ritual-agent__image js-lazy" data-src=./img/ritual.png);">
+								</div>
+								<div class="ritual-agent__text">
+									<h4 class="ritual-agent__name-title title-s ">
+										Ритуальный агент
+									</h4>
+									<div class="ritual-agent__descr">
+										<div class="product-reviews">
+											<span class="pr-ratings">
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+												<i class="flaticon-favorite"></i>
+											</span>
+										</div>
+									</div>
+									<div class="ritual-agent__price">
+										<div class="product-prices">
+											<span class="product-prices__first">
+												690 ₽
+												<span class="product-prices__last"> 890 ₽</span>
+											</span>
+										</div>
+									</div>
+									<!-- Start delete-account -->
+										{% include "partials/user-account/_cv.html" %}
+									<!-- End delete-account	 -->
+								</div>
+							</div>
+							<div class="btn-panel">
+								<div class="btn-panel__col">
+									<a href="#" class="btn-panel__btn">
+										<span class="btn-panel__btn-icon">
+											{{ mixins.icon('pen') }}
+										</span>
+										Редактировать 
+									</a>
+								</div>
+								<div class="btn-panel__col">
+									<a href="#" class="btn-panel__btn">
+										<span class="btn-panel__btn-icon">
+											{{ mixins.icon('cancel') }}
+										</span>
+										Удалить
+									</a>
+								</div>
+							</div>    
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<span class="desition">Выберите компанию, которую собираетесь редактировать.</span>
+			<div class="row">
+				<div class="col-md-11">
+					<!-- Start delete-account -->
+						{% include "partials/user-account/_paid-services.html" %}
+					<!-- End delete-account	 -->
+				</div>
+			</div>
+		</form>
+		<!-- Start delete-account -->
+			{% include "partials/user-account/_delete-account.html" %}
+		<!-- End delete-account	 -->
+		<div class="bottom-image">
+			<img class="js-lazy" data-src="img/rose-candle.png" alt="rose-angel">
+		</div>
+	</div>
+</div>

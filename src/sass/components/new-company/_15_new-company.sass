@@ -1,0 +1,562 @@
+.new-companys
+	padding-top: 20px
+	&__head
+		text-align: center
+		margin-bottom: 20px
+	&__title	
+		margin-bottom: 10px
+	&__footer
+		padding-bottom: 20px
+		.row
+			display: flex
+			align-items: center
+			justify-content: center
+			+xs
+				flex-direction: column
+			.details__save
+				&:first-child
+					.details__save-btn
+						width: 260px
+						margin-right: 30px
+						+sm
+							width: 210px
+						+xs
+							margin-right: 0	
+							margin-bottom: 10px
+	.select_mod
+		position: relative
+		padding-bottom: 68px
+								
+	.select
+		width: 100%
+		max-width: 570px
+		+md
+			max-width: 100%		
+	.post-form
+		margin-top: 20px
+		margin-left: 250px
+		margin-right: 65px
+		+md
+			margin-right: 60px
+		+sm
+			margin-left: 0
+		&__title-row
+			display: block
+			position: absolute
+			left: -250px
+			top: 15px
+			padding-right: 32px
+			text-align: right
+			width: 250px
+			+sm
+				top: -24px
+				left: 0
+				width: auto
+				text-align: left
+		&__col
+			width: 100%
+			+sm
+				margin-top: 30px
+				margin-bottom: 30px
+		&__input
+			max-width: 570px
+			margin-bottom: 10px	
+			padding: 15px 27px
+			+md
+				max-width: 100%
+			+sm
+				margin-bottom: 10px	
+		&__label
+			left: 27px
+			+sm
+				top: 13px
+				left: 27px
+				font-size: 14px
+
+.company-form
+	&__row
+		border-bottom: 1px solid #eee
+		margin-bottom: 25px
+		padding-bottom: 25px
+	.select-wrap
+		position: relative
+		max-width: 100%
+	.select .select2-selection--single .select2-selection__rendered
+		padding-left: 27px
+		padding-top: 6px
+		padding-bottom: 6px
+	.select .select2-selection--single
+		height: 45px
+		background-color: #f1ede8 
+	.select .select2-selection--single .select2-selection__arrow
+		height: 42px
+		width: 40px
+	.select2-container--default .select2-selection--multiple,
+	.select2-container--default .select2-selection--single
+		border-radius: 0			
+
+.file-upload
+	max-width: 175px
+	text-align: center
+	+md
+		margin: 0 auto
+	&__wrap
+		position: relative
+		width: 135px
+		height: 135px
+		border-radius: 50%
+		margin: 0 auto 3px
+		background-color: #e6ddd0
+		padding: 23px
+		z-index: 1
+		cursor: pointer
+	&__photo
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		width: 135px
+		height: 135px
+		border-radius: 50%
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+		z-index: 2	
+	&__icon
+		font-size: 34px
+		display: block
+		margin-bottom: 5px
+		.icon
+			fill: $brown
+	&__description
+		font-size: 14px
+		color: $brown	
+	&__title-input
+		display: inline-block
+		margin-bottom: 10px
+		color: #c8bdad
+		font-size: 14px
+		&.is-hover
+			opacity: 0	
+	&__label
+		white-space: nowrap
+		font-size: 15px
+		font-weight: 600
+		+sm
+			margin-top: 10px
+	&__input
+		display: none		
+	input[type="file"]
+		display: none
+
+.hints
+	position: absolute
+	right: -60px
+	top: 0
+	width: 28px
+	height: 28px
+	+md
+		right: -40px
+	&__icon
+		border-radius: 50%
+		line-height: 28px
+		text-align: center
+		vertical-align: middle
+		color: $brown
+		background-color: $white_brown_bg
+		transition: color .3s, background-color .3s
+		&:hover
+			color: $white_brown_bg
+			background-color: $brown
+	&:hover		
+		.hints__text
+			display: block
+			opacity: 1
+	&__text
+		position: absolute
+		top: 30px
+		left: -186px
+		width: 200px
+		background-color: $white_brown_bg
+		z-index: 2
+		display: none
+		opacity: 0
+		font-size: 12px
+		color: $brown
+		transition: opacity .5s
+		padding: 15px 10px
+		box-shadow: 0 0 10px rgba(#625a4f,.2)
+
+.basic-services
+	.post-form
+		margin-top: 0
+	.select-wrap
+		max-width: 570px
+		margin-left: 220px
+		margin-right: 60px
+		+md
+			max-width: 100%
+		+sm
+			margin-top: 30px
+			margin-left: 0	
+
+.basic-contacts .post-form,
+.basic-services .select-wrap
+	+md
+		max-width: 100%			
+
+.title-box
+	display: flex
+	align-items: center
+	margin-bottom: 20px
+	+sm
+		flex-direction: column
+		align-items: flex-start
+	&__title
+		+sm
+			font-size: 24px !important
+			margin-bottom: 10px
+	&__btn
+		margin-left: 58px
+		+sm
+			margin-bottom: 20px
+			margin-left: 0
+
+
+.basic-contacts
+	&__map
+		margin-bottom: 38px
+	.post-form
+		margin-top: 0
+		max-width: 570px
+		margin-left: 220px
+		margin-bottom: 25px
+	.map
+		height: 410px
+	.map-wrap
+		padding: 0
+		margin-bottom: 38px
+
+.company-form__row_mod
+	.select-wrap
+		// padding-bottom: 60px
+	.basic-contacts.is-active
+		.company-form__row_mod
+			padding-bottom: 60px
+
+.sol-caret-container .sol-caret
+	left: 0
+	top: 5px
+	border-top: 4px solid #888
+	border-right: 4px solid transparent
+	border-left: 4px solid transparent
+
+.sol-selection
+	padding: 10px 55px 10px 25px
+
+.sol-inner-container
+	position: absolute
+	top: 0
+	left: 0
+	height: 45px
+	background-color: #f1ede8 
+	border-radius: 0
+	border: none
+	outline: none
+	max-width: 570px
+	width: 100%
+
+.sol-option
+	cursor: pointer
+
+.sol-option.keyboard-selection,
+.sol-selection:not(.sol-keyboard-navigation) .sol-option:hover
+	background: inherit
+	color: $brown
+	text-decoration: underline
+
+
+.sol-container.sol-active .sol-inner-container
+	border-color: none
+	box-shadow: none
+	background-color: #f1ede8
+
+.sol-container.sol-active .sol-selection-container
+	border-radius: 0
+	border: 0	
+	
+.sol-input-container input[type=text]	
+	color: #62594f
+	padding-left: 27px
+
+.sol-label
+	cursor: pointer
+	border-bottom: 1px solid #f5f5f5	
+
+.sol-results-count,
+.sol-selected-display-item
+	position: relative
+	display: inline-table
+	border: 1px solid #c3beb6
+	background: #ffffff
+	font-size: 15px
+	margin-right: 30px
+	margin-bottom: 10px
+	border-collapse: separate
+	border-radius: 4px
+	font-family: $tahoma
+	padding: 4px 40px 4px 13px
+	font-style: italic
+	font-weight: 500
+	color: #625a4f
+
+.sol-quick-delete, .sol-selected-display-item-text
+	padding: 0
+
+.sol-quick-delete
+	position: absolute
+	top: 1px
+	right: 5px
+	font-size: 18px
+	font-style: normal
+	color: #625a4f
+	&:hover
+		color: #625a4f
+
+
+.sol-current-selection
+	position: relative
+	top: 75px
+	left: 0
+	margin-bottom: 10px	
+		
+.contact-form
+	&__textarea
+		.post-form
+			max-width: 100%
+	.post-form
+		margin-right: 0
+		margin-bottom: 0
+		+md
+			margin-right: 0
+		&__input
+			max-width: 370px
+		&__textarea	
+			height: 76px
+			margin-bottom: 5px
+			+sm
+				margin-bottom: 0
+	.post-form__col
+		+sm		
+			margin-bottom: 0
+	.post-form__mods
+		margin-left: 220px
+		&__input
+			max-width: 570px
+
+.upload-photo
+	&__gallery
+		display: block
+		margin: 0 15px				
+	&__item
+		position: relative
+		width: 272px
+		height: 175px
+		background-color: #e6ddd0
+		padding: 50px 23px 23px
+		z-index: 1
+		text-align: center
+		margin-bottom: 30px
+		+sm
+			width: 100%
+		&:not(:last-child)
+			margin-right: 30px
+	&__photo
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		width: 100%
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+		z-index: 2
+	&__icon
+		font-size: 34px
+		display: block
+		margin-bottom: 5px
+		.icon
+			fill: $brown
+	&__description
+		font-size: 14px
+		color: $brown
+	.select-wrap
+		margin-bottom: 10px	
+
+.upload-gallery
+	.post-form
+		margin: 0
+	.title-hint
+		display: block
+		margin-bottom: 15px
+		font-size: 15px
+		color: #65594d	
+	.file-upload
+		display: flex
+		align-items: center
+		max-width: 100%
+		+sm
+			flex-direction: column
+			align-items: flex-start
+		.post-form__input 
+			+sm
+				margin-bottom: 0	
+	.post-form__col
+		max-width: 470px
+		margin-right: 32px
+		+sm
+			margin-top: 0
+			margin-bottom: 0
+		.post-form__icon
+			position: absolute
+			top: 50%
+			right: 25px
+			transform: translate(50%, -50%)
+			color: $brown
+			font-size: 16px
+			cursor: pointer
+	.post-form__input
+		max-width: 100%
+		margin-bottom: 0
+		padding-right: 45px
+			
+.upload-photo
+	&__nav
+		border-top: 1px solid #eee
+		padding-top: 20px
+		margin-bottom: 36px
+		.page-nav
+			+xs
+				justify-content: flex-start
+		.page-nav__item.active
+			font-weight: 600
+	.upload-photo__gallery_mod
+		margin: 0
+	.upload-photo__item_mod
+		margin: 0 auto 36px	
+	.post-form
+		margin-top: 0
+
+.sorting
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	&__col
+		display: flex
+		align-items: center
+		&:first-child
+			margin-right: 35px
+		+md
+			margin-bottom: 10px
+	&__title
+		font-size: 16px	
+		color: $brown
+	&__list
+		position: absolute
+		left: 26px
+		top: 29px
+		display: none
+		background-color: $white
+		box-shadow: 0 0 10px rgba(#625a4f,.2)
+		padding: 20px 15px
+		z-index: 5
+	&__dropdown
+		position: relative
+		&:hover
+			.sorting__list
+				display: block
+	&__active-name
+		display: flex
+		align-items: center
+		margin-left: 26px
+		font-size: 15px
+		color: #c4c1c1
+		padding-bottom: 1px
+		border-bottom: 2px solid #c4c1c1
+		cursor: pointer
+	&__icon
+		padding-top: 5px
+		margin-left: 15px
+		.icon
+			fill: #c4c1c1
+	&__item
+		&:not(:last-child)
+			border-bottom: 1px solid #eee
+	&__link
+		display: block
+		padding: 5px
+		color: #c4c1c1
+		transition: color .3s
+		&:hover
+			color: $brown		
+
+				
+			
+
+
+.counter-price
+	display: flex
+	align-items: center
+	justify-content: center	
+	&__plus
+		margin-left: 10px
+		margin-bottom: 5px
+		transform: rotate(180deg)
+	&__plus
+		background: none
+		border: none
+		outline: none
+		.icon
+			fill: $brown
+			font-size: 16px
+
+.add-product
+	text-align: center
+	margin-bottom: 60px
+	&__btn
+		display: block
+		width: 48px
+		height: 48px
+		border-radius: 50%
+		background-color: $white_brown_bg
+		line-height: 44px
+		vertical-align: middle
+		text-align: center
+		font-size: 28px
+		color: $brown
+		margin: 0 auto
+		transition: color .3s, background-color .3s
+		&:hover
+			color: $white_brown_bg
+			background-color: $brown
+	&__text
+		margin-top: 10px
+		color: $brown
+		display: inline-block	
+
+
+.details
+	&__save
+		text-align: center
+	&__save-btn
+		font-weight: 600	
+	.contact-form__textarea
+		margin-bottom: 50px
+	.select-wrap
+		margin-bottom: 10px
+		margin-right: 0
+		margin-left: 200px
+	.post-form
+		margin-left: 200px	

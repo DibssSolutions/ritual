@@ -1,0 +1,59 @@
+.ritual-board
+    padding: 130px 0 145px
+    +md
+        padding: 35px 0 60px
+    &__container
+        position: relative
+        display: flex
+        +md
+            flex-direction: column
+            align-items: center
+    &__text
+        text-align: right
+        width: 55%
+        padding-left: 170px
+        +md
+            padding-left: 0
+            width: 100%
+            order: 1
+            text-align: center
+            margin-bottom: 20px
+    &__wrap
+        padding-left: 55px
+        +md
+            padding-left: 0
+            text-align: center
+            margin-bottom: 30px
+    &__head
+        margin-bottom: 105px
+        +md
+            margin-bottom: 35px
+    &__title
+    &__button
+        position: relative
+        img
+            position: absolute
+            top: -65px
+            left: 77px
+            +md
+                display: none
+    &__img
+        position: absolute
+        img
+            display: block
+            width: 100%
+        &_1
+            top: 0
+            left: -338px
+            +md
+                position: initial
+                width: 80%
+                order: 3
+        &_2
+            right: -375px
+            bottom: -145px
+            width: 422px
+            height: 400px
+            overflow: hidden
+            +md
+                display: none

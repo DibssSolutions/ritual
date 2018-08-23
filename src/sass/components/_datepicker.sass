@@ -1,0 +1,95 @@
+.datepicker.datepicker-inline
+	position: relative
+	z-index: 1
+	padding: 15px 35px 15px 280px
+	width: 100%
+	max-width: 100%
+	font-size: 14px
+	border-radius: 0
+	border: 1px solid #e7e7e7
+	+sm
+		padding: 15px 35px 15px 35px
+	.prev,
+	.datepicker-switch,
+	.next
+	.prev,
+	.next
+		position: relative
+		font-size: 0
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			margin-top: -6px
+			background-repeat: no-repeat
+			background-position: 100% 50%
+			background-size: contain
+			width: 7px
+			height: 12px
+	.prev
+		&:hover
+			background-color: transparent
+		&:before
+			left: 0
+			background-image: url(../img/left-arrow.png)
+	.next
+		&:hover
+			background-color: transparent
+		&:before
+			right: 0
+			background-image: url(../img/right-arrow.png)
+	.prev,
+	.next
+		&.disabled
+			visibility: visible
+	.table-condensed
+		thead 
+			tr:nth-child(2)
+				border-bottom: 13px solid $white
+			tr:nth-child(3) th
+				padding-top: 15px
+				font-size: 14px
+				color: #65594d
+				font-weight: 700
+				border-radius: 0
+				box-shadow: inset 0 2px 0 #F6F6F6 
+	.datepicker-switch
+		border-radius: 0
+		color: #65594d
+		font-family: $tahoma
+		font-size: 24px
+		font-weight: 400
+		&:hover
+			background-color: #f1ede8 
+	table tr td.today,
+	table tr td.active
+		color: $white 
+		background: none !important
+		&:before
+			opacity: 1
+	table tr td:not(.disabled).day.focused, table tr td:not(.disabled).day:hover
+		background: none !important
+		color: $white 
+		&:before
+			opacity: 1
+	table tr td
+		position: relative
+		padding-top: 15px
+		padding-bottom: 15px
+		transition: color .3s
+		&:before
+			position: absolute
+			content: "" 
+			top: -3px
+			left: 50%
+			transform: translateX(-50%)
+			width: 20px
+			height: 40px
+			z-index: -1
+			opacity: 0
+			transition: opacity .3s
+			background-image: url(../img/letter-img.png) 
+			background-position: 50% 50% 
+			background-size: contain
+			background-repeat: no-repeat
+			transition: visibility .3s, opacity .3s

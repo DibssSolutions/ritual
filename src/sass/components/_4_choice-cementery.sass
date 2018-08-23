@@ -1,0 +1,121 @@
+.choice	
+	.wind__bg
+		background-position: 50% 0
+	.cemetery-selection__col-right
+		margin-bottom: 15px	
+	.cemetery-selection__img-map
+		padding-bottom: 47%
+		min-height: auto
+	.agent	
+		margin-bottom: 16px
+		padding-bottom: 16px
+		border-bottom: 1px solid #e7e7e7
+		+md
+			display: flex
+			flex-direction: column
+		+sm
+			font-size: 13px
+		&.border
+			border: none
+		&__row
+			display: flex
+			align-items: center
+			flex-wrap: wrap
+		&__col-sm
+			+md
+				margin-bottom: 15px
+			+sm
+				margin: 0 auto 15px
+		&__col-md
+			padding-left: 25px
+			+sm
+				padding-left: 0
+		&__col
+			width: auto
+			text-align: left
+			&.text-center
+				text-align: center
+				+sm
+					text-align: left
+		&__col-title
+			text-transform: none
+			text-align: center
+			margin-bottom: 15px
+			+sm
+				text-align: left
+	.contacts-item
+		position: relative
+		display: flex
+		align-items: center
+		&__input
+			padding: 0 20px 0 10px
+			font-weight: 600
+			color: $brown
+			font-size: 15px
+			width: 100px
+			+placeholder
+				font-weight: 600
+				color: $brown
+				font-size: 15px
+		&__label
+			position: absolute
+			right: 60px
+			top: 0
+			cursor: pointer
+			.icon
+				fill: $brown
+		span
+			display: inline-block
+			margin-left: 10px
+			font-weight: 600
+			+xs
+				display: block
+
+.bottom-text
+	max-width: 975px
+	margin: 0 auto
+	+md
+		margin: 30px auto
+	.drop__show p,
+	.drop__hidden p	
+		margin-bottom: 25px
+	.drop__title
+		font-size: 18px
+		font-family: $tahoma
+		font-weight: 600
+	.our-contacts__list
+
+.input-group
+	margin-left: 20px
+	max-width: 280px
+	.form-control
+		position: relative
+		border-radius: 0
+		background-color: #f3eee8
+		box-shadow: none
+		outline: none
+		border: none	
+	.input-group-addon
+		background-color: #f3eee8
+		border: none
+		outline: none
+		border-radius: 0
+
+
+.datepicker
+	color: $brown
+	visibility: inherit !important
+	opacity: 1
+	max-width: 300px
+	margin: 0
+	padding: 20px
+	&:not(.datepicker-inline)
+		position: absolute
+		table tr td.active
+			background-color: #e6ddd0 !important
+		table tr td.active,
+		table tr td.active.disabled,
+		table tr td.active.disabled:hover,
+		table tr td.active:hover
+			background-image: linear-gradient(to bottom,#e6ddd0,#e6ddd0) !important
+			color: $brown

@@ -5,7 +5,7 @@
 			<div class="footer__bg"></div>
 			<div class="row">
 				<div class="col-md-3 col-sm-6">
-					<a href="#" class="footer-logo"><img src="./img/logo-sm.png" alt="logo-sm"></a>
+					<a href="#" class="footer-logo"><img class="js-lazy" data-src="./img/logo-sm.png" alt="logo-sm"></a>
 					<ul class="footer-list">
 						{% for text in ['О портале', 'Доска объявлений ', 'Похороны своими силами', 'Рекламодателям'
 							] %}
@@ -17,26 +17,26 @@
 					<h4 class="title-sm">Последние некрологи</h4>
 					{% for item in [
 						{
-							img: '1.png',
+							img: 'tie.png',
 							name: 'Фамилия И. О.',
 							label: 'Дата похорон: ',
 							date: 'Вт. 03-12-2018'
 						},
 						{
-							img: '1.png',
+							img: 'photo-with-ribbon.png',
 							name: 'Фамилия И. О.',
 							label: 'Дата похорон: ',
 							date: 'Вт. 03-12-2018'
 						},
 						{
-							img: '1.png',
+							img: 'tie.png',
 							name: 'Фамилия И. О.',
 							label: 'Дата похорон: ',
 							date: 'Вт. 03-12-2018'
 						}
 					] %}
 						<div class="block">
-							<div class="block__img" style="background-image: url(./img/{{ item.img }});"></div>
+							<div class="block__img js-lazy" data-src="./img/{{ item.img }}"></div>
 							<div class="block__wrap">
 								<a href="#" class="block__name">{{ item.name }}</a>
 								<div class="block__label">{{ item.label }}</div>
@@ -49,23 +49,23 @@
 					<h4 class="title-sm">Последние статьи</h4>
 					{% for item in [
 						{
-							img: '1.png',
+							img: 'aside-post-img.png',
 							title: 'Что такое сглаз и как от него избавится?',
 							label: 'Имя Фамилия'
 						},
 						{
-							img: '1.png',
+							img: 'post-img.png',
 							title: 'Что снится к любви и наслаждению, а что – к разлуке и печали',
 							label: 'Имя Фамилия'
 						},
 						{
-							img: '1.png',
+							img: 'aside-post-img.png',
 							title: 'Что такое сглаз и как от него избавится?',
 							label: 'Имя Фамилия'
 						}
 					] %}
 						<div class="block">
-							<div class="block__img" style="background-image: url(./img/{{ item.img }});"></div>
+							<div class="block__img js-lazy" data-src="./img/{{ item.img }}"></div>
 							<div class="block__wrap">
 								<a href="#" class="block__title">{{ item.title }}</a>
 								<div class="block__label">{{ item.label }}</div>
@@ -77,23 +77,23 @@
 					<h4 class="title-sm">Доска объявлений</h4>
 					{% for item in [
 						{
-							img: '1.png',
+							img: 'notes.png',
 							title: 'Заголовок объявления',
 							label: 'Категория'
 						},
 						{
-							img: '1.png',
+							img: 'notes.png',
 							title: 'Еще один заголовок объявления',
 							label: 'Категория'
 						},
 						{
-							img: '1.png',
+							img: 'notes.png',
 							title: 'Заголовок объявления',
 							label: 'Категория'
 						}
 					] %}
 						<div class="block">
-							<div class="block__img" style="background-image: url(./img/{{ item.img }});"></div>
+							<div class="block__img js-lazy" data-src="./img/{{ item.img }}"></div>
 							<div class="block__wrap">
 								<a href="#" class="block__title">{{ item.title }}</a>
 								<div class="block__label">{{ item.label }}</div>

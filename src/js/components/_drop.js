@@ -1,5 +1,4 @@
 import { OPEN, ACTIVE, widthMD, widthSM, WIN } from '../constants';
-import { TimelineMax } from 'gsap';
 
 ;(function() {
 
@@ -53,6 +52,7 @@ import { TimelineMax } from 'gsap';
       textClose = _this.data('text-close'),
       btnTextWrap = _this.find('.js-drop-btn-text'),
       duration = 300;
+    $('.drop__show').toggleClass('no-gradient');
 			
     if (!_this.hasClass(OPEN)) {
       _this.addClass(OPEN);

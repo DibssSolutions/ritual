@@ -1,0 +1,228 @@
+.banner-advertising
+	&__title
+		text-transform: none
+		margin-bottom: 15px
+	.ritual-agent
+		&__title	
+			text-transform: none
+		&__label
+			border: none
+			width: 100%
+			&:after
+				top: 67px
+				+md
+					top: 17px
+			&:before
+				top: 70px
+				+md
+					top: 20px	
+			&:hover
+				.cv
+					border-top: 0
+					background-color: transparent
+			&.ritual-agent__label_top
+				&:before
+					top: 20px
+				&:after
+					top: 17px
+	.my-companies__select-text
+		font-size: 14px
+		color: #b1a79b
+		white-space: nowrap
+	.select
+		width: 125px
+		margin-left: 15px
+		.select2-selection--single .select2-selection__rendered
+			color: #b1a79b
+		.select2-results__options
+			padding-right: 20px				
+
+
+.banner-adver
+	&__col-header
+		width: 100%
+		height: 74px
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+	&__row
+		display: flex
+		align-items: center
+		+md
+			flex-wrap: wrap
+	&__row-number
+		font-size: 16px
+		font-weight: 600	
+	&__left-col
+		flex: 1 1 5%
+	&__right-col
+		flex: 1 1 95%
+		margin-right: 40px
+	&__row_mod
+		align-items: flex-start
+		.banner-adver__right-wrap
+			display: flex
+			align-items: flex-start
+		.banner-adver__col-header	
+			max-width: 155px
+			height: 259px
+		.banner-adver__left-col
+			margin-right: 15px	
+		.banner-adver__right-col	
+			margin-right: 0
+		.cv
+			padding: 9px
+			margin-top: 40px
+			flex-direction: column
+			&__views
+				margin-bottom: 16px
+	&__col-footer
+		.cv
+			border-top: 0
+			background-color: $white
+			&__views
+				display: flex
+				align-items: center
+			&__views-icon
+				margin-right: 10px	
+				.icon
+					fill: #b1a79b
+					font-size: 18px
+			&__views-icon_mod
+				.icon
+					font-size: 14px
+			&__date
+				color: #b1a79b
+			&__text
+				color: #b1a79b		
+			&:hover
+				border-top: 0
+				background-color: $white				
+
+.banner-scale
+	display: flex
+	align-items: flex-end
+	&__line
+		display: block
+		width: 3px
+		background-color: #dcdddd
+		&:first-child
+			height: 9px
+		&:nth-child(2)
+			height: 12px
+		&:nth-child(3)
+			height: 15px	
+		&:not(:last-child)
+			margin-right: 3px
+		&.green		
+			background-color: #67ac65
+
+.load-banner
+	.file-upload
+		justify-content: space-between
+	.upload-gallery	
+		.post-form__col
+			flex: 1 1 600px
+			max-width: 600px
+			&__input
+				width: 100%
+
+.build-banner
+	&__title-block
+		margin-bottom: 40px
+	&__title
+		margin-bottom: 15px
+		text-transform: none
+	.post-form
+		&__col
+			display: flex
+			align-items: center
+			justify-content: space-between
+			margin-bottom: 25px
+		&__input
+			flex: 1 1 370px
+			margin-bottom: 0
+			margin-right: 50px
+	.banner-adver
+		&__col-header
+			width: 100%
+			height: 240px
+			max-width: 145px
+	.file-upload
+		flex-direction: column
+		align-items: flex-start
+		.post-form__col
+			width: 100%
+			max-width: 600px
+		.post-form__input
+			margin-right: 0			
+
+.slidecontainer
+	position: relative
+	flex: 1 1 182px
+	&__label
+		display: block
+		width: 100%
+		height: 8px
+		background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)
+		outline: none
+		border: 1px solid $brown
+		border-radius: 0
+	&__title
+		position: absolute
+		top: -45px
+		left: 0
+		font-size: 15px
+		color: $brown
+	.ui-slider-handle.ui-state-default.ui-corner-all
+		border: none
+		background: #c2c0c0
+		font-weight: 400
+		color: #555
+		width: 9px
+		height: 30px
+		border-radius: 0
+		outline: none
+		margin-top: -8px
+input[type="range"]
+	display: none
+
+.delivery-period
+	margin-bottom: 50px
+	&__title	
+		text-transform: none
+		margin-bottom: 15px
+	.agent
+		&__row
+			display: flex
+			align-items: center
+			justify-content: space-between
+			+md
+				flex-wrap: wrap
+	.contacts-item
+		display: flex
+		align-items: center
+		margin-left: 15px
+		.input-group
+			width: 145px
+		.form-control	
+			height: 45px
+				
+.page-show
+	padding-bottom: 45px
+	&__select-text
+		display: block
+		margin-bottom: 15px
+	.select
+		position: relative
+		margin-left: 0
+		margin-right: 60px
+		margin-bottom: 25px
+		width: 450px
+		&__icon
+			position: absolute
+			right: -50px
+			top: 50%
+			transform: translate(-50%, -50%)
+			.icon
+				fill: #c9c2b4

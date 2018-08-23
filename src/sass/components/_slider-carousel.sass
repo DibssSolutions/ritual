@@ -1,0 +1,93 @@
+.choice-slider
+	padding: 0 15px
+	&__wrap
+		padding: 23px 0 30px
+		border-bottom: 1px solid #eee
+		+md
+			padding-bottom: 35px
+		+sm
+			padding-top: 16px	
+		p
+			max-width: 655px
+			margin: 0 auto
+			text-align: center
+			margin-bottom: 30px
+	&__title
+		text-align: center
+		margin-bottom: 26px
+		+sm
+			margin-bottom: 16px
+
+.slider
+	font-size: 0
+	&__for
+		position: relative
+		margin-bottom: 23px
+	&__prev,
+	&__next
+		position: absolute
+		bottom: -75px
+		transform: translate(0, -50%)
+		background: none
+		outline: none
+		color: $brown
+		font-size: 15px
+		z-index: 2
+		+md
+			bottom: -50px
+	&__prev
+		left: 0
+		i
+			margin-right: 15px
+	&__next
+		right: 0	
+		i
+			margin-left: 15px
+	&__title
+		position: absolute
+		left: 0
+		bottom: 0
+		padding: 0 28px 18px
+		color: $white
+		z-index: 2
+		+sm
+			font-family: $cormorant_infant
+	&__slide
+		position: relative
+		width: 100%
+		height: 0
+		padding-bottom: 40%
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+		+sm
+			min-height: 170px
+		&:after
+			position: absolute
+			content: ''
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,.8) 100%)	
+			z-index: 1
+	&__slide-small
+		max-width: 68px
+		height: 0
+		padding-bottom: 100%
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% 50%
+		cursor: pointer
+	&__nav
+		+md
+			display: none
+		.slick-list.draggable
+			padding: 0 70px !important
+			max-width: 925px
+			margin: 0 auto
+		.slick-slide
+			width: 68px !important
+			margin-right: 34px
+			&:last-child
+				margin-right: 0

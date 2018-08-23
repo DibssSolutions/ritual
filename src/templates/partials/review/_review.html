@@ -1,0 +1,257 @@
+<div class="page-head">
+		<div class="container page-head__container">
+			<ul class="bcrumbs page-head__bcrumbs">
+				<li>
+					<a href="#">
+						<span class="showin">{{ mixins.icon('house') }}</span>
+						<span class="hidein">Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">Obituaries</a>
+				</li>
+				<li>Past</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="review">
+		<div class="review__container container">
+			<div class="review__head section-head text-center">
+				<h1 class="review__title title-l">Отзыв по компании ……</h1>
+			</div>
+			<div class="review__subtitle title-m mob-hide">Компании</div>
+			<div class="review__row row">
+				<div class="col-md-3 col-sm-3 sidebar mob-hide">
+					<div class="side-widget mob-hide">
+						<form class="search color">
+							<input type="search" placeholder="Поиск по названию ...">
+							<button type="submit">
+								<i class="fa fa-search"></i>
+							</button>
+						</form>
+					</div>
+					<div class="table__tbody ps ps--active-y" id="style-scroll">
+						{% for i in [1,2,3,4] %}
+							<a href="#" class="company-card">
+								<div class="company-card__type">Ритуальное агентство</div>
+								<div class="company-card__name">Название компании в две строки</div>
+								<div class="company-card__rating">
+									<span class="ratings">
+										<span class="fi flaticon-favorite"></span> 
+										<span class="fi flaticon-favorite"></span> 
+										<span class="fi flaticon-favorite"></span> 
+										<span class="fi flaticon-favorite"></span> 
+										<span class="fi flaticon-favorite"></span> 
+										<span class="ratings__appraisal">5.0</span>
+									</span>
+								</div>
+								<div class="company-card__info">
+									<ul>
+										<li>{{ mixins.icon('eye') }}111</li>
+										<li>{{ mixins.icon('speech') }}7</li>
+										<li>{{ mixins.icon('heart') }}16</li>
+									</ul>
+								</div>
+							</a>
+						{% endfor %}
+					</div>
+					<div class="side-widget">
+						<div class="rating-filter">
+							<h5 class="title-s">Сортировка</h5>
+							<div class="rating-filter__wrap">
+								<div class="rating-filter__radio">
+									<input type="radio" id="sorting-1" name="rating-filter" checked>
+									<label for="sorting-1">По количеству отзывов</label>
+								</div>
+								<div class="rating-filter__radio">
+									<input type="radio" id="sorting-2" name="rating-filter">
+									<label for="sorting-2">Новизне</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="side-widget width-img-angel hidein">
+						<img class="js-lazy" data-src="img/angel-statue.jpg" alt="angel-statue">
+					</div>
+				</div>
+				<div class="col-md-9 col-sm-9">
+					<div class="review__top">
+						<div class="review__body">
+							<div class="review__item">
+								<div class="row review__row">
+									<div class="col-md-3 col-sm-3 col-xs-4">
+										<div class="posts-image posts-image_full-md posts-image_full-rad js-lazy" data-src="img/person-1.png">
+										</div>
+									</div>
+									<div class="col-md-9 col-sm-9 col-xs-8">
+										<div class="staff">
+											<div class="staff__title-block">
+												<span class="staff__title">Имя Фамилия</span>
+												<span class="staff__description">Funeral Director/Embalmer</span>
+											</div>
+											<div class="staff__date">
+												{{ mixins.icon('calendar') }} 23/11/17 <span>13:15</span>
+											</div>
+											<div class="staff__reviews">
+												{{ mixins.icon('speech') }} Все отзывы автора: 
+												<span>12</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="review__advantages">
+								<div class="review__advantage">
+									<div class="review__advantage-title">
+										<span class="review__icon"></span>
+										Достоинства:
+									</div>
+									<div class="review__advantage-text">
+										I like to call Funeral Home my home. It was in Sun Prairie, Wisconsin where I graduated from high school in 1969 and lettered in football at Sun prairie High school.  Lorem ip
+									</div>
+								</div>
+								<div class="review__advantage">
+									<div class="review__advantage-title">
+										<span class="review__icon review__icon_negative"></span>
+										Недостатки:
+									</div>
+									<div class="review__advantage-text">
+										I like to call Funeral Home my home. It was in Sun Prairie, Wisconsin where 
+									</div>
+								</div>
+							</div>
+							<div class="review__text">
+								<p>
+									I like to call Funeral Home my home. It was in Sun Prairie, Wisconsin where I graduated from high school in 1969 and lettered in football at Sun prairie High school.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. plicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+								</p>
+							</div>
+						</div>
+						<div class="review__company-ratings company-ratings">
+							<div class="company-ratings__wrap">
+								<div class="company-ratings__item">
+									<div class="company-ratings__col-left">
+										<span>Чистота, уют</span>
+									</div>
+									<div class="company-ratings__col-right">
+										<span class="ratings">
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="ratings__appraisal">5.0</span>
+										</span>
+									</div>
+								</div>
+								<div class="company-ratings__item">
+									<div class="company-ratings__col-left">
+										<span>Соответствие Цена-качество</span>
+									</div>
+									<div class="company-ratings__col-right">
+										<span class="ratings">
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="ratings__appraisal">5.0</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="company-ratings__wrap">
+								<div class="company-ratings__item">
+									<div class="company-ratings__col-left">
+										<span>Персонал</span>
+									</div>
+									<div class="company-ratings__col-right">
+										<span class="ratings">
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="ratings__appraisal">5.0</span>
+										</span>
+									</div>
+								</div>
+								<div class="company-ratings__item">
+									<div class="company-ratings__col-left">
+										<span>Порекомендую друзьям</span>
+									</div>
+									<div class="company-ratings__col-right">
+										<span class="ratings">
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="fi flaticon-favorite"></span> 
+											<span class="ratings__appraisal">5.0</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="social">
+								<a class="social__link" href="#">
+									<i class="fa fab fa-facebook-f social__icon"></i>
+								</a>
+								<a class="social__link" href="#">
+									<i class="fa fab fa-odnoklassniki social__icon"></i>
+								</a>
+								<a class="social__link" href="#">
+									<i class="fi flaticon-social-1 social__icon"></i>
+								</a>
+								<a class="social__link" href="#">
+									<i class="fa fab fa-vk social__icon"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="review__list">
+						<h4 class="review__list-title title-m text-center">Другие отзывы по данной компании</h4>
+						{% for i in range(0, 3) %}
+						<div class="team-info">
+							<span class="ratings pull-right">
+								<span class="fi flaticon-favorite"></span> 
+								<span class="fi flaticon-favorite"></span> 
+								<span class="fi flaticon-favorite"></span> 
+								<span class="fi flaticon-favorite"></span> 
+								<span class="fi flaticon-favorite"></span> 
+								<span class="ratings__appraisal">5.0</span>
+							</span>
+							<div class="col-md-3 col-sm-3 col-xs-12">
+								<div class="posts-image posts-image_full-md posts-image_full-rad js-lazy" data-src="img/person-1.png">
+								</div>
+							</div>
+							<div class="col-md-9 col-sm-9 col-xs-12">
+								<div class="staff">
+									<div class="staff__title-block">
+										<span class="staff__title">Имя Фамилия</span>
+										<span class="staff__description">Funeral Director/Embalmer</span>
+									</div>
+									<p>
+										I like to call Funeral Home my home. It was in Sun Prairie, Wisconsin where I graduated from high school in 1969 and lettered in football at Sun prairie High school.
+									</p>
+									<div class="staff__date"> 23/11/17 </div>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+					<!-- Start page-nav -->
+					{% include "partials/blogs/_page-nav.html" %}
+					<!-- End page-nav -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="bottom-image">
+			<img class="js-lazy" data-src="img/rose-angel.png" alt="rose-angel">
+		</div>
+	</div>

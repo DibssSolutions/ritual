@@ -1,0 +1,45 @@
+.page-of-memory
+	padding-top: 25px
+	background-repeat: no-repeat
+	background-position: 50% 100%
+	background-size: contain
+	+sm
+		padding-top: 15px
+	&__container
+	&__head
+		margin-bottom: 40px
+		+sm
+			margin-bottom: 15px
+	&__title
+		margin-bottom: 15px
+	&__person
+		margin-bottom: 30px
+	&__details
+		span
+			font-weight: 700
+	&__personal-info
+		margin-bottom: 40px
+	&__list
+		margin-bottom: 25px
+		.agent
+			border-top: 1px solid #f3f1ea
+			padding: 18px 0 10px
+			&__title
+				display: none
+			&:hover
+				.agent__title
+					display: block	
+			.address
+				margin-left: 40px
+
+	&__necrologue
+		margin-bottom: 50px
+
+.necrologue
+	padding-top: 40px
+	border-top: 1px solid #f3f1ea
+	&__title
+		text-transform: none
+		margin-bottom: 20px
+	p:not(:last-child)
+		margin-bottom: 20px

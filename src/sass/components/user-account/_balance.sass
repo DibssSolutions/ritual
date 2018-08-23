@@ -1,0 +1,83 @@
+.balance-form
+	margin-left: 95px
+	+sm
+		margin-left: 0
+	&__title
+		font-size: 18px
+		font-family: $tahoma
+		margin-bottom: 28px
+		+sm
+			font-size: 16px
+			margin-bottom: 15px				
+	&__box
+		max-width: 470px
+		border: 1px solid #e6e6e6
+		padding: 23px 23px 35px
+		margin-bottom: 21px
+		+sm
+			padding: 10px 12px 12px
+			max-width: 100%	
+		.paid-info
+			&__balance
+				width: 100%
+				font-size: 20px
+			&__balance-sum
+				display: block
+				font-family: $tahoma
+				font-weight: 400	
+				margin-top: 15px
+	&__btn-block
+		text-align: center			
+	&__row
+		padding-bottom: 15px
+		margin-bottom: 25px
+		border-bottom: 1px solid #f4f1ea
+		+sm
+			border-bottom: 1px solid #f4f1ea
+		.form-radio
+			display: flex		
+			flex-direction: column
+			justify-content: flex-start
+			align-items: flex-start
+			padding-bottom: 10px
+			&__radio
+				margin-bottom: 10px
+				margin-right: 0
+				input
+					margin-top: 0
+					margin-right: 15px	
+	&__label
+		font-size: 16px
+		color: $brown
+	&__input
+		background-color: #f1ede8
+		max-width: 143px
+		height: 46px
+		margin: 0 20px
+		padding: 5px 20px
+		color: $brown
+		font-size: 20px
+		font-weight: 500
+		+placeholder
+			text-align: center
+			color: $brown
+			font-size: 20px
+			font-weight: 500
+	&__list
+		padding-bottom: 20px
+		border-bottom: 1px solid #e6e6e6
+		margin-bottom: 10px
+	&__item
+		display: flex	
+		align-items: center
+		justify-content: space-between
+		color: #b1a79b
+		font-size: 13px
+		&:not(:last-child)
+			margin-bottom: 12px
+		span
+			&:not(:last-child)
+				margin-right: 20px
+	&__price
+		white-space: nowrap
+				

@@ -1,0 +1,50 @@
+.memory-gallery
+    padding: 75px 0
+    &__row
+    &__col
+    &__list
+        margin-bottom: 20px
+    &__card
+        position: relative
+        margin-bottom: 22px
+        &:hover
+            .services-card__img
+                opacity: 1
+            .memory-gallery__text
+                opacity: .85
+                visibility: visible
+    &__upload
+        .post-form__col
+            width: 100%
+            margin-right: 0
+            max-width: none
+            margin-bottom: 10px
+            +sm
+                margin-bottom: 15px
+        .post-form__label
+            +sm
+                top: 13px
+            
+                
+    &__img
+        height: 175px
+        margin-bottom: 0
+    &__text
+        position: absolute
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+        top: 0
+        left: 0
+        background-color: $brown_orange
+        opacity: 0
+        visibility: hidden
+        z-index: 5
+        transition: opacity .3s
+        pointer-events: none
+        p
+            max-width: 130px
+    

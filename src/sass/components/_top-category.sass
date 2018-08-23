@@ -1,0 +1,82 @@
+.top-category
+    padding: 25px 0 55px
+    &__head
+    &__list
+    &__row
+        display: flex
+        +md
+            display: block
+    &__col
+    &__map
+        height: 100%
+        +md
+            height: 625px
+
+.rating-bar
+    position: relative
+    padding: 44px 0 44px
+    background-color: $white_brown_bg
+    &:before
+        content: ''
+        position: absolute
+        top: 7px
+        bottom: 7px
+        left: 7px
+        right: 7px
+        border: 1px solid #fff
+        z-index: 2
+        pointer-events: none
+    &__nav
+        position: relative
+        z-index: 5
+        ul
+            padding: 0 13px
+            text-align: center
+        li
+            display: inline-block
+            padding: 3px 7px
+            border-radius: 5px
+            font-size: 12px
+            transition: box-shadow .3s
+        li.active
+            box-shadow: 0 0 0 1px $brown_orange
+.rating-list
+    counter-reset: section
+    margin-bottom: 20px
+
+
+.rating-item
+    position: relative
+    padding: 8px 0 5px 60px
+    background-color: $gray_brown
+    &:nth-child(even)
+        background-color: $white_brown_bg
+    &:nth-child(-n+3)
+        &:before
+            background: none
+    &:before
+        counter-increment: section
+        content: counter(section)
+        position: absolute
+        width: 18px
+        height: 18px
+        border-radius: 50%
+        top: 17px
+        left: 17px
+        color: #fff
+        font-size: 12px
+        font-weight: 700
+        text-align: center
+        background-color: $brown_orange
+        z-index: 2
+    &__name
+        font-weight: 700
+    &__description
+        font-size: 12px
+        color: #978b7b
+    &__icon
+        position: absolute
+        font-size: 28px
+        top: 10px
+        left: 13px
+        z-index: 1

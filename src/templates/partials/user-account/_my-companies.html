@@ -1,0 +1,666 @@
+{% set inputIdOne = [
+	{
+		id1: 'sbox5',
+		for1: 'sbox5'
+	},
+	{
+		id1: 'sbox6',
+		for1: 'sbox6'
+	},
+	{
+		id1: 'sbox7',
+		for1: 'sbox7'
+	},
+	{
+		id1: 'sbox8',
+		for1: 'sbox8'
+	}
+]
+%}
+{% set inputIdTwo = [
+	{
+		id2: 'boxx9',
+		for2: 'boxx9'
+	},
+	{
+		id2: 'boxx10',
+		for2: 'boxx10'
+	},
+	{
+		id2: 'boxx11',
+		for2: 'boxx11'
+	},
+	{
+		id2: 'boxx12',
+		for2: 'boxx12'
+	},
+	{
+		id2: 'boxx13',
+		for2: 'boxx13'
+	},
+	{
+		id2: 'boxx14',
+		for2: 'boxx14'
+	}
+]
+%}
+
+<div class="user-account__row row">
+	<aside class="user-account__aside">
+		<div class="col col-md-3 col-sm-4 col-xs-12">
+			<div class="person-info__row">
+				<div class="person-info__col">
+					<div class="person-info__photo">
+						<img class="js-lazy" data-src="./img/memory-item.jpg" alt="photo">
+					</div>
+				</div>
+				<div class="person-info__col">
+					<div class="person-info__general text-center">
+						<p>
+							Фамилия Имя Отчество
+						</p>
+					</div>
+					<div class="user-account__nav">
+						<ul class="user-account__info-list">
+							<li class="user-account__info-item">
+								На сайте с: 12.09.17
+							</li>
+							<li class="user-account__info-item">
+								Последний визит: 12.09.17
+							</li>
+							<li class="user-account__info-item">
+								Всего отзывов: 15
+							</li>
+							<li class="user-account__info-item">
+								Всего статей: 11
+							</li>
+						</ul>
+						<ul class="user-account__nav-list  mob-hide">
+							<li class="user-account__nav-item">
+								<a href="#" class="user-account__nav-link">
+									<i class="fa fa-angle-right"></i>
+									Личная информация
+								</a>
+							</li>
+							<li class="user-account__nav-item">
+								<a href="#" class="user-account__nav-link">
+									<i class="fa fa-angle-right"></i>
+									Мои объявления
+								</a>
+							</li>
+							<li class="user-account__nav-item">
+								<a href="#" class="user-account__nav-link">
+									<i class="fa fa-angle-right"></i>
+									Баланс
+								</a>
+							</li>
+							<li class="user-account__nav-item">
+								<a href="#" class="user-account__nav-link">
+									<i class="fa fa-angle-right"></i>
+									Мои посты
+								</a>
+							</li>
+							<li class="user-account__nav-item">
+								<a href="#" class="user-account__nav-link is-active">
+									<i class="fa fa-angle-right"></i>
+									Мои компании и товары
+								</a>
+							</li>
+							<li class="user-account__nav-item">
+								<a href="#" class="user-account__nav-link">
+									<i class="fa fa-angle-right"></i>
+									Баннерная реклама
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<div class="col-md-9 col-sm-8 col-xs-12">
+		<div class="my-companies">
+			<form class="my-companies__form" action="/">
+				<div class="my-companies__title-block memory-form__title_bordered">
+					<h4 class="memory-form__title title-sm">
+						Мои компании
+					</h4>
+					<button type="submit" class="memory-form__btn btn">
+						Добавить компанию
+					</button>
+				</div>
+				<div class="row">
+					{% for item in inputIdOne %}
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="ritual-agent">
+							<div class="ritual-agent__label ritual-agent__label_mod">
+								<input class="input-checkbox" type="checkbox" name="verify" id="{{ item.id1 }}">
+								<label  for="{{ item.for1 }}" class="label-checkbox"></label>
+								<div class="ritual-agent__wrap">
+									<div class="ritual-agent__image">
+										<img class="js-lazy" data-src="./img/logo1.png" alt="logo">
+									</div>
+									<div class="ritual-agent__text">
+										<h4 class="ritual-agent__name-title title-s ">
+											Название компании
+										</h4>
+										<div class="ritual-agent__descr">
+											<div class="product-reviews">
+												<span class="pr-ratings">
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<span class="ratings__appraisal">5.0</span>
+												</span>
+											</div>
+										</div>
+										<div class="cv">
+											<div class="cv__views">
+												<span class="cv__views-icon">
+													{{ mixins.icon('eye') }}
+												</span>
+												<span class="cv__views-counter">111</span>
+											</div>
+											<div class="cv__views">
+												<i class="fa fas fa-comment"></i>
+												<span class="cv__views-counter">7</span>
+											</div>
+											<div class="cv__views">
+												<i class="fa fas fa-heart"></i>
+												<span class="cv__views-counter">16</span>
+											</div>
+										</div>
+									</div>
+								</div>    
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+				<span class="desition">Выберите компанию, которую собираетесь редактировать.</span>
+				<div class="row">
+					<div class="col-md-11">
+						<!-- Start delete-account -->
+							<div class="paid-services">
+								<div class="paid-services__title-block">
+									<h4 class="paid-services__title title-s">
+										<span class="paid-services__icon">
+											{{ mixins.icon('moneybag') }}
+										</span>
+										<span class="paid-services__text">
+											Платные услуги
+										</span>
+									</h4>
+									<span class="paid-services__desc">
+										Применить для выбранных объявлений
+									</span>
+								</div>
+								<div class="paid-services__wrap">
+									<ul class="paid-list">
+										<li class="paid-list__item">
+											<div class="paid-list__col">
+												<input type="checkbox" class="paid-list__input" id="cards1">
+												<label for="cards1" class="paid-list__label">
+													Поднятие вверх списка
+												</label>
+											</div>
+											<div class="paid-list__col hidein">
+												<p>
+													(пояснительный текст к услуге идет тут в одну строку)
+												</p>
+											</div>
+											<div class="paid-list__col">
+												<span class="paid-list__col-text">
+													150 ₽
+												</span>
+											</div>
+										</li>
+										<li class="paid-list__item">
+											<div class="paid-list__col">
+												<input type="checkbox" id="cards2" class="paid-list__input">
+												<label for="cards2" class="paid-list__label">
+													Топ объявление
+												</label>
+											</div>
+											<div class="paid-list__col">
+												<div class="select">
+													<select name="year-company" id="period5" style="width: 100%" class="js-select">
+														<option value="1">Неделя</option>
+														<option value="2">Месяц</option>
+														<option value="3">Год</option>
+													</select>
+												</div>
+											</div>
+											<div class="paid-list__col hidein">
+												<p>
+													(пояснительный текст к услуге идет тут)
+												</p>
+											</div>
+											<div class="paid-list__col">
+												<span class="paid-list__col-text">
+													150 ₽
+												</span>
+											</div>
+										</li>
+										<li class="paid-list__item">
+											<div class="paid-list__col">
+												<input type="checkbox" id="cards3" class="paid-list__input">
+												<label for="cards3" class="paid-list__label">
+													Платное объявление 
+												</label>
+											</div>
+											<div class="paid-list__col">
+												<div class="select">
+													<select name="year-company" id="period6" style="width: 100%" class="js-select">
+														<option value="1">Неделя</option>
+														<option value="2">Месяц</option>
+														<option value="3">Год</option>
+													</select>
+												</div>
+											</div>
+											<div class="paid-list__col hidein">
+												<p>
+													(пояснительный текст к услуге идет тут)
+												</p>
+											</div>
+											<div class="paid-list__col">
+												<span class="paid-list__col-text">
+													150 ₽
+												</span>
+											</div>
+										</li>
+										<li class="paid-list__item">
+											<div class="paid-list__col">
+												<input type="checkbox" id="cards4" class="paid-list__input">
+												<label for="cards4" class="paid-list__label">
+													Срочное объявление
+												</label>
+											</div>
+											<div class="paid-list__col">
+												<div class="select">
+													<select name="year-company" id="period7" style="width: 100%" class="js-select">
+														<option value="1">Неделя</option>
+														<option value="2">Месяц</option>
+														<option value="3">Год</option>
+													</select>
+												</div>
+											</div>
+											<div class="paid-list__col hidein">
+												<p>
+													(пояснительный текст к услуге идет тут)
+												</p>
+											</div>
+											<div class="paid-list__col">
+												<span class="paid-list__col-text">
+													150 ₽
+												</span>
+											</div>
+										</li>
+										<li class="paid-list__item">
+											<div class="paid-list__col">
+												<input type="checkbox" id="cards5" class="paid-list__input">
+												<label for="cards5" class="paid-list__label">
+													Продлить размещение
+												</label>
+											</div>
+											<div class="paid-list__col">
+												<div class="select">
+													<select name="year-company" id="period8" style="width: 100%" class="js-select">
+														<option value="1">Неделя</option>
+														<option value="2">Месяц</option>
+														<option value="3">Год</option>
+													</select>
+												</div>
+											</div>
+											<div class="paid-list__col hidein">
+												<p>
+													(пояснительный текст к услуге идет тут)
+												</p>
+											</div>
+											<div class="paid-list__col">
+												<span class="paid-list__col-text">
+													0 ₽
+												</span>
+											</div>
+										</li>
+										<li class="paid-list__item">
+											<div class="paid-list__col">
+												<span class="paid-list__col-text">
+													Итого
+												</span>
+											</div>
+											<div class="paid-list__col">
+												<span class="paid-list__col-text">
+													300 ₽
+												</span>
+											</div>
+										</li>
+									</ul>
+									<div class="paid-services__footer">
+										<div class="paid-info">
+											<div class="paid-info__balance hidein">
+												На вашем балансе  
+												<span class="paid-info__balance-sum">355 ₽</span>
+											</div>
+											<div class="paid-info__pay hidein">
+												Требуется дополнительно оплатить 
+												<span class="paid-info__pay-sum">944 ₽</span>
+											</div>
+											<button type="submit" class="paid-info__btn btn btn_bold">
+												Оплатить
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						<!-- End delete-account  -->
+					</div>
+				</div>
+			</form>
+			<form class="my-companies__form hidein" action="/">
+				<div class="my-companies__title-block memory-form__title_bordered">
+					<div class="my-companies__col">
+						<h4 class="memory-form__title title-sm">
+							Мои Товары
+						</h4>
+						<span class="memory-form__descr">
+							(мастерская ритуальных услуг “Ангел”)
+						</span>
+					</div>
+					<div class="my-companies__col">
+						<div class="delete-account">
+							<button type="submit" class="delete-account__btn">
+								<span class="delete-account__text">
+									Выбрать все
+								</span>
+							</button>
+						</div>
+						<div class="delete-account">
+							<button type="submit" class="delete-account__btn">
+								<span class="delete-account__icon">
+									{{ mixins.icon('cancel') }}
+								</span>
+								<span class="delete-account__text">
+									Удалить выбранное
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="companies-group all-companies__group">
+					<div class="row">
+					{% for item in inputIdTwo %}
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="ritual-agent ritual-agent_mod">
+							<div class="ritual-agent__label">
+								<input class="input-checkbox" type="checkbox" name="verify" id="{{ item.id2 }}">
+								<label  for="{{ item.for2 }}" class="label-checkbox"></label>
+								<div class="companies-item__wrap">
+									<div class="sf-thumb">
+										<div class="sf-thumb__wrap">
+											<img class="js-lazy" data-src="./img/wreath-1.png" alt="img">
+										</div>
+									</div>
+									<div class="companies-item__text">
+										<h4 class="title-s companies-item__name">Наименование товара</h4>
+										<div class="companies-item__type">
+											<div class="product-prices">
+												<div class="product-single-price">690 ₽<span> 890 ₽</span>
+												</div>
+												<div class="product-single-price">
+													<img src="img/logo1.png" alt="map-img">
+												</div>
+											</div>
+										</div>
+										<div class="companies-item__descr">
+											<div class="product-reviews">
+												<span class="pr-ratings">
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+													<i class="flaticon-favorite"></i>
+												</span>
+												<div class="product-reviews__details mob-hide">
+													<span>5.0</span>
+													<!-- <span>{{ mixins.icon('users') }}</span>
+													<span>(1)</span> -->
+												</div>
+											</div>
+										</div>
+										<div class="btn-panel">
+											<div class="btn-panel__col">
+												<a href="#" class="btn-panel__btn">
+													<span class="btn-panel__btn-icon">
+														{{ mixins.icon('pen') }}
+													</span>
+													Редактировать 
+												</a>
+											</div>
+											<div class="btn-panel__col">
+												<a href="#" class="btn-panel__btn">
+													<span class="btn-panel__btn-icon">
+														{{ mixins.icon('cancel') }}
+													</span>
+													Удалить
+												</a>
+											</div>
+										</div>    
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					{% endfor %}
+					</div>
+					<div class="article-item__btn-block">
+						<button type="submit" class="article-item__btn btn btn_bold">
+						Добавить товар
+					</button>
+					</div>
+				</div>
+			</form>
+			<form class="my-companies__form memory-form__title_bordered" action="/">
+				<div class="row hidein_md">
+					<div class="my-companies__title-block memory-form__title_bordered">
+						<h4 class="memory-form__title title-sm col-md-3">
+							Мои акции
+						</h4>
+						<div class="new-sliders col-md-9 js-single-slider">
+							<div class="new-sliders__slide">
+								Мастерская “Ангел”
+							</div>
+							<div class="new-sliders__slide">
+								Мастерская “Ангел”
+							</div>
+							<div class="new-sliders__slide">
+								Мастерская “Ангел”
+							</div>
+							<div class="new-sliders__slide">
+								Мастерская “Ангел”
+							</div>
+							<div class="new-sliders__slide">
+								Мастерская “Ангел”
+							</div>
+							<div class="new-sliders__slide">
+								Мастерская “Ангел”
+							</div>
+							<div class="new-sliders__slide">
+								Мастерская “Ангел”
+							</div>
+						</div>
+						<div class="hints col-md-1">
+							<div class="hints__icon">
+								<i class="fa fas fa-question"></i>
+							</div>
+							<div class="hints__text">
+								Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="ritual-agent">
+							<div class="ritual-agent__label">
+								<input class="input-checkbox" type="checkbox" name="verify" id="team1">
+								<label for="team1" class="label-checkbox"></label>
+								<button type="button" class="ritual-agent__copy-btn" title="Копировать акцию в текущий месяц">
+									{{ mixins.icon('copy') }}
+								</button>
+								<div class="team-info">
+									<div class="row">
+										<div class="col-md-4 col-sm-12 col-xs-12">
+											<div class="posts-image posts-image_full-lg posts-image_full-radius js-lazy" data-src="img/shares.png">
+												<a href="#" class="posts-image__sale">-20%</a>
+											</div>
+										</div>
+										<div class="col-md-8 col-sm-9 col-md-12">
+											<div class="staff">
+												<div class="staff__title-block">
+													<span class="staff__title">Название акции</span>
+													<span class="staff__term showin">
+														Срок действия акции:  до 31 декабря 2018 года
+													</span> 
+												</div>
+												<div class="drop js-drop has-show-block  hidein">
+													<div class="drop__wrap js-drop-wrap">
+														<div class="drop__show js-drop-shows">
+															<p>
+																Условия проведения: Текстовое описание услови акции идет тут в нескольстрок. Текстовое опис....
+															</p>
+															<span class="staff__term">
+																Срок действия акции:  до 31 декабря 2018 года
+															</span>
+															<p>
+																Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+													  			выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+															</p>
+														</div>
+														<div class="drop__hidden js-drop-hidden">
+															<p>
+																Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+																выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+															</p>
+														</div>
+													</div>
+													<!-- begin read-all -->
+													<div class="read-all mob-hide">
+														<a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+															<span class="drop__btn-text js-drop-btn-text">
+															Читать всю информацию
+															</span>
+															<span class="fi flaticon-arrows"></span>
+														</a>
+													</div>
+													<!-- end read-all -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="ritual-agent">
+							<div class="ritual-agent__label">
+								<input class="input-checkbox" type="checkbox" name="verify" id="team2">
+								<label for="team2" class="label-checkbox"></label>
+								<button type="button" class="ritual-agent__copy-btn" title="Копировать акцию в текущий месяц">
+									{{ mixins.icon('copy') }}
+								</button>
+								<div class="team-info">
+									<div class="row">
+										<div class="col-md-4 col-sm-12 col-xs-12">
+											<div class="posts-image posts-image_full-lg posts-image_full-radius js-lazy" data-src="img/shares.png">
+											</div>
+										</div>
+										<div class="col-md-8 col-sm-9 col-md-12">
+											<div class="staff">
+												<div class="staff__title-block">
+													<span class="staff__title">Название акции</span>
+													<span class="staff__term showin">
+														Срок действия акции:  до 31 декабря 2018 года
+													</span>
+												</div>
+												<div class="drop js-drop has-show-block hidein">
+													<div class="drop__wrap js-drop-wrap">
+														<div class="drop__show js-drop-shows">
+															<p>
+																Условия проведения: Текстовое описание услови акции идет тут в нескольстрок. Текстовое опис....
+															</p>
+																<span class="staff__term">
+																	Срок действия акции:  до 31 декабря 2018 года
+																</span>
+															<p>
+																Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+													  			выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+															</p>
+														</div>
+														<div class="drop__hidden js-drop-hidden">
+															<p>
+																Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+																выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
+															</p>
+														</div>
+													</div>
+													<!-- begin read-all -->
+													<div class="read-all mob-hide">
+														<a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+															<span class="drop__btn-text js-drop-btn-text">
+															Читать всю информацию
+															</span>
+															<span class="fi flaticon-arrows"></span>
+														</a>
+													</div>
+													<!-- end read-all -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="my-companies__title-block border_top">
+					<div class="my-companies__col">
+						<div class="delete-account">
+							<button type="submit" class="delete-account__btn hidein">
+								<span class="delete-account__text">
+									Выбрать все
+								</span>
+							</button>
+						</div>
+						<div class="delete-account">
+							<button type="submit" class="delete-account__btn">
+								<span class="delete-account__icon">
+									{{ mixins.icon('cancel') }}
+								</span>
+								<span class="delete-account__text">
+									Удалить выбранное
+								</span>
+							</button>
+						</div>
+					</div>
+					<div class="my-companies__col">
+						<button type="submit" class="memory-form__btn btn">
+							Добавить акцию
+						</button>
+					</div>
+				</div>
+			</form>
+			<!-- Start delete-account -->
+				{% include "partials/user-account/_delete-account.html" %}
+			<!-- End delete-account  -->
+			<div class="bottom-image">
+				<img class="js-lazy" data-src="img/rose-candle.png" alt="rose-angel">
+			</div>
+		</div>
+	</div>
+</div>

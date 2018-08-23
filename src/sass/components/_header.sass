@@ -21,11 +21,12 @@
 		.header-top
 			border-bottom-color: transparent 
 		.navbar
-			transform: translateY(-10px)
+			transform: translateY(3px)
 			+sm
 				transform: initial
 		.navbar-brand
-			transform: translateY(30px)
+			transform: translateY(37px)
+			max-width: 181px
 			+r(1050)
 				transform: translateY(40px)
 			+sm
@@ -38,6 +39,8 @@
 				transition-delay: .4s
 	.navbar-brand
 		padding-bottom: 0
+		display: block
+		width: 100%
 		+sm
 			padding-top: 10px
 			max-width: 137px
@@ -109,10 +112,46 @@
 		.fa
 			+sm
 				display: none
-		
-	.dropdown-menu 
+	.header4 .navbar-nav>li>a:hover
+		font-weight: 500
+		color: $white !important
+	.navbar-default .navbar-nav>li>a:focus
+		color: $white !important	
+	.dropdown-menu
+		padding: 20px 20px 27px 27px
 		+sm
 			display: none
+		&.dropdown-menu-v3
+			position: absolute
+			top: 80px
+			right: 0 !important
+			width: auto
+			opacity: 0
+			animation: opacity 1s
+			li
+				a
+					font-family: $tahoma
+					padding: 7px 0
+					line-height: 1.4
+					font-size: 14px
+					color: #62594f
+					margin: 0
+					&:hover
+						color: $brown_orange		
+	.dropdown
+		&.dropdown_mod
+			position: relative
+			cursor: pointer
+			&:hover		
+				.dropdown-menu-v3
+					opacity: 1
+				.dropdown-toggle
+					color: $white !important
+		.fa-angle-down
+			margin-left: 8px
+	.header4.header5 .dropdown-menu.dropdown-menu-v3
+		margin-top: -40px!important
+
 .header-bg
 	background-image: url(../img/header-bg.png) 
 	background-position: 50% 50% 
@@ -133,5 +172,101 @@
 	+sm
 		width: 100%
 .topbar
+	position: relative
+	z-index: 10
+	height: auto
+	background-color: #e3dccf
 	+sm
 		display: none
+	&__wrap
+		padding: 7px 0 0	
+	&__list
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		li
+			a
+				font-size: 14px
+				color: $brown
+				&:hover	
+					color: $brown
+
+.list-dropdown
+	&__link
+		display: flex
+		align-items: center
+		border-bottom: 1px solid transparent
+
+		.fa-angle-down
+			margin-left: 8px
+	&__menu
+		position: absolute
+		top: 31px
+		left: 0
+		padding: 20px 20px 27px 27px
+		background-color: $white
+		box-shadow: 0 0 5px rgba(4,5,5,.1)
+		opacity: 0
+		transition: opacity .3s
+		z-index: -100
+		li
+			&:not(:last-child)
+				border-bottom: 1px solid #eee
+				padding: 7px 0
+			a
+				padding: 7px 0
+	&__item
+		position: relative
+		border-bottom: 1px solid transparent
+		&:hover	
+			.list-dropdown__link				
+				border-bottom: 1px solid $brown
+			.list-dropdown__menu
+				opacity: 1
+				z-index: 100
+		.map-wrap__select
+			position: relative
+			display: flex
+			align-items: center
+			margin-bottom: 0
+			.list-dropdown__icon
+				position: absolute
+				display: block
+				left: 17px
+				top: 46%
+				transform: translate(-50%,-50%)
+				z-index: 10
+				.select2-results__option
+					white-space: nowrap
+					
+			.select2-container--open .select2-dropdown
+				margin-top: 4px
+			.select .select2-selection--single .select2-selection__rendered
+				// padding-left: 0
+			.select .select2-selection--single
+				background-color: #e3dccf
+			.select2-container .select2-selection--single .select2-selection__rendered
+				padding-right: 45px
+			.select2-container--default .select2-results>.select2-results__options
+				padding: 20px 20px 27px 27px !important
+				font-size: 14px
+			.select2-container--default .select2-results__option[aria-selected=true]				
+			.select2-container--default .select2-selection--single .select2-selection__arrow
+				right: 15px
+			.select2-container--classic .select2-selection--single .select2-selection__arrow b,
+			.select2-container--default .select2-selection--single .select2-selection__arrow b	
+		
+	&__icon
+		font-size: 16px
+		margin-right: 10px
+		height: 16px
+		.icon
+			fill: $brown				
+	&__item_mod
+		margin-right: 50px
+		&:hover	
+			.list-dropdown__link				
+				border-bottom: 1px solid transparent
+	.vertical-slash
+		margin-right: 6px		
+		margin-left: 6px

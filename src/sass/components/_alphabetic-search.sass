@@ -1,0 +1,65 @@
+.alphabetic-search
+	&__label
+		margin-bottom: 15px
+		color: #65594d
+		font-family: $tahoma
+		font-size: 18px
+		font-weight: 700
+		line-height: 1.6
+		+sm
+			font-size: 14px
+	&__list
+		margin: 0 -10px
+		font-size: 0
+		text-align: center
+		+sm
+			margin: 0 -5px
+	&__item
+		margin: 6px 10px
+		vertical-align: top
+		display: inline-block
+		+sm
+			margin: 3px 5px
+	&__link
+		position: relative
+		padding: 0 6px
+		z-index: 1
+		font-family: $tahoma
+		font-size: 18px
+		font-weight: 400
+		line-height: 1.6
+		color: #65594d
+		transition: color .3s
+		display: block
+		+sm
+			padding: 0 3px
+			font-size: 14px
+		&:hover
+			color: $white 
+			&:before
+				opacity: 1
+				visibility: visible
+		&:before
+			position: absolute
+			content: "" 
+			top: -13px
+			left: 50%
+			transform: translateX(-50%)
+			width: 20px
+			height: 40px
+			z-index: -1
+			opacity: 0
+			visibility: hidden
+			background-image: url(../img/letter-img.png) 
+			background-position: 50% 50% 
+			background-size: contain
+			background-repeat: no-repeat
+			transition: visibility .3s, opacity .3s
+			+sm
+				top: -15px 
+				width: 17px
+			.alphabetic-search__item.is-active &
+				visibility: visible
+				opacity: 1
+		.alphabetic-search__item.is-active &
+			color: $white 

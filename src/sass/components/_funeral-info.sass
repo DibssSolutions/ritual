@@ -1,0 +1,104 @@
+.funeral-info
+    padding: 75px 0 23.1%
+    background-position: 50% 100%
+    background-size: contain
+    background-repeat: no-repeat
+    +sm
+        padding-top: 25px
+    &_inner
+        padding: 0
+    &__head
+        margin-bottom: 55px
+        +sm
+            margin-bottom: 20px
+    &__title
+        line-height: 0.9
+        margin-bottom: 15px
+    &__details
+        span
+            font-weight: 700
+    &__personal-info
+        &:not(:last-child)
+            margin-bottom: 40px
+            +sm
+                margin-bottom: 20px
+    &__row
+        &:not(:first-child)
+            margin-top: 55px
+            +sm
+                margin-top: 30px
+    &__list
+        &:not(:last-child)
+            margin-bottom: 25px
+        .agent
+            border-top: 1px solid #f3f1ea
+            padding: 18px 0 10px
+            &:hover
+                .agent__title
+                    display: block
+            &__title
+                display: none
+                max-width: none
+            .address
+                margin-left: 40px
+    &__counter
+        margin-top: 50px
+        +sm
+            margin-top: 25px
+    &__footer
+        margin-top: 10px
+        padding-top: 10px
+        border-top: 1px solid #F3F3F3 
+    &__col
+        &:not(:first-child)
+            margin-top: 20px
+    &__btn
+        margin-top: 5px
+        +sm
+            margin-top: 10px
+
+.person-info
+    display: flex
+    flex-direction: column
+    &__photo
+        position: relative
+        img
+            display: block
+            width: 100%
+    &__img
+        position: absolute
+        width: 89px
+        height: 80px
+        left: 0
+        bottom: 1px
+        +md
+            width: 45px
+            height: 40px
+        +sm
+            width: 89px
+            height: 80px
+        img
+            display: block
+            width: 100%
+        &_1
+            width: 133px
+            height: 65px
+            left: auto
+            right: 0
+            +md
+                width: 67px
+                height: 33px
+            +sm
+                width: 133px
+                height: 65px
+    &__general
+        padding-top: 25px
+        font-family: $cormorant_infant
+        font-weight: 600
+        font-size: 24px
+        +sm
+            padding-top: 10px
+        span
+            font-family: $tahoma
+            font-size: 15px
+            font-weight: normal

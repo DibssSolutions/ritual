@@ -3,7 +3,7 @@
     	<div class="aside__item">
     		<!-- begin review -->
     		<div class="aside__review review">
-    			<div class="review__img" style="background-image: url(./img/review-img.png);"></div>
+    			<div class="review__img js-lazy" data-src="./img/review-img.png"></div>
     			<div class="review__rating">
 					<span class="ratings">
 						<span class="fi flaticon-favorite"></span>
@@ -34,13 +34,6 @@
     					icon: "about",
     					text: "О компании",
     					href: "about-company"
-
-    				},
-    				{
-    					icon: "mark",
-    					text: "На карте",
-    					href: "on-map"
-
     				},
     				{
     					icon: "mark",
@@ -54,6 +47,10 @@
 
     				},
     				{
+    					text: "Наши преимущества",
+    					href: "advantages"
+    				},
+    				{
     					icon: "star",
     					text: "Отзывы заказчиков",
     					href: "review-customer"
@@ -62,19 +59,24 @@
     				{
     					icon: "feedback",
     					text: "Обратная связь",
-    					href: "reviews-block"
+    					href: "feedback"
 
     				},
     				{
     					icon: "products",
     					text: "Все товары и услуги",
-    					href: "feedback"
+    					href: "all-services"
 
     				},
     				{
     					icon: "sales",
     					text: "Акции и спецпредложения",
     					href: "shares"
+
+    				},
+    				{
+    					text: "Рейтинги",
+    					href: "schedule"
 
     				},
     				{
@@ -94,10 +96,6 @@
     					text: "Доставка и оплата",
     					href: "delivery"
 
-    				},
-    				{
-    					text: "Наши преимущества",
-    					href: "advantages"
     				},
     				{
     					text: "Наша команда",

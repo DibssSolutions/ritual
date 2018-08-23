@@ -1,0 +1,34 @@
+.associated-goods
+    padding-top: 40px
+    +sm
+        padding-top: 15px
+    &__container
+        padding-bottom: 55px
+        border-bottom: 1px solid $white_brown_bg
+        +sm
+            padding-bottom: 20px
+    &__head
+        margin-bottom: 35px
+    &__body
+    &__col
+        margin-bottom: 35px
+
+
+    .services-card
+        &:hover
+            .services-card__img
+                opacity: 1
+                img
+                    transform: translate(-50%,-50%) scale(1.15)
+        &__img
+            background-color: $white_brown_bg
+            img
+                transition: transform .3s
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                width: auto
+                height: auto
+                max-height: 90%
+

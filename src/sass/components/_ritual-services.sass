@@ -1,0 +1,51 @@
+.ritual-services
+    padding: 40px 0 75px
+    background-color: $white_brown_bg
+    +sm
+        padding: 15px 0 30px
+    &__head
+        margin-bottom: 35px
+    &__title
+    &__body
+    &__row
+    &__col
+        margin-bottom: 20px
+    &__card
+
+.services-card
+    display: block
+    text-align: center
+    &:hover
+        .services-card__title
+            border-color: $brown_orange
+        .services-card__img
+            opacity: .68
+    &__img
+        position: relative
+        height: 162px
+        width: 100%
+        overflow: hidden
+        margin-bottom: 22px
+        transition: opacity .4s
+        &:before
+            content: ''
+            position: absolute
+            top: 6px
+            bottom: 6px
+            left: 6px
+            right: 6px
+            border: 1px solid $gray_brown
+            z-index: 2
+        img
+            display: block
+            // position: absolute
+            // top: 50%
+            // left: 50%
+            // transform: translate(-50%,-50%)
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__title
+        transition: border-color .4s
+        border-bottom: 1px solid transparent
+        display: inline

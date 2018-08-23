@@ -1,0 +1,159 @@
+<div class="wrapper">
+	<div class="user-account">
+		<div class="page-head">
+			<div class="container page-head__container">
+				<div class="row">
+					<div class="col-md-3 col-sm-12 page-head__col">
+						<ul class="bcrumbs page-head__bcrumbs">
+							<li>	
+								<a href="#">
+									<span class="showin">
+										{{ mixins.icon('house') }}
+									</span>
+									<span class="hidein">Home</span>
+								</a></li>
+							<li>
+								<a href="#">Obituaries</a>
+							</li>
+							<li>Past</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="user-account__wrap">
+				<div class="row mob-show">
+					<div class="col-md-12">
+						<div class="user-account__mob-nav">
+							<h2 class="user-account__mob-title title-m">
+								Личный кабинет
+							</h2>
+							<div class="user-account__nav">
+								<ul class="user-account__nav-list">
+									<li class="user-account__nav-item">
+										<a href="#" class="user-account__nav-link">
+											<span class="user-account__icon">
+												{{ mixins.icon('info') }}
+											</span>
+											Личная информация
+										</a>
+									</li>
+									<li class="user-account__nav-item">
+										<a href="#" class="user-account__nav-link">
+											<span class="user-account__icon">
+												{{ mixins.icon('checklist') }}
+											</span>
+											Мои объявления
+										</a>
+									</li>
+									<li class="user-account__nav-item">
+										<a href="#" class="user-account__nav-link">
+											<span class="user-account__icon">
+												{{ mixins.icon('moneybag') }}
+											</span>
+											Баланс
+										</a>
+									</li>
+									<li class="user-account__nav-item">
+										<a href="#" class="user-account__nav-link">
+											<span class="user-account__icon">
+												{{ mixins.icon('contract') }}
+											</span>
+											Мои посты
+										</a>
+									</li>
+									<li class="user-account__nav-item">
+										<a href="#" class="user-account__nav-link">
+											<span class="user-account__icon user-account__icon_pos">
+												{{ mixins.icon('mark') }}
+											</span>
+											<span class="user-account__icon">
+												{{ mixins.icon('build') }}
+											</span>
+											Мои компании и товары
+										</a>
+									</li>
+									<li class="user-account__nav-item">
+										<a href="#" class="user-account__nav-link is-active">
+											<span class="user-account__icon">
+												{{ mixins.icon('percentage') }}
+											</span>
+											Баннерная реклама
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mob-block">
+					<a href="#" class="mob-block__btn btn btn_border">
+						<i class="fa fas fa-angle-left"></i>
+						Вернуться в меню личного кабинета
+					</a>
+					<div class="mob-block__title title-m">
+						Личная информация
+					</div>
+				</div>
+				<!-- Start schedule -->
+				{% include "partials/user-account/_personal-info.html" %}
+				<!-- End schedule -->
+				<div class="mob-block">
+					<a href="#" class="mob-block__btn btn btn_border">
+						<i class="fa fas fa-angle-left"></i>
+						Вернуться в меню личного кабинета
+					</a>
+					<div class="mob-block__title title-m">
+						Мои объявления
+					</div>
+				</div>
+				<!-- Start announcements -->
+				{% include "partials/user-account/_announcements.html" %}
+				<!-- End announcements -->
+				<div class="mob-block">
+					<a href="#" class="mob-block__btn btn btn_border">
+						<i class="fa fas fa-angle-left"></i>
+						Вернуться в меню личного кабинета
+					</a>
+					<div class="mob-block__title title-m">
+						Баланс
+					</div>
+				</div>
+				<!-- Start balance -->
+				{% include "partials/user-account/_balance.html" %}
+				<!-- End balance -->
+				<div class="mob-block">
+					<a href="#" class="mob-block__btn btn btn_border">
+						<i class="fa fas fa-angle-left"></i>
+						Вернуться в меню личного кабинета
+					</a>
+					<div class="mob-block__title title-m">
+						Мои посты
+					</div>
+				</div>
+				<!-- Start my-posts -->
+				{% include "partials/user-account/_my-posts.html" %}
+				<!-- End my-posts -->
+				<div class="mob-block">
+					<a href="#" class="mob-block__btn btn btn_border">
+						<i class="fa fas fa-angle-left"></i>
+						Вернуться в меню личного кабинета
+					</a>
+					<div class="mob-block__title title-m">
+						Мои компании и товары
+					</div>
+				</div>
+				<!-- Start my-companies -->
+				{% include "partials/user-account/_my-companies.html" %}
+				<!-- End my-companies -->
+				<!-- Start banner-advertising -->
+				{% include "partials/user-account/_banner-advertising.html" %}
+				<!-- End banner-advertising -->
+			</div>
+			<div class="bottom-image">
+				<img class="js-lazy" data-src="img/rose-angel.png" alt="rose-angel">
+			</div>
+		</div>
+	</div>
+</div>
