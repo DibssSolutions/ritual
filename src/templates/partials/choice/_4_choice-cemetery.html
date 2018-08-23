@@ -3,8 +3,15 @@
 	<div class="page-head">
 		<div class="container page-head__container">
 			<ul class="bcrumbs page-head__bcrumbs">
-				<li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
-				<li><a href="#">Obituaries</a></li>
+				<li>
+					<a href="#">
+						<span class="showin">{{ mixins.icon('house') }}</span>
+						<span class="hidein">Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">Obituaries</a>
+				</li>
 				<li>Past</li>
 			</ul>
 		</div>
@@ -19,7 +26,9 @@
 			<!-- begin map -->
 			<div class="map-wrap">
 				<div class="map-wrap__container container">
-					<h3 class="map-wrap__title-l title-l mob-hide">На карте города</h3>
+					<h3 class="map-wrap__title-l title-l mob-hide">
+						На карте города
+					</h3>
 				</div>
 				<div class="js-map map" id="mapInfobox" data-center-lat="-34.097" data-center-lng="150.644"></div>
 				{% set tamplate = '<div class="baloon mob-hide">
@@ -28,7 +37,7 @@
 						<div class="baloon__row">
 							<div class="baloon__col">
 								{{? baloon.img }}
-								<div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
+								<div class="baloon__img"><img class="js-lazy" data-src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
 								{{?}}
 								{{? baloon.title }}
 								<div class="baloon__title">{{=baloon.title}}</div>
@@ -160,10 +169,13 @@
 						<div class="agency">
 							<div class="agency__head">
 								<div class="agency__logo">
-									<img src="./img/map-img.png" alt="img">
+									<img class="js-lazy" data-src="./img/map-img.png" alt="img">
 								</div>
 								<div class="agency__link">
-									<a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a>
+									<a href="#" class="btn btn_small btn_bold">
+										Перейти
+										<i class="fi flaticon-arrows"></i>
+									</a>
 								</div>
 								<div class="agency__rating">
 									<span class="ratings">
@@ -181,13 +193,28 @@
 								<div class="agency__contacts">
 									<div class="row">
 										<div class="col-md-6 col-sm-6">
-											<div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
-											<div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+											<div class="contacts-item">
+												<i class="fa fa-map-marker"></i>
+												Хабаровск, Гоголя, 8
+											</div>
+											<div class="contacts-item">
+												<i class="fi flaticon-black"></i>
+												dmitryz5700@gmail.com
+											</div>
 										</div>
 										<div class="col-md-6 col-sm-6">
-											<div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
-											<div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
-											<div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+											<div class="contacts-item">
+												<i class="fi flaticon-technology"></i>
+												8 (111) 123 123
+											</div>
+											<div class="contacts-item">
+												<i class="fi flaticon-technology"></i>
+												8 (111) 123 123
+											</div>
+											<div class="contacts-item">
+												<i class="fi flaticon-clock"></i>
+												С 7.00 до 21.00, без выходных
+											</div>
 										</div>
 									</div>
 								</div>
@@ -224,28 +251,49 @@
 							<div class="drop js-drop">
 								<div class="drop__wrap js-drop-wrap">
 									<div class="drop__show js-drop-shows">
-										<p>С потерей любимого человека трудно принять тот факт, что его нет больше рядом, и еще труднее взять себя в руки, чтобы прощаться с ним достойно. Мы с пониманием относимся к вашему горю и готовы оказать помощь.</p>
-										<p>В спектр услуг ритуального агентства «Диорама» входят следующие обязанности:</p>
+										<p>
+											С потерей любимого человека трудно принять тот факт, что его нет больше рядом, и еще труднее взять себя в руки, чтобы прощаться с ним достойно. Мы с пониманием относимся к вашему горю и готовы оказать помощь.
+										</p>
+										<p>
+											В спектр услуг ритуального агентства «Диорама» входят следующие обязанности:
+										</p>
 										<ul class="wind-list">
-											<li>реализация перевозки тела в покойницкую и на кладбище;</li>
-											<li>приобретение вещей для умершего человека и их доставка;</li>
-											<li>приобретение гроба и других панихидных атрибутов;</li>
+											<li>
+												реализация перевозки тела в покойницкую и на кладбище;
+											</li>
+											<li>
+												приобретение вещей для умершего человека и их доставка;
+											</li>
+											<li>
+												приобретение гроба и других панихидных атрибутов;
+											</li>
 										</ul>
 									</div>
 									<div class="drop__hidden js-drop-hidden">
-										<p>С потерей любимого человека трудно принять тот факт, что его нет больше рядом, и еще труднее взять себя в руки, чтобы прощаться с ним достойно. Мы с пониманием относимся к вашему горю и готовы оказать помощь.</p>
-										<p>В спектр услуг ритуального агентства «Диорама» входят следующие обязанности:</p>
+										<p>
+											С потерей любимого человека трудно принять тот факт, что его нет больше рядом, и еще труднее взять себя в руки, чтобы прощаться с ним достойно. Мы с пониманием относимся к вашему горю и готовы оказать помощь.
+										</p>
+										<p>
+											В спектр услуг ритуального агентства «Диорама» входят следующие обязанности:
+										</p>
 										<ul class="wind__list">
-											<li>реализация перевозки тела в покойницкую и на кладбище;</li>
-											<li>приобретение вещей для умершего человека и их доставка;</li>
-											<li>приобретение гроба и других панихидных атрибутов;</li>
+											<li>
+												реализация перевозки тела в покойницкую и на кладбище;
+											</li>
+											<li>
+												приобретение вещей для умершего человека и их доставка;
+											</li>
+											<li>
+												приобретение гроба и других панихидных атрибутов;
+											</li>
 										</ul>
 									</div>
 								</div>
 								{{ mixins.readAll(null, 'mob-hide') }}
 							</div>
 							<!-- ¯\_(ツ)_/¯ -->
-							<div class="wind__bg" style="background-image: url(./img/choice.png);"></div>
+							<div class="wind__bg js-lazy" data-src="background-image: url(./img/choice.png);">
+							</div>
 						</div>
 						<!-- end wind -->
 					</div>
@@ -273,9 +321,11 @@
 						<div class="wind">
 							{{ mixins.windHead('Выбор кладбища') }}
 							<div class="cemetery-selection__col-right">
-							  <div class="cemetery-selection__img-map" style="background-image: url(img/map.png);"></div>
+							  <div class="cemetery-selection__img-map js-lazy" data-src="background-image: url(img/map.png);">
+							  </div>
 							</div>
-							<div class="wind__bg" style="background-image: url(./img/choice.png);"></div>
+							<div class="wind__bg js-lazy" data-src="background-image: url(./img/choice.png);">
+							</div>
 						</div>
 						<!-- end wind -->
 					</div>
@@ -309,7 +359,9 @@
 										<div class="about-agency__info">
 											<div class="about-agency__info-wrap">
 												<div class="about-agency__head">
-													<div class="about-agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+													<div class="about-agency__logo">
+														<img class="js-lazy" data-src="./img/map-img.png" alt="img">
+													</div>
 													<div class="about-agency__rating"> 
 														<span class="ratings">
 															<span class="fi flaticon-favorite"></span>
@@ -322,24 +374,38 @@
 													</div>
 												</div>
 												<div class="about-agency__contact">
-													<p>8 (111) 123 123 </p>
-													<p>С 7.00 до 21.00, без выходных </p>
+													<p>
+														8 (111) 123 123 
+													</p>
+													<p>
+														С 7.00 до 21.00, без выходных 
+													</p>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="about-agency__col col-md-8">
-										<h3 class="about-agency__title-s title-s">Название компании</h3>
+										<h3 class="about-agency__title-s title-s">
+											Название компании
+										</h3>
 										<!-- drop -->
 										<div class="drop js-drop">
 											<div class="drop__wrap js-drop-wrap">
 												<div class="drop__show js-drop-shows">
-													<p>Южный Ангел с Вами</p>
-													<p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
+													<p>
+														Южный Ангел с Вами
+													</p>
+													<p>
+														Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные 
+													</p>
 												</div>
 												<div class="drop__hidden js-drop-hidden">
-													<p>Южный Ангел с Вами</p>
-													<p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
+													<p>
+														Южный Ангел с Вами
+													</p>
+													<p>
+														Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные 
+													</p>
 												</div>
 											</div>
 											{{ mixins.readAll(null, 'mob-hide') }}
@@ -349,7 +415,8 @@
 								</div>
 							</div>
 							<!-- end about-agency -->
-							<div class="wind__bg" style="background-image: url(./img/choice.png);"></div>
+							<div class="wind__bg js-lazy" data-src="background-image: url(./img/choice.png);">
+							</div>
 						</div>
 						<!-- end wind -->
 					</div>
@@ -381,23 +448,24 @@
 									<div class="full-slider__slide">
 										<a href="./img/full-slider-img.jpg" data-fancybox="gallery" class="full-img">
 											{{ mixins.icon('full') }}
-											<img src="./img/choice-slide.png" alt="img">
+											<img class="js-lazy" data-src="./img/choice-slide.png" alt="img">
 										</a>
 									</div>
 									<div class="full-slider__slide">
 										<a href="./img/choice-slide.png" data-fancybox="gallery" class="full-img">
 											{{ mixins.icon('full') }}
-											<img src="./img/choice-slide.png" alt="img">
+											<img class="js-lazy" data-src="./img/choice-slide.png" alt="img">
 										</a>
 									</div>
 									<div class="full-slider__slide">
 										<a href="./img/choice-slide.png" data-fancybox="gallery" class="full-img">
 											{{ mixins.icon('full') }}
-											<img src="./img/choice-slide.png" alt="img">
+											<img class="js-lazy" data-src="./img/choice-slide.png" alt="img">
 										</a>
 									</div>
 								</div>
-								<div class="wind__bg" style="background-image: url(./img/choice.png);"></div>
+								<div class="wind__bg js-lazy" data-src="background-image: url(./img/choice.png);">
+								</div>
 							</div>
 						</div>
 						<!-- end photoalbum -->
@@ -442,8 +510,12 @@
 													</div>
 												</div>
 												<div class="shop-sort">
-													<a href="#" class="active"><i class="flaticon-squares"></i></a>
-													<a href="#"><i class="flaticon-signs-1"></i></a>
+													<a href="#" class="active">
+														<i class="flaticon-squares"></i>
+													</a>
+													<a href="#">
+														<i class="flaticon-signs-1"></i>
+													</a>
 												</div>
 											</div>
 										</div>
@@ -458,17 +530,20 @@
 											<div class="companies-item__wrap">
 												<div class="sf-thumb">
 													<div class="sf-thumb__wrap">
-														<img src="./img/all-companies/logo-1.jpg" alt="img">
+														<img class="js-lazy" data-src="./img/all-companies/logo-1.jpg" alt="img">
 													</div>
 												</div>
 												<div class="companies-item__text">
-													<h4 class="title-s_mod companies-item__name">Наименование товара</h4>
+													<h4 class="title-s_mod companies-item__name">
+														Наименование товара
+													</h4>
 													<div class="companies-item__type">
 														<div class="product-prices">
-															<div class="product-single-price">690 ₽
+															<div class="product-single-price">
+																690 ₽
 															</div>
 															<div class="product-single-price">
-																<img src="img/logo1.png" alt="map-img">
+																<img class="js-lazy" data-src="img/logo1.png" alt="map-img">
 															</div>
 														</div>
 													</div>
@@ -522,8 +597,12 @@
 													</div>
 												</div>
 												<div class="shop-sort">
-													<a href="#" class="active"><i class="flaticon-squares"></i></a>
-													<a href="#"><i class="flaticon-signs-1"></i></a>
+													<a href="#" class="active">
+														<i class="flaticon-squares"></i>
+													</a>
+													<a href="#">
+														<i class="flaticon-signs-1"></i>
+													</a>
 												</div>
 											</div>
 										</div>
@@ -536,20 +615,26 @@
 								<!-- <div class="col-md-4 col-sm-6 col-xs-6"> -->
 									<a href="#" class="funeral__item companies-item companies-item_list">
 										<div class="companies-item__wrap">
-											<div class="sf-thumb" style="background-image: url(./img/wreath-2.png)">
+											<div class="sf-thumb js-lazy" data-src="background-image: url(./img/wreath-2.png)">
 											</div>
 											<div class="companies-item__text">
-												<h4 class="title-s companies-item__name">Название компании</h4>
+												<h4 class="title-s companies-item__name">
+													Название компании
+												</h4>
 												<div class="companies-item__type">
 													<div class="product-prices">
-														<div class="product-single-price">690 ₽<span> 890 ₽</span>
+														<div class="product-single-price">
+															690 ₽
+															<span> 890 ₽</span>
 														</div>
 														<div class="product-single-price">
-															<img src="img/logo1.png" alt="map-img">
+															<img class="js-lazy" data-src="img/logo1.png" alt="map-img">
 														</div>
 													</div>
 												</div>
-												<p>Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст</p>
+												<p>
+													Текст текст текст Текст текст текстТекст текст текстТекст текст текстТекст текст текстТекст текст текст
+												</p>
 												<div class="companies-item__descr">
 													<div class="product-reviews">
 														<span class="pr-ratings">
@@ -580,7 +665,8 @@
 							<!-- Start page-nav -->
 								{% include "partials/blogs/_page-nav.html" %}
 							<!-- End page-nav -->
-							<div class="wind__bg" style="background-image: url(./img/choice.png);"></div>
+							<div class="wind__bg js-lazy" data-src="background-image: url(./img/choice.png);">
+							</div>
 						</div>
 						<!-- end-wind -->
 					</div>
@@ -612,7 +698,7 @@
 						<div class="agency__table">
 							<div class="agency__table-cell">
 								<div class="agency__logo agency__logo_md">
-									<img src="./img/map-img.png" alt="img">
+									<img class="js-lazy" data-src="./img/map-img.png" alt="img">
 								</div>
 								<div class="agency__stars">
 									<span class="ratings">
@@ -790,25 +876,33 @@
 						<form class="wind" action="/">
 							{{ mixins.windHead('Выбор кладбища') }}
 							<div class="wind__description">
-								<p>Если Вы остановили выбор на этой услуге / компании, пожалуйста, добавьте ее в карточку мероприятия:</p>
-								<p>просмотреть выбранные услуги можно, кликнув "Карточка мероприятия" в верхней правой части сайта</p>
+								<p>
+									Если Вы остановили выбор на этой услуге / компании, пожалуйста, добавьте ее в карточку мероприятия:
+								</p>
+								<p>
+									просмотреть выбранные услуги можно, кликнув "Карточка мероприятия" в верхней правой части сайта
+								</p>
 							</div>
 							<!-- begin agent -->
 							<div class="agent">
 								<div class="agent__col-sm">
-									<div class="agent__title">Ритуальный агент</div>
-									<div class="agent__img" style="background-image: url(./img/agent-img.png);">
+									<div class="agent__title">
+										Ритуальный агент
+									</div>
+									<div class="agent__img js-lazy" data-src="background-image: url(./img/agent-img.png);">
 									</div>
 								</div>
 								<div class="agent__col-md">
 									<div class="agent__row">
 										<div class="agent__col">
-											<div class="contacts-item"><i class="fi flaticon-people">
-											</i>Агентство/Агент: 
-											<span>Hазвание</span>
+											<div class="contacts-item">
+												<i class="fi flaticon-people"></i>
+												Агентство/Агент: 
+												<span>Hазвание</span>
 											</div>
 											<div class="contacts-item">
-												<i class="fi flaticon-technology"></i>Контактный телефон: 
+												<i class="fi flaticon-technology"></i>
+												Контактный телефон: 
 												<span>8 (800) 123 45 67</span>
 											</div>
 										</div>
@@ -820,14 +914,15 @@
 							<div class="agent">
 								<div class="agent__col-sm">
 									<div class="agent__title">Зал для прощения</div>
-									<div class="agent__img" style="background-image: url(./img/church-img.png);">
+									<div class="agent__img js-lazy" data-src="background-image: url(./img/church-img.png);">
 									</div>
 								</div>
 								<div class="agent__col-md">
 									<div class="agent__row">
 										<div class="agent__col">
 											<div class="contacts-item">
-												<i class="fa fa-map-marker"></i>Адрес:   
+												<i class="fa fa-map-marker"></i>
+												Адрес:   
 												<span>Адрес зала для прощание</span>
 											</div>
 											<div class="contacts-item">
@@ -849,7 +944,7 @@
 							<div class="agent border">
 								<div class="agent__col-sm">
 									<div class="agent__title">Кладбище/Крематорий</div>
-									<div class="agent__img" style="background-image: url(./img/img.png);">
+									<div class="agent__img js-lazy" data-src="background-image: url(./img/img.png);">
 									</div>
 								</div>
 								<div class="agent__col-md">
@@ -880,14 +975,19 @@
 											</div>
 										</div>
 										<div class="agent__col text-center">
-											<h4 class="agent__col-title title-sm">Название кладбища</h4>
-											<a href="#" class="btn">Выбрать кладбище</a>
+											<h4 class="agent__col-title title-sm">
+												Название кладбища
+											</h4>
+											<a href="#" class="btn">
+												Выбрать кладбище
+											</a>
 										</div>
 									</div>
 								</div>
 							</div>
 							<!-- end agent -->
-							<div class="wind__bg" style="background-image: url(./img/choice.png);"></div>
+							<div class="wind__bg js-lazy" data-src="background-image: url(./img/choice.png);">
+							</div>
 						</form>
 						<!-- end wind -->
 					</div>
@@ -903,23 +1003,33 @@
 						<!-- begin check-list -->
 						<div class="check-list">
 							<div class="check-list__container">
-								<h2 class="check-list__title-l title-l">Чек-лист</h2>
-								<div class="check-list__description">Подзаголовок блока будет тут</div>
+								<h2 class="check-list__title-l title-l">
+									Чек-лист
+								</h2>
+								<div class="check-list__description">
+									Подзаголовок блока будет тут
+								</div>
 								<div class="check-list__row row">
 									<div class="check-list__col col-md-6 col-sm-6">
 										{% for i in range(1, 6) -%}
 										 <div class="check-item">
-											<div class="check-item__icon">{{ mixins.icon('check' )}}</div>
+											<div class="check-item__icon">
+												{{ mixins.icon('check' )}}
+											</div>
 											<div class="check-item__wrap">
-												<div class="check-item__title">Пожелание {{ i }}</div>
-												<p>Описание пожеланию, соответствие (две-три строки текста будет тут Описание пожеланию, соответствие (две-три строки текста будет тутОписание пожеланию, соответствие (две-три строки текста будет тут</p>
+												<div class="check-item__title">
+													Пожелание {{ i }}
+												</div>
+												<p>
+													Описание пожеланию, соответствие (две-три строки текста будет тут Описание пожеланию, соответствие (две-три строки текста будет тутОписание пожеланию, соответствие (две-три строки текста будет тут
+												</p>
 											</div>
 										 </div>
 										{%- endfor %}
 									</div>
 									<div class="check-list__col col-md-6 col-sm-6">
 										<div class="check-list__img">
-											<img src="./img/check-list1.png" alt="img">
+											<img class="js-lazy" data-src="./img/check-list1.png" alt="img">
 										</div>
 									</div>
 								</div>
@@ -935,8 +1045,12 @@
 		<!-- begin top -->
 		<div class="top">
 			<div class="top__container container">
-				<h3 class="top__title-l title-l">ТОП компаний</h3>
-				<div class="top__description">Подзаголовок блока будет тут</div>
+				<h3 class="top__title-l title-l">
+					ТОП компаний
+				</h3>
+				<div class="top__description">
+					Подзаголовок блока будет тут
+				</div>
 				<div class="top__row row">
 					<div class="top__col col-md-9">
 						{% for i in range(0, 3) -%}
@@ -945,7 +1059,7 @@
 							<div class="agency__table">
 								<div class="agency__table-cell">
 									<div class="agency__logo agency__logo_md">
-										<img src="./img/map-img.png" alt="img">
+										<img class="js-lazy" data-src="./img/map-img.png" alt="img">
 									</div>
 									<div class="agency__stars">
 										<span class="ratings">
@@ -960,19 +1074,36 @@
 								</div>
 								<div class="agency__table-cell agency__table-cell_lg">
 									<div class="agency__top">
-										<div class="agency__title">1. Название компании</div>
+										<div class="agency__title">
+											1. Название компании
+										</div>
 										<div class="agency__btn">
-											<a href="#" class="btn btn_small">Перейти<i class="fi flaticon-arrows"></i></a>
+											<a href="#" class="btn btn_small">
+												Перейти
+												<i class="fi flaticon-arrows"></i>
+											</a>
 										</div>
 									</div>
 									<div class="agency__row">
 										<div class="agency__table-cell">
-											<div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
-											<div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+											<div class="contacts-item">
+												<i class="fa fa-map-marker"></i>
+												Хабаровск, Гоголя, 8
+											</div>
+											<div class="contacts-item">
+												<i class="fi flaticon-black"></i>
+												dmitryz5700@gmail.com
+											</div>
 										</div>
 										<div class="agency__table-cell agency__table-cell_mob">
-											<div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
-											<div class="contacts-item"><i class="fi flaticon-clock"></i>С 7.00 до 21.00, без выходных</div>
+											<div class="contacts-item">
+												<i class="fi flaticon-technology"></i>
+												8 (111) 123 123
+											</div>
+											<div class="contacts-item">
+												<i class="fi flaticon-clock"></i>
+												С 7.00 до 21.00, без выходных
+											</div>
 										</div>	
 									</div>
 								</div>
@@ -981,12 +1112,12 @@
 						<!-- end agency -->
 						{%- endfor %}
 						<div class="banner margin-bottom-50">
-							<img src="img/banner1.png" alt="banner">
+							<img class="js-lazy" data-src="img/banner1.png" alt="banner">
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="banner">
-							<img src="img/banner.png" alt="banner">
+							<img class="js-lazy" data-src="img/banner.png" alt="banner">
 						</div>
 					</div>
 				</div>
@@ -998,7 +1129,9 @@
 				<div class="drop js-drop">
 					<div class="drop__wrap js-drop-wrap">
 						<div class="drop__show js-drop-shows">
-							<h3 class="drop__title">Заголовок текста для СЕО</h3>
+							<h3 class="drop__title">
+								Заголовок текста для СЕО
+							</h3>
 							<p>
 								В нашей торгово-производственной фирме Студия Ангел вы можете воспользоваться услугами ритуального агента, который возьмет на себя все обязанности по подготовке и организации похорон ваших близких людей.
 							</p>
@@ -1038,7 +1171,7 @@
 			</div>
 			<div class="container">
 				<div class="bottom-image">
-					<img src="img/rose-angel.png" alt="rose-angel">
+					<img class="js-lazy" data-src="img/rose-angel.png" alt="rose-angel">
 				</div>
 			</div>
 		</div>

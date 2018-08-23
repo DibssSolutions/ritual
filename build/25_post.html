@@ -152,10 +152,13 @@
         <div class="page_head ">
           <div class="container">
             <ul class="bcrumbs pull-left">
-              <li><a href="#"><span class="showin">
+              <li> <a href="#">
+						<span class="showin">
 <svg class="icon icon-house"><use xlink:href="img/sprite.svg#icon-house"></use></svg>
-</span><span class="hidein">Home</span></a></li>
-              <li><a href="#">Obituaries</a></li>
+</span>
+						<span class="hidein">Home</span>
+					</a> </li>
+              <li> <a href="#">Obituaries</a> </li>
               <li>Blog</li>
             </ul>
           </div>
@@ -221,23 +224,23 @@
                         <div class="side-btn"> <button class="btn">Применить</button> </div>
                       </form>
                     </div>
-                    <div class="side-widget width-img-angel hidein"> <img src="img/angel-statue.jpg" alt="angel-statue"> </div>
+                    <div class="side-widget width-img-angel hidein"> <img class="js-lazy" data-src="img/angel-statue.jpg" alt="angel-statue"> </div>
                     <div class="side-widget hidein">
                       <h5 class="title-s">Недавние публикации</h5>
                       <ul class="side-posts">
                         <li class="margin-bottom-30">
-                          <div class="posts-image" style="background-image: url(img/aside-post-img.png);"> </div>
+                          <div class="posts-image js-lazy" data-src="background-image: url(img/aside-post-img.png);"> </div>
                           <p> Что такое сглаз и как от него избавится? </p> <span class="meta">Имя Фаилия</span> </li>
                         <li class="margin-bottom-30">
-                          <div class="posts-image" style="background-image: url(img/post-img.png);"> </div>
+                          <div class="posts-image js-lazy" data-src="background-image: url(img/post-img.png);"> </div>
                           <p> Что снится к любви и наслаждению, а что – к разлуке и печали </p> <span class="meta">Имя Фаилия</span> </li>
                         <li>
-                          <div class="posts-image" style="background-image: url(img/aside-post-img.png);"> </div>
+                          <div class="posts-image js-lazy" data-src="background-image: url(img/aside-post-img.png);"> </div>
                           <p> Что такое сглаз и как от него избавится? </p> <span class="meta">Имя Фаилия</span> </li>
                       </ul>
                     </div>
                     <div class="side-widget hidein">
-                      <div class="banner"> <img src="img/banner.png" alt="banner"> </div>
+                      <div class="banner"> <img class="js-lazy" data-src="img/banner.png" alt="banner"> </div>
                     </div>
                   </aside>
                   <div class="col-md-9 col-sm-7">
@@ -246,8 +249,17 @@
                         <h3 class="title-m">Название статьи будет тут длинное в две строки</h3>
                       </div>
                       <article>
-                        <div class="post-thumb"><img src="img/blog-img.jpg" class="img-responsive" alt="" /></div>
-                        <div class="post-meta"> <span><i class="fa fa-calendar"></i> 13.03.18</span> <span><i class="fi fi flaticon-people"></i> Имя Фамилия</span> <span><i class="fa fa-comments-o"></i> Рубрика</span> </div>
+                        <div class="post-thumb"> <img class="js-lazy" data-src="img/blog-img.jpg" class="img-responsive" alt="" /> </div>
+                        <div class="post-meta"> <span>
+											<i class="fa fa-calendar"></i> 
+											13.03.18
+										</span> <span>
+											<i class="fi fi flaticon-people"></i> 
+											Имя Фамилия
+										</span> <span>
+											<i class="fa fa-comments-o"></i> 
+											Рубрика
+										</span> </div>
                         <hr>
                         <p> I stumbled upon an article entitled Miscarriage and the Confusion of Sinful Grief that was posted at the Reformed Christian website "The Gospel Coalition".Jamie Carlson (who recently miscarried) wrote the post as a reflection on
                           sin and grief. </p>
@@ -326,13 +338,15 @@
                       </div>
                     </div>
                     <div class="side-widget hidein">
-                      <div class="banner"> <img src="img/banner1.png" alt="banner"> </div>
+                      <div class="banner"> <img class="js-lazy" data-src="img/banner1.png" alt="banner"> </div>
                     </div>
                     <div class="related-comments facilities">
-                      <h5 class="title-s_mod">Комментарии (2) <span class="arrow-up"><i class="fa fas fa-caret-up"></i></span></h5>
+                      <h5 class="title-s_mod"> Комментарии (2) <span class="arrow-up">
+										<i class="fa fas fa-caret-up"></i>
+									</span> </h5>
                       <div class="team-info no-border">
                         <div class="col-md-3">
-                          <div class="posts-image posts-image_mod" style="background-image: url(img/user1.png);"> </div>
+                          <div class="posts-image posts-image_mod js-lazy" data-src="background-image: url(img/user1.png);"> </div>
                         </div>
                         <div class="col-md-9 padding_top">
                           <div class="staff-title"> <span class="title-s_mod">Имя Фамилия</span> 13.03.18 </div>
@@ -342,7 +356,7 @@
                       <div class="clearfix"></div>
                       <div class="team-info no-border">
                         <div class="col-md-3">
-                          <div class="posts-image posts-image_mod" style="background-image: url(img/user.png);"> </div>
+                          <div class="posts-image posts-image_mod js-lazy" data-src="background-image: url(img/user.png);"> </div>
                         </div>
                         <div class="col-md-9 padding_top">
                           <div class="staff-title"> <span class="title-s_mod">Имя Фамилия</span> 13.03.18 </div>
@@ -352,7 +366,9 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="comment-form">
-                      <h5 class="comment-form__title title-s_mod">Оставить комментарий <span class="arrow-up"><i class="fa fas fa-caret-up"></i></span></h5>
+                      <h5 class="comment-form__title title-s_mod"> Оставить комментарий <span class="arrow-up">
+									<i class="fa fas fa-caret-up"></i>
+									</span> </h5>
                       <form class="post-form">
                         <div class="post-form__row row">
                           <div class="post-form__col col-md-6"> <input class="post-form__input" type="text" id="name" value="" name="name"> <label class="post-form__label" for="name">Ваше имя</label> </div>
@@ -362,7 +378,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="bottom-image"> <img src="img/rose-angel.png" alt="rose-angel"> </div>
+                <div class="bottom-image"> <img class="js-lazy" data-src="img/rose-angel.png" alt="rose-angel"> </div>
               </div>
             </div>
           </div>

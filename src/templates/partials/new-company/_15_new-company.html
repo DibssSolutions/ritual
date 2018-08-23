@@ -3,8 +3,15 @@
 	<div class="page_head ">
 		<div class="container">
 			<ul class="bcrumbs pull-left">
-				<li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
-				<li><a href="#">Obituaries</a></li>
+				<li>
+					<a href="#">
+						<span class="showin">{{ mixins.icon('house') }}</span>
+						<span class="hidein">Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">Obituaries</a>
+				</li>
 				<li>Blog</li>
 			</ul>
 		</div>
@@ -28,7 +35,7 @@
 										<span class="file-upload__description">
 											Загрузите логотип
 										</span>
-										<span class="file-upload__photo" style="background-image: url();">
+										<span class="file-upload__photo js-lazy" data-src="background-image: url();">
 										</span>
 									</label>
 									<input type="file" name="file-upload1" id="file-upload1" class="file-upload__input">
@@ -162,14 +169,15 @@
 										<div class="basic-services__map">
 											<!-- begin map -->
 											<div class="map-wrap">
-												<div class="js-map map" id="mapInfobox" data-center-lat="-34.097" data-center-lng="150.644"></div>
+												<div class="js-map map" id="mapInfobox" data-center-lat="-34.097" data-center-lng="150.644">
+												</div>
 												{% set tamplate = '<div class="baloon mob-hide">
 													<!-- <button class="baloon__close js-infobox-close"></button> -->
 													<div class="baloon__content">
 														<div class="baloon__row">
 															<div class="baloon__col">
 																{{? baloon.img }}
-																<div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
+																<div class="baloon__img"><img class="js-lazy" data-src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
 																{{?}}
 																{{? baloon.title }}
 																<div class="baloon__title">{{=baloon.title}}</div>
@@ -382,7 +390,8 @@
 											Добавление фото
 										</h4>
 										<button type="button" class="title-box__btn hide-block-btn js-accord-btn">
-											<span class="js-accord-text-btn">Скрыть</span> раздел
+											<span class="js-accord-text-btn">Скрыть</span> 
+											раздел
 										</button>
 									</div>
 									<div class="upload-photo__wrap js-accordion__hide-block">
@@ -395,7 +404,7 @@
 													<span class="upload-photo__description">
 														Добавить фото
 													</span>
-													<div class="upload-photo__photo" style="background-image: url(img/upload.png);">
+													<div class="upload-photo__photo js-lazy" data-src="background-image: url(img/upload.png);">
 													</div>
 												</a>
 												<a href="#" class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
@@ -405,7 +414,7 @@
 													<span class="upload-photo__description">
 														Добавить фото
 													</span>
-													<div class="upload-photo__photo" style="background-image: url(img/upload.png);">
+													<div class="upload-photo__photo js-lazy" data-src="background-image: url(img/upload.png);">
 													</div>
 												</a>
 												<a href="#" class="upload-photo__item col-md-3 col-sm-4 col-xs-6">
@@ -415,7 +424,7 @@
 													<span class="upload-photo__description">
 														Добавить фото
 													</span>
-													<div class="upload-photo__photo" style="background-image: url();">
+													<div class="upload-photo__photo js-lazy" data-src="background-image: url();">
 													</div>
 												</a>
 											</div>
@@ -429,7 +438,9 @@
 													<div class="file-upload">
 														<div class="post-form__col">
 															<input class="post-form__input" type="text" id="way1" value="" name="way1" placeholder=":/Путь файла будет тут.....">
-															<label class="post-form__icon" for="file-upload-photo1"><i class="fa fas fa-camera"></i></label>
+															<label class="post-form__icon" for="file-upload-photo1">
+																<i class="fa fas fa-camera"></i>
+															</label>
 														</div>
 														<label class="file-upload__label btn btn_big" for="file-upload-photo1">
 															Добавить
@@ -575,7 +586,7 @@
 															<span class="upload-photo__description">
 																Добавить фото
 															</span>
-															<div class="upload-photo__photo" style="background-image: url();">
+															<div class="upload-photo__photo js-lazy" data-src="background-image: url();">
 															</div>
 														</div>
 													</a>
@@ -778,7 +789,7 @@
 					</div>
 				</form>
 				<div class="bottom-image">
-					<img src="img/rose-angel.png" alt="rose-angel">
+					<img class="js-lazy" data-src="img/rose-angel.png" alt="rose-angel">
 				</div>
 			</div>
 		</div>

@@ -3,8 +3,15 @@
 	<div class="page_head">
 		<div class="container">
 			<ul class="bcrumbs pull-left">
-				<li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
-				<li><a href="#">Obituaries</a></li>
+				<li>
+					<a href="#">
+						<span class="showin">{{ mixins.icon('house') }}</span>
+						<span class="hidein">Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">Obituaries</a>
+				</li>
 				<li>Blog</li>
 			</ul>
 		</div>
@@ -13,7 +20,9 @@
 		<div class="container">
 			<div class="goods_services">
 				<div class="section-head text-center">
-					<h1 class="section-head__title title-l">Название выбранного товара</h1>
+					<h1 class="section-head__title title-l">
+						Название выбранного товара
+					</h1>
 				</div>
 				<div class="services-block">
 					<div class="row">
@@ -21,11 +30,14 @@
 							<div class="shop-carousel-wrap">
 								<div class="shop-carousel">
 									<a href="img/526.png" class="item" data-fancybox="gallery" data-thumb="img/525.png">
-										<img src="img/526.png" class="img-responsive" alt="526"/></a>
+										<img class="js-lazy" data-src="img/526.png" class="img-responsive" alt="526"/>
+									</a>
 									<a href="img/526.png" class="item" data-fancybox="gallery" data-thumb="img/525.png">
-										<img src="img/526.png" class="img-responsive" alt="526"/></a>
+										<img class="js-lazy" data-src="img/526.png" class="img-responsive" alt="526"/>
+									</a>
 									<a href="img/526.png" class="item" data-fancybox="gallery" data-thumb="img/525.png">
-										<img src="img/526.png" class="img-responsive" alt="526" /></a>
+										<img class="js-lazy" data-src="img/526.png" class="img-responsive" alt="526" />
+									</a>
 								</div>
 								<span class="zoom-img">{{ mixins.icon('zoom') }}</span>
 								<div class="prev8"><i class="fa fa-chevron-left"></i></div>
@@ -52,12 +64,14 @@
 						<div class="col-md-9 col-sm-12">
 							<!-- begin agency -->
 								<div class="agency">
-									<h5 class="agency__title title-s_mod">Название компании</h5>
+									<h5 class="agency__title title-s_mod">
+										Название компании
+									</h5>
 									<div class="agency__head">
 										<div class="agency__logo">
 											<div class="row">
 												<div class="col-md-4 col-sm-6">
-													<img src="./img/map-img.png" alt="img">
+													<img class="js-lazy" data-src="./img/map-img.png" alt="img">
 													<div class="agency__rating pull-left">
 														<span class="ratings">
 															<span class="fi flaticon-favorite"></span>
@@ -70,16 +84,37 @@
 													</div>
 												</div>
 												<div class="col-md-4 col-sm-6">
-													<div class="contacts-item mob-hide"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
-													<div class="contacts-item mob-hide"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
-													<div class="contacts-item padding">8 (111) 123 123</div>
-													<div class="contacts-item mob-hide"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
-													<div class="contacts-item mob-show">С 7.00 до 21.00, без выходных</div>
+													<div class="contacts-item mob-hide">
+														<i class="fa fa-map-marker"></i>
+														Хабаровск, Гоголя, 8
+													</div>
+													<div class="contacts-item mob-hide">
+														<i class="fi flaticon-technology"></i>
+														8 (111) 123 123
+													</div>
+													<div class="contacts-item padding">
+														8 (111) 123 123
+													</div>
+													<div class="contacts-item mob-hide">
+														<i class="fi flaticon-black"></i>dmitryz5700@gmail.com
+													</div>
+													<div class="contacts-item mob-show">
+														С 7.00 до 21.00, без выходных
+													</div>
 												</div>
 												<div class="col-md-4 mob-hide">
-													<div class="contacts-item"><span class="contacts-item__icon">{{ mixins.icon('clock') }}</span>Пн - Чт  С 7.00 до 21.00</div>
-													<div class="contacts-item padding">Пт - Сб  С 9.00 до 18.00</div>
-													<div class="contacts-item padding">Вс выходной</div>
+													<div class="contacts-item">
+														<span class="contacts-item__icon">
+															{{ mixins.icon('clock') }}
+														</span>
+														Пн - Чт  С 7.00 до 21.00
+													</div>
+													<div class="contacts-item padding">
+														Пт - Сб  С 9.00 до 18.00
+													</div>
+													<div class="contacts-item padding">
+														Вс выходной
+													</div>
 												</div>
 											</div>
 										</div>
@@ -147,7 +182,9 @@
 										</ul>
 									</div>
 									<div class="agency__link mob-hide">
-										<a href="#" class="btn">Перейти на страницу компании</a>
+										<a href="#" class="btn">
+											Перейти на страницу компании
+										</a>
 									</div>
 									<p class="mob-show">
 										Южный Ангел с Вами
@@ -176,14 +213,15 @@
 							<div class="location-info">
 								<!-- begin map -->
 								<div class="map-wrap">
-									<div class="js-map map" id="mapInfobox" data-center-lat="-34.097" data-center-lng="150.644"></div>
+									<div class="js-map map" id="mapInfobox" data-center-lat="-34.097" data-center-lng="150.644">
+									</div>
 									{% set tamplate = '<div class="baloon">
 										<!-- <button class="baloon__close js-infobox-close"></button> -->
 										<div class="baloon__content">
 											<div class="baloon__row">
 												<div class="baloon__col">
 													{{? baloon.img }}
-													<div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
+													<div class="baloon__img"><img class="js-lazy" data-src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
 													{{?}}
 													{{? baloon.title }}
 													<div class="baloon__title">{{=baloon.title}}</div>
@@ -285,14 +323,18 @@
 												</a>
 											</div>
 											<div class="col-md-3">
-												<div class="posts-image posts-image_mod" style="background-image: url(img/person-1.png);">
+												<div class="posts-image posts-image_mod js-lazy" data-src="background-image: url(img/person-1.png);">
 												</div>
 											</div>
 											<div class="col-md-9">
 												<div class="staff">
 													<div class="staff__title-block">
-														<span class="staff__title">Имя Фамилия</span>
-														<span class="staff__description">Funeral Director/Embalmer</span>
+														<span class="staff__title">
+															Имя Фамилия
+														</span>
+														<span class="staff__description">
+															Funeral Director/Embalmer
+														</span>
 													</div>
 													<p>
 														I like to call Funeral Home my home. It was in Sun Prairie, Wisconsin where I graduated from high school in 1969 and lettered in football at Sun prairie High school.
@@ -319,14 +361,18 @@
 												</a>
 											</div>
 											<div class="col-md-3">
-												<div class="posts-image posts-image_mod" style="background-image: url(img/user1.png);">
+												<div class="posts-image posts-image_mod js-lazy" data-src="background-image: url(img/user1.png);">
 												</div>
 											</div>
 											<div class="col-md-9">
 												<div class="staff">
 													<div class="staff__title-block">
-														<span class="staff__title">Имя Фамилия</span>
-														<span class="staff__description">Funeral Director/Embalmer</span>
+														<span class="staff__title">
+															Имя Фамилия
+														</span>
+														<span class="staff__description">
+															Funeral Director/Embalmer
+														</span>
 													</div>
 													<p>
 														Thank you for visiting Funeral Home. As a member of the family and leadership team, I want to make myself available to visit with you at your convenience for any need you may have.
@@ -353,14 +399,18 @@
 												</a>
 											</div>
 											<div class="col-md-3">
-												<div class="posts-image posts-image_mod" style="background-image: url(img/user1.png);">
+												<div class="posts-image posts-image_mod js-lazy" data-src="background-image: url(img/user1.png);">
 												</div>
 											</div>
 											<div class="col-md-9">
 												<div class="staff">
 													<div class="staff__title-block">
-														<span class="staff__title">Имя Фамилия</span>
-														<span class="staff__description">Funeral Director/Embalmer</span>
+														<span class="staff__title">
+															Имя Фамилия
+														</span>
+														<span class="staff__description">
+															Funeral Director/Embalmer
+														</span>
 													</div>
 													<p>
 														Lisa graduated from the University of Minnesota in 1996, with a B.S. in mortuary science. She previously was a licensed funeral director in California before she obtained her funeral directors license in Wisconsin in 2001. Lisa resides in Sun Prairie with her husband and two children.
@@ -394,19 +444,27 @@
 								<form class="post-form">
 									<div class="post-form__row row">
 										<div class="post-form__col col-md-7 col-xs-12">
-											<label for="name">Введите свое имя, чтобы оно отображалось в сообщении</label>
+											<label for="name">
+												Введите свое имя, чтобы оно отображалось в сообщении
+											</label>
 											<input class="post-form__input" type="text" id="name">
 										</div>
 										<div class="post-form__col col-md-7 col-xs-12">
-											<label for="email">Введите Ваш email</label>
+											<label for="email">
+												Введите Ваш email
+											</label>
 											<input class="post-form__input" type="text" id="email">
 										</div>
 										<div class="post-form__col col-md-7 col-xs-12">
-											<label for="position">Введите Вашу должность (при желании)</label>
+											<label for="position">
+												Введите Вашу должность (при желании)
+											</label>
 											<input class="post-form__input" type="text" id="position">
 										</div>
 										<div class="post-form__col col-md-12 col-xs-12">
-											<label for="message">Ваш отзыв</label>
+											<label for="message">
+												Ваш отзыв
+											</label>
 											<textarea class="post-form__textarea" id="message"></textarea>
 										</div>
 									</div>
@@ -414,7 +472,9 @@
 										Ваш отзыв будет проверен модератором. После этого он появится на сайте.
 									</p>
 									<div class="post-form__btn">
-										<button type="submit" class="btn btn-md">Отправить</button>
+										<button type="submit" class="btn btn-md">
+											Отправить
+										</button>
 									</div>
 								</form>
 							</div>
@@ -436,52 +496,74 @@
 						<div class="col-md-9 col-sm-12">
 							<div class="services-agency">
 								<!-- begin agency -->
-									<div class="wind__agency agency">
-										<div class="agency__table">
-											<div class="agency__table-cell">
-												<div class="agency__logo agency__logo_md">
-													<img src="./img/map-img.png" alt="img">
-												</div>
-												<div class="agency__stars">
-													<span class="ratings">
-														<span class="fi flaticon-favorite"></span>
-														<span class="fi flaticon-favorite"></span>
-														<span class="fi flaticon-favorite"></span>
-														<span class="fi flaticon-favorite"></span>
-														<span class="fi flaticon-favorite no"></span>
-														<span class="ratings__appraisal">4.0</span>
-													</span>
-												</div>
+								<div class="wind__agency agency">
+									<div class="agency__table">
+										<div class="agency__table-cell">
+											<div class="agency__logo agency__logo_md">
+												<img class="js-lazy" data-src="./img/map-img.png" alt="img">
 											</div>
-											<div class="agency__table-cell">
-												<div class="contacts-item"><i class="fa fa-map-marker"></i>Хабаровск, Гоголя, 8</div>
-												<div class="contacts-item"><i class="fi flaticon-black"></i>dmitryz5700@gmail.com</div>
+											<div class="agency__stars">
+												<span class="ratings">
+													<span class="fi flaticon-favorite"></span>
+													<span class="fi flaticon-favorite"></span>
+													<span class="fi flaticon-favorite"></span>
+													<span class="fi flaticon-favorite"></span>
+													<span class="fi flaticon-favorite no"></span>
+													<span class="ratings__appraisal">4.0</span>
+												</span>
 											</div>
-											<div class="agency__table-cell agency__table-cell_mob">
-												<div class="contacts-item"><i class="fi flaticon-technology"></i>8 (111) 123 123</div>
-												<div class="contacts-item"><span class="contacts-item__icon">{{ mixins.icon('clock') }}</span>С 7.00 до 21.00, без выходных</div>
+										</div>
+										<div class="agency__table-cell">
+											<div class="contacts-item">
+												<i class="fa fa-map-marker"></i>
+												Хабаровск, Гоголя, 8
+											</div>
+											<div class="contacts-item">
+												<i class="fi flaticon-black"></i>
+												dmitryz5700@gmail.com
+											</div>
+										</div>
+										<div class="agency__table-cell agency__table-cell_mob">
+											<div class="contacts-item">
+												<i class="fi flaticon-technology"></i>
+												8 (111) 123 123
+											</div>
+											<div class="contacts-item">
+												<span class="contacts-item__icon">
+													{{ mixins.icon('clock') }}
+												</span>
+												С 7.00 до 21.00, без выходных
 											</div>
 										</div>
 									</div>
-									<!-- end agency -->
+								</div>
+								<!-- end agency -->
 							</div>
 							<div class="team-info team-info_mod">
 								<form class="post-form">
 									<div class="post-form__row row">
 										<div class="post-form__col col-md-7 col-xs-12">
-											<label for="name1">Введите свое имя</label>
+											<label for="name1">
+												Введите свое имя
+											</label>
 											<input class="post-form__input" type="text" id="name1">
 										</div>
 										<div class="post-form__col col-md-7 col-xs-12">
-											<label for="email1">Введите Ваш email</label>
+											<label for="email1">
+												Введите Ваш email
+											</label>
 											<input class="post-form__input" type="text" id="email1">
 										</div>
 										<div class="post-form__col col-md-12 col-xs-12">
-											<label for="message1">Ваш сообщение</label>
+											<label for="message1">
+												Ваш сообщение
+											</label>
 											<textarea class="post-form__textarea" id="message1"></textarea>
 										</div>
 									</div>
-									<button type="submit" class="btn">Отправить</button>
+									<button type="submit" class="btn">
+										Отправить
+									</button>
 								</form>
 							</div>
 						</div>
@@ -500,7 +582,7 @@
 							</div>
 							<div class="side-widget hidein">
 								<div class="banner">
-									<img src="img/banner.png" alt="banner">
+									<img class="js-lazy" data-src="img/banner.png" alt="banner">
 								</div>
 							</div>
 						</aside> 
@@ -520,12 +602,15 @@
 										</div>
 									</div>
 									<div class="shop-sort">
-										<a href="#" class="active"><i class="flaticon-squares"></i></a>
-										<a href="#"><i class="flaticon-signs-1"></i></a>
+										<a href="#" class="active">
+											<i class="flaticon-squares"></i>
+										</a>
+										<a href="#">
+											<i class="flaticon-signs-1"></i>
+										</a>
 									</div>
 								</div>
 							</div>
-							
 							<div class="row">
 							{% for i in range(0, 6) %}
 								<div class="col-md-4 col-sm-6 col-xs-6">
@@ -533,17 +618,20 @@
 										<div class="companies-item__wrap">
 											<div class="sf-thumb">
 												<div class="sf-thumb__wrap">
-													<img src="./img/wreath-1.png" alt="img">
+													<img class="js-lazy" data-src="./img/wreath-1.png" alt="img">
 												</div>
 											</div>
 											<div class="companies-item__text">
-												<h4 class="title-s_mod companies-item__name">Наименование товара</h4>
+												<h4 class="title-s_mod companies-item__name">
+													Наименование товара
+												</h4>
 												<div class="companies-item__type">
 													<div class="product-prices">
-														<div class="product-single-price">690 ₽
+														<div class="product-single-price">
+															690 ₽
 														</div>
 														<div class="product-single-price">
-															<img src="img/logo1.png" alt="map-img">
+															<img class="js-lazy" data-src="img/logo1.png" alt="map-img">
 														</div>
 													</div>
 												</div>
@@ -565,7 +653,10 @@
 												</div>
 											</div>
 											<div class="companies-item__btn">
-												<span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span>
+												<span class="btn">
+													<i class="fi flaticon-web"></i> 
+													&nbsp;Купить
+												</span>
 											</div>    
 										</div>
 									</a>
@@ -586,16 +677,15 @@
 							</div>
 							<div class="side-widget hidein">
 								<div class="banner">
-									<img src="img/banner1.png" alt="banner">
+									<img class="js-lazy" data-src="img/banner1.png" alt="banner">
 								</div>
 							</div>
 						</div>
 						</div>
 					</div>
 				</div>
-
 				<div class="bottom-image">
-					<img src="img/rose-angel.png" alt="rose-angel">
+					<img class="js-lazy" data-src="img/rose-angel.png" alt="rose-angel">
 				</div>
 			</div>
 		</div>
