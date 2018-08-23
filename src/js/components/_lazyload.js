@@ -1,6 +1,7 @@
 /* eslint-disable */
-import LazyLoad from 'vanilla-lazyload';
+import LazyLoad from '../lib/lazyload';
 
-var myLazyLoad = new LazyLoad({
-  elements_selector: '.lazy'
+const myLazyLoad = new LazyLoad({
+	elements_selector: '.js-lazy'
 });
+/* eslint-enable */
