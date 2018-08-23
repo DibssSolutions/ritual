@@ -3,8 +3,15 @@
 	<div class="page-head">
 		<div class="container page-head__container">
 			<ul class="bcrumbs page-head__bcrumbs">
-				<li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
-				<li><a href="#">Obituaries</a></li>
+				<li>
+					<a href="#">
+						<span class="showin">{{ mixins.icon('house') }}</span>
+						<span class="hidein">Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">Obituaries</a>
+				</li>
 				<li>Past</li>
 			</ul>
 		</div>
@@ -15,46 +22,48 @@
 				<div class="choice-slider">
 					<!-- begin slider -->
 					<div class="choice-slider__wrap">
-						<h1 class="choice-slider__title title-l">Поминальный обед - выбор ресторана</h1>
+						<h1 class="choice-slider__title title-l">
+							Поминальный обед - выбор ресторана
+						</h1>
 						<p>
 							Тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст тут какой то текст
 						</p>
 						<div class="choice__slider slider">
 							<div class="slider__for js-slider-for">
-								<div class="slider__slide" style="background-image: url(img/restaurant.png)">
+								<div class="slider__slide js-lazy" data-src="background-image: url(img/restaurant.png)">
 									<h4 class="slider__title title-s">Название ресторана</h4>
 								</div>
-								<div class="slider__slide" style="background-image: url(img/restaurant.png)">
+								<div class="slider__slide js-lazy" data-src="background-image: url(img/restaurant.png)">
 									<h4 class="slider__title title-s">Название ресторана</h4>
 								</div>
-								<div class="slider__slide" style="background-image: url(img/restaurant.png)">
+								<div class="slider__slide js-lazy" data-src="background-image: url(img/restaurant.png)">
 									<h4 class="slider__title title-s">Название ресторана</h4>
 								</div>
-								<div class="slider__slide" style="background-image: url(img/restaurant.png)">
+								<div class="slider__slide js-lazy" data-src="background-image: url(img/restaurant.png)">
 									<h4 class="slider__title title-s">Название ресторана</h4>
 								</div>
-								<div class="slider__slide" style="background-image: url(img/restaurant.png)">
+								<div class="slider__slide js-lazy" data-src="background-image: url(img/restaurant.png)">
 									<h4 class="slider__title title-s">Название ресторана</h4>
 								</div>
-								<div class="slider__slide" style="background-image: url(img/restaurant.png)">
+								<div class="slider__slide js-lazy" data-src="background-image: url(img/restaurant.png)">
 									<h4 class="slider__title title-s">Название ресторана</h4>
 								</div>
-								<div class="slider__slide" style="background-image: url(img/restaurant.png)">
+								<div class="slider__slide js-lazy" data-src="background-image: url(img/restaurant.png)">
 									<h4 class="slider__title title-s">Название ресторана</h4>
 								</div>
-								<div class="slider__slide" style="background-image: url(img/restaurant.png)">
+								<div class="slider__slide js-lazy" data-src="background-image: url(img/restaurant.png)">
 									<h4 class="slider__title title-s">Название ресторана</h4>
 								</div>
 							</div>
 							<div class="slider__nav js-slider-nav">
-								<div class="slider__slide-small" style="background-image: url(img/restaurant.png)"></div>
-								<div class="slider__slide-small" style="background-image: url(img/restaurant.png)"></div>
-								<div class="slider__slide-small" style="background-image: url(img/restaurant.png)"></div>
-								<div class="slider__slide-small" style="background-image: url(img/restaurant.png)"></div>
-								<div class="slider__slide-small" style="background-image: url(img/restaurant.png)"></div>
-								<div class="slider__slide-small" style="background-image: url(img/restaurant.png)"></div>
-								<div class="slider__slide-small" style="background-image: url(img/restaurant.png)"></div>
-								<div class="slider__slide-small" style="background-image: url(img/restaurant.png)"></div>
+								<div class="slider__slide-small js-lazy" data-src="background-image: url(img/restaurant.png)"></div>
+								<div class="slider__slide-small js-lazy" data-src="background-image: url(img/restaurant.png)"></div>
+								<div class="slider__slide-small js-lazy" data-src="background-image: url(img/restaurant.png)"></div>
+								<div class="slider__slide-small js-lazy" data-src="background-image: url(img/restaurant.png)"></div>
+								<div class="slider__slide-small js-lazy" data-src="background-image: url(img/restaurant.png)"></div>
+								<div class="slider__slide-small js-lazy" data-src="background-image: url(img/restaurant.png)"></div>
+								<div class="slider__slide-small js-lazy" data-src="background-image: url(img/restaurant.png)"></div>
+								<div class="slider__slide-small js-lazy" data-src="background-image: url(img/restaurant.png)"></div>
 							</div>
 						</div>
 					</div>
@@ -70,7 +79,7 @@
 				</div>
 				<div class="map-wrap__select mob-hide">
                     <div class="select">
-                        <select name="region" id="region" style="width: 100%" class="js-select">
+                        <select name="region" id="region js-lazy" data-src="width: 100%" class="js-select">
                             <option value="1">Выберите район</option>
                             <option value="2">Индустриальный</option>
                             <option value="3">Кировский</option>
@@ -86,7 +95,7 @@
 						<div class="baloon__row">
 							<div class="baloon__col">
 								{{? baloon.img }}
-								<div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
+								<div class="baloon__img"><img class="js-lazy" data-src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
 								{{?}}
 								{{? baloon.title }}
 								<div class="baloon__title">{{=baloon.title}}</div>
@@ -218,7 +227,7 @@
 						<div class="agency">
 							<div class="agency__head">
 								<div class="agency__logo">
-									<img src="./img/map-img.png" alt="img">
+									<img class="js-lazy" data-src="./img/map-img.png" alt="img">
 								</div>
 								<div class="agency__link">
 									<a href="#" class="btn btn_small btn_bold">Перейти<i class="fi flaticon-arrows"></i></a>
@@ -303,7 +312,7 @@
 								{{ mixins.readAll(null, 'mob-hide') }}
 							</div>
 							<!-- ¯\_(ツ)_/¯ -->
-							<div class="wind__bg" style="background-image: url(./img/choice-restaurant.png);"></div>
+							<div class="wind__bg js-lazy" data-src="background-image: url(./img/choice-restaurant.png);"></div>
 						</div>
 						<!-- end wind -->
 					</div>
@@ -337,7 +346,7 @@
 						                <div class="about-agency__info">
 						                    <div class="about-agency__info-wrap">
 						                        <div class="about-agency__head">
-						                            <div class="about-agency__logo"> <img src="./img/map-img.png" alt="img"> </div>
+						                            <div class="about-agency__logo"> <img class="js-lazy" data-src="./img/map-img.png" alt="img"> </div>
 						                            <div class="about-agency__rating"> 
 						                                <span class="ratings">
 						                                    <span class="fi flaticon-favorite"></span>
@@ -377,7 +386,7 @@
 						        </div>
 						    </div>
 						    <!-- end about-agency -->
-						    <div class="wind__bg" style="background-image: url(./img/choice-restaurant.png);"></div>
+						    <div class="wind__bg js-lazy" data-src="background-image: url(./img/choice-restaurant.png);"></div>
 						</div>
 						<!-- end wind -->
 					</div>
@@ -409,23 +418,23 @@
 					    			<div class="full-slider__slide">
 					    				<a href="./img/full-slider-img.jpg" data-fancybox="gallery" class="full-img">
 					    					{{ mixins.icon('full') }}
-					    					<img src="./img/choice-slide.png" alt="img">
+					    					<img class="js-lazy" data-src="./img/choice-slide.png" alt="img">
 					    				</a>
 					    			</div>
 					    			<div class="full-slider__slide">
 					    				<a href="./img/choice-slide.png" data-fancybox="gallery" class="full-img">
 					    					{{ mixins.icon('full') }}
-					    					<img src="./img/choice-slide.png" alt="img">
+					    					<img class="js-lazy" data-src="./img/choice-slide.png" alt="img">
 					    				</a>
 					    			</div>
 					    			<div class="full-slider__slide">
 					    				<a href="./img/choice-slide.png" data-fancybox="gallery" class="full-img">
 					    					{{ mixins.icon('full') }}
-					    					<img src="./img/choice-slide.png" alt="img">
+					    					<img class="js-lazy" data-src="./img/choice-slide.png" alt="img">
 					    				</a>
 					    			</div>
 					    		</div>
-					    		<div class="wind__bg" style="background-image: url(./img/choice-restaurant.png);"></div>
+					    		<div class="wind__bg js-lazy" data-src="background-image: url(./img/choice-restaurant.png);"></div>
 					    	</div>
 					    </div>
 					    <!-- end photoalbum -->
@@ -461,7 +470,7 @@
 			    							<div class="companies-item__wrap">
 			    								<div class="sf-thumb">
 			    									<div class="sf-thumb__wrap">
-			    										<img src="./img/dish.png" alt="img">
+			    										<img class="js-lazy" data-src="./img/dish.png" alt="img">
 			    									</div>
 			    								</div>
 			    								<div class="companies-item__text">
@@ -471,7 +480,7 @@
 			    											<div class="product-single-price">690 ₽
 			    											</div>
 			    											<div class="product-single-price">
-			    												<img src="img/logo1.png" alt="map-img">
+			    												<img class="js-lazy" data-src="img/logo1.png" alt="map-img">
 			    											</div>
 			    										</div>
 			    									</div>
@@ -506,7 +515,7 @@
 			    				{% endfor %}
 			    				</div>
 			    			</div>
-			    			<div class="wind__bg" style="background-image: url(./img/choice-restaurant.png);">
+			    			<div class="wind__bg js-lazy" data-src="background-image: url(./img/choice-restaurant.png);">
 			    			</div>
 			    		</div>
 			    		<!-- end-wind -->
@@ -539,7 +548,7 @@
                         <div class="agency__table">
                             <div class="agency__table-cell">
                                 <div class="agency__logo agency__logo_md">
-                                    <img src="./img/map-img.png" alt="img">
+                                    <img class="js-lazy" data-src="./img/map-img.png" alt="img">
                                 </div>
                                 <div class="agency__stars">
                                     <span class="ratings">
@@ -570,7 +579,7 @@
                                 <div class="baloon__row">
                                     <div class="baloon__col">
                                         {{? baloon.img }}
-                                        <div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
+                                        <div class="baloon__img"><img class="js-lazy" data-src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div>
                                         {{?}}
                                         {{? baloon.title }}
                                         <div class="baloon__title">{{=baloon.title}}</div>
@@ -689,7 +698,7 @@
                             });
                         </script>
                     <!-- end map -->
-                    <div class="wind__bg" style="background-image: url(./img/choice-restaurant.png);"></div>
+                    <div class="wind__bg js-lazy" data-src="background-image: url(./img/choice-restaurant.png);"></div>
                 </div>
                 <!-- end wind -->
 					</div>
@@ -724,7 +733,7 @@
 		                    <div class="agent">
 		                        <div class="agent__col-sm">
 		                            <div class="agent__title">Ритуальный агент</div>
-		                            <div class="agent__img" style="background-image: url(./img/agent-img.png);">
+		                            <div class="agent__img js-lazy" data-src="background-image: url(./img/agent-img.png);">
 		                            </div>
 		                        </div>
 		                        <div class="agent__col-md">
@@ -748,7 +757,7 @@
 		                    <div class="agent">
 		                        <div class="agent__col-sm">
 		                            <div class="agent__title">Зал для прощения</div>
-		                            <div class="agent__img" style="background-image: url(./img/church-img.png);">
+		                            <div class="agent__img js-lazy" data-src="background-image: url(./img/church-img.png);">
 		                            </div>
 		                        </div>
 		                        <div class="agent__col-md">
@@ -778,7 +787,7 @@
 		                    <div class="agent">
 		                        <div class="agent__col-sm">
 		                            <div class="agent__title">Кладбище/Крематорий</div>
-		                            <div class="agent__img" style="background-image: url(./img/img.png);">
+		                            <div class="agent__img js-lazy" data-src="background-image: url(./img/img.png);">
 		                            </div>
 		                        </div>
 		                        <div class="agent__col-md">
@@ -808,7 +817,7 @@
 		                    <div class="agent border">
 		                        <div class="agent__col-sm">
 		                            <div class="agent__title">Церковь для отпевания</div>
-		                            <div class="agent__img" style="background-image: url(./img/church.png);">
+		                            <div class="agent__img js-lazy" data-src="background-image: url(./img/church.png);">
 		                            </div>
 		                        </div>
 		                        <div class="agent__col-md">
@@ -837,7 +846,7 @@
 		                    <div class="agent border">
 		                        <div class="agent__col-sm">
 		                            <div class="agent__title">Ресторан для поминального обеда</div>
-		                            <div class="agent__img" style="background-image: url(./img/dish-img.png);">
+		                            <div class="agent__img js-lazy" data-src="background-image: url(./img/dish-img.png);">
 		                            </div>
 		                        </div>
 		                        <div class="agent__col-md">
@@ -875,7 +884,7 @@
 		                        </div>
 		                    </div>
 		                    <!-- end agent -->
-		                    <div class="wind__bg" style="background-image: url(./img/choice-restaurant.png);">
+		                    <div class="wind__bg js-lazy" data-src="background-image: url(./img/choice-restaurant.png);">
 		                    </div>
 		                </div>
 		                <!-- end wind -->
@@ -908,7 +917,7 @@
 					    			</div>
 					    			<div class="check-list__col col-md-6 col-sm-6">
 					    				<div class="check-list__img">
-					    					<img src="./img/check-list2.png" alt="img">
+					    					<img class="js-lazy" data-src="./img/check-list2.png" alt="img">
 					    				</div>
 					    			</div>
 					    		</div>
@@ -999,7 +1008,7 @@
 						    <div class="agency__table">
 						        <div class="agency__table-cell">
 						            <div class="agency__logo agency__logo_md">
-						                <img src="./img/map-img.png" alt="img">
+						                <img class="js-lazy" data-src="./img/map-img.png" alt="img">
 						            </div>
 						            <div class="agency__stars">
 						                <span class="ratings">
@@ -1034,10 +1043,10 @@
 						</div>
 						<!-- end agency -->
 						{%- endfor %}
-						<div class="banner margin-bottom-50"> <img src="img/banner1.png" alt="banner"> </div>
+						<div class="banner margin-bottom-50"> <img class="js-lazy" data-src="img/banner1.png" alt="banner"> </div>
 					</div>
 					<div class="col-md-3">
-						<div class="banner"> <img src="img/banner.png" alt="banner"> </div>
+						<div class="banner"> <img class="js-lazy" data-src="img/banner.png" alt="banner"> </div>
 					</div>
 				</div>
 			</div>
@@ -1086,7 +1095,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="container"><div class="bottom-image"> <img src="img/rose-angel.png" alt="rose-angel"> </div>
+			<div class="container"><div class="bottom-image"> <img class="js-lazy" data-src="img/rose-angel.png" alt="rose-angel"> </div>
 			</div>
 		</div>
 	</div>

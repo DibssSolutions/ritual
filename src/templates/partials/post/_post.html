@@ -3,8 +3,15 @@
 	<div class="page_head ">
 		<div class="container">
 			<ul class="bcrumbs pull-left">
-				<li><a href="#"><span class="showin">{{ mixins.icon('house') }}</span><span class="hidein">Home</span></a></li>
-				<li><a href="#">Obituaries</a></li>
+				<li>
+					<a href="#">
+						<span class="showin">{{ mixins.icon('house') }}</span>
+						<span class="hidein">Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">Obituaries</a>
+				</li>
 				<li>Blog</li>
 			</ul>
 		</div>
@@ -116,13 +123,13 @@
 								</form>
 							</div>
 							<div class="side-widget width-img-angel hidein">
-								<img src="img/angel-statue.jpg" alt="angel-statue">
+								<img class="js-lazy" data-src="img/angel-statue.jpg" alt="angel-statue">
 							</div>
 							<div class="side-widget hidein">
 								<h5 class="title-s">Недавние публикации</h5>
 								<ul class="side-posts">
 									<li class="margin-bottom-30">
-										<div class="posts-image" style="background-image: url(img/aside-post-img.png);">
+										<div class="posts-image js-lazy" data-src="background-image: url(img/aside-post-img.png);">
 										</div>
 										<p>
 											Что такое сглаз и как от него избавится?
@@ -130,7 +137,7 @@
 										<span class="meta">Имя Фаилия</span>
 									</li>
 									<li class="margin-bottom-30">
-										<div class="posts-image" style="background-image: url(img/post-img.png);">
+										<div class="posts-image js-lazy" data-src="background-image: url(img/post-img.png);">
 										</div>
 										<p>
 											Что снится к любви и наслаждению, а что – к разлуке и печали
@@ -138,7 +145,7 @@
 										<span class="meta">Имя Фаилия</span>
 									</li>
 									<li>
-										<div class="posts-image" style="background-image: url(img/aside-post-img.png);">
+										<div class="posts-image js-lazy" data-src="background-image: url(img/aside-post-img.png);">
 										</div>
 										<p>
 											Что такое сглаз и как от него избавится?
@@ -149,7 +156,7 @@
 							</div>
 							<div class="side-widget hidein">
 								<div class="banner">
-									<img src="img/banner.png" alt="banner">
+									<img class="js-lazy" data-src="img/banner.png" alt="banner">
 								</div>
 							</div>
 						</aside>
@@ -159,11 +166,22 @@
 									<h3 class="title-m">Название статьи будет тут длинное в две строки</h3>
 								</div>
 								<article>
-									<div class="post-thumb"><img src="img/blog-img.jpg" class="img-responsive" alt="" /></div>
+									<div class="post-thumb">
+										<img class="js-lazy" data-src="img/blog-img.jpg" class="img-responsive" alt="" />
+									</div>
 									<div class="post-meta">
-										<span><i class="fa fa-calendar"></i> 13.03.18</span>
-										<span><i class="fi fi flaticon-people"></i> Имя Фамилия</span>
-										<span><i class="fa fa-comments-o"></i> Рубрика</span>
+										<span>
+											<i class="fa fa-calendar"></i> 
+											13.03.18
+										</span>
+										<span>
+											<i class="fi fi flaticon-people"></i> 
+											Имя Фамилия
+										</span>
+										<span>
+											<i class="fa fa-comments-o"></i> 
+											Рубрика
+										</span>
 									</div>
 									<hr>
 									<p>
@@ -218,14 +236,19 @@
 							</div>
 							<div class="side-widget hidein">
 								<div class="banner">
-									<img src="img/banner1.png" alt="banner">
+									<img class="js-lazy" data-src="img/banner1.png" alt="banner">
 								</div>
 							</div>
 							<div class="related-comments facilities">
-								<h5 class="title-s_mod">Комментарии (2) <span class="arrow-up"><i class="fa fas fa-caret-up"></i></span></h5>
+								<h5 class="title-s_mod">
+									Комментарии (2) 
+									<span class="arrow-up">
+										<i class="fa fas fa-caret-up"></i>
+									</span>
+								</h5>
 								<div class="team-info no-border">
 									<div class="col-md-3">
-										<div class="posts-image posts-image_mod" style="background-image: url(img/user1.png);">
+										<div class="posts-image posts-image_mod js-lazy" data-src="background-image: url(img/user1.png);">
 										</div>
 									</div>
 									<div class="col-md-9 padding_top">
@@ -241,7 +264,7 @@
 								<div class="clearfix"></div>
 								<div class="team-info no-border">
 									<div class="col-md-3">
-										<div class="posts-image posts-image_mod" style="background-image: url(img/user.png);">
+										<div class="posts-image posts-image_mod js-lazy" data-src="background-image: url(img/user.png);">
 										</div>
 									</div>
 									<div class="col-md-9 padding_top">
@@ -255,13 +278,18 @@
 								<div class="clearfix"></div>
 							</div>
 							<div class="comment-form">
-								<h5 class="comment-form__title title-s_mod">Оставить комментарий <span class="arrow-up"><i class="fa fas fa-caret-up"></i></span></h5>
+								<h5 class="comment-form__title title-s_mod">
+									Оставить комментарий
+									<span class="arrow-up">
+									<i class="fa fas fa-caret-up"></i>
+									</span>
+								</h5>
 								{% include "partials/post/_post-form.html" %}
 							</div>
 						</div>
 					</div>
 					<div class="bottom-image">
-						<img src="img/rose-angel.png" alt="rose-angel">
+						<img class="js-lazy" data-src="img/rose-angel.png" alt="rose-angel">
 					</div>
 				</div>
 			</div>

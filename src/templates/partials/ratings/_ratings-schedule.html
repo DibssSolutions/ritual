@@ -1,126 +1,129 @@
 <div class="ratings-schedule">
-    <div class="container">
-        <div class="schedule">
-            <div class="row ratings-schedule__row">
-                <div class="col-md-3"></div>
-                <div class="col-md-9">
-                    <h4 class="schedule__title title-m">
-                        Заголовок для блока рейтингов
-                    </h4>
-                    <div class="ratings-top__filter rating-filter">
-                                        
-                            <div class="rating-filter__radio">
-                                <input type="radio" id="ratings-schedule-1" name="ratings-schedule-filter">
-                                <label for="ratings-schedule-1">По отзывам</label>
-                            </div>
-                            <div class="rating-filter__radio">
-                                <input type="radio" id="ratings-schedule-2" name="ratings-schedule-filter">
-                                <label for="ratings-schedule-2">По оценкам</label>
-                            </div>
-                            <div class="rating-filter__radio">
-                                <input type="radio" id="ratings-schedule-3" name="ratings-schedule-filter">
-                                <label for="ratings-schedule-3">По мнению портала</label>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-md-3 ratings-schedule__aside">
-                    <div class="aside-block">
-                        <div class="aside-block__wrap">
-                            <h5 class="aside-block__title">
-                                Обозначения:
-                            </h5>
-                            <ul class="aside-block__list">
-                                <li class="aside-block__item beige">
-                                    <span class="aside-block__icon">
-                                    {{ mixins.icon('square') }}
-                                    </span>
-                                    - Обозначение метки на графике
-                                </li>
-                                <li class="aside-block__item brown">
-                                    <span class="aside-block__icon">
-                                    {{ mixins.icon('square') }}
-                                    </span>
-                                    - Обозначение метки на графике
-                                </li>
-                                <li class="aside-block__item yellow">
-                                    <span class="aside-block__icon">
-                                    {{ mixins.icon('square') }}
-                                    </span>
-                                    - Обозначение на графике
-                                </li>
-                                <li class="aside-block__item red">
-                                    <span class="aside-block__icon">
-                                    {{ mixins.icon('square') }}
-                                    </span>
-                                    - Обозначение метки на графике
-                                </li>
-                                <li class="aside-block__item purpule">
-                                    <span class="aside-block__icon">
-                                    {{ mixins.icon('square') }}
-                                    </span>
-                                    - Обозначение на графике
-                                </li>
-                                <li class="aside-block__item gray">
-                                    <span class="aside-block__icon">
-                                    {{ mixins.icon('square') }}
-                                    </span>
-                                    - Обозначение метки на графике
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="aside-block__nav text-center">
-                            <div class="aside-block__nav-name">
-                                Вариант графика выбрать
-                            </div>
-                            <ul>
-                                <li class="aside-block__nav-item"><a href="#">{{ mixins.icon('chart-pie') }}</a></li>
-                                <li class="aside-block__nav-item"><a href="#">{{ mixins.icon('growing-bar-chart') }}</a></li>
-                                <li class="aside-block__nav-item"><a href="#">{{ mixins.icon('chart') }}</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="schedule__wrap">
-                        <div class="schedule__block">
-                            <img src="img/schedule.png" alt="schedule">
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="ratings-schedule__bottom">
-                <div class="banner">
-                    <img src="img/banner1.png" alt="banner">
-                </div>
-            <div class="drop js-drop has-show-block">
-                <div class="drop__wrap js-drop-wrap">
-                    <div class="drop__show js-drop-shows">
-                    <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения
-                        форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
-                    </div>
-                    <div class="drop__hidden js-drop-hidden">
-                    <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения
-                        форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
-                    </div>
-                </div>
-                <!-- begin read-all -->
-                <div class="read-all mob-hide">
-                    <a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
-                        <span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
-                        <span class="fi flaticon-arrows"></span>
-                    </a>
-                </div>
-                <!-- end read-all -->
-            </div>
-        </div> 
-    </div>    
+	<div class="container">
+		<div class="schedule">
+			<div class="row ratings-schedule__row">
+				<div class="col-md-3"></div>
+				<div class="col-md-9">
+					<h4 class="schedule__title title-m">
+						Заголовок для блока рейтингов
+					</h4>
+					<div class="ratings-top__filter rating-filter">
+						<div class="rating-filter__radio">
+							<input type="radio" id="ratings-schedule-1" name="ratings-schedule-filter">
+							<label for="ratings-schedule-1">По отзывам</label>
+						</div>
+						<div class="rating-filter__radio">
+							<input type="radio" id="ratings-schedule-2" name="ratings-schedule-filter">
+							<label for="ratings-schedule-2">По оценкам</label>
+						</div>
+						<div class="rating-filter__radio">
+							<input type="radio" id="ratings-schedule-3" name="ratings-schedule-filter">
+							<label for="ratings-schedule-3">По мнению портала</label>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 ratings-schedule__aside">
+					<div class="aside-block">
+						<div class="aside-block__wrap">
+							<h5 class="aside-block__title">
+								Обозначения:
+							</h5>
+							<ul class="aside-block__list">
+								<li class="aside-block__item beige">
+									<span class="aside-block__icon">
+									{{ mixins.icon('square') }}
+									</span>
+									- Обозначение метки на графике
+								</li>
+								<li class="aside-block__item brown">
+									<span class="aside-block__icon">
+									{{ mixins.icon('square') }}
+									</span>
+									- Обозначение метки на графике
+								</li>
+								<li class="aside-block__item yellow">
+									<span class="aside-block__icon">
+									{{ mixins.icon('square') }}
+									</span>
+									- Обозначение на графике
+								</li>
+								<li class="aside-block__item red">
+									<span class="aside-block__icon">
+									{{ mixins.icon('square') }}
+									</span>
+									- Обозначение метки на графике
+								</li>
+								<li class="aside-block__item purpule">
+									<span class="aside-block__icon">
+									{{ mixins.icon('square') }}
+									</span>
+									- Обозначение на графике
+								</li>
+								<li class="aside-block__item gray">
+									<span class="aside-block__icon">
+									{{ mixins.icon('square') }}
+									</span>
+									- Обозначение метки на графике
+								</li>
+							</ul>
+						</div>
+						<div class="aside-block__nav text-center">
+							<div class="aside-block__nav-name">
+								Вариант графика выбрать
+							</div>
+							<ul>
+								<li class="aside-block__nav-item">
+									<a href="#">{{ mixins.icon('chart-pie') }}</a>
+								</li>
+								<li class="aside-block__nav-item">
+									<a href="#">{{ mixins.icon('growing-bar-chart') }}</a>
+								</li>
+								<li class="aside-block__nav-item">
+									<a href="#">{{ mixins.icon('chart') }}</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="schedule__wrap">
+						<div class="schedule__block">
+							<img class="js-lazy" data-src="img/schedule.png" alt="schedule">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="ratings-schedule__bottom">
+			<div class="banner">
+				<img class="js-lazy" data-src="img/banner1.png" alt="banner">
+			</div>
+			<div class="drop js-drop has-show-block">
+				<div class="drop__wrap js-drop-wrap">
+					<div class="drop__show js-drop-shows">
+					<p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения
+						форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
+					</div>
+					<div class="drop__hidden js-drop-hidden">
+					<p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного выбора, кроме определения
+						форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные </p>
+					</div>
+				</div>
+				<!-- begin read-all -->
+				<div class="read-all mob-hide">
+					<a href="#" class="read-all__link js-open-drop" data-text-open="Читать всю информацию" data-text-close="Скрыть всю информацию">
+						<span class="drop__btn-text js-drop-btn-text">Читать всю информацию</span>
+						<span class="fi flaticon-arrows"></span>
+					</a>
+				</div>
+				<!-- end read-all -->
+			</div>
+		</div> 
+	</div>    
 </div>
-
 <div class="container">
-    <div class="bottom-image">
-        <img src="img/rose-angel.png" alt="rose-angel">
-    </div>
+	<div class="bottom-image">
+		<img class="js-lazy" data-src="img/rose-angel.png" alt="rose-angel">
+	</div>
 </div>
