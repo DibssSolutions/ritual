@@ -42,7 +42,7 @@
 <svg class="icon icon-mark"><use xlink:href="img/sprite.svg#icon-mark"></use></svg>
 
 							</span>
-                    <div class="select"> <select name="region" id="heade-region" style="width: 100%" class="js-select" placeholder="Выберите район">
+                    <div class="select"> <select name="region" id="heade-region" style="width: 100%" class="js-select">
 									<option value="1">Выберите район</option>
 									<option value="2">Индустриальный</option>
 									<option value="3">Кировский</option>
@@ -198,8 +198,8 @@
                         <div class="drop__wrap js-drop-wrap">
                           <div class="drop__show js-drop-shows">
                             <p> В нашей торгово-производственной фирме Студия Ангел вы можете воспользоваться услугами ритуального агента, который возьмет на себя все обязанности по подготовке и организации похорон ваших близких людей.</p>
-                            <p> В спектр услуг ритуального агентства «Диорама» входят следующие обязанности:</p>
-                            <ul class="price-list"> <span>Наш агент поможет вам осуществить:</span>
+                            <p> В спектр услуг ритуального агентства «Диорама» входят следующие обязанности:</p> <span>Наш агент поможет вам осуществить:</span>
+                            <ul class="price-list">
                               <li class="price-list__item">подготовку усопшего, в которую входит омовение тела, бальзамирование, грим при необходимости, облаченье в одежды;</li>
                               <li class="price-list__item">получение необходимых документов в районной поликлинике и органах ЗАГС;</li>
                               <li class="price-list__item">выбор и доставку необходимых принадлежностей для похорон;</li>
@@ -208,8 +208,8 @@
                           </div>
                           <div class="drop__hidden js-drop-hidden">
                             <p> В нашей торгово-производственной фирме Студия Ангел вы можете воспользоваться услугами ритуального агента, который возьмет на себя все обязанности по подготовке и организации похорон ваших близких людей.</p>
-                            <p> В спектр услуг ритуального агентства «Диорама» входят следующие обязанности:</p>
-                            <ul class="wind-list"> <span>Наш агент поможет вам осуществить:</span>
+                            <p> В спектр услуг ритуального агентства «Диорама» входят следующие обязанности:</p> <span>Наш агент поможет вам осуществить:</span>
+                            <ul class="wind-list">
                               <li class="price-list__item">подготовку усопшего, в которую входит омовение тела, бальзамирование, грим при необходимости, облаченье в одежды;</li>
                               <li class="price-list__item">получение необходимых документов в районной поликлинике и органах ЗАГС;</li>
                               <li class="price-list__item">выбор и доставку необходимых принадлежностей для похорон;</li>
@@ -471,7 +471,7 @@
                     <div class="team-info">
                       <form class="post-form">
                         <div class="post-form__row row">
-                          <div class="post-form__col col-md-7 col-xs-12"> <label for="">Введите свое имя, чтобы оно отображалось в сообщении</label> <input class="post-form__input" type="text" id="name"> </div>
+                          <div class="post-form__col col-md-7 col-xs-12"> <label for="name">Введите свое имя, чтобы оно отображалось в сообщении</label> <input class="post-form__input" type="text" id="name"> </div>
                           <div class="post-form__col col-md-7 col-xs-12"> <label for="email">Введите Ваш email</label> <input class="post-form__input" type="text" id="email"> </div>
                           <div class="post-form__col col-md-7 col-xs-12"> <label for="position">Введите Вашу должность (при желании)</label> <input class="post-form__input" type="text" id="position"> </div>
                           <div class="post-form__col col-md-12 col-xs-12"> <label for="message">Ваш отзыв</label> <textarea class="post-form__textarea" id="message"></textarea> </div>
@@ -516,9 +516,9 @@
                     <div class="team-info team-info_mod">
                       <form class="post-form">
                         <div class="post-form__row row">
-                          <div class="post-form__col col-md-7 col-xs-12"> <label for="">Введите свое имя</label> <input class="post-form__input" type="text" id="name"> </div>
-                          <div class="post-form__col col-md-7 col-xs-12"> <label for="email">Введите Ваш email</label> <input class="post-form__input" type="text" id="email"> </div>
-                          <div class="post-form__col col-md-12 col-xs-12"> <label for="message">Ваш сообщение</label> <textarea class="post-form__textarea" id="message"></textarea> </div>
+                          <div class="post-form__col col-md-7 col-xs-12"> <label for="name1">Введите свое имя</label> <input class="post-form__input" type="text" id="name1"> </div>
+                          <div class="post-form__col col-md-7 col-xs-12"> <label for="email1">Введите Ваш email</label> <input class="post-form__input" type="text" id="email1"> </div>
+                          <div class="post-form__col col-md-12 col-xs-12"> <label for="message1">Ваш сообщение</label> <textarea class="post-form__textarea" id="message1"></textarea> </div>
                         </div> <button type="submit" class="btn">Отправить</button> </form>
                     </div>
                   </div>
@@ -575,7 +575,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                              <div class="companies-item__btn"> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                             </div>
                           </a>
                         </div>
@@ -607,7 +607,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                              <div class="companies-item__btn"> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                             </div>
                           </a>
                         </div>
@@ -639,7 +639,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                              <div class="companies-item__btn"> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                             </div>
                           </a>
                         </div>
@@ -671,7 +671,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                              <div class="companies-item__btn"> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                             </div>
                           </a>
                         </div>
@@ -703,7 +703,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                              <div class="companies-item__btn"> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                             </div>
                           </a>
                         </div>
@@ -735,7 +735,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="companies-item__btn"> <button type="button" class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</button> </div>
+                              <div class="companies-item__btn"> <span class="btn"><i class="fi flaticon-web"></i> &nbsp;Купить</span> </div>
                             </div>
                           </a>
                         </div>

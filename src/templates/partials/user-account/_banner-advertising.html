@@ -30,7 +30,7 @@
 						</ul>
 						<ul class="user-account__nav-list  mob-hide">
 							<li class="user-account__nav-item">
-								<a href="#" class="user-account__nav-link is-active">
+								<a href="#" class="user-account__nav-link">
 									<i class="fa fa-angle-right"></i>
 									Личная информация
 								</a>
@@ -60,7 +60,7 @@
 								</a>
 							</li>
 							<li class="user-account__nav-item">
-								<a href="#" class="user-account__nav-link">
+								<a href="#" class="user-account__nav-link is-active">
 									<i class="fa fa-angle-right"></i>
 									Баннерная реклама
 								</a>
@@ -85,8 +85,9 @@
 							<h4 class="ritual-agent__title title-sm">
 								Мастерская “Ангел”
 							</h4>
-							<input class="input-checkbox" type="checkbox" name="verify" id="banner1">
-							<label class="ritual-agent__label ritual-agent__label_mod" for="banner1">
+							<div class="ritual-agent__label ritual-agent__label_mod">
+								<input class="input-checkbox" type="checkbox" name="verify" id="banner1">
+								<label for="banner1" class="label-checkbox"></label>
 								<div class="banner-adver">
 									<div class="banner-adver__row">
 										<div class="banner-adver__left-col">
@@ -138,7 +139,7 @@
 										</div>
 									</div>
 								</div>
-							</label>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-10">
@@ -146,8 +147,9 @@
 							<h4 class="ritual-agent__title title-sm">
 								Мастерская “Ангел”
 							</h4>
-							<input class="input-checkbox" type="checkbox" name="verify" id="banner2">
-							<label class="ritual-agent__label" for="banner2">
+							<div class="ritual-agent__label">
+								<input class="input-checkbox" type="checkbox" name="verify" id="banner2">
+								<label  for="banner2" class="label-checkbox"></label>
 								<div class="banner-adver">
 									<div class="banner-adver__row">
 										<div class="banner-adver__left-col">
@@ -199,7 +201,7 @@
 										</div>
 									</div>
 								</div>
-							</label>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-10">
@@ -207,8 +209,9 @@
 							<h4 class="ritual-agent__title title-sm">
 								Мастерская “Ангел”
 							</h4>
-							<input class="input-checkbox" type="checkbox" name="verify" id="banner3">
-							<label class="ritual-agent__label ritual-agent__label_mod" for="banner3">
+							<div class="ritual-agent__label ritual-agent__label_mod">
+								<input class="input-checkbox" type="checkbox" name="verify" id="banner3">
+								<label  for="banner3" class="label-checkbox"></label>
 								<div class="banner-adver">
 									<div class="banner-adver__row">
 										<div class="banner-adver__left-col">
@@ -260,15 +263,16 @@
 										</div>
 									</div>
 								</div>
-							</label>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-6 col-sm-12 col-xs-12">
 						<div class="ritual-agent">
-							<input class="input-checkbox" type="checkbox" name="verify" id="banner4">
-							<label class="ritual-agent__label ritual-agent__label_top" for="banner4">
+							<div class="ritual-agent__label ritual-agent__label_top">
+								<input class="input-checkbox" type="checkbox" name="verify" id="banner4">
+								<label  for="banner4" class="label-checkbox"></label>
 								<div class="banner-adver">
 									<div class="banner-adver__row banner-adver__row_mod">
 										<div class="banner-adver__left-col">
@@ -319,13 +323,14 @@
 										</div>
 									</div>
 								</div>
-							</label>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
 						<div class="ritual-agent">
-							<input class="input-checkbox" type="checkbox" name="verify" id="banner5">
-							<label class="ritual-agent__label ritual-agent__label_top ritual-agent__label_mod" for="banner5">
+							<div class="ritual-agent__label ritual-agent__label_top ritual-agent__label_mod">
+								<input class="input-checkbox" type="checkbox" name="verify" id="banner5">
+								<label  for="banner5" class="label-checkbox"></label>
 								<div class="banner-adver">
 									<div class="banner-adver__row banner-adver__row_mod">
 										<div class="banner-adver__left-col">
@@ -376,7 +381,7 @@
 										</div>
 									</div>
 								</div>
-							</label>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -440,8 +445,8 @@
 									<label for="pays1">Горизонтальный</label>
 								</div>
 								<div class="form-radio__radio">
-									<input type="radio" id="pays2" name="memory-pay">
-									<label for="pays2">Вертикальный</label>
+									<input type="radio" id="pays10" name="memory-pay">
+									<label for="pays10">Вертикальный</label>
 								</div>
 							</div>
 						</div>
@@ -462,15 +467,15 @@
 									</span>	
 									<div class="file-upload">
 										<div class="post-form__col">
-											<input class="post-form__input" type="text" id="way1" value="" name="way1" placeholder=":/Путь файла будет тут.....">
+											<input class="post-form__input" type="text" id="way1" name="way1" placeholder=":/Путь файла будет тут.....">
 											<label class="post-form__icon" for="file-upload-banner1">
 												<i class="fa fas fa-camera"></i>
 											</label>
 										</div>
-										<label class="file-upload__label btn btn_big" for="file-upload-photo1">
+										<label class="file-upload__label btn btn_big" for="file-upload-banner1">
 											Добавить
 										</label>
-										<input type="file" name="file-upload-photo1" id="file-upload-photo1" class="file-upload__input" value="">
+										<input type="file" name="file-upload-photo1" id="file-upload-banner1" class="file-upload__input">
 									</div>
 								</div>
 							</div>
@@ -496,21 +501,24 @@
 													<div class="slidecontainer__title">
 														Цвет шрифта
 													</div>
-													<input type="range" min="0" max="300" value="30" class="slidecontainer__slider" id="myRange">
+													<input id="range1" type="range" min="0" max="300" value="0">
+													<label for="range1" class="slidecontainer__label js-color-slide"></label>
 												</div>
 											</div>
 											<div class="post-form__col">
 												<input class="post-form__input" type="text" id="advertising-slogan" value="" name="advertising-slogan" placeholder="Рекламный слоган">
 												<label class="post-form__label" for="advertising-slogan"></label>
 												<div class="slidecontainer">
-													<input type="range" min="0" max="300" value="30" class="slidecontainer__slider" id="myRange">
+													<input id="range2" type="range" min="0" max="300" value="0">
+													<label for="range2" class="slidecontainer__label js-color-slide"></label>
 												</div>
 											</div>
 											<div class="post-form__col">
 												<input class="post-form__input" type="text" id="phone" value="" name="phone">
 												<label class="post-form__label" for="phone">Телефон</label>
 												<div class="slidecontainer">
-													<input type="range" min="0" max="300" value="30" class="slidecontainer__slider" id="myRange">
+													<input id="range3" type="range" min="0" max="300" value="0">
+													<label for="range3" class="slidecontainer__label js-color-slide"></label>
 												</div>
 											</div>
 											<div class="upload-gallery">
@@ -520,15 +528,15 @@
 													</span>	
 													<div class="file-upload">
 														<div class="post-form__col">
-															<input class="post-form__input" type="text" id="way1" value="" name="way1" placeholder=":/Путь файла будет тут.....">
-															<label class="post-form__icon" for="file-upload-banner1">
+															<input class="post-form__input" type="text" id="way2" value="" name="way2" placeholder=":/Путь файла будет тут.....">
+															<label class="post-form__icon" for="file-upload-banner2">
 																<i class="fa fas fa-camera"></i>
 															</label>
 														</div>
-														<label class="file-upload__label btn btn_big" for="file-upload-photo1">
+														<label class="file-upload__label btn btn_big" for="file-upload-banner2">
 															Сохранить готовый баннер
 														</label>
-														<input type="file" name="file-upload-photo1" id="file-upload-photo1" class="file-upload__input" value="">
+														<input type="file" name="file-upload-banner2" id="file-upload-banner2" class="file-upload__input">
 													</div>
 												</div>
 											</div>
@@ -628,13 +636,10 @@
 						</div>
 					</div>
 				</div>
-			</form>
+			</form>   
 			<!-- Start delete-account -->
 				{% include "partials/user-account/_delete-account.html" %}
 			<!-- End delete-account  -->
-			<div class="bottom-image">
-				<img src="img/rose-candle.png" alt="rose-angel">
-			</div>
 		</div>
 	</div>
 </div>
