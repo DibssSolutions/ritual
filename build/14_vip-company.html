@@ -390,134 +390,49 @@
                       </div>
                       <div class="video__player" id="video__player"> <iframe src="https://player.vimeo.com/video/281844431" style="width: 100%" height="490" allowfullscreen></iframe> </div>
                     </div>
-                  </div>
-                  <div class="on-map js-navigation-section" id="on-map">
-                    <div class="wind on-map__body">
-                      <!-- begin wind-head -->
-                      <div class="wind-head">
-                        <div class="wind-head__title">Название компании</div>
-                        <div class="wind-head__name">Салон художественной ковки</div>
-                      </div>
-                      <!-- end wind-head -->
-                      <!-- begin map -->
-                      <div class="js-map map map_md on-map__map" id="mapInf" data-center-lat="-34.097" data-center-lng="150.644"></div>
-                      <script type="text/template" class="js-mapInf">
-                        <div class="baloon">
-                          <div class="baloon__content">
-                            <div class="baloon__row">
-                              <div class="baloon__col"> {{? baloon.img }}
-                                <div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div> {{?}} {{? baloon.title }}
-                                <div class="baloon__title">{{=baloon.title}}</div> {{?}} {{? baloon.linkText }}
-                                <div class="baloon__footer"> <a href="{{=baloon.linkUrl}}" class="btn btn_small">{{=baloon.linkText}}<i class="fi flaticon-arrows"></i></a> </div> {{?}} </div>
-                              <div class="baloon__col"> {{? baloon.address }}
-                                <div class="baloon__item"><i class="fa fa-map-marker"></i>{{=baloon.address}}</div> {{?}} {{? baloon.address }}
-                                <div class="baloon__item"><i class="fi flaticon-technology"></i>{{=baloon.phone}}</div> {{?}} {{? baloon.address }}
-                                <div class="baloon__item"><i class="fi flaticon-black"></i>{{=baloon.email}}</div> {{?}} {{? baloon.address }}
-                                <div class="baloon__item"><i class="fi flaticon-clock"></i>{{=baloon.time}}</div> {{?}} </div>
+                    <!-- Start team -->
+                    <div id="team" class="team js-navigation-section">
+                      <div class="row">
+                        <div class="wind">
+                          <!-- begin wind-head -->
+                          <div class="wind-head">
+                            <div class="wind-head__title">Название компании</div>
+                            <div class="wind-head__name">Наша команда</div>
+                          </div>
+                          <!-- end wind-head -->
+                          <div class="wind__row row">
+                            <div class="wind__preson col-md-6 col-sm-6 col-xs-12">
+                              <!-- begin person -->
+                              <a href="#" class="person">
+                                <div class="person__img js-lazy" data-src="./img/person-1.png"></div>
+                                <div class="person__name-wrap">
+                                  <div class="person__name">Дарья иванова</div>
+                                </div>
+                                <div class="person__position">ритуальный агент</div>
+                                <div class="person__text mob-hide">Текст описания работы сотрудника идет тут в две три строки Текст описания работы сотрудника идет тут в две три строки</div>
+                                <div class="person__mail"><i class="fi flaticon-black"></i> carla@funeral-home.com</div>
+                              </a>
+                              <!-- end person -->
+                            </div>
+                            <div class="wind__preson col-md-6 col-sm-6 col-xs-12">
+                              <!-- begin person -->
+                              <a href="#" class="person">
+                                <div class="person__img js-lazy" data-src="./img/person-1.png"></div>
+                                <div class="person__name-wrap">
+                                  <div class="person__name">Дарья иванова</div>
+                                </div>
+                                <div class="person__position">ритуальный агент</div>
+                                <div class="person__text mob-hide">Текст описания работы сотрудника идет тут в две три строки Текст описания работы сотрудника идет тут в две три строки</div>
+                                <div class="person__mail"><i class="fi flaticon-black"></i> carla@funeral-home.com</div>
+                              </a>
+                              <!-- end person -->
                             </div>
                           </div>
+                          <div class="wind__bg md-hide js-lazy" data-src="./img/wind-bg.jpg"></div>
                         </div>
-                      </script>
-                      <script>
-                        document.addEventListener('DOMContentLoaded', function()
-                        {
-                          window.mapInf.add([
-                          {
-                            "content":
-                            {
-                              "title": "1. Название компании",
-                              "linkUrl": "#",
-                              "linkText": "Перейти",
-                              "img": "./img/map-img.png",
-                              "imgAlt": "img",
-                              "address": "Хабаровск, Гоголя, 8",
-                              "phone": "8 (111) 123 123",
-                              "email": "dmitryz5700@gmail.com",
-                              "time": "С 7.00 до 21.00, без выходных",
-                              "list": [
-                              {
-                                "bla": "bla"
-                              },
-                              {
-                                "bla": "bla"
-                              }]
-                            },
-                            "marker":
-                            {
-                              "id": 2,
-                              "position":
-                              {
-                                "lat": -34.397,
-                                "lng": 151.044
-                              },
-                              "icon":
-                              {
-                                "default": "img/marker.png",
-                                "active": "img/marker.png",
-                                "size":
-                                {
-                                  "x": 50,
-                                  "y": 64
-                                },
-                                "centering":
-                                {
-                                  "x": 20,
-                                  "y": 58
-                                }
-                              }
-                            }
-                          },
-                          {
-                            "content":
-                            {
-                              "title": "1. Название компании",
-                              "linkUrl": "#",
-                              "linkText": "Перейти",
-                              "img": "./img/map-img.png",
-                              "imgAlt": "img",
-                              "address": "Хабаровск, Гоголя, 8",
-                              "phone": "8 (111) 123 123",
-                              "email": "dmitryz5700@gmail.com",
-                              "time": "С 7.00 до 21.00, без выходных",
-                              "list": [
-                              {
-                                "bla": "bla"
-                              },
-                              {
-                                "bla": "bla"
-                              }]
-                            },
-                            "marker":
-                            {
-                              "id": 3,
-                              "position":
-                              {
-                                "lat": -34.397,
-                                "lng": 151.444
-                              },
-                              "icon":
-                              {
-                                "default": "img/marker.png",
-                                "active": "img/marker.png",
-                                "size":
-                                {
-                                  "x": 50,
-                                  "y": 64
-                                },
-                                "centering":
-                                {
-                                  "x": 20,
-                                  "y": 58
-                                }
-                              }
-                            }
-                          }])
-                        });
-
-                      </script>
-                      <!-- end map -->
-                      <div class="wind__bg js-lazy" data-src="./img/wind-bg.jpg"></div>
+                      </div>
                     </div>
+                    <!-- End team -->
                   </div>
                   <div class="our-contacts js-navigation-section" id="our-contacts">
                     <div class="wind our-contacts__body">
@@ -547,6 +462,127 @@
                         </div>
                       </div>
                       <!-- end agency -->
+                      <div class="on-map js-navigation-section" id="on-map">
+                        <div class="wind on-map__body">
+                          <!-- begin map -->
+                          <div class="js-map map map_md on-map__map" id="mapInf" data-center-lat="-34.097" data-center-lng="150.644"></div>
+                          <script type="text/template" class="js-mapInf">
+                            <div class="baloon">
+                              <div class="baloon__content">
+                                <div class="baloon__row">
+                                  <div class="baloon__col"> {{? baloon.img }}
+                                    <div class="baloon__img"><img src="{{=baloon.img}}" alt="{{=baloon.imgAlt}}"></div> {{?}} {{? baloon.title }}
+                                    <div class="baloon__title">{{=baloon.title}}</div> {{?}} {{? baloon.linkText }}
+                                    <div class="baloon__footer"> <a href="{{=baloon.linkUrl}}" class="btn btn_small">{{=baloon.linkText}}<i class="fi flaticon-arrows"></i></a> </div> {{?}} </div>
+                                  <div class="baloon__col"> {{? baloon.address }}
+                                    <div class="baloon__item"><i class="fa fa-map-marker"></i>{{=baloon.address}}</div> {{?}} {{? baloon.address }}
+                                    <div class="baloon__item"><i class="fi flaticon-technology"></i>{{=baloon.phone}}</div> {{?}} {{? baloon.address }}
+                                    <div class="baloon__item"><i class="fi flaticon-black"></i>{{=baloon.email}}</div> {{?}} {{? baloon.address }}
+                                    <div class="baloon__item"><i class="fi flaticon-clock"></i>{{=baloon.time}}</div> {{?}} </div>
+                                </div>
+                              </div>
+                            </div>
+                          </script>
+                          <script>
+                            document.addEventListener('DOMContentLoaded', function()
+                            {
+                              window.mapInf.add([
+                              {
+                                "content":
+                                {
+                                  "title": "1. Название компании",
+                                  "linkUrl": "#",
+                                  "linkText": "Перейти",
+                                  "img": "./img/map-img.png",
+                                  "imgAlt": "img",
+                                  "address": "Хабаровск, Гоголя, 8",
+                                  "phone": "8 (111) 123 123",
+                                  "email": "dmitryz5700@gmail.com",
+                                  "time": "С 7.00 до 21.00, без выходных",
+                                  "list": [
+                                  {
+                                    "bla": "bla"
+                                  },
+                                  {
+                                    "bla": "bla"
+                                  }]
+                                },
+                                "marker":
+                                {
+                                  "id": 2,
+                                  "position":
+                                  {
+                                    "lat": -34.397,
+                                    "lng": 151.044
+                                  },
+                                  "icon":
+                                  {
+                                    "default": "img/marker.png",
+                                    "active": "img/marker.png",
+                                    "size":
+                                    {
+                                      "x": 50,
+                                      "y": 64
+                                    },
+                                    "centering":
+                                    {
+                                      "x": 20,
+                                      "y": 58
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "content":
+                                {
+                                  "title": "1. Название компании",
+                                  "linkUrl": "#",
+                                  "linkText": "Перейти",
+                                  "img": "./img/map-img.png",
+                                  "imgAlt": "img",
+                                  "address": "Хабаровск, Гоголя, 8",
+                                  "phone": "8 (111) 123 123",
+                                  "email": "dmitryz5700@gmail.com",
+                                  "time": "С 7.00 до 21.00, без выходных",
+                                  "list": [
+                                  {
+                                    "bla": "bla"
+                                  },
+                                  {
+                                    "bla": "bla"
+                                  }]
+                                },
+                                "marker":
+                                {
+                                  "id": 3,
+                                  "position":
+                                  {
+                                    "lat": -34.397,
+                                    "lng": 151.444
+                                  },
+                                  "icon":
+                                  {
+                                    "default": "img/marker.png",
+                                    "active": "img/marker.png",
+                                    "size":
+                                    {
+                                      "x": 50,
+                                      "y": 64
+                                    },
+                                    "centering":
+                                    {
+                                      "x": 20,
+                                      "y": 58
+                                    }
+                                  }
+                                }
+                              }])
+                            });
+
+                          </script>
+                          <!-- end map -->
+                        </div>
+                      </div>
                       <h3 class="our-contacts__title title-m text-center mob-hide">Как добраться</h3>
                       <div class="our-contacts__loc mob-hide">
                         <div class="our-contacts__loc-item"> <span class="fa fa-map-marker"></span>
@@ -1280,12 +1316,12 @@
                                         <div class="drop__wrap js-drop-wrap">
                                           <div class="drop__show js-drop-shows">
                                             <p> Условия проведения: Текстовое описание услови акции идет тут в нескольстрок. Текстовое опис.... </p> <span class="staff__term">Срок действия акции:  до 31 декабря 2018 года</span>
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+                                            <p> Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
                                               выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
                                               </p>
                                           </div>
                                           <div class="drop__hidden js-drop-hidden">
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+                                            <p> Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
                                               выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
                                               </p>
                                           </div>
@@ -1482,12 +1518,12 @@
                                       <div class="drop js-drop">
                                         <div class="drop__wrap js-drop-wrap">
                                           <div class="drop__show js-drop-shows">
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+                                            <p> Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
                                               выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
                                               </p>
                                           </div>
                                           <div class="drop__hidden js-drop-hidden">
-                                            <p>Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
+                                            <p> Предварительные выводы неутешительны: новая модель организационной деятельности позволяет выполнить важные задания по разработке стандартных подходов! Равным образом, синтетическое тестирование не дает нам иного
                                               выбора, кроме определения форм воздействия. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности прекрасно подходит для реализации кластеризации усилий. Многие известные
                                               </p>
                                           </div>
@@ -1690,49 +1726,6 @@
                     </div>
                   </div>
                   <!-- End delivery -->
-                  <!-- Start team -->
-                  <div id="team" class="team js-navigation-section">
-                    <div class="row">
-                      <div class="wind">
-                        <!-- begin wind-head -->
-                        <div class="wind-head">
-                          <div class="wind-head__title">Название компании</div>
-                          <div class="wind-head__name">Ритуальный агент</div>
-                        </div>
-                        <!-- end wind-head -->
-                        <div class="wind__row row">
-                          <div class="wind__preson col-md-6 col-sm-6 col-xs-12">
-                            <!-- begin person -->
-                            <a href="#" class="person">
-                              <div class="person__img js-lazy" data-src="./img/person-1.png"></div>
-                              <div class="person__name-wrap">
-                                <div class="person__name">Дарья иванова</div>
-                              </div>
-                              <div class="person__position">ритуальный агент</div>
-                              <div class="person__text mob-hide">Текст описания работы сотрудника идет тут в две три строки Текст описания работы сотрудника идет тут в две три строки</div>
-                              <div class="person__mail"><i class="fi flaticon-black"></i> carla@funeral-home.com</div>
-                            </a>
-                            <!-- end person -->
-                          </div>
-                          <div class="wind__preson col-md-6 col-sm-6 col-xs-12">
-                            <!-- begin person -->
-                            <a href="#" class="person">
-                              <div class="person__img js-lazy" data-src="./img/person-1.png"></div>
-                              <div class="person__name-wrap">
-                                <div class="person__name">Дарья иванова</div>
-                              </div>
-                              <div class="person__position">ритуальный агент</div>
-                              <div class="person__text mob-hide">Текст описания работы сотрудника идет тут в две три строки Текст описания работы сотрудника идет тут в две три строки</div>
-                              <div class="person__mail"><i class="fi flaticon-black"></i> carla@funeral-home.com</div>
-                            </a>
-                            <!-- end person -->
-                          </div>
-                        </div>
-                        <div class="wind__bg md-hide js-lazy" data-src="./img/wind-bg.jpg"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End team -->
                 </div>
               </div>
               <div class="row row_rel md-hide">
@@ -1871,8 +1864,8 @@
             <div class="footer__wrapper"> <span class="copy">Copyright &copy; 2018.</span> Портал ритуальных услуг «Доверие». Хабаровск </div>
           </div>
         </div>
-        <div class="footer__up">
-          <div class="footer__container container"> <button class="btn-up js-btn-up" type="button">
+        <div class="footer__up js-up-btn-show">
+          <div class="footer__container"> <button class="btn-up js-btn-up" type="button">
 				<svg width="59" height="59" viewBox="0 0 59 59" xmlns="http://www.w3.org/2000/svg">
 				    <title>up</title>
 				    <g stroke="#E6DDD0" fill="none" fill-rule="evenodd">

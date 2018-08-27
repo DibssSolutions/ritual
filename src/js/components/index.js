@@ -19,3 +19,4 @@ import './_rangeSlider';
 import './_password-strength';
 import './_init-jquery-ui';
 import './_lazyload';
+import './_custom';

@@ -71,15 +71,15 @@
 					{% include "partials/blogs/_page-nav.html" %}
 					<!-- End page-nav -->
 				</div>
-				<!-- Start counter -->
-				{% include "partials/post/_counter.html" %}
-				<!-- End counter -->
-				<div class="bottom-image">
-					<img class="js-lazy" data-src="img/rose-candle.png" alt="rose-angel">
-				</div>
 				<div class="row">
-					<form class="upload-gallery memory-gallery__upload">
-						<div class="post-form col-md-7">
+					<form class="upload-gallery memory-gallery__upload col-md-7">
+						<button class="upload-gallery__btn btn btn_bold btn_big btn_fat js-btn-add-photo" type="button">
+							<span>
+								<i class="fa fa-plus-circle"></i>
+							</span>
+							Добавить фото
+						</button>
+						<div class="post-form js-show-add-photo">
 							<span class="title-hint">
 								Выберите файл формата jpg, Размер файла не более 6 Мб
 							</span>	
@@ -91,9 +91,6 @@
 										<i class="fa fas fa-camera"></i>
 									</label>
 								</div>
-								<!-- <label class="file-upload__label btn btn_big" for="file-upload">
-									Добавить
-								</label> -->
 								<input type="file" name="file-upload-photo" id="file-upload" class="file-upload__input">
 							</div>
 							<span class="title-hint">
@@ -103,13 +100,13 @@
 								<input class="post-form__input" type="text" id="message1" value="" name="way">
 							</div>
 							<button class="btn btn_bold btn_big btn_fat" type="submit">
-								<span>
-									<i class="fa fa-plus-circle"></i>
-								</span>
-								Добавить фото
+								Далее
 							</button>
 						</div>
 					</form>
+					<div class="bottom-image">
+						<img class="js-lazy" data-src="img/rose-candle.png" alt="rose-angel">
+					</div>
 				</div>
 			</div>
 		</div>

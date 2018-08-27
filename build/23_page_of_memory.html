@@ -580,44 +580,27 @@
                 </nav>
                 <!-- End page-nav -->
               </div>
-              <!-- Start counter -->
-              <div class="visitors"> <button class="visitors__print-btn" type="button" onclick='print();'>
-        <span>
-<svg class="icon icon-printer"><use xlink:href="img/sprite.svg#icon-printer"></use></svg>
-</span>
-        Распечатать
-    </button>
-                <ul class="counter">
-                  <li class="counter__item"> Просмотры: </li>
-                  <li class="counter__item counter__item_icon"> <svg class="icon icon-eye"><use xlink:href="img/sprite.svg#icon-eye"></use></svg> </li>
-                  <li class="counter__item"> Всего 100 </li>
-                  <li class="counter__item"> | </li>
-                  <li class="counter__item"> За месяц 15 </li>
-                </ul>
-              </div>
-              <!-- End counter -->
-              <div class="bottom-image"> <img class="js-lazy" data-src="img/rose-candle.png" alt="rose-angel"> </div>
               <div class="row">
-                <form class="upload-gallery memory-gallery__upload">
-                  <div class="post-form col-md-7"> <span class="title-hint">
+                <form class="upload-gallery memory-gallery__upload col-md-7"> <button class="upload-gallery__btn btn btn_bold btn_big btn_fat js-btn-add-photo" type="button">
+							<span>
+								<i class="fa fa-plus-circle"></i>
+							</span>
+							Добавить фото
+						</button>
+                  <div class="post-form js-show-add-photo"> <span class="title-hint">
 								Выберите файл формата jpg, Размер файла не более 6 Мб
 							</span>
                     <div class="file-upload">
                       <div class="post-form__col"> <input class="post-form__input" type="text" id="name1" placeholder=":/Путь файла будет тут....." name="way"> <label class="post-form__icon" for="file-upload">
 										<i class="fa fas fa-camera"></i>
-									</label> </div>
-                      <!-- <label class="file-upload__label btn btn_big" for="file-upload">
-									Добавить
-								</label> --><input type="file" name="file-upload-photo" id="file-upload" class="file-upload__input"> </div> <span class="title-hint">
+									</label> </div> <input type="file" name="file-upload-photo" id="file-upload" class="file-upload__input"> </div> <span class="title-hint">
 								Введите свое имя, чтобы оно отображалось в сообщении
 							</span>
                     <div class="post-form__col"> <input class="post-form__input" type="text" id="message1" value="" name="way"> </div> <button class="btn btn_bold btn_big btn_fat" type="submit">
-								<span>
-									<i class="fa fa-plus-circle"></i>
-								</span>
-								Добавить фото
+								Далее
 							</button> </div>
                 </form>
+                <div class="bottom-image"> <img class="js-lazy" data-src="img/rose-candle.png" alt="rose-angel"> </div>
               </div>
             </div>
           </div>
@@ -1171,8 +1154,8 @@
             <div class="footer__wrapper"> <span class="copy">Copyright &copy; 2018.</span> Портал ритуальных услуг «Доверие». Хабаровск </div>
           </div>
         </div>
-        <div class="footer__up">
-          <div class="footer__container container"> <button class="btn-up js-btn-up" type="button">
+        <div class="footer__up js-up-btn-show">
+          <div class="footer__container"> <button class="btn-up js-btn-up" type="button">
 				<svg width="59" height="59" viewBox="0 0 59 59" xmlns="http://www.w3.org/2000/svg">
 				    <title>up</title>
 				    <g stroke="#E6DDD0" fill="none" fill-rule="evenodd">

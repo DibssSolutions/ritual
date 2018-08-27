@@ -243,10 +243,10 @@
                       <div class="banner"> <img class="js-lazy" data-src="img/banner.png" alt="banner"> </div>
                     </div>
                   </aside>
-                  <div class="col-md-9 col-sm-7">
+                  <div class="col-md-9 col-sm-7 js-drop-dawn-wrap">
                     <div class="article-box">
                       <div class="section-head text-center mob-show margin_top">
-                        <h3 class="title-m">Название статьи будет тут длинное в две строки</h3>
+                        <h3 class="title-m"> Название статьи будет тут длинное в две строки </h3>
                       </div>
                       <article>
                         <div class="post-thumb"> <img class="js-lazy" data-src="img/blog-img.jpg" class="img-responsive" alt="" /> </div>
@@ -340,41 +340,43 @@
                     <div class="side-widget hidein">
                       <div class="banner"> <img class="js-lazy" data-src="img/banner1.png" alt="banner"> </div>
                     </div>
-                    <div class="related-comments facilities">
-                      <h5 class="title-s_mod"> Комментарии (2) <span class="arrow-up">
+                    <div class="related-comments facilities js-wrap">
+                      <h5 class="title-s_mod js-click"> Комментарии (2) <span class="arrow-up">
 										<i class="fa fas fa-caret-up"></i>
 									</span> </h5>
-                      <div class="team-info no-border">
-                        <div class="col-md-3">
-                          <div class="posts-image posts-image_mod js-lazy" data-src="img/user1.png"> </div>
+                      <div class="related-comments__wrap js-hide">
+                        <div class="team-info no-border">
+                          <div class="col-md-3">
+                            <div class="posts-image posts-image_mod js-lazy" data-src="img/user1.png"> </div>
+                          </div>
+                          <div class="col-md-9 padding_top">
+                            <div class="staff-title"> <span class="title-s_mod">Имя Фамилия</span> 13.03.18 </div>
+                            <p> I like to call Funeral Home my home. It was in Sun Prairie, Wisconsin where I graduated from high school in 1969 and lettered in football at Sun prairie High school. </p>
+                          </div>
                         </div>
-                        <div class="col-md-9 padding_top">
-                          <div class="staff-title"> <span class="title-s_mod">Имя Фамилия</span> 13.03.18 </div>
-                          <p> I like to call Funeral Home my home. It was in Sun Prairie, Wisconsin where I graduated from high school in 1969 and lettered in football at Sun prairie High school. </p>
+                        <div class="team-info no-border">
+                          <div class="col-md-3">
+                            <div class="posts-image posts-image_mod js-lazy" data-src="img/user.png"> </div>
+                          </div>
+                          <div class="col-md-9 padding_top">
+                            <div class="staff-title"> <span class="title-s_mod">Имя Фамилия</span> 13.03.18 </div>
+                            <p>Thank you for visiting Funeral Home. As a member of the family and leadership team, I want to make myself available to visit with you at your convenience for any need you may have.</p>
+                          </div>
                         </div>
                       </div>
-                      <div class="clearfix"></div>
-                      <div class="team-info no-border">
-                        <div class="col-md-3">
-                          <div class="posts-image posts-image_mod js-lazy" data-src="img/user.png"> </div>
-                        </div>
-                        <div class="col-md-9 padding_top">
-                          <div class="staff-title"> <span class="title-s_mod">Имя Фамилия</span> 13.03.18 </div>
-                          <p>Thank you for visiting Funeral Home. As a member of the family and leadership team, I want to make myself available to visit with you at your convenience for any need you may have.</p>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
                     </div>
-                    <div class="comment-form">
-                      <h5 class="comment-form__title title-s_mod"> Оставить комментарий <span class="arrow-up">
-									<i class="fa fas fa-caret-up"></i>
+                    <div class="comment-form js-wrap">
+                      <h5 class="comment-form__title title-s_mod js-click"> Оставить комментарий <span class="arrow-up">
+										<i class="fa fas fa-caret-up"></i>
 									</span> </h5>
-                      <form class="post-form">
-                        <div class="post-form__row row">
-                          <div class="post-form__col col-md-6"> <input class="post-form__input" type="text" id="name" value="" name="name"> <label class="post-form__label" for="name">Ваше имя</label> </div>
-                          <div class="post-form__col col-md-6"> <input class="post-form__input" type="text" id="email" value="" name="email"> <label class="post-form__label" for="email">Email</label> </div>
-                          <div class="post-form__col col-md-12"> <textarea class="post-form__textarea" id="message" name="message"></textarea> <label class="post-form__label" for="message">Комментарий</label> </div>
-                        </div> <button type="submit" class="btn btn-md">Отправить</button> </form>
+                      <div class="comment-form__wrap js-hide">
+                        <form class="post-form">
+                          <div class="post-form__row row">
+                            <div class="post-form__col col-md-6"> <input class="post-form__input" type="text" id="name" value="" name="name"> <label class="post-form__label" for="name">Ваше имя</label> </div>
+                            <div class="post-form__col col-md-6"> <input class="post-form__input" type="text" id="email" value="" name="email"> <label class="post-form__label" for="email">Email</label> </div>
+                            <div class="post-form__col col-md-12"> <textarea class="post-form__textarea" id="message" name="message"></textarea> <label class="post-form__label" for="message">Комментарий</label> </div>
+                          </div> <button type="submit" class="btn btn-md">Отправить</button> </form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -474,8 +476,8 @@
             <div class="footer__wrapper"> <span class="copy">Copyright &copy; 2018.</span> Портал ритуальных услуг «Доверие». Хабаровск </div>
           </div>
         </div>
-        <div class="footer__up">
-          <div class="footer__container container"> <button class="btn-up js-btn-up" type="button">
+        <div class="footer__up js-up-btn-show">
+          <div class="footer__container"> <button class="btn-up js-btn-up" type="button">
 				<svg width="59" height="59" viewBox="0 0 59 59" xmlns="http://www.w3.org/2000/svg">
 				    <title>up</title>
 				    <g stroke="#E6DDD0" fill="none" fill-rule="evenodd">

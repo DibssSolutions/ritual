@@ -13,36 +13,33 @@ function accordeon() {
 
 
 // accordion (new-company)
-var accordionWrapper = $('.js-accordion-wrap');
+$(document).ready(function() {
+  var accordionWrapper = $('.js-accordion-wrap');
 
-accordionWrapper.each(function() {
-  var _this = $(this);
-  var accorTrig = _this.find('.js-accord-btn');
-  var accordions = _this.find('.js-accord');
-  var accordTextBtn = _this.find('.js-accord-text-btn');
- 
-  accorTrig.on('click', function() {
-    var parent = $(this).parents('.js-accord');
-    var open = 'is-open';
-    var contentBlock = parent.find('.js-accordion__hide-block');
-    var contentText = parent.find('.js-accord-text-btn');
-    if (!parent.hasClass(open)) {
-      parent.addClass(open);
-      contentText.text('Показать');
-      contentBlock.slideUp(500);
-    } else {
-      parent.removeClass(open);
-      contentText.text('Скрыть');
-      contentBlock.slideDown(500);
+  accordionWrapper.each(function() {
+    var _this = $(this);
+    var accorTrig = _this.find('.js-accord-btn');
+    var accordions = _this.find('.js-accord');
+    var accordTextBtn = _this.find('.js-accord-text-btn');
+   
+    accorTrig.on('click', function() {
+      var parent = $(this).parents('.js-accord');
+      var open = 'is-open';
+      var contentBlock = parent.find('.js-accordion__hide-block');
+      var contentText = parent.find('.js-accord-text-btn');
+      if (!parent.hasClass(open)) {
+        parent.addClass(open);
+        contentText.text('Показать');
+        contentBlock.slideUp(500);
+      } else {
+        parent.removeClass(open);
+        contentText.text('Скрыть');
+        contentBlock.slideDown(500);
 
-    }   
+      }   
+    });
   });
 });
 
 
-// function catalogueAccordeon() {
-//   // $(this).toggleClass('li_active');
-//   // $('.catalogue__subcategory').not($(this).next()).slideUp(400);
-//   $(this).children('.catalogue__subcategory').slideToggle(400);
-// };
 

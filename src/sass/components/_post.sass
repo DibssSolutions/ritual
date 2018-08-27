@@ -89,9 +89,6 @@
 		margin-bottom: 20px
 		border-bottom: none
 
-.related-comments .title-s_mod
-	+sm
-		cursor: pointer
 
 .posts-image_mod
 	width: 136px
@@ -99,15 +96,21 @@
 	+md
 		width: 85px
 		height: 85px
-
-.related-comments .team-info
-	padding-bottom: 0
-	margin-bottom: 18px
-
-.related-comments .staff-title
-	color: #c9c2b4
-	+md
-		padding-left: 110px
+ 
+.related-comments
+	&.is-open
+		.arrow-up
+			transform: rotate(180deg)
+	.title-s_mod
+	+sm
+		cursor: pointer
+	.team-info
+		padding-bottom: 0
+		margin-bottom: 18px
+	.staff-title
+		color: #c9c2b4
+		+md
+			padding-left: 110px
 
 .post-wrap .team-info p
 	padding-top: 20px
@@ -123,11 +126,6 @@
 	+md
 		padding: 0
 
-.arrow-up
-	opacity: 0
-	+sm
-		opacity: 1
-		margin-left: 10px
 
 .comment-form
 	&__title
@@ -138,3 +136,15 @@
 			cursor: pointer
 			padding-bottom: 0
 			border-bottom: none
+	&.is-open
+		.arrow-up
+			transform: rotate(180deg)
+			
+.arrow-up
+	display: inline-block
+	opacity: 0
+	transform: rotate(0deg)
+	transition: transform .3s
+	+sm
+		opacity: 1
+		margin-left: 10px
