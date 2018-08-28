@@ -41,4 +41,36 @@ $(document).ready(function() {
 });
 
 
-//up-btn
+//tabs
+
+(function($) {
+  $(function() {
+    var tab = $('.js-tab');
+
+    tab.on('click', function() {
+      $(this).addClass('is-active').siblings().removeClass('is-active');
+    });
+  });
+})(jQuery);
+
+
+//add banner
+
+$(document).ready(function() {
+  $('.js-show-ad-banner').on('click', function() {
+    $('.js-show-banner').slideToggle(500);
+  });
+});
+
+
+//tabs alfabet
+
+(function($) {
+  $(function() {
+    var tab = $('.js-alphabet');
+
+    tab.on('click', function() {
+      $(this).addClass('is-active').siblings().removeClass('is-active');
+    });
+  });
+})(jQuery);

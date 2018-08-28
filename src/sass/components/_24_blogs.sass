@@ -39,8 +39,8 @@
 
 .posts-image
 	position: absolute
-	top: 0
-	left: 0
+	top: 10px
+	left: 10px
 	width: 70px
 	height: 70px
 	border-radius: 50%
@@ -107,6 +107,8 @@
 
 .post-thumb
 	margin-bottom: 14px
+	img
+		max-width: 100%
 
 .color input
 	color: $brown
@@ -151,6 +153,10 @@
 
 .blog-content_wrap .side-form .side-cat li
 	margin-bottom: 20px
+	&:hover
+		a
+			font-weight: 600
+			color: $brown
 	+sm
 		padding-left: 0
 
@@ -160,12 +166,22 @@
 		display: block
 
 .side-form .side-cat
-	margin-bottom: 25px	
+	margin-bottom: 25px
 
 .side-form i
 	+sm
 		display: none
 
+.sidebar .side-widget .side-posts li
+	min-height: 90px
+
+.side-posts
+	li
+		padding: 10px
+		&:hover
+			box-shadow: 1.5px 2.6px 7px rgba(0,0,0,.18)
+
+	
 .blog-content_wrap article h4
 	margin-top: 0
 

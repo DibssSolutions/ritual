@@ -16,20 +16,6 @@ $('.js-slider-nav').slick({
   asNavFor: '.js-slider-for',
   centerMode: true,
   focusOnSelect: true
-  // responsive: [
-  //   {
-  //     breakpoint: 1023,
-  //     settings: {
-  //       slidesToShow: 5,
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 767,
-  //     settings: {
-  //       slidesToShow: 0,
-  //     }
-  //   }
-  // ]
 });
 
 
