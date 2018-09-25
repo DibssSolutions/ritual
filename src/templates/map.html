@@ -1,0 +1,138 @@
+---
+title: Site map
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{% include "partials/_header.html" %}
+	<div class="bg-high js-lazy" data-src="./img/site-map.jpg">
+		<div class="page-head">
+			<div class="container page-head__container">
+				<ul class="bcrumbs page-head__bcrumbs">
+					<li>
+						<a href="#">
+							<span class="showin">{{ mixins.icon('house') }}</span>
+							<span class="hidein">Home</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">Obituaries</a>
+					</li>
+					<li>Past</li>
+				</ul>
+			</div>
+		</div>
+		<div class="grief">
+			<div class="container grief__container">
+				<div class="section-head grief__head text-center">
+					<h1 class="title-l grief__title">Карта сайта</h1>
+				</div>
+				<!-- begin site-map -->
+				<div class="site-map">
+					<ul class="site-map__list">
+						{% for item in [
+							{
+								text: '1. Главная'
+							},
+							{
+								text: '2. Если случилось горе:',
+								list: [
+									'3. Ритуальный агент',
+									'4. Выбор кладбища',
+									'6. Выбор зала для прощания',
+									'7. Выбор церкви для отпе...',
+									'8. Выбор ресторана',
+									'9. Пригласить и оповести...',
+									'10. Похороны своими силами'
+								]
+							},
+							{
+								text: '11. Все категории'
+							},
+							{
+								text: '12. Категория'
+							},
+							{
+								text: '18. После похорон'
+							},
+							{
+								text: '19. Страницы памяти:',
+								list: [
+									'20. Все некрологи',
+									'21. Каталог А-Я',
+									'22. Календарь похорон',
+									'23. Страница памяти',
+									'23-1. Страница памяти - новая'
+								]
+							},
+							{
+								text: '24. Блог'
+							},
+							{
+								text: '25. Рекламодателю - О нас'
+							},
+							{
+								text: '26. Рекламодателю - Добавить компанию'
+							},
+							{
+								text: '27. Рекламодателю - Услуги'
+							},
+							{
+								text: '28. Рекламодателю - Рейтинги'
+							},
+							{
+								text: '42. Рекламодателю - Аккаунт...'
+							},
+							{
+								text: '32. Доска объявлений - Все'
+							},
+							{
+								text: '32. Доска объявлений - Все'
+							},
+							{
+								text: '33. Доска объявлений - Раздел'
+							},
+							{
+								text: '35. Доска объявлений - Новое...'
+							},
+							{
+								text: '13. Все компании'
+							},
+							{
+								text: '14. Компания ВИП'
+							},
+							{
+								text: '29. Все отзывы'
+							},
+							{
+								text: '31. Пользователь'
+							}
+						] %}
+						<li class="site-map__item">
+							<a href="#" class="site-map__link">{{ item.text }}</a>
+							<a href="#" target="_blank" class="site-map__sub-link">верстка</a>
+							{% if item.list %}
+							<ul>
+								{% for text in item.list %}
+								<li><a href="#">{{ text }}</a><a href="#" target="_blank" class="site-map__sub-link">верстка</a></li>
+								{% endfor %}
+							</ul>
+							{% endif %}
+						</li>
+						{% endfor %}
+					</ul>
+					<div class="site-map__footer">
+						<a href="#" class="site-map__admin">Админка</a>
+					</div>
+				</div>
+				<!-- end site-map -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+
+{% endblock %}

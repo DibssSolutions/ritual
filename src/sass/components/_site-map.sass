@@ -1,0 +1,68 @@
+.site-map
+	padding-bottom: 45px
+	margin: 0 auto
+	max-width: 960px
+	&__list
+		column-count: 2
+		column-gap: 30px
+		+sm
+			column-count: 1
+			column-gap: 0
+	&__item
+		margin-bottom: 12px
+		font-size: 20px
+		width: 100%
+		display: inline-block
+		ul
+			margin-top: 15px
+			padding-left: 57px
+			li
+				&:not(:last-child)
+					margin-bottom: 5px
+			a
+				font-size: 16px
+				color: #65594d
+				vertical-align: top
+				overflow: hidden
+				max-width: 215px
+				white-space: nowrap
+				text-overflow: ellipsis
+				display: inline-block  
+				&:hover
+					border-bottom: 1px solid currentColor 
+			.site-map__sub-link
+				margin: 4px 0 0 5px
+				padding: 2px 5px
+				font-family: 'Tahoma'
+				font-size: 9px
+				font-weight: 400
+				line-height: 1.2
+				vertical-align: top
+				border: 1px solid #5b5146
+				border-radius: 4px
+				display: inline-block
+				&:hover
+					background-color: #5b5146 
+					color: #fff 
+	&__link
+		&:hover
+			border-bottom: 1px solid currentColor 
+	&__sub-link
+		padding: 2px 5px
+		font-family: 'Tahoma'
+		font-size: 9px
+		font-weight: 400
+		line-height: 1.2
+		vertical-align: middle
+		border: 1px solid #5b5146
+		border-radius: 4px
+		display: inline-block
+		&:hover
+			background-color: #5b5146 
+			color: #fff 
+	&__footer
+		text-align: right
+	&__admin
+		color: #4E6CEE
+		font-size: 18px
+		border-bottom: 1px solid 
